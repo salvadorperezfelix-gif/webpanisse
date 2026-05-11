@@ -298,7 +298,8 @@ if (newsletterForm) {
                  alt="${p.brand} ${p.name} — ${p.variant}"
                  class="product-card__image"
                  loading="lazy"
-                 onerror="this.src='${p.placeholder || imgSrc}'" />
+                 onload="this.classList.add('is-loaded')"
+                 onerror="this.src='${p.placeholder || imgSrc}'; this.classList.add('is-loaded')" />
             ${badge}
             <!-- Favoritos desactivado -->
           </div>
@@ -769,13 +770,16 @@ async function initProductPage() {
 
     // Galería de imágenes (Thumbnails)
     const thumbsContainer = document.getElementById('prod-thumbs');
-    if (thumbsContainer && p.gallery && p.gallery.length > 0) {
-      console.log('Poblando galería...', p.gallery.length, 'imágenes');
-      thumbsContainer.innerHTML = p.gallery.map((img, idx) => `
+    if (thumbsContainer) {
+      // Si no hay galería, usamos al menos la imagen principal como miniatura
+      const galleryImages = (p.gallery && p.gallery.length > 0) ? p.gallery : [p.image || p.placeholder];
+      
+      console.log('Poblando galería...', galleryImages.length, 'imágenes');
+      thumbsContainer.innerHTML = galleryImages.map((img, idx) => `
         <button class="product-gallery__thumb ${idx === 0 ? 'is-active' : ''}" 
                 data-img="${img}" 
                 aria-label="Ver imagen ${idx + 1}">
-          <img src="${img}" alt="${p.brand} ${p.name} vista ${idx + 1}" />
+          <img src="${img}" alt="${p.brand} ${p.name} vista ${idx + 1}" onload="this.classList.add('is-loaded')" />
         </button>
       `).join('');
 
