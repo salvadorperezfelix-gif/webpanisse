@@ -762,7 +762,8 @@ async function initProductPage() {
 
     // Galería de imágenes (Thumbnails)
     const thumbsContainer = document.getElementById('prod-thumbs');
-    if (thumbsContainer && p.gallery) {
+    if (thumbsContainer && p.gallery && p.gallery.length > 0) {
+      console.log('Generando miniaturas:', p.gallery);
       thumbsContainer.innerHTML = p.gallery.map((img, idx) => `
         <button class="product-gallery__thumb ${idx === 0 ? 'is-active' : ''}" 
                 data-img="${img}" 
@@ -775,9 +776,44 @@ async function initProductPage() {
       const thumbs = thumbsContainer.querySelectorAll('.product-gallery__thumb');
       thumbs.forEach(btn => {
         btn.addEventListener('click', () => {
+          console.log('Cambio a imagen:', btn.dataset.img);
           thumbs.forEach(t => t.classList.remove('is-active'));
           btn.classList.add('is-active');
-          if (mainImg) mainImg.src = btn.dataset.img;
+          if (mainImg) {
+            mainImg.style.opacity = '0';
+            setTimeout(() => {
+              mainImg.src = btn.dataset.img;
+              mainImg.style.opacity = '1';
+            }, 200);
+          }
+        });
+      });
+    }
+
+    // Botón Zoom / Lightbox
+    const zoomBtn = document.querySelector('.product-gallery__zoom');
+    if (zoomBtn && mainImg) {
+      zoomBtn.addEventListener('click', () => {
+        // Crear un overlay básico de lightbox
+        const overlay = document.createElement('div');
+        overlay.style.cssText = `
+          position: fixed; inset: 0; background: rgba(0,0,0,0.9);
+          display: flex; align-items: center; justify-content: center;
+          z-index: 10000; cursor: zoom-out; transition: opacity 0.3s;
+          opacity: 0;
+        `;
+        const fullImg = document.createElement('img');
+        fullImg.src = mainImg.src;
+        fullImg.style.cssText = 'max-width: 90%; max-height: 90%; object-fit: contain; border-radius: 4px;';
+        
+        overlay.appendChild(fullImg);
+        document.body.appendChild(overlay);
+        
+        setTimeout(() => overlay.style.opacity = '1', 10);
+        
+        overlay.addEventListener('click', () => {
+          overlay.style.opacity = '0';
+          setTimeout(() => overlay.remove(), 300);
         });
       });
     }
