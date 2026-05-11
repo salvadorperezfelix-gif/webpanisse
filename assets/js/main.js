@@ -702,9 +702,12 @@ async function initProductPage() {
   const productId = params.get('id');
   
   const titleEl = document.getElementById('prod-title');
-  if (!productId || !titleEl) return;
+  if (!productId || !titleEl) {
+    console.log('Catálogo: No es página de producto o falta ID.');
+    return;
+  }
 
-  console.log('Cargando gafa ID:', productId);
+  console.log('--- INIT PRODUCT PAGE ---', productId);
 
   try {
     const res = await fetch('./data/products.json');
@@ -713,9 +716,12 @@ async function initProductPage() {
     const p = products.find(item => item.id === productId);
 
     if (!p) {
+      console.warn('Producto no encontrado en JSON:', productId);
       titleEl.textContent = 'Producto no encontrado';
       return;
     }
+
+    console.log('Producto cargado:', p.name);
 
     // Actualiza textos básicos
     document.title = `${p.brand} ${p.name} | Panisse Óptica`;
@@ -735,7 +741,7 @@ async function initProductPage() {
     if (subtitleEl) subtitleEl.textContent = `${p.type === 'sol' ? 'Gafas de sol' : 'Gafas graduadas'} · ${p.variant}`;
     
     const priceEl = document.getElementById('prod-price');
-    if (priceEl) priceEl.textContent = p.price;
+    if (priceEl) priceEl.textContent = `${p.price} €`;
     
     const descEl = document.getElementById('prod-desc');
     if (descEl) descEl.innerHTML = `<p>${p.description}</p>`;
@@ -745,6 +751,7 @@ async function initProductPage() {
     if (mainImg) {
       mainImg.src = p.image || p.placeholder;
       mainImg.alt = `${p.brand} ${p.name}`;
+      mainImg.style.opacity = '1';
     }
 
     // Especificaciones técnicas
@@ -763,26 +770,27 @@ async function initProductPage() {
     // Galería de imágenes (Thumbnails)
     const thumbsContainer = document.getElementById('prod-thumbs');
     if (thumbsContainer && p.gallery && p.gallery.length > 0) {
-      console.log('Generando miniaturas:', p.gallery);
+      console.log('Poblando galería...', p.gallery.length, 'imágenes');
       thumbsContainer.innerHTML = p.gallery.map((img, idx) => `
         <button class="product-gallery__thumb ${idx === 0 ? 'is-active' : ''}" 
                 data-img="${img}" 
-                aria-label="Ver imagen ${idx + 1}" 
-                role="listitem">
-          <img src="${img}" alt="${p.brand} ${p.name} vista ${idx + 1}" loading="lazy"/>
+                aria-label="Ver imagen ${idx + 1}">
+          <img src="${img}" alt="${p.brand} ${p.name} vista ${idx + 1}" />
         </button>
       `).join('');
 
       const thumbs = thumbsContainer.querySelectorAll('.product-gallery__thumb');
       thumbs.forEach(btn => {
         btn.addEventListener('click', () => {
-          console.log('Cambio a imagen:', btn.dataset.img);
+          const newSrc = btn.dataset.img;
+          console.log('Cambio imagen a:', newSrc);
           thumbs.forEach(t => t.classList.remove('is-active'));
           btn.classList.add('is-active');
           if (mainImg) {
+            mainImg.style.transition = 'opacity 0.2s ease';
             mainImg.style.opacity = '0';
             setTimeout(() => {
-              mainImg.src = btn.dataset.img;
+              mainImg.src = newSrc;
               mainImg.style.opacity = '1';
             }, 200);
           }
@@ -797,11 +805,13 @@ async function initProductPage() {
     const lightboxClose = document.querySelector('.product-lightbox__close');
 
     if (zoomBtn && lightbox && lightboxImg) {
-      zoomBtn.addEventListener('click', () => {
-        console.log('Abriendo lightbox con:', mainImg.src);
+      console.log('Zoom configurado correctamente.');
+      zoomBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        console.log('Zoom click! Imagen:', mainImg.src);
         lightboxImg.src = mainImg.src;
         lightbox.classList.add('is-active');
-        document.body.style.overflow = 'hidden'; // Bloquear scroll
+        document.body.style.overflow = 'hidden';
       });
 
       const closeLightbox = () => {
@@ -816,7 +826,6 @@ async function initProductPage() {
         }
       });
       
-      // Cerrar con Escape
       window.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && lightbox.classList.contains('is-active')) {
           closeLightbox();
@@ -829,11 +838,11 @@ async function initProductPage() {
     if (colorLabel) colorLabel.textContent = p.variant;
 
   } catch (err) {
-    console.error('Error cargando la ficha de producto:', err);
+    console.error('Error crítico en initProductPage:', err);
   }
 }
 
-// Ejecutar al cargar
+// Inicialización segura
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', initProductPage);
 } else {
