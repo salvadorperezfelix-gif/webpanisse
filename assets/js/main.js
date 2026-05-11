@@ -792,29 +792,35 @@ async function initProductPage() {
 
     // Botón Zoom / Lightbox
     const zoomBtn = document.querySelector('.product-gallery__zoom');
-    if (zoomBtn && mainImg) {
+    const lightbox = document.getElementById('product-lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxClose = document.querySelector('.product-lightbox__close');
+
+    if (zoomBtn && lightbox && lightboxImg) {
       zoomBtn.addEventListener('click', () => {
-        // Crear un overlay básico de lightbox
-        const overlay = document.createElement('div');
-        overlay.style.cssText = `
-          position: fixed; inset: 0; background: rgba(0,0,0,0.9);
-          display: flex; align-items: center; justify-content: center;
-          z-index: 10000; cursor: zoom-out; transition: opacity 0.3s;
-          opacity: 0;
-        `;
-        const fullImg = document.createElement('img');
-        fullImg.src = mainImg.src;
-        fullImg.style.cssText = 'max-width: 90%; max-height: 90%; object-fit: contain; border-radius: 4px;';
-        
-        overlay.appendChild(fullImg);
-        document.body.appendChild(overlay);
-        
-        setTimeout(() => overlay.style.opacity = '1', 10);
-        
-        overlay.addEventListener('click', () => {
-          overlay.style.opacity = '0';
-          setTimeout(() => overlay.remove(), 300);
-        });
+        console.log('Abriendo lightbox con:', mainImg.src);
+        lightboxImg.src = mainImg.src;
+        lightbox.classList.add('is-active');
+        document.body.style.overflow = 'hidden'; // Bloquear scroll
+      });
+
+      const closeLightbox = () => {
+        lightbox.classList.remove('is-active');
+        document.body.style.overflow = '';
+      };
+
+      if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox || e.target.classList.contains('product-lightbox__content')) {
+          closeLightbox();
+        }
+      });
+      
+      // Cerrar con Escape
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('is-active')) {
+          closeLightbox();
+        }
       });
     }
 
