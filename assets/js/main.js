@@ -466,92 +466,25 @@ if (newsletterForm) {
 })();
 
 /* ════════════════════════════════════════════════════════════
-   FICHA DE PRODUCTO
+   FICHA DE PRODUCTO — eventos estáticos (acordeón, etc.)
+   Los eventos de galería y zoom se registran en initProductPage()
+   después de que el fetch crea los elementos dinámicamente.
 ════════════════════════════════════════════════════════════ */
 (function () {
-  const mainImg = document.getElementById('product-main-img');
-  if (!mainImg) return;
-
-  /* ── Galería: cambio de imagen por thumbnail ── */
-  document.querySelectorAll('.product-gallery__thumb').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.product-gallery__thumb').forEach(b => b.classList.remove('is-active'));
-      btn.classList.add('is-active');
-      mainImg.src = btn.dataset.img;
-    });
-  });
-
-  /* ── Selector de color ── */
-  const colorLabel = document.getElementById('color-label');
-  document.querySelectorAll('.product-color').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.product-color').forEach(b => {
-        b.classList.remove('is-active');
-        b.setAttribute('aria-pressed', 'false');
-      });
-      btn.classList.add('is-active');
-      btn.setAttribute('aria-pressed', 'true');
-      if (colorLabel) colorLabel.textContent = btn.dataset.color;
-    });
-  });
-
-  /* ── Selector de talla ── */
-  const sizeLabel = document.getElementById('size-label');
-  document.querySelectorAll('.product-size').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.product-size').forEach(b => {
-        b.classList.remove('is-active');
-        b.setAttribute('aria-pressed', 'false');
-      });
-      btn.classList.add('is-active');
-      btn.setAttribute('aria-pressed', 'true');
-      if (sizeLabel) sizeLabel.textContent = btn.dataset.size;
-    });
-  });
-
-  /* ── Wishlist ── */
-  const wishlistBtn = document.getElementById('wishlist-btn');
-  if (wishlistBtn) {
-    wishlistBtn.addEventListener('click', () => {
-      const active = wishlistBtn.getAttribute('aria-pressed') === 'true';
-      wishlistBtn.setAttribute('aria-pressed', String(!active));
-      wishlistBtn.setAttribute('aria-label', active ? 'Añadir a favoritos' : 'Quitar de favoritos');
-    });
-  }
-
-  /* ── Añadir al carrito: feedback visual ── */
-  const addBtn = document.getElementById('add-to-cart-btn');
-  if (addBtn) {
-    addBtn.addEventListener('click', () => {
-      const original = addBtn.textContent;
-      addBtn.textContent = '¡Añadido!';
-      addBtn.disabled = true;
-      setTimeout(() => {
-        addBtn.textContent = original;
-        addBtn.disabled = false;
-      }, 1800);
-
-      // Incrementa badge del carrito
-      const badge = document.querySelector('.header__cart-count');
-      if (badge) badge.textContent = Number(badge.textContent) + 1;
-    });
-  }
-
   /* ── Acordeón de detalles ── */
-  document.querySelectorAll('.product-accordion__trigger').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const item = btn.closest('.product-accordion__item');
-      const isOpen = item.classList.contains('is-open');
-      // Cierra los demás
-      document.querySelectorAll('.product-accordion__item').forEach(i => {
-        i.classList.remove('is-open');
-        i.querySelector('.product-accordion__trigger')?.setAttribute('aria-expanded', 'false');
-      });
-      if (!isOpen) {
-        item.classList.add('is-open');
-        btn.setAttribute('aria-expanded', 'true');
-      }
+  document.addEventListener('click', e => {
+    const btn = e.target.closest('.product-accordion__trigger');
+    if (!btn) return;
+    const item = btn.closest('.product-accordion__item');
+    const isOpen = item.classList.contains('is-open');
+    document.querySelectorAll('.product-accordion__item').forEach(i => {
+      i.classList.remove('is-open');
+      i.querySelector('.product-accordion__trigger')?.setAttribute('aria-expanded', 'false');
     });
+    if (!isOpen) {
+      item.classList.add('is-open');
+      btn.setAttribute('aria-expanded', 'true');
+    }
   });
 })();
 
@@ -703,12 +636,8 @@ async function initProductPage() {
   const productId = params.get('id');
   
   const titleEl = document.getElementById('prod-title');
-  if (!productId || !titleEl) {
-    console.log('Catálogo: No es página de producto o falta ID.');
-    return;
-  }
+  if (!productId || !titleEl) return;
 
-  console.log('--- INIT PRODUCT PAGE ---', productId);
 
   try {
     const res = await fetch('./data/products.json');
@@ -722,7 +651,7 @@ async function initProductPage() {
       return;
     }
 
-    console.log('Producto cargado:', p.name);
+
 
     // Actualiza textos básicos
     document.title = `${p.brand} ${p.name} | Panisse Óptica`;
@@ -753,6 +682,22 @@ async function initProductPage() {
       mainImg.src = p.image || p.placeholder;
       mainImg.alt = `${p.brand} ${p.name}`;
       mainImg.style.opacity = '1';
+      // Añadir fallback si la imagen real no carga
+      const fallback = p.placeholder || `https://placehold.co/900x720/0d0d0d/c7dbd6?text=${encodeURIComponent(p.brand)}`;
+      mainImg.onerror = function() { this.src = fallback; this.onerror = null; };
+    }
+
+    // Badge "Nuevo" (dinámico)
+    const galleryMain = document.querySelector('.product-gallery__main');
+    if (galleryMain) {
+      const existingBadge = galleryMain.querySelector('.product-gallery__badge');
+      if (existingBadge) existingBadge.remove();
+      if (p.is_new) {
+        const badge = document.createElement('div');
+        badge.className = 'product-gallery__badge';
+        badge.textContent = 'Nuevo';
+        galleryMain.insertBefore(badge, galleryMain.querySelector('.product-gallery__zoom'));
+      }
     }
 
     // Especificaciones técnicas
@@ -774,12 +719,16 @@ async function initProductPage() {
       // Si no hay galería, usamos al menos la imagen principal como miniatura
       const galleryImages = (p.gallery && p.gallery.length > 0) ? p.gallery : [p.image || p.placeholder];
       
-      console.log('Poblando galería...', galleryImages.length, 'imágenes');
+
+      const fallbackSrc = p.placeholder || `https://placehold.co/600x480/0d0d0d/c7dbd6?text=${encodeURIComponent(p.brand)}`;
       thumbsContainer.innerHTML = galleryImages.map((img, idx) => `
         <button class="product-gallery__thumb ${idx === 0 ? 'is-active' : ''}" 
-                data-img="${img}" 
+                data-img="${img}"
+                data-fallback="${fallbackSrc}"
                 aria-label="Ver imagen ${idx + 1}">
-          <img src="${img}" alt="${p.brand} ${p.name} vista ${idx + 1}" onload="this.classList.add('is-loaded')" />
+          <img src="${img}" alt="${p.brand} ${p.name} vista ${idx + 1}"
+               onload="this.classList.add('is-loaded')"
+               onerror="this.src=this.closest('button').dataset.fallback; this.classList.add('is-loaded')" />
         </button>
       `).join('');
 
@@ -787,7 +736,7 @@ async function initProductPage() {
       thumbs.forEach(btn => {
         btn.addEventListener('click', () => {
           const newSrc = btn.dataset.img;
-          console.log('Cambio imagen a:', newSrc);
+
           thumbs.forEach(t => t.classList.remove('is-active'));
           btn.classList.add('is-active');
           if (mainImg) {
@@ -809,10 +758,10 @@ async function initProductPage() {
     const lightboxClose = document.querySelector('.product-lightbox__close');
 
     if (zoomBtn && lightbox && lightboxImg) {
-      console.log('Zoom configurado correctamente.');
+
       zoomBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        console.log('Zoom click! Imagen:', mainImg.src);
+
         lightboxImg.src = mainImg.src;
         lightbox.classList.add('is-active');
         document.body.style.overflow = 'hidden';
