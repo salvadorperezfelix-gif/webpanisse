@@ -296,10 +296,9 @@ if (newsletterForm) {
           <div class="product-card__image-wrap">
             <img src="${imgSrc}"
                  alt="${p.brand} ${p.name} — ${p.variant}"
-                 class="product-card__image"
-                 loading="lazy"
-                 onload="this.classList.add('is-loaded')"
-                 onerror="this.src='${p.placeholder || imgSrc}'; this.classList.add('is-loaded')" />
+                 class="product-card__image is-loaded"
+                 loading="eager"
+                 onerror="this.src='${p.placeholder}'; this.onerror=null;" />
             ${badge}
             <!-- Favoritos desactivado -->
           </div>
