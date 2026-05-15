@@ -659,6 +659,16 @@ async function initProductPage() {
     // Actualiza textos básicos
     document.title = `${p.brand} ${p.name} | Panisse Óptica`;
     
+    const breadType = document.getElementById('breadcrumb-type');
+    if (breadType) {
+      breadType.textContent = p.type === 'sol' ? 'De Sol' : 'Graduadas';
+      breadType.href = `catalogo.html?tipo=${p.type}`;
+    }
+    const breadBrand = document.getElementById('breadcrumb-brand');
+    if (breadBrand) {
+      breadBrand.textContent = p.brand;
+      breadBrand.href = `catalogo.html?marca=${p.brand_slug}`;
+    }
     const breadProduct = document.getElementById('breadcrumb-product');
     if (breadProduct) breadProduct.textContent = p.name;
     
