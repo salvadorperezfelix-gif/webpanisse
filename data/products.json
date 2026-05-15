@@ -60,7 +60,8 @@
     "placeholder": "https://placehold.co/600x480/e8e4f4/8070b0?text=Swarovski",
     "image": "assets/img/products/swarovski/swarovski-sk6015.webp",
     "is_new": true,
-    "description": "Elegancia y brillo se unen en este modelo de Swarovski con detalles de cristal en las varillas."
+    "description": "Elegancia y brillo se unen en este modelo de Swarovski con detalles de cristal en las varillas.",
+    "specs": { "genero": "Mujer" }
   },
   {
     "id": "swarovski-sk7019",
@@ -73,7 +74,8 @@
     "placeholder": "https://placehold.co/600x480/f0ecf8/6a5a9a?text=Swarovski",
     "image": "assets/img/products/swarovski/swarovski-sk7019.webp",
     "is_new": false,
-    "description": "La montura SK7019 combina la ligereza del titanio con el brillo inconfundible de los cristales Swarovski."
+    "description": "La montura SK7019 combina la ligereza del titanio con el brillo inconfundible de los cristales Swarovski.",
+    "specs": { "genero": "Mujer" }
   },
   {
     "id": "emporio-armani-ea2144",
@@ -138,7 +140,8 @@
     "placeholder": "https://placehold.co/600x480/0d0d0d/c7dbd6?text=Panisse+Boutique",
     "image": "assets/img/products/panisse-boutique/panisse-boutique-lumiere.webp",
     "is_new": true,
-    "description": "Nuestra pieza estrella de la colección boutique. Fabricada a mano con acetato italiano de primera calidad."
+    "description": "Nuestra pieza estrella de la colección boutique. Fabricada a mano con acetato italiano de primera calidad.",
+    "specs": { "genero": "Mujer" }
   },
   {
     "id": "panisse-classic-i",
@@ -151,7 +154,8 @@
     "placeholder": "https://placehold.co/600x480/e8e4d8/4a3a2a?text=Panisse",
     "image": "assets/img/products/panisse/panisse-classic-i.webp",
     "is_new": true,
-    "description": "La montura que define la línea Panisse: proporciones clásicas, acabados artesanales y una versatilidad sin igual."
+    "description": "La montura que define la línea Panisse: proporciones clásicas, acabados artesanales y una versatilidad sin igual.",
+    "specs": { "genero": "Mujer" }
   },
   {
     "id": "panisse-edition-or",

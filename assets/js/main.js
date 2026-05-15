@@ -261,8 +261,12 @@ if (newsletterForm) {
 
   /* ── Lee URL params al cargar ─────────────────────────── */
   const params = new URLSearchParams(window.location.search);
-  if (params.get('tipo'))  state.type   = params.get('tipo');
-  if (params.get('marca')) state.brands = [params.get('marca')];
+  if (params.get('tipo'))   state.type   = params.get('tipo');
+  if (params.get('marca'))  state.brands = [params.get('marca')];
+  if (params.get('genero')) {
+    const g = params.get('genero');
+    state.gender = g.charAt(0).toUpperCase() + g.slice(1);
+  }
 
   /* ── Renderiza un skeleton mientras carga ─────────────── */
   function showSkeletons(n) {
@@ -337,7 +341,7 @@ if (newsletterForm) {
     const all      = [...grid.querySelectorAll('.product-card:not(.product-card--skeleton)')];
     const filtered = all.filter(c => {
       const matchType   = state.type === 'todos' || c.dataset.type === state.type;
-      const matchGender = state.gender === 'todos' || c.dataset.gender === state.gender;
+      const matchGender = state.gender === 'todos' || !c.dataset.gender || c.dataset.gender === state.gender;
       const matchBrand  = state.brands.length === 0 || state.brands.includes(c.dataset.brand);
       return matchType && matchGender && matchBrand;
     });
@@ -431,7 +435,7 @@ if (newsletterForm) {
   });
 
   const doClear = () => {
-    state = { type: 'todos', brands: [], sort: 'new', page: PAGE_SIZE };
+    state = { type: 'todos', gender: 'todos', brands: [], sort: 'new', page: PAGE_SIZE };
     syncUI();
     applyFilters();
   };
