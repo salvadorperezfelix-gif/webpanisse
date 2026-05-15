@@ -803,6 +803,40 @@ async function initProductPage() {
     const colorLabel = document.getElementById('color-label');
     if (colorLabel) colorLabel.textContent = p.variant;
 
+    // Productos relacionados (dinámicos)
+    const relatedGrid = document.getElementById('related-grid');
+    if (relatedGrid) {
+      const related = products
+        .filter(item => item.id !== productId)
+        .sort((a, b) => {
+          const score = x => (x.type === p.type ? 2 : 0) + (x.brand_slug === p.brand_slug ? 1 : 0);
+          return score(b) - score(a);
+        })
+        .slice(0, 3);
+
+      relatedGrid.innerHTML = related.map(r => {
+        const imgSrc = r.image || r.placeholder;
+        const fallback = r.placeholder || `https://placehold.co/600x480/f0ece6/aaaaaa?text=${encodeURIComponent(r.brand)}`;
+        const typeLabel = r.type === 'sol' ? 'Sol' : 'Graduadas';
+        return `
+          <article class="product-card">
+            <a href="producto.html?id=${r.id}" class="product-card__link">
+              <div class="product-card__image-wrap">
+                <img src="${imgSrc}" alt="${r.brand} ${r.name}" class="product-card__image" loading="lazy"
+                     onerror="this.src='${fallback}';this.onerror=null"/>
+                ${r.is_new ? '<div class="product-card__badge">Nuevo</div>' : ''}
+              </div>
+              <div class="product-card__info">
+                <span class="product-card__brand">${r.brand}</span>
+                <h3 class="product-card__name">${r.name}</h3>
+                <span class="product-card__variant">${typeLabel} · ${r.variant}</span>
+                <p class="product-card__price">${r.price} €</p>
+              </div>
+            </a>
+          </article>`;
+      }).join('');
+    }
+
   } catch (err) {
     console.error('Error crítico en initProductPage:', err);
   }
