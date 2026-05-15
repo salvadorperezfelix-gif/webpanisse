@@ -168,6 +168,30 @@
     }
   },
   {
+    "id": "panisse-jade",
+    "name": "Jade",
+    "brand": "Panisse",
+    "brand_slug": "panisse",
+    "type": "graduadas",
+    "price": 75,
+    "variant": "Verde Esmeralda / Crystal",
+    "placeholder": "https://placehold.co/600x480/1a6b4a/ffffff?text=Panisse+Jade",
+    "image": "assets/img/products/panisse/panisse-jade-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse/panisse-jade-1.jpg",
+      "assets/img/products/panisse/panisse-jade-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La montura Jade de Panisse convierte el color en protagonista con su acetato verde esmeralda transparente — una pieza que transforma la luz en materia y refleja la naturaleza en cada ángulo. Su silueta cuadrada de vértices redondeados proyecta una presencia equilibrada y contemporánea, con la personalidad suficiente para distinguirse sin estridencia. Para el hombre que encuentra en el color una declaración de carácter.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "50 mm",
+      "puente": "21 mm",
+      "varilla": "148 mm",
+      "genero": "Hombre"
+    }
+  },
+  {
     "id": "panisse-classic-i",
     "name": "Classic I",
     "brand": "Panisse",
