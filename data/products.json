@@ -130,6 +130,30 @@
     "description": "Lentes polarizadas de alta calidad que eliminan el deslumbramiento. Perfectas para actividades al aire libre."
   },
   {
+    "id": "panisse-boutique-baron",
+    "name": "Baron",
+    "brand": "Panisse Boutique",
+    "brand_slug": "panisse-boutique",
+    "type": "graduadas",
+    "price": 99,
+    "variant": "Havana / Or",
+    "placeholder": "https://placehold.co/600x480/3a2510/c8a84c?text=Panisse+Boutique",
+    "image": "assets/img/products/panisse-boutique/panisse-boutique-baron-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse-boutique/panisse-boutique-baron-1.jpg",
+      "assets/img/products/panisse-boutique/panisse-boutique-baron-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La montura Baron de Panisse Boutique impone presencia con su acetato carey de profundidad artesanal — un patrón que oscila entre el ámbar cálido y el marrón oscuro, completado por detalles dorados en el arranque de las varillas. Su silueta rectangular de frente recto y proporciones amplias proyecta una autoridad silenciosa y contemporánea. Para el hombre que construye su imagen sobre la solidez de las formas clásicas.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "55 mm",
+      "puente": "19 mm",
+      "varilla": "140 mm",
+      "genero": "Hombre"
+    }
+  },
+  {
     "id": "panisse-boutique-lumiere",
     "name": "Lumière",
     "brand": "Panisse Boutique",
