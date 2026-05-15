@@ -822,7 +822,8 @@ async function initProductPage() {
           <article class="product-card">
             <a href="producto.html?id=${r.id}" class="product-card__link">
               <div class="product-card__image-wrap">
-                <img src="${imgSrc}" alt="${r.brand} ${r.name}" class="product-card__image" loading="lazy"
+                <img src="${imgSrc}" alt="${r.brand} ${r.name}" class="product-card__image is-loaded"
+                     loading="eager"
                      onerror="this.src='${fallback}';this.onerror=null"/>
                 ${r.is_new ? '<div class="product-card__badge">Nuevo</div>' : ''}
               </div>
