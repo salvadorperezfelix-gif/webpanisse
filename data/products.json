@@ -50,6 +50,31 @@
     "description": "La Wayfarer es sinónimo de cultura pop y rebeldía clásica desde 1952. Un clásico reinventado para cada generación."
   },
   {
+    "id": "swarovski-sk2020",
+    "name": "SK2020",
+    "brand": "Swarovski",
+    "brand_slug": "swarovski",
+    "type": "graduadas",
+    "price": 149,
+    "variant": "Havana / Crystal",
+    "placeholder": "https://placehold.co/600x480/e8e4f4/8070b0?text=Swarovski",
+    "image": "assets/img/products/swarovski/swarovski-sk2020-1.jpg",
+    "gallery": [
+      "assets/img/products/swarovski/swarovski-sk2020-1.jpg",
+      "assets/img/products/swarovski/swarovski-sk2020-2.jpg",
+      "assets/img/products/swarovski/swarovski-sk2020-3.jpg"
+    ],
+    "is_new": true,
+    "description": "La SK2020 fusiona el calor del acetato havana con el brillo de los cristales Swarovski engastados en las bisagras doradas. Su silueta butterfly de proporciones generosas enmarca el rostro con feminidad y presencia. Un acetato de profundidad carey que cambia con la luz, elevado por los destellos inconfundibles de la maison.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "54 mm",
+      "puente": "18 mm",
+      "varilla": "140 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
     "id": "swarovski-sk1024",
     "name": "SK1024",
     "brand": "Swarovski",
