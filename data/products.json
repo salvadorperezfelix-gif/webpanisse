@@ -50,6 +50,30 @@
     "description": "La Wayfarer es sinónimo de cultura pop y rebeldía clásica desde 1952. Un clásico reinventado para cada generación."
   },
   {
+    "id": "swarovski-sk1018",
+    "name": "SK1018",
+    "brand": "Swarovski",
+    "brand_slug": "swarovski",
+    "type": "graduadas",
+    "price": 159,
+    "variant": "Or / Lila",
+    "placeholder": "https://placehold.co/600x480/e8e4f4/8070b0?text=Swarovski",
+    "image": "assets/img/products/swarovski/swarovski-sk1018-1.jpg",
+    "gallery": [
+      "assets/img/products/swarovski/swarovski-sk1018-1.jpg",
+      "assets/img/products/swarovski/swarovski-sk1018-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La SK1018 combina el metal dorado satinado con varillas en lila translúcido que aportan un toque de color inesperado y muy femenino. Su silueta cat-eye geométrica de líneas angulares y el cristal Swarovski engastado en la bisagra convierten cada detalle en un guiño de distinción. Una montura que equilibra la calidez del oro con la ligereza del color.",
+    "specs": {
+      "material": "Metal",
+      "calibre": "55 mm",
+      "puente": "19 mm",
+      "varilla": "140 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
     "id": "swarovski-sk2065",
     "name": "SK2065",
     "brand": "Swarovski",
