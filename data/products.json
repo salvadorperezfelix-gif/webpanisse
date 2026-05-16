@@ -50,6 +50,29 @@
     "description": "La Wayfarer es sinónimo de cultura pop y rebeldía clásica desde 1952. Un clásico reinventado para cada generación."
   },
   {
+    "id": "swarovski-sk6016",
+    "name": "SK6016",
+    "brand": "Swarovski",
+    "brand_slug": "swarovski",
+    "type": "sol",
+    "price": 249,
+    "variant": "Havana / Marrón Degradado",
+    "placeholder": "https://placehold.co/600x480/e8e4f4/8070b0?text=Swarovski",
+    "image": "assets/img/products/swarovski/swarovski-sk6016-1.jpg",
+    "gallery": [
+      "assets/img/products/swarovski/swarovski-sk6016-1.jpg",
+      "assets/img/products/swarovski/swarovski-sk6016-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La SK6016 reinterpreta el icónico cat-eye con una silueta angular y atrevida en acetato havana de manchas amieladas. Los cristales Swarovski incrustados en las varillas aportan ese destello inconfundible de la maison. Una montura de sol que combina audacia y feminidad con la artesanía que caracteriza a Swarovski.",
+    "specs": {
+      "calibre": "56 mm",
+      "puente": "18 mm",
+      "varilla": "140 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
     "id": "swarovski-sk6015",
     "name": "SK6015",
     "brand": "Swarovski",
