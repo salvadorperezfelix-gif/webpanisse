@@ -50,6 +50,30 @@
     "description": "La Wayfarer es sinónimo de cultura pop y rebeldía clásica desde 1952. Un clásico reinventado para cada generación."
   },
   {
+    "id": "swarovski-sk6036u",
+    "name": "SK6036U",
+    "brand": "Swarovski",
+    "brand_slug": "swarovski",
+    "type": "sol",
+    "price": 400,
+    "variant": "Negro / Gris Oscuro",
+    "placeholder": "https://placehold.co/600x480/e8e4f4/8070b0?text=Swarovski",
+    "image": "assets/img/products/swarovski/swarovski-sk6036u-1.jpg",
+    "gallery": [
+      "assets/img/products/swarovski/swarovski-sk6036u-1.jpg",
+      "assets/img/products/swarovski/swarovski-sk6036u-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La pieza más especial de la colección Swarovski de este año. La SK6036U viene con una cadena dorada incluida que atraviesa el frontal de cristal a cristal — un accesorio que es parte inseparable del diseño, no un añadido. El acetato negro de corte cat-eye y el gran cristal Swarovski engastado en las bisagras hacen de esta montura una declaración de intenciones: para llevar y para admirar. Una joya de sol que no pasará desapercibida.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "50 mm",
+      "puente": "20 mm",
+      "varilla": "135 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
     "id": "swarovski-sk7045d",
     "name": "SK7045D",
     "brand": "Swarovski",
