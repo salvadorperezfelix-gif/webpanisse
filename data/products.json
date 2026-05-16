@@ -50,6 +50,30 @@
     "description": "La Wayfarer es sinónimo de cultura pop y rebeldía clásica desde 1952. Un clásico reinventado para cada generación."
   },
   {
+    "id": "swarovski-sk7042",
+    "name": "SK7042",
+    "brand": "Swarovski",
+    "brand_slug": "swarovski",
+    "type": "sol",
+    "price": 229,
+    "variant": "Or / Marrón",
+    "placeholder": "https://placehold.co/600x480/e8e4f4/8070b0?text=Swarovski",
+    "image": "assets/img/products/swarovski/swarovski-sk7042-1.jpg",
+    "gallery": [
+      "assets/img/products/swarovski/swarovski-sk7042-1.jpg",
+      "assets/img/products/swarovski/swarovski-sk7042-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La SK7042 destila una elegancia depurada en metal dorado: su silueta oval angular y sus lentes marrones de tono cálido crean una armonía luminosa que evoca la joyería de alta gama. Los detalles Swarovski en las bisagras añaden ese punto de brillo inconfundible sin renunciar a la sobriedad. Para la mujer que encuentra en el oro su material favorito.",
+    "specs": {
+      "material": "Metal",
+      "calibre": "55 mm",
+      "puente": "17 mm",
+      "varilla": "140 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
     "id": "swarovski-sk6016",
     "name": "SK6016",
     "brand": "Swarovski",
