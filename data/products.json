@@ -50,6 +50,30 @@
     "description": "La Wayfarer es sinónimo de cultura pop y rebeldía clásica desde 1952. Un clásico reinventado para cada generación."
   },
   {
+    "id": "swarovski-sk1024",
+    "name": "SK1024",
+    "brand": "Swarovski",
+    "brand_slug": "swarovski",
+    "type": "graduadas",
+    "price": 229,
+    "variant": "Plata / Crystal Azul",
+    "placeholder": "https://placehold.co/600x480/e8e4f4/8070b0?text=Swarovski",
+    "image": "assets/img/products/swarovski/swarovski-sk1024-1.jpg",
+    "gallery": [
+      "assets/img/products/swarovski/swarovski-sk1024-1.jpg",
+      "assets/img/products/swarovski/swarovski-sk1024-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La SK1024 lleva la joyería a la óptica: su silueta cat-eye en metal plateado queda coronada por una cascada de cristales Swarovski en azul zafiro y blanco que recorre toda la varilla. Ligera y de líneas depuradas, combina la delicadeza de un metal finísimo con el brillo inconfundible de la maison. Para la mujer que quiere que sus gafas sean también una joya.",
+    "specs": {
+      "material": "Metal",
+      "calibre": "53 mm",
+      "puente": "19 mm",
+      "varilla": "140 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
     "id": "swarovski-sk7042",
     "name": "SK7042",
     "brand": "Swarovski",
