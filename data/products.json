@@ -24,30 +24,28 @@
     }
   },
   {
-    "id": "ray-ban-aviator-classic",
-    "name": "Aviator Classic",
-    "brand": "Ray-Ban",
-    "brand_slug": "ray-ban",
-    "type": "sol",
-    "price": 159,
-    "variant": "Oro / Verde G15",
-    "placeholder": "https://placehold.co/600x480/c8200c/ffffff?text=Ray-Ban",
-    "image": "assets/img/products/ray-ban/ray-ban-aviator-classic.webp",
+    "id": "swarovski-sk2017",
+    "name": "SK2017",
+    "brand": "Swarovski",
+    "brand_slug": "swarovski",
+    "type": "graduadas",
+    "price": 189,
+    "variant": "Burdeos / Or",
+    "placeholder": "https://placehold.co/600x480/e8e4f4/8070b0?text=Swarovski",
+    "image": "assets/img/products/swarovski/swarovski-sk2017-1.jpg",
+    "gallery": [
+      "assets/img/products/swarovski/swarovski-sk2017-1.jpg",
+      "assets/img/products/swarovski/swarovski-sk2017-2.jpg"
+    ],
     "is_new": true,
-    "description": "El modelo Aviator Classic es uno de los diseños más icónicos del mundo. Originalmente diseñado para los aviadores estadounidenses en 1937."
-  },
-  {
-    "id": "ray-ban-wayfarer-rb2140",
-    "name": "Wayfarer RB2140",
-    "brand": "Ray-Ban",
-    "brand_slug": "ray-ban",
-    "type": "sol",
-    "price": 169,
-    "variant": "Negro / Lente Gris",
-    "placeholder": "https://placehold.co/600x480/1a1a1a/c8200c?text=Ray-Ban",
-    "image": "assets/img/products/ray-ban/ray-ban-wayfarer-rb2140.webp",
-    "is_new": false,
-    "description": "La Wayfarer es sinónimo de cultura pop y rebeldía clásica desde 1952. Un clásico reinventado para cada generación."
+    "description": "La SK2017 combina un frontal de acetato burdeos profundo con unas varillas de metal dorado fino — un contraste que funciona exactamente porque no pide permiso. Su silueta rectangular con un leve alzado en los extremos alarga la mirada con elegancia, mientras el cristal Swarovski engastado en la bisagra añade el punto de luz justo. Para la mujer que lleva el rojo con intención.",
+    "specs": {
+      "material": "Acetato y Metal",
+      "calibre": "52 mm",
+      "puente": "17 mm",
+      "varilla": "140 mm",
+      "genero": "Mujer"
+    }
   },
   {
     "id": "swarovski-sk6044u",
@@ -314,86 +312,6 @@
     }
   },
   {
-    "id": "swarovski-sk6015",
-    "name": "SK6015",
-    "brand": "Swarovski",
-    "brand_slug": "swarovski",
-    "type": "sol",
-    "price": 249,
-    "variant": "Crystal Rose",
-    "placeholder": "https://placehold.co/600x480/e8e4f4/8070b0?text=Swarovski",
-    "image": "assets/img/products/swarovski/swarovski-sk6015.webp",
-    "is_new": true,
-    "description": "Elegancia y brillo se unen en este modelo de Swarovski con detalles de cristal en las varillas.",
-    "specs": { "genero": "Mujer" }
-  },
-  {
-    "id": "swarovski-sk7019",
-    "name": "SK7019",
-    "brand": "Swarovski",
-    "brand_slug": "swarovski",
-    "type": "graduadas",
-    "price": 289,
-    "variant": "Oro Rosa / Crystal",
-    "placeholder": "https://placehold.co/600x480/f0ecf8/6a5a9a?text=Swarovski",
-    "image": "assets/img/products/swarovski/swarovski-sk7019.webp",
-    "is_new": false,
-    "description": "La montura SK7019 combina la ligereza del titanio con el brillo inconfundible de los cristales Swarovski.",
-    "specs": { "genero": "Mujer" }
-  },
-  {
-    "id": "emporio-armani-ea2144",
-    "name": "EA2144",
-    "brand": "Emporio Armani",
-    "brand_slug": "emporio-armani",
-    "type": "sol",
-    "price": 195,
-    "variant": "Negro / Gris Degradado",
-    "placeholder": "https://placehold.co/600x480/1a1a1a/c8b090?text=Emporio+Armani",
-    "image": "assets/img/products/emporio-armani/emporio-armani-ea2144.webp",
-    "is_new": true,
-    "description": "Líneas depuradas y el sello inconfundible de Armani. Un clásico contemporáneo para el día a día."
-  },
-  {
-    "id": "emporio-armani-ea3240",
-    "name": "EA3240",
-    "brand": "Emporio Armani",
-    "brand_slug": "emporio-armani",
-    "type": "graduadas",
-    "price": 215,
-    "variant": "Havana / Or",
-    "placeholder": "https://placehold.co/600x480/2e2420/c8b090?text=Emporio+Armani",
-    "image": "assets/img/products/emporio-armani/emporio-armani-ea3240.webp",
-    "is_new": false,
-    "description": "Montura de acetato con silueta rectangular y detalles metálicos. La elegancia italiana aplicada a las gafas graduadas."
-  },
-  {
-    "id": "mr-boho-dalston",
-    "name": "Dalston",
-    "brand": "Mr. Boho",
-    "brand_slug": "mr-boho",
-    "type": "sol",
-    "price": 99,
-    "variant": "Havana / Marrón",
-    "placeholder": "https://placehold.co/600x480/c8a070/5a3010?text=Mr.+Boho",
-    "image": "assets/img/products/mr-boho/mr-boho-dalston.webp",
-    "is_new": true,
-    "description": "Estilo urbano y cosmopolita. La marca madrileña Mr. Boho ofrece diseño de tendencia a un precio imbatible."
-  },
-  {
-    "id": "polaroid-pld-6067",
-    "name": "PLD 6067/G/S",
-    "brand": "Polaroid",
-    "brand_slug": "polaroid",
-    "type": "sol",
-    "price": 79,
-    "variant": "Azul / Lente Polarizada",
-    "placeholder": "https://placehold.co/600x480/1a4a8a/c8e0ff?text=Polaroid",
-    "image": "assets/img/products/polaroid/polaroid-pld-6067.webp",
-    "is_new": false,
-    "description": "Lentes polarizadas de alta calidad que eliminan el deslumbramiento. Perfectas para actividades al aire libre."
-  },
-  {
     "id": "panisse-boutique-baron",
     "name": "Baron",
     "brand": "Panisse Boutique",
@@ -416,20 +334,6 @@
       "varilla": "140 mm",
       "genero": "Hombre"
     }
-  },
-  {
-    "id": "panisse-boutique-lumiere",
-    "name": "Lumière",
-    "brand": "Panisse Boutique",
-    "brand_slug": "panisse-boutique",
-    "type": "graduadas",
-    "price": 485,
-    "variant": "Carey / Or",
-    "placeholder": "https://placehold.co/600x480/0d0d0d/c7dbd6?text=Panisse+Boutique",
-    "image": "assets/img/products/panisse-boutique/panisse-boutique-lumiere.webp",
-    "is_new": true,
-    "description": "Nuestra pieza estrella de la colección boutique. Fabricada a mano con acetato italiano de primera calidad.",
-    "specs": { "genero": "Mujer" }
   },
   {
     "id": "panisse-aviateur",
@@ -478,45 +382,5 @@
       "varilla": "148 mm",
       "genero": "Hombre"
     }
-  },
-  {
-    "id": "panisse-classic-i",
-    "name": "Classic I",
-    "brand": "Panisse",
-    "brand_slug": "panisse",
-    "type": "graduadas",
-    "price": 295,
-    "variant": "Nude / Or",
-    "placeholder": "https://placehold.co/600x480/e8e4d8/4a3a2a?text=Panisse",
-    "image": "assets/img/products/panisse/panisse-classic-i.webp",
-    "is_new": true,
-    "description": "La montura que define la línea Panisse: proporciones clásicas, acabados artesanales y una versatilidad sin igual.",
-    "specs": { "genero": "Mujer" }
-  },
-  {
-    "id": "panisse-edition-or",
-    "name": "Edition Or",
-    "brand": "Panisse",
-    "brand_slug": "panisse",
-    "type": "sol",
-    "price": 340,
-    "variant": "Or / Lente Gris",
-    "placeholder": "https://placehold.co/600x480/c9a84c/0d0d0d?text=Panisse",
-    "image": "assets/img/products/panisse/panisse-edition-or.webp",
-    "is_new": false,
-    "description": "Montura de sol con varillas doradas y lente gris degradado. Elegancia atemporal para las horas de luz."
-  },
-  {
-    "id": "panisse-kids-star",
-    "name": "Kids Star",
-    "brand": "Panisse Kids",
-    "brand_slug": "panisse-kids",
-    "type": "graduadas",
-    "price": 115,
-    "variant": "Azul Cielo / Crystal",
-    "placeholder": "https://placehold.co/600x480/6ac0f0/ffffff?text=Panisse+Kids",
-    "image": "assets/img/products/panisse-kids/panisse-kids-star.webp",
-    "is_new": false,
-    "description": "Montura infantil diseñada para el confort y la durabilidad. Materiales hipoalergénicos y ajuste perfecto."
   }
 ]
