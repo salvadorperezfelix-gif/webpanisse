@@ -50,6 +50,30 @@
     "description": "La Wayfarer es sinónimo de cultura pop y rebeldía clásica desde 1952. Un clásico reinventado para cada generación."
   },
   {
+    "id": "swarovski-sk6044u",
+    "name": "SK6044U",
+    "brand": "Swarovski",
+    "brand_slug": "swarovski",
+    "type": "sol",
+    "price": 229,
+    "variant": "Havana Azul / Gris Degradado",
+    "placeholder": "https://placehold.co/600x480/e8e4f4/8070b0?text=Swarovski",
+    "image": "assets/img/products/swarovski/swarovski-sk6044u-1.jpg",
+    "gallery": [
+      "assets/img/products/swarovski/swarovski-sk6044u-1.jpg",
+      "assets/img/products/swarovski/swarovski-sk6044u-2.jpg"
+    ],
+    "is_new": true,
+    "description": "Un cat-eye con carácter propio. La SK6044U combina el acetato havana azul —ese marmoleado profundo de azules y grises— con una silueta angular que alarga la mirada. El cristal Swarovski engastado en la patilla añade el punto de luz que distingue a esta montura del resto: sutil de frente, brillante en movimiento. Lentes degradadas en gris con protección UV400. Elegancia con un toque de audacia.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "56 mm",
+      "puente": "18 mm",
+      "varilla": "130 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
     "id": "swarovski-sk6036u",
     "name": "SK6036U",
     "brand": "Swarovski",
