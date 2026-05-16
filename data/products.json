@@ -50,6 +50,30 @@
     "description": "La Wayfarer es sinónimo de cultura pop y rebeldía clásica desde 1952. Un clásico reinventado para cada generación."
   },
   {
+    "id": "swarovski-sk7045d",
+    "name": "SK7045D",
+    "brand": "Swarovski",
+    "brand_slug": "swarovski",
+    "type": "sol",
+    "price": 189,
+    "variant": "Or Rosa / Marrón Rosa",
+    "placeholder": "https://placehold.co/600x480/e8e4f4/8070b0?text=Swarovski",
+    "image": "assets/img/products/swarovski/swarovski-sk7045d-1.jpg",
+    "gallery": [
+      "assets/img/products/swarovski/swarovski-sk7045d-1.jpg",
+      "assets/img/products/swarovski/swarovski-sk7045d-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La SK7045D lleva el lujo al límite de lo invisible: sin aro, en metal oro rosa y lentes ovaladas en marrón rosado que envuelven la mirada con una calidez íntima. Los pequeños cristales de perla Swarovski que recorren el puente son el único ornamento — suficiente para convertir esta montura en joya. Para la mujer que encuentra el máximo atrevimiento en la sutileza.",
+    "specs": {
+      "material": "Metal / Sin aro",
+      "calibre": "57 mm",
+      "puente": "16 mm",
+      "varilla": "140 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
     "id": "swarovski-sk1037",
     "name": "SK1037",
     "brand": "Swarovski",
