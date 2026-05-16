@@ -50,6 +50,30 @@
     "description": "La Wayfarer es sinónimo de cultura pop y rebeldía clásica desde 1952. Un clásico reinventado para cada generación."
   },
   {
+    "id": "swarovski-sk2048",
+    "name": "SK2048",
+    "brand": "Swarovski",
+    "brand_slug": "swarovski",
+    "type": "graduadas",
+    "price": 149,
+    "variant": "Crystal / Transparente",
+    "placeholder": "https://placehold.co/600x480/e8e4f4/8070b0?text=Swarovski",
+    "image": "assets/img/products/swarovski/swarovski-sk2048-1.jpg",
+    "gallery": [
+      "assets/img/products/swarovski/swarovski-sk2048-1.jpg",
+      "assets/img/products/swarovski/swarovski-sk2048-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La SK2048 desaparece sobre el rostro para dejar que brillen los cristales Swarovski. Su acetato completamente transparente y su silueta cuadrada de proporciones generosas crean una montura de presencia sutil pero inequívoca — los detalles en plata y azul de las bisagras son el único guiño de color. Para quien quiere unas gafas que se noten por lo que no se ve.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "50 mm",
+      "puente": "19 mm",
+      "varilla": "140 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
     "id": "swarovski-sk1018",
     "name": "SK1018",
     "brand": "Swarovski",
