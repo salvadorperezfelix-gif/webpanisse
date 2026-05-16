@@ -50,6 +50,30 @@
     "description": "La Wayfarer es sinónimo de cultura pop y rebeldía clásica desde 1952. Un clásico reinventado para cada generación."
   },
   {
+    "id": "swarovski-sk2065",
+    "name": "SK2065",
+    "brand": "Swarovski",
+    "brand_slug": "swarovski",
+    "type": "graduadas",
+    "price": 149,
+    "variant": "Negro / Crystal",
+    "placeholder": "https://placehold.co/600x480/e8e4f4/8070b0?text=Swarovski",
+    "image": "assets/img/products/swarovski/swarovski-sk2065-1.jpg",
+    "gallery": [
+      "assets/img/products/swarovski/swarovski-sk2065-1.jpg",
+      "assets/img/products/swarovski/swarovski-sk2065-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La SK2065 en negro intenso es la versión más depurada de la feminidad Swarovski. Su acetato negro de acabado pulido y su silueta cat-eye de vértices marcados proyectan una presencia rotunda, equilibrada por los cristales Swarovski en oro que coronan las bisagras. Una montura que funciona sola, sin necesidad de más.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "54 mm",
+      "puente": "17 mm",
+      "varilla": "140 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
     "id": "swarovski-sk2020",
     "name": "SK2020",
     "brand": "Swarovski",
