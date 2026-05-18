@@ -312,6 +312,30 @@
     }
   },
   {
+    "id": "emporio-armani-ea4266u",
+    "name": "EA4266U",
+    "brand": "Emporio Armani",
+    "brand_slug": "emporio-armani",
+    "type": "sol",
+    "price": 147,
+    "variant": "Gris Mate / Marrón",
+    "placeholder": "https://placehold.co/600x480/1a1a1a/c8b090?text=Emporio+Armani",
+    "image": "assets/img/products/emporio-armani/emporio-armani-ea4266u-1.jpg",
+    "gallery": [
+      "assets/img/products/emporio-armani/emporio-armani-ea4266u-1.jpg",
+      "assets/img/products/emporio-armani/emporio-armani-ea4266u-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La EA4266U lleva el espíritu deportivo al territorio del diseño italiano: acetato gris mate con silueta de aviador cuadrado y frente plano que recuerda a las gafas de esquí de los años setenta. Las lentes marrón de tono sólido y los interiores en carey crean un contraste cálido que equilibra la firmeza de la forma. Robusta, directa y reconocible — para el hombre que prefiere las cosas con carácter.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "55 mm",
+      "puente": "17 mm",
+      "varilla": "145 mm",
+      "genero": "Hombre"
+    }
+  },
+  {
     "id": "emporio-armani-ea4258",
     "name": "EA4258",
     "brand": "Emporio Armani",
