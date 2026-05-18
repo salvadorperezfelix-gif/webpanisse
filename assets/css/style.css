@@ -3845,8 +3845,11 @@ body, body.translated-ltr, body.translated-rtl { top: 0 !important; margin-top: 
     grid-template-columns: 1fr;
     min-height: auto;
   }
-  .contacto-info {
+  .contacto-form-col {
     padding-block-start: calc(60px + 40px);
+  }
+  .contacto-info {
+    padding-block-start: clamp(48px, 6vw, 80px);
   }
 }
 
