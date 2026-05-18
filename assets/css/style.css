@@ -905,6 +905,7 @@ a {
 .header__logo {
   grid-column: 2;
   justify-self: center;
+  padding-inline: 40px;
   font-family: 'Parisienne', cursive;
   font-size: clamp(22px, 2vw, 26px);
   color: inherit;
