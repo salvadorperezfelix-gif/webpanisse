@@ -1,5 +1,30 @@
 [
   {
+    "id": "mr-boho-barrosa-tortoise-cream",
+    "name": "Barrosa",
+    "brand": "Mr. Boho",
+    "brand_slug": "mr-boho",
+    "type": "sol",
+    "price": 65,
+    "variant": "Carey Oscuro / Crema",
+    "placeholder": "https://placehold.co/600x480/3a2010/f5f0e8?text=Mr.+Boho",
+    "image": "assets/img/products/mr-boho/mr-boho-barrosa-tortoise-cream-1.jpg",
+    "gallery": [
+      "assets/img/products/mr-boho/mr-boho-barrosa-tortoise-cream-1.jpg",
+      "assets/img/products/mr-boho/mr-boho-barrosa-tortoise-cream-2.jpg",
+      "assets/img/products/mr-boho/mr-boho-barrosa-tortoise-cream-3.jpg"
+    ],
+    "is_new": true,
+    "description": "La Barrosa de Mr. Boho lleva el contraste como seña de identidad: el carey oscuro del frontal —profundo, casi teatral— frente a las patillas en crema que lo suavizan con un gesto elegante. Una silueta angular de acetato grueso que toma prestado el espíritu del diseño italiano de los 70 y lo traduce al lenguaje de hoy. Lentes verdes oscuras Cat. 3 con protección UV400.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "49 mm",
+      "puente": "22 mm",
+      "varilla": "145 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
     "id": "mr-boho-solarte-hideout",
     "name": "Solarte",
     "brand": "Mr. Boho",
