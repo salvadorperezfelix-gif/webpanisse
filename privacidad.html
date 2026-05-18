@@ -138,6 +138,12 @@
       <nav class="header__nav-main" aria-label="Categorías principales">
         <ul class="header__nav-list">
 
+          <li class="nav-item nav-lang-toggle">
+            <button id="lang-toggle-btn" class="lang-flag-btn"
+                    onclick="panisseLangToggle()"
+                    aria-label="Switch language / Cambiar idioma">&#x1F1EC;&#x1F1E7;</button>
+          </li>
+
           <!-- Marcas -->
           <li class="nav-item has-dropdown">
             <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="marcas">
@@ -587,5 +593,39 @@
     <span class="whatsapp-float__tooltip">¿Hablamos?</span>
   </a>
   <script src="assets/js/main.js" defer></script>
+
+  <!-- ── Google Translate ── -->
+  <div id="google_translate_element" style="display:none" aria-hidden="true"></div>
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        { pageLanguage: 'es', includedLanguages: 'en', autoDisplay: false },
+        'google_translate_element'
+      );
+    }
+    (function () {
+      function getLang() {
+        var m = document.cookie.match(/googtrans=\/es\/(\w+)/);
+        return m ? m[1] : 'es';
+      }
+      window.panisseLangToggle = function () {
+        var next = getLang() === 'en' ? 'es' : 'en';
+        var val  = '/es/' + next;
+        var host = window.location.hostname;
+        document.cookie = 'googtrans=' + val + '; path=/; domain='  + host;
+        document.cookie = 'googtrans=' + val + '; path=/; domain=.' + host;
+        document.cookie = 'googtrans=' + val + '; path=/';
+        window.location.reload();
+      };
+      document.addEventListener('DOMContentLoaded', function () {
+        var btn  = document.getElementById('lang-toggle-btn');
+        if (!btn) return;
+        var lang = getLang();
+        btn.innerHTML = lang === 'en' ? '&#x1F1EA;&#x1F1F8;' : '&#x1F1EC;&#x1F1E7;';
+        btn.title     = lang === 'en' ? 'Cambiar a español'  : 'Switch to English';
+      });
+    })();
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
 </body>
 </html>
