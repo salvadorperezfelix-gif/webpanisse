@@ -312,6 +312,31 @@
     }
   },
   {
+    "id": "emporio-armani-ea4258",
+    "name": "EA4258",
+    "brand": "Emporio Armani",
+    "brand_slug": "emporio-armani",
+    "type": "graduadas",
+    "price": 179,
+    "variant": "Negro Mate / Gris Degradado",
+    "placeholder": "https://placehold.co/600x480/1a1a1a/c8b090?text=Emporio+Armani",
+    "image": "assets/img/products/emporio-armani/emporio-armani-ea4258-1.jpg",
+    "gallery": [
+      "assets/img/products/emporio-armani/emporio-armani-ea4258-1.jpg",
+      "assets/img/products/emporio-armani/emporio-armani-ea4258-2.jpg",
+      "assets/img/products/emporio-armani/emporio-armani-ea4258-3.jpg"
+    ],
+    "is_new": true,
+    "description": "La EA4258 es dos gafas en una: montura graduada de acetato negro mate con silueta rectangular y proporciones imponentes, más un clip magnético de sol incluido con lentes degradadas que se acopla en segundos. La etiqueta Armani Sustainability Values en la patilla refleja el compromiso de la firma con materiales de origen responsable. Para el hombre que no quiere llevar dos estuches.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "54 mm",
+      "puente": "17 mm",
+      "varilla": "145 mm",
+      "genero": "Hombre"
+    }
+  },
+  {
     "id": "emporio-armani-ea3276u",
     "name": "EA3276U",
     "brand": "Emporio Armani",
