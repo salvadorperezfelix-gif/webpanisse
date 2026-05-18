@@ -312,6 +312,30 @@
     }
   },
   {
+    "id": "emporio-armani-ea4270",
+    "name": "EA4270",
+    "brand": "Emporio Armani",
+    "brand_slug": "emporio-armani",
+    "type": "sol",
+    "price": 158,
+    "variant": "Azul Transparente / Gris",
+    "placeholder": "https://placehold.co/600x480/1a1a1a/c8b090?text=Emporio+Armani",
+    "image": "assets/img/products/emporio-armani/emporio-armani-ea4270-1.jpg",
+    "gallery": [
+      "assets/img/products/emporio-armani/emporio-armani-ea4270-1.jpg",
+      "assets/img/products/emporio-armani/emporio-armani-ea4270-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La EA4270 es Emporio Armani en estado puro: acetato de grosor generoso en azul transparente que deja ver la estructura interna de la montura — un detalle de manufactura que no pasa desapercibido. Su silueta rectangular de corte recto y proporciones amplias proyecta una presencia urbana y contemporánea, equilibrada por las lentes grises de tono uniforme. Para el hombre que lleva el diseño italiano con naturalidad.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "51 mm",
+      "puente": "19 mm",
+      "varilla": "145 mm",
+      "genero": "Hombre"
+    }
+  },
+  {
     "id": "panisse-boutique-baron",
     "name": "Baron",
     "brand": "Panisse Boutique",
