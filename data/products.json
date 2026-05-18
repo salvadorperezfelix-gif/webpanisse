@@ -312,6 +312,30 @@
     }
   },
   {
+    "id": "emporio-armani-ea4269",
+    "name": "EA4269",
+    "brand": "Emporio Armani",
+    "brand_slug": "emporio-armani",
+    "type": "sol",
+    "price": 137,
+    "variant": "Negro Mate / Gris",
+    "placeholder": "https://placehold.co/600x480/1a1a1a/c8b090?text=Emporio+Armani",
+    "image": "assets/img/products/emporio-armani/emporio-armani-ea4269-1.jpg",
+    "gallery": [
+      "assets/img/products/emporio-armani/emporio-armani-ea4269-1.jpg",
+      "assets/img/products/emporio-armani/emporio-armani-ea4269-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La EA4269 es la montura de sol para el hombre que no necesita llamar la atención para ser reconocido. Acetato negro mate en silueta cuadrada de proporciones amplias, lentes grises de tono uniforme y el águila Armani en metal sobre la patilla como único acento. Sin colores, sin florituras — solo forma y material bien resueltos.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "54 mm",
+      "puente": "20 mm",
+      "varilla": "145 mm",
+      "genero": "Hombre"
+    }
+  },
+  {
     "id": "emporio-armani-ea1027",
     "name": "EA1027",
     "brand": "Emporio Armani",
