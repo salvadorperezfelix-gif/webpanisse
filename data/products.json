@@ -1,5 +1,31 @@
 [
   {
+    "id": "mr-boho-coron",
+    "name": "Coron",
+    "brand": "Mr. Boho",
+    "brand_slug": "mr-boho",
+    "type": "sol",
+    "price": 65,
+    "variant": "Carey Oscuro / Crema",
+    "placeholder": "https://placehold.co/600x480/3d1f0a/f5f0e8?text=Mr.+Boho",
+    "image": "assets/img/products/mr-boho/mr-boho-coron-1.jpg",
+    "gallery": [
+      "assets/img/products/mr-boho/mr-boho-coron-1.jpg",
+      "assets/img/products/mr-boho/mr-boho-coron-2.jpg",
+      "assets/img/products/mr-boho/mr-boho-coron-3.jpg"
+    ],
+    "is_new": true,
+    "description": "La Coron lleva el contraste al extremo. Carey oscuro en el frente con patillas en crema marfil que cortan la silueta con precisión. Forma cat-eye moderna, con ese volumen de montura que domina sin estridencias. Lentes verdes oscuras Cat. 3 con protección UV400.",
+    "specs": {
+      "material": "Acetato",
+      "lente": "Verde oscuro Cat. 3",
+      "uv": "UV400",
+      "medidas": "53-23-145"
+    },
+    "genero": "mujer",
+    "tags": ["sol", "acetato", "carey", "cat-eye", "mr-boho"]
+  },
+  {
     "id": "mr-boho-logan",
     "name": "Logan",
     "brand": "Mr. Boho",
