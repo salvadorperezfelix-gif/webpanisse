@@ -312,6 +312,30 @@
     }
   },
   {
+    "id": "emporio-armani-ea3276u",
+    "name": "EA3276U",
+    "brand": "Emporio Armani",
+    "brand_slug": "emporio-armani",
+    "type": "graduadas",
+    "price": 137,
+    "variant": "Gris Mate / Marrón",
+    "placeholder": "https://placehold.co/600x480/1a1a1a/c8b090?text=Emporio+Armani",
+    "image": "assets/img/products/emporio-armani/emporio-armani-ea3276u-1.jpg",
+    "gallery": [
+      "assets/img/products/emporio-armani/emporio-armani-ea3276u-1.jpg",
+      "assets/img/products/emporio-armani/emporio-armani-ea3276u-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La EA3276U apuesta por la solidez sin concesiones: acetato gris mate de corte rectangular y proporciones amplias que transmiten presencia desde el primer vistazo. Los interiores marrón en las patillas y el logo en relieve son los únicos detalles que rompen la sobriedad — lo justo para reconocer la firma. Una montura versátil que funciona igual en la oficina que en el fin de semana.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "54 mm",
+      "puente": "18 mm",
+      "varilla": "145 mm",
+      "genero": "Hombre"
+    }
+  },
+  {
     "id": "emporio-armani-ea2162",
     "name": "EA2162",
     "brand": "Emporio Armani",
