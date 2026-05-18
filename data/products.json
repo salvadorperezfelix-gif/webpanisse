@@ -312,6 +312,30 @@
     }
   },
   {
+    "id": "emporio-armani-ea1184",
+    "name": "EA1184",
+    "brand": "Emporio Armani",
+    "brand_slug": "emporio-armani",
+    "type": "graduadas",
+    "price": 147,
+    "variant": "Verde Militar / Metal",
+    "placeholder": "https://placehold.co/600x480/1a1a1a/c8b090?text=Emporio+Armani",
+    "image": "assets/img/products/emporio-armani/emporio-armani-ea1184-1.jpg",
+    "gallery": [
+      "assets/img/products/emporio-armani/emporio-armani-ea1184-1.jpg",
+      "assets/img/products/emporio-armani/emporio-armani-ea1184-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La EA1184 recupera la arquitectura del doble puente con una lectura contemporánea: metal en verde militar mate que evita cualquier destello innecesario, silueta rectangular de proporciones navegantes y puntas en negro que aportan contraste sin estridencia. Una montura de carácter para el hombre que busca presencia sin ostentación — el tipo de gafa que mejora con el tiempo.",
+    "specs": {
+      "material": "Metal",
+      "calibre": "56 mm",
+      "puente": "16 mm",
+      "varilla": "145 mm",
+      "genero": "Hombre"
+    }
+  },
+  {
     "id": "emporio-armani-ea2172d",
     "name": "EA2172D",
     "brand": "Emporio Armani",
