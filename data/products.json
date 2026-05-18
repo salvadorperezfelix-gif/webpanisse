@@ -1,5 +1,30 @@
 [
   {
+    "id": "mr-boho-zicatela",
+    "name": "Zicatela",
+    "brand": "Mr. Boho",
+    "brand_slug": "mr-boho",
+    "type": "sol",
+    "price": 65,
+    "variant": "Crema / Ámbar",
+    "placeholder": "https://placehold.co/600x480/f5f0e0/a0784a?text=Mr.+Boho",
+    "image": "assets/img/products/mr-boho/mr-boho-zicatela-1.jpg",
+    "gallery": [
+      "assets/img/products/mr-boho/mr-boho-zicatela-1.jpg",
+      "assets/img/products/mr-boho/mr-boho-zicatela-2.jpg",
+      "assets/img/products/mr-boho/mr-boho-zicatela-3.jpg"
+    ],
+    "is_new": true,
+    "description": "La Zicatela es volumen sin estridencias. Su gran montura cuadrada-redondeada en acetato crema —con ese toque ámbar que aparece en las esquinas como un reflejo de luz— lleva el espíritu de los 70 con una elegancia que no necesita esforzarse. Lentes marrones oscuras Cat. 3 con protección UV400. Para quien prefiere que sean las gafas las que hablen.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "58 mm",
+      "puente": "19 mm",
+      "varilla": "145 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
     "id": "mr-boho-barrosa-tortoise-cream",
     "name": "Barrosa",
     "brand": "Mr. Boho",
