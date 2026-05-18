@@ -4262,8 +4262,25 @@ body, body.translated-ltr, body.translated-rtl { top: 0 !important; margin-top: 
 
 /* ════════════════════════════════════════════════════════════ */
 
+.contacto-tienda__photo {
+  margin-block-start: 32px;
+  overflow: hidden;
+}
+.contacto-tienda__photo img {
+  display: block;
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.88;
+  transition: opacity 0.4s ease;
+}
+.contacto-tienda__photo img:hover {
+  opacity: 1;
+}
+
 .contacto-map {
-  margin-block-start: 24px;
+  margin-block-start: 0;
   border-radius: 4px;
   overflow: hidden;
 }
