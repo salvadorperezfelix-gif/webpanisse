@@ -1,5 +1,30 @@
 [
   {
+    "id": "mr-boho-logan",
+    "name": "Logan",
+    "brand": "Mr. Boho",
+    "brand_slug": "mr-boho",
+    "type": "sol",
+    "price": 65,
+    "variant": "Carey / Naranja",
+    "placeholder": "https://placehold.co/600x480/6b2a0e/f97316?text=Mr.+Boho",
+    "image": "assets/img/products/mr-boho/mr-boho-logan-1.jpg",
+    "gallery": [
+      "assets/img/products/mr-boho/mr-boho-logan-1.jpg",
+      "assets/img/products/mr-boho/mr-boho-logan-2.jpg",
+      "assets/img/products/mr-boho/mr-boho-logan-3.jpg"
+    ],
+    "is_new": true,
+    "description": "La Logan tiene la contundencia de una montura que no negocia. Acetato carey rojizo de corte cuadrado, con ese bloque naranja en la bisagra que rompe el patrón justo donde nadie lo espera. Un detalle de color que convierte una gafa clásica en algo completamente distinto. Lentes verdes oscuras Cat. 3 con protección UV400.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "49 mm",
+      "puente": "22 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
+  },
+  {
     "id": "mr-boho-zicatela-verde",
     "name": "Zicatela",
     "brand": "Mr. Boho",
