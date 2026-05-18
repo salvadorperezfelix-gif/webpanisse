@@ -312,6 +312,30 @@
     }
   },
   {
+    "id": "emporio-armani-ea1157",
+    "name": "EA1157",
+    "brand": "Emporio Armani",
+    "brand_slug": "emporio-armani",
+    "type": "graduadas",
+    "price": 147,
+    "variant": "Plata Cepillada / Azul Marino",
+    "placeholder": "https://placehold.co/600x480/1a1a1a/c8b090?text=Emporio+Armani",
+    "image": "assets/img/products/emporio-armani/emporio-armani-ea1157-1.jpg",
+    "gallery": [
+      "assets/img/products/emporio-armani/emporio-armani-ea1157-1.jpg",
+      "assets/img/products/emporio-armani/emporio-armani-ea1157-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La EA1157 es metal en su estado más puro: estructura rectangular en plata cepillada con varillas de acetato azul marino que aportan el único acento de color. Su silueta de frente recto y proporciones amplias transmite solidez sin pesadez, mientras el águila Armani grabada en las patillas firma con discreción. Una montura que funciona desde el primer día y mejora con el tiempo.",
+    "specs": {
+      "material": "Metal y Acetato",
+      "calibre": "55 mm",
+      "puente": "17 mm",
+      "varilla": "145 mm",
+      "genero": "Hombre"
+    }
+  },
+  {
     "id": "emporio-armani-ea4269",
     "name": "EA4269",
     "brand": "Emporio Armani",
