@@ -312,6 +312,30 @@
     }
   },
   {
+    "id": "emporio-armani-ea4234u",
+    "name": "EA4234U",
+    "brand": "Emporio Armani",
+    "brand_slug": "emporio-armani",
+    "type": "sol",
+    "price": 145,
+    "variant": "Negro Mate / Gris Polarizado",
+    "placeholder": "https://placehold.co/600x480/1a1a1a/c8b090?text=Emporio+Armani",
+    "image": "assets/img/products/emporio-armani/emporio-armani-ea4234u-1.jpg",
+    "gallery": [
+      "assets/img/products/emporio-armani/emporio-armani-ea4234u-1.jpg",
+      "assets/img/products/emporio-armani/emporio-armani-ea4234u-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La EA4234U lleva la practicidad al terreno del diseño italiano: acetato negro mate de silueta cuadrada con frente plano y proporciones generosas, más lentes polarizadas que eliminan el deslumbramiento sin sacrificar nitidez. El águila Armani en la patilla y la ligera diferencia de tono entre frontal y varillas son los únicos detalles que rompen la uniformidad. Una sol sin estridencias para el hombre que prefiere que sus gafas trabajen.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "57 mm",
+      "puente": "18 mm",
+      "varilla": "145 mm",
+      "genero": "Hombre"
+    }
+  },
+  {
     "id": "emporio-armani-ea1138",
     "name": "EA1138",
     "brand": "Emporio Armani",
