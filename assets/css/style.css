@@ -1128,9 +1128,10 @@ a {
   opacity: 1;
 }
 /* Ocultar la barra flotante de Google Translate */
-.goog-te-banner-frame.skiptranslate { display: none !important; }
-.goog-te-gadget { display: none !important; }
-body { top: 0 !important; }
+.goog-te-banner-frame,
+iframe.skiptranslate { display: none !important; }
+.goog-te-gadget, #goog-gt-tt { display: none !important; }
+body, body.translated-ltr, body.translated-rtl { top: 0 !important; margin-top: 0 !important; }
 
 /* ── Acciones derecha ─────────────────────────────────────── */
 .header__actions {

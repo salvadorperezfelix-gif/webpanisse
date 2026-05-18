@@ -720,12 +720,6 @@
       <nav class="header__nav-main" aria-label="Categorías principales">
         <ul class="header__nav-list">
 
-          <li class="nav-item nav-lang-toggle">
-            <button id="lang-toggle-btn" class="lang-flag-btn"
-                    onclick="panisseLangToggle()"
-                    aria-label="Switch language / Cambiar idioma">&#x1F1EC;&#x1F1E7;</button>
-          </li>
-
           <li class="nav-item has-dropdown">
             <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="marcas">
               Marcas <span class="nav-caret" aria-hidden="true"></span>
@@ -828,6 +822,9 @@
         </nav>
         <div class="header__actions">
           <a href="contacto.html" class="header__cta-link">Cita Previa</a>
+        <button id="lang-toggle-btn" class="lang-flag-btn"
+                onclick="panisseLangToggle()"
+                aria-label="Switch language / Cambiar idioma">&#x1F1EC;&#x1F1E7;</button>
         <div class="header__ecommerce-actions" hidden>
           <button class="header__icon-btn" aria-label="Mi cuenta">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
@@ -1343,6 +1340,16 @@
 
 
   <!-- ── Google Translate ── -->
+  <style>
+    .goog-te-banner-frame,iframe.skiptranslate{display:none!important;}
+    body,body.translated-ltr,body.translated-rtl{top:0!important;margin-top:0!important;}
+    .goog-te-gadget,#goog-gt-tt{display:none!important;}
+  </style>
+  <style>
+    .goog-te-banner-frame, iframe.skiptranslate { display:none !important; }
+    body, body.translated-ltr, body.translated-rtl { top:0 !important; margin-top:0 !important; }
+    .goog-te-gadget, #goog-gt-tt { display:none !important; }
+  </style>
   <div id="google_translate_element" style="display:none" aria-hidden="true"></div>
   <script>
     function googleTranslateElementInit() {
@@ -1365,6 +1372,12 @@
         document.cookie = 'googtrans=' + val + '; path=/';
         window.location.reload();
       };
+      // Hide Google bar if injected after load
+      var _gt_obs = new MutationObserver(function(){
+        var f=document.querySelector('iframe.skiptranslate');
+        if(f){f.style.display='none';document.body.style.top='0';}
+      });
+      _gt_obs.observe(document.documentElement,{childList:true,subtree:true});
       document.addEventListener('DOMContentLoaded', function () {
         var btn  = document.getElementById('lang-toggle-btn');
         if (!btn) return;
