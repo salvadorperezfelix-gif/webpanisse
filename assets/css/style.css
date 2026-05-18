@@ -3557,10 +3557,10 @@ body, body.translated-ltr, body.translated-rtl { top: 0 !important; margin-top: 
   background: rgba(255,255,255,0.08);
 }
 
-/* Columna derecha: formulario */
+/* Columna izquierda: formulario */
 .contacto-form-col {
   padding: clamp(80px, 8vw, 120px) clamp(32px, 5vw, 72px);
-  padding-block-start: calc(72px + 60px);
+  padding-block-start: calc(72px + 16px);
   background: var(--color-bg);
   overflow-y: auto;
 }
@@ -3584,7 +3584,7 @@ body, body.translated-ltr, body.translated-rtl { top: 0 !important; margin-top: 
   display: flex;
   align-items: center;
   gap: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 16px;
 }
 
 .cita-brand-mark__logo {
