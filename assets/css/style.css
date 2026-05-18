@@ -5390,7 +5390,6 @@ img[loading="lazy"].is-loaded {
 }
 
 .timeline-entry {
-  position: relative;
   display: flex;
   gap: 0;
   margin-bottom: clamp(56px, 7vw, 96px);
