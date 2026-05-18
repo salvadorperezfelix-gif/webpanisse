@@ -896,7 +896,7 @@ a {
 .header__inner {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   align-items: center;
   gap: 24px;
 }
@@ -905,7 +905,7 @@ a {
 .header__logo {
   grid-column: 2;
   justify-self: center;
-  padding-inline: 40px;
+  padding-inline: 72px;
   font-family: 'Parisienne', cursive;
   font-size: clamp(22px, 2vw, 26px);
   color: inherit;
@@ -4555,6 +4555,8 @@ img[loading="lazy"].is-loaded {
   color: var(--color-muted);
 }
 .blog-article__hero-img {
+  max-width: 820px;
+  margin-inline: auto;
   margin-bottom: 60px;
   border-radius: var(--radius-md);
   overflow: hidden;
