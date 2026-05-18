@@ -312,6 +312,30 @@
     }
   },
   {
+    "id": "emporio-armani-ea1138",
+    "name": "EA1138",
+    "brand": "Emporio Armani",
+    "brand_slug": "emporio-armani",
+    "type": "graduadas",
+    "price": 147,
+    "variant": "Negro Mate / Plata",
+    "placeholder": "https://placehold.co/600x480/1a1a1a/c8b090?text=Emporio+Armani",
+    "image": "assets/img/products/emporio-armani/emporio-armani-ea1138-1.jpg",
+    "gallery": [
+      "assets/img/products/emporio-armani/emporio-armani-ea1138-1.jpg",
+      "assets/img/products/emporio-armani/emporio-armani-ea1138-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La EA1138 retoma la arquitectura del browline con una lectura limpia y actual: el aro superior en negro mate contrasta con el puente y parte inferior en metal plateado, creando una bitonalidad que estructura el rostro sin complicarlo. Las varillas de acetato negro con el logo en relieve cierran una montura que equilibra tradición y funcionalidad. Sobria en la distancia, sofisticada de cerca.",
+    "specs": {
+      "material": "Metal y Acetato",
+      "calibre": "56 mm",
+      "puente": "17 mm",
+      "varilla": "145 mm",
+      "genero": "Hombre"
+    }
+  },
+  {
     "id": "emporio-armani-ea1105",
     "name": "EA1105",
     "brand": "Emporio Armani",
