@@ -312,6 +312,30 @@
     }
   },
   {
+    "id": "emporio-armani-ea1027",
+    "name": "EA1027",
+    "brand": "Emporio Armani",
+    "brand_slug": "emporio-armani",
+    "type": "graduadas",
+    "price": 137,
+    "variant": "Plata / Havana",
+    "placeholder": "https://placehold.co/600x480/1a1a1a/c8b090?text=Emporio+Armani",
+    "image": "assets/img/products/emporio-armani/emporio-armani-ea1027-1.jpg",
+    "gallery": [
+      "assets/img/products/emporio-armani/emporio-armani-ea1027-1.jpg",
+      "assets/img/products/emporio-armani/emporio-armani-ea1027-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La EA1027 juega con el contraste entre materiales: el metal plateado cepillado del frontal y el acetato havana de las varillas crean una combinación clásica que siempre funciona. Su silueta rectangular de proporciones equilibradas y el medio aro que deja respirar la parte inferior convierten esta montura en una elección versátil — suficientemente discreta para la oficina, suficientemente caracterizada para el resto.",
+    "specs": {
+      "material": "Metal y Acetato",
+      "calibre": "55 mm",
+      "puente": "18 mm",
+      "varilla": "140 mm",
+      "genero": "Hombre"
+    }
+  },
+  {
     "id": "emporio-armani-ea4234u",
     "name": "EA4234U",
     "brand": "Emporio Armani",
