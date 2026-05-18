@@ -312,6 +312,30 @@
     }
   },
   {
+    "id": "emporio-armani-ea1105",
+    "name": "EA1105",
+    "brand": "Emporio Armani",
+    "brand_slug": "emporio-armani",
+    "type": "graduadas",
+    "price": 147,
+    "variant": "Verde Militar / Metal",
+    "placeholder": "https://placehold.co/600x480/1a1a1a/c8b090?text=Emporio+Armani",
+    "image": "assets/img/products/emporio-armani/emporio-armani-ea1105-1.jpg",
+    "gallery": [
+      "assets/img/products/emporio-armani/emporio-armani-ea1105-1.jpg",
+      "assets/img/products/emporio-armani/emporio-armani-ea1105-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La EA1105 combina la estructura de metal con unas varillas de acetato verde militar que aportan volumen y textura a una montura que de otro modo sería completamente discreta. El medio aro superior define la silueta rectangular sin cerrarla del todo — un detalle técnico que aligera el conjunto visualmente. El águila Armani en dorado sobre la patilla firma sin gritar. Para el hombre que conoce la diferencia entre llevar una marca y llevar un estilo.",
+    "specs": {
+      "material": "Metal y Acetato",
+      "calibre": "56 mm",
+      "puente": "17 mm",
+      "varilla": "145 mm",
+      "genero": "Hombre"
+    }
+  },
+  {
     "id": "emporio-armani-ea4266u",
     "name": "EA4266U",
     "brand": "Emporio Armani",
