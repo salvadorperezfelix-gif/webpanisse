@@ -312,6 +312,30 @@
     }
   },
   {
+    "id": "emporio-armani-ea2172d",
+    "name": "EA2172D",
+    "brand": "Emporio Armani",
+    "brand_slug": "emporio-armani",
+    "type": "sol",
+    "price": 147,
+    "variant": "Plata / Azul Marino",
+    "placeholder": "https://placehold.co/600x480/1a1a1a/c8b090?text=Emporio+Armani",
+    "image": "assets/img/products/emporio-armani/emporio-armani-ea2172d-1.jpg",
+    "gallery": [
+      "assets/img/products/emporio-armani/emporio-armani-ea2172d-1.jpg",
+      "assets/img/products/emporio-armani/emporio-armani-ea2172d-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La EA2172D lleva la elegancia italiana a su expresión más ligera: estructura de metal plateado con el perfil exterior en azul marino que define la silueta sin pesarla. Su forma cuadrada de vértices cortados y proporciones generosas enmarca la mirada con aplomo, mientras las lentes azules de tono sólido añaden un punto de color contenido. Para el hombre que prefiere el metal al acetato y no renuncia al detalle.",
+    "specs": {
+      "material": "Metal",
+      "calibre": "60 mm",
+      "puente": "17 mm",
+      "varilla": "150 mm",
+      "genero": "Hombre"
+    }
+  },
+  {
     "id": "emporio-armani-ea4270",
     "name": "EA4270",
     "brand": "Emporio Armani",
