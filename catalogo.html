@@ -390,6 +390,14 @@
       <a href="contacto.html" class="btn btn--secondary" style="width:100%;text-align:center;display:block;">
         Pedir Cita Previa
       </a>
+      <div class="mobile-menu__lang">
+        <button id="mobile-lang-btn" class="lang-flag-btn"
+                onclick="panisseLangToggle()"
+                aria-label="Switch language / Cambiar idioma"
+                style="font-size:15px;padding:8px 12px;gap:8px;display:flex;align-items:center;">
+          &#x1F1EC;&#x1F1E7; <span class="mobile-lang-label">English</span>
+        </button>
+      </div>
       <div class="mobile-menu__social">
         <a href="https://www.instagram.com/panisse_optica/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
         <a href="https://www.facebook.com/profile.php?id=61586908144350" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
@@ -671,11 +679,18 @@
       });
       _gt_obs.observe(document.documentElement,{childList:true,subtree:true});
       document.addEventListener('DOMContentLoaded', function () {
-        var btn  = document.getElementById('lang-toggle-btn');
-        if (!btn) return;
         var lang = getLang();
-        btn.innerHTML = lang === 'en' ? '&#x1F1EA;&#x1F1F8;' : '&#x1F1EC;&#x1F1E7;';
-        btn.title     = lang === 'en' ? 'Cambiar a español'  : 'Switch to English';
+        var isEn = lang === 'en';
+        var flagEs = '&#x1F1EA;&#x1F1F8;', flagEn = '&#x1F1EC;&#x1F1E7;';
+        var btn = document.getElementById('lang-toggle-btn');
+        if (btn) { btn.innerHTML = isEn ? flagEs : flagEn;
+                   btn.title = isEn ? 'Cambiar a español' : 'Switch to English'; }
+        var mBtn = document.getElementById('mobile-lang-btn');
+        if (mBtn) {
+          mBtn.innerHTML = isEn
+            ? flagEs + ' <span class="mobile-lang-label">Español</span>'
+            : flagEn + ' <span class="mobile-lang-label">English</span>';
+        }
       });
     })();
   </script>

@@ -762,6 +762,24 @@ async function initProductPage() {
           }
         });
       });
+
+      // Swipe en la imagen principal (móvil)
+      const galleryMainEl = document.querySelector('.product-gallery__main');
+      if (galleryMainEl && thumbs.length > 1) {
+        let tx = 0, ty = 0;
+        galleryMainEl.addEventListener('touchstart', e => {
+          tx = e.touches[0].clientX;
+          ty = e.touches[0].clientY;
+        }, { passive: true });
+        galleryMainEl.addEventListener('touchend', e => {
+          const dx = e.changedTouches[0].clientX - tx;
+          const dy = e.changedTouches[0].clientY - ty;
+          if (Math.abs(dx) < 40 || Math.abs(dx) < Math.abs(dy)) return;
+          const cur = [...thumbs].findIndex(t => t.classList.contains('is-active'));
+          const next = dx < 0 ? Math.min(cur + 1, thumbs.length - 1) : Math.max(cur - 1, 0);
+          if (next !== cur) thumbs[next].click();
+        }, { passive: true });
+      }
     }
 
     // Botón Zoom / Lightbox
