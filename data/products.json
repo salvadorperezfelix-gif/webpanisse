@@ -25,26 +25,26 @@
     }
   },
   {
-    "id": "mr-boho-solarte-hideout",
-    "name": "Solarte",
+    "id": "mr-boho-elpatio",
+    "name": "El Patio",
     "brand": "Mr. Boho",
     "brand_slug": "mr-boho",
     "type": "sol",
     "price": 65,
-    "variant": "Hideout — Carey / Naranja",
-    "placeholder": "https://placehold.co/600x480/8b3a1e/ffffff?text=Mr.+Boho",
-    "image": "assets/img/products/mr-boho/mr-boho-solarte-hideout-1.jpg",
+    "variant": "Carey Rojo / Crema",
+    "placeholder": "https://placehold.co/600x480/7a2e0e/f5f0e8?text=Mr.+Boho",
+    "image": "assets/img/products/mr-boho/mr-boho-elpatio-1.jpg",
     "gallery": [
-      "assets/img/products/mr-boho/mr-boho-solarte-hideout-1.jpg",
-      "assets/img/products/mr-boho/mr-boho-solarte-hideout-2.jpg",
-      "assets/img/products/mr-boho/mr-boho-solarte-hideout-3.jpg"
+      "assets/img/products/mr-boho/mr-boho-elpatio-1.jpg",
+      "assets/img/products/mr-boho/mr-boho-elpatio-2.jpg",
+      "assets/img/products/mr-boho/mr-boho-elpatio-3.jpg"
     ],
     "is_new": true,
-    "description": "La Solarte de Mr. Boho es esa clase de gafa que no pasa desapercibida, y que tampoco lo intenta. Su forma oval voluminosa en acetato carey burdeos contrasta con las patillas en naranja intenso —una combinación que oscila entre lo vintage y lo contemporáneo con una naturalidad pasmosa. Lentes grises oscuras Cat. 3 con protección UV400. Hecha para las que llevan el color como declaración.",
+    "description": "La El Patio de Mr. Boho tiene algo de instante detenido: esa forma redonda y generosa en acetato carey rojizo, con el detalle crema que recorre el borde superior como una segunda piel. Una montura que mira hacia los 70 sin nostalgia, con la confianza de quien sabe exactamente lo que lleva puesto. Lentes verdes oscuras Cat. 3 con protección UV400.",
     "specs": {
       "material": "Acetato",
-      "calibre": "51 mm",
-      "puente": "22 mm",
+      "calibre": "47 mm",
+      "puente": "24 mm",
       "varilla": "145 mm",
       "genero": "Mujer"
     }
