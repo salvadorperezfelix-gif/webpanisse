@@ -1,5 +1,30 @@
 [
   {
+    "id": "mr-boho-zicatela-verde",
+    "name": "Zicatela",
+    "brand": "Mr. Boho",
+    "brand_slug": "mr-boho",
+    "type": "sol",
+    "price": 65,
+    "variant": "Verde Mármol",
+    "placeholder": "https://placehold.co/600x480/2d4a35/ffffff?text=Mr.+Boho",
+    "image": "assets/img/products/mr-boho/mr-boho-zicatela-verde-1.jpg",
+    "gallery": [
+      "assets/img/products/mr-boho/mr-boho-zicatela-verde-1.jpg",
+      "assets/img/products/mr-boho/mr-boho-zicatela-verde-2.jpg",
+      "assets/img/products/mr-boho/mr-boho-zicatela-verde-3.jpg"
+    ],
+    "is_new": true,
+    "description": "La Zicatela en verde mármol lleva ese color con una seguridad que pocos se atreven. El acetato marmolado en verde oscuro —profundo y veteado como una piedra pulida— da a esta montura oversized un carácter propio y una presencia que se nota antes de que nadie la vea de cerca. Lentes grises oscuras Cat. 3 con protección UV400.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "58 mm",
+      "puente": "19 mm",
+      "varilla": "145 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
     "id": "mr-boho-zicatela",
     "name": "Zicatela",
     "brand": "Mr. Boho",
