@@ -1,5 +1,29 @@
 [
   {
+    "id": "panisse-boutique-mistral",
+    "name": "Mistral",
+    "brand": "Panisse Boutique",
+    "brand_slug": "panisse-boutique",
+    "type": "sol",
+    "price": 99,
+    "variant": "Negro / Gris Polarizado",
+    "placeholder": "https://placehold.co/600x480/111111/555555?text=Panisse+Boutique",
+    "image": "assets/img/products/panisse-boutique/panisse-boutique-mistral-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse-boutique/panisse-boutique-mistral-1.jpg",
+      "assets/img/products/panisse-boutique/panisse-boutique-mistral-2.jpg"
+    ],
+    "is_new": true,
+    "description": "Montura de acetato negro con un perfil generoso que no pasa desapercibido. Forma redondeada con esquinas cuadradas, puente ancho y varillas sólidas con el logo Panisse en script dorado. Lentes grises polarizadas Cat. 3 que cortan el deslumbramiento sin perder nitidez. Para quien no necesita explicaciones.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "45 mm",
+      "puente": "24 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
+  },
+  {
     "id": "panisse-boutique-marsella",
     "name": "Marsella",
     "brand": "Panisse Boutique",
