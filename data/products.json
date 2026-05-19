@@ -1,5 +1,29 @@
 [
   {
+    "id": "panisse-boutique-bordeaux",
+    "name": "Bordeaux",
+    "brand": "Panisse Boutique",
+    "brand_slug": "panisse-boutique",
+    "type": "sol",
+    "price": 99,
+    "variant": "Burdeos / Gris Polarizado",
+    "placeholder": "https://placehold.co/600x480/6b1a2a/555555?text=Panisse+Boutique",
+    "image": "assets/img/products/panisse-boutique/panisse-boutique-bordeaux-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse-boutique/panisse-boutique-bordeaux-1.jpg",
+      "assets/img/products/panisse-boutique/panisse-boutique-bordeaux-2.jpg"
+    ],
+    "is_new": true,
+    "description": "Acetato burdeos traslúcido con un grosor de montura que llama la atención. Forma cat-eye de barra plana con el ángulo justo para elevar la mirada sin resultar exagerada. Logo Panisse en script dorado sobre la varilla. Lentes grises degradadas polarizadas Cat. 3 con protección UV400.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "51 mm",
+      "puente": "19 mm",
+      "varilla": "145 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
     "id": "panisse-boutique-mistral",
     "name": "Mistral",
     "brand": "Panisse Boutique",
