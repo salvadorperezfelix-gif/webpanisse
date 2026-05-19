@@ -1,5 +1,31 @@
 [
   {
+    "id": "mr-boho-solarte-naranja",
+    "name": "Solarte",
+    "brand": "Mr. Boho",
+    "brand_slug": "mr-boho",
+    "type": "sol",
+    "price": 65,
+    "variant": "Carey / Naranja",
+    "placeholder": "https://placehold.co/600x480/8b2500/f97316?text=Mr.+Boho",
+    "image": "assets/img/products/mr-boho/mr-boho-solarte-naranja-1.jpg",
+    "gallery": [
+      "assets/img/products/mr-boho/mr-boho-solarte-naranja-1.jpg",
+      "assets/img/products/mr-boho/mr-boho-solarte-naranja-2.jpg",
+      "assets/img/products/mr-boho/mr-boho-solarte-naranja-3.jpg"
+    ],
+    "is_new": true,
+    "description": "La Solarte en su versión más atrevida. Carey oscuro en el frente con patillas naranjas que no pasan desapercibidas. El mismo corte oval de siempre con un contraste de color que lo cambia todo. Lentes verdes oscuras Cat. 3 con protección UV400.",
+    "specs": {
+      "material": "Acetato",
+      "lente": "Verde oscuro Cat. 3",
+      "uv": "UV400",
+      "medidas": "51-22-145"
+    },
+    "genero": "mujer",
+    "tags": ["sol", "acetato", "carey", "oval", "naranja", "mr-boho"]
+  },
+  {
     "id": "mr-boho-solarte",
     "name": "Solarte",
     "brand": "Mr. Boho",
