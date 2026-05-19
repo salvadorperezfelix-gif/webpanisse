@@ -1,5 +1,31 @@
 [
   {
+    "id": "mr-boho-solarte",
+    "name": "Solarte",
+    "brand": "Mr. Boho",
+    "brand_slug": "mr-boho",
+    "type": "sol",
+    "price": 65,
+    "variant": "Cognac / Crema",
+    "placeholder": "https://placehold.co/600x480/8b4513/f5f0e8?text=Mr.+Boho",
+    "image": "assets/img/products/mr-boho/mr-boho-solarte-1.jpg",
+    "gallery": [
+      "assets/img/products/mr-boho/mr-boho-solarte-1.jpg",
+      "assets/img/products/mr-boho/mr-boho-solarte-2.jpg",
+      "assets/img/products/mr-boho/mr-boho-solarte-3.jpg"
+    ],
+    "is_new": true,
+    "description": "La Solarte lleva el carey a su versión más cálida. Acetato cognac con ese anillo crema en las bisagras que suaviza la silueta oval sin restarle carácter. Una montura clásica con el punto de color justo en el sitio exacto. Lentes verdes oscuras Cat. 3 con protección UV400.",
+    "specs": {
+      "material": "Acetato",
+      "lente": "Verde oscuro Cat. 3",
+      "uv": "UV400",
+      "medidas": "51-22-145"
+    },
+    "genero": "mujer",
+    "tags": ["sol", "acetato", "carey", "oval", "mr-boho"]
+  },
+  {
     "id": "mr-boho-coron",
     "name": "Coron",
     "brand": "Mr. Boho",
