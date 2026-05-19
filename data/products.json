@@ -1,5 +1,31 @@
 [
   {
+    "id": "mr-boho-barrosa-crema",
+    "name": "Barrosa",
+    "brand": "Mr. Boho",
+    "brand_slug": "mr-boho",
+    "type": "sol",
+    "price": 65,
+    "variant": "Crema / Ámbar",
+    "placeholder": "https://placehold.co/600x480/f5f0e8/c8830a?text=Mr.+Boho",
+    "image": "assets/img/products/mr-boho/mr-boho-barrosa-crema-1.jpg",
+    "gallery": [
+      "assets/img/products/mr-boho/mr-boho-barrosa-crema-1.jpg",
+      "assets/img/products/mr-boho/mr-boho-barrosa-crema-2.jpg",
+      "assets/img/products/mr-boho/mr-boho-barrosa-crema-3.jpg"
+    ],
+    "is_new": true,
+    "description": "La Barrosa en su versión más luminosa. Acetato crema opaco con ese ribete ámbar en la base que le da calidez y profundidad. Una cat-eye angulosa con carácter propio. Lentes verdes oscuras Cat. 3 con protección UV400.",
+    "specs": {
+      "material": "Acetato",
+      "lente": "Verde oscuro Cat. 3",
+      "uv": "UV400",
+      "medidas": "49-22-145"
+    },
+    "genero": "mujer",
+    "tags": ["sol", "acetato", "crema", "cat-eye", "mr-boho"]
+  },
+  {
     "id": "mr-boho-savina-naranja",
     "name": "Savina",
     "brand": "Mr. Boho",
