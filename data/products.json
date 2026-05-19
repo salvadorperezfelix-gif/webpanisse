@@ -1,5 +1,31 @@
 [
   {
+    "id": "mr-boho-savina-naranja",
+    "name": "Savina",
+    "brand": "Mr. Boho",
+    "brand_slug": "mr-boho",
+    "type": "sol",
+    "price": 65,
+    "variant": "Carey / Naranja",
+    "placeholder": "https://placehold.co/600x480/6b1a00/f97316?text=Mr.+Boho",
+    "image": "assets/img/products/mr-boho/mr-boho-savina-naranja-1.jpg",
+    "gallery": [
+      "assets/img/products/mr-boho/mr-boho-savina-naranja-1.jpg",
+      "assets/img/products/mr-boho/mr-boho-savina-naranja-2.jpg",
+      "assets/img/products/mr-boho/mr-boho-savina-naranja-3.jpg"
+    ],
+    "is_new": true,
+    "description": "La Savina en carey con ese golpe de naranja en las bisagras que lo cambia todo. El mismo volumen generoso de siempre con un contraste de color que le da energía sin perder elegancia. Lentes verdes oscuras Cat. 3 con protección UV400.",
+    "specs": {
+      "material": "Acetato",
+      "lente": "Verde oscuro Cat. 3",
+      "uv": "UV400",
+      "medidas": "52-21-145"
+    },
+    "genero": "mujer",
+    "tags": ["sol", "acetato", "carey", "cat-eye", "naranja", "mr-boho"]
+  },
+  {
     "id": "mr-boho-savina",
     "name": "Savina",
     "brand": "Mr. Boho",
