@@ -1,5 +1,31 @@
 [
   {
+    "id": "mr-boho-ons",
+    "name": "Ons",
+    "brand": "Mr. Boho",
+    "brand_slug": "mr-boho",
+    "type": "sol",
+    "price": 65,
+    "variant": "Ámbar / Crema",
+    "placeholder": "https://placehold.co/600x480/c8830a/f5f0e8?text=Mr.+Boho",
+    "image": "assets/img/products/mr-boho/mr-boho-ons-1.jpg",
+    "gallery": [
+      "assets/img/products/mr-boho/mr-boho-ons-1.jpg",
+      "assets/img/products/mr-boho/mr-boho-ons-2.jpg",
+      "assets/img/products/mr-boho/mr-boho-ons-3.jpg"
+    ],
+    "is_new": true,
+    "description": "La Ons juega con el color de otra manera. Acetato ámbar traslúcido en el frente redondo, con patillas en crema que rompen el tono cálido con elegancia. Una gafa que irradia luz propia. Lentes verdes oscuras Cat. 3 con protección UV400.",
+    "specs": {
+      "material": "Acetato",
+      "lente": "Verde oscuro Cat. 3",
+      "uv": "UV400",
+      "medidas": "47-23-145"
+    },
+    "genero": "unisex",
+    "tags": ["sol", "acetato", "redonda", "ambar", "mr-boho"]
+  },
+  {
     "id": "mr-boho-colombier",
     "name": "Colombier",
     "brand": "Mr. Boho",
