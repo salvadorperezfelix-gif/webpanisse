@@ -1,5 +1,31 @@
 [
   {
+    "id": "mr-boho-parikia",
+    "name": "Parikia",
+    "brand": "Mr. Boho",
+    "brand_slug": "mr-boho",
+    "type": "sol",
+    "price": 65,
+    "variant": "Carey Mármol",
+    "placeholder": "https://placehold.co/600x480/5a3a00/6b7280?text=Mr.+Boho",
+    "image": "assets/img/products/mr-boho/mr-boho-parikia-1.jpg",
+    "gallery": [
+      "assets/img/products/mr-boho/mr-boho-parikia-1.jpg",
+      "assets/img/products/mr-boho/mr-boho-parikia-2.jpg",
+      "assets/img/products/mr-boho/mr-boho-parikia-3.jpg"
+    ],
+    "is_new": true,
+    "description": "La Parikia no pasa desapercibida. Montura oversized en acetato carey mármol con ese patrón irregular que parece pintado a mano. Forma cat-eye amplia con la presencia justa para enmarcar cualquier mirada. Lentes verdes oscuras Cat. 3 con protección UV400.",
+    "specs": {
+      "material": "Acetato",
+      "lente": "Verde oscuro Cat. 3",
+      "uv": "UV400",
+      "medidas": "58-19-145"
+    },
+    "genero": "mujer",
+    "tags": ["sol", "acetato", "carey", "cat-eye", "oversized", "mr-boho"]
+  },
+  {
     "id": "mr-boho-barrosa-crema",
     "name": "Barrosa",
     "brand": "Mr. Boho",
