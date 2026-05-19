@@ -687,7 +687,7 @@ async function initProductPage() {
     if (priceEl) priceEl.textContent = `${p.price} €`;
     
     const descEl = document.getElementById('prod-desc');
-    if (descEl) descEl.innerHTML = `<p>${p.description}</p>`;
+    if (descEl) { const pEl = document.createElement('p'); pEl.textContent = p.description; descEl.replaceChildren(pEl); }
 
     // Imagen principal
     const mainImg = document.getElementById('product-main-img');
