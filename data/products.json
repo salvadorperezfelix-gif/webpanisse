@@ -1,5 +1,31 @@
 [
   {
+    "id": "mr-boho-kerns",
+    "name": "Kerns",
+    "brand": "Mr. Boho",
+    "brand_slug": "mr-boho",
+    "type": "sol",
+    "price": 65,
+    "variant": "Carey Oscuro / Negro / Crema",
+    "placeholder": "https://placehold.co/600x480/2c1a00/f5f0e8?text=Mr.+Boho",
+    "image": "assets/img/products/mr-boho/mr-boho-kerns-1.jpg",
+    "gallery": [
+      "assets/img/products/mr-boho/mr-boho-kerns-1.jpg",
+      "assets/img/products/mr-boho/mr-boho-kerns-2.jpg",
+      "assets/img/products/mr-boho/mr-boho-kerns-3.jpg"
+    ],
+    "is_new": true,
+    "description": "La Kerns combina materiales con precisión. Frente de acetato carey oscuro con barra superior en negro y detalle crema en las bisagras que aparece donde menos lo esperas. Una montura cuadrada y contundente para quien no necesita adornos. Lentes verdes oscuras Cat. 3 con protección UV400.",
+    "specs": {
+      "material": "Acetato",
+      "lente": "Verde oscuro Cat. 3",
+      "uv": "UV400",
+      "medidas": "47-24-145"
+    },
+    "genero": "unisex",
+    "tags": ["sol", "acetato", "carey", "cuadrada", "mr-boho"]
+  },
+  {
     "id": "mr-boho-parikia-ambar",
     "name": "Parikia",
     "brand": "Mr. Boho",
