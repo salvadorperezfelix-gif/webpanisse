@@ -1,5 +1,30 @@
 [
   {
+    "id": "mr-boho-zicatela-rojo",
+    "name": "Zicatela",
+    "brand": "Mr. Boho",
+    "brand_slug": "mr-boho",
+    "type": "sol",
+    "price": 65,
+    "variant": "Rojo",
+    "placeholder": "https://placehold.co/600x480/cc2200/6b7280?text=Mr.+Boho",
+    "image": "assets/img/products/mr-boho/mr-boho-zicatela-rojo-1.jpg",
+    "gallery": [
+      "assets/img/products/mr-boho/mr-boho-zicatela-rojo-1.jpg",
+      "assets/img/products/mr-boho/mr-boho-zicatela-rojo-2.jpg",
+      "assets/img/products/mr-boho/mr-boho-zicatela-rojo-3.jpg"
+    ],
+    "is_new": true,
+    "description": "La Zicatela en rojo no pide disculpas. El mismo volumen oversized de siempre con un acetato rojo intenso y monocolor que lo dice todo sin añadir nada más. Para llevar con convicción. Lentes verdes oscuras Cat. 3 con protección UV400.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "58 mm",
+      "puente": "19 mm",
+      "varilla": "145 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
     "id": "mr-boho-kerns",
     "name": "Kerns",
     "brand": "Mr. Boho",
