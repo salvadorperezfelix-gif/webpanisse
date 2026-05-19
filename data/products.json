@@ -1,5 +1,29 @@
 [
   {
+    "id": "panisse-boutique-azur",
+    "name": "Azur",
+    "brand": "Panisse Boutique",
+    "brand_slug": "panisse-boutique",
+    "type": "sol",
+    "price": 99,
+    "variant": "Azul Royal / Dorado",
+    "placeholder": "https://placehold.co/600x480/1a3a8f/d4af37?text=Panisse+Boutique",
+    "image": "assets/img/products/panisse-boutique/panisse-boutique-azur-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse-boutique/panisse-boutique-azur-1.jpg",
+      "assets/img/products/panisse-boutique/panisse-boutique-azur-2.jpg"
+    ],
+    "is_new": true,
+    "description": "Montura oversize de acetato azul royal con puente y varillas de metal dorado. Una combinación que mezcla la fuerza del color con la elegancia del detalle metálico. Forma cuadrada de líneas ligeramente anguladas que enmarca la mirada con carácter. Lentes degradadas en azul-gris con protección UV400.",
+    "specs": {
+      "material": "Acetato + Metal",
+      "calibre": "54 mm",
+      "puente": "23 mm",
+      "varilla": "142 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
     "id": "mr-boho-logan-ambar",
     "name": "Logan",
     "brand": "Mr. Boho",
