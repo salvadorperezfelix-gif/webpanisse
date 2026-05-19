@@ -1,5 +1,31 @@
 [
   {
+    "id": "mr-boho-parikia-ambar",
+    "name": "Parikia",
+    "brand": "Mr. Boho",
+    "brand_slug": "mr-boho",
+    "type": "sol",
+    "price": 65,
+    "variant": "Ámbar / Crema",
+    "placeholder": "https://placehold.co/600x480/c8830a/f5f0e8?text=Mr.+Boho",
+    "image": "assets/img/products/mr-boho/mr-boho-parikia-ambar-1.jpg",
+    "gallery": [
+      "assets/img/products/mr-boho/mr-boho-parikia-ambar-1.jpg",
+      "assets/img/products/mr-boho/mr-boho-parikia-ambar-2.jpg",
+      "assets/img/products/mr-boho/mr-boho-parikia-ambar-3.jpg"
+    ],
+    "is_new": true,
+    "description": "La Parikia en ámbar traslúcido con ese contraste crema en las patillas que suaviza su carácter oversized. La misma forma cat-eye de gran presencia con una combinación de color más luminosa y cálida. Lentes verdes oscuras Cat. 3 con protección UV400.",
+    "specs": {
+      "material": "Acetato",
+      "lente": "Verde oscuro Cat. 3",
+      "uv": "UV400",
+      "medidas": "58-19-145"
+    },
+    "genero": "mujer",
+    "tags": ["sol", "acetato", "ambar", "cat-eye", "oversized", "mr-boho"]
+  },
+  {
     "id": "mr-boho-parikia",
     "name": "Parikia",
     "brand": "Mr. Boho",
