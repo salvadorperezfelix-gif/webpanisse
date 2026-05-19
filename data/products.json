@@ -1,5 +1,29 @@
 [
   {
+    "id": "panisse-riviera",
+    "name": "Riviera",
+    "brand": "Panisse",
+    "brand_slug": "panisse",
+    "type": "sol",
+    "price": 49,
+    "variant": "Negro / Gris Degradado",
+    "placeholder": "https://placehold.co/600x480/111111/888888?text=Panisse",
+    "image": "assets/img/products/panisse/panisse-riviera-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse/panisse-riviera-1.jpg",
+      "assets/img/products/panisse/panisse-riviera-2.jpg"
+    ],
+    "is_new": true,
+    "description": "Cat-eye clásico en acetato negro brillante con una curva generosa que alarga y eleva la mirada. Lentes grises degradadas que oscurecen hacia arriba, potenciando la forma de la montura. Logo Panisse en script sobre la varilla. Ligera, cómoda y con ese punto retro que nunca pasa de moda. Protección UV400.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "55 mm",
+      "puente": "17 mm",
+      "varilla": "140 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
     "id": "panisse-boutique-bordeaux",
     "name": "Bordeaux",
     "brand": "Panisse Boutique",
