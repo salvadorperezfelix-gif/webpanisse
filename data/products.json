@@ -1,5 +1,31 @@
 [
   {
+    "id": "mr-boho-solarte-rojo",
+    "name": "Solarte",
+    "brand": "Mr. Boho",
+    "brand_slug": "mr-boho",
+    "type": "sol",
+    "price": 65,
+    "variant": "Rojo / Nude",
+    "placeholder": "https://placehold.co/600x480/cc2200/f5c5b8?text=Mr.+Boho",
+    "image": "assets/img/products/mr-boho/mr-boho-solarte-rojo-1.jpg",
+    "gallery": [
+      "assets/img/products/mr-boho/mr-boho-solarte-rojo-1.jpg",
+      "assets/img/products/mr-boho/mr-boho-solarte-rojo-2.jpg",
+      "assets/img/products/mr-boho/mr-boho-solarte-rojo-3.jpg"
+    ],
+    "is_new": true,
+    "description": "La Solarte en su versión más atrevida del verano. Rojo intenso en el frente oval con patillas en nude que suavizan el conjunto sin apagar el color. Una combinación que llama la atención sin pedir permiso. Lentes verdes oscuras Cat. 3 con protección UV400.",
+    "specs": {
+      "material": "Acetato",
+      "lente": "Verde oscuro Cat. 3",
+      "uv": "UV400",
+      "medidas": "51-22-145"
+    },
+    "genero": "mujer",
+    "tags": ["sol", "acetato", "oval", "rojo", "mr-boho"]
+  },
+  {
     "id": "mr-boho-ons",
     "name": "Ons",
     "brand": "Mr. Boho",
