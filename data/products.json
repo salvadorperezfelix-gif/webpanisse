@@ -1,5 +1,31 @@
 [
   {
+    "id": "mr-boho-savina",
+    "name": "Savina",
+    "brand": "Mr. Boho",
+    "brand_slug": "mr-boho",
+    "type": "sol",
+    "price": 65,
+    "variant": "Verde Oliva / Crema",
+    "placeholder": "https://placehold.co/600x480/4a5c2a/f5f0e8?text=Mr.+Boho",
+    "image": "assets/img/products/mr-boho/mr-boho-savina-1.jpg",
+    "gallery": [
+      "assets/img/products/mr-boho/mr-boho-savina-1.jpg",
+      "assets/img/products/mr-boho/mr-boho-savina-2.jpg",
+      "assets/img/products/mr-boho/mr-boho-savina-3.jpg"
+    ],
+    "is_new": true,
+    "description": "La Savina tiene ese volumen generoso que pocas gafas se atreven a tener. Acetato verde oliva traslúcido con ese detalle crema en las bisagras que suaviza la silueta. Una forma cat-eye redondeada que enmarca la mirada con personalidad. Lentes verdes oscuras Cat. 3 con protección UV400.",
+    "specs": {
+      "material": "Acetato",
+      "lente": "Verde oscuro Cat. 3",
+      "uv": "UV400",
+      "medidas": "52-21-145"
+    },
+    "genero": "mujer",
+    "tags": ["sol", "acetato", "verde", "cat-eye", "mr-boho"]
+  },
+  {
     "id": "mr-boho-solarte-rojo",
     "name": "Solarte",
     "brand": "Mr. Boho",
