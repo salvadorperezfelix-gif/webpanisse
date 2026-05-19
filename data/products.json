@@ -1,5 +1,29 @@
 [
   {
+    "id": "panisse-calanque",
+    "name": "Calanque",
+    "brand": "Panisse",
+    "brand_slug": "panisse",
+    "type": "sol",
+    "price": 49,
+    "variant": "Carey / Marrón",
+    "placeholder": "https://placehold.co/600x480/7a4a1e/4a2c0a?text=Panisse",
+    "image": "assets/img/products/panisse/panisse-calanque-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse/panisse-calanque-1.jpg",
+      "assets/img/products/panisse/panisse-calanque-2.jpg"
+    ],
+    "is_new": true,
+    "description": "Montura cuadrada oversize en acetato carey con un patrón de manchas oscuras y ámbar que cambia con la luz. Forma amplia y arquitectónica con barra superior recta y esquinas redondeadas. Lentes marrones sólidas Cat. 3 con protección UV400. Un clásico que gana con los años.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "55 mm",
+      "puente": "15 mm",
+      "varilla": "140 mm",
+      "genero": "Unisex"
+    }
+  },
+  {
     "id": "panisse-riviera",
     "name": "Riviera",
     "brand": "Panisse",
