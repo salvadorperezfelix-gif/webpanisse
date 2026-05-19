@@ -1,5 +1,31 @@
 [
   {
+    "id": "mr-boho-colombier",
+    "name": "Colombier",
+    "brand": "Mr. Boho",
+    "brand_slug": "mr-boho",
+    "type": "sol",
+    "price": 65,
+    "variant": "Carey Cognac",
+    "placeholder": "https://placehold.co/600x480/8b4513/6b7280?text=Mr.+Boho",
+    "image": "assets/img/products/mr-boho/mr-boho-colombier-1.jpg",
+    "gallery": [
+      "assets/img/products/mr-boho/mr-boho-colombier-1.jpg",
+      "assets/img/products/mr-boho/mr-boho-colombier-2.jpg",
+      "assets/img/products/mr-boho/mr-boho-colombier-3.jpg"
+    ],
+    "is_new": true,
+    "description": "La Colombier es la gafa de hombre que no necesita explicaciones. Montura cuadrada de acetato carey cognac, con ese grosor de varilla que da presencia sin resultar excesivo. Un clásico actualizado con el punto de color que solo el carey bien trabajado puede dar. Lentes verdes oscuras Cat. 3 con protección UV400.",
+    "specs": {
+      "material": "Acetato",
+      "lente": "Verde oscuro Cat. 3",
+      "uv": "UV400",
+      "medidas": "52-24-145"
+    },
+    "genero": "unisex",
+    "tags": ["sol", "acetato", "carey", "cuadrada", "mr-boho"]
+  },
+  {
     "id": "mr-boho-solarte-naranja",
     "name": "Solarte",
     "brand": "Mr. Boho",
