@@ -1,5 +1,29 @@
 [
   {
+    "id": "panisse-boutique-marsella",
+    "name": "Marsella",
+    "brand": "Panisse Boutique",
+    "brand_slug": "panisse-boutique",
+    "type": "sol",
+    "price": 99,
+    "variant": "Negro / Verde Polarizado",
+    "placeholder": "https://placehold.co/600x480/111111/4a7c59?text=Panisse+Boutique",
+    "image": "assets/img/products/panisse-boutique/panisse-boutique-marsella-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse-boutique/panisse-boutique-marsella-1.jpg",
+      "assets/img/products/panisse-boutique/panisse-boutique-marsella-2.jpg"
+    ],
+    "is_new": true,
+    "description": "El clásico de siempre con el sello Panisse. Montura wayfarer de acetato negro brillante con remaches plateados y el logo Panisse grabado en la varilla. Lentes verdes polarizadas Cat. 3 que eliminan el deslumbramiento sin perder definición. Una pieza sin fecha de caducidad.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "50 mm",
+      "puente": "22 mm",
+      "varilla": "150 mm",
+      "genero": "Unisex"
+    }
+  },
+  {
     "id": "panisse-boutique-azur",
     "name": "Azur",
     "brand": "Panisse Boutique",
