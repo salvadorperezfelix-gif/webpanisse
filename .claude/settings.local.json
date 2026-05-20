@@ -1,7 +1,13 @@
 {
   "permissions": {
     "allow": [
-      "Bash(curl -s \"https://www.latelieroptica.es/coleccion/\")"
+      "Bash(curl -s \"https://www.latelieroptica.es/coleccion/\")",
+      "Bash(ls -la netlify.toml _redirects _headers)",
+      "Bash(cat netlify.toml)",
+      "Bash(cat _redirects)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
     ]
   }
 }

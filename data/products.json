@@ -1404,21 +1404,21 @@
     }
   },
   {
-    "id": "ray-ban-wayfarer-rb5121-negro",
-    "name": "Wayfarer RB5121",
+    "id": "ray-ban-wayfarer-ease-rb4340v-negro",
+    "name": "Wayfarer Ease RB4340V",
     "brand": "Ray-Ban",
     "brand_slug": "ray-ban",
     "type": "graduadas",
     "price": 143,
-    "variant": "Negro",
+    "variant": "Negro Brillante",
     "placeholder": "https://placehold.co/600x480/111111/ffffff?text=Ray-Ban",
-    "image": "assets/img/products/ray-ban/ray-ban-wayfarer-rb5121-2.jpg",
+    "image": "assets/img/products/ray-ban/ray-ban-wayfarer-rb4340v-1.jpg",
     "gallery": [
-      "assets/img/products/ray-ban/ray-ban-wayfarer-rb5121-2.jpg",
-      "assets/img/products/ray-ban/ray-ban-wayfarer-rb5121-1.jpg"
+      "assets/img/products/ray-ban/ray-ban-wayfarer-rb4340v-1.jpg",
+      "assets/img/products/ray-ban/ray-ban-wayfarer-rb4340v-2.jpg"
     ],
     "is_new": true,
-    "description": "La Wayfarer original. La montura que en 1952 cambió para siempre lo que significaba llevar gafas y que desde entonces no ha necesitado reinventarse — solo refinarse. Su acetato negro brillante de corte trapezoidal con esa barra superior característica es reconocible a distancia, pero es en los detalles donde vive la diferencia: las bisagras metálicas, el logo Ray-Ban grabado con precisión en la varilla, el peso perfectamente distribuido. Una pieza de catálogo que cualquier óptico guardaría para sí.",
+    "description": "La Wayfarer Ease es la versión evolucionada del icono. Ray-Ban tomó la silueta que definió una era y la rediseñó desde dentro: más ligera, más equilibrada, con ese ajuste de proporciones que la hace cómoda desde el primer minuto. El acetato negro brillante mantiene toda la presencia del original, pero con el refinamiento de quien sabe exactamente lo que quiere mejorar. Una montura que no imita — continúa.",
     "specs": {
       "material": "Acetato",
       "calibre": "50 mm",
