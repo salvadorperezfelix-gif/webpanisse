@@ -1460,6 +1460,30 @@
     }
   },
   {
+    "id": "ray-ban-rb4171-havana",
+    "name": "RB4171 Erika",
+    "brand": "Ray-Ban",
+    "brand_slug": "ray-ban",
+    "type": "sol",
+    "price": 127,
+    "variant": "Havana / Marrón Degradado",
+    "placeholder": "https://placehold.co/600x480/7a4520/c8905a?text=Ray-Ban",
+    "image": "assets/img/products/ray-ban/ray-ban-rb4171-1.jpg",
+    "gallery": [
+      "assets/img/products/ray-ban/ray-ban-rb4171-1.jpg",
+      "assets/img/products/ray-ban/ray-ban-rb4171-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La Erika es la gafa de Ray-Ban para quien prefiere la curva a la esquina. Su forma redonda ligeramente aplanada en la parte superior tiene algo de cat-eye sin serlo del todo — una geometría que favorece muchas caras sin pedir nada a cambio. La montura en acetato havana y las lentes marrón degradado Cat. 3 con protección UV400 componen una combinación que no caduca. Ligera, equilibrada, y con esa varilla metálica fina que le da un aire más moderno sin perder el carácter clásico.",
+    "specs": {
+      "material": "Acetato y Metal",
+      "calibre": "54 mm",
+      "puente": "18 mm",
+      "varilla": "145 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
     "id": "ray-ban-rb2230-havana",
     "name": "RB2230 Bernard",
     "brand": "Ray-Ban",
