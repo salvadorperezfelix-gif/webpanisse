@@ -689,9 +689,7 @@ async function initProductPage() {
     const descEl = document.getElementById('prod-desc');
     if (descEl) { const pEl = document.createElement('p'); pEl.textContent = p.description; descEl.replaceChildren(pEl); }
 
-    // Color label + swatches de variantes
-    const colorLabel = document.getElementById('color-label');
-    if (colorLabel) colorLabel.textContent = p.variant || '';
+    // Swatches de variantes de color
     const colorsEl = document.getElementById('prod-colors');
     if (colorsEl && p.variants && p.variants.length > 0) {
       colorsEl.hidden = false;
