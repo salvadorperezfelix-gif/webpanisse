@@ -1720,5 +1720,28 @@
       "varilla": "145 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "ray-ban-rb2132-new-wayfarer-negro",
+    "name": "RB2132 New Wayfarer",
+    "brand": "Ray-Ban",
+    "brand_slug": "ray-ban",
+    "type": "sol",
+    "price": 132,
+    "variant": "Negro / Verde G-15",
+    "image": "assets/img/products/ray-ban/ray-ban-rb2132-negro-1.jpg",
+    "gallery": [
+      "assets/img/products/ray-ban/ray-ban-rb2132-negro-1.jpg",
+      "assets/img/products/ray-ban/ray-ban-rb2132-negro-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La New Wayfarer es la respuesta de Ray-Ban a quienes encontraban la original demasiado grande. La RB2132 toma la silueta icónica y la refina: proporciones algo más pequeñas, ángulos ligeramente más suavizados, el mismo acetato negro brillante y las mismas lentes G-15 que han definido el estándar de la marca durante décadas. El resultado es una Wayfarer que se adapta a más caras sin perder ni un gramo de carácter.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "55 mm",
+      "puente": "18 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
