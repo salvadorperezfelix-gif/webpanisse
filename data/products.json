@@ -1420,7 +1420,11 @@
     "is_new": true,
     "color_swatch": "#111111",
     "variants": [
-      { "id": "ray-ban-wayfarer-ease-rb4340v-havana", "color": "#7a4520", "label": "Havana" }
+      {
+        "id": "ray-ban-wayfarer-ease-rb4340v-havana",
+        "color": "#7a4520",
+        "label": "Havana"
+      }
     ],
     "description": "La Wayfarer Ease es la versión evolucionada del icono. Ray-Ban tomó la silueta que definió una era y la rediseñó desde dentro: más ligera, más equilibrada, con ese ajuste de proporciones que la hace cómoda desde el primer minuto. El acetato negro brillante mantiene toda la presencia del original, pero con el refinamiento de quien sabe exactamente lo que quiere mejorar. Una montura que no imita — continúa.",
     "specs": {
@@ -1441,7 +1445,11 @@
     "variant": "Havana",
     "color_swatch": "#7a4520",
     "variants": [
-      { "id": "ray-ban-wayfarer-ease-rb4340v-negro", "color": "#111111", "label": "Negro Brillante" }
+      {
+        "id": "ray-ban-wayfarer-ease-rb4340v-negro",
+        "color": "#111111",
+        "label": "Negro Brillante"
+      }
     ],
     "placeholder": "https://placehold.co/600x480/7a4520/ffffff?text=Ray-Ban",
     "image": "assets/img/products/ray-ban/ray-ban-wayfarer-rb4340v-havana-1.jpg",
@@ -1530,6 +1538,31 @@
       "puente": "18 mm",
       "varilla": "140 mm",
       "polarizado": "Sí",
+      "genero": "Unisex"
+    }
+  },
+  {
+    "id": "ray-ban-rb3025-aviator-chromance-oro",
+    "name": "RB3025 Aviator Chromance",
+    "brand": "Ray-Ban",
+    "brand_slug": "ray-ban",
+    "type": "sol",
+    "price": 223,
+    "variant": "Oro / Gris Azulado Espejo Polar Chromance",
+    "image": "assets/img/products/ray-ban/ray-ban-rb3025-chromance-1.jpg",
+    "gallery": [
+      "assets/img/products/ray-ban/ray-ban-rb3025-chromance-1.jpg",
+      "assets/img/products/ray-ban/ray-ban-rb3025-chromance-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La Aviator de Ray-Ban es un icono que no necesita presentación; esta versión en montura dorada con tecnología Chromance lleva las lentes al siguiente nivel. El tratamiento Chromance amplifica la saturación de los colores y mejora el contraste sin distorsionar la escena, resultado de una tecnología polarizada de precisión que bloquea el 100% de los rayos UV y elimina los reflejos molestos. Las lentes en gris azulado espejado ofrecen una protección máxima sin renunciar a la estética clásica de la Aviator.",
+    "specs": {
+      "material": "Metal",
+      "calibre": "58 mm",
+      "puente": "14 mm",
+      "varilla": "145 mm",
+      "polarizado": "Sí",
+      "tecnologia": "Chromance",
       "genero": "Unisex"
     }
   }
