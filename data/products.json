@@ -1428,6 +1428,31 @@
     }
   },
   {
+    "id": "ray-ban-rb2230-havana",
+    "name": "RB2230 Bernard",
+    "brand": "Ray-Ban",
+    "brand_slug": "ray-ban",
+    "type": "sol",
+    "price": 143,
+    "variant": "Havana Azul / Gris Oscuro Mineral",
+    "placeholder": "https://placehold.co/600x480/4a3a2a/333333?text=Ray-Ban",
+    "image": "assets/img/products/ray-ban/ray-ban-rb2230-1.jpg",
+    "gallery": [
+      "assets/img/products/ray-ban/ray-ban-rb2230-1.jpg",
+      "assets/img/products/ray-ban/ray-ban-rb2230-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La Bernard es la ronda de Ray-Ban para quien no necesita llamar la atención para tenerla. El acetato havana azul — con ese patrón irregular que cambia según la luz — envuelve una lente perfectamente circular que lleva décadas siendo la forma más honesta de llevar gafas de sol. Los cristales son de vidrio mineral: más densos que el plástico, con una claridad óptica superior, mayor resistencia al rayado y una fidelidad de color que el acetato solo no puede ofrecer. Gris oscuro Cat. 3 con protección UV400.",
+    "specs": {
+      "material": "Acetato",
+      "lente": "Vidrio mineral",
+      "calibre": "53 mm",
+      "puente": "21 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
+  },
+  {
     "id": "ray-ban-rb4469-azul",
     "name": "RB4469",
     "brand": "Ray-Ban",
