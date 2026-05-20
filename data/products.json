@@ -1673,5 +1673,29 @@
       "varilla": "145 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "ray-ban-rb3025-aviator-gris-polar",
+    "name": "RB3025 Aviator",
+    "brand": "Ray-Ban",
+    "brand_slug": "ray-ban",
+    "type": "sol",
+    "price": 203,
+    "variant": "Gris / Azul Degradado Polarizado",
+    "image": "assets/img/products/ray-ban/ray-ban-rb3025-gris-polar-1.jpg",
+    "gallery": [
+      "assets/img/products/ray-ban/ray-ban-rb3025-gris-polar-1.jpg",
+      "assets/img/products/ray-ban/ray-ban-rb3025-gris-polar-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La Aviator en montura gris metalizado con lentes azul degradado polarizadas es la combinación más sobria de un icono que nació en la aviación militar. El metal gris oscuro da un carácter más contenido que el dorado clásico, mientras que las lentes polarizadas con degradado azul-gris eliminan los reflejos y mejoran el contraste en condiciones de mucha luz. Protección máxima con la silueta que definió el concepto de gafa de piloto.",
+    "specs": {
+      "material": "Metal",
+      "calibre": "58 mm",
+      "puente": "14 mm",
+      "varilla": "135 mm",
+      "polarizado": "Sí",
+      "genero": "Unisex"
+    }
   }
 ]
