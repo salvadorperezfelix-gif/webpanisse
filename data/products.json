@@ -1745,25 +1745,25 @@
     }
   },
   {
-    "id": "ray-ban-rx7047-verde",
-    "name": "RX7047",
+    "id": "ray-ban-rx8903-verde",
+    "name": "RX8903",
     "brand": "Ray-Ban",
     "brand_slug": "ray-ban",
     "type": "graduadas",
-    "price": 137,
-    "variant": "Verde Transparente",
-    "image": "assets/img/products/ray-ban/ray-ban-rx7047-verde-1.jpg",
+    "price": 195,
+    "variant": "Verde Transparente / Fibra de Carbono",
+    "image": "assets/img/products/ray-ban/ray-ban-rx8903-verde-1.jpg",
     "gallery": [
-      "assets/img/products/ray-ban/ray-ban-rx7047-verde-1.jpg",
-      "assets/img/products/ray-ban/ray-ban-rx7047-verde-2.jpg"
+      "assets/img/products/ray-ban/ray-ban-rx8903-verde-1.jpg",
+      "assets/img/products/ray-ban/ray-ban-rx8903-verde-2.jpg"
     ],
     "is_new": true,
-    "description": "La RX7047 de Ray-Ban apuesta por el acetato ligero y una estética contemporánea con guiño retro. La montura rectangular en verde transparente —con el interior de las varillas decorado con el pattern de firma Ray-Ban— combina presencia y ligereza. Una propuesta con carácter propio que mantiene la funcionalidad y el acabado que se esperan de la marca.",
+    "description": "La RX8903 de Ray-Ban combina acetato verde transparente con varillas fabricadas en fibra de carbono, un material ultrarresistente y extremadamente ligero utilizado en ingeniería aeroespacial y automoción. El resultado es una montura que prácticamente no se nota en la cara, con una rigidez estructural superior al acetato convencional. El interior de las varillas lleva el pattern de firma Ray-Ban, ese detalle que convierte un objeto funcional en algo reconocible al instante.",
     "specs": {
-      "material": "Acetato",
-      "calibre": "54 mm",
-      "puente": "17 mm",
-      "varilla": "140 mm",
+      "material": "Acetato y Fibra de Carbono",
+      "calibre": "53 mm",
+      "puente": "18 mm",
+      "varilla": "145 mm",
       "genero": "Unisex"
     }
   }
