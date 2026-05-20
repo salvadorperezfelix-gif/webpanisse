@@ -1627,5 +1627,28 @@
       "varilla": "150 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "ray-ban-rb3016-clubmaster-negro-oro",
+    "name": "RB3016 Clubmaster",
+    "brand": "Ray-Ban",
+    "brand_slug": "ray-ban",
+    "type": "sol",
+    "price": 143,
+    "variant": "Negro / Oro / Verde G-15",
+    "image": "assets/img/products/ray-ban/ray-ban-rb3016-clubmaster-1.jpg",
+    "gallery": [
+      "assets/img/products/ray-ban/ray-ban-rb3016-clubmaster-1.jpg",
+      "assets/img/products/ray-ban/ray-ban-rb3016-clubmaster-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La Clubmaster es el browline definitivo. Nacida en los años 50 como símbolo de la contracultura intelectual, la RB3016 combina la parte superior en acetato negro con el aro inferior y los detalles en metal dorado — una dualidad de materiales que da lugar a una silueta imposible de confundir. Las lentes G-15 aportan la protección y la nitidez que Ray-Ban ha refinado durante décadas. Una gafa que ha estado en el rostro de quienes marcan el ritmo sin seguirlo.",
+    "specs": {
+      "material": "Acetato y Metal",
+      "calibre": "51 mm",
+      "puente": "21 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
