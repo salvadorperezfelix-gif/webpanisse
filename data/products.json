@@ -1697,5 +1697,28 @@
       "polarizado": "Sí",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "ray-ban-rb3447-round-metal-oro",
+    "name": "RB3447 Round Metal",
+    "brand": "Ray-Ban",
+    "brand_slug": "ray-ban",
+    "type": "sol",
+    "price": 160,
+    "variant": "Oro / Verde G-15",
+    "image": "assets/img/products/ray-ban/ray-ban-rb3447-round-oro-1.jpg",
+    "gallery": [
+      "assets/img/products/ray-ban/ray-ban-rb3447-round-oro-1.jpg",
+      "assets/img/products/ray-ban/ray-ban-rb3447-round-oro-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La Round Metal de Ray-Ban es la montura circular por excelencia. El aro dorado fino, el puente clave y los detalles en metal trabajado remiten directamente a las gafas redondas de los años 60 que llevaron músicos, poetas e intelectuales de todo el mundo. Las lentes G-15 en verde oscuro equilibran la protección solar con una transmisión de luz que no distorsiona los colores. Una gafa que no necesita época — lleva décadas siendo la misma y siendo igual de relevante.",
+    "specs": {
+      "material": "Metal",
+      "calibre": "50 mm",
+      "puente": "21 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
