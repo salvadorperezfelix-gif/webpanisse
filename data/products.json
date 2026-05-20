@@ -1402,5 +1402,29 @@
       "varilla": "148 mm",
       "genero": "Hombre"
     }
+  },
+  {
+    "id": "ray-ban-wayfarer-rb5121-negro",
+    "name": "Wayfarer RB5121",
+    "brand": "Ray-Ban",
+    "brand_slug": "ray-ban",
+    "type": "graduadas",
+    "price": 143,
+    "variant": "Negro",
+    "placeholder": "https://placehold.co/600x480/111111/ffffff?text=Ray-Ban",
+    "image": "assets/img/products/ray-ban/ray-ban-wayfarer-rb5121-2.jpg",
+    "gallery": [
+      "assets/img/products/ray-ban/ray-ban-wayfarer-rb5121-2.jpg",
+      "assets/img/products/ray-ban/ray-ban-wayfarer-rb5121-1.jpg"
+    ],
+    "is_new": true,
+    "description": "La Wayfarer original. La montura que en 1952 cambió para siempre lo que significaba llevar gafas y que desde entonces no ha necesitado reinventarse — solo refinarse. Su acetato negro brillante de corte trapezoidal con esa barra superior característica es reconocible a distancia, pero es en los detalles donde vive la diferencia: las bisagras metálicas, el logo Ray-Ban grabado con precisión en la varilla, el peso perfectamente distribuido. Una pieza de catálogo que cualquier óptico guardaría para sí.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "50 mm",
+      "puente": "22 mm",
+      "varilla": "150 mm",
+      "genero": "Unisex"
+    }
   }
 ]
