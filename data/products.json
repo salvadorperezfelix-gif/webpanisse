@@ -1565,5 +1565,67 @@
       "tecnologia": "Chromance",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "ray-ban-rb2140-wayfarer-havana",
+    "name": "RB2140 Original Wayfarer",
+    "brand": "Ray-Ban",
+    "brand_slug": "ray-ban",
+    "type": "sol",
+    "price": 143,
+    "variant": "Havana / Verde G-15",
+    "color_swatch": "#7a4520",
+    "variants": [
+      {
+        "id": "ray-ban-rb2140-wayfarer-negro",
+        "color": "#111111",
+        "label": "Negro"
+      }
+    ],
+    "image": "assets/img/products/ray-ban/ray-ban-rb2140-havana-1.jpg",
+    "gallery": [
+      "assets/img/products/ray-ban/ray-ban-rb2140-havana-1.jpg",
+      "assets/img/products/ray-ban/ray-ban-rb2140-havana-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La Original Wayfarer nació en 1952 y desde entonces no ha necesitado reinventarse. La RB2140 en havana es la versión más clásica de un icono que ha estado en el rostro de todo el que alguna vez fue referente cultural. El acetato carey con sus vetas marrones y negras captura la luz de una manera imposible de replicar en plástico ordinario. Las lentes G-15 — la fórmula de Ray-Ban que lleva décadas perfeccionando el equilibrio entre protección y nitidez visual — completan una gafa que no sigue tendencias porque las ha creado todas.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "50 mm",
+      "puente": "22 mm",
+      "varilla": "150 mm",
+      "genero": "Unisex"
+    }
+  },
+  {
+    "id": "ray-ban-rb2140-wayfarer-negro",
+    "name": "RB2140 Original Wayfarer",
+    "brand": "Ray-Ban",
+    "brand_slug": "ray-ban",
+    "type": "sol",
+    "price": 143,
+    "variant": "Negro / Verde G-15",
+    "color_swatch": "#111111",
+    "variants": [
+      {
+        "id": "ray-ban-rb2140-wayfarer-havana",
+        "color": "#7a4520",
+        "label": "Havana"
+      }
+    ],
+    "image": "assets/img/products/ray-ban/ray-ban-rb2140-negro-1.jpg",
+    "gallery": [
+      "assets/img/products/ray-ban/ray-ban-rb2140-negro-1.jpg",
+      "assets/img/products/ray-ban/ray-ban-rb2140-negro-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La Original Wayfarer en negro es la forma más directa de llevar un icono. Desde 1952 esta silueta ha aparecido en las caras que definieron la cultura popular, y la versión en acetato negro brillante con lentes G-15 es su expresión más pura. Sin concesiones, sin actualizaciones innecesarias — solo la montura que lo empezó todo, en el color que más veces ha salido fotografiado.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "50 mm",
+      "puente": "22 mm",
+      "varilla": "150 mm",
+      "genero": "Unisex"
+    }
   }
 ]
