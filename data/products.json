@@ -1426,5 +1426,30 @@
       "varilla": "150 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "ray-ban-rb4469-azul",
+    "name": "RB4469",
+    "brand": "Ray-Ban",
+    "brand_slug": "ray-ban",
+    "type": "sol",
+    "price": 204,
+    "variant": "Azul Mate / Gris Degradado Polarizado",
+    "placeholder": "https://placehold.co/600x480/3a4a6b/555555?text=Ray-Ban",
+    "image": "assets/img/products/ray-ban/ray-ban-rb4469-1.jpg",
+    "gallery": [
+      "assets/img/products/ray-ban/ray-ban-rb4469-1.jpg",
+      "assets/img/products/ray-ban/ray-ban-rb4469-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La RB4469 combina la estructura de un browline clásico con la actitud de una gafa de sol contemporánea. La barra superior en acetato azul mate y el aro inferior en metal plateado crean una dualidad de materiales que da carácter sin estridencia. Las lentes grises degradadas polarizadas eliminan el reflejo y potencian los colores tal como son. Una gafa que lleva el sello Ray-Ban sin necesitar presentación.",
+    "specs": {
+      "material": "Acetato y Metal",
+      "calibre": "51 mm",
+      "puente": "18 mm",
+      "varilla": "140 mm",
+      "polarizado": "Sí",
+      "genero": "Unisex"
+    }
   }
 ]
