@@ -1418,7 +1418,39 @@
       "assets/img/products/ray-ban/ray-ban-wayfarer-rb4340v-1.jpg"
     ],
     "is_new": true,
+    "color_swatch": "#111111",
+    "variants": [
+      { "id": "ray-ban-wayfarer-ease-rb4340v-havana", "color": "#7a4520", "label": "Havana" }
+    ],
     "description": "La Wayfarer Ease es la versión evolucionada del icono. Ray-Ban tomó la silueta que definió una era y la rediseñó desde dentro: más ligera, más equilibrada, con ese ajuste de proporciones que la hace cómoda desde el primer minuto. El acetato negro brillante mantiene toda la presencia del original, pero con el refinamiento de quien sabe exactamente lo que quiere mejorar. Una montura que no imita — continúa.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "50 mm",
+      "puente": "22 mm",
+      "varilla": "150 mm",
+      "genero": "Unisex"
+    }
+  },
+  {
+    "id": "ray-ban-wayfarer-ease-rb4340v-havana",
+    "name": "Wayfarer Ease RB4340V",
+    "brand": "Ray-Ban",
+    "brand_slug": "ray-ban",
+    "type": "graduadas",
+    "price": 143,
+    "variant": "Havana",
+    "color_swatch": "#7a4520",
+    "variants": [
+      { "id": "ray-ban-wayfarer-ease-rb4340v-negro", "color": "#111111", "label": "Negro Brillante" }
+    ],
+    "placeholder": "https://placehold.co/600x480/7a4520/ffffff?text=Ray-Ban",
+    "image": "assets/img/products/ray-ban/ray-ban-wayfarer-rb4340v-havana-1.jpg",
+    "gallery": [
+      "assets/img/products/ray-ban/ray-ban-wayfarer-rb4340v-havana-1.jpg",
+      "assets/img/products/ray-ban/ray-ban-wayfarer-rb4340v-havana-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La Wayfarer Ease en havana es el mismo icono con otro carácter. El acetato carey — con esos tonos que van del marrón claro al casi negro — convierte una montura clásica en algo más personal, más cálido. La silueta Wayfarer Ease mantiene sus proporciones refinadas y su ligereza, pero el havana le añade esa pátina de quien no necesita demostrar nada. Una elección que con los años siempre parece la correcta.",
     "specs": {
       "material": "Acetato",
       "calibre": "50 mm",

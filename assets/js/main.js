@@ -689,6 +689,21 @@ async function initProductPage() {
     const descEl = document.getElementById('prod-desc');
     if (descEl) { const pEl = document.createElement('p'); pEl.textContent = p.description; descEl.replaceChildren(pEl); }
 
+    // Color label + swatches de variantes
+    const colorLabel = document.getElementById('color-label');
+    if (colorLabel) colorLabel.textContent = p.variant || '';
+    const colorsEl = document.getElementById('prod-colors');
+    if (colorsEl && p.variants && p.variants.length > 0) {
+      colorsEl.hidden = false;
+      const current = { id: productId, color: p.color_swatch || '#cccccc', label: p.variant, active: true };
+      const all = [current, ...p.variants.map(v => ({ ...v, active: false }))];
+      colorsEl.innerHTML = all.map(s =>
+        s.active
+          ? `<span class="product-color is-active" style="background:${s.color}" title="${s.label}" aria-label="${s.label} (seleccionado)"></span>`
+          : `<a href="producto.html?id=${s.id}" class="product-color" style="background:${s.color}" title="${s.label}" aria-label="Ver en ${s.label}"></a>`
+      ).join('');
+    }
+
     // Imagen principal
     const mainImg = document.getElementById('product-main-img');
     if (mainImg) {
