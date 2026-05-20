@@ -1650,5 +1650,28 @@
       "varilla": "145 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "ray-ban-rx3447v-round-havana-oro",
+    "name": "RX3447V Round Metal",
+    "brand": "Ray-Ban",
+    "brand_slug": "ray-ban",
+    "type": "graduadas",
+    "price": 143,
+    "variant": "Havana / Oro",
+    "image": "assets/img/products/ray-ban/ray-ban-rx3447v-round-1.jpg",
+    "gallery": [
+      "assets/img/products/ray-ban/ray-ban-rx3447v-round-1.jpg",
+      "assets/img/products/ray-ban/ray-ban-rx3447v-round-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La Round Metal es uno de los diseños más reconocibles de Ray-Ban, y la RX3447V lleva esa silueta circular al mundo de las graduadas. El aro metálico en burdeos mate con detalles en oro y las puntas de varilla en acetato havana crean una combinación de materiales que transmite artesanía y personalidad. Una montura redonda que no sigue la moda de lo redondo — la lleva desde antes de que existiera.",
+    "specs": {
+      "material": "Metal",
+      "calibre": "50 mm",
+      "puente": "21 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
