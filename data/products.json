@@ -1766,5 +1766,28 @@
       "varilla": "145 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "ray-ban-rx6355-negro",
+    "name": "RX6355",
+    "brand": "Ray-Ban",
+    "brand_slug": "ray-ban",
+    "type": "graduadas",
+    "price": 164,
+    "variant": "Negro Mate",
+    "image": "assets/img/products/ray-ban/ray-ban-rx6355-negro-1.jpg",
+    "gallery": [
+      "assets/img/products/ray-ban/ray-ban-rx6355-negro-1.jpg",
+      "assets/img/products/ray-ban/ray-ban-rx6355-negro-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La RX6355 combina una silueta pantos en metal ligero con un acabado negro mate que evita brillos innecesarios. El puente doble y los detalles en plata le dan estructura sin añadir peso. Disponible con clip solar magnético: una lente de sol que se acopla a la montura sin herramientas, convirtiendo la gafa de vista en gafa de sol en un segundo. Una solución práctica para quien no quiere llevar dos pares.",
+    "specs": {
+      "material": "Metal",
+      "calibre": "50 mm",
+      "puente": "20 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
