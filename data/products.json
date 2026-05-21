@@ -2084,5 +2084,28 @@
       "varilla": "140 mm",
       "genero": "Mujer"
     }
+  },
+  {
+    "id": "panisse-boutique-grasse",
+    "name": "Grasse",
+    "brand": "Panisse Boutique",
+    "brand_slug": "panisse-boutique",
+    "type": "graduadas",
+    "price": 99,
+    "variant": "Negro / Oro Rosa",
+    "image": "assets/img/products/panisse/panisse-gradu-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse/panisse-gradu-1.jpg",
+      "assets/img/products/panisse/panisse-gradu-2.jpg"
+    ],
+    "is_new": true,
+    "description": "Cat-eye de acetato negro brillante con bisagras y detalles en oro rosa. Una montura con carácter: el clásico ojo de gato reinterpretado con un acabado lujoso y contemporáneo. El contraste entre el negro intenso y el oro rosa la convierte en una pieza que destaca sola. Línea Panisse Boutique.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "54 mm",
+      "puente": "17 mm",
+      "varilla": "145 mm",
+      "genero": "Mujer"
+    }
   }
 ]
