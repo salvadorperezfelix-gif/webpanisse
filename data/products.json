@@ -2107,5 +2107,28 @@
       "varilla": "145 mm",
       "genero": "Mujer"
     }
+  },
+  {
+    "id": "panisse-beyaz",
+    "name": "Beyaz",
+    "brand": "Panisse",
+    "brand_slug": "panisse",
+    "type": "graduadas",
+    "price": 75,
+    "variant": "Blanco Marfil",
+    "image": "assets/img/products/panisse/panisse-beyaz-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse/panisse-beyaz-1.jpg",
+      "assets/img/products/panisse/panisse-beyaz-2.jpg"
+    ],
+    "is_new": true,
+    "description": "Montura cat-eye en acetato blanco marfil con acabado nacarado. Ligera y luminosa, con una silueta que combina geometría angular y suavidad femenina. Un color atemporal que se adapta a todo. Colección propia Panisse.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "50 mm",
+      "puente": "16 mm",
+      "varilla": "142 mm",
+      "genero": "Mujer"
+    }
   }
 ]
