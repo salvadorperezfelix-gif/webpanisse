@@ -2153,5 +2153,28 @@
       "varilla": "145 mm",
       "genero": "Mujer"
     }
+  },
+  {
+    "id": "panisse-bandol",
+    "name": "Bandol",
+    "brand": "Panisse",
+    "brand_slug": "panisse",
+    "type": "graduadas",
+    "price": 75,
+    "variant": "Burdeos / Oro",
+    "image": "assets/img/products/panisse/panisse-sarapp-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse/panisse-sarapp-1.jpg",
+      "assets/img/products/panisse/panisse-sarapp-2.jpg"
+    ],
+    "is_new": true,
+    "description": "Montura mixta con parte superior en acetato burdeos y estructura en metal dorado. Una combinación con carácter: el color vino aporta intensidad y el dorado la suaviza. Silueta cat-eye contenida, elegante para el día a día. Colección propia Panisse.",
+    "specs": {
+      "material": "Acetato y Metal",
+      "calibre": "53 mm",
+      "puente": "19 mm",
+      "varilla": "140 mm",
+      "genero": "Mujer"
+    }
   }
 ]
