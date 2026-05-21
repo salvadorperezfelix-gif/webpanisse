@@ -2037,5 +2037,29 @@
       "polarizado": "Sí",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "panisse-garrigue",
+    "name": "Garrigue",
+    "brand": "Panisse",
+    "brand_slug": "panisse",
+    "type": "sol",
+    "price": 49,
+    "variant": "Verde Oliva / Polarizado",
+    "image": "assets/img/products/panisse/panisse-zeytin-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse/panisse-zeytin-1.jpg",
+      "assets/img/products/panisse/panisse-zeytin-2.jpg"
+    ],
+    "is_new": true,
+    "description": "Montura cuadrada de acetato verde oliva transparente con lentes polarizadas verdes. Un color que evoca el paisaje mediterráneo: intenso, cálido y atemporal. Las lentes polarizadas eliminan los reflejos para una visión nítida en exteriores. Colección propia Panisse.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "53 mm",
+      "puente": "22 mm",
+      "varilla": "148 mm",
+      "polarizado": "Sí",
+      "genero": "Unisex"
+    }
   }
 ]
