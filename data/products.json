@@ -1332,30 +1332,6 @@
     }
   },
   {
-    "id": "panisse-aviateur",
-    "name": "Aviateur",
-    "brand": "Panisse",
-    "brand_slug": "panisse",
-    "type": "graduadas",
-    "price": 75,
-    "variant": "Negro Mate / Color Único",
-    "placeholder": "https://placehold.co/600x480/0d0d0d/ffffff?text=Panisse+Aviateur",
-    "image": "assets/img/products/panisse/panisse-aviateur-1.jpg",
-    "gallery": [
-      "assets/img/products/panisse/panisse-aviateur-1.jpg",
-      "assets/img/products/panisse/panisse-aviateur-2.jpg"
-    ],
-    "is_new": true,
-    "description": "La montura Aviateur de Panisse reinterpreta la silueta clásica del doble puente con una depuración contemporánea en acetato negro mate. Su arquitectura de líneas firmes y su acabado satinado proyectan una presencia serena y rotunda — para el hombre que encuentra la elegancia en la precisión de las formas.",
-    "specs": {
-      "material": "Acetato",
-      "calibre": "54 mm",
-      "puente": "19 mm",
-      "varilla": "145 mm",
-      "genero": "Hombre"
-    }
-  },
-  {
     "id": "panisse-jade",
     "name": "Jade",
     "brand": "Panisse",
