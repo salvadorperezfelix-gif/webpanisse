@@ -807,25 +807,16 @@ a {
 }
 
 .whatsapp-float:hover {
-  transform: translateY(-3px) scale(1.03);
+  transform: scale(1.06);
   box-shadow: 0 8px 28px rgba(37, 211, 102, 0.5),
               0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .whatsapp-float__tooltip {
-  font-size: 0.75rem;
+  font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   white-space: nowrap;
-  max-width: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition: max-width 0.35s ease, opacity 0.25s ease;
-}
-
-.whatsapp-float:hover .whatsapp-float__tooltip {
-  max-width: 120px;
-  opacity: 1;
 }
 
 /* ── Footer responsive ────────────────────────────────────── */
