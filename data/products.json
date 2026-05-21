@@ -2061,5 +2061,29 @@
       "polarizado": "Sí",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "panisse-boutique-cassis",
+    "name": "Cassis",
+    "brand": "Panisse",
+    "brand_slug": "panisse",
+    "type": "sol",
+    "price": 99,
+    "variant": "Havana / Oro Polarizado",
+    "image": "assets/img/products/panisse/panisse-siyah-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse/panisse-siyah-1.jpg",
+      "assets/img/products/panisse/panisse-siyah-2.jpg"
+    ],
+    "is_new": true,
+    "description": "Montura geométrica hexagonal de la línea Panisse Boutique: acetato havana con puente y bisagras en metal dorado. Una silueta angular y sofisticada que combina la calidez del carey con el brillo del oro. Lentes marrón degradado polarizadas para máximo confort en exteriores.",
+    "specs": {
+      "material": "Acetato y Metal",
+      "calibre": "53 mm",
+      "puente": "19 mm",
+      "varilla": "140 mm",
+      "polarizado": "Sí",
+      "genero": "Unisex"
+    }
   }
 ]
