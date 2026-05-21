@@ -2065,8 +2065,8 @@
   {
     "id": "panisse-boutique-cassis",
     "name": "Cassis",
-    "brand": "Panisse",
-    "brand_slug": "panisse",
+    "brand": "Panisse Boutique",
+    "brand_slug": "panisse-boutique",
     "type": "sol",
     "price": 99,
     "variant": "Havana / Oro Polarizado",
@@ -2089,8 +2089,8 @@
   {
     "id": "panisse-boutique-esterel",
     "name": "Estérel",
-    "brand": "Panisse",
-    "brand_slug": "panisse",
+    "brand": "Panisse Boutique",
+    "brand_slug": "panisse-boutique",
     "type": "sol",
     "price": 99,
     "variant": "Oro Rosa / Rosa Polarizado",
