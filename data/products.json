@@ -2085,5 +2085,29 @@
       "polarizado": "Sí",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "panisse-boutique-esterel",
+    "name": "Estérel",
+    "brand": "Panisse",
+    "brand_slug": "panisse",
+    "type": "sol",
+    "price": 99,
+    "variant": "Oro Rosa / Rosa Polarizado",
+    "image": "assets/img/products/panisse/panisse-hippo-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse/panisse-hippo-1.jpg",
+      "assets/img/products/panisse/panisse-hippo-2.jpg"
+    ],
+    "is_new": true,
+    "description": "Montura semirrimless de metal oro rosa con lentes rosa degradado polarizadas. Un diseño ligero y femenino con detalles de bisagra joya que hacen de esta pieza algo especial. Las lentes polarizadas rosa aportan un tono cálido y romántico sin renunciar al confort visual.",
+    "specs": {
+      "material": "Metal",
+      "calibre": "56 mm",
+      "puente": "20 mm",
+      "varilla": "147 mm",
+      "polarizado": "Sí",
+      "genero": "Mujer"
+    }
   }
 ]
