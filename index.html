@@ -424,16 +424,16 @@
     .lp-products__grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      border-left: 1px solid #e8e8e2;
+      gap: 24px;
     }
     .lp-product {
       display: block;
-      border-right: 1px solid #e8e8e2;
-      border-bottom: 1px solid #e8e8e2;
-      transition: background 0.28s ease;
+      border: 1px solid #e8e8e2;
+      transition: background 0.28s ease, box-shadow 0.28s ease;
     }
     .lp-product:hover {
       background: #fafaf8;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
     }
     .lp-product__link {
       display: block;
