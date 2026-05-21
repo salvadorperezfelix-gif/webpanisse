@@ -1489,7 +1489,15 @@
       "puente": "18 mm",
       "varilla": "145 mm",
       "genero": "Mujer"
-    }
+    },
+    "color_swatch": "#7a4520",
+    "variants": [
+      {
+        "id": "ray-ban-rb4171-violeta",
+        "color": "#7b3070",
+        "label": "Violeta"
+      }
+    ]
   },
   {
     "id": "ray-ban-rb2230-havana",
@@ -1834,6 +1842,37 @@
       "puente": "18 mm",
       "varilla": "145 mm",
       "genero": "Unisex"
+    }
+  },
+  {
+    "id": "ray-ban-rb4171-violeta",
+    "name": "RB4171 Erika",
+    "brand": "Ray-Ban",
+    "brand_slug": "ray-ban",
+    "type": "sol",
+    "price": 127,
+    "variant": "Violeta / Rosa Degradado",
+    "color_swatch": "#7b3070",
+    "variants": [
+      {
+        "id": "ray-ban-rb4171-havana",
+        "color": "#7a4520",
+        "label": "Havana"
+      }
+    ],
+    "image": "assets/img/products/ray-ban/ray-ban-rb4171-violeta-1.jpg",
+    "gallery": [
+      "assets/img/products/ray-ban/ray-ban-rb4171-violeta-1.jpg",
+      "assets/img/products/ray-ban/ray-ban-rb4171-violeta-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La Erika RB4171 en violeta transparente es la versión más atrevida de una silueta que ya de por sí tiene carácter. El acetato violeta deja ver la profundidad del material y capta la luz de forma distinta según el ángulo, mientras que las varillas en metal dorado añaden ligereza y contraste. Las lentes con degradado rosa-marrón completan una combinación cromática pensada para destacar sin esfuerzo.",
+    "specs": {
+      "material": "Acetato y Metal",
+      "calibre": "54 mm",
+      "puente": "18 mm",
+      "varilla": "145 mm",
+      "genero": "Mujer"
     }
   }
 ]
