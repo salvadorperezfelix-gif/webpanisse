@@ -1990,5 +1990,28 @@
       "varilla": "140 mm",
       "genero": "Mujer"
     }
+  },
+  {
+    "id": "ray-ban-rx7047-azul",
+    "name": "RX7047",
+    "brand": "Ray-Ban",
+    "brand_slug": "ray-ban",
+    "type": "graduadas",
+    "price": 117,
+    "variant": "Azul Mate",
+    "image": "assets/img/products/ray-ban/ray-ban-rx7047-azul-1.jpg",
+    "gallery": [
+      "assets/img/products/ray-ban/ray-ban-rx7047-azul-1.jpg",
+      "assets/img/products/ray-ban/ray-ban-rx7047-azul-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La RX7047 en azul mate combina una silueta rectangular ligera en nylon con un color que añade personalidad sin estridencia. El nylon es uno de los materiales más resistentes y ligeros para montura, lo que hace de esta una gafa cómoda para uso continuado durante todo el día. Un diseño funcional con ese punto de distinción que da el color.",
+    "specs": {
+      "material": "Nylon",
+      "calibre": "54 mm",
+      "puente": "17 mm",
+      "varilla": "140 mm",
+      "genero": "Unisex"
+    }
   }
 ]
