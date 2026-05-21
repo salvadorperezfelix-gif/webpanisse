@@ -1967,5 +1967,28 @@
       "polarizado": "Sí",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "swarovski-sk7043-verde-oro",
+    "name": "SK7043",
+    "brand": "Swarovski",
+    "brand_slug": "swarovski",
+    "type": "sol",
+    "price": 190,
+    "variant": "Oro / Verde Degradado",
+    "image": "assets/img/products/swarovski/swarovski-sk7043-verde-1.jpg",
+    "gallery": [
+      "assets/img/products/swarovski/swarovski-sk7043-verde-1.jpg",
+      "assets/img/products/swarovski/swarovski-sk7043-verde-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La SK7043 de Swarovski es una gafa rimless con toda la personalidad de la firma. Las lentes sin aro en verde degradado flotan sobre el puente dorado, mientras que los cristales Swarovski incrustados en las bisagras y las puntas de varilla añaden ese detalle de joyería que distingue la marca. Un objeto pensado para quien entiende la óptica como accesorio de moda — ligera, llamativa y con un acabado que no admite comparación.",
+    "specs": {
+      "material": "Metal con cristales Swarovski",
+      "calibre": "58 mm",
+      "puente": "16 mm",
+      "varilla": "140 mm",
+      "genero": "Mujer"
+    }
   }
 ]
