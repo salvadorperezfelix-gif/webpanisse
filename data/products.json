@@ -1812,5 +1812,28 @@
       "varilla": "145 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "ray-ban-rx5395-thalia-havana",
+    "name": "RX5395 Thalia",
+    "brand": "Ray-Ban",
+    "brand_slug": "ray-ban",
+    "type": "graduadas",
+    "price": 143,
+    "variant": "Havana",
+    "image": "assets/img/products/ray-ban/ray-ban-rx5395-havana-1.jpg",
+    "gallery": [
+      "assets/img/products/ray-ban/ray-ban-rx5395-havana-1.jpg",
+      "assets/img/products/ray-ban/ray-ban-rx5395-havana-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La Thalia RX5395 es la propuesta de Ray-Ban para quien busca algo diferente dentro de la familia acetato. La silueta hexagonal redondeada rompe con el cuadrado clásico y el círculo convencional, ocupando un punto intermedio que resulta sorprendentemente versátil. En havana, el acetato muestra su mejor cara: las vetas en tonos miel, castaño y negro se distribuyen de forma única en cada montura. Una gafa con personalidad geométrica y calidez de material.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "51 mm",
+      "puente": "18 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
