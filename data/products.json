@@ -2013,5 +2013,29 @@
       "varilla": "140 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "panisse-oval-plata-verde",
+    "name": "Oval Polarizado",
+    "brand": "Panisse",
+    "brand_slug": "panisse",
+    "type": "sol",
+    "price": 49,
+    "variant": "Plata / Verde Polarizado",
+    "image": "assets/img/products/panisse/panisse-oval-verde-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse/panisse-oval-verde-1.jpg",
+      "assets/img/products/panisse/panisse-oval-verde-2.jpg"
+    ],
+    "is_new": true,
+    "description": "Una montura oval en metal plateado con cristales verdes polarizados: sencilla, bien resuelta y con ese punto vintage que nunca pasa de moda. Las varillas en acetato carey añaden calidez al conjunto. Las lentes polarizadas bloquean los reflejos horizontales para una visión más cómoda en el exterior. Colección propia Panisse.",
+    "specs": {
+      "material": "Metal y Acetato",
+      "calibre": "50 mm",
+      "puente": "19 mm",
+      "varilla": "152 mm",
+      "polarizado": "Sí",
+      "genero": "Unisex"
+    }
   }
 ]
