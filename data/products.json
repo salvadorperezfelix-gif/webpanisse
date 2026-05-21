@@ -1789,5 +1789,28 @@
       "varilla": "145 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "ray-ban-rx6549-azul-plata",
+    "name": "RX6549",
+    "brand": "Ray-Ban",
+    "brand_slug": "ray-ban",
+    "type": "graduadas",
+    "price": 132,
+    "variant": "Azul Mate / Plata",
+    "image": "assets/img/products/ray-ban/ray-ban-rx6549-azul-1.jpg",
+    "gallery": [
+      "assets/img/products/ray-ban/ray-ban-rx6549-azul-1.jpg",
+      "assets/img/products/ray-ban/ray-ban-rx6549-azul-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La RX6549 combina el aro cuadrado en azul mate con las varillas y el puente en metal plateado, creando una dualidad de materiales que equilibra carácter y discreción. La forma angular con esquinas ligeramente redondeadas da un perfil contemporáneo sin estridencia. Las puntas de varilla en acetato carey añaden un detalle de contraste que remite a la tradición óptica clásica. Una montura versátil que funciona igual de bien en un contexto profesional que en el día a día.",
+    "specs": {
+      "material": "Metal",
+      "calibre": "51 mm",
+      "puente": "20 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
