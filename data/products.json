@@ -1874,5 +1874,28 @@
       "varilla": "145 mm",
       "genero": "Mujer"
     }
+  },
+  {
+    "id": "ray-ban-rb2186-state-street-negro",
+    "name": "RB2186 State Street",
+    "brand": "Ray-Ban",
+    "brand_slug": "ray-ban",
+    "type": "sol",
+    "price": 153,
+    "variant": "Negro / Verde G-15",
+    "image": "assets/img/products/ray-ban/ray-ban-rb2186-negro-1.jpg",
+    "gallery": [
+      "assets/img/products/ray-ban/ray-ban-rb2186-negro-1.jpg",
+      "assets/img/products/ray-ban/ray-ban-rb2186-negro-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La State Street RB2186 toma la silueta cuadrada clásica y la lleva a otro nivel de proporción. El acetato negro brillante de grosor generoso le da una presencia que no pasa desapercibida, mientras que los detalles plateados en las varillas añaden un contrapunto más fino. Las lentes G-15 verdes mantienen la fidelidad cromática que Ray-Ban ha perfeccionado durante décadas. Una montura para quien quiere una gafa con carácter sin renunciar a la versatilidad del negro.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "52 mm",
+      "puente": "20 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
