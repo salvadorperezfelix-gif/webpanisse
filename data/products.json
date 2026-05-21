@@ -1920,5 +1920,28 @@
       "varilla": "145 mm",
       "genero": "Hombre"
     }
+  },
+  {
+    "id": "ray-ban-rb4165-justin-azul-espejo",
+    "name": "RB4165 Justin",
+    "brand": "Ray-Ban",
+    "brand_slug": "ray-ban",
+    "type": "sol",
+    "price": 137,
+    "variant": "Negro Mate / Azul Espejo",
+    "image": "assets/img/products/ray-ban/ray-ban-rb4165-azul-1.jpg",
+    "gallery": [
+      "assets/img/products/ray-ban/ray-ban-rb4165-azul-1.jpg",
+      "assets/img/products/ray-ban/ray-ban-rb4165-azul-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La Justin RB4165 en negro mate con lentes azul espejo es la combinación más reconocible de este modelo. La montura cuadrada en nylon ligero y el acabado mate le dan un perfil deportivo y urbano que encaja con cualquier look. Las lentes espejadas en azul añaden un punto de color sin estridencia y ofrecen una protección solar completa. Una gafa que se lleva bien y se ve mejor.",
+    "specs": {
+      "material": "Nylon",
+      "calibre": "55 mm",
+      "puente": "16 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
