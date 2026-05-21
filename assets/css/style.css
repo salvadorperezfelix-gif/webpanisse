@@ -2342,7 +2342,7 @@ body, body.translated-ltr, body.translated-rtl { top: 0 !important; margin-top: 
 /* ── Galería ── */
 .product-gallery {
   display: grid;
-  grid-template-columns: 80px 1fr;
+  grid-template-columns: 96px 1fr;
   gap: 12px;
   position: sticky;
   top: calc(72px + 20px);
