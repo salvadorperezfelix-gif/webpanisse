@@ -2061,5 +2061,28 @@
       "polarizado": "Sí",
       "genero": "Mujer"
     }
+  },
+  {
+    "id": "panisse-arles",
+    "name": "Arles",
+    "brand": "Panisse",
+    "brand_slug": "panisse",
+    "type": "graduadas",
+    "price": 75,
+    "variant": "Nude / Tortoise",
+    "image": "assets/img/products/panisse/panisse-pembe-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse/panisse-pembe-1.jpg",
+      "assets/img/products/panisse/panisse-pembe-2.jpg"
+    ],
+    "is_new": true,
+    "description": "Montura cat-eye en acetato bicolor: parte superior en nude suave y parte inferior en tortoise. Las varillas en metal dorado aportan ligereza al conjunto. Una combinación elegante y femenina, perfecta para el uso diario. Colección propia Panisse.",
+    "specs": {
+      "material": "Acetato y Metal",
+      "calibre": "56 mm",
+      "puente": "16 mm",
+      "varilla": "140 mm",
+      "genero": "Mujer"
+    }
   }
 ]
