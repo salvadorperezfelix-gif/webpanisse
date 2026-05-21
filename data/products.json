@@ -2130,5 +2130,28 @@
       "varilla": "142 mm",
       "genero": "Mujer"
     }
+  },
+  {
+    "id": "panisse-sanary",
+    "name": "Sanary",
+    "brand": "Panisse",
+    "brand_slug": "panisse",
+    "type": "graduadas",
+    "price": 75,
+    "variant": "Negro / Oro Rosa",
+    "image": "assets/img/products/panisse/panisse-titolike-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse/panisse-titolike-1.jpg",
+      "assets/img/products/panisse/panisse-titolike-2.jpg"
+    ],
+    "is_new": true,
+    "description": "Montura metal de aro fino con frente negro y estructura en oro rosa. Una combinación sofisticada y femenina que aporta definición sin peso. El calibre compacto la hace ideal para rostros pequeños o quienes buscan un look discreto con personalidad. Colección propia Panisse.",
+    "specs": {
+      "material": "Metal",
+      "calibre": "43 mm",
+      "puente": "18 mm",
+      "varilla": "145 mm",
+      "genero": "Mujer"
+    }
   }
 ]
