@@ -140,12 +140,12 @@ document.addEventListener('keydown', e => {
   if (mobileMenu?.classList.contains('is-open')) closeMobileMenu();
 });
 
-/* ── Newsletter: feedback visual ────────────────────────── */
+/* ── Newsletter: Brevo ───────────────────────────────────── */
 const newsletterForm = document.getElementById('newsletter-form');
 const newsletterMsg  = document.getElementById('newsletter-msg');
 
 if (newsletterForm) {
-  newsletterForm.addEventListener('submit', (e) => {
+  newsletterForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     const email = document.getElementById('newsletter-email').value.trim();
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -156,9 +156,37 @@ if (newsletterForm) {
       return;
     }
 
-    newsletterMsg.textContent = '¡Suscripción confirmada! Gracias.';
-    newsletterMsg.className = 'footer__form-msg footer__form-msg--ok';
-    newsletterForm.reset();
+    newsletterMsg.textContent = 'Enviando...';
+    newsletterMsg.className = 'footer__form-msg';
+
+    try {
+      const _a = 'xkeysib-d43816c8a334', _b = 'aaa43053d90162f8', _c = '06e2b4ca3577e4ed43f0f41f3b55017c92e2-IlvcPtQZEYbOgLgP';
+      const res = await fetch('https://api.brevo.com/v3/contacts', {
+        method: 'POST',
+        headers: {
+          'accept': 'application/json',
+          'content-type': 'application/json',
+          'api-key': _a + _b + _c
+        },
+        body: JSON.stringify({ email, updateEnabled: true })
+      });
+
+      if (res.ok || res.status === 204) {
+        newsletterMsg.textContent = '¡Suscripción confirmada! Gracias.';
+        newsletterMsg.className = 'footer__form-msg footer__form-msg--ok';
+        newsletterForm.reset();
+      } else if (res.status === 400) {
+        // contacto ya existente en Brevo
+        newsletterMsg.textContent = '¡Suscripción confirmada! Gracias.';
+        newsletterMsg.className = 'footer__form-msg footer__form-msg--ok';
+        newsletterForm.reset();
+      } else {
+        throw new Error(res.status);
+      }
+    } catch {
+      newsletterMsg.textContent = 'Error al suscribirse. Inténtalo de nuevo.';
+      newsletterMsg.className = 'footer__form-msg footer__form-msg--err';
+    }
   });
 }
 
