@@ -1943,5 +1943,29 @@
       "varilla": "145 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "ray-ban-rb3768-negro-polar",
+    "name": "RB3768",
+    "brand": "Ray-Ban",
+    "brand_slug": "ray-ban",
+    "type": "sol",
+    "price": 162,
+    "variant": "Negro / Gris Oscuro Polarizado",
+    "image": "assets/img/products/ray-ban/ray-ban-rb3768-negro-polar-1.jpg",
+    "gallery": [
+      "assets/img/products/ray-ban/ray-ban-rb3768-negro-polar-1.jpg",
+      "assets/img/products/ray-ban/ray-ban-rb3768-negro-polar-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La RB3768 es una gafa rimless de metal negro con lentes polarizadas en gris oscuro. Sin aro que rodee los cristales, la montura desaparece en la cara y lo que queda es la lente: limpia, directa, con toda la presencia sin el peso visual de una montura completa. Las lentes polarizadas eliminan los reflejos con precisión, haciendo de esta una opción ideal para conducción o actividades en exterior con mucha luz.",
+    "specs": {
+      "material": "Metal",
+      "calibre": "56 mm",
+      "puente": "17 mm",
+      "varilla": "145 mm",
+      "polarizado": "Sí",
+      "genero": "Unisex"
+    }
   }
 ]
