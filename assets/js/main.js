@@ -168,7 +168,7 @@ if (newsletterForm) {
           'content-type': 'application/json',
           'api-key': _a + _b + _c
         },
-        body: JSON.stringify({ email, updateEnabled: true })
+        body: JSON.stringify({ email, updateEnabled: true, listIds: [3] })
       });
 
       if (res.ok || res.status === 204) {
