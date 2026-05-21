@@ -1897,5 +1897,28 @@
       "varilla": "145 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "ray-ban-rb3750-plata-gris",
+    "name": "RB3750",
+    "brand": "Ray-Ban",
+    "brand_slug": "ray-ban",
+    "type": "sol",
+    "price": 132,
+    "variant": "Plata / Gris Oscuro",
+    "image": "assets/img/products/ray-ban/ray-ban-rb3750-plata-1.jpg",
+    "gallery": [
+      "assets/img/products/ray-ban/ray-ban-rb3750-plata-1.jpg",
+      "assets/img/products/ray-ban/ray-ban-rb3750-plata-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La RB3750 es una gafa de sol rectangular en metal con espíritu deportivo y elegante a la vez. La montura en plata con las bisagras estriadas características de Ray-Ban y las lentes en gris oscuro dan un perfil sobrio y masculino que funciona tanto en el día a día como en actividades al aire libre. El calibre generoso de 62 mm ofrece una cobertura amplia sin perder línea.",
+    "specs": {
+      "material": "Metal",
+      "calibre": "62 mm",
+      "puente": "18 mm",
+      "varilla": "145 mm",
+      "genero": "Hombre"
+    }
   }
 ]
