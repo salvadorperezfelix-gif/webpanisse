@@ -2245,5 +2245,28 @@
       "varilla": "145 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "polaroid-pld4199-havana",
+    "name": "PLD 4199",
+    "brand": "Polaroid",
+    "brand_slug": "polaroid",
+    "type": "sol",
+    "price": 79,
+    "variant": "Havana / Marrón Degradado Polarizado",
+    "image": "assets/img/products/polaroid/polaroid-pld4199-1.jpg",
+    "gallery": [
+      "assets/img/products/polaroid/polaroid-pld4199-1.jpg",
+      "assets/img/products/polaroid/polaroid-pld4199-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La PLD 4199 es una montura cuadrada oversize en acetato havana con cristal marrón degradado polarizado. Su volumen generoso y el patrón carey cálido le dan una presencia rotunda y clásica. El broche dorado en las varillas y la protección polarizada completan una gafa pensada para el día en exteriores.",
+    "specs": {
+      "material": "Polipropileno Reciclado",
+      "calibre": "55 mm",
+      "puente": "19 mm",
+      "varilla": "140 mm",
+      "genero": "Mujer"
+    }
   }
 ]
