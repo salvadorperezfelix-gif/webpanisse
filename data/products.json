@@ -2360,5 +2360,28 @@
       "varilla": "145 mm",
       "genero": "Mujer"
     }
+  },
+  {
+    "id": "polaroid-pld6251-gris-ambar",
+    "name": "PLD 6251",
+    "brand": "Polaroid",
+    "brand_slug": "polaroid",
+    "type": "sol",
+    "price": 65,
+    "variant": "Gris Transparente / Ámbar Polarizado",
+    "image": "assets/img/products/polaroid/polaroid-pld6251-1.jpg",
+    "gallery": [
+      "assets/img/products/polaroid/polaroid-pld6251-1.jpg",
+      "assets/img/products/polaroid/polaroid-pld6251-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La PLD 6251 combina una montura cuadrada en polipropileno reciclado transparente gris con cristal ámbar polarizado y puntas de varilla en rojo. El juego entre el gris humo del acetato, el cálido del cristal y el rojo de las puntas crea una combinación de color inesperada y muy actual. Una pieza con carácter unisex y espíritu contemporáneo.",
+    "specs": {
+      "material": "Polipropileno Reciclado",
+      "calibre": "51 mm",
+      "puente": "19 mm",
+      "varilla": "140 mm",
+      "genero": "Unisex"
+    }
   }
 ]
