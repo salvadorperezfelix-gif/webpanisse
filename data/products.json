@@ -2314,5 +2314,28 @@
       "varilla": "145 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "polaroid-pld6247-havana-azul",
+    "name": "PLD 6247",
+    "brand": "Polaroid",
+    "brand_slug": "polaroid",
+    "type": "sol",
+    "price": 59,
+    "variant": "Havana / Azul Degradado Polarizado",
+    "image": "assets/img/products/polaroid/polaroid-pld6247-1.jpg",
+    "gallery": [
+      "assets/img/products/polaroid/polaroid-pld6247-1.jpg",
+      "assets/img/products/polaroid/polaroid-pld6247-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La PLD 6247 es una montura cuadrada oversized en polipropileno reciclado havana con cristal azul degradado polarizado. Su formato amplio y sus esquinas angulosas le dan un aire retro-moderno con mucha presencia. El contraste entre el carey cálido y el cristal azul frío crea un equilibrio llamativo y sofisticado.",
+    "specs": {
+      "material": "Polipropileno Reciclado",
+      "calibre": "58 mm",
+      "puente": "18 mm",
+      "varilla": "145 mm",
+      "genero": "Mujer"
+    }
   }
 ]
