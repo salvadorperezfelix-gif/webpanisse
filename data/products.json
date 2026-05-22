@@ -2291,5 +2291,28 @@
       "varilla": "145 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "polaroid-pld6241-gris-ambar",
+    "name": "PLD 6241",
+    "brand": "Polaroid",
+    "brand_slug": "polaroid",
+    "type": "sol",
+    "price": 69,
+    "variant": "Gris Transparente / Ámbar Polarizado",
+    "image": "assets/img/products/polaroid/polaroid-pld6241-1.jpg",
+    "gallery": [
+      "assets/img/products/polaroid/polaroid-pld6241-1.jpg",
+      "assets/img/products/polaroid/polaroid-pld6241-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La PLD 6241 es una montura cuadrada de perfil grueso en acetato transparente gris humo con cristal ámbar polarizado. Su silueta rectangular y su volumen pronunciado le dan un aire urbano y contemporáneo, mientras el tono miel del cristal polarizado añade calidez y contraste. Una gafa que destaca sin gritar.",
+    "specs": {
+      "material": "Polipropileno Reciclado",
+      "calibre": "53 mm",
+      "puente": "21 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
