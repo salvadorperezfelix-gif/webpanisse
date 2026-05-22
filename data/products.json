@@ -2176,5 +2176,28 @@
       "varilla": "140 mm",
       "genero": "Mujer"
     }
+  },
+  {
+    "id": "polaroid-diss-negro",
+    "name": "Polaroid DISS",
+    "brand": "Polaroid",
+    "brand_slug": "polaroid",
+    "type": "sol",
+    "price": 69,
+    "variant": "Negro / Gris Polarizado",
+    "image": "assets/img/products/polaroid/polaroid-diss-1.jpg",
+    "gallery": [
+      "assets/img/products/polaroid/polaroid-diss-1.jpg",
+      "assets/img/products/polaroid/polaroid-diss-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La Polaroid DISS en negro es una cat-eye de acetato de polipropileno con curvas pronunciadas y una actitud contemporánea. Su cristal polarizado gris elimina los reflejos y protege la visión con comodidad real. Los detalles dorados en la bisagra añaden un punto de distinción sin romper su carácter urbano.",
+    "specs": {
+      "material": "Polipropileno",
+      "calibre": "51 mm",
+      "puente": "20 mm",
+      "varilla": "140 mm",
+      "genero": "Mujer"
+    }
   }
 ]
