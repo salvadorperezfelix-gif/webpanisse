@@ -2337,5 +2337,28 @@
       "varilla": "145 mm",
       "genero": "Mujer"
     }
+  },
+  {
+    "id": "polaroid-pld5969-fucsia",
+    "name": "PLD 5969",
+    "brand": "Polaroid",
+    "brand_slug": "polaroid",
+    "type": "sol",
+    "price": 69,
+    "variant": "Fucsia / Gris Polarizado",
+    "image": "assets/img/products/polaroid/polaroid-pld5969-1.jpg",
+    "gallery": [
+      "assets/img/products/polaroid/polaroid-pld5969-1.jpg",
+      "assets/img/products/polaroid/polaroid-pld5969-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La PLD 5969 es una cat-eye de polipropileno reciclado en fucsia intenso con cristal gris polarizado. Su color vibrante y sus ángulos marcados la convierten en la pieza más declarada de la colección Polaroid. Sin medias tintas: una gafa para quienes no pasan desapercibidas.",
+    "specs": {
+      "material": "Polipropileno Reciclado",
+      "calibre": "59 mm",
+      "puente": "19 mm",
+      "varilla": "145 mm",
+      "genero": "Mujer"
+    }
   }
 ]
