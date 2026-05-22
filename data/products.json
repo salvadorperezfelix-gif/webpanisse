@@ -2222,5 +2222,28 @@
       "varilla": "140 mm",
       "genero": "Mujer"
     }
+  },
+  {
+    "id": "polaroid-pld4190-negro-verde",
+    "name": "PLD 4190",
+    "brand": "Polaroid",
+    "brand_slug": "polaroid",
+    "type": "sol",
+    "price": 59,
+    "variant": "Negro Mate / Verde Polarizado",
+    "image": "assets/img/products/polaroid/polaroid-pld4190-1.jpg",
+    "gallery": [
+      "assets/img/products/polaroid/polaroid-pld4190-1.jpg",
+      "assets/img/products/polaroid/polaroid-pld4190-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La PLD 4190 es una wayfarer cuadrada de polipropileno reciclado en negro mate con cristal verde polarizado. Forma clásica actualizada con un acabado sin brillo que le da un carácter más contemporáneo y deportivo. Ligera, cómoda y con protección polarizada real para el día a día al aire libre.",
+    "specs": {
+      "material": "Polipropileno Reciclado",
+      "calibre": "56 mm",
+      "puente": "16 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
