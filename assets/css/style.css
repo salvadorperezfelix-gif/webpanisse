@@ -5557,3 +5557,235 @@ img[loading="lazy"].is-loaded {
   .timeline-card            { grid-template-columns: 1fr; }
   .timeline-card__img       { aspect-ratio: 16 / 9; }
 }
+
+/* ════════════════════════════════════════════════════════════
+   AVISO DE COOKIES (GDPR / COMPLIANT)
+   Diseño: Minimalista premium, modo claro, glassmorphism sutil
+   Posicionamiento: Abajo izquierda para no pisar el botón de WhatsApp
+════════════════════════════════════════════════════════════ */
+.cookie-banner {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  width: 420px;
+  max-width: calc(100vw - 48px);
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-lg);
+  z-index: 10000;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity var(--transition), transform var(--transition);
+  pointer-events: none;
+}
+
+.cookie-banner.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+.cookie-banner__header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cookie-banner__title {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  font-weight: 400;
+  color: var(--color-black);
+  letter-spacing: 0.02em;
+}
+
+.cookie-banner__desc {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  color: var(--color-muted);
+}
+
+.cookie-banner__desc a {
+  text-decoration: underline;
+  color: var(--color-black);
+  transition: color var(--transition);
+}
+
+.cookie-banner__desc a:hover {
+  color: var(--color-accent-dk);
+}
+
+.cookie-banner__actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.cookie-banner__btn {
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 12px 16px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-align: center;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+  outline: none;
+}
+
+.cookie-banner__btn--primary {
+  background: var(--color-black);
+  color: var(--color-white);
+  border-color: var(--color-black);
+}
+
+.cookie-banner__btn--primary:hover {
+  background: transparent;
+  color: var(--color-black);
+}
+
+.cookie-banner__btn--secondary {
+  background: var(--color-white);
+  color: var(--color-black);
+  border-color: var(--color-border);
+}
+
+.cookie-banner__btn--secondary:hover {
+  border-color: var(--color-black);
+}
+
+.cookie-banner__btn--full {
+  grid-column: span 2;
+  margin-top: 4px;
+}
+
+/* Panel de Configuración */
+.cookie-banner__settings {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.3s ease;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-top: 1px solid var(--color-border);
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.cookie-banner__settings.is-open {
+  max-height: 380px;
+  opacity: 1;
+  padding-top: 16px;
+  margin-top: 8px;
+}
+
+.cookie-banner__setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.cookie-banner__setting-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cookie-banner__setting-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-black);
+}
+
+.cookie-banner__setting-desc {
+  font-size: 0.75rem;
+  color: var(--color-muted);
+  line-height: 1.4;
+}
+
+/* Switch Estilo Premium (iOS minimal) */
+.cookie-switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.cookie-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.cookie-switch__slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: var(--color-border);
+  transition: .24s;
+  border-radius: 20px;
+}
+
+.cookie-switch__slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: var(--color-white);
+  transition: .24s;
+  border-radius: 50%;
+}
+
+.cookie-switch input:checked + .cookie-switch__slider {
+  background-color: var(--color-accent-dk);
+}
+
+.cookie-switch input:focus + .cookie-switch__slider {
+  box-shadow: 0 0 1px var(--color-accent-dk);
+}
+
+.cookie-switch input:checked + .cookie-switch__slider:before {
+  transform: translateX(16px);
+}
+
+.cookie-switch input:disabled + .cookie-switch__slider {
+  background-color: #dfdfdb;
+  cursor: not-allowed;
+}
+
+.cookie-switch input:disabled + .cookie-switch__slider:before {
+  background-color: #f5f5f3;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 600px) {
+  .cookie-banner {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+  }
+}
+
