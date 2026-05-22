@@ -2268,5 +2268,28 @@
       "varilla": "140 mm",
       "genero": "Mujer"
     }
+  },
+  {
+    "id": "polaroid-pld6249-gris-azul",
+    "name": "PLD 6249",
+    "brand": "Polaroid",
+    "brand_slug": "polaroid",
+    "type": "sol",
+    "price": 69,
+    "variant": "Gris Transparente / Azul Degradado Polarizado",
+    "image": "assets/img/products/polaroid/polaroid-pld6249-1.jpg",
+    "gallery": [
+      "assets/img/products/polaroid/polaroid-pld6249-1.jpg",
+      "assets/img/products/polaroid/polaroid-pld6249-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La PLD 6249 en gris transparente es una panto de acetato con facetas geométricas que le dan un carácter único. Su montura semitransparente en azul pizarra y el cristal azul degradado polarizado crean un conjunto monocromático y sofisticado. Cómoda, ligera y con un perfil redondo que funciona en cualquier tipo de rostro.",
+    "specs": {
+      "material": "Polipropileno Reciclado",
+      "calibre": "50 mm",
+      "puente": "22 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
