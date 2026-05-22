@@ -2199,5 +2199,28 @@
       "varilla": "140 mm",
       "genero": "Mujer"
     }
+  },
+  {
+    "id": "polaroid-pld4189-havana",
+    "name": "PLD 4189",
+    "brand": "Polaroid",
+    "brand_slug": "polaroid",
+    "type": "sol",
+    "price": 59,
+    "variant": "Havana / Marrón Degradado Polarizado",
+    "image": "assets/img/products/polaroid/polaroid-leo-1.jpg",
+    "gallery": [
+      "assets/img/products/polaroid/polaroid-leo-1.jpg",
+      "assets/img/products/polaroid/polaroid-leo-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La PLD 4189 es una montura cuadrada oversize en acetato havana con lentes marrón degradado polarizado. Su volumen generoso y sus esquinas redondeadas le dan un aire setentero actualizado, mientras el cristal polarizado cuida la visión en exteriores. El broche Polaroid en las varillas añade el detalle justo.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "53 mm",
+      "puente": "18 mm",
+      "varilla": "140 mm",
+      "genero": "Mujer"
+    }
   }
 ]
