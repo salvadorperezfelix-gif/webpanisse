@@ -2,6 +2,49 @@
 <html lang="es">
 
 <head>
+  <!-- Google Consent Mode v2 Default State -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    
+    // Comprobar si ya existe consentimiento guardado
+    var savedConsent = localStorage.getItem('cookieConsent');
+    if (savedConsent) {
+      try {
+        var consentObj = JSON.parse(savedConsent);
+        gtag('consent', 'default', {
+          'ad_storage': consentObj.marketing ? 'granted' : 'denied',
+          'ad_user_data': consentObj.marketing ? 'granted' : 'denied',
+          'ad_personalization': consentObj.marketing ? 'granted' : 'denied',
+          'analytics_storage': consentObj.analytics ? 'granted' : 'denied'
+        });
+      } catch (e) {
+        gtag('consent', 'default', {
+          'ad_storage': 'denied',
+          'ad_user_data': 'denied',
+          'ad_personalization': 'denied',
+          'analytics_storage': 'denied'
+        });
+      }
+    } else {
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied'
+      });
+    }
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18003465740"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18003465740');
+    gtag('config', 'G-ZPWT5ZT4X4');
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
