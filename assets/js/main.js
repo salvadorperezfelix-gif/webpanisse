@@ -935,6 +935,13 @@ if (document.readyState === 'loading') {
         'analytics_storage': analyticsGranted ? 'granted' : 'denied'
       });
     }
+    if (typeof window.fbq === 'function') {
+      if (marketingGranted) {
+        window.fbq('consent', 'grant');
+      } else {
+        window.fbq('consent', 'revoke');
+      }
+    }
   }
 
   function saveConsent(analytics, marketing) {
