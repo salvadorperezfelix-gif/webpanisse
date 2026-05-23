@@ -2406,5 +2406,28 @@
       "varilla": "146 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "panisse-boutique-menton",
+    "name": "Menton",
+    "brand": "Panisse Boutique",
+    "brand_slug": "panisse-boutique",
+    "type": "sol",
+    "price": 99,
+    "variant": "Plata / Verde Degradado Polarizado",
+    "image": "assets/img/products/panisse/panisse-boutique-menton-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse/panisse-boutique-menton-1.jpg",
+      "assets/img/products/panisse/panisse-boutique-menton-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La Menton lleva el nombre de la ciudad más oriental de la Costa Azul francesa, puerta entre Provenza e Italia. Montura sin aro en metal plata con cristal verde degradado polarizado — una pieza que desaparece en el rostro y deja solo la mirada. La ausencia de montura es la mayor declaración de refinamiento que puede hacer una gafa.",
+    "specs": {
+      "material": "Metal",
+      "calibre": "59 mm",
+      "puente": "13 mm",
+      "varilla": "140 mm",
+      "genero": "Unisex"
+    }
   }
 ]
