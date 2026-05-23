@@ -2383,5 +2383,28 @@
       "varilla": "140 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "panisse-sete",
+    "name": "Sète",
+    "brand": "Panisse",
+    "brand_slug": "panisse",
+    "type": "sol",
+    "price": 49,
+    "variant": "Azul Marino / Gris Polarizado",
+    "image": "assets/img/products/panisse/panisse-sete-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse/panisse-sete-1.jpg",
+      "assets/img/products/panisse/panisse-sete-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La Sète toma el nombre del puerto mediterráneo francés conocido como la Venecia del Languedoc. Montura cuadrada en acetato azul marino transparente con detalles en plata y cristal gris polarizado. Una pieza con carácter clásico y presencia mediterránea, construida con los materiales y el acabado que definen Panisse.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "51 mm",
+      "puente": "22 mm",
+      "varilla": "146 mm",
+      "genero": "Unisex"
+    }
   }
 ]
