@@ -2429,5 +2429,28 @@
       "varilla": "140 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "panisse-collioure",
+    "name": "Collioure",
+    "brand": "Panisse",
+    "brand_slug": "panisse",
+    "type": "sol",
+    "price": 49,
+    "variant": "Negro / Gris Polarizado",
+    "image": "assets/img/products/panisse/panisse-collioure-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse/panisse-collioure-1.jpg",
+      "assets/img/products/panisse/panisse-collioure-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La Collioure toma el nombre del puerto de pescadores de la Costa Bermeja, el pueblo que inspiró a Matisse y Derain. Montura octogonal en metal negro con cristal gris polarizado — una forma que mezcla lo redondo y lo angular con precisión. Discreta en el detalle, contundente en el conjunto.",
+    "specs": {
+      "material": "Metal",
+      "calibre": "51 mm",
+      "puente": "20 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
