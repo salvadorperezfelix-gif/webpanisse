@@ -5,6 +5,9 @@
   "main": "main.js",
   "scripts": {
     "admin": "node scripts/admin.js",
+    "build:js": "terser assets/js/main.js --compress --mangle --output assets/js/main.min.js",
+    "build:css": "cleancss -o assets/css/style.min.css assets/css/style.css",
+    "build": "npm run build:js && npm run build:css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,5 +19,9 @@
     "multer": "^2.1.1",
     "puppeteer": "^24.43.0",
     "sharp": "^0.34.5"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "terser": "^5.48.0"
   }
 }
