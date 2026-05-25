@@ -46,6 +46,29 @@
     }
   },
   {
+    "id": "panisse-capri",
+    "name": "Capri",
+    "brand": "Panisse",
+    "brand_slug": "panisse",
+    "type": "graduadas",
+    "price": 75,
+    "variant": "Esmeralda / Dorado",
+    "placeholder": "https://placehold.co/600x480/1a7a6b/d4af37?text=Panisse",
+    "image": "assets/img/products/panisse/panisse-capri-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse/panisse-capri-1.jpg",
+      "assets/img/products/panisse/panisse-capri-2.jpg"
+    ],
+    "description": "Montura óptica cat-eye de metal dorado con barra superior en acetato verde esmeralda. El dorado y el esmeralda forman una combinación limpia y rotunda que llama la atención sin estridencias. Patillas finas de metal con puntera en carey havana que añade carácter al conjunto. Para quien sabe que el detalle lo cambia todo.",
+    "specs": {
+      "material": "Metal + Acetato",
+      "calibre": "54 mm",
+      "puente": "17 mm",
+      "varilla": "141 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
     "id": "panisse-boutique-bordeaux",
     "name": "Bordeaux",
     "brand": "Panisse Boutique",
