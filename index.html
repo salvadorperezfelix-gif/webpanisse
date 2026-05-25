@@ -376,6 +376,7 @@
   <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
   <link rel="icon" href="favicon-16.png" type="image/png" sizes="16x16">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preload" as="image" href="assets/img/hero-spring.webp" type="image/webp" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Parisienne&display=swap" rel="stylesheet" />
@@ -426,6 +427,7 @@
     /* ── Hero: imagen primavera ── */
     .hero {
       background-image: url('assets/img/hero-spring.jpg');
+      background-image: image-set(url('assets/img/hero-spring.webp') type('image/webp'), url('assets/img/hero-spring.jpg') type('image/jpeg'));
       background-color: #2a3a1a;
       background-position: center 40%;
     }
