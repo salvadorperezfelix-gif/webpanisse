@@ -3714,13 +3714,26 @@ body, body.translated-ltr, body.translated-rtl { top: 0 !important; margin-top: 
 /* Clip container: solo recorta el iframe, NO la cabecera Panisse */
 .cita-calendly-clip {
   overflow: hidden;
-  height: 630px; /* altura visible del calendario */
+  height: 630px;
+  position: relative;
+}
+
+.cita-calendly-clip::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  background: #fafaf8;
+  pointer-events: none;
+  z-index: 2;
 }
 
 .cita-calendly-clip .calendly-inline-widget {
   display: block;
-  margin-top: -52px; /* empuja arriba para ocultar la mini-cabecera de Calendly */
-  height: 688px !important; /* 630 + 52 = area total del iframe */
+  margin-top: -52px;
+  height: 688px !important;
 }
 
 /* Formulario de cita (legacy — kept for reference) */
