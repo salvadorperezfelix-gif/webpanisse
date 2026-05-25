@@ -3715,33 +3715,6 @@ body, body.translated-ltr, body.translated-rtl { top: 0 !important; margin-top: 
 .cita-calendly-clip {
   overflow: hidden;
   height: 630px;
-  position: relative;
-}
-
-/* Cubre la esquina superior derecha donde Calendly pone su badge diagonal */
-.cita-calendly-clip::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 120px;
-  height: 120px;
-  background: #ffffff;
-  pointer-events: none;
-  z-index: 2;
-}
-
-/* Cubre el pie del iframe */
-.cita-calendly-clip::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 48px;
-  background: #fafaf8;
-  pointer-events: none;
-  z-index: 2;
 }
 
 .cita-calendly-clip .calendly-inline-widget {
@@ -3749,6 +3722,12 @@ body, body.translated-ltr, body.translated-rtl { top: 0 !important; margin-top: 
   margin-top: -52px;
   height: 688px !important;
 }
+
+/* Ocultar badge de Calendly si lo inyecta en el DOM padre */
+.calendly-badge-widget,
+.calendly-badge-content,
+[class*="CalendlyBadge"],
+[data-testid*="badge"] { display: none !important; }
 
 /* Formulario de cita (legacy — kept for reference) */
 .cita-form {
