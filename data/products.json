@@ -2394,6 +2394,29 @@
     }
   },
   {
+    "id": "panisse-boutique-roussillon",
+    "name": "Roussillon",
+    "brand": "Panisse Boutique",
+    "brand_slug": "panisse-boutique",
+    "type": "graduadas",
+    "price": 130,
+    "variant": "Ámbar / Cristal",
+    "placeholder": "https://placehold.co/600x480/c49a2a/333333?text=Panisse+Boutique",
+    "image": "assets/img/products/panisse-boutique/panisse-boutique-roussillon-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse-boutique/panisse-boutique-roussillon-1.jpg",
+      "assets/img/products/panisse-boutique/panisse-boutique-roussillon-2.jpg"
+    ],
+    "description": "La Roussillon lleva el nombre del pueblo provenzal famoso por sus ocres dorados, y el color de su acetato lo justifica: un ámbar transparente que cambia con la luz. La montura rectangular de aristas vivas y gran calibre enmarca la mirada con autoridad. El puente ancho y las varillas de corte escalonado convierten cada detalle en una declaración de intenciones. Para quien elige las gafas como pieza central del estilo.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "54 mm",
+      "puente": "19 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
+  },
+  {
     "id": "panisse-collioure",
     "name": "Collioure",
     "brand": "Panisse",
