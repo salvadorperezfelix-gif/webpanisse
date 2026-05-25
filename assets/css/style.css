@@ -3718,6 +3718,20 @@ body, body.translated-ltr, body.translated-rtl { top: 0 !important; margin-top: 
   position: relative;
 }
 
+/* Cubre la esquina superior derecha donde Calendly pone su badge diagonal */
+.cita-calendly-clip::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  background: #ffffff;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Cubre el pie del iframe */
 .cita-calendly-clip::after {
   content: '';
   position: absolute;
