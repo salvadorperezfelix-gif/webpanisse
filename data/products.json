@@ -138,6 +138,29 @@
     }
   },
   {
+    "id": "panisse-boutique-mavisli-leo",
+    "name": "Mavisli Leo",
+    "brand": "Panisse Boutique",
+    "brand_slug": "panisse-boutique",
+    "type": "graduadas",
+    "price": 99,
+    "variant": "Havana / Cristal",
+    "placeholder": "https://placehold.co/600x480/6b2a0a/c8b89a?text=Panisse+Boutique",
+    "image": "assets/img/products/panisse-boutique/panisse-boutique-mavisli-leo-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse-boutique/panisse-boutique-mavisli-leo-1.jpg",
+      "assets/img/products/panisse-boutique/panisse-boutique-mavisli-leo-2.jpg"
+    ],
+    "description": "Montura óptica de acetato bicolor con carácter. El aro exterior en havana tortuga —manchas ámbar, castaño y negro—, el interior con detalle de cristal traslúcido y refuerzo metálico plateado que da profundidad a la forma. Geométrica y octagonal, enmarca la mirada con decisión. Logo PP en relieve dorado sobre la varilla.",
+    "specs": {
+      "material": "Acetato + Metal",
+      "calibre": "51 mm",
+      "puente": "18 mm",
+      "varilla": "145 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
     "id": "mr-boho-logan-ambar",
     "name": "Logan",
     "brand": "Mr. Boho",
