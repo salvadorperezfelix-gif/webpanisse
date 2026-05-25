@@ -6,3 +6,11 @@ Thumbs.db
 .gemini/
 dist/
 build/
+
+# Screenshots de desarrollo
+screenshot-*.png
+ss-*.png
+
+# Imágenes raw de procesamiento en tmp_uploads
+tmp_uploads/*.png
+tmp_uploads/*.jpg
