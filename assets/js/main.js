@@ -686,6 +686,29 @@ async function initProductPage() {
 
     // Actualiza textos básicos
     document.title = `${p.brand} ${p.name} | Panisse Óptica`;
+
+    // Schema.org Product (SEO rich results)
+    const productSchema = document.getElementById('product-schema');
+    if (productSchema) {
+      const productUrl = `https://www.panisse.es/producto.html?id=${productId}`;
+      productSchema.textContent = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": `${p.brand} ${p.name}`,
+        "description": p.description || '',
+        "image": p.gallery ? p.gallery.map(img => `https://www.panisse.es/${img}`) : [`https://www.panisse.es/${p.image}`],
+        "brand": { "@type": "Brand", "name": p.brand },
+        "url": productUrl,
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "EUR",
+          "price": p.price,
+          "availability": "https://schema.org/InStock",
+          "seller": { "@type": "Organization", "name": "Panisse Óptica" },
+          "url": productUrl
+        }
+      });
+    }
     
     const breadType = document.getElementById('breadcrumb-type');
     if (breadType) {
