@@ -2417,6 +2417,29 @@
     }
   },
   {
+    "id": "panisse-boutique-valensole",
+    "name": "Valensole",
+    "brand": "Panisse Boutique",
+    "brand_slug": "panisse-boutique",
+    "type": "graduadas",
+    "price": 99,
+    "variant": "Violeta / Melocotón / Dorado",
+    "placeholder": "https://placehold.co/600x480/7b3fa0/ccaa00?text=Panisse+Boutique",
+    "image": "assets/img/products/panisse-boutique/panisse-boutique-valensole-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse-boutique/panisse-boutique-valensole-1.jpg",
+      "assets/img/products/panisse-boutique/panisse-boutique-valensole-2.jpg"
+    ],
+    "description": "La Valensole toma el nombre del plateau provenzal donde el lavanda tiñe el horizonte de violeta cada verano. Su degradado —del púrpura intenso en la parte superior al melocotón traslúcido en la inferior— recrea ese paso de color con la misma naturalidad. Montura cat-eye de acetato combinada con varillas metálicas en dorado que afinan la silueta. Una pieza que equilibra color y elegancia sin esfuerzo.",
+    "specs": {
+      "material": "Acetato y Metal",
+      "calibre": "53 mm",
+      "puente": "16 mm",
+      "varilla": "141 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
     "id": "panisse-collioure",
     "name": "Collioure",
     "brand": "Panisse",
