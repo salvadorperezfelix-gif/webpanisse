@@ -2483,5 +2483,28 @@
       "varilla": "145 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "panisse-camargue",
+    "name": "Camargue",
+    "brand": "Panisse",
+    "brand_slug": "panisse",
+    "type": "sol",
+    "price": 49,
+    "variant": "Carey / Verde",
+    "placeholder": "https://placehold.co/600x480/5c3a1a/2d5a27?text=Panisse",
+    "image": "assets/img/products/panisse/panisse-camargue-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse/panisse-camargue-1.jpg",
+      "assets/img/products/panisse/panisse-camargue-2.jpg"
+    ],
+    "description": "La Camargue lleva el nombre del delta salvaje de la Provenza: tierra de caballos, flamencos y luz horizontal. Su acetato carey —con ese jaspeado de marrón y ámbar que nunca se repite— y el doble puente plano le dan un carácter entre clásico y atrevido. Lentes verdes oscuras Cat. 3 con protección UV400.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "55 mm",
+      "puente": "19 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
