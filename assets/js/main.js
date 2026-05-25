@@ -326,11 +326,15 @@ if (newsletterForm) {
                data-name="${p.brand} ${p.name}"${dataNew}>
         <a href="producto.html?id=${p.id}" class="product-card__link" aria-label="Ver ${p.brand} ${p.name}">
           <div class="product-card__image-wrap">
-            <img src="${imgSrc}"
-                 alt="${p.brand} ${p.name} — ${p.variant}"
-                 class="product-card__image is-loaded"
-                 loading="eager"
-                 onerror="this.src='${p.placeholder}'; this.onerror=null;" />
+            <picture>
+              <source srcset="${imgSrc.replace(/\.jpg$/i, '.webp')}" type="image/webp">
+              <img src="${imgSrc}"
+                   alt="${p.brand} ${p.name} — ${p.variant}"
+                   class="product-card__image is-loaded"
+                   loading="lazy"
+                   decoding="async"
+                   onerror="this.src='${p.placeholder}'; this.onerror=null;" />
+            </picture>
             ${badge}
             <!-- Favoritos desactivado -->
           </div>
