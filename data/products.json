@@ -2440,6 +2440,29 @@
     }
   },
   {
+    "id": "panisse-boutique-vega",
+    "name": "Véga",
+    "brand": "Panisse Boutique",
+    "brand_slug": "panisse-boutique",
+    "type": "sol",
+    "price": 130,
+    "variant": "Plata / Gris Polarizado",
+    "placeholder": "https://placehold.co/600x480/aaaaaa/555555?text=Panisse+Boutique",
+    "image": "assets/img/products/panisse-boutique/panisse-boutique-vega-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse-boutique/panisse-boutique-vega-1.jpg",
+      "assets/img/products/panisse-boutique/panisse-boutique-vega-2.jpg"
+    ],
+    "description": "La Véga toma el nombre de la estrella más brillante de la noche de verano: una luz precisa, fría y sin concesiones. La montura de metal plateado sigue la línea del ojo con una curva que se eleva hacia las sienes en un trazo continuo. Lentes grises espejadas polarizadas Cat. 3 que filtran el deslumbramiento sin perder nitidez. Ligera, casi invisible sobre la cara, pero imposible de ignorar.",
+    "specs": {
+      "material": "Metal",
+      "calibre": "61 mm",
+      "puente": "15 mm",
+      "varilla": "140 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
     "id": "panisse-collioure",
     "name": "Collioure",
     "brand": "Panisse",
