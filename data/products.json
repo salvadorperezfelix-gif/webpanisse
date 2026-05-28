@@ -2552,5 +2552,28 @@
       "varilla": "145 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "panisse-boutique-alpilles",
+    "name": "Alpilles",
+    "brand": "Panisse Boutique",
+    "brand_slug": "panisse-boutique",
+    "type": "graduadas",
+    "price": 130,
+    "variant": "Negro Mate",
+    "placeholder": "https://placehold.co/600x480/1a1a1a/555555?text=Panisse+Boutique",
+    "image": "assets/img/products/panisse-boutique/panisse-boutique-alpilles-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse-boutique/panisse-boutique-alpilles-1.jpg",
+      "assets/img/products/panisse-boutique/panisse-boutique-alpilles-2.jpg"
+    ],
+    "description": "Las Alpilles son una sierra de caliza blanca y olivos milenarios en el corazón de la Provenza — paisaje de precisión y ligereza. Esta montura geométrica en titanio negro mate lo traduce a óptica: aristas limpias, peso imperceptible y una rigidez que dura décadas. Titanio puro, bisagras en azul oscuro, forma que no caduca.",
+    "specs": {
+      "material": "Titanio",
+      "calibre": "53 mm",
+      "puente": "18 mm",
+      "varilla": "148 mm",
+      "genero": "Unisex"
+    }
   }
 ]
