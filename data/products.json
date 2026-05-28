@@ -2506,5 +2506,28 @@
       "varilla": "145 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "panisse-luberon",
+    "name": "Luberon",
+    "brand": "Panisse",
+    "brand_slug": "panisse",
+    "type": "graduadas",
+    "price": 75,
+    "variant": "Negro / Plata",
+    "placeholder": "https://placehold.co/600x480/1a1a1a/aaaaaa?text=Panisse",
+    "image": "assets/img/products/panisse/panisse-luberon-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse/panisse-luberon-1.jpg",
+      "assets/img/products/panisse/panisse-luberon-2.jpg"
+    ],
+    "description": "La Luberon hereda su nombre del macizo provenzal que Peter Mayle inmortalizó en prosa: un lugar donde la sencillez tiene peso y la elegancia no necesita artificio. Montura browline de medio aro con barra superior en acetato negro mate y aro inferior en metal plateado pulido. Lentes redondas ligeramente acampanadas que equilibran la forma sin restar carácter.",
+    "specs": {
+      "material": "Acetato y Metal",
+      "calibre": "49 mm",
+      "puente": "20 mm",
+      "varilla": "140 mm",
+      "genero": "Unisex"
+    }
   }
 ]
