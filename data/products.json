@@ -2598,5 +2598,28 @@
       "varilla": "148 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "panisse-boutique-beaucaire",
+    "name": "Beaucaire",
+    "brand": "Panisse Boutique",
+    "brand_slug": "panisse-boutique",
+    "type": "graduadas",
+    "price": 120,
+    "variant": "Gris Humo",
+    "placeholder": "https://placehold.co/600x480/888888/cccccc?text=Panisse+Boutique",
+    "image": "assets/img/products/panisse-boutique/panisse-boutique-beaucaire-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse-boutique/panisse-boutique-beaucaire-1.jpg",
+      "assets/img/products/panisse-boutique/panisse-boutique-beaucaire-2.jpg"
+    ],
+    "description": "Beaucaire es una ciudad que mira al Ródano con calma y aplomo — historia acumulada sin necesidad de demostrarla. Esta montura cuadrada oversize en acetato gris humo transparente tiene esa misma cualidad: volumen sin estrépito, carácter sin adornos. Varilla con textura en relieve y grosor generoso que convierte la montura en el centro de la cara.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "55 mm",
+      "puente": "18 mm",
+      "varilla": "148 mm",
+      "genero": "Unisex"
+    }
   }
 ]
