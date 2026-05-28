@@ -2621,5 +2621,28 @@
       "varilla": "148 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "panisse-boutique-aubagne",
+    "name": "Aubagne",
+    "brand": "Panisse Boutique",
+    "brand_slug": "panisse-boutique",
+    "type": "graduadas",
+    "price": 99,
+    "variant": "Verde / Gris Degradado",
+    "placeholder": "https://placehold.co/600x480/2d5a3d/888888?text=Panisse+Boutique",
+    "image": "assets/img/products/panisse-boutique/panisse-boutique-aubagne-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse-boutique/panisse-boutique-aubagne-1.jpg",
+      "assets/img/products/panisse-boutique/panisse-boutique-aubagne-2.jpg"
+    ],
+    "description": "Aubagne es el pueblo natal de Marcel Pagnol — el hombre que dio vida a Panisse. Un lugar sencillo con una historia extraordinaria. Esta montura cuadrada en acetato con degradado de verde botella a gris humo lleva ese mismo peso silencioso: forma contundente, acetato con profundidad, presencia sin artificio. Para el hombre que no necesita llamar la atención para tenerla.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "52 mm",
+      "puente": "18 mm",
+      "varilla": "145 mm",
+      "genero": "Hombre"
+    }
   }
 ]
