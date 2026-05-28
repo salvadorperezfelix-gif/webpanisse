@@ -2529,5 +2529,28 @@
       "varilla": "140 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "panisse-boutique-verdon",
+    "name": "Verdon",
+    "brand": "Panisse Boutique",
+    "brand_slug": "panisse-boutique",
+    "type": "graduadas",
+    "price": 99,
+    "variant": "Verde / Gris Degradado",
+    "placeholder": "https://placehold.co/600x480/2d5a3d/888888?text=Panisse+Boutique",
+    "image": "assets/img/products/panisse-boutique/panisse-boutique-verdon-1.jpg",
+    "gallery": [
+      "assets/img/products/panisse-boutique/panisse-boutique-verdon-1.jpg",
+      "assets/img/products/panisse-boutique/panisse-boutique-verdon-2.jpg"
+    ],
+    "description": "La Verdon toma el nombre de las gargantas provenzales cuyas aguas pasan del verde esmeralda al turquesa. Montura cuadrada en acetato con un degradado que arranca en verde botella y se funde en gris humo hacia el aro inferior — cada pieza con su propia transición, irrepetible. Forma con peso, presencia sin esfuerzo.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "51 mm",
+      "puente": "18 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
