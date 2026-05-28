@@ -2560,16 +2560,16 @@
     "brand_slug": "panisse-boutique",
     "type": "graduadas",
     "price": 99,
-    "variant": "Verde / Gris Degradado",
-    "placeholder": "https://placehold.co/600x480/2d5a3d/888888?text=Panisse+Boutique",
+    "variant": "Antracita",
+    "placeholder": "https://placehold.co/600x480/333333/888888?text=Panisse+Boutique",
     "image": "assets/img/products/panisse-boutique/panisse-boutique-ventoux-1.jpg",
     "gallery": [
       "assets/img/products/panisse-boutique/panisse-boutique-ventoux-1.jpg",
       "assets/img/products/panisse-boutique/panisse-boutique-ventoux-2.jpg"
     ],
-    "description": "El Ventoux es el gigante solitario de la Provenza: una cumbre que se ve desde cien kilómetros y que impone respeto antes de acercarse. Esta montura cuadrada de acetato verde botella con degradado a gris humo tiene esa misma presencia — volumen, anchura, carácter. Para quien lleva las gafas sin que las gafas lo lleven a él.",
+    "description": "El Ventoux es el gigante solitario de la Provenza: una cumbre que impone respeto antes de acercarse. Esta montura rectangular en metal antracita mate tiene esa misma presencia — líneas rectas, peso contenido, varillas con doble barra que añaden detalle sin ruido. Clásico de hombre que no necesita explicarse.",
     "specs": {
-      "material": "Acetato",
+      "material": "Metal",
       "calibre": "57 mm",
       "puente": "18 mm",
       "varilla": "140 mm",
