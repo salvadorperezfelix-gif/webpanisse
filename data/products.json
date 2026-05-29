@@ -2667,5 +2667,28 @@
       "varilla": "145 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "antica-occhialeria-allen-bronz",
+    "name": "Allen",
+    "brand": "Antica Occhialeria",
+    "brand_slug": "antica-occhialeria",
+    "type": "sol",
+    "price": 185,
+    "variant": "Crystal Rosé / Carey Rosa",
+    "placeholder": "https://placehold.co/600x480/d4a898/5a7a4a?text=Antica+Occhialeria",
+    "image": "assets/img/products/antica-occhialeria/antica-occhialeria-allen-bronz/antica-occhialeria-allen-bronz-1.jpg",
+    "gallery": [
+      "assets/img/products/antica-occhialeria/antica-occhialeria-allen-bronz/antica-occhialeria-allen-bronz-1.jpg",
+      "assets/img/products/antica-occhialeria/antica-occhialeria-allen-bronz/antica-occhialeria-allen-bronz-2.jpg"
+    ],
+    "description": "La Allen en crystal rosé es la versión más femenina de la pieza más icónica de Antica Occhialeria. Acetato de alta densidad en translúcido rosa polvo, con varillas en carey rosa de vetas intensas — una combinación que solo los maestros artesanos florentinos saben equilibrar. Misma forma panto clásica italiana, ojo de 47 mm. Hecha a mano en Florencia, disponible exclusivamente en Panisse Óptica, la única óptica de Lugo que distribuye Antica Occhialeria.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "47 mm",
+      "puente": "21 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
