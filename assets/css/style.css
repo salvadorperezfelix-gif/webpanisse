@@ -3655,6 +3655,10 @@ body, body.translated-ltr, body.translated-rtl { top: 0 !important; margin-top: 
   margin-top: 1rem;
   background: var(--color-surface);
 }
+.cita-cal-wrap #cal-inline {
+  min-height: 600px;
+  width: 100%;
+}
 
 
 /* Formulario de cita (legacy — kept for reference) */
