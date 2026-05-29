@@ -2666,7 +2666,15 @@
       "puente": "21 mm",
       "varilla": "145 mm",
       "genero": "Unisex"
-    }
+    },
+    "color_swatch": "#d4c48a",
+    "variants": [
+      {
+        "id": "antica-occhialeria-allen-bronz",
+        "color": "#c4907a",
+        "label": "Crystal Rosé / Carey Rosa"
+      }
+    ]
   },
   {
     "id": "antica-occhialeria-allen-bronz",
@@ -2689,7 +2697,15 @@
       "puente": "21 mm",
       "varilla": "145 mm",
       "genero": "Unisex"
-    }
+    },
+    "color_swatch": "#c4907a",
+    "variants": [
+      {
+        "id": "antica-occhialeria-allen",
+        "color": "#d4c48a",
+        "label": "Crystal Champán / Carey"
+      }
+    ]
   },
   {
     "id": "antica-occhialeria-brahms",
@@ -2712,7 +2728,15 @@
       "puente": "26 mm",
       "varilla": "145 mm",
       "genero": "Unisex"
-    }
+    },
+    "color_swatch": "#5a5250",
+    "variants": [
+      {
+        "id": "antica-occhialeria-brahms-miel",
+        "color": "#d4a830",
+        "label": "Crystal Miel / Carey"
+      }
+    ]
   },
   {
     "id": "antica-occhialeria-brahms-miel",
@@ -2735,6 +2759,14 @@
       "puente": "26 mm",
       "varilla": "145 mm",
       "genero": "Unisex"
-    }
+    },
+    "color_swatch": "#d4a830",
+    "variants": [
+      {
+        "id": "antica-occhialeria-brahms",
+        "color": "#5a5250",
+        "label": "Carey Gris"
+      }
+    ]
   }
 ]
