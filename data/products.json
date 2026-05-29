@@ -2940,5 +2940,29 @@
       "varilla": "145 mm",
       "genero": "Mujer"
     }
+  },
+  {
+    "id": "antica-occhialeria-colby",
+    "name": "Colby",
+    "brand": "Antica Occhialeria",
+    "brand_slug": "antica-occhialeria",
+    "type": "sol",
+    "price": 185,
+    "variant": "Crystal Miel Carey",
+    "color_swatch": "#c88a18",
+    "placeholder": "https://placehold.co/600x480/c88a18/3a2010?text=Antica+Occhialeria",
+    "image": "assets/img/products/antica-occhialeria/antica-occhialeria-colby/antica-occhialeria-colby-1.jpg",
+    "gallery": [
+      "assets/img/products/antica-occhialeria/antica-occhialeria-colby/antica-occhialeria-colby-1.jpg",
+      "assets/img/products/antica-occhialeria/antica-occhialeria-colby/antica-occhialeria-colby-2.jpg"
+    ],
+    "description": "La Colby es la panto redonda de Antica Occhialeria. Acetato Crystal Miel en la montura con temples de carey tortuga — una combinación artesanal trabajada a mano en Florencia. Forma suave y generosa, perfecta para rasgos armónicos. Exclusiva en Panisse Óptica Lugo.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "48 mm",
+      "puente": "24 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
