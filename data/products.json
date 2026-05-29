@@ -2916,5 +2916,29 @@
       "varilla": "145 mm",
       "genero": "Mujer"
     }
+  },
+  {
+    "id": "antica-occhialeria-victoria",
+    "name": "Victoria",
+    "brand": "Antica Occhialeria",
+    "brand_slug": "antica-occhialeria",
+    "type": "sol",
+    "price": 185,
+    "variant": "Carey Rayas",
+    "color_swatch": "#3a2010",
+    "placeholder": "https://placehold.co/600x480/3a2010/c8a84c?text=Antica+Occhialeria",
+    "image": "assets/img/products/antica-occhialeria/antica-occhialeria-victoria/antica-occhialeria-victoria-1.jpg",
+    "gallery": [
+      "assets/img/products/antica-occhialeria/antica-occhialeria-victoria/antica-occhialeria-victoria-1.jpg",
+      "assets/img/products/antica-occhialeria/antica-occhialeria-victoria/antica-occhialeria-victoria-2.jpg"
+    ],
+    "description": "La Victoria es la cat-eye más imponente de Antica Occhialeria. Carey oscuro con rayas blancas incrustadas en el acetato — un trabajo artesanal que solo es posible a mano en Florencia. Grande, potente, para cara ovalada o corazón. Solo en Panisse Óptica Lugo.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "52 mm",
+      "puente": "21 mm",
+      "varilla": "145 mm",
+      "genero": "Mujer"
+    }
   }
 ]
