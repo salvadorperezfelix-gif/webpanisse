@@ -2964,5 +2964,29 @@
       "varilla": "145 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "antica-occhialeria-tiffany",
+    "name": "Tiffany",
+    "brand": "Antica Occhialeria",
+    "brand_slug": "antica-occhialeria",
+    "type": "sol",
+    "price": 185,
+    "variant": "Carey Rojo",
+    "color_swatch": "#7a2810",
+    "placeholder": "https://placehold.co/600x480/7a2810/c88a18?text=Antica+Occhialeria",
+    "image": "assets/img/products/antica-occhialeria/antica-occhialeria-tiffany/antica-occhialeria-tiffany-1.jpg",
+    "gallery": [
+      "assets/img/products/antica-occhialeria/antica-occhialeria-tiffany/antica-occhialeria-tiffany-1.jpg",
+      "assets/img/products/antica-occhialeria/antica-occhialeria-tiffany/antica-occhialeria-tiffany-2.jpg"
+    ],
+    "description": "La Tiffany es la cat-eye más grande y envolvente de Antica Occhialeria. Montura mariposa en acetato Carey Rojo — un carey vivo y profundo trabajado a mano en Florencia que gana en intensidad con la luz. Protagonista total, para quien no pasa desapercibida. Exclusiva en Panisse Óptica Lugo.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "53 mm",
+      "puente": "20 mm",
+      "varilla": "145 mm",
+      "genero": "Mujer"
+    }
   }
 ]
