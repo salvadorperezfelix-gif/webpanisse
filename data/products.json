@@ -2644,5 +2644,28 @@
       "varilla": "145 mm",
       "genero": "Hombre"
     }
+  },
+  {
+    "id": "antica-occhialeria-allen",
+    "name": "Allen",
+    "brand": "Antica Occhialeria",
+    "brand_slug": "antica-occhialeria",
+    "type": "sol",
+    "price": 185,
+    "variant": "Crystal Champán / Verde G15",
+    "placeholder": "https://placehold.co/600x480/e8d9b0/5a7a4a?text=Antica+Occhialeria",
+    "image": "assets/img/products/antica-occhialeria/antica-occhialeria-allen/antica-occhialeria-allen-1.jpg",
+    "gallery": [
+      "assets/img/products/antica-occhialeria/antica-occhialeria-allen/antica-occhialeria-allen-1.jpg",
+      "assets/img/products/antica-occhialeria/antica-occhialeria-allen/antica-occhialeria-allen-2.jpg"
+    ],
+    "description": "Elaborada a mano en Florencia, la Allen es la pieza más icónica de Antica Occhialeria — y una de las pocas monturas de sol artesanales italianas que puedes encontrar en Lugo. Solo en Panisse Óptica. Acetato de alta densidad en crystal champán translúcido, con varillas en carey oscuro que remiten a las grandes casas ópticas del Ponte Vecchio. Forma panto italiana de proporciones clásicas, ojo de 47 mm: más pequeño de lo habitual, más personal que cualquier modelo de serie. Las lentes minerales G15 en verde profundo ofrecen una claridad cromática que el policarbonato convencional no puede igualar. Una montura para quien sabe que lo artesanal no es una tendencia — es simplemente mejor.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "47 mm",
+      "puente": "21 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
