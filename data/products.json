@@ -2830,5 +2830,67 @@
       "varilla": "145 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "antica-occhialeria-ravel",
+    "name": "Ravel",
+    "brand": "Antica Occhialeria",
+    "brand_slug": "antica-occhialeria",
+    "type": "sol",
+    "price": 185,
+    "variant": "Calico",
+    "color_swatch": "#a06820",
+    "variants": [
+      {
+        "id": "antica-occhialeria-ravel-miel",
+        "color": "#c88820",
+        "label": "Crystal Miel"
+      }
+    ],
+    "placeholder": "https://placehold.co/600x480/a06820/5a7a4a?text=Antica+Occhialeria",
+    "image": "assets/img/products/antica-occhialeria/antica-occhialeria-ravel/antica-occhialeria-ravel-1.jpg",
+    "gallery": [
+      "assets/img/products/antica-occhialeria/antica-occhialeria-ravel/antica-occhialeria-ravel-1.jpg",
+      "assets/img/products/antica-occhialeria/antica-occhialeria-ravel/antica-occhialeria-ravel-2.jpg"
+    ],
+    "description": "La Ravel tiene esa forma cuadrada redondeada que los artesanos italianos llaman D-frame — ni panto ni rectangular, sino algo propio. Acetato calico de alta densidad, hecho a mano en Florencia. Solo en Panisse Óptica Lugo.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "46 mm",
+      "puente": "24 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
+  },
+  {
+    "id": "antica-occhialeria-ravel-miel",
+    "name": "Ravel",
+    "brand": "Antica Occhialeria",
+    "brand_slug": "antica-occhialeria",
+    "type": "sol",
+    "price": 185,
+    "variant": "Crystal Miel",
+    "color_swatch": "#c88820",
+    "variants": [
+      {
+        "id": "antica-occhialeria-ravel",
+        "color": "#a06820",
+        "label": "Calico"
+      }
+    ],
+    "placeholder": "https://placehold.co/600x480/c88820/5a7a4a?text=Antica+Occhialeria",
+    "image": "assets/img/products/antica-occhialeria/antica-occhialeria-ravel-miel/antica-occhialeria-ravel-miel-1.jpg",
+    "gallery": [
+      "assets/img/products/antica-occhialeria/antica-occhialeria-ravel-miel/antica-occhialeria-ravel-miel-1.jpg",
+      "assets/img/products/antica-occhialeria/antica-occhialeria-ravel-miel/antica-occhialeria-ravel-miel-2.jpg"
+    ],
+    "description": "La Ravel en crystal miel en acetato translúcido naranja-miel, hecha a mano en Florencia. Misma forma D-frame, distinto carácter. Exclusiva en Panisse Óptica Lugo.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "46 mm",
+      "puente": "24 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
