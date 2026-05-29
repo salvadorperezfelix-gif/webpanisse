@@ -2690,5 +2690,51 @@
       "varilla": "145 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "antica-occhialeria-brahms",
+    "name": "Brahms",
+    "brand": "Antica Occhialeria",
+    "brand_slug": "antica-occhialeria",
+    "type": "sol",
+    "price": 185,
+    "variant": "Carey Gris",
+    "placeholder": "https://placehold.co/600x480/4a4540/5a7a4a?text=Antica+Occhialeria",
+    "image": "assets/img/products/antica-occhialeria/antica-occhialeria-brahms/antica-occhialeria-brahms-1.jpg",
+    "gallery": [
+      "assets/img/products/antica-occhialeria/antica-occhialeria-brahms/antica-occhialeria-brahms-1.jpg",
+      "assets/img/products/antica-occhialeria/antica-occhialeria-brahms/antica-occhialeria-brahms-2.jpg"
+    ],
+    "description": "La Brahms es la montura más contundente de Antica Occhialeria. Acetato de alta densidad en carey gris, con esa forma panto octogonal — bordes achaflanados, volumen generoso, presencia innegable. No es una montura discreta: es una declaración. Trabajada a mano en Florencia con las mismas técnicas que los antiguos maestros occhialai italianos usaban en el siglo XIX. Exclusiva en Panisse Óptica, la única óptica en Lugo que distribuye Antica Occhialeria.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "46 mm",
+      "puente": "26 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
+  },
+  {
+    "id": "antica-occhialeria-brahms-miel",
+    "name": "Brahms",
+    "brand": "Antica Occhialeria",
+    "brand_slug": "antica-occhialeria",
+    "type": "sol",
+    "price": 185,
+    "variant": "Crystal Miel / Carey",
+    "placeholder": "https://placehold.co/600x480/d4a830/5a7a4a?text=Antica+Occhialeria",
+    "image": "assets/img/products/antica-occhialeria/antica-occhialeria-brahms-miel/antica-occhialeria-brahms-miel-1.jpg",
+    "gallery": [
+      "assets/img/products/antica-occhialeria/antica-occhialeria-brahms-miel/antica-occhialeria-brahms-miel-1.jpg",
+      "assets/img/products/antica-occhialeria/antica-occhialeria-brahms-miel/antica-occhialeria-brahms-miel-2.jpg"
+    ],
+    "description": "La Brahms en crystal miel lleva la forma octogonal de Antica Occhialeria a su expresión más luminosa. Acetato translúcido en amarillo miel intenso, con terminaciones de varilla en carey que anclan el conjunto y añaden profundidad. Hecha a mano en Florencia, con esa solidez y acabado que solo da el acetato de alta densidad trabajado por artesanos. Para quien no teme al color — y sabe que una montura artesanal italiana cambia un look por completo. Solo en Panisse Óptica, Lugo.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "46 mm",
+      "puente": "26 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
