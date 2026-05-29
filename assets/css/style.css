@@ -3648,86 +3648,14 @@ body, body.translated-ltr, body.translated-rtl { top: 0 !important; margin-top: 
 }
 
 /* ── Calendly con cabecera Panisse nativa ─────────────── */
-.cita-calendly-outer {
+.cita-cal-wrap {
   border: 1px solid var(--color-border);
-  overflow: hidden; /* solo clipea las esquinas del borde */
-}
-
-/* Cabecera premium — reemplaza visualmente la cabecera de Calendly */
-.cita-calendly-header {
-  background: var(--color-black);
-  padding: 22px 28px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.cita-calendly-header__top {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-
-.cita-calendly-header__brand {
-  font-family: 'Parisienne', cursive;
-  font-size: 1.375rem;
-  font-weight: 400;
-  color: var(--color-white);
-}
-
-.cita-calendly-header__brand em {
-  font-style: normal;
-}
-
-.cita-calendly-header__badge {
-  font-family: var(--font-body);
-  font-size: 0.5rem;
-  font-weight: 700;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: var(--color-black);
-  background: var(--color-accent);
-  padding: 3px 10px;
-}
-
-.cita-calendly-header__meta {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.cita-calendly-header__meta span {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-family: var(--font-body);
-  font-size: 0.6875rem;
-  letter-spacing: 0.05em;
-  color: rgba(255, 255, 255, 0.45);
-}
-
-.cita-calendly-header__meta svg {
-  color: var(--color-accent-dk);
-  flex-shrink: 0;
-}
-
-/* Clip container: solo recorta el iframe, NO la cabecera Panisse */
-.cita-calendly-clip {
+  border-radius: 8px;
   overflow: hidden;
-  height: 630px;
+  margin-top: 1rem;
+  background: var(--color-surface);
 }
 
-.cita-calendly-clip .calendly-inline-widget {
-  display: block;
-  margin-top: -52px;
-  height: 688px !important;
-}
-
-/* Ocultar badge de Calendly si lo inyecta en el DOM padre */
-.calendly-badge-widget,
-.calendly-badge-content,
-[class*="CalendlyBadge"],
-[data-testid*="badge"] { display: none !important; }
 
 /* Formulario de cita (legacy — kept for reference) */
 .cita-form {
@@ -3852,9 +3780,7 @@ body, body.translated-ltr, body.translated-rtl { top: 0 !important; margin-top: 
 
 @media (max-width: 480px) {
   .cita-brand-mark__logo { font-size: 1.375rem; }
-  .cita-calendly-header { padding: 18px 20px 16px; }
-  .cita-calendly-header__badge { display: none; }
-  .cita-benefits-row__item { font-size: 0.625rem; gap: 5px; }
+.cita-benefits-row__item { font-size: 0.625rem; gap: 5px; }
 }
 
 
@@ -4382,20 +4308,6 @@ body, body.translated-ltr, body.translated-rtl { top: 0 !important; margin-top: 
   flex-shrink: 0;
 }
 
-.cita-calendly-outer {
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  background: var(--color-surface);
-  margin-top: 1rem;
-  border: 1px solid var(--color-border);
-}
-
-/* Recorte ninja de la cabecera del iframe de Calendly para limpieza visual */
-.cita-calendly-outer .calendly-inline-widget {
-  margin-top: -55px;
-  height: 715px !important;
-}
 
 /* ════════════════════════════════════════════════════════════
    SCROLL REVEAL — variantes extendidas
