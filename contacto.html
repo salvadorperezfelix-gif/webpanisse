@@ -537,6 +537,25 @@
             calLink: "panisse/estudio-visual"
           });
           Cal("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+
+          // Escuchar el éxito de reserva en Cal.com para disparar los píxeles de conversión
+          Cal("on", {
+            action: "bookingSuccessful",
+            callback: function(e) {
+              if (typeof window.fbq === "function") {
+                window.fbq("track", "Lead", {
+                  content_name: "Reserva de Cita Previa (Cal.com)",
+                  status: "success"
+                });
+              }
+              if (typeof window.gtag === "function") {
+                window.gtag("event", "generate_lead", {
+                  event_category: "Engagement",
+                  event_label: "Reserva de Cita Previa (Cal.com)"
+                });
+              }
+            }
+          });
         </script>
 
       </div>

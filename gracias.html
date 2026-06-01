@@ -30,6 +30,10 @@
     
     fbq('init', '1706566507036901');
     fbq('track', 'PageView');
+    fbq('track', 'Lead', {
+      content_name: 'Reserva de Cita Previa (Gracias)',
+      status: 'success'
+    });
   </script>
   <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1706566507036901&ev=PageView&noscript=1"
@@ -77,6 +81,12 @@
 
     gtag('config', 'AW-18003465740');
     gtag('config', 'G-ZPWT5ZT4X4');
+
+    // Registrar conversión en Google Ads
+    gtag('event', 'generate_lead', {
+      'event_category': 'Engagement',
+      'event_label': 'Reserva de Cita Previa (Gracias)'
+    });
   </script>
   <meta charset="UTF-8" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
