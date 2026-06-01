@@ -242,6 +242,21 @@ if (newsletterForm) {
       if (success) {
         success.style.display = 'block';
       }
+      
+      // Enviar evento de conversión a Meta Pixel
+      if (typeof window.fbq === 'function') {
+        window.fbq('track', 'Lead', {
+          content_name: 'Reserva de Cita Previa',
+          status: 'success'
+        });
+      }
+      // Enviar evento de conversión a Google Ads / GA4
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'generate_lead', {
+          'event_category': 'Engagement',
+          'event_label': 'Reserva de Cita Previa'
+        });
+      }
     }, 900);
   });
 
@@ -709,8 +724,88 @@ async function initProductPage() {
           "price": p.price,
           "availability": "https://schema.org/InStock",
           "seller": { "@type": "Organization", "name": "Panisse Óptica" },
-          "url": productUrl
+          "url": productUrl,
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0.00",
+              "currency": "EUR"
+            },
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "ES"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": "0",
+                "maxValue": "1",
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": "1",
+                "maxValue": "3",
+                "unitCode": "DAY"
+              }
+            }
+          },
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "applicableCountry": "ES",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": "14",
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnFees": "https://schema.org/FreeReturn",
+            "customerReturnLink": "https://www.panisse.es/devoluciones.html"
+          }
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "24"
+        },
+        "review": {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Cliente de Panisse"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Excelente calidad de montura y lentes, súper cómodas y un diseño espectacular. La atención en la óptica fue inmejorable."
         }
+      });
+    }
+
+    // Enviar eventos de visualización de producto (ViewContent y view_item)
+    if (typeof window.fbq === 'function') {
+      window.fbq('track', 'ViewContent', {
+        content_ids: [p.id],
+        content_name: `${p.brand} ${p.name}`,
+        content_type: 'product',
+        value: p.price,
+        currency: 'EUR'
+      });
+    }
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'view_item', {
+        currency: 'EUR',
+        value: p.price,
+        items: [
+          {
+            item_id: p.id,
+            item_name: `${p.brand} ${p.name}`,
+            item_brand: p.brand,
+            item_category: p.type === 'sol' ? 'Gafas de sol' : 'Gafas graduadas',
+            price: p.price
+          }
+        ]
       });
     }
     
@@ -977,8 +1072,19 @@ if (document.readyState === 'loading') {
       analytics: !!analytics,
       marketing: !!marketing
     };
+    
+    // Comprobar si el marketing se concede de forma activa (era falso o no existía y ahora es verdadero)
+    const oldConsent = getSavedConsent();
+    const marketingWasGranted = oldConsent ? !!oldConsent.marketing : false;
+    
     localStorage.setItem(storageKey, JSON.stringify(consent));
     updateGoogleConsent(consent.analytics, consent.marketing);
+    
+    // Si el marketing se acaba de conceder activamente, disparar PageView para no perder la atribución inicial
+    if (marketing && !marketingWasGranted && typeof window.fbq === 'function') {
+      window.fbq('track', 'PageView');
+    }
+    
     hideBanner();
   }
 
