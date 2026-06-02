@@ -11,6 +11,6 @@ build/
 screenshot-*.png
 ss-*.png
 
-# Imágenes raw de procesamiento en tmp_uploads
-tmp_uploads/*.png
-tmp_uploads/*.jpg
+# Herramientas de desarrollo — no desplegar en producción
+tmp_uploads/
+scripts/
