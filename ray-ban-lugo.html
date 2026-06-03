@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    // Comprobar consentimiento antes de iniciar
+    var savedConsent = localStorage.getItem('cookieConsent');
+    var marketingGranted = false;
+    if (savedConsent) {
+      try {
+        var consentObj = JSON.parse(savedConsent);
+        marketingGranted = !!consentObj.marketing;
+      } catch (e) {}
+    }
+
+    if (marketingGranted) {
+      fbq('consent', 'grant');
+    } else {
+      fbq('consent', 'revoke');
+    }
+
+    fbq('init', '1706566507036901');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1706566507036901&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+  <!-- Google Consent Mode v2 Default State -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+
+    // Comprobar si ya existe consentimiento guardado
+    var savedConsent = localStorage.getItem('cookieConsent');
+    if (savedConsent) {
+      try {
+        var consentObj = JSON.parse(savedConsent);
+        gtag('consent', 'default', {
+          'ad_storage': consentObj.marketing ? 'granted' : 'denied',
+          'ad_user_data': consentObj.marketing ? 'granted' : 'denied',
+          'ad_personalization': consentObj.marketing ? 'granted' : 'denied',
+          'analytics_storage': consentObj.analytics ? 'granted' : 'denied'
+        });
+      } catch (e) {
+        gtag('consent', 'default', {
+          'ad_storage': 'denied',
+          'ad_user_data': 'denied',
+          'ad_personalization': 'denied',
+          'analytics_storage': 'denied'
+        });
+      }
+    } else {
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied'
+      });
+    }
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18003465740"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18003465740');
+    gtag('config', 'G-ZPWT5ZT4X4');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO -->
+  <title>Gafas Ray-Ban en Lugo — Sol y Graduadas | Panisse Óptica</title>
+  <meta name="description" content="Ray-Ban en Lugo: Aviator, Wayfarer, Clubmaster, Chromance y más. Monturas de sol y graduadas en el centro de Lugo. Panisse Óptica, Calle Teatro 2 Bajo." />
+  <meta name="keywords" content="Ray-Ban Lugo, gafas Ray-Ban Lugo, Aviator Lugo, Wayfarer Lugo, Clubmaster Lugo, Ray-Ban graduadas Lugo, óptica Lugo, Panisse Óptica" />
+  <meta name="author" content="Panisse Óptica" />
+  <meta name="robots" content="index, follow" />
+  <meta name="geo.region" content="ES-LU" />
+  <meta name="geo.placename" content="Lugo, Galicia, España" />
+  <meta name="geo.position" content="43.0097;-7.5563" />
+  <meta name="ICBM" content="43.0097, -7.5563" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gafas Ray-Ban en Lugo — Sol y Graduadas | Panisse Óptica" />
+  <meta property="og:description" content="Ray-Ban en Lugo: Aviator, Wayfarer, Clubmaster, Chromance y más. Monturas de sol y graduadas en el centro de Lugo. Panisse Óptica, Calle Teatro 2 Bajo." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.panisse.es/ray-ban-lugo.html" />
+  <meta property="og:image" content="https://www.panisse.es/assets/img/brands/ray-ban-editorial.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:site_name" content="Panisse Óptica" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gafas Ray-Ban en Lugo — Sol y Graduadas | Panisse Óptica" />
+  <meta name="twitter:description" content="Ray-Ban en Lugo: Aviator, Wayfarer, Clubmaster, Chromance y más. Monturas de sol y graduadas en el centro de Lugo. Panisse Óptica, Calle Teatro 2 Bajo." />
+  <meta name="twitter:image" content="https://www.panisse.es/assets/img/brands/ray-ban-editorial.jpg" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.panisse.es/ray-ban-lugo.html" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">[
+  {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "Optician"],
+    "@id": "https://www.panisse.es/#business",
+    "name": "Panisse Óptica",
+    "alternateName": "Panisse Optica Lugo",
+    "description": "Óptica boutique en el centro de Lugo. Gafas graduadas, gafas de sol, revisiones visuales y marcas exclusivas. Óptico-optometrista y farmacéutico licenciado.",
+    "url": "https://www.panisse.es",
+    "telephone": "+34982301193",
+    "email": "info@panisse.es",
+    "priceRange": "EUR",
+    "image": "https://www.panisse.es/assets/img/nosotros/tienda.webp",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle Teatro, 2 Bajo",
+      "addressLocality": "Lugo",
+      "addressRegion": "Galicia",
+      "postalCode": "27001",
+      "addressCountry": "ES"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 43.0097,
+      "longitude": -7.5563
+    },
+    "hasMap": "https://maps.google.com/?q=Panisse+%C3%93ptica+Lugo",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "10:00",
+        "closes": "13:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "16:30",
+        "closes": "20:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday"],
+        "opens": "10:30",
+        "closes": "13:30"
+      }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/panisse_optica/",
+      "https://www.facebook.com/profile.php?id=61586908144350",
+      "https://www.tiktok.com/@panisse_optica"
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Modelos Ray-Ban disponibles en Panisse Óptica Lugo",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Ray-Ban Aviator Classic RB3025",
+        "url": "https://www.panisse.es/catalogo.html?marca=ray-ban"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Ray-Ban Wayfarer RB2140",
+        "url": "https://www.panisse.es/catalogo.html?marca=ray-ban"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Ray-Ban Clubmaster RB3016",
+        "url": "https://www.panisse.es/catalogo.html?marca=ray-ban"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Ray-Ban New Wayfarer RB2132",
+        "url": "https://www.panisse.es/catalogo.html?marca=ray-ban"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Ray-Ban Hexagonal RB3548",
+        "url": "https://www.panisse.es/catalogo.html?marca=ray-ban"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "Ray-Ban Chromance",
+        "url": "https://www.panisse.es/catalogo.html?marca=ray-ban"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Dónde comprar Ray-Ban en Lugo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En Panisse Óptica, Calle Teatro 2 Bajo, en el centro histórico de Lugo. Somos distribuidores oficiales de Ray-Ban con colección completa de sol y graduadas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Tienen Ray-Ban Aviator en Lugo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, el Aviator Classic RB3025 está disponible en sol y también puede hacerse con lentes graduadas. Consúltanos por los colores y tallas disponibles en tienda."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Puedo graduar unas Ray-Ban?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, todas las monturas Ray-Ban pueden hacerse con lentes graduadas: monofocales, progresivos o lentes fotocromáticas. Realizamos una revisión visual previa sin coste."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Tienen Ray-Ban polarizadas en Lugo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, disponemos de modelos Ray-Ban Chromance y Polarized en varios modelos. Las lentes polarizadas eliminan el deslumbramiento y son ideales para conducir y actividades al aire libre."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto cuestan las Ray-Ban en Lugo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Los precios son los oficiales de Ray-Ban. Varían según el modelo, el acabado y si llevan lentes graduadas incluidas. Visítanos en Calle Teatro 2 Bajo o consúltanos por teléfono o WhatsApp para saber la disponibilidad y precio de un modelo concreto."
+        }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://www.panisse.es/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Ray-Ban en Lugo",
+        "item": "https://www.panisse.es/ray-ban-lugo.html"
+      }
+    ]
+  }
+]</script>
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Parisienne&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/css/style.min.css" />
+</head>
+
+<body class="interior-page">
+
+  <!-- HEADER -->
+  <header class="header" id="site-header">
+    <div class="header__inner container">
+
+      <!-- ── Navegación principal (izquierda) ── -->
+      <nav class="header__nav-main" aria-label="Categorías principales">
+        <ul class="header__nav-list">
+
+          <!-- Marcas -->
+          <li class="nav-item has-dropdown">
+            <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="marcas">
+              Marcas <span class="nav-caret" aria-hidden="true"></span>
+            </button>
+            <div class="dropdown dropdown--wide" id="dropdown-marcas" role="menu" aria-label="Marcas">
+              <div class="dropdown__grid">
+                <a href="catalogo.html?marca=panisse" class="dropdown__link" role="menuitem">Panisse</a>
+                <a href="catalogo.html?marca=antica-occhialeria" class="dropdown__link" role="menuitem">Antica Occhialeria</a>
+                <a href="catalogo.html?marca=panisse-boutique" class="dropdown__link" role="menuitem">Panisse Boutique</a>
+                <a href="catalogo.html?marca=emporio-armani" class="dropdown__link" role="menuitem">Emporio Armani</a>
+                <a href="catalogo.html?marca=swarovski" class="dropdown__link" role="menuitem">Swarovski</a>
+                <a href="catalogo.html?marca=ray-ban" class="dropdown__link" role="menuitem">Ray-Ban</a>
+                <a href="catalogo.html?marca=polaroid" class="dropdown__link" role="menuitem">Polaroid</a>
+                <a href="catalogo.html?marca=panisse-kids" class="dropdown__link" role="menuitem">Panisse Kids</a>
+                <a href="catalogo.html?marca=mr-boho" class="dropdown__link" role="menuitem">Mr. Boho</a>
+              </div>
+              <div class="dropdown__footer-bar">
+                <a href="catalogo.html" class="dropdown__all">Ver todas las marcas →</a>
+              </div>
+            </div>
+          </li>
+
+          <!-- Graduadas -->
+          <li class="nav-item has-dropdown">
+            <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="graduadas">
+              Graduadas <span class="nav-caret" aria-hidden="true"></span>
+            </button>
+            <div class="dropdown" id="dropdown-graduadas" role="menu" aria-label="Gafas graduadas">
+              <a href="catalogo.html?tipo=graduadas&genero=hombre" class="dropdown__link" role="menuitem">Hombre</a>
+              <a href="catalogo.html?tipo=graduadas&genero=mujer" class="dropdown__link" role="menuitem">Mujer</a>
+              <a href="catalogo.html?tipo=graduadas&genero=unisex" class="dropdown__link" role="menuitem">Unisex</a>
+              <a href="catalogo.html?tipo=graduadas&genero=ninos" class="dropdown__link" role="menuitem">Niños y niñas</a>
+            </div>
+          </li>
+
+          <!-- De Sol -->
+          <li class="nav-item has-dropdown">
+            <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="sol">
+              De Sol <span class="nav-caret" aria-hidden="true"></span>
+            </button>
+            <div class="dropdown" id="dropdown-sol" role="menu" aria-label="Gafas de sol">
+              <a href="catalogo.html?tipo=sol&genero=hombre" class="dropdown__link" role="menuitem">Hombre</a>
+              <a href="catalogo.html?tipo=sol&genero=mujer" class="dropdown__link" role="menuitem">Mujer</a>
+              <a href="catalogo.html?tipo=sol&genero=unisex" class="dropdown__link" role="menuitem">Sol Unisex</a>
+              <a href="catalogo.html?tipo=sol&genero=ninos" class="dropdown__link" role="menuitem">Niños y niñas</a>
+            </div>
+          </li>
+
+          <!-- Servicios -->
+          <li class="nav-item has-dropdown">
+            <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="servicios">
+              Servicios <span class="nav-caret" aria-hidden="true"></span>
+            </button>
+            <div class="dropdown" id="dropdown-servicios" role="menu" aria-label="Servicios">
+              <a href="servicios.html#zeiss" class="dropdown__link" role="menuitem">Lentes ZEISS</a>
+              <a href="servicios.html#vista-cansada" class="dropdown__link" role="menuitem">Vista Cansada</a>
+              <a href="servicios.html#miopia" class="dropdown__link" role="menuitem">Miopía en Niños</a>
+              <a href="servicios.html#contacto-lentes" class="dropdown__link" role="menuitem">Lentes de Contacto</a>
+              <a href="servicios.html#fatiga" class="dropdown__link" role="menuitem">Fatiga Visual</a>
+              <a href="servicios.html#glaucoma" class="dropdown__link" role="menuitem">Prevención Glaucoma</a>
+              <a href="servicios.html#instrumentos" class="dropdown__link" role="menuitem">Instrumentos Ópticos</a>
+            </div>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- ── Logo (centrado) ── -->
+      <a href="index.html" class="header__logo" aria-label="Panisse Óptica – inicio">
+        Panisse <em>Óptica</em>
+      </a>
+
+      <!-- ── Acciones (derecha) ── -->
+      <div class="header__right">
+        <nav class="header__nav-right" aria-label="Menú secundario">
+          <ul class="header__nav-list">
+
+            <li class="nav-item has-dropdown">
+              <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="conocenos">
+                Conócenos <span class="nav-caret" aria-hidden="true"></span>
+              </button>
+              <div class="dropdown" id="dropdown-conocenos" role="menu" aria-label="Conócenos">
+                <a href="nosotros.html" class="dropdown__link" role="menuitem">Manifiesto</a>
+                <a href="nosotros.html#equipo" class="dropdown__link" role="menuitem">El Equipo</a>
+              </div>
+            </li>
+
+            <li class="nav-item has-dropdown">
+              <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="opticas">
+                Ópticas <span class="nav-caret" aria-hidden="true"></span>
+              </button>
+              <div class="dropdown" id="dropdown-opticas" role="menu" aria-label="Nuestras tiendas">
+                <a href="contacto.html" class="dropdown__link" role="menuitem">Panisse Óptica — Lugo</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link">Magazine</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="tarjeta-regalo.html" class="nav-link">Regala</a>
+            </li>
+
+          </ul>
+        </nav>
+        <div class="header__actions">
+
+        <a href="contacto.html" class="header__cta-link">Cita Previa</a>
+        <button id="lang-toggle-btn" class="lang-flag-btn"
+                onclick="panisseLangToggle()"
+                aria-label="Switch language / Cambiar idioma">&#x1F1EC;&#x1F1E7;</button>
+
+        <!-- TIENDA ONLINE — quitar 'hidden' cuando se active la venta online -->
+        <div class="header__ecommerce-actions" hidden>
+          <button class="header__icon-btn" aria-label="Mi cuenta">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </button>
+          <button class="header__icon-btn header__cart-btn" aria-label="Carrito de la compra, 0 artículos">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <path d="M16 10a4 4 0 0 1-8 0"/>
+            </svg>
+            <span class="header__cart-count" aria-hidden="true">0</span>
+          </button>
+        </div>
+
+        <!-- Hamburger (solo móvil) -->
+        <button class="header__hamburger" id="hamburger-btn"
+                aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div><!-- /.header__actions -->
+      </div><!-- /.header__right -->
+
+    </div><!-- /.header__inner -->
+  </header>
+
+  <!-- MENÚ MÓVIL (abreviado) -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Menú principal">
+    <div class="mobile-menu__header">
+      <a href="index.html" class="mobile-menu__logo">Panisse <em>Óptica</em></a>
+      <button class="mobile-menu__close" id="mobile-close-btn" aria-label="Cerrar menú">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="mobile-menu__body" aria-label="Navegación móvil">
+      <ul class="mobile-menu__list">
+
+        <li class="mobile-item has-submenu">
+          <button class="mobile-link" data-submenu="mm-marcas">
+            Marcas <span class="mobile-arrow" aria-hidden="true">›</span>
+          </button>
+          <ul class="mobile-submenu" id="mm-marcas" aria-hidden="true">
+            <li><a href="catalogo.html?marca=panisse" class="mobile-sublink">Panisse</a></li>
+            <li><a href="catalogo.html?marca=antica-occhialeria" class="mobile-sublink">Antica Occhialeria</a></li>
+            <li><a href="catalogo.html?marca=panisse-boutique" class="mobile-sublink">Panisse Boutique</a></li>
+            <li><a href="catalogo.html?marca=emporio-armani" class="mobile-sublink">Emporio Armani</a></li>
+            <li><a href="catalogo.html?marca=swarovski" class="mobile-sublink">Swarovski</a></li>
+            <li><a href="catalogo.html?marca=ray-ban" class="mobile-sublink">Ray-Ban</a></li>
+            <li><a href="catalogo.html?marca=polaroid" class="mobile-sublink">Polaroid</a></li>
+            <li><a href="catalogo.html?marca=panisse-kids" class="mobile-sublink">Panisse Kids</a></li>
+            <li><a href="catalogo.html?marca=mr-boho" class="mobile-sublink">Mr. Boho</a></li>
+            <li><a href="catalogo.html" class="mobile-sublink mobile-sublink--all">Ver todas las marcas →</a></li>
+          </ul>
+        </li>
+
+        <li class="mobile-item has-submenu">
+          <button class="mobile-link" data-submenu="mm-graduadas">
+            Graduadas <span class="mobile-arrow" aria-hidden="true">›</span>
+          </button>
+          <ul class="mobile-submenu" id="mm-graduadas" aria-hidden="true">
+            <li><a href="catalogo.html?tipo=graduadas&genero=hombre" class="mobile-sublink">Hombre</a></li>
+            <li><a href="catalogo.html?tipo=graduadas&genero=mujer" class="mobile-sublink">Mujer</a></li>
+            <li><a href="catalogo.html?tipo=graduadas&genero=unisex" class="mobile-sublink">Unisex</a></li>
+            <li><a href="catalogo.html?tipo=graduadas&genero=ninos" class="mobile-sublink">Niños y niñas</a></li>
+          </ul>
+        </li>
+
+        <li class="mobile-item has-submenu">
+          <button class="mobile-link" data-submenu="mm-sol">
+            De Sol <span class="mobile-arrow" aria-hidden="true">›</span>
+          </button>
+          <ul class="mobile-submenu" id="mm-sol" aria-hidden="true">
+            <li><a href="catalogo.html?tipo=sol&genero=hombre" class="mobile-sublink">Hombre</a></li>
+            <li><a href="catalogo.html?tipo=sol&genero=mujer" class="mobile-sublink">Mujer</a></li>
+            <li><a href="catalogo.html?tipo=sol&genero=unisex" class="mobile-sublink">Sol Unisex</a></li>
+            <li><a href="catalogo.html?tipo=sol&genero=ninos" class="mobile-sublink">Niños y niñas</a></li>
+          </ul>
+        </li>
+
+        <li class="mobile-item has-submenu">
+          <button class="mobile-link" data-submenu="mm-servicios">
+            Servicios <span class="mobile-arrow" aria-hidden="true">›</span>
+          </button>
+          <ul class="mobile-submenu" id="mm-servicios" aria-hidden="true">
+            <li><a href="servicios.html#zeiss" class="mobile-sublink">Lentes ZEISS</a></li>
+            <li><a href="servicios.html#vista-cansada" class="mobile-sublink">Vista Cansada</a></li>
+            <li><a href="servicios.html#miopia" class="mobile-sublink">Miopía en Niños</a></li>
+            <li><a href="servicios.html#contacto-lentes" class="mobile-sublink">Lentes de Contacto</a></li>
+            <li><a href="servicios.html#fatiga" class="mobile-sublink">Fatiga Visual</a></li>
+            <li><a href="servicios.html#glaucoma" class="mobile-sublink">Prevención Glaucoma</a></li>
+            <li><a href="servicios.html#instrumentos" class="mobile-sublink">Instrumentos Ópticos</a></li>
+          </ul>
+        </li>
+
+        <li class="mobile-item has-submenu">
+          <button class="mobile-link" data-submenu="mm-conocenos">
+            Conócenos <span class="mobile-arrow" aria-hidden="true">›</span>
+          </button>
+          <ul class="mobile-submenu" id="mm-conocenos" aria-hidden="true">
+            <li><a href="nosotros.html" class="mobile-sublink">Manifiesto</a></li>
+            <li><a href="nosotros.html#equipo" class="mobile-sublink">El Equipo</a></li>
+          </ul>
+        </li>
+
+        <li class="mobile-item has-submenu">
+          <button class="mobile-link" data-submenu="mm-opticas">
+            Ópticas <span class="mobile-arrow" aria-hidden="true">›</span>
+          </button>
+          <ul class="mobile-submenu" id="mm-opticas" aria-hidden="true">
+            <li><a href="contacto.html" class="mobile-sublink">Panisse Óptica — Lugo</a></li>
+          </ul>
+        </li>
+
+        <li class="mobile-item"><a href="blog.html" class="mobile-link mobile-link--plain">Blog</a></li>
+        <li class="mobile-item"><a href="tarjeta-regalo.html" class="mobile-link mobile-link--plain">Regala</a></li>
+
+      </ul>
+    </nav>
+
+    <div class="mobile-menu__footer">
+      <a href="contacto.html" class="btn btn--secondary" style="width:100%;text-align:center;display:block;">
+        Pedir Cita Previa
+      </a>
+      <div class="mobile-menu__lang">
+        <button id="mobile-lang-btn" class="lang-flag-btn"
+                onclick="panisseLangToggle()"
+                aria-label="Switch language / Cambiar idioma"
+                style="font-size:15px;padding:8px 12px;gap:8px;display:flex;align-items:center;">
+          &#x1F1EC;&#x1F1E7; <span class="mobile-lang-label">English</span>
+        </button>
+      </div>
+      <div class="mobile-menu__social">
+        <a href="https://www.instagram.com/panisse_optica/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61586908144350" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+        <a href="https://www.tiktok.com/@panisse_optica" target="_blank" rel="noopener noreferrer" aria-label="TikTok">TikTok</a>
+      </div>
+    </div>
+  </div><!-- /.mobile-menu -->
+
+  <!-- Overlay -->
+  <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+
+  <!-- MAIN -->
+  <main id="main-content">
+
+    <!-- Cabecera de página -->
+    <div class="page-hero page-hero--dark">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Ruta de navegación">
+          <a href="index.html" class="breadcrumb__link">Inicio</a>
+          <span class="breadcrumb__sep" aria-hidden="true">›</span>
+          <span class="breadcrumb__current" aria-current="page">Ray-Ban en Lugo</span>
+        </nav>
+        <h1 class="page-hero__title">Ray-Ban<br><em>en Lugo</em></h1>
+        <p class="page-hero__desc">Colección completa — sol y graduadas — en el centro histórico de Lugo</p>
+      </div>
+    </div>
+
+    <!-- Intro -->
+    <section class="servicio-section">
+      <div class="servicio-section__inner container">
+        <div class="servicio-section__img-col">
+          <div class="servicio-section__img-wrap">
+            <picture>
+              <source srcset="assets/img/brands/ray-ban-editorial.webp" type="image/webp">
+              <img src="assets/img/brands/ray-ban-editorial.jpg"
+                   alt="Gafas Ray-Ban en Panisse Óptica Lugo"
+                   width="1400" height="788"
+                   loading="lazy"
+                   onerror="this.src='https://placehold.co/680x540/1a1a1a/c8200c?text=Ray-Ban'" />
+            </picture>
+          </div>
+        </div>
+        <div class="servicio-section__content">
+          <p>Ray-Ban nació en 1937 de la mano de Bausch &amp; Lomb con un encargo concreto: diseñar una gafa que protegiera a los pilotos de la Fuerza Aérea de Estados Unidos del deslumbramiento a gran altitud. El Aviator fue el resultado, y con él comenzó una historia que ha convertido a Ray-Ban en la marca de gafas más reconocida del mundo. Casi noventa años después, sus iconos siguen siendo los mismos.</p>
+          <p>En Panisse Óptica puedes encontrar la colección de Ray-Ban — de sol y graduadas — en el centro histórico de Lugo. Te asesoramos en la elección del modelo, talla y acabado que mejor se adapte a tu morfología y estilo de vida. En el catálogo online encontrarás nuestra selección publicada; en tienda descubrirás colorways y novedades que aún no están digitalizados.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Colección disponible -->
+    <section class="servicio-section servicio-section--alt">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-header__label">En tienda</p>
+          <h2 class="section-header__title">Colección Ray-Ban<br><em>disponible</em></h2>
+        </header>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;margin:2rem 0">
+          <div class="servicio-extra-card">
+            <div class="servicio-extra-card__num">RB3025</div>
+            <h3 class="servicio-extra-card__title">Aviator Classic</h3>
+            <p>El original. Montura metálica en gota, lentes de cristal mineral. El modelo que nació para los cielos y conquistó las calles. Disponible en sol y graduadas.</p>
+          </div>
+          <div class="servicio-extra-card">
+            <div class="servicio-extra-card__num">RB2140</div>
+            <h3 class="servicio-extra-card__title">Wayfarer</h3>
+            <p>El icono de acetato por excelencia, rediseñado en 1952. Forma trapezoidal inconfundible, disponible en docenas de colores y en versión graduada.</p>
+          </div>
+          <div class="servicio-extra-card">
+            <div class="servicio-extra-card__num">RB3016</div>
+            <h3 class="servicio-extra-card__title">Clubmaster</h3>
+            <p>Estilo browline con detalle metálico inferior. Elegancia retro con materiales modernos. Disponible en varias combinaciones de acetato y metal.</p>
+          </div>
+          <div class="servicio-extra-card">
+            <div class="servicio-extra-card__num">RB2132</div>
+            <h3 class="servicio-extra-card__title">New Wayfarer</h3>
+            <p>Versión ligeramente más estrecha y menos angular que el Wayfarer original. Perfecta para caras más pequeñas. Muy versátil en sol y graduadas.</p>
+          </div>
+          <div class="servicio-extra-card">
+            <div class="servicio-extra-card__num">RB3548</div>
+            <h3 class="servicio-extra-card__title">Hexagonal</h3>
+            <p>Forma hexagonal plana con varillas de perfil fino. Estética contemporánea ideal para looks más geométricos y actuales. Disponible en varios acabados.</p>
+          </div>
+          <div class="servicio-extra-card">
+            <div class="servicio-extra-card__num">Chromance</div>
+            <h3 class="servicio-extra-card__title">Chromance</h3>
+            <p>Tecnología de lente polarizada que realza el contraste y la profundidad de color. Ideal para conducir y actividades al aire libre. Protección solar máxima.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sol y Graduadas -->
+    <section class="servicio-section">
+      <div class="servicio-section__inner container">
+        <div class="servicio-section__content" style="max-width:760px;margin:0 auto;">
+          <span class="servicio-section__num">Versatilidad</span>
+          <h2 class="servicio-section__title">Sol y<br><em>Graduadas</em></h2>
+          <p>Prácticamente todos los modelos Ray-Ban están disponibles tanto en versión de sol como en versión graduada. Puedes elegir tu montura favorita y montarle lentes monofocales, progresivas o fotocromáticas. Realizamos una revisión visual previa para garantizar que la graduación es exacta antes de montar ninguna lente. Si ya tienes receta de otro profesional, también la aceptamos.</p>
+          <a href="catalogo.html?marca=ray-ban" class="btn btn--secondary">Ver Ray-Ban en el catálogo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="servicios-cta">
+      <div class="container servicios-cta__inner">
+        <h2 class="servicios-cta__title">¿Buscas un modelo<br><em>concreto?</em></h2>
+        <p class="servicios-cta__desc">Consúltanos disponibilidad, tallas y colores. Te atendemos en tienda, por WhatsApp o por teléfono.</p>
+        <div class="servicios-cta__actions">
+          <a href="contacto.html" class="btn btn--primary">Contactar</a>
+          <a href="https://wa.me/34614296965?text=Hola%2C%20busco%20un%20modelo%20de%20Ray-Ban%20en%20Lugo" class="btn btn--outline" target="_blank" rel="noopener noreferrer">WhatsApp +34 614 296 965</a>
+          <a href="tel:+34982301193" class="btn btn--outline servicios-cta__phone">982 301 193</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="servicio-section servicio-section--alt">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-header__label">Preguntas frecuentes</p>
+          <h2 class="section-header__title">Todo sobre Ray-Ban<br><em>en Lugo</em></h2>
+        </header>
+        <div style="max-width:760px;margin:2rem auto 0;">
+
+          <details style="border-bottom:1px solid var(--color-border,#e0dbd4);padding:1rem 0">
+            <summary style="font-weight:600;cursor:pointer;list-style:none">¿Dónde comprar Ray-Ban en Lugo?</summary>
+            <p style="margin-top:.75rem">En Panisse Óptica, Calle Teatro 2 Bajo, en el centro histórico de Lugo. Somos distribuidores oficiales de Ray-Ban con colección completa de sol y graduadas.</p>
+          </details>
+
+          <details style="border-bottom:1px solid var(--color-border,#e0dbd4);padding:1rem 0">
+            <summary style="font-weight:600;cursor:pointer;list-style:none">¿Tienen Ray-Ban Aviator en Lugo?</summary>
+            <p style="margin-top:.75rem">Sí, el Aviator Classic RB3025 está disponible en sol y también puede hacerse con lentes graduadas. Consúltanos por los colores y tallas disponibles en tienda.</p>
+          </details>
+
+          <details style="border-bottom:1px solid var(--color-border,#e0dbd4);padding:1rem 0">
+            <summary style="font-weight:600;cursor:pointer;list-style:none">¿Puedo graduar unas Ray-Ban?</summary>
+            <p style="margin-top:.75rem">Sí, todas las monturas Ray-Ban pueden hacerse con lentes graduadas: monofocales, progresivos o lentes fotocromáticas. Realizamos una revisión visual previa sin coste.</p>
+          </details>
+
+          <details style="border-bottom:1px solid var(--color-border,#e0dbd4);padding:1rem 0">
+            <summary style="font-weight:600;cursor:pointer;list-style:none">¿Tienen Ray-Ban polarizadas en Lugo?</summary>
+            <p style="margin-top:.75rem">Sí, disponemos de modelos Ray-Ban Chromance y Polarized en varios modelos. Las lentes polarizadas eliminan el deslumbramiento y son ideales para conducir y actividades al aire libre.</p>
+          </details>
+
+          <details style="border-bottom:1px solid var(--color-border,#e0dbd4);padding:1rem 0">
+            <summary style="font-weight:600;cursor:pointer;list-style:none">¿Cuánto cuestan las Ray-Ban en Lugo?</summary>
+            <p style="margin-top:.75rem">Los precios son los oficiales de Ray-Ban y varían según el modelo, el acabado y si llevan lentes graduadas incluidas. Consúltanos en tienda, por teléfono o por WhatsApp para saber disponibilidad y precio del modelo que te interesa.</p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Pie de página">
+    <div class="footer__inner container">
+
+      <!-- Col 1: Logo + Misión -->
+      <div class="footer__col footer__col--brand">
+        <a href="index.html" class="footer__logo" aria-label="Panisse Óptica — inicio">
+          Panisse <em>Óptica</em>
+        </a>
+        <p class="footer__mission">
+          Óptica boutique en Lugo. Cuidamos tu salud visual con la mejor tecnología y te ofrecemos una selección artesanal de gafas de diseño de autor.
+        </p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/panisse_optica/" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61586908144350" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@panisse_optica" class="footer__social-link" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 2: Enlaces rápidos -->
+      <nav class="footer__col footer__col--links" aria-label="Navegación del footer">
+        <h3 class="footer__heading">Explorar</h3>
+        <ul class="footer__list">
+          <li><a href="catalogo.html?tipo=graduadas" class="footer__link">Gafas Graduadas</a></li>
+          <li><a href="catalogo.html?tipo=sol" class="footer__link">Gafas de Sol</a></li>
+          <li><a href="catalogo.html" class="footer__link">Marcas</a></li>
+          <li><a href="servicios.html" class="footer__link">Servicios</a></li>
+          <li><a href="contacto.html" class="footer__link">Cita Previa</a></li>
+          <li><a href="blog.html" class="footer__link">Magazine</a></li>
+        </ul>
+        <h3 class="footer__heading" style="margin-top: 28px;">Información</h3>
+        <ul class="footer__list">
+          <li><a href="nosotros.html" class="footer__link">Sobre Nosotros</a></li>
+          <li><a href="aviso-legal.html" class="footer__link">Aviso Legal</a></li>
+          <li><a href="privacidad.html" class="footer__link">Privacidad y Cookies</a></li>
+        </ul>
+      </nav>
+
+      <!-- Col 3: Nuestra Tienda -->
+      <div class="footer__col footer__col--stores">
+        <h3 class="footer__heading">Nuestra Tienda</h3>
+        <div class="footer__store">
+          <p class="footer__store-name">Panisse Óptica</p>
+          <address class="footer__address">
+            Calle Teatro, 2 Bajo<br>
+            27001 Lugo
+          </address>
+          <ul class="footer__store-details">
+            <li><a href="tel:+34982301193">982 301 193</a></li>
+            <li><a href="mailto:info@panisse.es">info@panisse.es</a></li>
+            <li>L–V 10:00–13:30 / 16:30–20:30<br>Sáb 10:30–13:30</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Col 4: Newsletter -->
+      <div class="footer__col footer__col--newsletter">
+        <h3 class="footer__heading">Novedades</h3>
+        <p class="footer__newsletter-text">Nuevas colecciones, consejos ópticos y artículos de autor. Sin spam, solo lo que merece la pena.</p>
+        <form class="footer__form" id="newsletter-form" novalidate>
+          <div class="footer__form-group">
+            <input type="email" id="newsletter-email" class="footer__input" placeholder="tu@email.com" autocomplete="email" required aria-label="Tu correo electrónico" />
+            <button type="submit" class="footer__submit" aria-label="Suscribirse">→</button>
+          </div>
+          <p class="footer__form-msg" id="newsletter-msg"></p>
+          <p class="footer__newsletter-legal">Al suscribirte aceptas nuestra <a href="privacidad.html">política de privacidad</a>. Puedes darte de baja cuando quieras.</p>
+        </form>
+      </div>
+
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__copy">© <span id="footer-year"></span> Panisse Óptica · Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <a
+    href="https://wa.me/34614296965?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20c%C3%B3mo%20pedir%20cita"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+    </svg>
+    <span class="whatsapp-float__tooltip">WhatsApp</span>
+  </a>
+  <script src="assets/js/main.min.js" defer></script>
+
+  <!-- ── Google Translate ── -->
+  <style>
+    .goog-te-banner-frame,iframe.skiptranslate{display:none!important;}
+    body,body.translated-ltr,body.translated-rtl{top:0!important;margin-top:0!important;}
+    .goog-te-gadget,#goog-gt-tt{display:none!important;}
+  </style>
+  <style>
+    .goog-te-banner-frame, iframe.skiptranslate { display:none !important; }
+    body, body.translated-ltr, body.translated-rtl { top:0 !important; margin-top:0 !important; }
+    .goog-te-gadget, #goog-gt-tt { display:none !important; }
+  </style>
+  <div id="google_translate_element" style="display:none" aria-hidden="true"></div>
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        { pageLanguage: 'es', includedLanguages: 'en', autoDisplay: false },
+        'google_translate_element'
+      );
+    }
+    (function () {
+      function getLang() {
+        var m = document.cookie.match(/googtrans=\/es\/(\w+)/);
+        return m ? m[1] : 'es';
+      }
+      window.panisseLangToggle = function () {
+        var next = getLang() === 'en' ? 'es' : 'en';
+        var val  = '/es/' + next;
+        var host = window.location.hostname;
+        document.cookie = 'googtrans=' + val + '; path=/; domain='  + host;
+        document.cookie = 'googtrans=' + val + '; path=/; domain=.' + host;
+        document.cookie = 'googtrans=' + val + '; path=/';
+        window.location.reload();
+      };
+      // Hide Google bar if injected after load
+      var _gt_obs = new MutationObserver(function(){
+        var f=document.querySelector('iframe.skiptranslate');
+        if(f){f.style.display='none';document.body.style.top='0';}
+      });
+      _gt_obs.observe(document.documentElement,{childList:true,subtree:true});
+      document.addEventListener('DOMContentLoaded', function () {
+        var lang = getLang();
+        var isEn = lang === 'en';
+        var flagEs = '&#x1F1EA;&#x1F1F8;', flagEn = '&#x1F1EC;&#x1F1E7;';
+        var btn = document.getElementById('lang-toggle-btn');
+        if (btn) { btn.innerHTML = isEn ? flagEs : flagEn;
+                   btn.title = isEn ? 'Cambiar a español' : 'Switch to English'; }
+        var mBtn = document.getElementById('mobile-lang-btn');
+        if (mBtn) {
+          mBtn.innerHTML = isEn
+            ? flagEs + ' <span class="mobile-lang-label">Español</span>'
+            : flagEn + ' <span class="mobile-lang-label">English</span>';
+        }
+      });
+    })();
+  </script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
+</body>
+</html>
