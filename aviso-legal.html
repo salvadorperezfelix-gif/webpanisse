@@ -642,11 +642,6 @@
     body,body.translated-ltr,body.translated-rtl{top:0!important;margin-top:0!important;}
     .goog-te-gadget,#goog-gt-tt{display:none!important;}
   </style>
-  <style>
-    .goog-te-banner-frame, iframe.skiptranslate { display:none !important; }
-    body, body.translated-ltr, body.translated-rtl { top:0 !important; margin-top:0 !important; }
-    .goog-te-gadget, #goog-gt-tt { display:none !important; }
-  </style>
   <div id="google_translate_element" style="display:none" aria-hidden="true"></div>
   <script>
     function googleTranslateElementInit() {
@@ -691,6 +686,6 @@
       });
     })();
   </script>
-  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
+  <script>window.addEventListener('load',function(){var s=document.createElement('script');s.src='https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';document.head.appendChild(s);},{once:true});</script>
 </body>
 </html>
