@@ -12,9 +12,13 @@
 /assets/css/*.min.css
   Cache-Control: public, max-age=31536000, immutable
 
-## Imágenes — cachear 1 semana
+## Imágenes — cachear 30 días
 /assets/img/*
-  Cache-Control: public, max-age=604800
+  Cache-Control: public, max-age=2592000
 
 /assets/img/**/*
-  Cache-Control: public, max-age=604800
+  Cache-Control: public, max-age=2592000
+
+## Vídeos — cachear 30 días
+/assets/video/*
+  Cache-Control: public, max-age=2592000
