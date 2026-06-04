@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -8,9 +8,7 @@
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
     if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    n.queue=[];window.addEventListener('load',function(){t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s);},{once:!0});}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
     
     // Comprobar consentimiento antes de iniciar
@@ -441,7 +439,7 @@
   <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
   <link rel="icon" href="favicon-16.png" type="image/png" sizes="16x16">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="preload" as="image" href="assets/img/hero-spring.webp" type="image/webp" />
+  <link rel="preload" as="image" href="assets/img/hero-spring.webp" type="image/webp" imagesrcset="assets/img/hero-spring.webp" imagesizes="100vw" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Parisienne&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -1168,6 +1166,7 @@
             alt="Panisse Boutique — busto clásico con montura oval transparente"
             width="1400" height="1295"
             loading="eager"
+            fetchpriority="high"
             class="is-loaded"
             style="object-position: center 58%;"
           />
@@ -1225,13 +1224,16 @@
     <!-- EDITORIAL MARCA 4: Swarovski -->
     <section class="home-brand home-brand--reverse" aria-label="Swarovski en Lugo">
       <div class="home-brand__img">
-        <img
-          src="assets/img/brands/swarovski-editorial.jpg"
-          alt="Swarovski en Panisse Óptica Lugo"
-          width="1097" height="1032"
-          loading="eager"
-          class="is-loaded"
-        />
+        <picture>
+          <source srcset="assets/img/brands/swarovski-editorial.webp" type="image/webp">
+          <img
+            src="assets/img/brands/swarovski-editorial.jpg"
+            alt="Swarovski en Panisse Óptica Lugo"
+            width="1097" height="1032"
+            loading="eager"
+            class="is-loaded"
+          />
+        </picture>
       </div>
       <div class="home-brand__content">
         <span class="home-brand__label">Elegancia y Brillo</span>
