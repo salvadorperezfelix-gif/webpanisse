@@ -1126,29 +1126,29 @@ if (document.readyState === 'loading') {
               <span class="cookie-banner__setting-desc">Imprescindibles para el correcto funcionamiento, seguridad y navegación básica del sitio web.</span>
             </div>
             <label class="cookie-switch">
-              <input type="checkbox" id="cookie-opt-necessary" checked disabled>
+              <input type="checkbox" id="cookie-opt-necessary" checked disabled aria-label="Cookies técnicas (Necesarias)">
               <span class="cookie-switch__slider"></span>
             </label>
           </div>
-          
+
           <div class="cookie-banner__setting-item">
             <div class="cookie-banner__setting-info">
               <span class="cookie-banner__setting-label">Analíticas e Historial</span>
               <span class="cookie-banner__setting-desc">Permiten cuantificar las visitas, analizar el rendimiento del sitio y entender cómo navegan los usuarios para introducir mejoras.</span>
             </div>
             <label class="cookie-switch">
-              <input type="checkbox" id="cookie-opt-analytics">
+              <input type="checkbox" id="cookie-opt-analytics" aria-label="Cookies analíticas e historial">
               <span class="cookie-switch__slider"></span>
             </label>
           </div>
-          
+
           <div class="cookie-banner__setting-item">
             <div class="cookie-banner__setting-info">
               <span class="cookie-banner__setting-label">Publicidad y Personalización</span>
               <span class="cookie-banner__setting-desc">Facilitan la medición de efectividad de campañas publicitarias (como Google Ads) y permiten ofrecer anuncios relevantes y personalizados.</span>
             </div>
             <label class="cookie-switch">
-              <input type="checkbox" id="cookie-opt-marketing">
+              <input type="checkbox" id="cookie-opt-marketing" aria-label="Cookies de publicidad y personalización">
               <span class="cookie-switch__slider"></span>
             </label>
           </div>

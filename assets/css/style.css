@@ -43,7 +43,7 @@ a {
   --color-surface:    #f5f5f3;
   --color-border:     #e8e8e2;
   --color-text:       #1a1a1a;
-  --color-muted:      #7a7a74;
+  --color-muted:      #636360;
   --color-accent:     #c7dbd6;   /* sage verde, acento de marca */
   --color-accent-dk:  #8aafa9;
 
@@ -690,7 +690,7 @@ a {
 
 .footer__newsletter-legal {
   font-size: 0.7rem;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.5);
   margin-top: 14px;
   line-height: 1.5;
 }
@@ -722,7 +722,7 @@ a {
   font-weight: 700;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.55);
   margin-bottom: 12px;
 }
 
@@ -761,7 +761,7 @@ a {
 
 .footer__copy {
   font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.55);
 }
 
 .footer__legal {
@@ -771,7 +771,7 @@ a {
 
 .footer__legal-link {
   font-size: 0.6875rem;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.55);
   transition: color var(--transition);
 }
 
