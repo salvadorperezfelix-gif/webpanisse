@@ -80,6 +80,7 @@
   <meta charset="UTF-8" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preload" href="assets/css/style.min.css" as="style">
 
   <!-- SEO -->
   <title>Óptica en Lugo · Gafas de Diseño y Revisiones Visuales | Panisse Óptica</title>
@@ -1160,7 +1161,10 @@
     <section class="home-brand" aria-label="Panisse Boutique">
       <div class="home-brand__img">
         <picture>
-          <source srcset="assets/img/brands/panisse-boutique-editorial.webp" type="image/webp">
+          <source
+            srcset="assets/img/brands/panisse-boutique-editorial-800.webp 800w, assets/img/brands/panisse-boutique-editorial.webp 1400w"
+            sizes="(max-width: 900px) 100vw, 50vw"
+            type="image/webp">
           <img
             src="assets/img/brands/panisse-boutique-editorial.jpg"
             alt="Panisse Boutique — busto clásico con montura oval transparente"
@@ -1225,7 +1229,10 @@
     <section class="home-brand home-brand--reverse" aria-label="Swarovski en Lugo">
       <div class="home-brand__img">
         <picture>
-          <source srcset="assets/img/brands/swarovski-editorial.webp" type="image/webp">
+          <source
+            srcset="assets/img/brands/swarovski-editorial-800.webp 800w, assets/img/brands/swarovski-editorial.webp 1097w"
+            sizes="(max-width: 900px) 100vw, 50vw"
+            type="image/webp">
           <img
             src="assets/img/brands/swarovski-editorial.jpg"
             alt="Swarovski en Panisse Óptica Lugo"

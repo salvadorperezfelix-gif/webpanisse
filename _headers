@@ -13,10 +13,101 @@
   Cache-Control: public, max-age=31536000, immutable
 
 ## Imágenes — cachear 30 días
+## Netlify: * no cruza barras — enumerar cada subdirectorio
 /assets/img/*
   Cache-Control: public, max-age=2592000
 
-/assets/img/**/*
+/assets/img/blog/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/brands/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/hero/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/home/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/nosotros/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/products/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/products/antica-occhialeria/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/products/antica-occhialeria/antica-occhialeria-allen/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/products/antica-occhialeria/antica-occhialeria-allen-bronz/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/products/antica-occhialeria/antica-occhialeria-brahms/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/products/antica-occhialeria/antica-occhialeria-brahms-miel/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/products/antica-occhialeria/antica-occhialeria-colby/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/products/antica-occhialeria/antica-occhialeria-miller/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/products/antica-occhialeria/antica-occhialeria-miller-miel/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/products/antica-occhialeria/antica-occhialeria-nicole/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/products/antica-occhialeria/antica-occhialeria-ravel/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/products/antica-occhialeria/antica-occhialeria-ravel-miel/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/products/antica-occhialeria/antica-occhialeria-tiffany/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/products/antica-occhialeria/antica-occhialeria-victoria/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/products/emporio-armani/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/products/mr-boho/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/products/panisse/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/products/panisse-boutique/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/products/panisse-kids/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/products/polaroid/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/products/ray-ban/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/products/swarovski/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/servicios/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/team/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/ui/*
+  Cache-Control: public, max-age=2592000
+
+/assets/img/zeiss/*
   Cache-Control: public, max-age=2592000
 
 ## Vídeos — cachear 30 días
