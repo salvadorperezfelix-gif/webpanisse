@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -17,8 +17,7 @@
     if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
     n.queue=[];window.addEventListener('load',function(){t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s);},{once:!0});}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    
-    // Comprobar consentimiento antes de iniciar
+
     var savedConsent = localStorage.getItem('cookieConsent');
     var marketingGranted = false;
     if (savedConsent) {
@@ -27,13 +26,13 @@
         marketingGranted = !!consentObj.marketing;
       } catch (e) {}
     }
-    
+
     if (marketingGranted) {
       fbq('consent', 'grant');
     } else {
       fbq('consent', 'revoke');
     }
-    
+
     fbq('init', '1706566507036901');
     fbq('track', 'PageView');
   </script>
@@ -45,8 +44,7 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    
-    // Comprobar si ya existe consentimiento guardado
+
     var savedConsent = localStorage.getItem('cookieConsent');
     if (savedConsent) {
       try {
@@ -58,20 +56,10 @@
           'analytics_storage': consentObj.analytics ? 'granted' : 'denied'
         });
       } catch (e) {
-        gtag('consent', 'default', {
-          'ad_storage': 'denied',
-          'ad_user_data': 'denied',
-          'ad_personalization': 'denied',
-          'analytics_storage': 'denied'
-        });
+        gtag('consent', 'default', { 'ad_storage': 'denied', 'ad_user_data': 'denied', 'ad_personalization': 'denied', 'analytics_storage': 'denied' });
       }
     } else {
-      gtag('consent', 'default', {
-        'ad_storage': 'denied',
-        'ad_user_data': 'denied',
-        'ad_personalization': 'denied',
-        'analytics_storage': 'denied'
-      });
+      gtag('consent', 'default', { 'ad_storage': 'denied', 'ad_user_data': 'denied', 'ad_personalization': 'denied', 'analytics_storage': 'denied' });
     }
   </script>
   <!-- Google tag (gtag.js) -->
@@ -80,16 +68,14 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'AW-18003465740');
     gtag('config', 'G-ZPWT5ZT4X4');
   </script>
 
-
   <!-- SEO -->
-  <title>Gafas en Lugo · Detalle de Producto | Panisse Óptica</title>
-  <meta name="description" content="Gafas de diseño en Lugo. Panisse Óptica, óptica boutique en Rúa do Teatro, Bajo 2. Marcas exclusivas, ópticos certificados y atención personalizada." />
-  <meta name="keywords" content="óptica Lugo, gafas Lugo, gafas graduadas Lugo, gafas de sol Lugo, óptico Lugo, revisión vista Lugo, optometrista Lugo, gafas de diseño Lugo, óptica boutique Lugo, Panisse Óptica" />
+  <title>Estudio Visual en Lugo — Revisión Visual Completa 45 min | Panisse Óptica</title>
+  <meta name="description" content="Estudio Visual de Precisión en Lugo: 45 minutos dedicados a analizar tu salud visual en profundidad. Tecnología ZEISS, óptico-optometrista colegiado. Panisse Óptica, Rúa do Teatro, Bajo 2." />
+  <meta name="keywords" content="estudio visual Lugo, revisión visual Lugo, examen ocular Lugo, optometrista Lugo, óptica Lugo, revisión visual 45 minutos, ZEISS Lugo, Panisse Óptica" />
   <meta name="author" content="Panisse Óptica" />
   <meta name="robots" content="index, follow" />
   <meta name="geo.region" content="ES-LU" />
@@ -98,40 +84,32 @@
   <meta name="ICBM" content="43.0097, -7.5563" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Gafas en Lugo · Detalle de Producto | Panisse Óptica" />
-  <meta property="og:description" content="Gafas de diseño en Lugo. Panisse Óptica, óptica boutique en Rúa do Teatro, Bajo 2. Marcas exclusivas, ópticos certificados y atención personalizada." />
+  <meta property="og:title" content="Estudio Visual en Lugo — Revisión Visual Completa 45 min | Panisse Óptica" />
+  <meta property="og:description" content="Estudio Visual de Precisión en Lugo: 45 minutos dedicados a analizar tu salud visual en profundidad. Tecnología ZEISS, óptico-optometrista colegiado. Panisse Óptica, Rúa do Teatro, Bajo 2." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.panisse.es/catalogo.html" />
-  <meta property="og:image" content="https://www.panisse.es/assets/img/nosotros/tienda.webp" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://www.panisse.es/estudio-visual-lugo.html" />
+  <meta property="og:image" content="https://www.panisse.es/assets/img/blog/foroptero.jpg" />
   <meta property="og:locale" content="es_ES" />
   <meta property="og:site_name" content="Panisse Óptica" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Gafas en Lugo · Detalle de Producto | Panisse Óptica" />
-  <meta name="twitter:description" content="Gafas de diseño en Lugo. Panisse Óptica, óptica boutique en Rúa do Teatro, Bajo 2. Marcas exclusivas, ópticos certificados y atención personalizada." />
-  <meta name="twitter:image" content="https://www.panisse.es/assets/img/nosotros/tienda.webp" />
+  <meta name="twitter:title" content="Estudio Visual en Lugo — Revisión Visual Completa 45 min | Panisse Óptica" />
+  <meta name="twitter:description" content="Estudio Visual de Precisión en Lugo: 45 minutos, tecnología ZEISS, óptico-optometrista colegiado. Panisse Óptica, Rúa do Teatro, Bajo 2." />
+  <meta name="twitter:image" content="https://www.panisse.es/assets/img/blog/foroptero.jpg" />
 
   <!-- Canonical -->
-  <link rel="canonical" href="https://www.panisse.es/catalogo.html" />
-
-  <!-- JSON-LD Product (rellenado dinámicamente por JS) -->
-  <script type="application/ld+json" id="product-schema"></script>
+  <link rel="canonical" href="https://www.panisse.es/estudio-visual-lugo.html" />
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">[
   {
     "@context": "https://schema.org",
-    "@type": [
-      "LocalBusiness",
-      "Optician"
-    ],
+    "@type": ["LocalBusiness", "Optician"],
     "@id": "https://www.panisse.es/#business",
     "name": "Panisse Óptica",
     "alternateName": "Panisse Optica Lugo",
-    "description": "Óptica boutique en el centro de Lugo. Gafas graduadas, gafas de sol, revisiones visuales y marcas exclusivas. Óptico-optometrista y farmacéutico licenciado.",
+    "description": "Óptica boutique en el centro de Lugo. Estudio Visual de Precisión, lentes ZEISS certificadas y atención personalizada. Óptico-optometrista y farmacéutico licenciado.",
     "url": "https://www.panisse.es",
     "telephone": "+34982301193",
     "email": "info@panisse.es",
@@ -145,45 +123,12 @@
       "postalCode": "27001",
       "addressCountry": "ES"
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 43.0097,
-      "longitude": -7.5563
-    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 43.0097, "longitude": -7.5563 },
     "hasMap": "https://maps.google.com/?q=Panisse+%C3%93ptica+Lugo",
     "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "opens": "10:00",
-        "closes": "13:30"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "opens": "16:30",
-        "closes": "20:30"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Saturday"
-        ],
-        "opens": "10:30",
-        "closes": "13:30"
-      }
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "13:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "16:30", "closes": "20:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "10:30", "closes": "13:30" }
     ],
     "sameAs": [
       "https://www.instagram.com/panisse_optica/",
@@ -193,30 +138,54 @@
   },
   {
     "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Estudio Visual de Precisión",
+    "serviceType": "OptometryService",
+    "provider": { "@type": "LocalBusiness", "name": "Panisse Óptica", "@id": "https://www.panisse.es/#business" },
+    "areaServed": { "@type": "City", "name": "Lugo" },
+    "description": "Examen visual completo de 45 minutos con tecnología ZEISS. Incluye agudeza visual, refracción, tonometría, motilidad ocular, visión binocular y análisis personalizado. Realizado por óptico-optometrista y farmacéutico licenciado.",
+    "url": "https://www.panisse.es/estudio-visual-lugo.html"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué es el Estudio Visual de Precisión?",
+        "acceptedAnswer": { "@type": "Answer", "text": "El Estudio Visual de Precisión es el examen ocular completo que realizamos en Panisse Óptica, en Lugo. A diferencia de una revisión estándar de 10 minutos, dedicamos 45 minutos a analizar en profundidad todos los aspectos de tu salud visual: graduación exacta, presión intraocular, motilidad ocular, visión binocular y salud del segmento anterior. Utilizamos instrumentos de la gama profesional ZEISS." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto dura el Estudio Visual?",
+        "acceptedAnswer": { "@type": "Answer", "text": "El Estudio Visual de Precisión dura 45 minutos. Es el tiempo necesario para hacer bien cada prueba, explicarte los resultados y resolver tus dudas sin prisas. En Panisse Óptica, Lugo, no trabajamos con tiempos limitados ni con listas de espera: cada cita tiene su espacio propio." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Tiene coste el Estudio Visual?",
+        "acceptedAnswer": { "@type": "Answer", "text": "El Estudio Visual es un servicio de cortesía para los clientes de Panisse Óptica. Pide cita previa para garantizarte un horario sin esperas." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué tecnología usáis para el Estudio Visual en Lugo?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Trabajamos con instrumentos de la gama profesional ZEISS: foróptero de alta precisión, autorefractómetro, topógrafo corneal y tonómetro de no contacto. La misma tecnología ZEISS que usan los mejores centros ópticos y clínicas oftalmológicas de referencia." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿En qué se diferencia el Estudio Visual de Panisse de otras ópticas de Lugo?",
+        "acceptedAnswer": { "@type": "Answer", "text": "La diferencia principal es el tiempo y la formación. Félix Salvador Pérez es óptico-optometrista colegiado y farmacéutico licenciado — una doble formación poco habitual en la óptica. Esto le permite detectar no solo problemas refractivos sino también señales tempranas de patologías sistémicas que se manifiestan en el ojo. Además, el Estudio Visual de 45 minutos permite hacer pruebas que una revisión estándar no incluye." }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Inicio",
-        "item": "https://www.panisse.es/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Catálogo",
-        "item": "https://www.panisse.es/catalogo.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Producto"
-      }
+      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.panisse.es/" },
+      { "@type": "ListItem", "position": 2, "name": "Estudio Visual en Lugo", "item": "https://www.panisse.es/estudio-visual-lugo.html" }
     ]
   }
 ]</script>
-  <meta property="og:type" content="product" />
-  <meta property="og:locale" content="es_ES" />
 
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
@@ -232,11 +201,9 @@
   <header class="header" id="site-header">
     <div class="header__inner container">
 
-      <!-- ── Navegación principal (izquierda) ── -->
       <nav class="header__nav-main" aria-label="Categorías principales">
         <ul class="header__nav-list">
 
-          <!-- Marcas -->
           <li class="nav-item has-dropdown">
             <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="marcas">
               Marcas <span class="nav-caret" aria-hidden="true"></span>
@@ -259,7 +226,6 @@
             </div>
           </li>
 
-          <!-- Graduadas -->
           <li class="nav-item has-dropdown">
             <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="graduadas">
               Graduadas <span class="nav-caret" aria-hidden="true"></span>
@@ -272,7 +238,6 @@
             </div>
           </li>
 
-          <!-- De Sol -->
           <li class="nav-item has-dropdown">
             <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="sol">
               De Sol <span class="nav-caret" aria-hidden="true"></span>
@@ -285,7 +250,6 @@
             </div>
           </li>
 
-          <!-- Servicios -->
           <li class="nav-item has-dropdown">
             <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="servicios">
               Servicios <span class="nav-caret" aria-hidden="true"></span>
@@ -298,23 +262,19 @@
               <a href="servicios.html#contacto-lentes" class="dropdown__link" role="menuitem">Lentes de Contacto</a>
               <a href="servicios.html#fatiga" class="dropdown__link" role="menuitem">Fatiga Visual</a>
               <a href="servicios.html#glaucoma" class="dropdown__link" role="menuitem">Prevención Glaucoma</a>
-              <a href="servicios.html#instrumentos" class="dropdown__link" role="menuitem">Instrumentos Ópticos</a>
             </div>
           </li>
 
         </ul>
       </nav>
 
-      <!-- ── Logo (centrado) ── -->
       <a href="index.html" class="header__logo" aria-label="Panisse Óptica – inicio">
         Panisse <em>Óptica</em>
       </a>
 
-      <!-- ── Acciones (derecha) ── -->
       <div class="header__right">
         <nav class="header__nav-right" aria-label="Menú secundario">
           <ul class="header__nav-list">
-
             <li class="nav-item has-dropdown">
               <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="conocenos">
                 Conócenos <span class="nav-caret" aria-hidden="true"></span>
@@ -324,7 +284,6 @@
                 <a href="nosotros.html#equipo" class="dropdown__link" role="menuitem">El Equipo</a>
               </div>
             </li>
-
             <li class="nav-item has-dropdown">
               <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="opticas">
                 Ópticas <span class="nav-caret" aria-hidden="true"></span>
@@ -333,56 +292,32 @@
                 <a href="contacto.html" class="dropdown__link" role="menuitem">Panisse Óptica — Lugo</a>
               </div>
             </li>
-
             <li class="nav-item">
               <a href="blog.html" class="nav-link">Magazine</a>
             </li>
-
             <li class="nav-item">
               <a href="tarjeta-regalo.html" class="nav-link">Regala</a>
             </li>
-
           </ul>
         </nav>
         <div class="header__actions">
-
-        <a href="contacto.html" class="header__cta-link">Cita Previa</a>
-        <button id="lang-toggle-btn" class="lang-flag-btn"
-                onclick="panisseLangToggle()"
-                aria-label="Switch language / Cambiar idioma">&#x1F1EC;&#x1F1E7;</button>
-
-        <!-- TIENDA ONLINE — quitar 'hidden' cuando se active la venta online -->
-        <div class="header__ecommerce-actions" hidden>
-          <button class="header__icon-btn" aria-label="Mi cuenta">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                 stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-              <circle cx="12" cy="7" r="4"/>
-            </svg>
-          </button>
-          <button class="header__icon-btn header__cart-btn" aria-label="Carrito de la compra, 0 artículos">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                 stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
-              <line x1="3" y1="6" x2="21" y2="6"/>
-              <path d="M16 10a4 4 0 0 1-8 0"/>
-            </svg>
-            <span class="header__cart-count" aria-hidden="true">0</span>
+          <a href="contacto.html" class="header__cta-link">Cita Previa</a>
+          <button id="lang-toggle-btn" class="lang-flag-btn"
+                  onclick="panisseLangToggle()"
+                  aria-label="Switch language / Cambiar idioma">&#x1F1EC;&#x1F1E7;</button>
+          <div class="header__ecommerce-actions" hidden>
+            <button class="header__icon-btn" aria-label="Mi cuenta">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </button>
+          </div>
+          <button class="header__hamburger" id="hamburger-btn"
+                  aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+            <span></span><span></span><span></span>
           </button>
         </div>
+      </div>
 
-        <!-- Hamburger (solo móvil) -->
-        <button class="header__hamburger" id="hamburger-btn"
-                aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-      </div><!-- /.header__actions -->
-      </div><!-- /.header__right -->
-
-    </div><!-- /.header__inner -->
+    </div>
   </header>
 
   <!-- MENÚ MÓVIL -->
@@ -390,21 +325,13 @@
     <div class="mobile-menu__header">
       <a href="index.html" class="mobile-menu__logo">Panisse <em>Óptica</em></a>
       <button class="mobile-menu__close" id="mobile-close-btn" aria-label="Cerrar menú">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
-             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="18" y1="6" x2="6" y2="18"/>
-          <line x1="6" y1="6" x2="18" y2="18"/>
-        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
       </button>
     </div>
-
     <nav class="mobile-menu__body" aria-label="Navegación móvil">
       <ul class="mobile-menu__list">
-
         <li class="mobile-item has-submenu">
-          <button class="mobile-link" data-submenu="mm-marcas">
-            Marcas <span class="mobile-arrow" aria-hidden="true">›</span>
-          </button>
+          <button class="mobile-link" data-submenu="mm-marcas">Marcas <span class="mobile-arrow" aria-hidden="true">›</span></button>
           <ul class="mobile-submenu" id="mm-marcas" aria-hidden="true">
             <li><a href="catalogo.html?marca=panisse" class="mobile-sublink">Panisse</a></li>
             <li><a href="catalogo.html?marca=antica-occhialeria" class="mobile-sublink">Antica Occhialeria</a></li>
@@ -418,11 +345,8 @@
             <li><a href="catalogo.html" class="mobile-sublink mobile-sublink--all">Ver todas las marcas →</a></li>
           </ul>
         </li>
-
         <li class="mobile-item has-submenu">
-          <button class="mobile-link" data-submenu="mm-graduadas">
-            Graduadas <span class="mobile-arrow" aria-hidden="true">›</span>
-          </button>
+          <button class="mobile-link" data-submenu="mm-graduadas">Graduadas <span class="mobile-arrow" aria-hidden="true">›</span></button>
           <ul class="mobile-submenu" id="mm-graduadas" aria-hidden="true">
             <li><a href="catalogo.html?tipo=graduadas&genero=hombre" class="mobile-sublink">Hombre</a></li>
             <li><a href="catalogo.html?tipo=graduadas&genero=mujer" class="mobile-sublink">Mujer</a></li>
@@ -430,11 +354,8 @@
             <li><a href="catalogo.html?tipo=graduadas&genero=ninos" class="mobile-sublink">Niños y niñas</a></li>
           </ul>
         </li>
-
         <li class="mobile-item has-submenu">
-          <button class="mobile-link" data-submenu="mm-sol">
-            De Sol <span class="mobile-arrow" aria-hidden="true">›</span>
-          </button>
+          <button class="mobile-link" data-submenu="mm-sol">De Sol <span class="mobile-arrow" aria-hidden="true">›</span></button>
           <ul class="mobile-submenu" id="mm-sol" aria-hidden="true">
             <li><a href="catalogo.html?tipo=sol&genero=hombre" class="mobile-sublink">Hombre</a></li>
             <li><a href="catalogo.html?tipo=sol&genero=mujer" class="mobile-sublink">Mujer</a></li>
@@ -442,11 +363,8 @@
             <li><a href="catalogo.html?tipo=sol&genero=ninos" class="mobile-sublink">Niños y niñas</a></li>
           </ul>
         </li>
-
         <li class="mobile-item has-submenu">
-          <button class="mobile-link" data-submenu="mm-servicios">
-            Servicios <span class="mobile-arrow" aria-hidden="true">›</span>
-          </button>
+          <button class="mobile-link" data-submenu="mm-servicios">Servicios <span class="mobile-arrow" aria-hidden="true">›</span></button>
           <ul class="mobile-submenu" id="mm-servicios" aria-hidden="true">
             <li><a href="estudio-visual-lugo.html" class="mobile-sublink">Estudio Visual</a></li>
             <li><a href="lentes-zeiss-lugo.html" class="mobile-sublink">Lentes ZEISS</a></li>
@@ -455,44 +373,29 @@
             <li><a href="servicios.html#contacto-lentes" class="mobile-sublink">Lentes de Contacto</a></li>
             <li><a href="servicios.html#fatiga" class="mobile-sublink">Fatiga Visual</a></li>
             <li><a href="servicios.html#glaucoma" class="mobile-sublink">Prevención Glaucoma</a></li>
-            <li><a href="servicios.html#instrumentos" class="mobile-sublink">Instrumentos Ópticos</a></li>
           </ul>
         </li>
-
         <li class="mobile-item has-submenu">
-          <button class="mobile-link" data-submenu="mm-conocenos">
-            Conócenos <span class="mobile-arrow" aria-hidden="true">›</span>
-          </button>
+          <button class="mobile-link" data-submenu="mm-conocenos">Conócenos <span class="mobile-arrow" aria-hidden="true">›</span></button>
           <ul class="mobile-submenu" id="mm-conocenos" aria-hidden="true">
             <li><a href="nosotros.html" class="mobile-sublink">Manifiesto</a></li>
             <li><a href="nosotros.html#equipo" class="mobile-sublink">El Equipo</a></li>
           </ul>
         </li>
-
         <li class="mobile-item has-submenu">
-          <button class="mobile-link" data-submenu="mm-opticas">
-            Ópticas <span class="mobile-arrow" aria-hidden="true">›</span>
-          </button>
+          <button class="mobile-link" data-submenu="mm-opticas">Ópticas <span class="mobile-arrow" aria-hidden="true">›</span></button>
           <ul class="mobile-submenu" id="mm-opticas" aria-hidden="true">
             <li><a href="contacto.html" class="mobile-sublink">Panisse Óptica — Lugo</a></li>
           </ul>
         </li>
-
         <li class="mobile-item"><a href="blog.html" class="mobile-link mobile-link--plain">Blog</a></li>
         <li class="mobile-item"><a href="tarjeta-regalo.html" class="mobile-link mobile-link--plain">Regala</a></li>
-
       </ul>
     </nav>
-
     <div class="mobile-menu__footer">
-      <a href="contacto.html" class="btn btn--secondary" style="width:100%;text-align:center;display:block;">
-        Pedir Cita Previa
-      </a>
+      <a href="contacto.html" class="btn btn--secondary" style="width:100%;text-align:center;display:block;">Pedir Cita Previa</a>
       <div class="mobile-menu__lang">
-        <button id="mobile-lang-btn" class="lang-flag-btn"
-                onclick="panisseLangToggle()"
-                aria-label="Switch language / Cambiar idioma"
-                style="font-size:15px;padding:8px 12px;gap:8px;display:flex;align-items:center;">
+        <button id="mobile-lang-btn" class="lang-flag-btn" onclick="panisseLangToggle()" aria-label="Switch language / Cambiar idioma" style="font-size:15px;padding:8px 12px;gap:8px;display:flex;align-items:center;">
           &#x1F1EC;&#x1F1E7; <span class="mobile-lang-label">English</span>
         </button>
       </div>
@@ -502,118 +405,157 @@
         <a href="https://www.tiktok.com/@panisse_optica" target="_blank" rel="noopener noreferrer" aria-label="TikTok">TikTok</a>
       </div>
     </div>
-  </div><!-- /.mobile-menu -->
-
-  <!-- Overlay -->
+  </div>
   <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
 
-  <!-- ══════════════════════════════════════
-       MAIN — FICHA DE PRODUCTO
-  ══════════════════════════════════════ -->
+  <!-- MAIN -->
   <main id="main-content">
 
-    <!-- Breadcrumb -->
-    <div class="product-breadcrumb container">
-      <nav class="breadcrumb" aria-label="Ruta de navegación">
-        <a href="index.html" class="breadcrumb__link">Inicio</a>
-        <span class="breadcrumb__sep" aria-hidden="true">›</span>
-        <a href="catalogo.html?tipo=graduadas" class="breadcrumb__link" id="breadcrumb-type">Graduadas</a>
-        <span class="breadcrumb__sep" aria-hidden="true">›</span>
-        <a href="catalogo.html?marca=panisse" class="breadcrumb__link" id="breadcrumb-brand">Panisse</a>
-        <span class="breadcrumb__sep" aria-hidden="true">›</span>
-        <span class="breadcrumb__current" aria-current="page" id="breadcrumb-product">Cargando...</span>
-      </nav>
+    <!-- Cabecera de página -->
+    <div class="page-hero page-hero--dark">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Ruta de navegación">
+          <a href="index.html" class="breadcrumb__link">Inicio</a>
+          <span class="breadcrumb__sep" aria-hidden="true">›</span>
+          <span class="breadcrumb__current" aria-current="page">Estudio Visual en Lugo</span>
+        </nav>
+        <h1 class="page-hero__title">Estudio Visual<br><em>de Precisión en Lugo</em></h1>
+        <p class="page-hero__desc">45 minutos dedicados por completo a tu salud visual</p>
+      </div>
     </div>
 
-    <!-- Zona principal del producto -->
-    <div class="product-layout container">
-
-      <!-- ── Galería de imágenes ── -->
-      <div class="product-gallery" aria-label="Galería de imágenes del producto">
-
-        <!-- Thumbnails -->
-        <div class="product-gallery__thumbs" id="prod-thumbs" role="list" aria-label="Miniaturas">
-          <!-- Dinámico -->
+    <!-- Intro -->
+    <section class="servicio-section">
+      <div class="servicio-section__inner container">
+        <div class="servicio-section__img-col">
+          <div class="servicio-section__img-wrap">
+            <picture>
+              <source srcset="assets/img/blog/foroptero.webp" type="image/webp">
+              <img src="assets/img/blog/foroptero.jpg"
+                   alt="Foróptero ZEISS en la consulta de Panisse Óptica Lugo durante un Estudio Visual"
+                   width="800" height="600"
+                   loading="lazy"
+                   onerror="this.src='https://placehold.co/680x540/1a2a3a/c7dbd6?text=Estudio+Visual'" />
+            </picture>
+          </div>
         </div>
-
-        <!-- Imagen principal -->
-        <div class="product-gallery__main">
-          <img
-            id="product-main-img"
-            src="https://placehold.co/900x720/f5f5f5/aaaaaa?text=Cargando..."
-            alt="Imagen del producto"
-            class="product-gallery__main-img"
-            loading="eager"
-          />
-          <!-- Badge Nuevo: se añade dinámicamente desde JS si is_new === true -->
-          <button class="product-gallery__zoom" aria-label="Ampliar imagen">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-          </button>
+        <div class="servicio-section__content">
+          <p>En la mayoría de ópticas de Lugo, una revisión visual dura diez minutos. En Panisse Óptica dedicamos 45. No porque seamos lentos, sino porque creemos que la salud visual merece el tiempo suficiente para hacerlo bien.</p>
+          <p>El <strong>Estudio Visual de Precisión</strong> es el examen ocular completo que realizamos en nuestra óptica de Lugo. Un protocolo de siete pruebas que cubre todos los aspectos de tu visión: desde la graduación exacta hasta la presión intraocular, la coordinación muscular y la salud del segmento anterior. Todo ello con tecnología de la gama profesional ZEISS — la misma que usan los centros oftalmológicos de referencia.</p>
+          <p>Cada Estudio Visual lo realiza personalmente Félix Salvador Pérez, óptico titular de Panisse Óptica Lugo. Su doble formación como óptico-optometrista colegiado y farmacéutico licenciado le permite abordar la salud visual de forma integral, detectando no solo problemas refractivos sino también señales tempranas de patologías que se manifiestan en el ojo.</p>
+          <p>El resultado es un informe visual detallado, explicado con calma y sin tecnicismos, que te permite tomar decisiones informadas sobre tu salud ocular y, cuando procede, sobre las <a href="lentes-zeiss-lugo.html">lentes ZEISS</a> más adecuadas para tu perfil visual.</p>
         </div>
-
-
       </div>
+    </section>
 
-      <!-- ── Info del producto ── -->
-      <div class="product-info">
-
-        <div class="product-info__header">
-          <a href="catalogo.html" class="product-info__brand" id="prod-brand">Marca</a>
-          <h1 class="product-info__title" id="prod-title">Nombre del Producto</h1>
-          <p class="product-info__subtitle" id="prod-subtitle">Categoría</p>
-        </div>
-
-        <p class="product-info__price"><span id="prod-price">---</span></p>
-
-        <!-- Color -->
-        <div class="product-info__section">
-          <p class="product-info__label">
-            Color: <strong id="color-label">—</strong>
-          </p>
-          <div class="product-colors" id="prod-colors" hidden></div>
-        </div>
-
-        <!-- Descripción poética -->
-        <div class="product-info__desc" id="prod-desc">
-          <p>Cargando descripción...</p>
-        </div>
-
-        <!-- Detalles técnicos visibles -->
-        <div class="product-info__specs-inline">
-          <h3 class="product-info__specs-heading">Detalles técnicos</h3>
-          <ul class="product-specs" id="prod-specs">
-            <!-- Dinámico -->
-          </ul>
-        </div>
-
-        <!-- CTA principal -->
-        <div class="product-info__cta-wrap">
-          <a href="contacto.html" class="product-cta-main">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            Pedir cita para probar en tienda
-          </a>
-        </div>
-
-        <!-- Acordeón: envío y devoluciones -->
-        <div class="product-accordion">
-          <!-- Contenido eliminado -->
-        </div><!-- /.product-accordion -->
-
-      </div><!-- /.product-info -->
-
-    </div><!-- /.product-layout -->
-
-    <!-- ══════════════════════════════════════
-         PRODUCTOS RELACIONADOS
-    ══════════════════════════════════════ -->
-    <section class="related-products" aria-label="Productos relacionados">
+    <!-- Qué incluye el Estudio Visual -->
+    <section class="servicio-section servicio-section--alt">
       <div class="container">
         <header class="section-header">
-          <p class="section-header__label">También podría gustarte</p>
-          <h2 class="section-header__title">Otros diseños seleccionados</h2>
+          <p class="section-header__label">Protocolo completo</p>
+          <h2 class="section-header__title">¿Qué incluye el<br><em>Estudio Visual?</em></h2>
         </header>
-        <div class="related-grid" id="related-grid">
-          <!-- Dinámico desde JS -->
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;margin:2rem 0">
+          <div class="servicio-extra-card">
+            <div class="servicio-extra-card__num">01</div>
+            <h3 class="servicio-extra-card__title">Agudeza Visual</h3>
+            <p>Medimos cómo ves a lejos, a distancia intermedia y de cerca para obtener una imagen completa de tu visión en cada plano de uso cotidiano.</p>
+          </div>
+          <div class="servicio-extra-card">
+            <div class="servicio-extra-card__num">02</div>
+            <h3 class="servicio-extra-card__title">Refracción Objetiva y Subjetiva</h3>
+            <p>Determinamos tu graduación exacta — miopía, hipermetropía, astigmatismo y presbicia — de manera objetiva con el autorefractómetro y subjetiva con el foróptero ZEISS.</p>
+          </div>
+          <div class="servicio-extra-card">
+            <div class="servicio-extra-card__num">03</div>
+            <h3 class="servicio-extra-card__title">Tonometría</h3>
+            <p>Medimos la presión intraocular para la detección precoz del glaucoma, una patología que puede comprometer la visión de forma irreversible si no se detecta a tiempo.</p>
+          </div>
+          <div class="servicio-extra-card">
+            <div class="servicio-extra-card__num">04</div>
+            <h3 class="servicio-extra-card__title">Motilidad Ocular</h3>
+            <p>Evaluamos la coordinación de los músculos oculares para detectar problemas de convergencia, estrabismo latente o paresias que generan fatiga y dolores de cabeza.</p>
+          </div>
+          <div class="servicio-extra-card">
+            <div class="servicio-extra-card__num">05</div>
+            <h3 class="servicio-extra-card__title">Visión Binocular</h3>
+            <p>Analizamos cómo trabajan juntos los dos ojos. Una alteración binocular puede provocar visión doble, dolores de cabeza o cansancio sin causa aparente.</p>
+          </div>
+          <div class="servicio-extra-card">
+            <div class="servicio-extra-card__num">06</div>
+            <h3 class="servicio-extra-card__title">Salud del Segmento Anterior</h3>
+            <p>Revisamos córnea, cristalino, conjuntiva y párpados para detectar patologías que requieran derivación a oftalmología.</p>
+          </div>
+          <div class="servicio-extra-card">
+            <div class="servicio-extra-card__num">07</div>
+            <h3 class="servicio-extra-card__title">Informe y Asesoramiento</h3>
+            <p>Al terminar, te explicamos los resultados con claridad. Si necesitas corrección óptica, te asesoramos sobre la solución más adecuada — incluyendo la gama de <a href="lentes-zeiss-lugo.html">lentes ZEISS</a> disponible en Panisse Óptica Lugo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Por qué Panisse es diferente -->
+    <section class="servicio-section">
+      <div class="servicio-section__inner container">
+        <div class="servicio-section__content" style="max-width:760px;margin:0 auto;">
+          <span class="servicio-section__num">La diferencia</span>
+          <h2 class="servicio-section__title">Por qué el Estudio Visual<br><em>de Panisse es distinto</em></h2>
+          <p>En Panisse Óptica, nuestra óptica en Lugo, no trabajamos con cupos ni con tiempos limitados. Cada Estudio Visual ocupa su propio espacio en la agenda — 45 minutos reservados exclusivamente para ti, sin la presión de la cola de espera ni del cliente siguiente.</p>
+          <p>Félix Salvador Pérez combina dos titulaciones que rara vez coinciden en una misma persona: óptico-optometrista colegiado y farmacéutico licenciado. Esta formación le permite identificar patologías oculares relacionadas con condiciones sistémicas — diabetes, hipertensión, enfermedades autoinmunes — que muchas veces se manifiestan primero en el ojo antes que en cualquier otro órgano.</p>
+          <p>Utilizamos instrumentos de la gama profesional ZEISS: el mismo estándar tecnológico que emplean los centros oftalmológicos de referencia en Galicia y en toda España. Somos distribuidores oficiales ZEISS en Lugo, lo que nos da acceso a la gama completa de instrumentos, lentes y recubrimientos de la marca.</p>
+          <a href="nosotros.html#equipo" class="btn btn--secondary">Conocer al equipo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Reserva -->
+    <section class="servicios-cta">
+      <div class="container servicios-cta__inner">
+        <h2 class="servicios-cta__title">Reserva tu<br><em>Estudio Visual</em></h2>
+        <p class="servicios-cta__desc">Atendemos en Rúa do Teatro, Bajo 2, en el centro histórico de Lugo. Elige la opción que prefieras.</p>
+        <div class="servicios-cta__actions">
+          <a href="contacto.html" class="btn btn--primary">Cita online</a>
+          <a href="https://wa.me/34614296965?text=Hola%2C%20quiero%20pedir%20cita%20para%20un%20Estudio%20Visual" class="btn btn--outline" target="_blank" rel="noopener noreferrer">WhatsApp +34 614 296 965</a>
+          <a href="tel:+34982301193" class="btn btn--outline servicios-cta__phone">982 30 11 93</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="servicio-section servicio-section--alt">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-header__label">Preguntas frecuentes</p>
+          <h2 class="section-header__title">Todo sobre el<br><em>Estudio Visual en Lugo</em></h2>
+        </header>
+        <div style="max-width:760px;margin:2rem auto 0;">
+
+          <details style="border-bottom:1px solid var(--color-border,#e0dbd4);padding:1rem 0">
+            <summary style="font-weight:600;cursor:pointer;list-style:none">¿Qué es el Estudio Visual de Precisión?</summary>
+            <p style="margin-top:.75rem">El Estudio Visual de Precisión es el examen ocular completo que realizamos en Panisse Óptica, en Lugo. A diferencia de una revisión estándar de 10 minutos, dedicamos 45 minutos a analizar en profundidad todos los aspectos de tu salud visual utilizando instrumentos de la gama profesional ZEISS.</p>
+          </details>
+
+          <details style="border-bottom:1px solid var(--color-border,#e0dbd4);padding:1rem 0">
+            <summary style="font-weight:600;cursor:pointer;list-style:none">¿Cuánto dura el Estudio Visual?</summary>
+            <p style="margin-top:.75rem">El Estudio Visual dura 45 minutos. Es el tiempo necesario para hacer bien cada prueba, explicarte los resultados y resolver tus dudas sin prisas. En Panisse Óptica Lugo, cada cita tiene su espacio propio — no trabajamos con salas de espera ni con tiempos limitados.</p>
+          </details>
+
+          <details style="border-bottom:1px solid var(--color-border,#e0dbd4);padding:1rem 0">
+            <summary style="font-weight:600;cursor:pointer;list-style:none">¿Tiene coste el Estudio Visual?</summary>
+            <p style="margin-top:.75rem">El Estudio Visual es un servicio de cortesía para nuestros clientes. Pide cita previa para garantizarte un horario sin esperas en nuestra óptica de Lugo.</p>
+          </details>
+
+          <details style="border-bottom:1px solid var(--color-border,#e0dbd4);padding:1rem 0">
+            <summary style="font-weight:600;cursor:pointer;list-style:none">¿Qué tecnología usáis para el Estudio Visual?</summary>
+            <p style="margin-top:.75rem">Trabajamos con instrumentos de la gama profesional ZEISS: foróptero de alta precisión, autorefractómetro y tonómetro de no contacto. Como distribuidores oficiales ZEISS en Lugo tenemos acceso a la misma tecnología que emplean los mejores centros oftalmológicos de Galicia.</p>
+          </details>
+
+          <details style="border-bottom:1px solid var(--color-border,#e0dbd4);padding:1rem 0">
+            <summary style="font-weight:600;cursor:pointer;list-style:none">¿En qué se diferencia de otras ópticas de Lugo?</summary>
+            <p style="margin-top:.75rem">La diferencia principal es el tiempo dedicado y la formación del profesional. Félix Salvador Pérez es óptico-optometrista colegiado y farmacéutico licenciado — una doble formación poco habitual. Además, el Estudio Visual de 45 minutos permite realizar pruebas que una revisión estándar de 10 minutos no incluye, como el análisis detallado de la visión binocular y la salud del segmento anterior.</p>
+          </details>
+
         </div>
       </div>
     </section>
@@ -624,7 +566,6 @@
   <footer class="footer" aria-label="Pie de página">
     <div class="footer__inner container">
 
-      <!-- Col 1: Logo + Misión -->
       <div class="footer__col footer__col--brand">
         <a href="index.html" class="footer__logo" aria-label="Panisse Óptica — inicio">
           Panisse <em>Óptica</em>
@@ -645,7 +586,6 @@
         </div>
       </div>
 
-      <!-- Col 2: Enlaces rápidos -->
       <nav class="footer__col footer__col--links" aria-label="Navegación del footer">
         <h3 class="footer__heading">Explorar</h3>
         <ul class="footer__list">
@@ -656,6 +596,16 @@
           <li><a href="contacto.html" class="footer__link">Cita Previa</a></li>
           <li><a href="blog.html" class="footer__link">Magazine</a></li>
         </ul>
+        <h3 class="footer__heading" style="margin-top:28px;">Servicios en Lugo</h3>
+        <ul class="footer__list">
+          <li><a href="estudio-visual-lugo.html" class="footer__link">Estudio Visual</a></li>
+          <li><a href="revision-visual-lugo.html" class="footer__link">Revisión Visual</a></li>
+          <li><a href="gafas-graduadas-lugo.html" class="footer__link">Gafas Graduadas</a></li>
+          <li><a href="ray-ban-lugo.html" class="footer__link">Ray-Ban en Lugo</a></li>
+          <li><a href="lentes-de-contacto-lugo.html" class="footer__link">Lentes de Contacto</a></li>
+          <li><a href="optometria-infantil-lugo.html" class="footer__link">Optometría Infantil</a></li>
+          <li><a href="lentes-zeiss-lugo.html" class="footer__link">Lentes ZEISS</a></li>
+        </ul>
         <h3 class="footer__heading" style="margin-top: 28px;">Información</h3>
         <ul class="footer__list">
           <li><a href="nosotros.html" class="footer__link">Sobre Nosotros</a></li>
@@ -664,7 +614,6 @@
         </ul>
       </nav>
 
-      <!-- Col 3: Nuestra Tienda -->
       <div class="footer__col footer__col--stores">
         <h3 class="footer__heading">Nuestra Tienda</h3>
         <div class="footer__store">
@@ -681,7 +630,6 @@
         </div>
       </div>
 
-      <!-- Col 4: Newsletter -->
       <div class="footer__col footer__col--newsletter">
         <h3 class="footer__heading">Novedades</h3>
         <p class="footer__newsletter-text">Nuevas colecciones, consejos ópticos y artículos de autor. Sin spam, solo lo que merece la pena.</p>
@@ -703,31 +651,15 @@
     </div>
   </footer>
 
-  <!-- WhatsApp -->
-  <a
-    href="https://wa.me/34614296965?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20c%C3%B3mo%20pedir%20cita"
-    class="whatsapp-float"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Contactar por WhatsApp"
-  >
+  <a href="https://wa.me/34614296965?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Estudio%20Visual"
+    class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
     </svg>
     <span class="whatsapp-float__tooltip">WhatsApp</span>
   </a>
-
-  <!-- Lightbox / Zoom Modal -->
-  <div class="product-lightbox" id="product-lightbox" aria-hidden="true">
-    <button class="product-lightbox__close" aria-label="Cerrar ampliación">×</button>
-    <div class="product-lightbox__content">
-      <img src="" alt="" id="lightbox-img">
-    </div>
-  </div>
-
   <script src="assets/js/main.min.js" defer></script>
 
-  <!-- ── Google Translate ── -->
   <style>
     .goog-te-banner-frame,iframe.skiptranslate{display:none!important;}
     body,body.translated-ltr,body.translated-rtl{top:0!important;margin-top:0!important;}
@@ -736,47 +668,14 @@
   <div id="google_translate_element" style="display:none" aria-hidden="true"></div>
   <script>
     function googleTranslateElementInit() {
-      new google.translate.TranslateElement(
-        { pageLanguage: 'es', includedLanguages: 'en', autoDisplay: false },
-        'google_translate_element'
-      );
+      new google.translate.TranslateElement({pageLanguage:'es',includedLanguages:'en',layout:google.translate.TranslateElement.InlineLayout.SIMPLE,autoDisplay:false},'google_translate_element');
     }
-    (function () {
-      function getLang() {
-        var m = document.cookie.match(/googtrans=\/es\/(\w+)/);
-        return m ? m[1] : 'es';
-      }
-      window.panisseLangToggle = function () {
-        var next = getLang() === 'en' ? 'es' : 'en';
-        var val  = '/es/' + next;
-        var host = window.location.hostname;
-        document.cookie = 'googtrans=' + val + '; path=/; domain='  + host;
-        document.cookie = 'googtrans=' + val + '; path=/; domain=.' + host;
-        document.cookie = 'googtrans=' + val + '; path=/';
-        window.location.reload();
-      };
-      // Hide Google bar if injected after load
-      var _gt_obs = new MutationObserver(function(){
-        var f=document.querySelector('iframe.skiptranslate');
-        if(f){f.style.display='none';document.body.style.top='0';}
-      });
-      _gt_obs.observe(document.documentElement,{childList:true,subtree:true});
-      document.addEventListener('DOMContentLoaded', function () {
-        var lang = getLang();
-        var isEn = lang === 'en';
-        var flagEs = '&#x1F1EA;&#x1F1F8;', flagEn = '&#x1F1EC;&#x1F1E7;';
-        var btn = document.getElementById('lang-toggle-btn');
-        if (btn) { btn.innerHTML = isEn ? flagEs : flagEn;
-                   btn.title = isEn ? 'Cambiar a español' : 'Switch to English'; }
-        var mBtn = document.getElementById('mobile-lang-btn');
-        if (mBtn) {
-          mBtn.innerHTML = isEn
-            ? flagEs + ' <span class="mobile-lang-label">Español</span>'
-            : flagEn + ' <span class="mobile-lang-label">English</span>';
-        }
-      });
-    })();
+    function panisseLangToggle() {
+      var s = document.getElementById('google_translate_element');
+      if (s) { s.style.display = s.style.display === 'none' ? 'block' : 'none'; }
+    }
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
   </script>
-  <script>window.addEventListener('load',function(){var s=document.createElement('script');s.src='https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';document.head.appendChild(s);},{once:true});</script>
+
 </body>
 </html>
