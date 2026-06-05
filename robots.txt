@@ -1,4 +1,5 @@
 User-agent: *
+Disallow: /password
 Allow: /
 
 Sitemap: https://www.panisse.es/sitemap.xml
