@@ -404,12 +404,13 @@ if (newsletterForm) {
 
     filtered.forEach(c => grid.appendChild(c));
     all.forEach(c => c.classList.add('is-hidden'));
-    filtered.slice(0, state.page).forEach(c => {
+    const toShow = filtered.slice(0, state.page);
+    toShow.forEach(c => {
       c.classList.remove('is-hidden');
       c.classList.remove('is-visible');
-      void c.offsetWidth;
-      c.classList.add('is-visible');
     });
+    void grid.offsetWidth; // single reflow outside the loop
+    toShow.forEach(c => c.classList.add('is-visible'));
 
     if (emptyEl) emptyEl.hidden = filtered.length > 0;
     if (countEl) countEl.textContent = Math.min(state.page, filtered.length);
@@ -630,15 +631,18 @@ if (newsletterForm) {
 
   window.addEventListener('resize', () => {
     buildDots();
-    goToPage(0);
+    requestAnimationFrame(() => goToPage(currentPage));
   }, { passive: true });
 
   // Expuesto para que los renders de JS lo llamen
   window.initResenaCarousel = function () {
     currentPage = 0;
     buildDots();
-    goToPage(0);
-    resetAuto();
+    // Defer offsetWidth read until after buildDots() DOM writes are painted
+    requestAnimationFrame(() => {
+      goToPage(0);
+      resetAuto();
+    });
   };
 })();
 
