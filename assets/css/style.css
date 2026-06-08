@@ -212,7 +212,7 @@ a {
   background-color: #1a1a18;
 
   /* Imagen de fondo — reemplazar con imagen real */
-  background-image: url('https://placehold.co/1920x1080/1a1a18/c7dbd6?text=');
+  background-image: url('../img/hero-spring.webp');
   background-size: cover;
   background-position: center;
 }
