@@ -10,11 +10,13 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
 const siteHeader = document.getElementById('site-header');
 
 if (siteHeader) {
-  const onScroll = () => {
-    siteHeader.classList.toggle('is-scrolled', window.scrollY > 40);
-  };
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll(); // estado inicial
+  const sentinel = document.createElement('div');
+  sentinel.setAttribute('aria-hidden', 'true');
+  sentinel.style.cssText = 'position:absolute;top:41px;left:0;height:1px;width:1px;pointer-events:none';
+  document.body.insertAdjacentElement('afterbegin', sentinel);
+  new IntersectionObserver(([e]) => {
+    siteHeader.classList.toggle('is-scrolled', !e.isIntersecting);
+  }).observe(sentinel);
 }
 
 /* ── Header: dropdowns (hover + focus) ───────────────────── */

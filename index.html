@@ -491,8 +491,7 @@
 
     /* ── Hero: imagen primavera ── */
     .hero {
-      background-image: url('assets/img/hero-spring.jpg');
-      background-image: image-set(url('assets/img/hero-spring.webp') type('image/webp'), url('assets/img/hero-spring.jpg') type('image/jpeg'));
+      background-image: url('assets/img/hero-spring.webp');
       background-color: #2a3a1a;
       background-position: center 40%;
     }
@@ -1233,7 +1232,7 @@
         <picture>
           <source
             srcset="assets/img/brands/swarovski-editorial-720.webp 720w, assets/img/brands/swarovski-editorial-1040.webp 1040w, assets/img/brands/swarovski-editorial.webp 1097w"
-            sizes="(max-width: 900px) 100vw, 50vw"
+            sizes="(max-width: 900px) calc(100vw - 2px), 50vw"
             type="image/webp">
           <img
             src="assets/img/brands/swarovski-editorial.jpg"
