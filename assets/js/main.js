@@ -409,8 +409,7 @@ if (newsletterForm) {
       c.classList.remove('is-hidden');
       c.classList.remove('is-visible');
     });
-    void grid.offsetWidth; // single reflow outside the loop
-    toShow.forEach(c => c.classList.add('is-visible'));
+    requestAnimationFrame(() => toShow.forEach(c => c.classList.add('is-visible')));
 
     if (emptyEl) emptyEl.hidden = filtered.length > 0;
     if (countEl) countEl.textContent = Math.min(state.page, filtered.length);
@@ -551,7 +550,15 @@ if (newsletterForm) {
 
   let currentPage = 0;
   let autoTimer   = null;
+  let cachedVW    = 0;
   const GAP       = 20; // matches CSS gap
+
+  // ResizeObserver keeps cachedVW up-to-date without forcing synchronous layout
+  const roTarget = viewport || track;
+  new ResizeObserver(entries => {
+    cachedVW = entries[0].contentRect.width;
+    if (getRealCards().length > 0) goToPage(currentPage);
+  }).observe(roTarget);
 
   function getPerView() {
     const w = window.innerWidth;
@@ -570,14 +577,13 @@ if (newsletterForm) {
 
   function goToPage(page) {
     const cards = getRealCards();
-    if (cards.length === 0) return;
+    if (cards.length === 0 || cachedVW === 0) return;
 
     const pv    = getPerView();
     const total = Math.ceil(cards.length / pv);
     currentPage = Math.max(0, Math.min(page, total - 1));
 
-    const vw        = viewport ? viewport.offsetWidth : track.offsetWidth;
-    const cardWidth = (vw - GAP * (pv - 1)) / pv;
+    const cardWidth = (cachedVW - GAP * (pv - 1)) / pv;
     const offset    = currentPage * pv * (cardWidth + GAP);
     track.style.transform = `translateX(-${offset}px)`;
 
@@ -631,18 +637,15 @@ if (newsletterForm) {
 
   window.addEventListener('resize', () => {
     buildDots();
-    requestAnimationFrame(() => goToPage(currentPage));
+    goToPage(currentPage); // cachedVW is already fresh from ResizeObserver
   }, { passive: true });
 
   // Expuesto para que los renders de JS lo llamen
   window.initResenaCarousel = function () {
     currentPage = 0;
     buildDots();
-    // Defer offsetWidth read until after buildDots() DOM writes are painted
-    requestAnimationFrame(() => {
-      goToPage(0);
-      resetAuto();
-    });
+    // goToPage will run once ResizeObserver fires with the measured width
+    resetAuto();
   };
 })();
 
