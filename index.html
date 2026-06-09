@@ -544,6 +544,17 @@
       line-height: 1.75;
     }
 
+    /* ── Servicios en Lugo ── */
+    .home-servicios { padding: 56px 0; background: #f5f5f3; border-bottom: 1px solid #e8e8e2; }
+    .home-servicios .container { padding: 0 24px; }
+    .home-servicios__title { font-family: 'Lato', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: #636360; text-align: center; margin-bottom: 32px; }
+    .home-servicios__grid { list-style: none; padding: 0; margin: 0 auto; max-width: 860px; display: grid; grid-template-columns: repeat(2, 1fr); }
+    .home-servicios__grid li { border-top: 1px solid #e8e8e2; }
+    .home-servicios__grid li:nth-child(odd) { border-right: 1px solid #e8e8e2; }
+    .home-servicios__grid a { display: flex; align-items: center; justify-content: space-between; padding: 18px 24px; font-size: 13px; font-weight: 600; letter-spacing: .04em; color: #1a1a1a; text-decoration: none; transition: background .2s; }
+    .home-servicios__grid a:hover { background: #fff; }
+    @media (max-width: 600px) { .home-servicios__grid { grid-template-columns: 1fr; } .home-servicios__grid li:nth-child(odd) { border-right: none; } }
+
     /* ── Productos: cuadrícula 2 col con divisores ── */
     .lp-products {
       background: #fff;
@@ -1102,7 +1113,7 @@
       <div class="hero__overlay" aria-hidden="true"></div>
       <div class="container hero__content">
         <span class="hero__eyebrow">Óptica Boutique · Lugo</span>
-        <h1 class="hero__title">Óptica boutique en Lugo —<br><em>Gafas de diseño y revisión visual</em></h1>
+        <h1 class="hero__title">Óptica boutique<br><em>en Lugo</em></h1>
         <p class="hero__subtitle">Selección curada de marcas independientes.<br>Ópticos certificados. Atención sin prisas.</p>
         <div class="hero__actions">
           <a href="#productos" class="btn btn--primary">Ver colección</a>
