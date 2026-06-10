@@ -2770,37 +2770,6 @@
     ]
   },
   {
-    "id": "antica-occhialeria-miller",
-    "name": "Miller",
-    "brand": "Antica Occhialeria",
-    "brand_slug": "antica-occhialeria",
-    "type": "sol",
-    "price": 185,
-    "variant": "Carey Havana",
-    "color_swatch": "#8b4a1e",
-    "variants": [
-      {
-        "id": "antica-occhialeria-miller-miel",
-        "color": "#d4a830",
-        "label": "Crystal Miel"
-      }
-    ],
-    "placeholder": "https://placehold.co/600x480/8b4a1e/5a7a4a?text=Antica+Occhialeria",
-    "image": "assets/img/products/antica-occhialeria/antica-occhialeria-miller/antica-occhialeria-miller-1.jpg",
-    "gallery": [
-      "assets/img/products/antica-occhialeria/antica-occhialeria-miller/antica-occhialeria-miller-1.jpg",
-      "assets/img/products/antica-occhialeria/antica-occhialeria-miller/antica-occhialeria-miller-2.jpg"
-    ],
-    "description": "La Miller es la única montura piloto de Antica Occhialeria — forma aviador con doble puente, acetato carey havana de alta densidad, hecha a mano en Florencia. Una silueta con mucho carácter que no encontrarás en ninguna otra óptica de Lugo.",
-    "specs": {
-      "material": "Acetato",
-      "calibre": "50 mm",
-      "puente": "22 mm",
-      "varilla": "145 mm",
-      "genero": "Unisex"
-    }
-  },
-  {
     "id": "antica-occhialeria-miller-miel",
     "name": "Miller",
     "brand": "Antica Occhialeria",
@@ -2809,13 +2778,6 @@
     "price": 185,
     "variant": "Crystal Miel",
     "color_swatch": "#d4a830",
-    "variants": [
-      {
-        "id": "antica-occhialeria-miller",
-        "color": "#8b4a1e",
-        "label": "Carey Havana"
-      }
-    ],
     "placeholder": "https://placehold.co/600x480/d4a830/5a7a4a?text=Antica+Occhialeria",
     "image": "assets/img/products/antica-occhialeria/antica-occhialeria-miller-miel/antica-occhialeria-miller-miel-1.jpg",
     "gallery": [
@@ -2963,30 +2925,6 @@
       "puente": "24 mm",
       "varilla": "145 mm",
       "genero": "Unisex"
-    }
-  },
-  {
-    "id": "antica-occhialeria-tiffany",
-    "name": "Tiffany",
-    "brand": "Antica Occhialeria",
-    "brand_slug": "antica-occhialeria",
-    "type": "sol",
-    "price": 185,
-    "variant": "Carey Rojo",
-    "color_swatch": "#7a2810",
-    "placeholder": "https://placehold.co/600x480/7a2810/c88a18?text=Antica+Occhialeria",
-    "image": "assets/img/products/antica-occhialeria/antica-occhialeria-tiffany/antica-occhialeria-tiffany-1.jpg",
-    "gallery": [
-      "assets/img/products/antica-occhialeria/antica-occhialeria-tiffany/antica-occhialeria-tiffany-1.jpg",
-      "assets/img/products/antica-occhialeria/antica-occhialeria-tiffany/antica-occhialeria-tiffany-2.jpg"
-    ],
-    "description": "La Tiffany es la cat-eye más grande y envolvente de Antica Occhialeria. Montura mariposa en acetato Carey Rojo — un carey vivo y profundo trabajado a mano en Florencia que gana en intensidad con la luz. Protagonista total, para quien no pasa desapercibida. Exclusiva en Panisse Óptica Lugo.",
-    "specs": {
-      "material": "Acetato",
-      "calibre": "53 mm",
-      "puente": "20 mm",
-      "varilla": "145 mm",
-      "genero": "Mujer"
     }
   }
 ]
