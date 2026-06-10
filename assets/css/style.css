@@ -20,6 +20,7 @@
 @font-face { font-family: 'Lato'; font-style: italic; font-weight: 400; font-display: swap; src: url('../fonts/lato-400-italic.woff2') format('woff2'); }
 @font-face { font-family: 'Lato'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/lato-400-normal.woff2') format('woff2'); }
 @font-face { font-family: 'Lato'; font-style: normal; font-weight: 700; font-display: swap; src: url('../fonts/lato-700-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Parisienne Fallback'; src: local('Comic Sans MS'); size-adjust: 65.43%; ascent-override: 139.92%; descent-override: 68.28%; line-gap-override: 0%; }
 @font-face { font-family: 'Parisienne'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/parisienne-400-normal.woff2') format('woff2'); }
 
 /* ── RESET & BASE ─────────────────────────────────────────── */
@@ -504,7 +505,7 @@ a {
 /* ── Columna 1: Marca ─────────────────────────────────────── */
 .footer__logo {
   display: inline-block;
-  font-family: 'Parisienne', cursive;
+  font-family: 'Parisienne', 'Parisienne Fallback', cursive;
   font-size: 2.4rem;
   color: var(--color-white);
   line-height: 1.15;
@@ -913,7 +914,7 @@ a {
   grid-column: 2;
   justify-self: center;
   padding-inline: 72px;
-  font-family: 'Parisienne', cursive;
+  font-family: 'Parisienne', 'Parisienne Fallback', cursive;
   font-size: clamp(22px, 2vw, 26px);
   color: inherit;
   white-space: nowrap;
@@ -1302,7 +1303,7 @@ body, body.translated-ltr, body.translated-rtl { top: 0 !important; margin-top: 
 }
 
 .mobile-menu__logo {
-  font-family: 'Parisienne', cursive;
+  font-family: 'Parisienne', 'Parisienne Fallback', cursive;
   font-size: 28px;
   color: var(--color-text);
 }
@@ -3595,7 +3596,7 @@ body, body.translated-ltr, body.translated-rtl { top: 0 !important; margin-top: 
 }
 
 .cita-brand-mark__logo {
-  font-family: 'Parisienne', cursive;
+  font-family: 'Parisienne', 'Parisienne Fallback', cursive;
   font-size: 1.75rem;
   font-weight: 400;
   color: var(--color-black);
