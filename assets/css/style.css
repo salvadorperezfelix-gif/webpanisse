@@ -4,18 +4,23 @@
 ════════════════════════════════════════════════════════════ */
 
 /* ── FUENTES AUTO-ALOJADAS ────────────────────────────────── */
-@font-face { font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 300; font-display: optional; src: url('../fonts/cormorant-garamond-300-italic.woff2') format('woff2'); }
-@font-face { font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 300; font-display: optional; src: url('../fonts/cormorant-garamond-300-normal.woff2') format('woff2'); }
-@font-face { font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 400; font-display: optional; src: url('../fonts/cormorant-garamond-400-italic.woff2') format('woff2'); }
-@font-face { font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 400; font-display: optional; src: url('../fonts/cormorant-garamond-400-normal.woff2') format('woff2'); }
-@font-face { font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 600; font-display: optional; src: url('../fonts/cormorant-garamond-600-italic.woff2') format('woff2'); }
-@font-face { font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 600; font-display: optional; src: url('../fonts/cormorant-garamond-600-normal.woff2') format('woff2'); }
-@font-face { font-family: 'Lato'; font-style: italic; font-weight: 300; font-display: optional; src: url('../fonts/lato-300-italic.woff2') format('woff2'); }
-@font-face { font-family: 'Lato'; font-style: normal; font-weight: 300; font-display: optional; src: url('../fonts/lato-300-normal.woff2') format('woff2'); }
-@font-face { font-family: 'Lato'; font-style: italic; font-weight: 400; font-display: optional; src: url('../fonts/lato-400-italic.woff2') format('woff2'); }
-@font-face { font-family: 'Lato'; font-style: normal; font-weight: 400; font-display: optional; src: url('../fonts/lato-400-normal.woff2') format('woff2'); }
-@font-face { font-family: 'Lato'; font-style: normal; font-weight: 700; font-display: optional; src: url('../fonts/lato-700-normal.woff2') format('woff2'); }
-@font-face { font-family: 'Parisienne'; font-style: normal; font-weight: 400; font-display: optional; src: url('../fonts/parisienne-400-normal.woff2') format('woff2'); }
+
+/* Fallbacks con métricas ajustadas — el swap es imperceptible */
+@font-face { font-family: 'CG Fallback'; src: local('Georgia'); size-adjust: 80.18%; ascent-override: 115.25%; descent-override: 35.80%; line-gap-override: 0%; }
+@font-face { font-family: 'Lato Fallback'; src: local('Arial'); size-adjust: 97.68%; ascent-override: 82.42%; descent-override: 19.96%; line-gap-override: 20.48%; }
+
+@font-face { font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 300; font-display: swap; src: url('../fonts/cormorant-garamond-300-italic.woff2') format('woff2'); }
+@font-face { font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 300; font-display: swap; src: url('../fonts/cormorant-garamond-300-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 400; font-display: swap; src: url('../fonts/cormorant-garamond-400-italic.woff2') format('woff2'); }
+@font-face { font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/cormorant-garamond-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 600; font-display: swap; src: url('../fonts/cormorant-garamond-600-italic.woff2') format('woff2'); }
+@font-face { font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 600; font-display: swap; src: url('../fonts/cormorant-garamond-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Lato'; font-style: italic; font-weight: 300; font-display: swap; src: url('../fonts/lato-300-italic.woff2') format('woff2'); }
+@font-face { font-family: 'Lato'; font-style: normal; font-weight: 300; font-display: swap; src: url('../fonts/lato-300-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Lato'; font-style: italic; font-weight: 400; font-display: swap; src: url('../fonts/lato-400-italic.woff2') format('woff2'); }
+@font-face { font-family: 'Lato'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/lato-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Lato'; font-style: normal; font-weight: 700; font-display: swap; src: url('../fonts/lato-700-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Parisienne'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/parisienne-400-normal.woff2') format('woff2'); }
 
 /* ── RESET & BASE ─────────────────────────────────────────── */
 
@@ -32,7 +37,7 @@ html {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', 'Lato Fallback', sans-serif;
   font-weight: 400;
   color: #1a1a1a;
   background-color: #fafaf8;
@@ -61,8 +66,8 @@ a {
   --color-accent:     #c7dbd6;   /* sage verde, acento de marca */
   --color-accent-dk:  #8aafa9;
 
-  --font-display:     'Cormorant Garamond', Georgia, serif;
-  --font-body:        'Lato', system-ui, sans-serif;
+  --font-display:     'Cormorant Garamond', 'CG Fallback', Georgia, serif;
+  --font-body:        'Lato', 'Lato Fallback', system-ui, sans-serif;
 
   --radius-sm:  4px;
   --radius-md:  8px;
