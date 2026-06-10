@@ -824,30 +824,6 @@
     }
   },
   {
-    "id": "swarovski-sk1037",
-    "name": "SK1037",
-    "brand": "Swarovski",
-    "brand_slug": "swarovski",
-    "type": "graduadas",
-    "price": 189,
-    "variant": "Or / Havana",
-    "placeholder": "https://placehold.co/600x480/e8e4f4/8070b0?text=Swarovski",
-    "image": "assets/img/products/swarovski/swarovski-sk1037-1.jpg",
-    "gallery": [
-      "assets/img/products/swarovski/swarovski-sk1037-1.jpg",
-      "assets/img/products/swarovski/swarovski-sk1037-2.jpg"
-    ],
-    "is_new": true,
-    "description": "La SK1037 es la montura sin aro en su expresión más refinada: el metal dorado sostiene unas lentes hexagonales completamente desnudas, dejando que la vista respire con total libertad. Las patillas en acetato havana y el cristal Swarovski engastado en la bisagra aportan el contraste perfecto entre calidez y luminosidad. Para la mujer que busca la máxima ligereza sin renunciar al lujo.",
-    "specs": {
-      "material": "Metal / Sin aro",
-      "calibre": "56 mm",
-      "puente": "16 mm",
-      "varilla": "140 mm",
-      "genero": "Mujer"
-    }
-  },
-  {
     "id": "swarovski-sk2048",
     "name": "SK2048",
     "brand": "Swarovski",
