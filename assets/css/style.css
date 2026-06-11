@@ -3880,6 +3880,8 @@ body, body.translated-ltr, body.translated-rtl { top: 0 !important; margin-top: 
 .resenas-carousel__viewport {
   overflow: hidden;
   border-radius: var(--radius-sm);
+  max-width: 680px;
+  margin-inline: auto;
 }
 
 .resenas-carousel__track {
@@ -3889,9 +3891,9 @@ body, body.translated-ltr, body.translated-rtl { top: 0 !important; margin-top: 
   will-change: transform;
 }
 
-/* Tamaño de cada tarjeta: 3 visibles en escritorio */
+/* Una tarjeta centrada a la vez */
 .resenas-carousel__track .resena-card {
-  flex: 0 0 calc((100% - 40px) / 3);
+  flex: 0 0 100%;
   min-width: 0;
 }
 
@@ -3953,14 +3955,9 @@ body, body.translated-ltr, body.translated-rtl { top: 0 !important; margin-top: 
 }
 
 /* Responsive */
-@media (max-width: 900px) {
-  .resenas-carousel__track .resena-card {
-    flex: 0 0 calc((100% - 20px) / 2);
-  }
-}
 @media (max-width: 600px) {
-  .resenas-carousel__track .resena-card {
-    flex: 0 0 100%;
+  .resenas-carousel__viewport {
+    max-width: 100%;
   }
   .resenas-carousel__controls {
     gap: 14px;

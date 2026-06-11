@@ -563,8 +563,7 @@ if (newsletterForm) {
   }).observe(roTarget);
 
   function getPerView() {
-    const w = window.innerWidth;
-    return w <= 600 ? 1 : w <= 900 ? 2 : 3;
+    return 1;
   }
 
   function getRealCards() {
