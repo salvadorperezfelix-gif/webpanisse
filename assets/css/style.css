@@ -1510,6 +1510,8 @@ body, body.translated-ltr, body.translated-rtl { top: 0 !important; margin-top: 
 
   .header__logo {
     font-size: 24px;
+    padding-inline: 8px;
+    letter-spacing: 0.04em;
   }
 
   .header__cta-link {
