@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>@font-face{font-family:'Parisienne Fallback';src:local('Comic Sans MS');size-adjust:65.43%;ascent-override:139.92%;descent-override:68.28%;line-gap-override:0%}@font-face{font-family:'Parisienne';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/parisienne-400-normal.woff2') format('woff2')}@font-face{font-family:'CG Fallback';src:local('Georgia');size-adjust:80.18%;ascent-override:115.25%;descent-override:35.80%;line-gap-override:0%}@font-face{font-family:'Lato Fallback';src:local('Arial');size-adjust:97.68%;ascent-override:82.42%;descent-override:19.96%;line-gap-override:20.48%}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:600;font-display:swap;src:url('assets/fonts/cormorant-garamond-600-italic.woff2') format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:swap;src:url('assets/fonts/cormorant-garamond-600-normal.woff2') format('woff2')}@font-face{font-family:'Lato';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/lato-400-normal.woff2') format('woff2')}*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{font-size:16px;-webkit-font-smoothing:antialiased}body{font-family:'Lato','Lato Fallback',sans-serif;font-weight:400;color:#1a1a1a;background-color:#fafaf8;overflow-x:hidden}img{display:block;max-width:100%}a{color:inherit;text-decoration:none}:root{--color-black:#0d0d0d;--color-white:#ffffff;--color-bg:#ffffff;--color-surface:#f5f5f3;--color-border:#e8e8e2;--color-text:#1a1a1a;--color-muted:#636360;--color-accent:#c7dbd6;--color-accent-dk:#8aafa9;--font-display:'Cormorant Garamond','CG Fallback',Georgia,serif;--font-body:'Lato','Lato Fallback',system-ui,sans-serif;--radius-sm:4px;--radius-md:8px;--radius-lg:16px;--shadow-sm:0 1px 4px rgba(0,0,0,.06);--shadow-md:0 4px 20px rgba(0,0,0,.08);--shadow-lg:0 12px 40px rgba(0,0,0,.12);--transition:.32s cubic-bezier(.25,.46,.45,.94);--container-max:1200px;--container-pad:clamp(20px,5vw,64px)}.container{max-width:var(--container-max);margin-inline:auto;padding-inline:var(--container-pad)}.btn{display:inline-block;font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;padding:14px 40px;border:1px solid transparent;cursor:pointer;white-space:nowrap}.btn--primary{background:var(--color-white);color:var(--color-black);border-color:var(--color-white)}.btn--ghost{display:inline-block;font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:14px 28px;border:1px solid rgba(255,255,255,.55);color:var(--color-white);background:transparent}.btn--outline{display:inline-block;font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:14px 28px;border:1px solid var(--color-black);color:var(--color-black);background:transparent}.header{position:fixed;inset-block-start:0;inset-inline:0;z-index:900;height:72px;display:flex;align-items:center;background:transparent;color:var(--color-white);transition:background var(--transition),box-shadow var(--transition),color var(--transition)}.header.is-scrolled{background:rgba(250,250,248,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(0,0,0,.07);color:var(--color-text)}.header__inner{width:100%;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:24px}.header__logo{grid-column:2;justify-self:center;padding-inline:72px;font-family:'Parisienne','Parisienne Fallback',cursive;font-size:clamp(22px,2vw,26px);color:inherit;white-space:nowrap}.header__logo em{font-style:normal;font-weight:normal}.header__nav-main{grid-column:1}.header__nav-main .header__nav-list{justify-content:flex-end}.header__nav-list{list-style:none;display:flex;align-items:center;gap:4px}.header__right{grid-column:3;display:flex;align-items:center;gap:4px}.header__nav-right{display:flex;align-items:center}.nav-link{display:flex;align-items:center;gap:5px;background:none;border:none;cursor:pointer;font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:inherit;padding:6px 10px;border-radius:var(--radius-sm);white-space:nowrap}.header__actions{display:flex;align-items:center;justify-content:flex-end;gap:4px}.header__cta-link{font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:inherit;padding:7px 14px;border:1px solid currentColor;border-radius:var(--radius-sm);white-space:nowrap;margin-inline-end:6px}.header__icon-btn{display:flex;align-items:center;justify-content:center;background:none;border:none;cursor:pointer;color:inherit;padding:8px;border-radius:var(--radius-sm)}.header__hamburger{display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;background:none;border:none;cursor:pointer;padding:8px;color:inherit;width:36px;height:36px}@media(max-width:1024px){.header__nav-main,.header__nav-right{display:none}.header__inner{grid-template-columns:auto 1fr auto}.header__hamburger{display:flex}.header__logo{grid-column:2;justify-self:center}.header__right{grid-column:3}}@media(max-width:600px){.header{height:60px}}.dropdown{position:absolute;opacity:0;visibility:hidden;pointer-events:none}.mobile-menu{position:fixed;transform:translateX(100%)}.mobile-overlay{opacity:0;pointer-events:none}</style>
+  <link rel="preload" href="assets/css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/css/style.min.css"></noscript>
+  <link rel="preload" href="assets/fonts/cormorant-garamond-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/cormorant-garamond-600-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/lato-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/parisienne-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Page-specific styles -->
+  <style>
+    /* ── Marca landing page ── */
+
+    .marca-hero{position:relative;background:#0d0d0d;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+    .marca-hero__bg{position:absolute;inset:0;background:radial-gradient(ellipse at 25% 55%,rgba(199,219,214,.07) 0%,transparent 55%)}
+    .marca-hero__content{position:relative;z-index:2;width:100%;max-width:var(--container-max);margin-inline:auto;padding:0 var(--container-pad) clamp(60px,10vh,120px)}
+    .marca-hero__eyebrow{display:block;font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:24px}
+    .marca-hero__title{font-family:var(--font-display);font-style:italic;font-weight:600;color:#fff;font-size:clamp(88px,14vw,192px);line-height:.86;letter-spacing:-.02em;margin-bottom:36px}
+    .marca-hero__sub{font-size:clamp(1rem,1.5vw,1.125rem);color:rgba(255,255,255,.55);max-width:460px;line-height:1.65}
+    .marca-hero__scroll{position:absolute;bottom:clamp(28px,4vh,48px);right:var(--container-pad);display:flex;align-items:center;gap:12px;font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.3);writing-mode:vertical-rl}
+
+    .marca-section{padding:clamp(72px,10vw,120px) var(--container-pad)}
+    .marca-section--light{background:var(--color-bg)}
+    .marca-section--surface{background:var(--color-surface)}
+    .marca-section--dark{background:#0d0d0d}
+
+    .marca-eyebrow{display:block;font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--color-muted);margin-bottom:16px}
+    .marca-eyebrow--light{color:rgba(255,255,255,.4)}
+
+    .marca-heading{font-family:var(--font-display);font-weight:600;font-size:clamp(34px,4vw,54px);line-height:1.08;color:var(--color-black);margin-bottom:0}
+    .marca-heading em{font-style:italic}
+    .marca-heading--light{color:#fff}
+    .marca-heading--xl{font-size:clamp(40px,5.5vw,72px);line-height:1.05}
+    .marca-heading--italic{font-style:italic}
+
+    .marca-body p{font-size:1.0625rem;line-height:1.78;color:#3a3a38;margin-bottom:22px}
+    .marca-body p:last-child{margin-bottom:0}
+
+    /* Intro two-col */
+    .marca-intro__grid{max-width:var(--container-max);margin-inline:auto;display:grid;grid-template-columns:1fr 1fr;gap:clamp(48px,7vw,108px);align-items:center}
+    @media(max-width:860px){.marca-intro__grid{grid-template-columns:1fr}}
+
+    /* Carmen bio */
+    .marca-carmen__grid{max-width:var(--container-max);margin-inline:auto;display:grid;grid-template-columns:320px 1fr;gap:clamp(48px,7vw,108px);align-items:start}
+    .marca-carmen__photo-wrap{position:sticky;top:96px}
+    .marca-carmen__frame{background:#ede6dc;padding:18px 18px 0}
+    .marca-carmen__img{width:100%;display:block;aspect-ratio:3/4;object-fit:cover;object-position:top center;filter:sepia(.12) contrast(1.04)}
+    .marca-carmen__frame-foot{background:#ede6dc;padding:14px 18px;text-align:center}
+    .marca-carmen__caption{font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#8a7a6a}
+    .marca-carmen__name{font-family:var(--font-display);font-style:italic;font-weight:600;font-size:clamp(40px,5vw,64px);line-height:.95;color:var(--color-black);margin-bottom:10px;margin-top:0}
+    .marca-carmen__dates{font-family:var(--font-body);font-size:.8125rem;color:var(--color-muted);letter-spacing:.1em;margin-bottom:40px}
+
+    .marca-milestones{margin-top:44px;border-top:1px solid var(--color-border)}
+    .marca-milestone{display:grid;grid-template-columns:52px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--color-border);align-items:baseline}
+    .marca-milestone__year{font-family:var(--font-display);font-weight:600;font-size:1.125rem;color:var(--color-muted)}
+    .marca-milestone__text{font-size:.9375rem;line-height:1.6;color:var(--color-text)}
+    .marca-milestone__text em{font-style:italic}
+
+    @media(max-width:860px){
+      .marca-carmen__grid{grid-template-columns:1fr}
+      .marca-carmen__photo-wrap{position:static;max-width:260px}
+    }
+
+    /* Pull quote */
+    .marca-quote__inner{max-width:840px;margin-inline:auto;text-align:center}
+    .marca-quote__mark{font-family:var(--font-display);font-size:100px;line-height:.5;color:rgba(255,255,255,.1);display:block;margin-bottom:36px}
+    .marca-quote__text{font-family:var(--font-display);font-style:italic;font-weight:600;font-size:clamp(26px,3.5vw,44px);line-height:1.28;color:#fff;margin-bottom:36px}
+    .marca-quote__attr{font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.35)}
+    .marca-quote__badge{display:inline-flex;align-items:center;gap:10px;margin-top:44px;padding:11px 22px;border:1px solid rgba(255,255,255,.12);font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.4)}
+
+    /* Three generations */
+    .marca-gen__header{text-align:center;margin-bottom:60px}
+    .marca-gen__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--color-border);max-width:var(--container-max);margin-inline:auto}
+    .marca-gen-card{background:var(--color-bg);padding:clamp(32px,4vw,52px) clamp(24px,3vw,40px);display:flex;flex-direction:column;align-items:center;text-align:center}
+    .marca-gen-card--current{background:var(--color-black)}
+    .marca-gen-num{font-family:var(--font-display);font-style:italic;font-weight:600;font-size:88px;line-height:.8;color:var(--color-border);margin-bottom:24px;display:block}
+    .marca-gen-card--current .marca-gen-num{color:rgba(255,255,255,.06)}
+    .marca-gen-name{font-family:var(--font-display);font-style:italic;font-weight:600;font-size:clamp(24px,2.8vw,32px);color:var(--color-black);margin-bottom:6px}
+    .marca-gen-card--current .marca-gen-name{color:#fff}
+    .marca-gen-role{font-size:.6875rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--color-muted);margin-bottom:20px;line-height:1.5}
+    .marca-gen-card--current .marca-gen-role{color:rgba(255,255,255,.4)}
+    .marca-gen-desc{font-size:.9375rem;line-height:1.68;color:#555}
+    .marca-gen-card--current .marca-gen-desc{color:rgba(255,255,255,.65)}
+    .marca-gen-tag{display:inline-block;margin-top:20px;padding:6px 14px;border:1px solid rgba(199,219,214,.5);font-family:var(--font-body);font-size:.625rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--color-accent-dk)}
+    @media(max-width:720px){.marca-gen__grid{grid-template-columns:1fr}}
+
+    /* Filosofía */
+    .marca-fil__grid{max-width:var(--container-max);margin-inline:auto;display:grid;grid-template-columns:1fr 1fr;gap:clamp(48px,7vw,108px);align-items:center}
+    .marca-fil__stats{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--color-border)}
+    .marca-stat{background:var(--color-bg);padding:clamp(24px,3vw,40px) clamp(20px,2.5vw,32px)}
+    .marca-stat__num{font-family:var(--font-display);font-style:italic;font-weight:600;font-size:clamp(44px,6vw,64px);line-height:1;color:var(--color-black);margin-bottom:4px}
+    .marca-stat__label{font-size:.6875rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--color-muted)}
+    @media(max-width:860px){.marca-fil__grid{grid-template-columns:1fr}}
+
+    /* Bateas detail */
+    .marca-bateas{max-width:var(--container-max);margin-inline:auto;border:1px solid var(--color-border);display:grid;grid-template-columns:1fr 1fr;overflow:hidden}
+    .marca-bateas__text{padding:clamp(32px,4vw,56px)}
+    .marca-bateas__map{background:#e8e0d5;display:flex;align-items:center;justify-content:center;min-height:220px;font-family:var(--font-display);font-style:italic;font-size:clamp(60px,8vw,100px);color:rgba(0,0,0,.07);font-weight:600}
+    @media(max-width:640px){.marca-bateas{grid-template-columns:1fr}.marca-bateas__map{display:none}}
+
+    /* CTA */
+    .marca-cta__inner{max-width:660px;margin-inline:auto;text-align:center}
+    .marca-cta__actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:40px}
+  </style>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];window.addEventListener('load',function(){t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s);},{once:!0});}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    var savedConsent = localStorage.getItem('cookieConsent');
+    var marketingGranted = false;
+    if (savedConsent) {
+      try { var consentObj = JSON.parse(savedConsent); marketingGranted = !!consentObj.marketing; } catch (e) {}
+    }
+    if (marketingGranted) { fbq('consent', 'grant'); } else { fbq('consent', 'revoke'); }
+    fbq('init', '1706566507036901');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" alt="" style="display:none"
+    src="https://www.facebook.com/tr?id=1706566507036901&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+  <!-- Google Consent Mode v2 -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    var savedConsent = localStorage.getItem('cookieConsent');
+    if (savedConsent) {
+      try {
+        var consentObj = JSON.parse(savedConsent);
+        gtag('consent', 'default', {
+          'ad_storage': consentObj.marketing ? 'granted' : 'denied',
+          'ad_user_data': consentObj.marketing ? 'granted' : 'denied',
+          'ad_personalization': consentObj.marketing ? 'granted' : 'denied',
+          'analytics_storage': consentObj.analytics ? 'granted' : 'denied'
+        });
+      } catch (e) {
+        gtag('consent', 'default', { 'ad_storage': 'denied', 'ad_user_data': 'denied', 'ad_personalization': 'denied', 'analytics_storage': 'denied' });
+      }
+    } else {
+      gtag('consent', 'default', { 'ad_storage': 'denied', 'ad_user_data': 'denied', 'ad_personalization': 'denied', 'analytics_storage': 'denied' });
+    }
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZPWT5ZT4X4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18003465740');
+    gtag('config', 'G-ZPWT5ZT4X4');
+  </script>
+
+  <!-- SEO -->
+  <title>La Marca Panisse · Historia y Legado | Panisse Óptica Lugo</title>
+  <meta name="description" content="La historia de Carmen Panisse Ferrer, pioneira das ciencias de Lugo, y las tres generaciones que construyeron Panisse Óptica. Colección propia, lujo silencioso." />
+  <meta name="keywords" content="Panisse marca propia, Carmen Panisse Ferrer, óptica boutique Lugo, monturas exclusivas Lugo, historia Panisse, pioneira ciencias Lugo" />
+  <meta name="author" content="Panisse Óptica" />
+  <meta name="robots" content="index, follow" />
+  <meta name="geo.region" content="ES-LU" />
+  <meta name="geo.placename" content="Lugo, Galicia, España" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="La Marca Panisse · Historia y Legado | Panisse Óptica" />
+  <meta property="og:description" content="La historia de Carmen Panisse Ferrer, pioneira das ciencias de Lugo, y las tres generaciones que construyeron Panisse Óptica." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://panisse.es/panisse-marca.html" />
+  <meta property="og:image" content="https://pioneirasdecienciasdelugo.gal/wp-content/uploads/2024/06/MCaramenPanisse_html_c142853a77478191.jpg" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:site_name" content="Panisse Óptica" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="La Marca Panisse · Historia y Legado" />
+  <meta name="twitter:description" content="La historia de Carmen Panisse Ferrer y las tres generaciones que nos trajeron hasta hoy." />
+  <meta name="twitter:image" content="https://pioneirasdecienciasdelugo.gal/wp-content/uploads/2024/06/MCaramenPanisse_html_c142853a77478191.jpg" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://panisse.es/panisse-marca.html" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">[
+  {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness","Optician"],
+    "@id": "https://panisse.es/#business",
+    "name": "Panisse Óptica",
+    "url": "https://panisse.es",
+    "telephone": "+34982301193",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rúa do Teatro, Bajo 2",
+      "addressLocality": "Lugo",
+      "addressRegion": "Galicia",
+      "postalCode": "27001",
+      "addressCountry": "ES"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Inicio","item":"https://panisse.es/"},
+      {"@type":"ListItem","position":2,"name":"La Marca Panisse"}
+    ]
+  }
+]</script>
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body class="interior-page">
+
+  <!-- HEADER -->
+  <header class="header" id="site-header">
+    <div class="header__inner container">
+
+      <nav class="header__nav-main" aria-label="Categorías principales">
+        <ul class="header__nav-list">
+
+          <li class="nav-item has-dropdown">
+            <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="marcas">
+              Marcas <span class="nav-caret" aria-hidden="true"></span>
+            </button>
+            <div class="dropdown dropdown--wide" id="dropdown-marcas" role="menu" aria-label="Marcas">
+              <div class="dropdown__grid">
+                <a href="catalogo.html?marca=panisse" class="dropdown__link" role="menuitem">Panisse</a>
+                <a href="catalogo.html?marca=antica-occhialeria" class="dropdown__link" role="menuitem">Antica Occhialeria</a>
+                <a href="catalogo.html?marca=panisse-boutique" class="dropdown__link" role="menuitem">Panisse Boutique</a>
+                <a href="catalogo.html?marca=emporio-armani" class="dropdown__link" role="menuitem">Emporio Armani</a>
+                <a href="catalogo.html?marca=swarovski" class="dropdown__link" role="menuitem">Swarovski</a>
+                <a href="catalogo.html?marca=ray-ban" class="dropdown__link" role="menuitem">Ray-Ban</a>
+                <a href="catalogo.html?marca=polaroid" class="dropdown__link" role="menuitem">Polaroid</a>
+                <a href="catalogo.html?marca=panisse-kids" class="dropdown__link" role="menuitem">Panisse Kids</a>
+                <a href="catalogo.html?marca=mr-boho" class="dropdown__link" role="menuitem">Mr. Boho</a>
+              </div>
+              <div class="dropdown__footer-bar">
+                <a href="catalogo.html" class="dropdown__all">Ver todas las marcas →</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="graduadas">
+              Graduadas <span class="nav-caret" aria-hidden="true"></span>
+            </button>
+            <div class="dropdown" id="dropdown-graduadas" role="menu" aria-label="Gafas graduadas">
+              <a href="catalogo.html?tipo=graduadas&genero=hombre" class="dropdown__link" role="menuitem">Hombre</a>
+              <a href="catalogo.html?tipo=graduadas&genero=mujer" class="dropdown__link" role="menuitem">Mujer</a>
+              <a href="catalogo.html?tipo=graduadas&genero=unisex" class="dropdown__link" role="menuitem">Unisex</a>
+              <a href="catalogo.html?tipo=graduadas&genero=ninos" class="dropdown__link" role="menuitem">Niños y niñas</a>
+            </div>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="sol">
+              De Sol <span class="nav-caret" aria-hidden="true"></span>
+            </button>
+            <div class="dropdown" id="dropdown-sol" role="menu" aria-label="Gafas de sol">
+              <a href="catalogo.html?tipo=sol&genero=hombre" class="dropdown__link" role="menuitem">Hombre</a>
+              <a href="catalogo.html?tipo=sol&genero=mujer" class="dropdown__link" role="menuitem">Mujer</a>
+              <a href="catalogo.html?tipo=sol&genero=unisex" class="dropdown__link" role="menuitem">Sol Unisex</a>
+              <a href="catalogo.html?tipo=sol&genero=ninos" class="dropdown__link" role="menuitem">Niños y niñas</a>
+            </div>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="servicios">
+              Servicios <span class="nav-caret" aria-hidden="true"></span>
+            </button>
+            <div class="dropdown" id="dropdown-servicios" role="menu" aria-label="Servicios">
+              <a href="estudio-visual-lugo.html" class="dropdown__link" role="menuitem">Estudio Visual</a>
+              <a href="lentes-zeiss-lugo.html" class="dropdown__link" role="menuitem">Lentes ZEISS</a>
+              <a href="servicios.html#vista-cansada" class="dropdown__link" role="menuitem">Vista Cansada</a>
+              <a href="servicios.html#miopia" class="dropdown__link" role="menuitem">Miopía en Niños</a>
+              <a href="servicios.html#contacto-lentes" class="dropdown__link" role="menuitem">Lentes de Contacto</a>
+              <a href="servicios.html#fatiga" class="dropdown__link" role="menuitem">Fatiga Visual</a>
+              <a href="servicios.html#glaucoma" class="dropdown__link" role="menuitem">Prevención Glaucoma</a>
+              <a href="servicios.html#instrumentos" class="dropdown__link" role="menuitem">Instrumentos Ópticos</a>
+            </div>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="index.html" class="header__logo" aria-label="Panisse Óptica – inicio">
+        Panisse <em>Óptica</em>
+      </a>
+
+      <div class="header__right">
+        <nav class="header__nav-right" aria-label="Menú secundario">
+          <ul class="header__nav-list">
+
+            <li class="nav-item has-dropdown">
+              <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="conocenos">
+                Conócenos <span class="nav-caret" aria-hidden="true"></span>
+              </button>
+              <div class="dropdown" id="dropdown-conocenos" role="menu" aria-label="Conócenos">
+                <a href="nosotros.html" class="dropdown__link" role="menuitem">Manifiesto</a>
+                <a href="nosotros.html#equipo" class="dropdown__link" role="menuitem">El Equipo</a>
+                <a href="panisse-marca.html" class="dropdown__link" role="menuitem">La Marca Panisse</a>
+              </div>
+            </li>
+
+            <li class="nav-item has-dropdown">
+              <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="opticas">
+                Ópticas <span class="nav-caret" aria-hidden="true"></span>
+              </button>
+              <div class="dropdown" id="dropdown-opticas" role="menu" aria-label="Nuestras tiendas">
+                <a href="contacto.html" class="dropdown__link" role="menuitem">Panisse Óptica — Lugo</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link">Magazine</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="tarjeta-regalo.html" class="nav-link">Regala</a>
+            </li>
+
+          </ul>
+        </nav>
+        <div class="header__actions">
+          <a href="contacto.html" class="header__cta-link">Cita Previa</a>
+          <button id="lang-toggle-btn" class="lang-flag-btn"
+                  onclick="panisseLangToggle()"
+                  aria-label="Switch language / Cambiar idioma">&#x1F1EC;&#x1F1E7;</button>
+          <div class="header__ecommerce-actions" hidden>
+            <button class="header__icon-btn" aria-label="Mi cuenta">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </button>
+          </div>
+          <button class="header__hamburger" id="hamburger-btn"
+                  aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Menú principal">
+    <div class="mobile-menu__header">
+      <a href="index.html" class="mobile-menu__logo">Panisse <em>Óptica</em></a>
+      <button class="mobile-menu__close" id="mobile-close-btn" aria-label="Cerrar menú">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <nav class="mobile-menu__body" aria-label="Navegación móvil">
+      <ul class="mobile-menu__list">
+        <li class="mobile-item has-submenu">
+          <button class="mobile-link" data-submenu="mm-marcas">Marcas <span class="mobile-arrow" aria-hidden="true">›</span></button>
+          <ul class="mobile-submenu" id="mm-marcas" aria-hidden="true">
+            <li><a href="catalogo.html?marca=panisse" class="mobile-sublink">Panisse</a></li>
+            <li><a href="catalogo.html?marca=antica-occhialeria" class="mobile-sublink">Antica Occhialeria</a></li>
+            <li><a href="catalogo.html?marca=panisse-boutique" class="mobile-sublink">Panisse Boutique</a></li>
+            <li><a href="catalogo.html?marca=emporio-armani" class="mobile-sublink">Emporio Armani</a></li>
+            <li><a href="catalogo.html?marca=swarovski" class="mobile-sublink">Swarovski</a></li>
+            <li><a href="catalogo.html?marca=ray-ban" class="mobile-sublink">Ray-Ban</a></li>
+            <li><a href="catalogo.html?marca=polaroid" class="mobile-sublink">Polaroid</a></li>
+            <li><a href="catalogo.html?marca=panisse-kids" class="mobile-sublink">Panisse Kids</a></li>
+            <li><a href="catalogo.html?marca=mr-boho" class="mobile-sublink">Mr. Boho</a></li>
+            <li><a href="catalogo.html" class="mobile-sublink mobile-sublink--all">Ver todas las marcas →</a></li>
+          </ul>
+        </li>
+        <li class="mobile-item has-submenu">
+          <button class="mobile-link" data-submenu="mm-graduadas">Graduadas <span class="mobile-arrow" aria-hidden="true">›</span></button>
+          <ul class="mobile-submenu" id="mm-graduadas" aria-hidden="true">
+            <li><a href="catalogo.html?tipo=graduadas&genero=hombre" class="mobile-sublink">Hombre</a></li>
+            <li><a href="catalogo.html?tipo=graduadas&genero=mujer" class="mobile-sublink">Mujer</a></li>
+            <li><a href="catalogo.html?tipo=graduadas&genero=unisex" class="mobile-sublink">Unisex</a></li>
+            <li><a href="catalogo.html?tipo=graduadas&genero=ninos" class="mobile-sublink">Niños y niñas</a></li>
+          </ul>
+        </li>
+        <li class="mobile-item has-submenu">
+          <button class="mobile-link" data-submenu="mm-sol">De Sol <span class="mobile-arrow" aria-hidden="true">›</span></button>
+          <ul class="mobile-submenu" id="mm-sol" aria-hidden="true">
+            <li><a href="catalogo.html?tipo=sol&genero=hombre" class="mobile-sublink">Hombre</a></li>
+            <li><a href="catalogo.html?tipo=sol&genero=mujer" class="mobile-sublink">Mujer</a></li>
+            <li><a href="catalogo.html?tipo=sol&genero=unisex" class="mobile-sublink">Sol Unisex</a></li>
+            <li><a href="catalogo.html?tipo=sol&genero=ninos" class="mobile-sublink">Niños y niñas</a></li>
+          </ul>
+        </li>
+        <li class="mobile-item has-submenu">
+          <button class="mobile-link" data-submenu="mm-servicios">Servicios <span class="mobile-arrow" aria-hidden="true">›</span></button>
+          <ul class="mobile-submenu" id="mm-servicios" aria-hidden="true">
+            <li><a href="estudio-visual-lugo.html" class="mobile-sublink">Estudio Visual</a></li>
+            <li><a href="lentes-zeiss-lugo.html" class="mobile-sublink">Lentes ZEISS</a></li>
+            <li><a href="servicios.html#vista-cansada" class="mobile-sublink">Vista Cansada</a></li>
+            <li><a href="servicios.html#miopia" class="mobile-sublink">Miopía en Niños</a></li>
+            <li><a href="servicios.html#contacto-lentes" class="mobile-sublink">Lentes de Contacto</a></li>
+            <li><a href="servicios.html#fatiga" class="mobile-sublink">Fatiga Visual</a></li>
+            <li><a href="servicios.html#glaucoma" class="mobile-sublink">Prevención Glaucoma</a></li>
+            <li><a href="servicios.html#instrumentos" class="mobile-sublink">Instrumentos Ópticos</a></li>
+          </ul>
+        </li>
+        <li class="mobile-item has-submenu">
+          <button class="mobile-link" data-submenu="mm-conocenos">Conócenos <span class="mobile-arrow" aria-hidden="true">›</span></button>
+          <ul class="mobile-submenu" id="mm-conocenos" aria-hidden="true">
+            <li><a href="nosotros.html" class="mobile-sublink">Manifiesto</a></li>
+            <li><a href="nosotros.html#equipo" class="mobile-sublink">El Equipo</a></li>
+            <li><a href="panisse-marca.html" class="mobile-sublink">La Marca Panisse</a></li>
+          </ul>
+        </li>
+        <li class="mobile-item has-submenu">
+          <button class="mobile-link" data-submenu="mm-opticas">Ópticas <span class="mobile-arrow" aria-hidden="true">›</span></button>
+          <ul class="mobile-submenu" id="mm-opticas" aria-hidden="true">
+            <li><a href="contacto.html" class="mobile-sublink">Panisse Óptica — Lugo</a></li>
+          </ul>
+        </li>
+        <li class="mobile-item"><a href="blog.html" class="mobile-link mobile-link--plain">Blog</a></li>
+        <li class="mobile-item"><a href="tarjeta-regalo.html" class="mobile-link mobile-link--plain">Regala</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu__footer">
+      <a href="contacto.html" class="btn btn--secondary" style="width:100%;text-align:center;display:block;">Pedir Cita Previa</a>
+      <div class="mobile-menu__lang">
+        <button id="mobile-lang-btn" class="lang-flag-btn" onclick="panisseLangToggle()" aria-label="Switch language / Cambiar idioma" style="font-size:15px;padding:8px 12px;gap:8px;display:flex;align-items:center;">
+          &#x1F1EC;&#x1F1E7; <span class="mobile-lang-label">English</span>
+        </button>
+      </div>
+      <div class="mobile-menu__social">
+        <a href="https://www.instagram.com/panisse_optica/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61586908144350" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+        <a href="https://www.tiktok.com/@panisse_optica" target="_blank" rel="noopener noreferrer" aria-label="TikTok">TikTok</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+
+  <!-- MAIN -->
+  <main id="main-content">
+
+    <!-- ── Hero ── -->
+    <section class="marca-hero" aria-label="La marca Panisse">
+      <div class="marca-hero__bg" aria-hidden="true"></div>
+      <div class="marca-hero__content">
+        <span class="marca-hero__eyebrow">Colección propia · Nuestra marca</span>
+        <h1 class="marca-hero__title">Panisse</h1>
+        <p class="marca-hero__sub">Un apellido de raíces italo-francesas, tres generaciones de ciencia y óptica en Galicia, y una forma distinta de entender el lujo.</p>
+      </div>
+    </section>
+
+    <!-- ── El apellido ── -->
+    <section class="marca-section marca-section--light" aria-labelledby="apellido-heading">
+      <div class="marca-intro__grid">
+        <div>
+          <span class="marca-eyebrow">El nombre</span>
+          <h2 class="marca-heading" id="apellido-heading">Un apellido<br>de origen <em>italo-francés</em><br>en tierra gallega</h2>
+        </div>
+        <div class="marca-body">
+          <p>Panisse es un apellido de raíces italo-francesas que, como tantas otras historias de emigración y arraigo, acabó tejiendo su historia en distintos rincones de Galicia. Lo llevamos con orgullo, porque no es solo un nombre: representa lo que la familia ha construido a lo largo de generaciones.</p>
+          <p>Cuando Félix fundó la óptica en Lugo, no dudó un momento en elegir el apellido de soltera de su abuela para dar nombre a la colección propia. Carmen Panisse Ferrer merecía ese reconocimiento. Científica, farmacéutica, empresaria y pionera en una época en que serlo costaba el doble de esfuerzo.</p>
+          <p>El apellido resume todo lo que la marca quiere ser: algo con historia detrás, con carácter propio y sin necesidad de grandes aspavientos para demostrar lo que vale.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Carmen ── -->
+    <section class="marca-section marca-section--surface" aria-labelledby="carmen-heading">
+      <div class="marca-carmen__grid">
+
+        <div class="marca-carmen__photo-wrap">
+          <div class="marca-carmen__frame">
+            <img
+              src="https://pioneirasdecienciasdelugo.gal/wp-content/uploads/2024/06/MCaramenPanisse_html_c142853a77478191.jpg"
+              alt="Carmen Panisse Ferrer, licenciada en Ciencias Químicas y Farmacia, reconocida como Pioneira das Ciencias de Lugo"
+              class="marca-carmen__img"
+              width="284"
+              height="379"
+              loading="lazy"
+            />
+            <div class="marca-carmen__frame-foot">
+              <p class="marca-carmen__caption">Carmen Panisse Ferrer<br>Pioneira das Ciencias de Lugo</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <span class="marca-eyebrow">La abuela</span>
+          <h2 class="marca-carmen__name" id="carmen-heading">Carmen<br>Panisse Ferrer</h2>
+          <p class="marca-carmen__dates">A Coruña, 22 de noviembre de 1920 &mdash; Pontevedra, 7 de diciembre de 2001</p>
+
+          <div class="marca-body">
+            <p>Hija de Francisco de Paula Panisse Serrano, delineante de Hacienda, y María Ferrer Martínez, Carmen creció en un ambiente familiar que valoraba la cultura y el esfuerzo intelectual. En una España donde el acceso de las mujeres a la universidad era todavía una excepción, ella fue a la suya —y lo hizo dos veces.</p>
+            <p>Se licenció en Ciencias Químicas por la Universidad de Santiago de Compostela en 1944 y cinco años después obtuvo también la licenciatura en Farmacia. Dos titulaciones en una época en que muchas mujeres de su generación no habían podido terminar el bachillerato.</p>
+            <p>En 1951 abrió su propia farmacia-óptica en la calle 18 de Julio n.º 18 de Lugo, establecimiento que regentó durante más de treinta años. Desde ese local, que combinaba el despacho de medicamentos con la óptica, dio servicio a generaciones de lucenses y sentó las bases del negocio familiar ligado a la salud visual.</p>
+            <p>Su espíritu inquieto no se limitó al mostrador. En 1959 publicó <em>Aceites y grasas de animales marinos</em> en Pontevedra, obra que muestra el alcance de su formación científica. Junto a su familia impulsó también la explotación de bateas de mejillón en la Illa de Arousa —bautizadas <strong>Panisse 1</strong> y <strong>Panisse 2</strong>—, uniendo la tradición marisquera gallega con la misma capacidad emprendedora que la definió siempre.</p>
+          </div>
+
+          <div class="marca-milestones">
+            <div class="marca-milestone">
+              <span class="marca-milestone__year">1944</span>
+              <span class="marca-milestone__text">Licenciatura en Ciencias Químicas, Universidad de Santiago de Compostela</span>
+            </div>
+            <div class="marca-milestone">
+              <span class="marca-milestone__year">1949</span>
+              <span class="marca-milestone__text">Licenciatura en Farmacia, Universidad de Santiago de Compostela</span>
+            </div>
+            <div class="marca-milestone">
+              <span class="marca-milestone__year">1951</span>
+              <span class="marca-milestone__text">Apertura de la Farmacia-Óptica en Lugo, calle 18 de Julio n.º 18</span>
+            </div>
+            <div class="marca-milestone">
+              <span class="marca-milestone__year">1959</span>
+              <span class="marca-milestone__text">Publica <em>Aceites y grasas de animales marinos</em>, Pontevedra</span>
+            </div>
+            <div class="marca-milestone">
+              <span class="marca-milestone__year">2024</span>
+              <span class="marca-milestone__text">Reconocida póstumamente como Pioneira das Ciencias de Lugo</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── Pull quote ── -->
+    <section class="marca-section marca-section--dark" aria-label="Cita sobre Carmen Panisse">
+      <div class="marca-quote__inner">
+        <span class="marca-quote__mark" aria-hidden="true">&ldquo;</span>
+        <p class="marca-quote__text">Química, farmacéutica, investigadora, óptica y emprendedora. Carmen lo fue todo en una época en que serlo costaba el doble.</p>
+        <p class="marca-quote__attr">Carmen Panisse Ferrer · A Coruña, 1920 &mdash; Pontevedra, 2001</p>
+        <div class="marca-quote__badge" aria-label="Distinción Pioneira das Ciencias de Lugo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Pioneira das Ciencias de Lugo · Recoñecida 2024
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Tres generaciones ── -->
+    <section class="marca-section marca-section--light" aria-labelledby="gen-heading">
+      <div style="max-width:var(--container-max);margin-inline:auto;">
+        <div class="marca-gen__header">
+          <span class="marca-eyebrow">El legado</span>
+          <h2 class="marca-heading marca-heading--xl" id="gen-heading">Tres generaciones,<br><em>un mismo hilo</em></h2>
+          <p style="font-size:1rem;color:var(--color-muted);max-width:500px;margin:20px auto 0;line-height:1.65;">La farmacia, la óptica y la ciencia pasan de mano en mano. Lo que Carmen plantó, Isabel cuidó, y Félix recoge hoy en Lugo.</p>
+        </div>
+
+        <div class="marca-gen__grid">
+          <div class="marca-gen-card">
+            <span class="marca-gen-num" aria-hidden="true">I</span>
+            <h3 class="marca-gen-name">Carmen</h3>
+            <p class="marca-gen-role">Química · Farmacéutica · Óptica</p>
+            <p class="marca-gen-desc">Abrió su farmacia-óptica en Lugo en 1951 con dos licenciaturas y una vocación científica que se adelantó a su tiempo. Durante más de treinta años fue un referente en la salud visual de la ciudad y el primer eslabón de una cadena que llega hasta hoy.</p>
+          </div>
+          <div class="marca-gen-card">
+            <span class="marca-gen-num" aria-hidden="true">II</span>
+            <h3 class="marca-gen-name">Isabel</h3>
+            <p class="marca-gen-role">Bióloga · Farmacéutica · Diplomada en Óptica</p>
+            <p class="marca-gen-desc">Hija de Carmen, Isabel cursó Biología y Farmacia, completando además el Diploma de Óptica. Heredó la vocación por la salud visual y la formación científica que había visto de cerca desde niña, manteniendo vivo el hilo que su madre había comenzado.</p>
+          </div>
+          <div class="marca-gen-card marca-gen-card--current">
+            <span class="marca-gen-num" aria-hidden="true">III</span>
+            <h3 class="marca-gen-name">Félix</h3>
+            <p class="marca-gen-role">Óptico-Optometrista · Farmacéutico</p>
+            <p class="marca-gen-desc">Nieto de Carmen, Félix fundó Panisse Óptica en Lugo para continuar el legado familiar con una visión contemporánea: cuidado visual de primer nivel, selección propia y calidad sin artificios. El apellido de su abuela, en el rótulo.</p>
+            <span class="marca-gen-tag">Panisse Óptica · Lugo, 2021</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Filosofía de marca ── -->
+    <section class="marca-section marca-section--surface" aria-labelledby="fil-heading">
+      <div class="marca-fil__grid">
+        <div>
+          <span class="marca-eyebrow">La colección</span>
+          <h2 class="marca-heading" id="fil-heading" style="margin-bottom:28px;">Lujo silencioso,<br><em>sin intermediarios</em></h2>
+          <div class="marca-body">
+            <p>Panisse nació hace cuatro años en Castroverde, hartos de ver cómo las grandes multinacionales imponían precios desorbitados a monturas que no justificaban ese coste. Decidimos hacer las cosas de otra manera.</p>
+            <p>Seleccionamos cada montura con criterio propio: materiales de calidad, proporciones bien resueltas, modelos en series muy limitadas. Sin logos enormes, sin marketing de lujo inflado. Solo lo que cuenta: que las gafas te queden bien y duren.</p>
+            <p>Es la esencia gallega de que lo bueno no tiene por qué ser caro ni ostentoso. Simplemente, de calidad. Y con un apellido que lleva más de setenta años cuidando la salud visual de Lugo.</p>
+          </div>
+          <a href="catalogo.html?marca=panisse" class="btn btn--outline" style="margin-top:36px;">Ver la colección</a>
+        </div>
+        <div class="marca-fil__stats">
+          <div class="marca-stat">
+            <p class="marca-stat__num">4</p>
+            <p class="marca-stat__label">Años de colección propia</p>
+          </div>
+          <div class="marca-stat">
+            <p class="marca-stat__num">+200</p>
+            <p class="marca-stat__label">Referencias en catálogo</p>
+          </div>
+          <div class="marca-stat">
+            <p class="marca-stat__num">75</p>
+            <p class="marca-stat__label">Años de legado familiar</p>
+          </div>
+          <div class="marca-stat">
+            <p class="marca-stat__num">3</p>
+            <p class="marca-stat__label">Generaciones de ópticos</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Las bateas ── -->
+    <section class="marca-section marca-section--light" aria-label="Las bateas Panisse">
+      <div class="marca-bateas">
+        <div class="marca-bateas__text">
+          <span class="marca-eyebrow">Un detalle</span>
+          <h2 class="marca-heading" style="font-size:clamp(24px,3vw,36px);margin-bottom:20px;">Las bateas<br><em>Panisse 1 y Panisse 2</em></h2>
+          <div class="marca-body" style="margin-top:0;">
+            <p>En la Illa de Arousa, en las Rías Baixas gallegas, hay dos bateas de mejillón que llevan el nombre de la familia: <strong>Panisse 1</strong> y <strong>Panisse 2</strong>. Carmen y su familia las impulsaron junto a la actividad farmacéutica, con esa misma capacidad de combinar ciencia, trabajo y arraigo al territorio.</p>
+            <p>Son un detalle que dice mucho: el apellido Panisse no es solo un nombre en un rótulo. Es algo que está en la tierra, en el mar y en la historia de Galicia.</p>
+          </div>
+        </div>
+        <div class="marca-bateas__map" aria-hidden="true">~</div>
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="marca-section marca-section--dark" aria-label="Ver la colección Panisse">
+      <div class="marca-cta__inner">
+        <span class="marca-eyebrow marca-eyebrow--light">Monturas propias</span>
+        <h2 class="marca-heading marca-heading--light marca-heading--xl marca-heading--italic" style="margin-bottom:20px;">Descubre<br>la colección</h2>
+        <p style="font-size:1rem;color:rgba(255,255,255,.55);line-height:1.65;max-width:480px;margin-inline:auto;">Series limitadas, materiales con criterio y precios sin artificios. La selección que Carmen hubiera aprobado.</p>
+        <div class="marca-cta__actions">
+          <a href="catalogo.html?marca=panisse" class="btn btn--primary">Ver monturas Panisse</a>
+          <a href="contacto.html" class="btn btn--ghost">Pedir cita previa</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Pie de página">
+    <div class="footer__inner container">
+
+      <div class="footer__col footer__col--brand">
+        <a href="index.html" class="footer__logo" aria-label="Panisse Óptica — inicio">
+          Panisse <em>Óptica</em>
+        </a>
+        <p class="footer__mission">
+          Óptica boutique en Lugo. Cuidamos tu salud visual con la mejor tecnología y te ofrecemos una selección artesanal de gafas de diseño de autor.
+        </p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/panisse_optica/" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61586908144350" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@panisse_optica" class="footer__social-link" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer__col footer__col--links" aria-label="Navegación del footer">
+        <h3 class="footer__heading">Explorar</h3>
+        <ul class="footer__list">
+          <li><a href="catalogo.html?tipo=graduadas" class="footer__link">Gafas Graduadas</a></li>
+          <li><a href="catalogo.html?tipo=sol" class="footer__link">Gafas de Sol</a></li>
+          <li><a href="catalogo.html" class="footer__link">Marcas</a></li>
+          <li><a href="servicios.html" class="footer__link">Servicios</a></li>
+          <li><a href="contacto.html" class="footer__link">Cita Previa</a></li>
+          <li><a href="blog.html" class="footer__link">Magazine</a></li>
+        </ul>
+        <h3 class="footer__heading" style="margin-top:28px;">Información</h3>
+        <ul class="footer__list">
+          <li><a href="nosotros.html" class="footer__link">Sobre Nosotros</a></li>
+          <li><a href="panisse-marca.html" class="footer__link">La Marca Panisse</a></li>
+          <li><a href="aviso-legal.html" class="footer__link">Aviso Legal</a></li>
+          <li><a href="privacidad.html" class="footer__link">Privacidad y Cookies</a></li>
+          <li><a href="eliminar-datos.html" class="footer__link">Eliminación de Datos</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col footer__col--stores">
+        <h3 class="footer__heading">Nuestra Tienda</h3>
+        <div class="footer__store">
+          <p class="footer__store-name">Panisse Óptica</p>
+          <address class="footer__address">
+            Rúa do Teatro, Bajo 2<br>
+            27001 Lugo
+          </address>
+          <ul class="footer__store-details">
+            <li><a href="tel:+34982301193">982 30 11 93</a></li>
+            <li><a href="mailto:info@panisse.es">info@panisse.es</a></li>
+            <li>L–V 10:00–13:30 / 16:30–20:30<br>Sáb 10:30–13:30</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__col footer__col--newsletter">
+        <h3 class="footer__heading">Novedades</h3>
+        <p class="footer__newsletter-text">Nuevas colecciones, consejos ópticos y artículos de autor. Sin spam, solo lo que merece la pena.</p>
+        <form class="footer__form" id="newsletter-form" novalidate>
+          <div class="footer__form-group">
+            <input type="email" id="newsletter-email" class="footer__input" placeholder="tu@email.com" autocomplete="email" required aria-label="Tu correo electrónico" />
+            <button type="submit" class="footer__submit" aria-label="Suscribirse">→</button>
+          </div>
+          <p class="footer__form-msg" id="newsletter-msg"></p>
+          <p class="footer__newsletter-legal">Al suscribirte aceptas nuestra <a href="privacidad.html">política de privacidad</a>. Puedes darte de baja cuando quieras.</p>
+        </form>
+      </div>
+
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__copy">© <span id="footer-year"></span> Panisse Óptica · Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <a
+    href="https://wa.me/34614296965?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20c%C3%B3mo%20pedir%20cita"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+    </svg>
+    <span class="whatsapp-float__tooltip">WhatsApp</span>
+  </a>
+
+  <script src="assets/js/main.min.js" defer></script>
+
+  <!-- Google Translate -->
+  <style>
+    .goog-te-banner-frame,iframe.skiptranslate{display:none!important;}
+    body,body.translated-ltr,body.translated-rtl{top:0!important;margin-top:0!important;}
+    .goog-te-gadget,#goog-gt-tt{display:none!important;}
+  </style>
+  <div id="google_translate_element" style="display:none" aria-hidden="true"></div>
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        { pageLanguage: 'es', includedLanguages: 'en', autoDisplay: false },
+        'google_translate_element'
+      );
+    }
+    (function () {
+      function getLang() {
+        var m = document.cookie.match(/googtrans=\/es\/(\w+)/);
+        return m ? m[1] : 'es';
+      }
+      window.panisseLangToggle = function () {
+        var next = getLang() === 'en' ? 'es' : 'en';
+        var val  = '/es/' + next;
+        var host = window.location.hostname;
+        document.cookie = 'googtrans=' + val + '; path=/; domain='  + host;
+        document.cookie = 'googtrans=' + val + '; path=/; domain=.' + host;
+        document.cookie = 'googtrans=' + val + '; path=/';
+        window.location.reload();
+      };
+      var _gt_obs = new MutationObserver(function(){
+        var f=document.querySelector('iframe.skiptranslate');
+        if(f){f.style.display='none';document.body.style.top='0';}
+      });
+      _gt_obs.observe(document.documentElement,{childList:true,subtree:true});
+      document.addEventListener('DOMContentLoaded', function () {
+        var lang = getLang();
+        var isEn = lang === 'en';
+        var flagEs = '&#x1F1EA;&#x1F1F8;', flagEn = '&#x1F1EC;&#x1F1E7;';
+        var btn = document.getElementById('lang-toggle-btn');
+        if (btn) { btn.innerHTML = isEn ? flagEs : flagEn; btn.title = isEn ? 'Cambiar a español' : 'Switch to English'; }
+        var mBtn = document.getElementById('mobile-lang-btn');
+        if (mBtn) { mBtn.innerHTML = isEn ? flagEs + ' <span class="mobile-lang-label">Español</span>' : flagEn + ' <span class="mobile-lang-label">English</span>'; }
+      });
+    })();
+  </script>
+  <script>if(document.cookie.indexOf('googtrans=/es/en')!==-1){window.addEventListener('load',function(){var s=document.createElement('script');s.src='https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';document.head.appendChild(s);},{once:true});}</script>
+</body>
+</html>
