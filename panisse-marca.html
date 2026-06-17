@@ -17,7 +17,8 @@
     /* ── Marca landing page ── */
 
     .marca-hero{position:relative;background:#0d0d0d;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
-    .marca-hero__bg{position:absolute;inset:0;background:radial-gradient(ellipse at 25% 55%,rgba(199,219,214,.07) 0%,transparent 55%)}
+    .marca-hero__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+    .marca-hero__bg{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,7,5,.95) 0%,rgba(8,7,5,.7) 45%,rgba(8,7,5,.35) 100%)}
     .marca-hero__content{position:relative;z-index:2;width:100%;max-width:var(--container-max);margin-inline:auto;padding:0 var(--container-pad) clamp(60px,10vh,120px)}
     .marca-hero__eyebrow{display:block;font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:24px}
     .marca-hero__title{font-family:var(--font-display);font-style:italic;font-weight:600;color:#fff;font-size:clamp(88px,14vw,192px);line-height:.86;letter-spacing:-.02em;margin-bottom:36px}
@@ -453,6 +454,15 @@
 
     <!-- ── Hero ── -->
     <section class="marca-hero" aria-label="La marca Panisse">
+      <img
+        src="assets/img/farmacia-antigua-vista-general.webp"
+        alt="Farmacia antigua — el origen del legado Panisse"
+        class="marca-hero__img"
+        loading="eager"
+        fetchpriority="high"
+        width="1200"
+        height="800"
+      />
       <div class="marca-hero__bg" aria-hidden="true"></div>
       <div class="marca-hero__content">
         <span class="marca-hero__eyebrow">Colección propia · Nuestra marca</span>
