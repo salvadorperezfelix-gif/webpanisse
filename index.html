@@ -717,22 +717,6 @@
       max-width: 380px;
     }
 
-    .home-brand__story-link {
-      display: inline-block;
-      margin-top: 16px;
-      font-family: var(--font-body);
-      font-size: .6875rem;
-      font-weight: 700;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      color: var(--color-muted);
-      text-decoration: none;
-      border-bottom: 1px solid currentColor;
-      padding-bottom: 2px;
-      transition: color .22s ease;
-    }
-    .home-brand__story-link:hover { color: var(--color-black); }
-
     /* ── CTA colección ── */
     .home-collection-cta {
       padding: 80px 0;
@@ -1217,8 +1201,10 @@
         <span class="home-brand__label">Colección Exclusiva</span>
         <h2 class="home-brand__title">Panisse<br>Boutique</h2>
         <p class="home-brand__desc">Monturas diseñadas y curadas por nuestro equipo. Piezas únicas que no encontrarás en ningún otro lugar de Lugo — para quienes buscan algo diferente.</p>
-        <a href="catalogo.html?marca=panisse-boutique" class="btn btn--outline">Explorar colección</a>
-        <a href="panisse-marca.html" class="home-brand__story-link">La historia detrás del nombre →</a>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a href="catalogo.html?marca=panisse-boutique" class="btn btn--outline">Explorar colección</a>
+          <a href="panisse-marca.html" class="btn btn--outline">La marca Panisse</a>
+        </div>
       </div>
     </section>
 
