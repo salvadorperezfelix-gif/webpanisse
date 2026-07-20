@@ -1509,49 +1509,12 @@
     "price": 143,
     "variant": "Havana / Verde G-15",
     "color_swatch": "#7a4520",
-    "variants": [
-      {
-        "id": "ray-ban-rb2140-wayfarer-negro",
-        "color": "#111111",
-        "label": "Negro"
-      }
-    ],
     "image": "assets/img/products/ray-ban/ray-ban-rb2140-havana-2.jpg",
     "gallery": [
       "assets/img/products/ray-ban/ray-ban-rb2140-havana-2.jpg",
       "assets/img/products/ray-ban/ray-ban-rb2140-havana-1.jpg"
     ],
     "description": "La Original Wayfarer nació en 1952 y desde entonces no ha necesitado reinventarse. La RB2140 en havana es la versión más clásica de un icono que ha estado en el rostro de todo el que alguna vez fue referente cultural. El acetato carey con sus vetas marrones y negras captura la luz de una manera imposible de replicar en plástico ordinario. Las lentes G-15 — la fórmula de Ray-Ban que lleva décadas perfeccionando el equilibrio entre protección y nitidez visual — completan una gafa que no sigue tendencias porque las ha creado todas.",
-    "specs": {
-      "material": "Acetato",
-      "calibre": "50 mm",
-      "puente": "22 mm",
-      "varilla": "150 mm",
-      "genero": "Unisex"
-    }
-  },
-  {
-    "id": "ray-ban-rb2140-wayfarer-negro",
-    "name": "RB2140 Original Wayfarer",
-    "brand": "Ray-Ban",
-    "brand_slug": "ray-ban",
-    "type": "sol",
-    "price": 143,
-    "variant": "Negro / Verde G-15",
-    "color_swatch": "#111111",
-    "variants": [
-      {
-        "id": "ray-ban-rb2140-wayfarer-havana",
-        "color": "#7a4520",
-        "label": "Havana"
-      }
-    ],
-    "image": "assets/img/products/ray-ban/ray-ban-rb2140-negro-1.jpg",
-    "gallery": [
-      "assets/img/products/ray-ban/ray-ban-rb2140-negro-1.jpg",
-      "assets/img/products/ray-ban/ray-ban-rb2140-negro-2.jpg"
-    ],
-    "description": "La Original Wayfarer en negro es la forma más directa de llevar un icono. Desde 1952 esta silueta ha aparecido en las caras que definieron la cultura popular, y la versión en acetato negro brillante con lentes G-15 es su expresión más pura. Sin concesiones, sin actualizaciones innecesarias — solo la montura que lo empezó todo, en el color que más veces ha salido fotografiado.",
     "specs": {
       "material": "Acetato",
       "calibre": "50 mm",
@@ -1646,28 +1609,6 @@
       "material": "Metal",
       "calibre": "50 mm",
       "puente": "21 mm",
-      "varilla": "145 mm",
-      "genero": "Unisex"
-    }
-  },
-  {
-    "id": "ray-ban-rb2132-new-wayfarer-negro",
-    "name": "RB2132 New Wayfarer",
-    "brand": "Ray-Ban",
-    "brand_slug": "ray-ban",
-    "type": "sol",
-    "price": 132,
-    "variant": "Negro / Verde G-15",
-    "image": "assets/img/products/ray-ban/ray-ban-rb2132-negro-2.jpg",
-    "gallery": [
-      "assets/img/products/ray-ban/ray-ban-rb2132-negro-2.jpg",
-      "assets/img/products/ray-ban/ray-ban-rb2132-negro-1.jpg"
-    ],
-    "description": "La New Wayfarer es la respuesta de Ray-Ban a quienes encontraban la original demasiado grande. La RB2132 toma la silueta icónica y la refina: proporciones algo más pequeñas, ángulos ligeramente más suavizados, el mismo acetato negro brillante y las mismas lentes G-15 que han definido el estándar de la marca durante décadas. El resultado es una Wayfarer que se adapta a más caras sin perder ni un gramo de carácter.",
-    "specs": {
-      "material": "Acetato",
-      "calibre": "55 mm",
-      "puente": "18 mm",
       "varilla": "145 mm",
       "genero": "Unisex"
     }
@@ -1854,29 +1795,6 @@
       "calibre": "55 mm",
       "puente": "16 mm",
       "varilla": "145 mm",
-      "genero": "Unisex"
-    }
-  },
-  {
-    "id": "ray-ban-rb3768-negro-polar",
-    "name": "RB3768",
-    "brand": "Ray-Ban",
-    "brand_slug": "ray-ban",
-    "type": "sol",
-    "price": 162,
-    "variant": "Negro / Gris Oscuro Polarizado",
-    "image": "assets/img/products/ray-ban/ray-ban-rb3768-negro-polar-1.jpg",
-    "gallery": [
-      "assets/img/products/ray-ban/ray-ban-rb3768-negro-polar-1.jpg",
-      "assets/img/products/ray-ban/ray-ban-rb3768-negro-polar-2.jpg"
-    ],
-    "description": "La RB3768 es una gafa rimless de metal negro con lentes polarizadas en gris oscuro. Sin aro que rodee los cristales, la montura desaparece en la cara y lo que queda es la lente: limpia, directa, con toda la presencia sin el peso visual de una montura completa. Las lentes polarizadas eliminan los reflejos con precisión, haciendo de esta una opción ideal para conducción o actividades en exterior con mucha luz.",
-    "specs": {
-      "material": "Metal",
-      "calibre": "56 mm",
-      "puente": "17 mm",
-      "varilla": "145 mm",
-      "polarizado": "Sí",
       "genero": "Unisex"
     }
   },
