@@ -1,8 +1,7 @@
 User-agent: *
-Disallow: /password
-Disallow: /products/
-Disallow: /collections/
-Disallow: /pages/
+Disallow: /ecommerce/
+Disallow: /assets/blog/
+Disallow: /data/
 Allow: /
 
 Sitemap: https://panisse.es/sitemap.xml
