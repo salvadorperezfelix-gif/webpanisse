@@ -2868,6 +2868,29 @@
     }
   },
   {
+    "id": "einstoffen-discotiger-green",
+    "name": "Discotiger",
+    "brand": "Einstoffen",
+    "brand_slug": "einstoffen",
+    "type": "graduadas",
+    "price": 195,
+    "variant": "Verde",
+    "placeholder": "https://placehold.co/600x480/1a4a3a/a8d8c0?text=Einstoffen",
+    "image": "assets/img/products/einstoffen/discotiger-green-f.jpg",
+    "gallery": [
+      "assets/img/products/einstoffen/discotiger-green-f.jpg",
+      "assets/img/products/einstoffen/discotiger-green-s.jpg"
+    ],
+    "description": "Llegó tarde. Y nunca se fue. La Discotiger no es un homenaje — es el original. Nacida en la era del vinilo, con más carácter que una cinta de mezclas y más estilo del que Studio 54 jamás permitió. Lleva el brillo de la noche y el valor de actuar. Quien la lleva no solo baila durante la noche, sino durante la vida — fuerte, libre, siempre un compás por delante. Acetato natural premium, trabajado y pulido a mano. Bisagras alemanas OBE, puntas ajustables. Diseño suizo.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "57 mm",
+      "puente": "18 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
+  },
+  {
     "id": "einstoffen-aerun-darkgreen",
     "name": "Ærun",
     "brand": "Einstoffen",
