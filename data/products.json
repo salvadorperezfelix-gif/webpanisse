@@ -2868,6 +2868,29 @@
     }
   },
   {
+    "id": "einstoffen-asahi-blue",
+    "name": "Asahi",
+    "brand": "Einstoffen",
+    "brand_slug": "einstoffen",
+    "type": "graduadas",
+    "price": 445,
+    "variant": "Azul / Oro",
+    "placeholder": "https://placehold.co/600x480/1a2e6b/c8a96c?text=Einstoffen",
+    "image": "assets/img/products/einstoffen/asahi-blue-f.jpg",
+    "gallery": [
+      "assets/img/products/einstoffen/asahi-blue-f.jpg",
+      "assets/img/products/einstoffen/asahi-blue-s.jpg"
+    ],
+    "description": "«Asahi» significa «sol de la mañana» — claro, fuerte, con una profundidad serena. Representa el momento en que la luz no pide permiso: simplemente aparece. Cuando llega, no necesita anuncio. Está — directa, inevitable, evidente. La montura lleva esa misma actitud: angular en la forma, tranquila en la presencia, precisa en la expresión. Nada es superfluo, nada forzado. La Asahi no se explica. Permanece — serena, segura e inquebrantable en su propia claridad. Titanio aeroespacial japonés al 100% con detalles micro-grabados. Pieza 039/160.",
+    "specs": {
+      "material": "Titanio aeroespacial",
+      "calibre": "53 mm",
+      "puente": "21 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
+  },
+  {
     "id": "einstoffen-asagao-bordeaux",
     "name": "Asagao",
     "brand": "Einstoffen",
