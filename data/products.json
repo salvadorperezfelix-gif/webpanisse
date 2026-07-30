@@ -2868,6 +2868,29 @@
     }
   },
   {
+    "id": "einstoffen-marquis-cranberry",
+    "name": "Marquis",
+    "brand": "Einstoffen",
+    "brand_slug": "einstoffen",
+    "type": "graduadas",
+    "price": 295,
+    "variant": "Cranberry",
+    "placeholder": "https://placehold.co/600x480/8b1a2e/c8a96c?text=Einstoffen",
+    "image": "assets/img/products/einstoffen/marquis-cranberry-f.jpg",
+    "gallery": [
+      "assets/img/products/einstoffen/marquis-cranberry-f.jpg",
+      "assets/img/products/einstoffen/marquis-cranberry-s.jpg"
+    ],
+    "description": "No se entra en una sala. Se conquista. La Marquis conoce ese momento. Con gracia, aplomo y ese punto de superioridad que no hace falta explicar. Cada línea colocada con intención, cada curva una declaración de seguridad. Para quienes viven la nobleza, no la actúan. Presencia serena, estilo sin esfuerzo. La Marquis representa esa clase que pasa desapercibida — porque ya estaba ahí. Titanio aeroespacial japonés al 100% con detalles micro-grabados. Artesanal, ajustable. Diseño suizo.",
+    "specs": {
+      "material": "Titanio aeroespacial",
+      "calibre": "53 mm",
+      "puente": "19 mm",
+      "varilla": "145 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
     "id": "einstoffen-uhrenmacher-havana",
     "name": "Uhrenmacher",
     "brand": "Einstoffen",
