@@ -2876,10 +2876,10 @@
     "price": 195,
     "variant": "Smoke / Nogal",
     "placeholder": "https://placehold.co/600x480/6b7c6e/3a4e3d?text=Einstoffen",
-    "image": "assets/img/products/einstoffen/stoiker-smoke-f.jpg",
+    "image": "assets/img/products/einstoffen/stoiker-smoke-front.jpg",
     "gallery": [
-      "assets/img/products/einstoffen/stoiker-smoke-f.jpg",
-      "assets/img/products/einstoffen/stoiker-smoke-s.jpg"
+      "assets/img/products/einstoffen/stoiker-smoke-front.jpg",
+      "assets/img/products/einstoffen/stoiker-smoke-side.jpg"
     ],
     "description": "El mundo no para de rugir. La Stoiker aguanta. Angular, compuesta, con la mirada hacia adentro — y hacia adelante. Sin drama, sin estruendo. Solo claridad. Cada línea controlada, cada ángulo con intención. Calma en la abundancia, aplomo en el ruido. La verdadera fortaleza no necesita atención. Solo constancia y coraje — el silencioso, el que permanece cuando todo lo demás se desvanece. Acetato natural premium, trabajado y pulido a mano. Incrustaciones de nogal en las varillas. Bisagras alemanas OBE, puntas ajustables. Diseño suizo.",
     "specs": {
