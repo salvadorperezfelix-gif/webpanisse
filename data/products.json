@@ -2868,6 +2868,29 @@
     }
   },
   {
+    "id": "einstoffen-asagao-bordeaux",
+    "name": "Asagao",
+    "brand": "Einstoffen",
+    "brand_slug": "einstoffen",
+    "type": "sol",
+    "price": 445,
+    "variant": "Bordeaux / Oro",
+    "placeholder": "https://placehold.co/600x480/6b1a2e/c8a96c?text=Einstoffen",
+    "image": "assets/img/products/einstoffen/asagao-bordeaux-f.jpg",
+    "gallery": [
+      "assets/img/products/einstoffen/asagao-bordeaux-f.jpg",
+      "assets/img/products/einstoffen/asagao-bordeaux-s.jpg"
+    ],
+    "description": "«Asagao» significa «cara de mañana» en japonés — el nombre de la ipomea, esa planta trepadora de flores en trompeta que florecen brevemente, pero permanecen inolvidables. De las primeras en saludar el amanecer: la flor que recibe el día antes de que el mundo se vuelva ruidoso. La montura sigue ese principio — de contorno definido, geométricamente precisa, pero sin dureza. Encarna la presencia en el momento justo: intencional, serena, fugaz y sin embargo duradera. La Asagao no se muestra todo el día. Pero quien la ve, la recuerda — la ligereza, los comienzos, ese instante en que todo sigue sintiéndose posible. Titanio aeroespacial japonés al 100% con detalles micro-grabados. Pieza 078/160.",
+    "specs": {
+      "material": "Titanio aeroespacial",
+      "calibre": "53 mm",
+      "puente": "20 mm",
+      "varilla": "140 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
     "id": "einstoffen-discotiger-green",
     "name": "Discotiger",
     "brand": "Einstoffen",
