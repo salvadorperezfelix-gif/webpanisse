@@ -2868,6 +2868,29 @@
     }
   },
   {
+    "id": "einstoffen-chiefblender-black",
+    "name": "Chief Blender",
+    "brand": "Einstoffen",
+    "brand_slug": "einstoffen",
+    "type": "graduadas",
+    "price": 295,
+    "variant": "Negro / Oro",
+    "placeholder": "https://placehold.co/600x480/111111/c8a96c?text=Einstoffen",
+    "image": "assets/img/products/einstoffen/chiefblender-black-f.jpg",
+    "gallery": [
+      "assets/img/products/einstoffen/chiefblender-black-f.jpg",
+      "assets/img/products/einstoffen/chiefblender-black-s.jpg"
+    ],
+    "description": "La intuición sutil se encuentra con la voluntad firme. La Chief Blender une lo que otros separan: estructura y creatividad, tradición y audacia. Líneas claras, forma definida — estilo con sustancia, preciso, equilibrado, lleno de carácter. No mezcla: compone. Cada decisión responde a la vez a la intuición y a la experiencia. Para personalidades que marcan el tono — serenas, decididas, inconfundibles. Titanio aeroespacial japonés al 100% con detalles micro-grabados. Artesanal, ajustable. Diseño suizo.",
+    "specs": {
+      "material": "Titanio aeroespacial",
+      "calibre": "55 mm",
+      "puente": "20 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
+  },
+  {
     "id": "einstoffen-denker-coffee",
     "name": "Denker",
     "brand": "Einstoffen",
