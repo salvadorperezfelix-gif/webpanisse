@@ -1103,29 +1103,6 @@
     }
   },
   {
-    "id": "emporio-armani-ea1105",
-    "name": "EA1105",
-    "brand": "Emporio Armani",
-    "brand_slug": "emporio-armani",
-    "type": "graduadas",
-    "price": 147,
-    "variant": "Verde Militar / Metal",
-    "placeholder": "https://placehold.co/600x480/1a1a1a/c8b090?text=Emporio+Armani",
-    "image": "assets/img/products/emporio-armani/emporio-armani-ea1105-1.jpg",
-    "gallery": [
-      "assets/img/products/emporio-armani/emporio-armani-ea1105-1.jpg",
-      "assets/img/products/emporio-armani/emporio-armani-ea1105-2.jpg"
-    ],
-    "description": "La EA1105 combina la estructura de metal con unas varillas de acetato verde militar que aportan volumen y textura a una montura que de otro modo sería completamente discreta. El medio aro superior define la silueta rectangular sin cerrarla del todo — un detalle técnico que aligera el conjunto visualmente. El águila Armani en dorado sobre la patilla firma sin gritar. Para el hombre que conoce la diferencia entre llevar una marca y llevar un estilo.",
-    "specs": {
-      "material": "Metal y Acetato",
-      "calibre": "56 mm",
-      "puente": "17 mm",
-      "varilla": "145 mm",
-      "genero": "Hombre"
-    }
-  },
-  {
     "id": "emporio-armani-ea4266u",
     "name": "EA4266U",
     "brand": "Emporio Armani",
@@ -1168,29 +1145,6 @@
       "material": "Acetato",
       "calibre": "54 mm",
       "puente": "17 mm",
-      "varilla": "145 mm",
-      "genero": "Hombre"
-    }
-  },
-  {
-    "id": "emporio-armani-ea3276u",
-    "name": "EA3276U",
-    "brand": "Emporio Armani",
-    "brand_slug": "emporio-armani",
-    "type": "graduadas",
-    "price": 137,
-    "variant": "Gris Mate / Marrón",
-    "placeholder": "https://placehold.co/600x480/1a1a1a/c8b090?text=Emporio+Armani",
-    "image": "assets/img/products/emporio-armani/emporio-armani-ea3276u-1.jpg",
-    "gallery": [
-      "assets/img/products/emporio-armani/emporio-armani-ea3276u-1.jpg",
-      "assets/img/products/emporio-armani/emporio-armani-ea3276u-2.jpg"
-    ],
-    "description": "La EA3276U apuesta por la solidez sin concesiones: acetato gris mate de corte rectangular y proporciones amplias que transmiten presencia desde el primer vistazo. Los interiores marrón en las patillas y el logo en relieve son los únicos detalles que rompen la sobriedad — lo justo para reconocer la firma. Una montura versátil que funciona igual en la oficina que en el fin de semana.",
-    "specs": {
-      "material": "Acetato",
-      "calibre": "54 mm",
-      "puente": "18 mm",
       "varilla": "145 mm",
       "genero": "Hombre"
     }
@@ -1261,29 +1215,6 @@
       "calibre": "60 mm",
       "puente": "17 mm",
       "varilla": "150 mm",
-      "genero": "Hombre"
-    }
-  },
-  {
-    "id": "emporio-armani-ea4270",
-    "name": "EA4270",
-    "brand": "Emporio Armani",
-    "brand_slug": "emporio-armani",
-    "type": "sol",
-    "price": 158,
-    "variant": "Azul Transparente / Gris",
-    "placeholder": "https://placehold.co/600x480/1a1a1a/c8b090?text=Emporio+Armani",
-    "image": "assets/img/products/emporio-armani/emporio-armani-ea4270-1.jpg",
-    "gallery": [
-      "assets/img/products/emporio-armani/emporio-armani-ea4270-1.jpg",
-      "assets/img/products/emporio-armani/emporio-armani-ea4270-2.jpg"
-    ],
-    "description": "La EA4270 es Emporio Armani en estado puro: acetato de grosor generoso en azul transparente que deja ver la estructura interna de la montura — un detalle de manufactura que no pasa desapercibido. Su silueta rectangular de corte recto y proporciones amplias proyecta una presencia urbana y contemporánea, equilibrada por las lentes grises de tono uniforme. Para el hombre que lleva el diseño italiano con naturalidad.",
-    "specs": {
-      "material": "Acetato",
-      "calibre": "51 mm",
-      "puente": "19 mm",
-      "varilla": "145 mm",
       "genero": "Hombre"
     }
   },
@@ -1392,61 +1323,6 @@
       "calibre": "50 mm",
       "puente": "22 mm",
       "varilla": "150 mm",
-      "genero": "Unisex"
-    }
-  },
-  {
-    "id": "ray-ban-rb4171-havana",
-    "name": "RB4171 Erika",
-    "brand": "Ray-Ban",
-    "brand_slug": "ray-ban",
-    "type": "sol",
-    "price": 127,
-    "variant": "Havana / Marrón Degradado",
-    "placeholder": "https://placehold.co/600x480/7a4520/c8905a?text=Ray-Ban",
-    "image": "assets/img/products/ray-ban/ray-ban-rb4171-1.jpg",
-    "gallery": [
-      "assets/img/products/ray-ban/ray-ban-rb4171-1.jpg",
-      "assets/img/products/ray-ban/ray-ban-rb4171-2.jpg"
-    ],
-    "description": "La Erika es la gafa de Ray-Ban para quien prefiere la curva a la esquina. Su forma redonda ligeramente aplanada en la parte superior tiene algo de cat-eye sin serlo del todo — una geometría que favorece muchas caras sin pedir nada a cambio. La montura en acetato havana y las lentes marrón degradado Cat. 3 con protección UV400 componen una combinación que no caduca. Ligera, equilibrada, y con esa varilla metálica fina que le da un aire más moderno sin perder el carácter clásico.",
-    "specs": {
-      "material": "Acetato y Metal",
-      "calibre": "54 mm",
-      "puente": "18 mm",
-      "varilla": "145 mm",
-      "genero": "Mujer"
-    },
-    "color_swatch": "#7a4520",
-    "variants": [
-      {
-        "id": "ray-ban-rb4171-violeta",
-        "color": "#7b3070",
-        "label": "Violeta"
-      }
-    ]
-  },
-  {
-    "id": "ray-ban-rb2230-havana",
-    "name": "RB2230 Bernard",
-    "brand": "Ray-Ban",
-    "brand_slug": "ray-ban",
-    "type": "sol",
-    "price": 143,
-    "variant": "Havana Azul / Gris Oscuro Mineral",
-    "placeholder": "https://placehold.co/600x480/4a3a2a/333333?text=Ray-Ban",
-    "image": "assets/img/products/ray-ban/ray-ban-rb2230-1.jpg",
-    "gallery": [
-      "assets/img/products/ray-ban/ray-ban-rb2230-1.jpg",
-      "assets/img/products/ray-ban/ray-ban-rb2230-2.jpg"
-    ],
-    "description": "La Bernard es la ronda de Ray-Ban para quien no necesita llamar la atención para tenerla. El acetato havana azul — con ese patrón irregular que cambia según la luz — envuelve una lente perfectamente circular que lleva décadas siendo la forma más honesta de llevar gafas de sol. Los cristales son de vidrio mineral: más densos que el plástico, con una claridad óptica superior, mayor resistencia al rayado y una fidelidad de color que el acetato solo no puede ofrecer. Gris oscuro Cat. 3 con protección UV400.",
-    "specs": {
-      "material": "Acetato",
-      "lente": "Vidrio mineral",
-      "calibre": "53 mm",
-      "puente": "21 mm",
-      "varilla": "145 mm",
       "genero": "Unisex"
     }
   },
@@ -1703,58 +1579,6 @@
     }
   },
   {
-    "id": "ray-ban-rb4171-violeta",
-    "name": "RB4171 Erika",
-    "brand": "Ray-Ban",
-    "brand_slug": "ray-ban",
-    "type": "sol",
-    "price": 127,
-    "variant": "Violeta / Rosa Degradado",
-    "color_swatch": "#7b3070",
-    "variants": [
-      {
-        "id": "ray-ban-rb4171-havana",
-        "color": "#7a4520",
-        "label": "Havana"
-      }
-    ],
-    "image": "assets/img/products/ray-ban/ray-ban-rb4171-violeta-1.jpg",
-    "gallery": [
-      "assets/img/products/ray-ban/ray-ban-rb4171-violeta-1.jpg",
-      "assets/img/products/ray-ban/ray-ban-rb4171-violeta-2.jpg"
-    ],
-    "description": "La Erika RB4171 en violeta transparente es la versión más atrevida de una silueta que ya de por sí tiene carácter. El acetato violeta deja ver la profundidad del material y capta la luz de forma distinta según el ángulo, mientras que las varillas en metal dorado añaden ligereza y contraste. Las lentes con degradado rosa-marrón completan una combinación cromática pensada para destacar sin esfuerzo.",
-    "specs": {
-      "material": "Acetato y Metal",
-      "calibre": "54 mm",
-      "puente": "18 mm",
-      "varilla": "145 mm",
-      "genero": "Mujer"
-    }
-  },
-  {
-    "id": "ray-ban-rb2186-state-street-negro",
-    "name": "RB2186 State Street",
-    "brand": "Ray-Ban",
-    "brand_slug": "ray-ban",
-    "type": "sol",
-    "price": 153,
-    "variant": "Negro / Verde G-15",
-    "image": "assets/img/products/ray-ban/ray-ban-rb2186-negro-1.jpg",
-    "gallery": [
-      "assets/img/products/ray-ban/ray-ban-rb2186-negro-1.jpg",
-      "assets/img/products/ray-ban/ray-ban-rb2186-negro-2.jpg"
-    ],
-    "description": "La State Street RB2186 toma la silueta cuadrada clásica y la lleva a otro nivel de proporción. El acetato negro brillante de grosor generoso le da una presencia que no pasa desapercibida, mientras que los detalles plateados en las varillas añaden un contrapunto más fino. Las lentes G-15 verdes mantienen la fidelidad cromática que Ray-Ban ha perfeccionado durante décadas. Una montura para quien quiere una gafa con carácter sin renunciar a la versatilidad del negro.",
-    "specs": {
-      "material": "Acetato",
-      "calibre": "52 mm",
-      "puente": "20 mm",
-      "varilla": "145 mm",
-      "genero": "Unisex"
-    }
-  },
-  {
     "id": "ray-ban-rb3750-plata-gris",
     "name": "RB3750",
     "brand": "Ray-Ban",
@@ -1774,28 +1598,6 @@
       "puente": "18 mm",
       "varilla": "145 mm",
       "genero": "Hombre"
-    }
-  },
-  {
-    "id": "ray-ban-rb4165-justin-azul-espejo",
-    "name": "RB4165 Justin",
-    "brand": "Ray-Ban",
-    "brand_slug": "ray-ban",
-    "type": "sol",
-    "price": 137,
-    "variant": "Negro Mate / Azul Espejo",
-    "image": "assets/img/products/ray-ban/ray-ban-rb4165-azul-1.jpg",
-    "gallery": [
-      "assets/img/products/ray-ban/ray-ban-rb4165-azul-1.jpg",
-      "assets/img/products/ray-ban/ray-ban-rb4165-azul-2.jpg"
-    ],
-    "description": "La Justin RB4165 en negro mate con lentes azul espejo es la combinación más reconocible de este modelo. La montura cuadrada en nylon ligero y el acabado mate le dan un perfil deportivo y urbano que encaja con cualquier look. Las lentes espejadas en azul añaden un punto de color sin estridencia y ofrecen una protección solar completa. Una gafa que se lleva bien y se ve mejor.",
-    "specs": {
-      "material": "Nylon",
-      "calibre": "55 mm",
-      "puente": "16 mm",
-      "varilla": "145 mm",
-      "genero": "Unisex"
     }
   },
   {
@@ -2153,50 +1955,6 @@
       "puente": "22 mm",
       "varilla": "145 mm",
       "genero": "Unisex"
-    }
-  },
-  {
-    "id": "polaroid-pld6241-gris-ambar",
-    "name": "PLD 6241",
-    "brand": "Polaroid",
-    "brand_slug": "polaroid",
-    "type": "sol",
-    "price": 69,
-    "variant": "Gris Transparente / Ámbar Polarizado",
-    "image": "assets/img/products/polaroid/polaroid-pld6241-1.jpg",
-    "gallery": [
-      "assets/img/products/polaroid/polaroid-pld6241-1.jpg",
-      "assets/img/products/polaroid/polaroid-pld6241-2.jpg"
-    ],
-    "description": "La PLD 6241 es una montura cuadrada de perfil grueso en acetato transparente gris humo con cristal ámbar polarizado. Su silueta rectangular y su volumen pronunciado le dan un aire urbano y contemporáneo, mientras el tono miel del cristal polarizado añade calidez y contraste. Una gafa que destaca sin gritar.",
-    "specs": {
-      "material": "Polipropileno Reciclado",
-      "calibre": "53 mm",
-      "puente": "21 mm",
-      "varilla": "145 mm",
-      "genero": "Unisex"
-    }
-  },
-  {
-    "id": "polaroid-pld6247-havana-azul",
-    "name": "PLD 6247",
-    "brand": "Polaroid",
-    "brand_slug": "polaroid",
-    "type": "sol",
-    "price": 59,
-    "variant": "Havana / Azul Degradado Polarizado",
-    "image": "assets/img/products/polaroid/polaroid-pld6247-1.jpg",
-    "gallery": [
-      "assets/img/products/polaroid/polaroid-pld6247-1.jpg",
-      "assets/img/products/polaroid/polaroid-pld6247-2.jpg"
-    ],
-    "description": "La PLD 6247 es una montura cuadrada oversized en polipropileno reciclado havana con cristal azul degradado polarizado. Su formato amplio y sus esquinas angulosas le dan un aire retro-moderno con mucha presencia. El contraste entre el carey cálido y el cristal azul frío crea un equilibrio llamativo y sofisticado.",
-    "specs": {
-      "material": "Polipropileno Reciclado",
-      "calibre": "58 mm",
-      "puente": "18 mm",
-      "varilla": "145 mm",
-      "genero": "Mujer"
     }
   },
   {
