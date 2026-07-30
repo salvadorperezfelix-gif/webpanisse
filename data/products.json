@@ -2822,6 +2822,29 @@
     }
   },
   {
+    "id": "einstoffen-aeoris-brown",
+    "name": "Æoris",
+    "brand": "Einstoffen",
+    "brand_slug": "einstoffen",
+    "type": "sol",
+    "price": 375,
+    "variant": "Oliva Mármol",
+    "placeholder": "https://placehold.co/600x480/5a6642/c4a96c?text=Einstoffen",
+    "image": "assets/img/products/einstoffen/aeoris-brown-f.jpg",
+    "gallery": [
+      "assets/img/products/einstoffen/aeoris-brown-f.jpg",
+      "assets/img/products/einstoffen/aeoris-brown-s.jpg"
+    ],
+    "description": "Redonda con cantos facetados — la Æoris geometriza la forma circular con aristas que la hacen inconfundible. Acetato translúcido en oliva mármol que aclara hacia abajo hasta casi transparente. Puente doble en metal dorado y tornillos visibles en la varilla, sin disimulo. Lentes marrones degradadas Cat. 3 con protección UV400.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "48 mm",
+      "puente": "24 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
+  },
+  {
     "id": "einstoffen-dauphine-black",
     "name": "Dauphine",
     "brand": "Einstoffen",
