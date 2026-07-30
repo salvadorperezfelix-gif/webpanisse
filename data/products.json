@@ -2868,6 +2868,29 @@
     }
   },
   {
+    "id": "einstoffen-denker-coffee",
+    "name": "Denker",
+    "brand": "Einstoffen",
+    "brand_slug": "einstoffen",
+    "type": "graduadas",
+    "price": 195,
+    "variant": "Coffee",
+    "placeholder": "https://placehold.co/600x480/3a2a1a/4a90d9?text=Einstoffen",
+    "image": "assets/img/products/einstoffen/denker-coffee-f.jpg",
+    "gallery": [
+      "assets/img/products/einstoffen/denker-coffee-f.jpg",
+      "assets/img/products/einstoffen/denker-coffee-s.jpg"
+    ],
+    "description": "El mundo gira deprisa. La Denker permanece quieta. Con mirada serena y mente afilada, observas mientras otros reaccionan. Forma clara, pensada hasta el último detalle — precisa, enfocada, imperturbable. Esta montura no es distracción: es profundidad. Para quienes no necesitan pensar en voz alta para ser escuchados — porque la claridad emerge en el silencio. Acetato natural premium, trabajado y pulido a mano. Bisagras alemanas OBE, puntas ajustables. Diseño suizo.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "57 mm",
+      "puente": "18 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
+  },
+  {
     "id": "einstoffen-marquis-cranberry",
     "name": "Marquis",
     "brand": "Einstoffen",
