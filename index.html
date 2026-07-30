@@ -675,6 +675,7 @@
       overflow: hidden;
       background: #e8e2da;
       min-height: 400px;
+      position: relative;
     }
     .home-brand__img img {
       width: 100%;
@@ -1229,25 +1230,22 @@
       </div>
     </section>
 
-    <!-- EDITORIAL MARCA 3: Ray-Ban -->
-    <section class="home-brand" aria-label="Ray-Ban en Lugo">
+    <!-- EDITORIAL MARCA 3: Einstoffen -->
+    <section class="home-brand" aria-label="Einstoffen en Lugo" id="einstoffen-editorial">
       <div class="home-brand__img">
-        <picture>
-          <source srcset="assets/img/brands/ray-ban-editorial.webp" type="image/webp">
-          <img
-            src="assets/img/brands/ray-ban-editorial.jpg"
-            onerror="this.src='https://placehold.co/900x700/1a1a1a/c8200c?text=Ray-Ban'"
-            alt="Ray-Ban en Panisse Óptica Lugo"
-            width="1400" height="788"
-            loading="lazy"
-          />
-        </picture>
+        <img
+          src="https://img.youtube.com/vi/tku5731yjY8/maxresdefault.jpg"
+          alt="Einstoffen — Colección de Autor"
+          width="1280" height="720"
+          loading="lazy"
+          onerror="this.src='https://placehold.co/900x700/1a1a1a/c8b46c?text=Einstoffen'"
+        />
       </div>
       <div class="home-brand__content">
-        <span class="home-brand__label">Icónico Desde 1937</span>
-        <h2 class="home-brand__title">Ray-Ban</h2>
-        <p class="home-brand__desc">Aviators, Wayfarers y Clubmasters. Los modelos más reconocidos del mundo, ahora disponibles en nuestra óptica del centro de Lugo. Clásicos que nunca pasan de moda.</p>
-        <a href="catalogo.html?marca=ray-ban" class="btn btn--outline">Ver Ray-Ban</a>
+        <span class="home-brand__label">Diseño Suizo · Artesanía Japonesa</span>
+        <h2 class="home-brand__title">Einstoffen</h2>
+        <p class="home-brand__desc">Monturas de autor nacidas en Suiza. Acetato japonés y titanio aeroespacial mecanizado con una precisión que se nota al tacto. Para quienes buscan una pieza que ningún otro tiene.</p>
+        <a href="catalogo.html?marca=einstoffen" class="btn btn--outline">Ver Einstoffen</a>
       </div>
     </section>
 
@@ -1641,6 +1639,32 @@
       });
     })();
   </script>
+  <!-- Einstoffen editorial: vídeo YouTube al pasar el ratón -->
+  <script>
+    (function() {
+      var section = document.getElementById('einstoffen-editorial');
+      if (!section) return;
+      var imgWrap = section.querySelector('.home-brand__img');
+      var VID = 'tku5731yjY8';
+      var iframe = null;
+
+      imgWrap.addEventListener('mouseenter', function() {
+        if (iframe) return;
+        iframe = document.createElement('iframe');
+        iframe.src = 'https://www.youtube-nocookie.com/embed/' + VID +
+          '?autoplay=1&mute=1&loop=1&playlist=' + VID +
+          '&controls=0&rel=0&modestbranding=1&playsinline=1';
+        iframe.allow = 'autoplay; encrypted-media';
+        iframe.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;border:0;';
+        imgWrap.appendChild(iframe);
+      });
+
+      imgWrap.addEventListener('mouseleave', function() {
+        if (iframe) { iframe.remove(); iframe = null; }
+      });
+    })();
+  </script>
+
   <script>if(document.cookie.indexOf('googtrans=/es/en')!==-1){window.addEventListener('load',function(){var s=document.createElement('script');s.src='https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';document.head.appendChild(s);},{once:true});}</script>
 </body>
 
