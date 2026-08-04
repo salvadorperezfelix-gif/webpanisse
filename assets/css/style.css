@@ -2055,7 +2055,35 @@ body, body.translated-ltr, body.translated-rtl { top: 0 !important; margin-top: 
 /* Card en catálogo: nombre de marca visible */
 .product-card__link {
   display: block;
+  flex: 1;
   color: inherit;
+}
+
+.product-card__reserve {
+  display: block;
+  width: 100%;
+  padding: 11px 16px;
+  font-family: var(--font-body);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-text);
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-top: none;
+  text-decoration: none;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+  cursor: pointer;
+}
+
+.product-card__reserve:hover,
+.product-card__reserve:focus-visible {
+  background: var(--color-text);
+  color: var(--color-white);
+  border-color: var(--color-text);
+  outline: none;
 }
 
 .product-card__brand {

@@ -333,6 +333,7 @@ if (newsletterForm) {
     const typeLabel = p.type === 'sol' ? 'Sol' : 'Graduadas';
     const badge     = p.is_new ? `<div class="product-card__badge">Nuevo</div>` : '';
     const dataNew   = p.is_new ? ' data-new="true"' : '';
+    const waMsg     = encodeURIComponent(`Hola, me gustaría reservar las gafas ${p.brand} ${p.name} para probarlas en vuestra tienda. ¿Cuándo puedo pasarme?`);
 
     return `
       <article class="product-card"
@@ -358,6 +359,13 @@ if (newsletterForm) {
             <span class="product-card__variant">${typeLabel} · ${p.variant}</span>
             <p class="product-card__price">${p.price} €</p>
           </div>
+        </a>
+        <a href="https://wa.me/34614296965?text=${waMsg}"
+           class="product-card__reserve"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Reservar ${p.brand} ${p.name} en tienda por WhatsApp">
+          Reservar en tienda
         </a>
       </article>`;
   }
@@ -843,6 +851,14 @@ async function initProductPage() {
     
     const descEl = document.getElementById('prod-desc');
     if (descEl) { const pEl = document.createElement('p'); pEl.textContent = p.description; descEl.replaceChildren(pEl); }
+
+    const ctaLink = document.querySelector('.product-info__cta-wrap a');
+    if (ctaLink) {
+      const waMsg = `Hola, me gustaría reservar las gafas ${p.brand} ${p.name} para probarlas en vuestra tienda. ¿Cuándo puedo pasarme?`;
+      ctaLink.href = `https://wa.me/34614296965?text=${encodeURIComponent(waMsg)}`;
+      ctaLink.target = '_blank';
+      ctaLink.rel = 'noopener noreferrer';
+    }
 
     // Swatches de variantes de color
     const colorsEl = document.getElementById('prod-colors');
