@@ -395,7 +395,7 @@ if (newsletterForm) {
     const all      = [...grid.querySelectorAll('.product-card:not(.product-card--skeleton)')];
     const filtered = all.filter(c => {
       const matchType   = state.type === 'todos' || c.dataset.type === state.type;
-      const matchGender = state.gender === 'todos' || !c.dataset.gender || c.dataset.gender === state.gender;
+      const matchGender = state.gender === 'todos' || !c.dataset.gender || c.dataset.gender === state.gender || c.dataset.gender === 'Unisex';
       const matchBrand  = state.brands.length === 0 || state.brands.includes(c.dataset.brand);
       return matchType && matchGender && matchBrand;
     });
