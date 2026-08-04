@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -11,7 +11,7 @@
   <link rel="preload" href="assets/fonts/cormorant-garamond-600-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/cormorant-garamond-600-italic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/lato-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="assets/fonts/parisienne-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/parisienne-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <!-- Meta Pixel Code -->
   <script>
     !function(f,b,e,v,n,t,s)
@@ -20,8 +20,7 @@
     if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
     n.queue=[];window.addEventListener('load',function(){t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s);},{once:!0});}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    
-    // Comprobar consentimiento antes de iniciar
+
     var savedConsent = localStorage.getItem('cookieConsent');
     var marketingGranted = false;
     if (savedConsent) {
@@ -30,13 +29,13 @@
         marketingGranted = !!consentObj.marketing;
       } catch (e) {}
     }
-    
+
     if (marketingGranted) {
       fbq('consent', 'grant');
     } else {
       fbq('consent', 'revoke');
     }
-    
+
     fbq('init', '1706566507036901');
     fbq('track', 'PageView');
   </script>
@@ -48,8 +47,7 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    
-    // Comprobar si ya existe consentimiento guardado
+
     var savedConsent = localStorage.getItem('cookieConsent');
     if (savedConsent) {
       try {
@@ -88,11 +86,10 @@
     gtag('config', 'G-ZPWT5ZT4X4');
   </script>
 
-
   <!-- SEO -->
-  <title>Gafas en Lugo · Detalle de Producto | Panisse Óptica</title>
-  <meta name="description" content="Gafas de diseño en Lugo. Panisse Óptica, óptica boutique en Rúa do Teatro, Bajo 2. Marcas exclusivas, ópticos certificados y atención personalizada." />
-  <meta name="keywords" content="óptica Lugo, gafas Lugo, gafas graduadas Lugo, gafas de sol Lugo, óptico Lugo, revisión vista Lugo, optometrista Lugo, gafas de diseño Lugo, óptica boutique Lugo, Panisse Óptica" />
+  <title>Gafas para Boda en Lugo · Óptica Boutique | Panisse</title>
+  <meta name="description" content="Gafas para el día de tu boda en Lugo. Selección de montura, lentes antireflectante y ajuste perfecto para novias, novios y familias. Cita en Panisse Óptica." />
+  <meta name="keywords" content="gafas boda Lugo, gafas novia Lugo, óptica boda Lugo, montura boda, lentes antireflectante boda, Panisse Óptica" />
   <meta name="author" content="Panisse Óptica" />
   <meta name="robots" content="index, follow" />
   <meta name="geo.region" content="ES-LU" />
@@ -101,10 +98,10 @@
   <meta name="ICBM" content="43.0097, -7.5563" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Gafas en Lugo · Detalle de Producto | Panisse Óptica" />
-  <meta property="og:description" content="Gafas de diseño en Lugo. Panisse Óptica, óptica boutique en Rúa do Teatro, Bajo 2. Marcas exclusivas, ópticos certificados y atención personalizada." />
+  <meta property="og:title" content="Gafas para Boda en Lugo · Panisse Óptica" />
+  <meta property="og:description" content="Gafas para el día de tu boda en Lugo. Selección de montura, lentes antireflectante y ajuste perfecto para novias, novios y familias. Cita en Panisse Óptica." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://panisse.es/catalogo.html" />
+  <meta property="og:url" content="https://panisse.es/gafas-boda-lugo.html" />
   <meta property="og:image" content="https://panisse.es/assets/img/nosotros/tienda.webp" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -113,24 +110,18 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Gafas en Lugo · Detalle de Producto | Panisse Óptica" />
-  <meta name="twitter:description" content="Gafas de diseño en Lugo. Panisse Óptica, óptica boutique en Rúa do Teatro, Bajo 2. Marcas exclusivas, ópticos certificados y atención personalizada." />
+  <meta name="twitter:title" content="Gafas para Boda en Lugo · Panisse Óptica" />
+  <meta name="twitter:description" content="Gafas para el día de tu boda en Lugo. Selección de montura, lentes antireflectante y ajuste perfecto para novias, novios y familias." />
   <meta name="twitter:image" content="https://panisse.es/assets/img/nosotros/tienda.webp" />
 
   <!-- Canonical -->
-  <link rel="canonical" href="https://panisse.es/catalogo.html" />
-
-  <!-- JSON-LD Product (rellenado dinámicamente por JS) -->
-  <script type="application/ld+json" id="product-schema"></script>
+  <link rel="canonical" href="https://panisse.es/gafas-boda-lugo.html" />
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">[
   {
     "@context": "https://schema.org",
-    "@type": [
-      "LocalBusiness",
-      "Optician"
-    ],
+    "@type": ["LocalBusiness", "Optician"],
     "@id": "https://panisse.es/#business",
     "name": "Panisse Óptica",
     "alternateName": "Panisse Optica Lugo",
@@ -157,33 +148,19 @@
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
         "opens": "10:00",
         "closes": "13:30"
       },
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
         "opens": "16:30",
         "closes": "20:30"
       },
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Saturday"
-        ],
+        "dayOfWeek": ["Saturday"],
         "opens": "10:30",
         "closes": "13:30"
       }
@@ -192,6 +169,52 @@
       "https://www.instagram.com/panisse_optica/",
       "https://www.facebook.com/profile.php?id=61586908144350",
       "https://www.tiktok.com/@panisse_optica"
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Con cuánta antelación debo venir antes de la boda?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Lo ideal es 6-8 semanas antes, para tener tiempo de fabricar las lentes y hacer algún ajuste si hace falta. No recomendamos dejarlo para la semana de la boda."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Puedo llevar lentillas el día de la boda?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Es posible, pero muchas personas con lentillas habituales se quejan de sequedad e incomodidad en días largos y emocionales. Si llevas gafas normalmente, puede que ese no sea el día para cambiar."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué tipo de montura funciona mejor para las fotos de boda?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Las monturas finas y discretas tienden a fotografiarse mejor porque no compiten con el rostro. Las de acetato grueso también pueden funcionar si el estilo de boda es más editorial. Lo vemos contigo en consulta."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Hacéis esto también para invitados a la boda?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Si eres invitado y quieres estar bien en las fotos, la sesión es la misma. Muchos padrinos y madres de los novios vienen a Panisse por esta razón."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Hay que pedir cita para la consulta de boda?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, para esta consulta pedimos cita previa para dedicarte el tiempo que merece. Puedes escribirnos por WhatsApp o usar el formulario de cita en nuestra web."
+        }
+      }
     ]
   },
   {
@@ -207,33 +230,25 @@
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Catálogo",
-        "item": "https://panisse.es/catalogo.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Producto"
+        "name": "Gafas para Boda en Lugo",
+        "item": "https://panisse.es/gafas-boda-lugo.html"
       }
     ]
   }
 ]</script>
-  <meta property="og:type" content="product" />
-  <meta property="og:locale" content="es_ES" />
-
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
   <link rel="icon" href="favicon-16.png" type="image/png" sizes="16x16">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <!-- Microsoft Clarity -->
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "xx267v5tt4");
-    </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "xx267v5tt4");
+  </script>
 </head>
 
 <body class="interior-page">
@@ -427,8 +442,8 @@
             <li><a href="catalogo.html?marca=ray-ban" class="mobile-sublink">Ray-Ban</a></li>
             <li><a href="catalogo.html?marca=polaroid" class="mobile-sublink">Polaroid</a></li>
             <li><a href="catalogo.html?marca=panisse-kids" class="mobile-sublink">Panisse Kids</a></li>
-            <li><a href="catalogo.html?marca=mr-boho" class="mobile-sublink">Mr. Boho</a>
-            <li><a href="catalogo.html?marca=einstoffen" class="mobile-sublink">Einstoffen</a></li></li>
+            <li><a href="catalogo.html?marca=mr-boho" class="mobile-sublink">Mr. Boho</a></li>
+            <li><a href="catalogo.html?marca=einstoffen" class="mobile-sublink">Einstoffen</a></li>
             <li><a href="catalogo.html" class="mobile-sublink mobile-sublink--all">Ver todas las marcas →</a></li>
           </ul>
         </li>
@@ -523,120 +538,218 @@
   <!-- Overlay -->
   <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
 
-  <!-- ══════════════════════════════════════
-       MAIN — FICHA DE PRODUCTO
-  ══════════════════════════════════════ -->
+  <!-- MAIN -->
   <main id="main-content">
 
-    <!-- Breadcrumb -->
-    <div class="product-breadcrumb container">
-      <nav class="breadcrumb" aria-label="Ruta de navegación">
-        <a href="index.html" class="breadcrumb__link">Inicio</a>
-        <span class="breadcrumb__sep" aria-hidden="true">›</span>
-        <a href="catalogo.html?tipo=graduadas" class="breadcrumb__link" id="breadcrumb-type">Graduadas</a>
-        <span class="breadcrumb__sep" aria-hidden="true">›</span>
-        <a href="catalogo.html?marca=panisse" class="breadcrumb__link" id="breadcrumb-brand">Panisse</a>
-        <span class="breadcrumb__sep" aria-hidden="true">›</span>
-        <span class="breadcrumb__current" aria-current="page" id="breadcrumb-product">Cargando...</span>
-      </nav>
+    <!-- 1. HERO -->
+    <div class="page-hero page-hero--dark">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Ruta de navegación">
+          <a href="index.html" class="breadcrumb__link">Inicio</a>
+          <span class="breadcrumb__sep" aria-hidden="true">›</span>
+          <span class="breadcrumb__current" aria-current="page">Gafas para Boda en Lugo</span>
+        </nav>
+        <h1 class="page-hero__title">Gafas para el día<br><em>de tu boda</em></h1>
+        <p class="page-hero__desc">Porque en las fotos de boda los detalles no se olvidan.</p>
+      </div>
     </div>
 
-    <!-- Zona principal del producto -->
-    <div class="product-layout container">
-
-      <!-- ── Galería de imágenes ── -->
-      <div class="product-gallery" aria-label="Galería de imágenes del producto">
-
-        <!-- Thumbnails -->
-        <div class="product-gallery__thumbs" id="prod-thumbs" role="list" aria-label="Miniaturas">
-          <!-- Dinámico -->
+    <!-- 2. INTRO -->
+    <section class="servicio-section">
+      <div class="servicio-section__inner container">
+        <div class="servicio-section__img-col">
+          <div class="servicio-section__img-wrap">
+            <img src="assets/img/nosotros/tienda.webp"
+                 alt="Interior de Panisse Óptica Lugo — monturas de diseño"
+                 width="680" height="540"
+                 loading="lazy"
+                 onerror="this.src='https://placehold.co/680x540/1a1a1a/c4b28a?text=Panisse+%C3%93ptica'" />
+          </div>
         </div>
-
-        <!-- Imagen principal -->
-        <div class="product-gallery__main">
-          <img
-            id="product-main-img"
-            src="https://placehold.co/900x720/f5f5f5/aaaaaa?text=Cargando..."
-            alt="Imagen del producto"
-            class="product-gallery__main-img"
-            loading="eager"
-          />
-          <!-- Badge Nuevo: se añade dinámicamente desde JS si is_new === true -->
-          <button class="product-gallery__zoom" aria-label="Ampliar imagen">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-          </button>
+        <div class="servicio-section__content">
+          <p>Las personas que llevan gafas y se casan se enfrentan a una decisión que nadie les advirtió con suficiente tiempo. En el mejor de los casos, llevan sus gafas de diario — las mismas que usan para ir al trabajo, para conducir, para hacer la compra. En el peor, deciden ponerse lentillas ese día y aguantan doce horas con los ojos secos y la concentración en otra cosa, porque no quieren salir en todas las fotos con montura. Y hay una tercera opción que tampoco termina bien: comprar unas gafas a última hora sin haberlas elegido con calma, sin haberlas ajustado bien, y que ese día se muevan, aprieten o simplemente no queden como esperaban.</p>
+          <p>En Panisse hemos diseñado una consulta específica para esto. No es una revisión visual ordinaria ni un proceso de venta acelerado. Es una sesión pensada para que el resultado — la montura que lleves el día de tu boda — tenga el mismo nivel de atención que el vestido, el traje o el arreglo floral.</p>
+          <p>El problema no afecta solo a quien se casa. En una boda hay decenas de personas con gafas que también aparecen en todas las fotos: la madre del novio que lleva los mismos progresivos desde hace años, el padrino que tiene las varillas algo dobladas de tanto uso, la madrina que siempre ha querido renovar pero no encontraba el momento. El día de una boda es uno de esos momentos en que las gafas se ven. Y se notan.</p>
+          <p>Por eso la consulta Panisse Boda está abierta no solo para los novios, sino para cualquier persona que forme parte de la celebración y quiera que sus gafas estén realmente a la altura del día. La diferencia entre unas gafas correctas y unas gafas elegidas con criterio para ese momento específico es visible. Y en una fotografía que dura décadas, merece la pena tomarse el tiempo.</p>
         </div>
-
-
       </div>
+    </section>
 
-      <!-- ── Info del producto ── -->
-      <div class="product-info">
-
-        <div class="product-info__header">
-          <a href="catalogo.html" class="product-info__brand" id="prod-brand">Marca</a>
-          <h1 class="product-info__title" id="prod-title">Nombre del Producto</h1>
-          <p class="product-info__subtitle" id="prod-subtitle">Categoría</p>
-        </div>
-
-        <p class="product-info__price"><span id="prod-price">---</span></p>
-
-        <!-- Color -->
-        <div class="product-info__section">
-          <p class="product-info__label">
-            Color: <strong id="color-label">—</strong>
-          </p>
-          <div class="product-colors" id="prod-colors" hidden></div>
-        </div>
-
-        <!-- Descripción poética -->
-        <div class="product-info__desc" id="prod-desc">
-          <p>Cargando descripción...</p>
-        </div>
-
-        <!-- Detalles técnicos visibles -->
-        <div class="product-info__specs-inline">
-          <h3 class="product-info__specs-heading">Detalles técnicos</h3>
-          <ul class="product-specs" id="prod-specs">
-            <!-- Dinámico -->
-          </ul>
-        </div>
-
-        <!-- CTA principal -->
-        <div class="product-info__cta-wrap">
-          <a href="contacto.html" class="product-cta-main">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            Pedir cita para probar en tienda
-          </a>
-        </div>
-
-        <!-- Acordeón: envío y devoluciones -->
-        <div class="product-accordion">
-          <!-- Contenido eliminado -->
-        </div><!-- /.product-accordion -->
-
-      </div><!-- /.product-info -->
-
-    </div><!-- /.product-layout -->
-
-    <!-- ══════════════════════════════════════
-         PRODUCTOS RELACIONADOS
-    ══════════════════════════════════════ -->
-    <section class="related-products" aria-label="Productos relacionados">
+    <!-- 3. EL ANTIREFLECTANTE -->
+    <section class="servicio-section servicio-section--alt">
       <div class="container">
         <header class="section-header">
-          <p class="section-header__label">También podría gustarte</p>
-          <h2 class="section-header__title">Otros diseños seleccionados</h2>
+          <p class="section-header__label">Lo que más importa</p>
+          <h2 class="section-header__title">El detalle que más<br><em>se nota en las fotos</em></h2>
         </header>
-        <div class="related-grid" id="related-grid">
-          <!-- Dinámico desde JS -->
+        <div class="servicio-section__inner" style="margin-top:2rem;">
+          <div class="servicio-section__content" style="max-width:760px;margin:0 auto;">
+            <p>Las fotografías de boda tienen dos características que no tienen las del día a día: el flash del fotógrafo y la luz exterior intensa. Ambas hacen exactamente lo mismo sobre unas lentes sin tratamiento antireflectante correcto: generan un reflejo blanco que cubre los ojos, hace que las gafas parezcan más grandes de lo que son, y distrae la atención del rostro hacia la montura. El resultado es que en las fotos las gafas molestan visualmente, aunque en persona queden perfectamente.</p>
+            <p>Un antireflectante estándar reduce el reflejo pero no lo elimina. Los tratamientos premium — como ZEISS DuraVision Platinum — lo eliminan por completo. La diferencia en fotografía es inmediata: con un antireflectante de calidad, las lentes prácticamente desaparecen en la imagen. Se ve el ojo, se ve la expresión, y las gafas pasan a ser un accesorio elegante en lugar de un elemento que compite con la cara.</p>
+            <p>Esta es la primera recomendación que hacemos en cualquier consulta de boda: antes de elegir la montura, elegir el tratamiento de lente adecuado. Porque puedes tener la montura más bonita del catálogo, pero si las lentes devuelven reflejos en las fotos, ese detalle se verá en cada imagen durante décadas. En Panisse montamos exclusivamente lentes ZEISS con tratamientos DuraVision. Para una boda, recomendamos DuraVision Platinum UV como mínimo — el tratamiento que garantiza que tus ojos sean lo primero que se vea en cada fotografía, no el destello de las lentes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. LA SESIÓN PANISSE BODA -->
+    <section class="servicio-section">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-header__label">Cómo funciona</p>
+          <h2 class="section-header__title">La sesión de gafas<br><em>para tu boda</em></h2>
+        </header>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;margin:2rem 0">
+          <div class="servicio-extra-card">
+            <div class="servicio-extra-card__num">01</div>
+            <h3 class="servicio-extra-card__title">Consulta inicial</h3>
+            <p>Analizamos el estilo de la boda, el vestido o traje previsto, el tipo de ceremonia y la luz esperada — interior, exterior, noche o todo junto. Con esa información orientamos la búsqueda desde el primer momento.</p>
+          </div>
+          <div class="servicio-extra-card">
+            <div class="servicio-extra-card__num">02</div>
+            <h3 class="servicio-extra-card__title">Selección de montura</h3>
+            <p>Elegimos juntos la montura que funcione para ese día: formas, materiales y colores según el look. Probamos distintas opciones con calma, sin prisa. Si traes referencias del vestido o del estilo de la boda, mucho mejor.</p>
+          </div>
+          <div class="servicio-extra-card">
+            <div class="servicio-extra-card__num">03</div>
+            <h3 class="servicio-extra-card__title">Lentes a medida</h3>
+            <p>Con tu graduación exacta y el tratamiento antireflectante premium adecuado. Si necesitas actualizar la graduación, realizamos el estudio visual antes de prescribir. Las lentes se fabrican con los mismos estándares ZEISS que cualquier par de gafas de Panisse.</p>
+          </div>
+          <div class="servicio-extra-card">
+            <div class="servicio-extra-card__num">04</div>
+            <h3 class="servicio-extra-card__title">Ajuste perfecto</h3>
+            <p>Que no se muevan durante el baile, que no aprieten en las sienes después de doce horas, que el puente no deje marca. El ajuste es parte de la consulta, no un servicio adicional.</p>
+          </div>
+          <div class="servicio-extra-card">
+            <div class="servicio-extra-card__num">05</div>
+            <h3 class="servicio-extra-card__title">Revisita si hace falta</h3>
+            <p>Si el día antes de la boda algo no está del todo bien — una varilla que roza, un puente que ha perdido tensión — puedes venir a un ajuste de cortesía sin cita previa en horario de apertura.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PARA QUIÉN -->
+    <section class="servicio-section servicio-section--alt">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-header__label">Para toda la celebración</p>
+          <h2 class="section-header__title">No solo<br><em>para la novia</em></h2>
+        </header>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;margin:2rem 0">
+          <div class="servicio-extra-card">
+            <h3 class="servicio-extra-card__title" style="margin-bottom:12px;">La novia</h3>
+            <p>La protagonista de todas las fotos. Las gafas deben estar en armonía con el vestido, el peinado y el maquillaje. Una montura demasiado llamativa compite; una demasiado discreta desaparece. Encontrar el equilibrio es el trabajo de la consulta.</p>
+          </div>
+          <div class="servicio-extra-card">
+            <h3 class="servicio-extra-card__title" style="margin-bottom:12px;">El novio</h3>
+            <p>El gran olvidado de estas conversaciones. Un traje bien elegido merece una montura a la altura. Muchos novios llegan a su boda con unas gafas que compraron hace cuatro años sin ningún criterio especial. Con una sola visita eso cambia.</p>
+          </div>
+          <div class="servicio-extra-card">
+            <h3 class="servicio-extra-card__title" style="margin-bottom:12px;">Padrinos y madrinas</h3>
+            <p>También están en todas las fotos, de pie junto a los novios durante la ceremonia, en el reportaje, en el baile. Si vas a ser padrino o madrina y llevas gafas, este es el momento de renovarlas o ajustarlas correctamente.</p>
+          </div>
+          <div class="servicio-extra-card">
+            <h3 class="servicio-extra-card__title" style="margin-bottom:12px;">Padres de los novios</h3>
+            <p>Quizás sea el momento de renovar esas progresivas que llevan tiempo pidiendo atención, o de cambiar una montura que ya no representa bien a quien la lleva. Las bodas son uno de esos días en que la familia entera sale fotografiada al mismo tiempo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. GALICIA -->
+    <section class="servicio-section">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-header__label">Un contexto concreto</p>
+          <h2 class="section-header__title">Bodas en Galicia: luz,<br><em>exteriores y el reto del tiempo</em></h2>
+        </header>
+        <div class="servicio-section__inner" style="margin-top:2rem;">
+          <div class="servicio-section__content" style="max-width:760px;margin:0 auto;">
+            <p>Galicia tiene una luz particular. Los pazos, los jardines, las iglesias románicas — son espacios con luz cambiante, a veces muy intensa en exterior y con sombras abruptas en interior. Las bodas gallegas tienen además una duración generosa: cóctel en el jardín, celebración en el comedor, sobremesa hasta la madrugada. Cuatro o cinco cambios de luz en el mismo día, con el fotógrafo activo en todos ellos.</p>
+            <p>Hay dos errores frecuentes que encontramos en este contexto. El primero: llevar lentes fotocromáticas. Las lentes fotocromáticas se oscurecen en exterior y tardan varios minutos en aclararse al entrar. En las fotos al aire libre, los ojos pueden quedar oscurecidos; en las de interior, las lentes pueden seguir activas durante un rato. Para una boda con desplazamientos entre espacios, no son la solución más predecible.</p>
+            <p>El segundo error: no preocuparse por los reflejos hasta ver las fotos. La luz lateral de los pazos y jardines gallegos es especialmente traicionera para las lentes sin antireflectante premium. Entra de costado, rebota en las lentes y genera un destello que el fotógrafo no siempre puede controlar en el encuadre.</p>
+            <p>Lo que funciona para una boda en Galicia: montura ligera que aguante bien durante doce horas, lentes con antireflectante DuraVision de máxima categoría, y una graduación verificada en las semanas anteriores. Simple, pero hace toda la diferencia cuando ves las imágenes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. FAQ -->
+    <section class="servicio-section servicio-section--alt">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-header__label">Lo que nos preguntan</p>
+          <h2 class="section-header__title">Preguntas<br><em>frecuentes</em></h2>
+        </header>
+        <div style="max-width:760px;margin:2rem auto 0;display:flex;flex-direction:column;gap:0;">
+
+          <details class="faq-item" style="border-top:1px solid var(--color-border);padding:20px 0;">
+            <summary class="faq-item__q" style="cursor:pointer;font-weight:700;font-size:0.9375rem;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">
+              ¿Con cuánta antelación debo venir antes de la boda?
+              <span aria-hidden="true" style="flex-shrink:0;font-size:1.25rem;font-weight:300;line-height:1;">+</span>
+            </summary>
+            <p style="margin-top:14px;color:var(--color-muted);line-height:1.7;">Lo ideal es venir entre 6 y 8 semanas antes de la fecha. Ese margen nos permite fabricar las lentes con la calidad adecuada, hacer las pruebas necesarias y tener tiempo para cualquier ajuste si algo no termina de quedar perfecto. No recomendamos dejarlo para la semana de la boda — el proceso no se puede acelerar sin comprometer el resultado.</p>
+          </details>
+
+          <details class="faq-item" style="border-top:1px solid var(--color-border);padding:20px 0;">
+            <summary class="faq-item__q" style="cursor:pointer;font-weight:700;font-size:0.9375rem;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">
+              ¿Puedo llevar lentillas el día de la boda?
+              <span aria-hidden="true" style="flex-shrink:0;font-size:1.25rem;font-weight:300;line-height:1;">+</span>
+            </summary>
+            <p style="margin-top:14px;color:var(--color-muted);line-height:1.7;">Es posible. Pero muchas personas que usan lentillas habitualmente se quejan de sequedad e incomodidad en días largos, emocionalmente intensos y con mucho movimiento. Si normalmente llevas gafas y te planteas ponerte lentillas para un día de doce horas con brillo, flashes y lágrimas en algún momento, puede que ese no sea el día para experimentar. La consulta te ayuda a encontrar unas gafas con las que te sientas tan cómodo o cómoda que no eches de menos las lentillas.</p>
+          </details>
+
+          <details class="faq-item" style="border-top:1px solid var(--color-border);padding:20px 0;">
+            <summary class="faq-item__q" style="cursor:pointer;font-weight:700;font-size:0.9375rem;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">
+              ¿Qué tipo de montura funciona mejor para las fotos?
+              <span aria-hidden="true" style="flex-shrink:0;font-size:1.25rem;font-weight:300;line-height:1;">+</span>
+            </summary>
+            <p style="margin-top:14px;color:var(--color-muted);line-height:1.7;">No hay una respuesta única porque depende mucho del estilo de la boda y de la persona que las lleva. Dicho esto, las monturas finas y discretas tienden a fotografiarse bien porque no compiten con el rostro. Las de acetato grueso también pueden funcionar si el estilo de la boda es más editorial o con personalidad. Lo que sí marcará la diferencia en todos los casos es el tratamiento de lente: un antireflectante premium hace más por el resultado fotográfico que cualquier elección de montura. Lo vemos contigo en la consulta con calma.</p>
+          </details>
+
+          <details class="faq-item" style="border-top:1px solid var(--color-border);padding:20px 0;">
+            <summary class="faq-item__q" style="cursor:pointer;font-weight:700;font-size:0.9375rem;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">
+              ¿Hacéis esto también para invitados?
+              <span aria-hidden="true" style="flex-shrink:0;font-size:1.25rem;font-weight:300;line-height:1;">+</span>
+            </summary>
+            <p style="margin-top:14px;color:var(--color-muted);line-height:1.7;">Sí. Si eres invitado, padrino, madrina o padre o madre de los novios y quieres que tus gafas estén a la altura del día, la sesión funciona exactamente igual. No hace falta ser el protagonista de la boda para querer estar bien en las fotos. Muchas de las consultas que hacemos en los meses anteriores a una boda son precisamente de familia y personas cercanas a la pareja.</p>
+          </details>
+
+          <details class="faq-item" style="border-top:1px solid var(--color-border);padding:20px 0;border-bottom:1px solid var(--color-border);">
+            <summary class="faq-item__q" style="cursor:pointer;font-weight:700;font-size:0.9375rem;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">
+              ¿Hay que pedir cita?
+              <span aria-hidden="true" style="flex-shrink:0;font-size:1.25rem;font-weight:300;line-height:1;">+</span>
+            </summary>
+            <p style="margin-top:14px;color:var(--color-muted);line-height:1.7;">Sí. Para la consulta de boda pedimos cita previa para poder dedicarte el tiempo que merece sin interrupciones. Puedes escribirnos directamente por WhatsApp con la fecha de tu boda y te proponemos un horario, o usar el formulario de cita de nuestra web. Normalmente tenemos disponibilidad en menos de una semana.</p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CTA FINAL -->
+    <section style="background:var(--color-black);color:var(--color-white);padding:clamp(64px,10vw,120px) 0;">
+      <div class="container" style="text-align:center;max-width:640px;margin-inline:auto;">
+        <span style="display:block;font-size:0.5625rem;font-weight:700;letter-spacing:0.28em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:20px;">Panisse Óptica · Lugo</span>
+        <h2 style="font-family:var(--font-display);font-size:clamp(32px,5vw,52px);font-weight:400;font-style:italic;line-height:1.1;margin-bottom:24px;">Reserva tu consulta<br>de boda</h2>
+        <p style="font-size:1rem;line-height:1.7;color:rgba(255,255,255,0.75);margin-bottom:40px;">Escríbenos con la fecha de tu boda y te proponemos una cita. Sin prisas, sin lista de espera.</p>
+        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+          <a href="https://wa.me/34614296965?text=Hola%2C%20me%20caso%20y%20me%20gustar%C3%ADa%20una%20consulta%20para%20las%20gafas%20de%20mi%20boda.%20%C2%BFCu%C3%A1ndo%20podr%C3%ADa%20venir%3F"
+             class="btn btn--primary"
+             target="_blank"
+             rel="noopener noreferrer">
+            Escribir por WhatsApp
+          </a>
+          <a href="contacto.html" class="btn btn--ghost">
+            Pedir cita online
+          </a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- FOOTER -->
   <footer class="footer" aria-label="Pie de página">
     <div class="footer__inner container">
 
@@ -671,6 +784,16 @@
           <li><a href="servicios.html" class="footer__link">Servicios</a></li>
           <li><a href="contacto.html" class="footer__link">Cita Previa</a></li>
           <li><a href="blog.html" class="footer__link">Magazine</a></li>
+        </ul>
+        <h3 class="footer__heading" style="margin-top:28px;">Servicios en Lugo</h3>
+        <ul class="footer__list">
+          <li><a href="revision-visual-lugo.html" class="footer__link">Revisión Visual</a></li>
+          <li><a href="gafas-graduadas-lugo.html" class="footer__link">Gafas Graduadas</a></li>
+          <li><a href="gafas-boda-lugo.html" class="footer__link">Gafas para tu Boda</a></li>
+          <li><a href="ray-ban-lugo.html" class="footer__link">Ray-Ban en Lugo</a></li>
+          <li><a href="lentes-de-contacto-lugo.html" class="footer__link">Lentes de Contacto</a></li>
+          <li><a href="optometria-infantil-lugo.html" class="footer__link">Optometría Infantil</a></li>
+          <li><a href="lentes-zeiss-lugo.html" class="footer__link">Lentes ZEISS</a></li>
         </ul>
         <h3 class="footer__heading" style="margin-top: 28px;">Información</h3>
         <ul class="footer__list">
@@ -720,9 +843,8 @@
     </div>
   </footer>
 
-  <!-- WhatsApp -->
   <a
-    href="https://wa.me/34614296965?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20c%C3%B3mo%20pedir%20cita"
+    href="https://wa.me/34614296965?text=Hola%2C%20me%20caso%20y%20me%20gustar%C3%ADa%20una%20consulta%20para%20las%20gafas%20de%20mi%20boda.%20%C2%BFCu%C3%A1ndo%20podr%C3%ADa%20venir%3F"
     class="whatsapp-float"
     target="_blank"
     rel="noopener noreferrer"
@@ -733,15 +855,6 @@
     </svg>
     <span class="whatsapp-float__tooltip">WhatsApp</span>
   </a>
-
-  <!-- Lightbox / Zoom Modal -->
-  <div class="product-lightbox" id="product-lightbox" aria-hidden="true">
-    <button class="product-lightbox__close" aria-label="Cerrar ampliación">×</button>
-    <div class="product-lightbox__content">
-      <img src="" alt="" id="lightbox-img">
-    </div>
-  </div>
-
   <script src="assets/js/main.min.js" defer></script>
 
   <!-- ── Google Translate ── -->
@@ -772,7 +885,6 @@
         document.cookie = 'googtrans=' + val + '; path=/';
         window.location.reload();
       };
-      // Hide Google bar if injected after load
       var _gt_obs = new MutationObserver(function(){
         var f=document.querySelector('iframe.skiptranslate');
         if(f){f.style.display='none';document.body.style.top='0';}
