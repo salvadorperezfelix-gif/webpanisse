@@ -1,5 +1,29 @@
 [
   {
+    "id": "panisse-boutique-baux",
+    "name": "Baux",
+    "brand": "Panisse Boutique",
+    "brand_slug": "panisse-boutique",
+    "type": "graduadas",
+    "price": 130,
+    "variant": "Negro Mate",
+    "placeholder": "https://placehold.co/600x480/1a1a1a/555555?text=Panisse+Boutique",
+    "image": "assets/img/products/panisse/panisse-boutique-baux-f.jpg",
+    "gallery": [
+      "assets/img/products/panisse/panisse-boutique-baux-f.jpg",
+      "assets/img/products/panisse/panisse-boutique-baux-s.jpg"
+    ],
+    "description": "Aviador de doble puente en titanio 100% con acabado negro mate. La estructura es mínima —varillas ultradelgadas, plaquetas nasales ajustables— pero el doble puente le da una arquitectura inequívoca. Puntas de varilla en acetato jaspeado gris. Ligero como pocas monturas, resistente como el material que lo define.",
+    "is_new": true,
+    "specs": {
+      "material": "Titanio",
+      "calibre": "52 mm",
+      "puente": "18 mm",
+      "varilla": "140 mm",
+      "genero": "Unisex"
+    }
+  },
+  {
     "id": "panisse-maquis",
     "name": "Maquis",
     "brand": "Panisse",
