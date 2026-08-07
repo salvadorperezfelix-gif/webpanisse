@@ -1,5 +1,29 @@
 [
   {
+    "id": "panisse-boutique-arles",
+    "name": "Arles",
+    "brand": "Panisse Boutique",
+    "brand_slug": "panisse-boutique",
+    "type": "graduadas",
+    "price": 130,
+    "variant": "Gunmetal",
+    "placeholder": "https://placehold.co/600x480/6b7280/9ca3af?text=Panisse+Boutique",
+    "image": "assets/img/products/panisse/panisse-boutique-arles-f.jpg",
+    "gallery": [
+      "assets/img/products/panisse/panisse-boutique-arles-f.jpg",
+      "assets/img/products/panisse/panisse-boutique-arles-s.jpg"
+    ],
+    "description": "Montura cuadrada en titanio puro con acabado gunmetal. El perfil fino y los detalles estriados en el arranque de las varillas le dan un carácter elegante sin ornamento. Puente y contorno de lente con un grosor preciso que equilibra presencia y ligereza. Una montura clásica de las que no caducan.",
+    "is_new": true,
+    "specs": {
+      "material": "Titanio",
+      "calibre": "52 mm",
+      "puente": "18 mm",
+      "varilla": "140 mm",
+      "genero": "Unisex"
+    }
+  },
+  {
     "id": "panisse-boutique-frioul",
     "name": "Frioul",
     "brand": "Panisse Boutique",
