@@ -1,5 +1,29 @@
 [
   {
+    "id": "panisse-boutique-frioul",
+    "name": "Frioul",
+    "brand": "Panisse Boutique",
+    "brand_slug": "panisse-boutique",
+    "type": "graduadas",
+    "price": 130,
+    "variant": "Negro",
+    "placeholder": "https://placehold.co/600x480/0d0d0d/333333?text=Panisse+Boutique",
+    "image": "assets/img/products/panisse/panisse-boutique-frioul-f.jpg",
+    "gallery": [
+      "assets/img/products/panisse/panisse-boutique-frioul-f.jpg",
+      "assets/img/products/panisse/panisse-boutique-frioul-s.jpg"
+    ],
+    "description": "Montura geométrica en IP-Titanio con hilo negro de un grosor casi imperceptible. La forma cuadrada de esquinas suavemente achaflanadas combina estructura y delicadeza en la misma línea. Varillas cable de titanio con detalle dorado en la bisagra. Una montura que pesa lo que no se nota y dice más de lo que parece.",
+    "is_new": true,
+    "specs": {
+      "material": "IP-Titanio",
+      "calibre": "51 mm",
+      "puente": "17 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
+  },
+  {
     "id": "panisse-nimes",
     "name": "Nîmes",
     "brand": "Panisse",
