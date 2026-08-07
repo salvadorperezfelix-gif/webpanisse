@@ -1,5 +1,29 @@
 [
   {
+    "id": "panisse-aurore",
+    "name": "Aurore",
+    "brand": "Panisse",
+    "brand_slug": "panisse",
+    "type": "graduadas",
+    "price": 75,
+    "variant": "Gris / Ámbar",
+    "placeholder": "https://placehold.co/600x480/9e9aae/5a5670?text=Panisse",
+    "image": "assets/img/products/panisse/panisse-aurore-f.jpg",
+    "gallery": [
+      "assets/img/products/panisse/panisse-aurore-f.jpg",
+      "assets/img/products/panisse/panisse-aurore-s.jpg"
+    ],
+    "description": "Montura geométrica de acetato inyectado con un degradado que evoluciona del gris pizarra al ámbar miel a través de un cuerpo completamente transparente. La forma hexagonal con cantos achaflanados da carácter sin añadir peso. Varillas de metal en gris grafito con acabado satinado. Una montura que cambia de registro según la luz del día.",
+    "is_new": true,
+    "specs": {
+      "material": "Acetato inyectado",
+      "calibre": "52 mm",
+      "puente": "17 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
+  },
+  {
     "id": "panisse-calanque",
     "name": "Calanque",
     "brand": "Panisse",
