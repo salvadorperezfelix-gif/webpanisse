@@ -1,5 +1,29 @@
 [
   {
+    "id": "panisse-nimes",
+    "name": "Nîmes",
+    "brand": "Panisse",
+    "brand_slug": "panisse",
+    "type": "graduadas",
+    "price": 75,
+    "variant": "Grafito",
+    "placeholder": "https://placehold.co/600x480/4a4a4a/2a2a2a?text=Panisse",
+    "image": "assets/img/products/panisse/panisse-nimes-f.jpg",
+    "gallery": [
+      "assets/img/products/panisse/panisse-nimes-f.jpg",
+      "assets/img/products/panisse/panisse-nimes-s.jpg"
+    ],
+    "description": "Montura rectangular de metal en grafito mate con puente recto y esquinas sutilmente redondeadas. Las varillas delgadas con detalle de ranuras y puntas de goma integradas la hacen cómoda todo el día. Sin estridencias, sin concesiones: la montura que desaparece para dejar hablar a quien la lleva.",
+    "is_new": true,
+    "specs": {
+      "material": "Metal",
+      "calibre": "55 mm",
+      "puente": "17 mm",
+      "varilla": "140 mm",
+      "genero": "Unisex"
+    }
+  },
+  {
     "id": "panisse-boutique-baux",
     "name": "Baux",
     "brand": "Panisse Boutique",
