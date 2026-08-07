@@ -324,6 +324,7 @@ if (newsletterForm) {
           <div class="skeleton-line" style="width:50%;height:9px;margin-bottom:10px"></div>
           <div class="skeleton-line" style="width:28%;height:16px"></div>
         </div>
+        <div class="skeleton-line" style="height:47px;border:1px solid var(--color-border);border-top:none;margin:0"></div>
       </article>`).join('');
   }
 
