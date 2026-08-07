@@ -1,5 +1,29 @@
 [
   {
+    "id": "panisse-maquis",
+    "name": "Maquis",
+    "brand": "Panisse",
+    "brand_slug": "panisse",
+    "type": "graduadas",
+    "price": 75,
+    "variant": "Verde / Carey",
+    "placeholder": "https://placehold.co/600x480/5a6b3a/3a4a22?text=Panisse",
+    "image": "assets/img/products/panisse/panisse-maquis-f.jpg",
+    "gallery": [
+      "assets/img/products/panisse/panisse-maquis-f.jpg",
+      "assets/img/products/panisse/panisse-maquis-s.jpg"
+    ],
+    "description": "Montura cuadrada oversize de acetato inyectado en verde oliva transparente con varillas en carey oscuro que contrastan con energía. La forma geométrica de lente —con esquinas rectas y cantos achaflanados— proyecta un carácter firme y contemporáneo. Una montura de personalidad que habla antes de que uno abra la boca.",
+    "is_new": true,
+    "specs": {
+      "material": "Acetato inyectado",
+      "calibre": "54 mm",
+      "puente": "16 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
+  },
+  {
     "id": "panisse-aurore",
     "name": "Aurore",
     "brand": "Panisse",
