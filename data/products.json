@@ -2962,29 +2962,5 @@
       "varilla": "142 mm",
       "genero": "Unisex"
     }
-  },
-  {
-    "id": "einstoffen-dauphine-black",
-    "name": "Dauphine",
-    "brand": "Einstoffen",
-    "brand_slug": "einstoffen",
-    "is_new": true,
-    "type": "sol",
-    "price": 195,
-    "variant": "Negro / Carey",
-    "placeholder": "https://placehold.co/600x480/111111/7a4a1e?text=Einstoffen",
-    "image": "assets/img/products/einstoffen/dauphine-black-f.jpg",
-    "gallery": [
-      "assets/img/products/einstoffen/dauphine-black-f.jpg",
-      "assets/img/products/einstoffen/dauphine-black-s.jpg"
-    ],
-    "description": "La Dauphine es diva, drama y décolleté. Llega tarde a la fiesta — y todas las miradas se giran. Silueta cat-eye angulada con degradado suave: una declaración a caballo entre la Nouvelle Vague y la alta costura. Elegante, pero con mordiente. Para quien sabe lo que quiere y no se conforma con solo desearlo. Montura artesanal, bisagras alemanas OBE, lentes CR39 con recubrimiento antirreflejo y antiarañazos. Diseño suizo. Protección UV400.",
-    "specs": {
-      "material": "Acetato",
-      "calibre": "54 mm",
-      "puente": "18 mm",
-      "varilla": "145 mm",
-      "genero": "Mujer"
-    }
   }
 ]
