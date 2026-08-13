@@ -846,6 +846,12 @@
     }
 
     /* ── Responsivo ── */
+    @media (max-width: 900px) {
+      .home-blog__grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+    }
     @media (max-width: 768px) {
       .lp-products__grid {
         grid-template-columns: 1fr;
@@ -863,10 +869,6 @@
       .home-brand--reverse .home-brand__content { order: 0; }
       .home-brand__img { min-height: 280px; }
       .home-brand__desc { max-width: 100%; }
-      .home-blog__grid {
-        grid-template-columns: 1fr;
-        gap: 24px;
-      }
     }
   </style>
 

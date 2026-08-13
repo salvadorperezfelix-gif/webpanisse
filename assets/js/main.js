@@ -499,8 +499,10 @@ if (newsletterForm) {
   clearBtnEmpty?.addEventListener('click', doClear);
 
   loadMoreBtn?.addEventListener('click', () => {
+    const scrollY = window.scrollY;
     state.page += PAGE_SIZE;
     applyFilters();
+    requestAnimationFrame(() => window.scrollTo({ top: scrollY, behavior: 'instant' }));
   });
 
   sidebarToggle?.addEventListener('click', () => {
