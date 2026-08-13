@@ -2120,6 +2120,13 @@ body, body.translated-ltr, body.translated-rtl { top: 0 !important; margin-top: 
   opacity: 1;
   transform: translateY(0);
 }
+
+@media (hover: none) {
+  .product-card__wishlist {
+    opacity: 0.75;
+    transform: translateY(0);
+  }
+}
 .product-card__wishlist:hover {
   color: #e03;
 }
@@ -2164,7 +2171,7 @@ body, body.translated-ltr, body.translated-rtl { top: 0 !important; margin-top: 
 /* Responsivo catálogo */
 @media (max-width: 1024px) {
   .catalog-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -2343,7 +2350,7 @@ body, body.translated-ltr, body.translated-rtl { top: 0 !important; margin-top: 
 }
 
 /* ── Responsive sidebar ── */
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .catalog-layout {
     grid-template-columns: 1fr;
     gap: 16px;
