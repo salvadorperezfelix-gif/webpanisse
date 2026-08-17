@@ -2916,30 +2916,6 @@
     }
   },
   {
-    "id": "einstoffen-uhrenmacher-havana",
-    "name": "Uhrenmacher",
-    "brand": "Einstoffen",
-    "brand_slug": "einstoffen",
-    "is_new": true,
-    "type": "graduadas",
-    "price": 195,
-    "variant": "Havana / Nogal",
-    "placeholder": "https://placehold.co/600x480/3a2510/c8a96c?text=Einstoffen",
-    "image": "assets/img/products/einstoffen/uhrenmacher-havana-f.jpg",
-    "gallery": [
-      "assets/img/products/einstoffen/uhrenmacher-havana-f.jpg",
-      "assets/img/products/einstoffen/uhrenmacher-havana-s.jpg"
-    ],
-    "description": "La precisión no empieza en los segundos. Empieza en la mirada. La Uhrenmacher — el relojero — es redonda, serena e implacablemente exacta. Nada en ella es accidental; todo sigue un ritmo interior. Cada radio, cada proporción, cada línea tiene significado. Concentración convertida en forma: fiable, equilibrada, duradera. Quien la lleva no solo mide el tiempo. Lo percibe. Y entiende que la precisión no es cuestión de técnica, sino de temple. Acetato natural premium, trabajado y pulido a mano. Incrustaciones de nogal en las varillas. Bisagras alemanas OBE, puntas ajustables. Diseño suizo.",
-    "specs": {
-      "material": "Acetato / Nogal",
-      "calibre": "51 mm",
-      "puente": "20 mm",
-      "varilla": "142 mm",
-      "genero": "Unisex"
-    }
-  },
-  {
     "id": "einstoffen-stoiker-smoke",
     "name": "Stoiker",
     "brand": "Einstoffen",
