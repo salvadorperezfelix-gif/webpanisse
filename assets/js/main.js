@@ -281,6 +281,7 @@ if (newsletterForm) {
   const emptyEl       = document.getElementById('catalog-empty');
   const loadMoreWrap  = document.getElementById('load-more-wrap');
   const loadMoreBtn   = document.getElementById('load-more-btn');
+  const endHintEl     = document.getElementById('catalog-end-hint');
   const clearBtn      = document.getElementById('sidebar-clear-btn');
   const clearBtnEmpty = document.getElementById('clear-filters-btn');
   const sidebarToggle = document.getElementById('sidebar-toggle-btn');
@@ -431,6 +432,7 @@ if (newsletterForm) {
     if (emptyEl) emptyEl.hidden = filtered.length > 0;
     if (countEl) countEl.textContent = Math.min(state.page, filtered.length);
     if (loadMoreWrap) loadMoreWrap.hidden = filtered.length <= state.page;
+    if (endHintEl) endHintEl.hidden = !(filtered.length > 0 && filtered.length <= state.page);
   }
 
   /* ── Carga JSON y renderiza tarjetas ──────────────────── */

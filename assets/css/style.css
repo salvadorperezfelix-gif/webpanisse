@@ -2007,6 +2007,17 @@ body, body.translated-ltr, body.translated-rtl { top: 0 !important; margin-top: 
   color: var(--color-text);
 }
 
+.catalog-online-badge {
+  font-size: 0.6875rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: 3px 10px;
+  white-space: nowrap;
+}
+
 /* Filtros activos */
 .active-filters {
   display: flex;
@@ -2166,6 +2177,23 @@ body, body.translated-ltr, body.translated-rtl { top: 0 !important; margin-top: 
 .catalog-loadmore {
   text-align: center;
   padding-bottom: 80px;
+}
+
+/* Fin del catálogo online — invitación a tienda */
+.catalog-end-hint {
+  text-align: center;
+  padding: 44px 20px 64px;
+  border-top: 1px solid var(--color-border);
+  margin-top: 44px;
+}
+.catalog-end-hint__text {
+  font-size: 0.9375rem;
+  color: var(--color-muted);
+  margin-block-end: 22px;
+  line-height: 1.6;
+}
+.catalog-end-hint__text strong {
+  color: var(--color-text);
 }
 
 /* Responsivo catálogo */
