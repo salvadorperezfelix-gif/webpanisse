@@ -392,7 +392,7 @@ if (newsletterForm) {
   }
 
   /* ── Aplica filtros + orden + paginación ──────────────── */
-  function applyFilters() {
+  function applyFilters(isLoadMore) {
     const all      = [...grid.querySelectorAll('.product-card:not(.product-card--skeleton)')];
     const filtered = all.filter(c => {
       const matchType   = state.type === 'todos' || c.dataset.type === state.type;
@@ -401,23 +401,32 @@ if (newsletterForm) {
       return matchType && matchGender && matchBrand;
     });
 
-    filtered.sort((a, b) => {
-      switch (state.sort) {
-        case 'price-asc':  return Number(a.dataset.price) - Number(b.dataset.price);
-        case 'price-desc': return Number(b.dataset.price) - Number(a.dataset.price);
-        case 'name-az':    return a.dataset.name.localeCompare(b.dataset.name, 'es');
-        default:           return (b.dataset.new === 'true') - (a.dataset.new === 'true');
-      }
-    });
-
-    filtered.forEach(c => grid.appendChild(c));
-    all.forEach(c => c.classList.add('is-hidden'));
-    const toShow = filtered.slice(0, state.page);
-    toShow.forEach(c => {
-      c.classList.remove('is-hidden');
-      c.classList.remove('is-visible');
-    });
-    requestAnimationFrame(() => toShow.forEach(c => c.classList.add('is-visible')));
+    if (isLoadMore) {
+      // Solo destapa las tarjetas nuevas sin tocar las ya visibles → sin colapso ni scroll jump
+      const newCards = filtered.slice(state.page - PAGE_SIZE, state.page);
+      newCards.forEach(c => {
+        c.classList.remove('is-hidden');
+        c.classList.remove('is-visible');
+      });
+      requestAnimationFrame(() => newCards.forEach(c => c.classList.add('is-visible')));
+    } else {
+      filtered.sort((a, b) => {
+        switch (state.sort) {
+          case 'price-asc':  return Number(a.dataset.price) - Number(b.dataset.price);
+          case 'price-desc': return Number(b.dataset.price) - Number(a.dataset.price);
+          case 'name-az':    return a.dataset.name.localeCompare(b.dataset.name, 'es');
+          default:           return (b.dataset.new === 'true') - (a.dataset.new === 'true');
+        }
+      });
+      filtered.forEach(c => grid.appendChild(c));
+      all.forEach(c => c.classList.add('is-hidden'));
+      const toShow = filtered.slice(0, state.page);
+      toShow.forEach(c => {
+        c.classList.remove('is-hidden');
+        c.classList.remove('is-visible');
+      });
+      requestAnimationFrame(() => toShow.forEach(c => c.classList.add('is-visible')));
+    }
 
     if (emptyEl) emptyEl.hidden = filtered.length > 0;
     if (countEl) countEl.textContent = Math.min(state.page, filtered.length);
@@ -499,10 +508,8 @@ if (newsletterForm) {
   clearBtnEmpty?.addEventListener('click', doClear);
 
   loadMoreBtn?.addEventListener('click', () => {
-    const scrollY = window.scrollY;
     state.page += PAGE_SIZE;
-    applyFilters();
-    requestAnimationFrame(() => window.scrollTo({ top: scrollY, behavior: 'instant' }));
+    applyFilters(true);
   });
 
   sidebarToggle?.addEventListener('click', () => {
