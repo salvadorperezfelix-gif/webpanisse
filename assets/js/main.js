@@ -439,7 +439,7 @@ if (newsletterForm) {
   async function loadProducts() {
     showSkeletons(8);
     try {
-      const res      = await fetch('data/products.json?v=2');
+      const res      = await fetch('data/products.json?v=3');
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const products = await res.json();
 
@@ -715,7 +715,7 @@ async function initProductPage() {
 
 
   try {
-    const res = await fetch('./data/products.json?v=2');
+    const res = await fetch('./data/products.json?v=3');
     if (!res.ok) throw new Error('Error HTTP ' + res.status);
     const products = await res.json();
     const p = products.find(item => item.id === productId);
