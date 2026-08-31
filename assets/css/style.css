@@ -2060,6 +2060,7 @@ body, body.translated-ltr, body.translated-rtl { top: 0 !important; margin-top: 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: clamp(20px, 2.5vw, 32px);
+  overflow-anchor: none;
   padding-bottom: 64px;
 }
 

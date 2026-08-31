@@ -510,8 +510,12 @@ if (newsletterForm) {
   clearBtnEmpty?.addEventListener('click', doClear);
 
   loadMoreBtn?.addEventListener('click', () => {
+    const savedY = window.scrollY;
     state.page += PAGE_SIZE;
     applyFilters(true);
+    requestAnimationFrame(() => {
+      if (Math.abs(window.scrollY - savedY) > 40) window.scrollTo({ top: savedY, behavior: 'instant' });
+    });
   });
 
   sidebarToggle?.addEventListener('click', () => {
