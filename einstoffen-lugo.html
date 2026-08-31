@@ -1,17 +1,70 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>@font-face{font-family:'Parisienne Fallback';src:local('Comic Sans MS');size-adjust:65.43%;ascent-override:139.92%;descent-override:68.28%;line-gap-override:0%}@font-face{font-family:'Parisienne';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/parisienne-400-normal.woff2') format('woff2')}@font-face{font-family:'CG Fallback';src:local('Georgia');size-adjust:80.18%;ascent-override:115.25%;descent-override:35.80%;line-gap-override:0%}@font-face{font-family:'Lato Fallback';src:local('Arial');size-adjust:97.68%;ascent-override:82.42%;descent-override:19.96%;line-gap-override:20.48%}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:600;font-display:swap;src:url('assets/fonts/cormorant-garamond-600-italic.woff2') format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:swap;src:url('assets/fonts/cormorant-garamond-600-normal.woff2') format('woff2')}@font-face{font-family:'Lato';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/lato-400-normal.woff2') format('woff2')}*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{font-size:16px;-webkit-font-smoothing:antialiased}body{font-family:'Lato','Lato Fallback',sans-serif;font-weight:400;color:#1a1a1a;background-color:#fafaf8;overflow-x:hidden}img{display:block;max-width:100%}a{color:inherit;text-decoration:none}:root{--color-black:#0d0d0d;--color-white:#ffffff;--color-bg:#ffffff;--color-surface:#f5f5f3;--color-border:#e8e8e2;--color-text:#1a1a1a;--color-muted:#636360;--color-accent:#c7dbd6;--color-accent-dk:#8aafa9;--font-display:'Cormorant Garamond','CG Fallback',Georgia,serif;--font-body:'Lato','Lato Fallback',system-ui,sans-serif;--radius-sm:4px;--radius-md:8px;--radius-lg:16px;--shadow-sm:0 1px 4px rgba(0,0,0,.06);--shadow-md:0 4px 20px rgba(0,0,0,.08);--shadow-lg:0 12px 40px rgba(0,0,0,.12);--transition:.32s cubic-bezier(.25,.46,.45,.94);--container-max:1200px;--container-pad:clamp(20px,5vw,64px)}.container{max-width:var(--container-max);margin-inline:auto;padding-inline:var(--container-pad)}.btn{display:inline-block;font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;padding:14px 40px;border:1px solid transparent;cursor:pointer;white-space:nowrap}.btn--primary{background:var(--color-white);color:var(--color-black);border-color:var(--color-white)}.btn--ghost{display:inline-block;font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:14px 28px;border:1px solid rgba(255,255,255,.55);color:var(--color-white);background:transparent}.hero{position:relative;width:100%;height:100svh;min-height:560px;overflow:hidden;background-color:#1a1a18;background-size:cover;background-position:center}.hero__overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,.72) 0%,rgba(10,10,10,.28) 55%,rgba(10,10,10,.1) 100%);z-index:1}.hero__content{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding:0 var(--container-pad) clamp(48px,8vh,100px);max-width:calc(var(--container-max) + var(--container-pad)*2);margin-inline:auto}.hero__title{font-family:var(--font-display);font-style:italic;font-weight:600;color:var(--color-white);line-height:.88;font-size:clamp(72px,11vw,148px);margin-bottom:24px;letter-spacing:-.01em}.hero__subtitle{font-size:clamp(.9375rem,1.5vw,1.0625rem);font-weight:300;font-style:italic;color:rgba(255,255,255,.85);line-height:1.55;margin-bottom:40px;max-width:400px}.hero__actions{display:flex;gap:14px;flex-wrap:wrap}.header{position:fixed;inset-block-start:0;inset-inline:0;z-index:900;height:72px;display:flex;align-items:center;background:transparent;color:var(--color-white);transition:background var(--transition),box-shadow var(--transition),color var(--transition)}.header.is-scrolled{background:rgba(250,250,248,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(0,0,0,.07);color:var(--color-text)}.header__inner{width:100%;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:24px}.header__logo{grid-column:2;justify-self:center;padding-inline:72px;font-family:'Parisienne','Parisienne Fallback',cursive;font-size:clamp(22px,2vw,26px);color:inherit;white-space:nowrap}.header__logo em{font-style:normal;font-weight:normal}.header__nav-main{grid-column:1}.header__nav-main .header__nav-list{justify-content:flex-end}.header__nav-list{list-style:none;display:flex;align-items:center;gap:4px}.header__right{grid-column:3;display:flex;align-items:center;gap:4px}.header__nav-right{display:flex;align-items:center}.nav-link{display:flex;align-items:center;gap:5px;background:none;border:none;cursor:pointer;font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:inherit;padding:6px 10px;border-radius:var(--radius-sm);white-space:nowrap}.header__actions{display:flex;align-items:center;justify-content:flex-end;gap:4px}.header__cta-link{font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:inherit;padding:7px 14px;border:1px solid currentColor;border-radius:var(--radius-sm);white-space:nowrap;margin-inline-end:6px}.header__icon-btn{display:flex;align-items:center;justify-content:center;background:none;border:none;cursor:pointer;color:inherit;padding:8px;border-radius:var(--radius-sm)}.header__hamburger{display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;background:none;border:none;cursor:pointer;padding:8px;color:inherit;width:36px;height:36px}@media(max-width:1024px){.header__nav-main,.header__nav-right{display:none}.header__inner{grid-template-columns:auto 1fr auto}.header__hamburger{display:flex}.header__logo{grid-column:2;justify-self:center}.header__right{grid-column:3}}@media(max-width:600px){.header{height:60px}.header__logo{padding-inline:8px}}.dropdown{position:absolute;opacity:0;visibility:hidden;pointer-events:none}.mobile-menu{position:fixed;transform:translateX(100%)}.mobile-overlay{opacity:0;pointer-events:none}</style>
+  <style>@font-face{font-family:'Parisienne Fallback';src:local('Comic Sans MS');size-adjust:65.43%;ascent-override:139.92%;descent-override:68.28%;line-gap-override:0%}@font-face{font-family:'Parisienne';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/parisienne-400-normal.woff2') format('woff2')}@font-face{font-family:'CG Fallback';src:local('Georgia');size-adjust:80.18%;ascent-override:115.25%;descent-override:35.80%;line-gap-override:0%}@font-face{font-family:'Lato Fallback';src:local('Arial');size-adjust:97.68%;ascent-override:82.42%;descent-override:19.96%;line-gap-override:20.48%}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:600;font-display:swap;src:url('assets/fonts/cormorant-garamond-600-italic.woff2') format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:swap;src:url('assets/fonts/cormorant-garamond-600-normal.woff2') format('woff2')}@font-face{font-family:'Lato';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/lato-400-normal.woff2') format('woff2')}*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{font-size:16px;-webkit-font-smoothing:antialiased}body{font-family:'Lato','Lato Fallback',sans-serif;font-weight:400;color:#1a1a1a;background-color:#fafaf8;overflow-x:hidden}img{display:block;max-width:100%}a{color:inherit;text-decoration:none}:root{--color-black:#0d0d0d;--color-white:#ffffff;--color-bg:#ffffff;--color-surface:#f5f5f3;--color-border:#e8e8e2;--color-text:#1a1a1a;--color-muted:#636360;--color-accent:#c7dbd6;--color-accent-dk:#8aafa9;--font-display:'Cormorant Garamond','CG Fallback',Georgia,serif;--font-body:'Lato','Lato Fallback',system-ui,sans-serif;--radius-sm:4px;--radius-md:8px;--radius-lg:16px;--shadow-sm:0 1px 4px rgba(0,0,0,.06);--shadow-md:0 4px 20px rgba(0,0,0,.08);--shadow-lg:0 12px 40px rgba(0,0,0,.12);--transition:.32s cubic-bezier(.25,.46,.45,.94);--container-max:1200px;--container-pad:clamp(20px,5vw,64px)}.container{max-width:var(--container-max);margin-inline:auto;padding-inline:var(--container-pad)}.btn{display:inline-block;font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;padding:14px 40px;border:1px solid transparent;cursor:pointer;white-space:nowrap}.btn--primary{background:var(--color-white);color:var(--color-black);border-color:var(--color-white)}.btn--ghost{display:inline-block;font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:14px 28px;border:1px solid rgba(255,255,255,.55);color:var(--color-white);background:transparent}.header{position:fixed;inset-block-start:0;inset-inline:0;z-index:900;height:72px;display:flex;align-items:center;background:transparent;color:var(--color-white);transition:background var(--transition),box-shadow var(--transition),color var(--transition)}.header.is-scrolled{background:rgba(250,250,248,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(0,0,0,.07);color:var(--color-text)}.header__inner{width:100%;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:24px}.header__logo{grid-column:2;justify-self:center;padding-inline:72px;font-family:'Parisienne','Parisienne Fallback',cursive;font-size:clamp(22px,2vw,26px);color:inherit;white-space:nowrap}.header__logo em{font-style:normal;font-weight:normal}.header__nav-main{grid-column:1}.header__nav-main .header__nav-list{justify-content:flex-end}.header__nav-list{list-style:none;display:flex;align-items:center;gap:4px}.header__right{grid-column:3;display:flex;align-items:center;gap:4px}.header__nav-right{display:flex;align-items:center}.nav-link{display:flex;align-items:center;gap:5px;background:none;border:none;cursor:pointer;font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:inherit;padding:6px 10px;border-radius:var(--radius-sm);white-space:nowrap}.header__actions{display:flex;align-items:center;justify-content:flex-end;gap:4px}.header__cta-link{font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:inherit;padding:7px 14px;border:1px solid currentColor;border-radius:var(--radius-sm);white-space:nowrap;margin-inline-end:6px}.header__icon-btn{display:flex;align-items:center;justify-content:center;background:none;border:none;cursor:pointer;color:inherit;padding:8px;border-radius:var(--radius-sm)}.header__hamburger{display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;background:none;border:none;cursor:pointer;padding:8px;color:inherit;width:36px;height:36px}@media(max-width:1024px){.header__nav-main,.header__nav-right{display:none}.header__inner{grid-template-columns:auto 1fr auto}.header__hamburger{display:flex}.header__logo{grid-column:2;justify-self:center}.header__right{grid-column:3}}@media(max-width:600px){.header{height:60px}.header__logo{padding-inline:8px}}.dropdown{position:absolute;opacity:0;visibility:hidden;pointer-events:none}.mobile-menu{position:fixed;transform:translateX(100%)}.mobile-overlay{opacity:0;pointer-events:none}
+
+  /* ── Ticker ── */
+  .announcement-bar{background:#1a1a1a;color:#fff;height:40px;overflow:hidden;display:flex;align-items:center}
+  .announcement-bar__track{display:inline-flex;align-items:center;white-space:nowrap;animation:ticker-scroll 42s linear infinite;gap:0;font-size:.5625rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+  .announcement-bar:hover .announcement-bar__track{animation-play-state:paused}
+  .announcement-bar__item{padding-inline:28px}
+  .announcement-bar__sep{color:rgba(199,219,214,.7);font-size:.5rem}
+  @keyframes ticker-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  /* ── Brand Hero ── */
+  .brand-hero{position:relative;width:100%;height:100svh;min-height:560px;overflow:hidden;background-color:#111;background-image:url('assets/img/products/einstoffen/einstoffen-dauphine-black-1.jpg');background-size:cover;background-position:center}
+  .brand-hero__overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,.8) 0%,rgba(10,10,10,.4) 55%,rgba(10,10,10,.15) 100%);z-index:1}
+  .brand-hero__content{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding:0 var(--container-pad) clamp(48px,8vh,100px);max-width:calc(var(--container-max) + var(--container-pad)*2);margin-inline:auto}
+  .brand-hero__eyebrow{display:block;font-size:.5625rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:rgba(255,255,255,.75);margin-bottom:20px}
+  .brand-hero__title{font-family:var(--font-display);font-style:italic;font-weight:600;color:#fff;line-height:.88;font-size:clamp(72px,11vw,148px);margin-bottom:24px;letter-spacing:-.01em}
+  .brand-hero__subtitle{font-size:clamp(.9375rem,1.5vw,1.0625rem);font-weight:300;font-style:italic;color:rgba(255,255,255,.85);line-height:1.55;margin-bottom:40px;max-width:440px}
+  .brand-hero__actions{display:flex;gap:14px;flex-wrap:wrap}
+
+  /* ── Editorial 2 col ── */
+  .brand-editorial{display:grid;grid-template-columns:1fr 1fr;min-height:480px;border-top:1px solid var(--color-border)}
+  .brand-editorial__content{display:flex;flex-direction:column;justify-content:center;padding:clamp(40px,6vw,80px);background:var(--color-surface)}
+  .brand-editorial__eyebrow{font-size:.5625rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--color-muted);margin-bottom:18px;display:block}
+  .brand-editorial__title{font-family:var(--font-display);font-style:italic;font-size:clamp(32px,4.5vw,52px);font-weight:600;color:var(--color-text);line-height:1.08;margin-bottom:28px}
+  .brand-editorial__body{font-size:15px;color:var(--color-muted);line-height:1.78}
+  .brand-editorial__body p+p{margin-top:16px}
+  .brand-editorial__body em{font-style:italic;color:var(--color-text)}
+  .brand-editorial__badge{display:inline-block;margin-top:28px;font-size:.5rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--color-muted)}
+  .brand-editorial__img-col{overflow:hidden;background:#1c1c1c;position:relative;min-height:400px}
+  .brand-editorial__img-col img{width:100%;height:100%;object-fit:cover;display:block}
+  @media(max-width:768px){.brand-editorial{grid-template-columns:1fr}.brand-editorial__img-col{min-height:260px;order:-1}}
+
+  /* ── Catalog ── */
+  .brand-catalog{padding:72px 0 80px;background:#fff;border-top:1px solid var(--color-border)}
+  .brand-catalog__header{text-align:center;margin-bottom:36px}
+  .brand-catalog__eyebrow{display:block;font-size:.5625rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--color-muted);margin-bottom:12px}
+  .brand-catalog__title{font-family:var(--font-display);font-style:italic;font-size:clamp(28px,4vw,44px);font-weight:600;color:var(--color-text);margin:0}
+  .brand-catalog__filters{display:flex;gap:8px;justify-content:center;margin-bottom:40px;flex-wrap:wrap}
+  .brand-catalog__filter-btn{font-family:var(--font-body);font-size:.5625rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:10px 22px;border:1px solid var(--color-border);background:transparent;color:var(--color-muted);cursor:pointer;transition:all var(--transition);border-radius:var(--radius-sm)}
+  .brand-catalog__filter-btn.is-active,.brand-catalog__filter-btn:hover{background:var(--color-text);color:#fff;border-color:var(--color-text)}
+  .brand-catalog__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+  .brand-catalog__empty{text-align:center;padding:60px 20px;color:var(--color-muted);font-size:15px;display:none}
+  .brand-catalog__empty.is-visible{display:block}
+  .brand-catalog__cta{text-align:center;margin-top:48px}
+  .brand-catalog__cta a{font-family:var(--font-body);font-size:.5625rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--color-text);border-bottom:1px solid var(--color-text);padding-bottom:2px;transition:color var(--transition),border-color var(--transition)}
+  .brand-catalog__cta a:hover{color:var(--color-muted);border-color:var(--color-muted)}
+  @media(max-width:1024px){.brand-catalog__grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:480px){.brand-catalog__grid{grid-template-columns:1fr}}
+
+  /* ── Dark CTA ── */
+  .brand-cta{background:#1a1a1a;color:#fff;padding:80px 0;text-align:center}
+  .brand-cta__title{font-family:var(--font-display);font-style:italic;font-size:clamp(28px,4vw,48px);font-weight:600;margin-bottom:18px}
+  .brand-cta__desc{font-size:15px;color:rgba(255,255,255,.72);line-height:1.7;max-width:480px;margin:0 auto 36px}
+  </style>
   <link rel="preload" href="assets/css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="assets/css/style.min.css"></noscript>
   <link rel="preload" href="assets/fonts/cormorant-garamond-600-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/cormorant-garamond-600-italic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/lato-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="assets/fonts/parisienne-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/parisienne-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+
   <!-- Meta Pixel Code -->
   <script>
     !function(f,b,e,v,n,t,s)
@@ -20,8 +73,7 @@
     if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
     n.queue=[];window.addEventListener('load',function(){t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s);},{once:!0});}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    
-    // Comprobar consentimiento antes de iniciar
+
     var savedConsent = localStorage.getItem('cookieConsent');
     var marketingGranted = false;
     if (savedConsent) {
@@ -30,13 +82,13 @@
         marketingGranted = !!consentObj.marketing;
       } catch (e) {}
     }
-    
+
     if (marketingGranted) {
       fbq('consent', 'grant');
     } else {
       fbq('consent', 'revoke');
     }
-    
+
     fbq('init', '1706566507036901');
     fbq('track', 'PageView');
   </script>
@@ -44,12 +96,12 @@
     src="https://www.facebook.com/tr?id=1706566507036901&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Meta Pixel Code -->
+
   <!-- Google Consent Mode v2 Default State -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    
-    // Comprobar si ya existe consentimiento guardado
+
     var savedConsent = localStorage.getItem('cookieConsent');
     if (savedConsent) {
       try {
@@ -77,21 +129,21 @@
       });
     }
   </script>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZPWT5ZT4X4"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'AW-18003465740');
     gtag('config', 'G-ZPWT5ZT4X4');
   </script>
 
   <!-- SEO -->
-  <title>Servicios Ópticos en Lugo · Revisiones y Graduaciones | Panisse</title>
-  <meta name="description" content="Revisiones visuales, adaptación de lentes de contacto y graduaciones en Lugo. Óptico-optometrista licenciado con 10 años de experiencia." />
-  <meta name="keywords" content="óptica Lugo, gafas Lugo, gafas graduadas Lugo, gafas de sol Lugo, óptico Lugo, revisión vista Lugo, optometrista Lugo, gafas de diseño Lugo, óptica boutique Lugo, Panisse Óptica" />
+  <title>Einstoffen en Lugo — Gafas de Diseño Alemán | Panisse Óptica</title>
+  <meta name="description" content="Einstoffen en Lugo. Gafas de diseño alemán en acetato grueso y metal, con carácter berlinés. Distribuidor en Panisse Óptica, Rúa do Teatro 2, Lugo." />
+  <meta name="keywords" content="Einstoffen Lugo, gafas diseño alemán Lugo, gafas Berlín Lugo, acetato grueso Lugo, óptica boutique Lugo, gafas independientes Lugo, Panisse Óptica, Einstoffen distribuidor Lugo" />
   <meta name="author" content="Panisse Óptica" />
   <meta name="robots" content="index, follow" />
   <meta name="geo.region" content="ES-LU" />
@@ -100,11 +152,11 @@
   <meta name="ICBM" content="43.0097, -7.5563" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Servicios Ópticos en Lugo · Revisiones y Graduaciones | Panisse" />
-  <meta property="og:description" content="Revisiones visuales, adaptación de lentes de contacto y graduaciones en Lugo. Óptico-optometrista licenciado con 10 años de experiencia." />
+  <meta property="og:title" content="Einstoffen en Lugo — Gafas de Diseño Alemán | Panisse Óptica" />
+  <meta property="og:description" content="Einstoffen en Lugo. Gafas de diseño alemán en acetato grueso y metal, con carácter berlinés. Distribuidor en Panisse Óptica, Rúa do Teatro 2, Lugo." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://panisse.es/servicios.html" />
-  <meta property="og:image" content="https://panisse.es/assets/img/nosotros/tienda.webp" />
+  <meta property="og:url" content="https://panisse.es/einstoffen-lugo.html" />
+  <meta property="og:image" content="https://panisse.es/assets/img/products/einstoffen/einstoffen-dauphine-black-1.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="es_ES" />
@@ -112,30 +164,27 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Servicios Ópticos en Lugo · Revisiones y Graduaciones | Panisse" />
-  <meta name="twitter:description" content="Revisiones visuales, adaptación de lentes de contacto y graduaciones en Lugo. Óptico-optometrista licenciado con 10 años de experiencia." />
-  <meta name="twitter:image" content="https://panisse.es/assets/img/nosotros/tienda.webp" />
+  <meta name="twitter:title" content="Einstoffen en Lugo — Gafas de Diseño Alemán | Panisse Óptica" />
+  <meta name="twitter:description" content="Einstoffen en Lugo. Gafas de diseño alemán en acetato grueso y metal, con carácter berlinés. Distribuidor en Panisse Óptica, Rúa do Teatro 2, Lugo." />
+  <meta name="twitter:image" content="https://panisse.es/assets/img/products/einstoffen/einstoffen-dauphine-black-1.jpg" />
 
   <!-- Canonical -->
-  <link rel="canonical" href="https://panisse.es/servicios.html" />
+  <link rel="canonical" href="https://panisse.es/einstoffen-lugo.html" />
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">[
   {
     "@context": "https://schema.org",
-    "@type": [
-      "LocalBusiness",
-      "Optician"
-    ],
+    "@type": ["LocalBusiness", "Optician"],
     "@id": "https://panisse.es/#business",
     "name": "Panisse Óptica",
     "alternateName": "Panisse Optica Lugo",
-    "description": "Óptica boutique en el centro de Lugo. Gafas graduadas, gafas de sol, revisiones visuales y marcas exclusivas. Óptico-optometrista y farmacéutico licenciado.",
+    "description": "Óptica boutique en el centro de Lugo. Distribuidor de Einstoffen en Lugo. Gafas de diseño alemán en acetato grueso y metal con carácter berlinés.",
     "url": "https://panisse.es",
     "telephone": "+34982301193",
     "email": "info@panisse.es",
     "priceRange": "EUR",
-    "image": "https://panisse.es/assets/img/nosotros/tienda.webp",
+    "image": "https://panisse.es/assets/img/products/einstoffen/einstoffen-dauphine-black-1.jpg",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Rúa do Teatro, Bajo 2",
@@ -153,33 +202,19 @@
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
         "opens": "10:00",
         "closes": "13:30"
       },
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
         "opens": "16:30",
         "closes": "20:30"
       },
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Saturday"
-        ],
+        "dayOfWeek": ["Saturday"],
         "opens": "10:30",
         "closes": "13:30"
       }
@@ -203,33 +238,39 @@
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Servicios"
+        "name": "Marcas",
+        "item": "https://panisse.es/catalogo.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Einstoffen"
       }
     ]
   }
 ]</script>
+
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
   <link rel="icon" href="favicon-16.png" type="image/png" sizes="16x16">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <!-- Microsoft Clarity -->
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "xx267v5tt4");
-    </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xx267v5tt4");
+  </script>
 </head>
-
 <body class="interior-page">
 
   <!-- HEADER -->
   <header class="header" id="site-header">
     <div class="header__inner container">
 
-      <!-- ── Navegación principal (izquierda) ── -->
+      <!-- Navegación principal (izquierda) -->
       <nav class="header__nav-main" aria-label="Categorías principales">
         <ul class="header__nav-list">
 
@@ -266,7 +307,6 @@
               <a href="catalogo.html?tipo=graduadas&genero=hombre" class="dropdown__link" role="menuitem">Hombre</a>
               <a href="catalogo.html?tipo=graduadas&genero=mujer" class="dropdown__link" role="menuitem">Mujer</a>
               <a href="catalogo.html?tipo=graduadas&genero=unisex" class="dropdown__link" role="menuitem">Unisex</a>
-
             </div>
           </li>
 
@@ -279,7 +319,6 @@
               <a href="catalogo.html?tipo=sol&genero=hombre" class="dropdown__link" role="menuitem">Hombre</a>
               <a href="catalogo.html?tipo=sol&genero=mujer" class="dropdown__link" role="menuitem">Mujer</a>
               <a href="catalogo.html?tipo=sol&genero=unisex" class="dropdown__link" role="menuitem">Sol Unisex</a>
-
             </div>
           </li>
 
@@ -304,12 +343,12 @@
         </ul>
       </nav>
 
-      <!-- ── Logo (centrado) ── -->
+      <!-- Logo (centrado) -->
       <a href="index.html" class="header__logo" aria-label="Panisse Óptica – inicio">
         Panisse <em>Óptica</em>
       </a>
 
-      <!-- ── Acciones (derecha) ── -->
+      <!-- Acciones (derecha) -->
       <div class="header__right">
         <nav class="header__nav-right" aria-label="Menú secundario">
           <ul class="header__nav-list">
@@ -345,47 +384,45 @@
           </ul>
         </nav>
         <div class="header__actions">
+          <a href="contacto.html" class="header__cta-link">Cita Previa</a>
+          <button id="lang-toggle-btn" class="lang-flag-btn"
+                  onclick="panisseLangToggle()"
+                  aria-label="Switch language / Cambiar idioma">&#x1F1EC;&#x1F1E7;</button>
 
-        <a href="contacto.html" class="header__cta-link">Cita Previa</a>
-        <button id="lang-toggle-btn" class="lang-flag-btn"
-                onclick="panisseLangToggle()"
-                aria-label="Switch language / Cambiar idioma">&#x1F1EC;&#x1F1E7;</button>
+          <!-- TIENDA ONLINE — quitar 'hidden' cuando se active la venta online -->
+          <div class="header__ecommerce-actions" hidden>
+            <button class="header__icon-btn" aria-label="Mi cuenta">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </button>
+            <button class="header__icon-btn header__cart-btn" aria-label="Carrito de la compra, 0 artículos">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                <line x1="3" y1="6" x2="21" y2="6"/>
+                <path d="M16 10a4 4 0 0 1-8 0"/>
+              </svg>
+              <span class="header__cart-count" aria-hidden="true">0</span>
+            </button>
+          </div>
 
-        <!-- TIENDA ONLINE — quitar 'hidden' cuando se active la venta online -->
-        <div class="header__ecommerce-actions" hidden>
-          <button class="header__icon-btn" aria-label="Mi cuenta">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                 stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-              <circle cx="12" cy="7" r="4"/>
-            </svg>
+          <!-- Hamburger (solo móvil) -->
+          <button class="header__hamburger" id="hamburger-btn"
+                  aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
-          <button class="header__icon-btn header__cart-btn" aria-label="Carrito de la compra, 0 artículos">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                 stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
-              <line x1="3" y1="6" x2="21" y2="6"/>
-              <path d="M16 10a4 4 0 0 1-8 0"/>
-            </svg>
-            <span class="header__cart-count" aria-hidden="true">0</span>
-          </button>
-        </div>
-
-        <!-- Hamburger (solo móvil) -->
-        <button class="header__hamburger" id="hamburger-btn"
-                aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-      </div><!-- /.header__actions -->
+        </div><!-- /.header__actions -->
       </div><!-- /.header__right -->
 
     </div><!-- /.header__inner -->
   </header>
 
-  <!-- MENÚ MÓVIL (abreviado) -->
+  <!-- MENÚ MÓVIL -->
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Menú principal">
     <div class="mobile-menu__header">
       <a href="index.html" class="mobile-menu__logo">Panisse <em>Óptica</em></a>
@@ -414,8 +451,8 @@
             <li><a href="catalogo.html?marca=ray-ban" class="mobile-sublink">Ray-Ban</a></li>
             <li><a href="catalogo.html?marca=polaroid" class="mobile-sublink">Polaroid</a></li>
             <li><a href="catalogo.html?marca=panisse-kids" class="mobile-sublink">Panisse Kids</a></li>
-            <li><a href="catalogo.html?marca=mr-boho" class="mobile-sublink">Mr. Boho</a>
-            <li><a href="einstoffen-lugo.html" class="mobile-sublink">Einstoffen</a></li></li>
+            <li><a href="catalogo.html?marca=mr-boho" class="mobile-sublink">Mr. Boho</a></li>
+            <li><a href="einstoffen-lugo.html" class="mobile-sublink">Einstoffen</a></li>
             <li><a href="catalogo.html" class="mobile-sublink mobile-sublink--all">Ver todas las marcas →</a></li>
           </ul>
         </li>
@@ -428,7 +465,6 @@
             <li><a href="catalogo.html?tipo=graduadas&genero=hombre" class="mobile-sublink">Hombre</a></li>
             <li><a href="catalogo.html?tipo=graduadas&genero=mujer" class="mobile-sublink">Mujer</a></li>
             <li><a href="catalogo.html?tipo=graduadas&genero=unisex" class="mobile-sublink">Unisex</a></li>
-            
           </ul>
         </li>
 
@@ -440,7 +476,6 @@
             <li><a href="catalogo.html?tipo=sol&genero=hombre" class="mobile-sublink">Hombre</a></li>
             <li><a href="catalogo.html?tipo=sol&genero=mujer" class="mobile-sublink">Mujer</a></li>
             <li><a href="catalogo.html?tipo=sol&genero=unisex" class="mobile-sublink">Sol Unisex</a></li>
-            
           </ul>
         </li>
 
@@ -513,181 +548,108 @@
   <!-- MAIN -->
   <main id="main-content">
 
-    <!-- Cabecera de página -->
-    <div class="page-hero page-hero--dark">
-      <div class="container">
-        <nav class="breadcrumb" aria-label="Ruta de navegación">
-          <a href="index.html" class="breadcrumb__link">Inicio</a>
-          <span class="breadcrumb__sep" aria-hidden="true">›</span>
-          <span class="breadcrumb__current" aria-current="page">Servicios</span>
-        </nav>
-        <h1 class="page-hero__title">Salud Visual<br><em>Personalizada</em></h1>
-        <p class="page-hero__desc">Combinamos tecnología de primer nivel con un trato cercano y sin prisas.</p>
+    <!-- 1. HERO -->
+    <section class="brand-hero" aria-label="Einstoffen — gafas de diseño alemán en Lugo">
+      <div class="brand-hero__overlay" aria-hidden="true"></div>
+      <div class="brand-hero__content">
+        <span class="brand-hero__eyebrow">Berlín · Diseño independiente · Acetato y metal</span>
+        <h1 class="brand-hero__title"><em>Einstoffen</em></h1>
+        <p class="brand-hero__subtitle">Diseño alemán sin concesiones. En Panisse Óptica, Lugo.</p>
+        <div class="brand-hero__actions">
+          <a href="#catalogo" class="btn btn--primary">Ver la colección</a>
+          <a href="contacto.html" class="btn btn--ghost">Pedir cita</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. TICKER -->
+    <div class="announcement-bar" aria-hidden="true">
+      <div class="announcement-bar__track">
+        <span class="announcement-bar__item">Diseño alemán</span>
+        <span class="announcement-bar__sep">·</span>
+        <span class="announcement-bar__item">Berlín</span>
+        <span class="announcement-bar__sep">·</span>
+        <span class="announcement-bar__item">Acetato grueso de calidad</span>
+        <span class="announcement-bar__sep">·</span>
+        <span class="announcement-bar__item">Bisagras de barril</span>
+        <span class="announcement-bar__sep">·</span>
+        <span class="announcement-bar__item">Sin logo visible</span>
+        <span class="announcement-bar__sep">·</span>
+        <span class="announcement-bar__item">Carácter propio</span>
+        <span class="announcement-bar__sep">·</span>
+        <span class="announcement-bar__item">Solo en Panisse Óptica</span>
+        <span class="announcement-bar__sep">·</span>
+        <!-- duplicado para loop continuo -->
+        <span class="announcement-bar__item">Diseño alemán</span>
+        <span class="announcement-bar__sep">·</span>
+        <span class="announcement-bar__item">Berlín</span>
+        <span class="announcement-bar__sep">·</span>
+        <span class="announcement-bar__item">Acetato grueso de calidad</span>
+        <span class="announcement-bar__sep">·</span>
+        <span class="announcement-bar__item">Bisagras de barril</span>
+        <span class="announcement-bar__sep">·</span>
+        <span class="announcement-bar__item">Sin logo visible</span>
+        <span class="announcement-bar__sep">·</span>
+        <span class="announcement-bar__item">Carácter propio</span>
+        <span class="announcement-bar__sep">·</span>
+        <span class="announcement-bar__item">Solo en Panisse Óptica</span>
+        <span class="announcement-bar__sep">·</span>
       </div>
     </div>
 
-    <!-- Intro + índice de servicios -->
-    <section class="servicios-intro">
-      <div class="container servicios-intro__inner">
-        <div class="servicios-intro__text">
-          <p>En Panisse Óptica cada visita empieza con una conversación. Queremos entender cómo usas tu vista, cuál es tu estilo de vida y qué te preocupa. Solo así podemos ofrecerte la solución que realmente necesitas.</p>
-          <p>Nuestro equipo de ópticos-optometristas cuenta con formación continua y las certificaciones más exigentes del sector.</p>
-          <a href="contacto.html#cita" class="btn btn--secondary">Pedir cita →</a>
+    <!-- 3. EDITORIAL -->
+    <section class="brand-editorial" aria-label="La marca Einstoffen">
+      <div class="brand-editorial__content">
+        <span class="brand-editorial__eyebrow">La marca</span>
+        <h2 class="brand-editorial__title">Diseño que no necesita presentación</h2>
+        <div class="brand-editorial__body">
+          <p>Einstoffen nació en Berlín con una premisa clara: que una montura no necesita un logo visible para tener personalidad. Sus piezas hablan por sí mismas — acetato grueso, bisagras de barril, formas que beben del constructivismo centroeuropeo.</p>
+          <p>El nombre lo dice todo: <em>Einstoffen</em> en alemán evoca la idea del material único, la pieza que no necesita adornos. Cada colección tiene más en común con el diseño industrial que con la moda — y eso es exactamente lo que la hace durar.</p>
+          <p>En Panisse llevamos Einstoffen porque comparte nuestra convicción: que las cosas bien hechas no necesitan justificarse. Una montura para quien sabe lo que busca y no necesita que nadie más lo sepa.</p>
         </div>
-        <nav class="servicios-nav" aria-label="Índice de servicios">
-          <ul>
-            <li><a href="#zeiss">Centro ZEISS Vision Expert</a></li>
-            <li><a href="#vista-cansada">Vista Cansada</a></li>
-            <li><a href="#miopia">Miopía en Niños</a></li>
-            <li><a href="#contacto-lentes">Lentes de Contacto</a></li>
-            <li><a href="#fatiga">Fatiga Visual</a></li>
-            <li><a href="#glaucoma">Prevención Glaucoma</a></li>
-            <li><a href="#instrumentos">Instrumentos Ópticos</a></li>
-          </ul>
-        </nav>
+        <span class="brand-editorial__badge">· Diseño independiente de Berlín · Panisse Óptica, Lugo</span>
+      </div>
+      <div class="brand-editorial__img-col" aria-hidden="true">
+        <img src="assets/img/products/einstoffen/einstoffen-dauphine-black-2.jpg"
+             alt="Montura Einstoffen — diseño alemán en acetato grueso"
+             loading="lazy" />
       </div>
     </section>
 
-    <!-- ── Servicio: Lentes ZEISS ── -->
-    <section class="servicio-section" id="zeiss">
-      <div class="servicio-section__inner container">
-        <div class="servicio-section__img-col">
-          <div class="servicio-section__img-wrap">
-            <img src="assets/img/brands/zeiss-historia.jpg" alt="Fábrica Carl Zeiss Jena, siglo XX" loading="lazy"
-                 onerror="this.src='https://placehold.co/680x540/1a2a3a/c7dbd6?text=ZEISS'"/>
-          </div>
-        </div>
-        <div class="servicio-section__content">
-          <span class="servicio-section__num">01</span>
-          <h2 class="servicio-section__title">Centro ZEISS<br><em>Vision Expert</em></h2>
-          <p>En 1846, Carl Zeiss abrió su taller de precisión en Jena. Veinte años después, el físico Ernst Abbe transformó para siempre la fabricación de lentes al aplicar por primera vez el método científico a la óptica — poniendo fin a la era del ensayo y el error. Esa obsesión por la precisión lleva 175 años siendo la columna vertebral de cada lente ZEISS.</p>
-          <p>En Panisse Óptica trabajamos con lentes ZEISS porque creemos que la calidad de la lente es tan importante como la montura. No basta con ver bien: hay que ver con nitidez, confort y sin fatiga durante todo el día.</p>
-          <ul class="servicio-section__list">
-            <li>Lentes progresivas ZEISS SmartLife e Individual 2</li>
-            <li>Lentes ZEISS ClearMind para máxima claridad visual</li>
-            <li>Tratamientos DuraVision: antirreflejante, antisuciedad y UV</li>
-            <li>Asesoramiento personalizado según tu estilo de vida</li>
-          </ul>
-          <a href="lentes-zeiss-lugo.html" class="btn btn--outline">Ver gama completa ZEISS</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── Servicio: Vista Cansada ── -->
-    <section class="servicio-section servicio-section--alt" id="vista-cansada">
-      <div class="servicio-section__inner container">
-        <div class="servicio-section__content">
-          <span class="servicio-section__num">02</span>
-          <h2 class="servicio-section__title">Vista<br><em>Cansada</em></h2>
-          <p>La presbicia afecta a más del 90% de las personas mayores de 45 años. Si tienes que alejar los textos o notas que te fuerzan los ojos de cerca, es el momento de actuar.</p>
-          <p>Ofrecemos una amplia gama de soluciones: lentes progresivas de última generación, lentes de oficina, bifocales y diseños especializados para trabajo con pantallas.</p>
-          <ul class="servicio-section__list">
-            <li>Lentes progresivas premium ZEISS SmartLife y DriveSafe</li>
-            <li>Diseños específicos para cada estilo de vida</li>
-            <li>Período de adaptación garantizado</li>
-            <li>Asesoramiento personalizado sin presión</li>
-          </ul>
-          <a href="contacto.html#cita" class="btn btn--outline">Reservar visita</a>
-        </div>
-        <div class="servicio-section__img-col">
-          <div class="servicio-section__img-wrap">
-            <img src="assets/img/servicios/vista-cansada.jpg" alt="Fatiga visual y vista cansada" loading="lazy"
-                 onerror="this.src='https://placehold.co/680x540/2a1a3a/dbd6c7?text=Vista+Cansada'"/>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── Servicio: Miopía en Niños ── -->
-    <section class="servicio-section" id="miopia">
-      <div class="servicio-section__inner container">
-        <div class="servicio-section__img-col">
-          <div class="servicio-section__img-wrap">
-            <img src="assets/img/servicios/miopia.jpg" alt="Control de miopía en niños" loading="lazy"/>
-          </div>
-        </div>
-        <div class="servicio-section__content">
-          <span class="servicio-section__num">03</span>
-          <h2 class="servicio-section__title">Miopía<br><em>en Niños</em></h2>
-          <p>La miopía infantil está creciendo exponencialmente. La buena noticia es que existen tratamientos eficaces para ralentizar su progresión y proteger la visión futura de tu hijo o hija.</p>
-          <p>Cuanto antes se detecte y se gestione, menor será la graduación final. En Panisse Óptica hacemos un seguimiento personalizado de cada caso, con revisiones periódicas y las soluciones ópticas más adecuadas para cada niño.</p>
-          <ul class="servicio-section__list">
-            <li>Diagnóstico precoz con autorefractómetro pediátrico</li>
-            <li>Gafas MiyoSmart con tecnología DIMS</li>
-            <li>Lentes de contacto desenfocadoras para casos indicados</li>
-            <li>Seguimiento cada 6 meses incluido</li>
-          </ul>
-          <a href="contacto.html#cita" class="btn btn--outline">Consultar sin compromiso</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── Servicio: Lentes de Contacto ── -->
-    <section class="servicio-section servicio-section--alt" id="contacto-lentes">
-      <div class="servicio-section__inner container">
-        <div class="servicio-section__content">
-          <span class="servicio-section__num">04</span>
-          <h2 class="servicio-section__title">Lentes de<br><em>Contacto</em></h2>
-          <p>Adaptamos todo tipo de lentes de contacto: blandas diarias y mensuales, lentes rígidas permeables a los gases, lentes tóricas para astigmatismo y lentes multifocales para presbicia.</p>
-          <p>La primera adaptación incluye un período de prueba, instrucciones de manejo y revisión de control sin coste adicional.</p>
-          <ul class="servicio-section__list">
-            <li>Adaptación de lentes blandas, rígidas y esclerales</li>
-            <li>Lentes para ojo seco severo</li>
-            <li>Lentes de colores y estéticas certificadas</li>
-          </ul>
-          <a href="contacto.html#cita" class="btn btn--outline">Reservar adaptación</a>
-        </div>
-        <div class="servicio-section__img-col">
-          <div class="servicio-section__img-wrap">
-            <img src="assets/img/servicios/lentes-contacto.jpg" alt="Adaptación de lentes de contacto" loading="lazy"/>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── Servicios adicionales (tarjetas) ── -->
-    <section class="servicios-extra">
+    <!-- 4. CATÁLOGO EMBEBIDO -->
+    <section class="brand-catalog" id="catalogo" aria-label="Colección Einstoffen en Panisse Óptica">
       <div class="container">
-        <header class="section-header">
-          <p class="section-header__label">Más servicios</p>
-          <h2 class="section-header__title">También te cuidamos</h2>
+        <header class="brand-catalog__header">
+          <span class="brand-catalog__eyebrow">La colección completa</span>
+          <h2 class="brand-catalog__title">Einstoffen en Panisse</h2>
         </header>
-        <div class="servicios-extra__grid">
 
-          <div class="servicio-extra-card" id="fatiga">
-            <div class="servicio-extra-card__num">05</div>
-            <h3 class="servicio-extra-card__title">Fatiga Visual</h3>
-            <p>Evaluación integral del sistema visual binocular: convergencia, acomodación, motilidad ocular. Terapia visual para síntomas de cansancio, dolor de cabeza y visión doble.</p>
-            <a href="contacto.html#cita" class="servicio-extra-card__link">Pedir cita →</a>
-          </div>
+        <div class="brand-catalog__filters" role="group" aria-label="Filtrar por tipo">
+          <button class="brand-catalog__filter-btn is-active" data-filter="todos" aria-pressed="true">Todo</button>
+          <button class="brand-catalog__filter-btn" data-filter="sol" aria-pressed="false">Sol</button>
+          <button class="brand-catalog__filter-btn" data-filter="graduadas" aria-pressed="false">Graduadas</button>
+        </div>
 
-          <div class="servicio-extra-card" id="glaucoma">
-            <div class="servicio-extra-card__num">06</div>
-            <h3 class="servicio-extra-card__title">Prevención Glaucoma</h3>
-            <p>Medición de la presión intraocular y análisis del fondo de ojo con cámara no-midriática. Detección precoz de patologías silenciosas que pueden comprometer la visión.</p>
-            <a href="contacto.html#cita" class="servicio-extra-card__link">Pedir cita →</a>
-          </div>
+        <div class="brand-catalog__grid" id="einstoffen-catalog-grid" role="list" aria-label="Productos Einstoffen">
+          <!-- Se carga vía JS -->
+        </div>
+        <p class="brand-catalog__empty" id="einstoffen-catalog-empty" aria-live="polite">
+          No hay modelos disponibles con este filtro. Prueba con otra categoría o
+          <a href="einstoffen-lugo.html">visita el catálogo completo</a>.
+        </p>
 
-          <div class="servicio-extra-card" id="instrumentos">
-            <div class="servicio-extra-card__num">07</div>
-            <h3 class="servicio-extra-card__title">Instrumentos Ópticos</h3>
-            <p>Selección de prismáticos, lupas de lectura, telescopios y ayudas visuales para baja visión. Asesoramiento experto para astronomía, naturaleza y uso profesional.</p>
-            <a href="contacto.html#cita" class="servicio-extra-card__link">Consultar →</a>
-          </div>
-
+        <div class="brand-catalog__cta">
+          <a href="einstoffen-lugo.html">Ver catálogo completo →</a>
         </div>
       </div>
     </section>
 
-    <!-- CTA Final -->
-    <section class="servicios-cta">
-      <div class="container servicios-cta__inner">
-        <h2 class="servicios-cta__title">¿No sabes qué<br><em>servicio necesitas?</em></h2>
-        <p class="servicios-cta__desc">Llámanos o pide cita y te orientamos sin ningún compromiso. Tu salud visual es lo primero.</p>
-        <div class="servicios-cta__actions">
-          <a href="contacto.html#cita" class="btn btn--primary">Pedir cita previa</a>
-          <a href="tel:+34982301193" class="btn btn--outline servicios-cta__phone">982 30 11 93</a>
-        </div>
+    <!-- 5. CTA FINAL -->
+    <section class="brand-cta" aria-label="Pedir cita en Panisse Óptica">
+      <div class="container">
+        <h2 class="brand-cta__title">¿Quieres verlas en persona?</h2>
+        <p class="brand-cta__desc">Sin prisas. Sin colas. Solo tú, las gafas y la persona adecuada para ayudarte a elegir.</p>
+        <a href="contacto.html" class="btn btn--primary">Pedir cita previa</a>
       </div>
     </section>
 
@@ -697,7 +659,6 @@
   <footer class="footer" aria-label="Pie de página">
     <div class="footer__inner container">
 
-      <!-- Col 1: Logo + Misión -->
       <div class="footer__col footer__col--brand">
         <a href="index.html" class="footer__logo" aria-label="Panisse Óptica — inicio">
           Panisse <em>Óptica</em>
@@ -718,7 +679,6 @@
         </div>
       </div>
 
-      <!-- Col 2: Enlaces rápidos -->
       <nav class="footer__col footer__col--links" aria-label="Navegación del footer">
         <h3 class="footer__heading">Explorar</h3>
         <ul class="footer__list">
@@ -729,7 +689,7 @@
           <li><a href="contacto.html" class="footer__link">Cita Previa</a></li>
           <li><a href="blog.html" class="footer__link">Magazine</a></li>
         </ul>
-        <h3 class="footer__heading" style="margin-top: 28px;">Información</h3>
+        <h3 class="footer__heading" style="margin-top:28px;">Información</h3>
         <ul class="footer__list">
           <li><a href="nosotros.html" class="footer__link">Sobre Nosotros</a></li>
           <li><a href="aviso-legal.html" class="footer__link">Aviso Legal</a></li>
@@ -738,7 +698,6 @@
         </ul>
       </nav>
 
-      <!-- Col 3: Nuestra Tienda -->
       <div class="footer__col footer__col--stores">
         <h3 class="footer__heading">Nuestra Tienda</h3>
         <div class="footer__store">
@@ -755,7 +714,6 @@
         </div>
       </div>
 
-      <!-- Col 4: Newsletter -->
       <div class="footer__col footer__col--newsletter">
         <h3 class="footer__heading">Novedades</h3>
         <p class="footer__newsletter-text">Nuevas colecciones, consejos ópticos y artículos de autor. Sin spam, solo lo que merece la pena.</p>
@@ -777,21 +735,117 @@
     </div>
   </footer>
 
-  <a
-    href="https://wa.me/34614296965?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20c%C3%B3mo%20pedir%20cita"
-    class="whatsapp-float"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Contactar por WhatsApp"
-  >
+  <a href="https://wa.me/34614296965?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20c%C3%B3mo%20pedir%20cita"
+     class="whatsapp-float"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Contactar por WhatsApp">
     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
     </svg>
     <span class="whatsapp-float__tooltip">WhatsApp</span>
   </a>
+
+  <!-- Catálogo embebido Einstoffen -->
+  <script>
+  (function () {
+    'use strict';
+
+    var BRAND_SLUG   = 'einstoffen';
+    var grid         = document.getElementById('einstoffen-catalog-grid');
+    var emptyMsg     = document.getElementById('einstoffen-catalog-empty');
+    var filterBtns   = document.querySelectorAll('.brand-catalog__filter-btn');
+    var activeFilter = 'todos';
+    var allProducts  = [];
+
+    function renderCard(p) {
+      var imgSrc    = p.image || p.placeholder;
+      var typeLabel = p.type === 'sol' ? 'Sol' : 'Graduadas';
+      var badge     = p.is_new ? '<div class="product-card__badge">Nuevo</div>' : '';
+      var dataNew   = p.is_new ? ' data-new="true"' : '';
+      var waMsg     = encodeURIComponent('Hola, me gustaría reservar las gafas ' + p.brand + ' ' + p.name + ' para probarlas en vuestra tienda. ¿Cuándo puedo pasarme?');
+
+      return '<article class="product-card"' +
+               ' data-type="' + p.type + '"' +
+               ' data-brand="' + p.brand_slug + '"' +
+               ' data-gender="' + (p.specs && p.specs.genero ? p.specs.genero : '') + '"' +
+               ' data-price="' + p.price + '"' +
+               ' data-name="' + p.brand + ' ' + p.name + '"' + dataNew +
+               ' role="listitem">' +
+        '<a href="producto.html?id=' + p.id + '" class="product-card__link" aria-label="Ver ' + p.brand + ' ' + p.name + '">' +
+          '<div class="product-card__image-wrap">' +
+            '<img src="' + imgSrc + '"' +
+                 ' alt="' + p.brand + ' ' + p.name + ' — ' + p.variant + '"' +
+                 ' class="product-card__image is-loaded"' +
+                 ' loading="lazy"' +
+                 ' decoding="async"' +
+                 ' onerror="this.src=\'' + p.placeholder + '\'; this.onerror=null;" />' +
+            badge +
+          '</div>' +
+          '<div class="product-card__info">' +
+            '<span class="product-card__brand">' + p.brand + '</span>' +
+            '<h2 class="product-card__name">' + p.name + '</h2>' +
+            '<span class="product-card__variant">' + typeLabel + ' · ' + p.variant + '</span>' +
+            '<p class="product-card__price">' + p.price + ' €</p>' +
+          '</div>' +
+        '</a>' +
+        '<a href="https://wa.me/34614296965?text=' + waMsg + '"' +
+           ' class="product-card__reserve"' +
+           ' target="_blank"' +
+           ' rel="noopener noreferrer"' +
+           ' aria-label="Reservar ' + p.brand + ' ' + p.name + ' en tienda por WhatsApp">' +
+          'Reservar en tienda' +
+        '</a>' +
+      '</article>';
+    }
+
+    function applyFilter() {
+      var visible = activeFilter === 'todos'
+        ? allProducts
+        : allProducts.filter(function (p) { return p.type === activeFilter; });
+
+      grid.innerHTML = visible.map(renderCard).join('');
+
+      if (visible.length === 0) {
+        emptyMsg.classList.add('is-visible');
+      } else {
+        emptyMsg.classList.remove('is-visible');
+      }
+    }
+
+    filterBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        filterBtns.forEach(function (b) {
+          b.classList.remove('is-active');
+          b.setAttribute('aria-pressed', 'false');
+        });
+        btn.classList.add('is-active');
+        btn.setAttribute('aria-pressed', 'true');
+        activeFilter = btn.dataset.filter;
+        applyFilter();
+      });
+    });
+
+    fetch('data/products.json?v=3')
+      .then(function (res) {
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return res.json();
+      })
+      .then(function (products) {
+        allProducts = products.filter(function (p) { return p.brand_slug === BRAND_SLUG; });
+        applyFilter();
+      })
+      .catch(function (err) {
+        console.warn('[Panisse] No se pudo cargar el catálogo de Einstoffen.', err);
+        emptyMsg.textContent = 'No se pudo cargar el catálogo. Visita nuestra tienda para ver la colección completa.';
+        emptyMsg.classList.add('is-visible');
+      });
+  })();
+  </script>
+
   <script src="assets/js/main.min.js" defer></script>
 
-  <!-- ── Google Translate ── -->
+  <!-- Google Translate -->
   <style>
     .goog-te-banner-frame,iframe.skiptranslate{display:none!important;}
     body,body.translated-ltr,body.translated-rtl{top:0!important;margin-top:0!important;}
@@ -819,7 +873,6 @@
         document.cookie = 'googtrans=' + val + '; path=/';
         window.location.reload();
       };
-      // Hide Google bar if injected after load
       var _gt_obs = new MutationObserver(function(){
         var f=document.querySelector('iframe.skiptranslate');
         if(f){f.style.display='none';document.body.style.top='0';}
