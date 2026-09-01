@@ -5,7 +5,23 @@
   <meta charset="UTF-8" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>@font-face{font-family:'Parisienne Fallback';src:local('Comic Sans MS');size-adjust:65.43%;ascent-override:139.92%;descent-override:68.28%;line-gap-override:0%}@font-face{font-family:'Parisienne';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/parisienne-400-normal.woff2') format('woff2')}@font-face{font-family:'CG Fallback';src:local('Georgia');size-adjust:80.18%;ascent-override:115.25%;descent-override:35.80%;line-gap-override:0%}@font-face{font-family:'Lato Fallback';src:local('Arial');size-adjust:97.68%;ascent-override:82.42%;descent-override:19.96%;line-gap-override:20.48%}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:600;font-display:swap;src:url('assets/fonts/cormorant-garamond-600-italic.woff2') format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:swap;src:url('assets/fonts/cormorant-garamond-600-normal.woff2') format('woff2')}@font-face{font-family:'Lato';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/lato-400-normal.woff2') format('woff2')}*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{font-size:16px;-webkit-font-smoothing:antialiased}body{font-family:'Lato','Lato Fallback',sans-serif;font-weight:400;color:#1a1a1a;background-color:#fafaf8;overflow-x:hidden}img{display:block;max-width:100%}a{color:inherit;text-decoration:none}:root{--color-black:#0d0d0d;--color-white:#ffffff;--color-bg:#ffffff;--color-surface:#f5f5f3;--color-border:#e8e8e2;--color-text:#1a1a1a;--color-muted:#636360;--color-accent:#c7dbd6;--color-accent-dk:#8aafa9;--font-display:'Cormorant Garamond','CG Fallback',Georgia,serif;--font-body:'Lato','Lato Fallback',system-ui,sans-serif;--radius-sm:4px;--radius-md:8px;--radius-lg:16px;--shadow-sm:0 1px 4px rgba(0,0,0,.06);--shadow-md:0 4px 20px rgba(0,0,0,.08);--shadow-lg:0 12px 40px rgba(0,0,0,.12);--transition:.32s cubic-bezier(.25,.46,.45,.94);--container-max:1200px;--container-pad:clamp(20px,5vw,64px)}.container{max-width:var(--container-max);margin-inline:auto;padding-inline:var(--container-pad)}.btn{display:inline-block;font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;padding:14px 40px;border:1px solid transparent;cursor:pointer;white-space:nowrap}.btn--primary{background:var(--color-white);color:var(--color-black);border-color:var(--color-white)}.btn--ghost{display:inline-block;font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:14px 28px;border:1px solid rgba(255,255,255,.55);color:var(--color-white);background:transparent}.hero{position:relative;width:100%;height:100svh;min-height:560px;overflow:hidden;background-color:#1a1a18;background-size:cover;background-position:center}.hero__overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,.72) 0%,rgba(10,10,10,.28) 55%,rgba(10,10,10,.1) 100%);z-index:1}.hero__content{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding:0 var(--container-pad) clamp(48px,8vh,100px);max-width:calc(var(--container-max) + var(--container-pad)*2);margin-inline:auto}.hero__title{font-family:var(--font-display);font-style:italic;font-weight:600;color:var(--color-white);line-height:.88;font-size:clamp(72px,11vw,148px);margin-bottom:24px;letter-spacing:-.01em}.hero__subtitle{font-size:clamp(.9375rem,1.5vw,1.0625rem);font-weight:300;font-style:italic;color:rgba(255,255,255,.85);line-height:1.55;margin-bottom:40px;max-width:400px}.hero__actions{display:flex;gap:14px;flex-wrap:wrap}.header{position:fixed;inset-block-start:0;inset-inline:0;z-index:900;height:72px;display:flex;align-items:center;background:transparent;color:var(--color-white);transition:background var(--transition),box-shadow var(--transition),color var(--transition)}.header.is-scrolled{background:rgba(250,250,248,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(0,0,0,.07);color:var(--color-text)}.header__inner{width:100%;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:24px}.header__logo{grid-column:2;justify-self:center;padding-inline:72px;font-family:'Parisienne','Parisienne Fallback',cursive;font-size:clamp(22px,2vw,26px);color:inherit;white-space:nowrap}.header__logo em{font-style:normal;font-weight:normal}.header__nav-main{grid-column:1}.header__nav-main .header__nav-list{justify-content:flex-end}.header__nav-list{list-style:none;display:flex;align-items:center;gap:4px}.header__right{grid-column:3;display:flex;align-items:center;gap:4px}.header__nav-right{display:flex;align-items:center}.nav-link{display:flex;align-items:center;gap:5px;background:none;border:none;cursor:pointer;font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:inherit;padding:6px 10px;border-radius:var(--radius-sm);white-space:nowrap}.header__actions{display:flex;align-items:center;justify-content:flex-end;gap:4px}.header__cta-link{font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:inherit;padding:7px 14px;border:1px solid currentColor;border-radius:var(--radius-sm);white-space:nowrap;margin-inline-end:6px}.header__icon-btn{display:flex;align-items:center;justify-content:center;background:none;border:none;cursor:pointer;color:inherit;padding:8px;border-radius:var(--radius-sm)}.header__hamburger{display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;background:none;border:none;cursor:pointer;padding:8px;color:inherit;width:36px;height:36px}@media(max-width:1024px){.header__nav-main,.header__nav-right{display:none}.header__inner{grid-template-columns:auto 1fr auto}.header__hamburger{display:flex}.header__logo{grid-column:2;justify-self:center}.header__right{grid-column:3}}@media(max-width:600px){.header{height:60px}.header__logo{padding-inline:8px}}.dropdown{position:absolute;opacity:0;visibility:hidden;pointer-events:none}.mobile-menu{position:fixed;transform:translateX(100%)}.mobile-overlay{opacity:0;pointer-events:none}</style>
+  <style>@font-face{font-family:'Parisienne Fallback';src:local('Comic Sans MS');size-adjust:65.43%;ascent-override:139.92%;descent-override:68.28%;line-gap-override:0%}@font-face{font-family:'Parisienne';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/parisienne-400-normal.woff2') format('woff2')}@font-face{font-family:'CG Fallback';src:local('Georgia');size-adjust:80.18%;ascent-override:115.25%;descent-override:35.80%;line-gap-override:0%}@font-face{font-family:'Lato Fallback';src:local('Arial');size-adjust:97.68%;ascent-override:82.42%;descent-override:19.96%;line-gap-override:20.48%}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:600;font-display:swap;src:url('assets/fonts/cormorant-garamond-600-italic.woff2') format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:swap;src:url('assets/fonts/cormorant-garamond-600-normal.woff2') format('woff2')}@font-face{font-family:'Lato';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/lato-400-normal.woff2') format('woff2')}*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{font-size:16px;-webkit-font-smoothing:antialiased}body{font-family:'Lato','Lato Fallback',sans-serif;font-weight:400;color:#1a1a1a;background-color:#fafaf8;overflow-x:hidden}img{display:block;max-width:100%}a{color:inherit;text-decoration:none}:root{--color-black:#0d0d0d;--color-white:#ffffff;--color-bg:#ffffff;--color-surface:#f5f5f3;--color-border:#e8e8e2;--color-text:#1a1a1a;--color-muted:#636360;--color-accent:#c7dbd6;--color-accent-dk:#8aafa9;--font-display:'Cormorant Garamond','CG Fallback',Georgia,serif;--font-body:'Lato','Lato Fallback',system-ui,sans-serif;--radius-sm:4px;--radius-md:8px;--radius-lg:16px;--shadow-sm:0 1px 4px rgba(0,0,0,.06);--shadow-md:0 4px 20px rgba(0,0,0,.08);--shadow-lg:0 12px 40px rgba(0,0,0,.12);--transition:.32s cubic-bezier(.25,.46,.45,.94);--container-max:1200px;--container-pad:clamp(20px,5vw,64px)}.container{max-width:var(--container-max);margin-inline:auto;padding-inline:var(--container-pad)}.btn{display:inline-block;font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;padding:14px 40px;border:1px solid transparent;cursor:pointer;white-space:nowrap}.btn--primary{background:var(--color-white);color:var(--color-black);border-color:var(--color-white)}.btn--ghost{display:inline-block;font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:14px 28px;border:1px solid rgba(255,255,255,.55);color:var(--color-white);background:transparent}.hero{position:relative;width:100%;height:100svh;min-height:560px;overflow:hidden;background-color:#1a1a18;background-size:cover;background-position:center}.hero__overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,.72) 0%,rgba(10,10,10,.28) 55%,rgba(10,10,10,.1) 100%);z-index:1}.hero__content{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding:0 var(--container-pad) clamp(48px,8vh,100px);max-width:calc(var(--container-max) + var(--container-pad)*2);margin-inline:auto}.hero__title{font-family:var(--font-display);font-style:italic;font-weight:600;color:var(--color-white);line-height:.88;font-size:clamp(72px,11vw,148px);margin-bottom:24px;letter-spacing:-.01em}.hero__subtitle{font-size:clamp(.9375rem,1.5vw,1.0625rem);font-weight:300;font-style:italic;color:rgba(255,255,255,.85);line-height:1.55;margin-bottom:40px;max-width:400px}.hero__actions{display:flex;gap:14px;flex-wrap:wrap}.header{position:fixed;inset-block-start:0;inset-inline:0;z-index:900;height:72px;display:flex;align-items:center;background:transparent;color:var(--color-white);transition:background var(--transition),box-shadow var(--transition),color var(--transition)}.header.is-scrolled{background:rgba(250,250,248,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(0,0,0,.07);color:var(--color-text)}.header__inner{width:100%;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:24px}.header__logo{grid-column:2;justify-self:center;padding-inline:72px;font-family:'Parisienne','Parisienne Fallback',cursive;font-size:clamp(22px,2vw,26px);color:inherit;white-space:nowrap}.header__logo em{font-style:normal;font-weight:normal}.header__nav-main{grid-column:1}.header__nav-main .header__nav-list{justify-content:flex-end}.header__nav-list{list-style:none;display:flex;align-items:center;gap:4px}.header__right{grid-column:3;display:flex;align-items:center;gap:4px}.header__nav-right{display:flex;align-items:center}.nav-link{display:flex;align-items:center;gap:5px;background:none;border:none;cursor:pointer;font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:inherit;padding:6px 10px;border-radius:var(--radius-sm);white-space:nowrap}.header__actions{display:flex;align-items:center;justify-content:flex-end;gap:4px}.header__cta-link{font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:inherit;padding:7px 14px;border:1px solid currentColor;border-radius:var(--radius-sm);white-space:nowrap;margin-inline-end:6px}.header__icon-btn{display:flex;align-items:center;justify-content:center;background:none;border:none;cursor:pointer;color:inherit;padding:8px;border-radius:var(--radius-sm)}.header__hamburger{display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;background:none;border:none;cursor:pointer;padding:8px;color:inherit;width:36px;height:36px}@media(max-width:1024px){.header__nav-main,.header__nav-right{display:none}.header__inner{grid-template-columns:auto 1fr auto}.header__hamburger{display:flex}.header__logo{grid-column:2;justify-self:center}.header__right{grid-column:3}}@media(max-width:600px){.header{height:60px}.header__logo{padding-inline:8px}}.dropdown{position:absolute;opacity:0;visibility:hidden;pointer-events:none}.mobile-menu{position:fixed;transform:translateX(100%)}.mobile-overlay{opacity:0;pointer-events:none}
+  .brand-catalog{padding:72px 0 80px;background:#fff;border-top:1px solid var(--color-border)}
+  .brand-catalog__header{text-align:center;margin-bottom:36px}
+  .brand-catalog__eyebrow{display:block;font-size:.5625rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--color-muted);margin-bottom:12px}
+  .brand-catalog__title{font-family:var(--font-display);font-style:italic;font-size:clamp(28px,4vw,44px);font-weight:600;color:var(--color-text);margin:0}
+  .brand-catalog__filters{display:flex;gap:8px;justify-content:center;margin-bottom:40px;flex-wrap:wrap}
+  .brand-catalog__filter-btn{font-family:var(--font-body);font-size:.5625rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:10px 22px;border:1px solid var(--color-border);background:transparent;color:var(--color-muted);cursor:pointer;transition:all var(--transition);border-radius:var(--radius-sm)}
+  .brand-catalog__filter-btn.is-active,.brand-catalog__filter-btn:hover{background:var(--color-text);color:#fff;border-color:var(--color-text)}
+  .brand-catalog__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+  .brand-catalog__empty{text-align:center;padding:60px 20px;color:var(--color-muted);font-size:15px;display:none}
+  .brand-catalog__empty.is-visible{display:block}
+  .brand-catalog__cta{text-align:center;margin-top:48px}
+  .brand-catalog__cta a{font-family:var(--font-body);font-size:.5625rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--color-text);border-bottom:1px solid var(--color-text);padding-bottom:2px}
+  @media(max-width:1024px){.brand-catalog__grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:480px){.brand-catalog__grid{grid-template-columns:1fr}}
+
+  </style>
   <link rel="preload" href="assets/css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="assets/css/style.min.css"></noscript>
   <link rel="preload" href="assets/fonts/cormorant-garamond-600-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -316,7 +332,7 @@
                 <a href="panisse-lugo.html" class="dropdown__link" role="menuitem">Panisse</a>
                 <a href="antica-occhialeria-lugo.html" class="dropdown__link" role="menuitem">Antica Occhialeria</a>                <a href="emporio-armani-lugo.html" class="dropdown__link" role="menuitem">Emporio Armani</a>
                 <a href="swarovski-lugo.html" class="dropdown__link" role="menuitem">Swarovski</a>
-                <a href="catalogo.html?marca=ray-ban" class="dropdown__link" role="menuitem">Ray-Ban</a>
+                <a href="ray-ban-lugo.html" class="dropdown__link" role="menuitem">Ray-Ban</a>
                 <a href="catalogo.html?marca=polaroid" class="dropdown__link" role="menuitem">Polaroid</a>
                 <a href="catalogo.html?marca=panisse-kids" class="dropdown__link" role="menuitem">Panisse Kids</a>
                 <a href="catalogo.html?marca=mr-boho" class="dropdown__link" role="menuitem">Mr. Boho</a>
@@ -480,7 +496,7 @@
             <li><a href="panisse-lugo.html" class="mobile-sublink">Panisse</a></li>
             <li><a href="antica-occhialeria-lugo.html" class="mobile-sublink">Antica Occhialeria</a></li>            <li><a href="emporio-armani-lugo.html" class="mobile-sublink">Emporio Armani</a></li>
             <li><a href="swarovski-lugo.html" class="mobile-sublink">Swarovski</a></li>
-            <li><a href="catalogo.html?marca=ray-ban" class="mobile-sublink">Ray-Ban</a></li>
+            <li><a href="ray-ban-lugo.html" class="mobile-sublink">Ray-Ban</a></li>
             <li><a href="catalogo.html?marca=polaroid" class="mobile-sublink">Polaroid</a></li>
             <li><a href="catalogo.html?marca=panisse-kids" class="mobile-sublink">Panisse Kids</a></li>
             <li><a href="catalogo.html?marca=mr-boho" class="mobile-sublink">Mr. Boho</a>
@@ -666,7 +682,7 @@
           <span class="servicio-section__num">Versatilidad</span>
           <h2 class="servicio-section__title">Ray-Ban en Lugo<br><em>gafas de sol y graduadas</em></h2>
           <p>Prácticamente todos los modelos Ray-Ban están disponibles tanto en versión de sol como en versión graduada. Puedes elegir tu montura favorita y montarle lentes monofocales, progresivas o fotocromáticas. Realizamos una revisión visual previa para garantizar que la graduación es exacta antes de montar ninguna lente. Si ya tienes receta de otro profesional, también la aceptamos.</p>
-          <a href="catalogo.html?marca=ray-ban" class="btn btn--secondary">Ver Ray-Ban en el catálogo</a>
+          <a href="ray-ban-lugo.html" class="btn btn--secondary">Ver Ray-Ban en el catálogo</a>
         </div>
       </div>
     </section>
@@ -722,7 +738,26 @@
       </div>
     </section>
 
-  </main>
+  
+    <section class="brand-catalog" id="catalogo" aria-label="Colección Ray-Ban en Panisse Óptica">
+      <div class="container">
+        <header class="brand-catalog__header">
+          <span class="brand-catalog__eyebrow">La colección completa</span>
+          <h2 class="brand-catalog__title">Ray-Ban en Panisse</h2>
+        </header>
+        <div class="brand-catalog__filters" role="group" aria-label="Filtrar por tipo">
+          <button class="brand-catalog__filter-btn is-active" data-filter="todos" aria-pressed="true">Todo</button>
+          <button class="brand-catalog__filter-btn" data-filter="sol" aria-pressed="false">Sol</button>
+          <button class="brand-catalog__filter-btn" data-filter="graduadas" aria-pressed="false">Graduadas</button>
+        </div>
+        <div class="brand-catalog__grid" id="rayban-catalog-grid" role="list"></div>
+        <p class="brand-catalog__empty" id="rayban-catalog-empty" aria-live="polite">No hay modelos con este filtro.</p>
+        <div class="brand-catalog__cta">
+          <a href="catalogo.html">Ver toda la colección &rarr;</a>
+        </div>
+      </div>
+    </section>
+</main>
 
   <!-- FOOTER -->
   <footer class="footer" aria-label="Pie de página">
@@ -829,6 +864,60 @@
     </svg>
     <span class="whatsapp-float__tooltip">WhatsApp</span>
   </a>
+  
+  <script>
+  (function () {
+    var BRAND_SLUG   = 'ray-ban';
+    var grid         = document.getElementById('rayban-catalog-grid');
+    var emptyMsg     = document.getElementById('rayban-catalog-empty');
+    var filterBtns   = document.querySelectorAll('.brand-catalog__filter-btn');
+    var activeFilter = 'todos';
+    var allProducts  = [];
+    function renderCard(p) {
+      var imgSrc = p.image || p.placeholder;
+      var typeLabel = p.type === 'sol' ? 'Sol' : 'Graduadas';
+      var badge = p.is_new ? '<div class="product-card__badge">Nuevo</div>' : '';
+      var dataNew = p.is_new ? ' data-new="true"' : '';
+      var waMsg = encodeURIComponent('Hola, me gustaria reservar las gafas ' + p.brand + ' ' + p.name + ' para probarlas en vuestra tienda. Cuando puedo pasarme?');
+      return '<article class="product-card" data-type="' + p.type + '" data-brand="' + p.brand_slug + '" data-price="' + p.price + '" data-name="' + p.brand + ' ' + p.name + '"' + dataNew + ' role="listitem">' +
+        '<a href="producto.html?id=' + p.id + '" class="product-card__link">' +
+          '<div class="product-card__image-wrap">' +
+            '<img src="' + imgSrc + '" alt="' + p.brand + ' ' + p.name + '" class="product-card__image is-loaded" loading="lazy" decoding="async" onerror="this.src='' + p.placeholder + ''; this.onerror=null;" />' +
+            badge +
+          '</div>' +
+          '<div class="product-card__info">' +
+            '<span class="product-card__brand">' + p.brand + '</span>' +
+            '<h2 class="product-card__name">' + p.name + '</h2>' +
+            '<span class="product-card__variant">' + typeLabel + ' · ' + p.variant + '</span>' +
+            '<p class="product-card__price">' + p.price + ' €</p>' +
+          '</div>' +
+        '</a>' +
+        '<a href="https://wa.me/34614296965?text=' + waMsg + '" class="product-card__reserve" target="_blank" rel="noopener noreferrer">Reservar en tienda</a>' +
+      '</article>';
+    }
+    function applyFilter() {
+      var visible = activeFilter === 'todos' ? allProducts : allProducts.filter(function(p){ return p.type === activeFilter; });
+      grid.innerHTML = visible.map(renderCard).join('');
+      emptyMsg.classList.toggle('is-visible', visible.length === 0);
+    }
+    filterBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        filterBtns.forEach(function(b){ b.classList.remove('is-active'); b.setAttribute('aria-pressed','false'); });
+        btn.classList.add('is-active'); btn.setAttribute('aria-pressed','true');
+        activeFilter = btn.dataset.filter; applyFilter();
+      });
+    });
+    fetch('data/products.json?v=3')
+      .then(function(res){ if (!res.ok) throw new Error(res.status); return res.json(); })
+      .then(function(products) {
+        allProducts = products.filter(function(p){ return p.brand_slug === BRAND_SLUG; })
+          .sort(function(a,b){ return (b.is_new ? 1 : 0) - (a.is_new ? 1 : 0); });
+        applyFilter();
+      })
+      .catch(function(err){ console.warn('[Panisse] Catalogo Ray-Ban no disponible.', err); emptyMsg.classList.add('is-visible'); });
+  })();
+  </script>
+
   <script src="assets/js/main.min.js" defer></script>
 
   <!-- ── Google Translate ── -->

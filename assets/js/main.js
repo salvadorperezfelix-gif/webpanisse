@@ -412,11 +412,13 @@ if (newsletterForm) {
       requestAnimationFrame(() => newCards.forEach(c => c.classList.add('is-visible')));
     } else {
       filtered.sort((a, b) => {
+        const aNew = a.dataset.new === 'true', bNew = b.dataset.new === 'true';
+        if (aNew !== bNew) return bNew - aNew;
         switch (state.sort) {
           case 'price-asc':  return Number(a.dataset.price) - Number(b.dataset.price);
           case 'price-desc': return Number(b.dataset.price) - Number(a.dataset.price);
           case 'name-az':    return a.dataset.name.localeCompare(b.dataset.name, 'es');
-          default:           return (b.dataset.new === 'true') - (a.dataset.new === 'true');
+          default:           return 0;
         }
       });
       filtered.forEach(c => grid.appendChild(c));
