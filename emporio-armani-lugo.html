@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -8,18 +8,18 @@
 
   /* ── Ticker ── */
   .announcement-bar{background:#1a1a1a;color:#fff;height:40px;overflow:hidden;display:flex;align-items:center}
-  .announcement-bar__track{display:inline-flex;align-items:center;white-space:nowrap;animation:ticker-scroll 42s linear infinite;gap:0;font-size:.5625rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+  .announcement-bar__track{display:inline-flex;align-items:center;white-space:nowrap;animation:ticker-scroll 44s linear infinite;gap:0;font-size:.5625rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
   .announcement-bar:hover .announcement-bar__track{animation-play-state:paused}
   .announcement-bar__item{padding-inline:28px}
   .announcement-bar__sep{color:rgba(199,219,214,.7);font-size:.5rem}
   @keyframes ticker-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
   /* ── Brand Hero ── */
-  .brand-hero{position:relative;width:100%;height:100svh;min-height:560px;overflow:hidden;background-color:#ffffff;background-image:url('assets/img/brands/panisse-hero.png');background-size:cover;background-position:center 55%}
-  .brand-hero__overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,.88) 0%,rgba(10,10,10,.45) 40%,rgba(10,10,10,0) 70%);z-index:1}
+  .brand-hero{position:relative;width:100%;height:100svh;min-height:560px;overflow:hidden;background-color:#1c1816;background-image:url('assets/img/brands/emporio-armani-hero.jpg');background-size:cover;background-position:center center}
+  .brand-hero__overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(14,11,8,.94) 0%,rgba(14,11,8,.5) 45%,rgba(14,11,8,.08) 100%);z-index:1}
   .brand-hero__content{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding:0 var(--container-pad) clamp(48px,8vh,100px);max-width:calc(var(--container-max) + var(--container-pad)*2);margin-inline:auto}
   .brand-hero__eyebrow{display:block;font-size:.5625rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:rgba(255,255,255,.75);margin-bottom:20px}
-  .brand-hero__title{font-family:'Parisienne','Parisienne Fallback',cursive;font-style:normal;font-weight:400;color:#fff;line-height:1.1;font-size:clamp(52px,7vw,88px);margin-bottom:24px;letter-spacing:0}
+  .brand-hero__title{font-family:var(--font-display);font-style:italic;font-weight:600;color:#fff;line-height:.88;font-size:clamp(56px,9vw,120px);margin-bottom:24px;letter-spacing:-.01em}
   .brand-hero__subtitle{font-size:clamp(.9375rem,1.5vw,1.0625rem);font-weight:300;font-style:italic;color:rgba(255,255,255,.85);line-height:1.55;margin-bottom:40px;max-width:440px}
   .brand-hero__actions{display:flex;gap:14px;flex-wrap:wrap}
 
@@ -32,7 +32,7 @@
   .brand-editorial__body p+p{margin-top:16px}
   .brand-editorial__body em{font-style:italic;color:var(--color-text)}
   .brand-editorial__badge{display:inline-block;margin-top:28px;font-size:.5rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--color-muted)}
-  .brand-editorial__img-col{overflow:hidden;background:#e8e2da;position:relative;min-height:400px}
+  .brand-editorial__img-col{overflow:hidden;background:#2a2218;position:relative;min-height:400px}
   .brand-editorial__img-col img{width:100%;height:100%;object-fit:cover;display:block}
   @media(max-width:768px){.brand-editorial{grid-template-columns:1fr}.brand-editorial__img-col{min-height:260px;order:-1}}
 
@@ -73,64 +73,22 @@
     if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
     n.queue=[];window.addEventListener('load',function(){t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s);},{once:!0});}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-
     var savedConsent = localStorage.getItem('cookieConsent');
     var marketingGranted = false;
-    if (savedConsent) {
-      try {
-        var consentObj = JSON.parse(savedConsent);
-        marketingGranted = !!consentObj.marketing;
-      } catch (e) {}
-    }
-
-    if (marketingGranted) {
-      fbq('consent', 'grant');
-    } else {
-      fbq('consent', 'revoke');
-    }
-
+    if (savedConsent) { try { var consentObj = JSON.parse(savedConsent); marketingGranted = !!consentObj.marketing; } catch (e) {} }
+    if (marketingGranted) { fbq('consent', 'grant'); } else { fbq('consent', 'revoke'); }
     fbq('init', '1706566507036901');
     fbq('track', 'PageView');
   </script>
-  <noscript><img height="1" width="1" alt="" style="display:none"
-    src="https://www.facebook.com/tr?id=1706566507036901&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Meta Pixel Code -->
+  <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=1706566507036901&ev=PageView&noscript=1"/></noscript>
 
-  <!-- Google Consent Mode v2 Default State -->
+  <!-- Google Consent Mode v2 -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-
     var savedConsent = localStorage.getItem('cookieConsent');
-    if (savedConsent) {
-      try {
-        var consentObj = JSON.parse(savedConsent);
-        gtag('consent', 'default', {
-          'ad_storage': consentObj.marketing ? 'granted' : 'denied',
-          'ad_user_data': consentObj.marketing ? 'granted' : 'denied',
-          'ad_personalization': consentObj.marketing ? 'granted' : 'denied',
-          'analytics_storage': consentObj.analytics ? 'granted' : 'denied'
-        });
-      } catch (e) {
-        gtag('consent', 'default', {
-          'ad_storage': 'denied',
-          'ad_user_data': 'denied',
-          'ad_personalization': 'denied',
-          'analytics_storage': 'denied'
-        });
-      }
-    } else {
-      gtag('consent', 'default', {
-        'ad_storage': 'denied',
-        'ad_user_data': 'denied',
-        'ad_personalization': 'denied',
-        'analytics_storage': 'denied'
-      });
-    }
+    if (savedConsent) { try { var consentObj = JSON.parse(savedConsent); gtag('consent', 'default', {'ad_storage': consentObj.marketing ? 'granted' : 'denied','ad_user_data': consentObj.marketing ? 'granted' : 'denied','ad_personalization': consentObj.marketing ? 'granted' : 'denied','analytics_storage': consentObj.analytics ? 'granted' : 'denied'}); } catch (e) { gtag('consent', 'default', {'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied'}); } } else { gtag('consent', 'default', {'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied'}); }
   </script>
-
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZPWT5ZT4X4"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -141,9 +99,9 @@
   </script>
 
   <!-- SEO -->
-  <title>Panisse — Colección Propia de Gafas | Panisse Óptica Lugo</title>
-  <meta name="description" content="La colección propia de Panisse Óptica. Monturas de diseño exclusivo, con nombres de lugar mediterráneo. Solo en nuestra tienda de Lugo, Rúa do Teatro 2." />
-  <meta name="keywords" content="Panisse gafas Lugo, monturas exclusivas Lugo, gafas diseño propio Lugo, óptica boutique Lugo, colección Panisse, gafas de autor Lugo" />
+  <title>Emporio Armani Gafas Lugo — Óptica Oficial | Panisse Óptica</title>
+  <meta name="description" content="Distribuidor oficial de gafas Emporio Armani en Lugo. Diseño italiano contemporáneo para sol y graduadas. Solo en Panisse Óptica, Rúa do Teatro 2." />
+  <meta name="keywords" content="Emporio Armani gafas Lugo, gafas Armani Lugo, óptica Armani Lugo, monturas Emporio Armani Lugo, gafas italianas Lugo" />
   <meta name="author" content="Panisse Óptica" />
   <meta name="robots" content="index, follow" />
   <meta name="geo.region" content="ES-LU" />
@@ -152,11 +110,11 @@
   <meta name="ICBM" content="43.0097, -7.5563" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Panisse — Colección Propia de Gafas | Panisse Óptica Lugo" />
-  <meta property="og:description" content="La colección propia de Panisse Óptica. Monturas de diseño exclusivo, con nombres de lugar mediterráneo. Solo en nuestra tienda de Lugo." />
+  <meta property="og:title" content="Emporio Armani Gafas Lugo — Óptica Oficial | Panisse Óptica" />
+  <meta property="og:description" content="Distribuidor oficial de gafas Emporio Armani en Lugo. Diseño italiano contemporáneo para sol y graduadas en Panisse Óptica." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://panisse.es/panisse-lugo.html" />
-  <meta property="og:image" content="https://panisse.es/assets/img/brands/panisse-hero.png" />
+  <meta property="og:url" content="https://panisse.es/emporio-armani-lugo.html" />
+  <meta property="og:image" content="https://panisse.es/assets/img/brands/emporio-armani-hero.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="es_ES" />
@@ -164,88 +122,39 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Panisse — Colección Propia de Gafas | Panisse Óptica Lugo" />
-  <meta name="twitter:description" content="La colección propia de Panisse Óptica. Monturas de diseño exclusivo, con nombres de lugar mediterráneo." />
-  <meta name="twitter:image" content="https://panisse.es/assets/img/brands/panisse-hero.png" />
+  <meta name="twitter:title" content="Emporio Armani Gafas Lugo — Óptica Oficial | Panisse Óptica" />
+  <meta name="twitter:description" content="Distribuidor oficial de gafas Emporio Armani en Lugo. Diseño italiano contemporáneo." />
+  <meta name="twitter:image" content="https://panisse.es/assets/img/brands/emporio-armani-hero.jpg" />
 
   <!-- Canonical -->
-  <link rel="canonical" href="https://panisse.es/panisse-lugo.html" />
+  <link rel="canonical" href="https://panisse.es/emporio-armani-lugo.html" />
 
-  <!-- JSON-LD Structured Data -->
+  <!-- JSON-LD -->
   <script type="application/ld+json">[
   {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "Optician"],
     "@id": "https://panisse.es/#business",
     "name": "Panisse Óptica",
-    "alternateName": "Panisse Optica Lugo",
-    "description": "Óptica boutique en el centro de Lugo. Colección propia de monturas de diseño exclusivo.",
     "url": "https://panisse.es",
     "telephone": "+34982301193",
     "email": "info@panisse.es",
-    "priceRange": "EUR",
-    "image": "https://panisse.es/assets/img/brands/panisse-hero.png",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Rúa do Teatro, Bajo 2",
-      "addressLocality": "Lugo",
-      "addressRegion": "Galicia",
-      "postalCode": "27001",
-      "addressCountry": "ES"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 43.0097,
-      "longitude": -7.5563
-    },
-    "hasMap": "https://maps.google.com/?q=Panisse+%C3%93ptica+Lugo",
+    "address": {"@type":"PostalAddress","streetAddress":"Rúa do Teatro, Bajo 2","addressLocality":"Lugo","addressRegion":"Galicia","postalCode":"27001","addressCountry":"ES"},
+    "geo": {"@type":"GeoCoordinates","latitude":43.0097,"longitude":-7.5563},
     "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-        "opens": "10:00",
-        "closes": "13:30"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-        "opens": "16:30",
-        "closes": "20:30"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Saturday"],
-        "opens": "10:30",
-        "closes": "13:30"
-      }
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"13:30"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"16:30","closes":"20:30"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"10:30","closes":"13:30"}
     ],
-    "sameAs": [
-      "https://www.instagram.com/panisse_optica/",
-      "https://www.facebook.com/profile.php?id=61586908144350",
-      "https://www.tiktok.com/@panisse_optica"
-    ]
+    "sameAs": ["https://www.instagram.com/panisse_optica/","https://www.facebook.com/profile.php?id=61586908144350","https://www.tiktok.com/@panisse_optica"]
   },
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Inicio",
-        "item": "https://panisse.es/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Marcas",
-        "item": "https://panisse.es/catalogo.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Panisse"
-      }
+      {"@type":"ListItem","position":1,"name":"Inicio","item":"https://panisse.es/"},
+      {"@type":"ListItem","position":2,"name":"Marcas","item":"https://panisse.es/catalogo.html"},
+      {"@type":"ListItem","position":3,"name":"Emporio Armani"}
     ]
   }
 ]</script>
@@ -257,11 +166,7 @@
 
   <!-- Microsoft Clarity -->
   <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "xx267v5tt4");
+    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "xx267v5tt4");
   </script>
 </head>
 <body class="interior-page">
@@ -269,16 +174,10 @@
   <!-- HEADER -->
   <header class="header" id="site-header">
     <div class="header__inner container">
-
-      <!-- Navegación principal (izquierda) -->
       <nav class="header__nav-main" aria-label="Categorías principales">
         <ul class="header__nav-list">
-
-          <!-- Marcas -->
           <li class="nav-item has-dropdown">
-            <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="marcas">
-              Marcas <span class="nav-caret" aria-hidden="true"></span>
-            </button>
+            <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="marcas">Marcas <span class="nav-caret" aria-hidden="true"></span></button>
             <div class="dropdown dropdown--wide" id="dropdown-marcas" role="menu" aria-label="Marcas">
               <div class="dropdown__grid">
                 <a href="panisse-lugo.html" class="dropdown__link" role="menuitem">Panisse</a>
@@ -286,46 +185,32 @@
                 <a href="einstoffen-lugo.html" class="dropdown__link" role="menuitem">Einstoffen</a>
                 <a href="emporio-armani-lugo.html" class="dropdown__link" role="menuitem">Emporio Armani</a>
                 <a href="swarovski-lugo.html" class="dropdown__link" role="menuitem">Swarovski</a>
-                <a href="catalogo.html?marca=ray-ban" class="dropdown__link" role="menuitem">Ray-Ban</a>
+                <a href="ray-ban-lugo.html" class="dropdown__link" role="menuitem">Ray-Ban</a>
                 <a href="catalogo.html?marca=polaroid" class="dropdown__link" role="menuitem">Polaroid</a>
                 <a href="catalogo.html?marca=panisse-kids" class="dropdown__link" role="menuitem">Panisse Kids</a>
                 <a href="catalogo.html?marca=mr-boho" class="dropdown__link" role="menuitem">Mr. Boho</a>
               </div>
-              <div class="dropdown__footer-bar">
-                <a href="catalogo.html" class="dropdown__all">Ver todas las marcas →</a>
-              </div>
+              <div class="dropdown__footer-bar"><a href="catalogo.html" class="dropdown__all">Ver todas las marcas →</a></div>
             </div>
           </li>
-
-          <!-- Graduadas -->
           <li class="nav-item has-dropdown">
-            <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="graduadas">
-              Graduadas <span class="nav-caret" aria-hidden="true"></span>
-            </button>
+            <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="graduadas">Graduadas <span class="nav-caret" aria-hidden="true"></span></button>
             <div class="dropdown" id="dropdown-graduadas" role="menu" aria-label="Gafas graduadas">
               <a href="catalogo.html?tipo=graduadas&genero=hombre" class="dropdown__link" role="menuitem">Hombre</a>
               <a href="catalogo.html?tipo=graduadas&genero=mujer" class="dropdown__link" role="menuitem">Mujer</a>
               <a href="catalogo.html?tipo=graduadas&genero=unisex" class="dropdown__link" role="menuitem">Unisex</a>
             </div>
           </li>
-
-          <!-- De Sol -->
           <li class="nav-item has-dropdown">
-            <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="sol">
-              De Sol <span class="nav-caret" aria-hidden="true"></span>
-            </button>
+            <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="sol">De Sol <span class="nav-caret" aria-hidden="true"></span></button>
             <div class="dropdown" id="dropdown-sol" role="menu" aria-label="Gafas de sol">
               <a href="catalogo.html?tipo=sol&genero=hombre" class="dropdown__link" role="menuitem">Hombre</a>
               <a href="catalogo.html?tipo=sol&genero=mujer" class="dropdown__link" role="menuitem">Mujer</a>
               <a href="catalogo.html?tipo=sol&genero=unisex" class="dropdown__link" role="menuitem">Sol Unisex</a>
             </div>
           </li>
-
-          <!-- Servicios -->
           <li class="nav-item has-dropdown">
-            <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="servicios">
-              Servicios <span class="nav-caret" aria-hidden="true"></span>
-            </button>
+            <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="servicios">Servicios <span class="nav-caret" aria-hidden="true"></span></button>
             <div class="dropdown" id="dropdown-servicios" role="menu" aria-label="Servicios">
               <a href="estudio-visual-lugo.html" class="dropdown__link" role="menuitem">Estudio Visual</a>
               <a href="lentes-zeiss-lugo.html" class="dropdown__link" role="menuitem">ZEISS Vision Expert</a>
@@ -338,84 +223,40 @@
               <a href="gafas-boda-lugo.html" class="dropdown__link" role="menuitem">Gafas para tu Boda</a>
             </div>
           </li>
-
         </ul>
       </nav>
-
-      <!-- Logo (centrado) -->
-      <a href="index.html" class="header__logo" aria-label="Panisse Óptica – inicio">
-        Panisse <em>Óptica</em>
-      </a>
-
-      <!-- Acciones (derecha) -->
+      <a href="index.html" class="header__logo" aria-label="Panisse Óptica – inicio">Panisse <em>Óptica</em></a>
       <div class="header__right">
         <nav class="header__nav-right" aria-label="Menú secundario">
           <ul class="header__nav-list">
-
             <li class="nav-item has-dropdown">
-              <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="conocenos">
-                Conócenos <span class="nav-caret" aria-hidden="true"></span>
-              </button>
+              <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="conocenos">Conócenos <span class="nav-caret" aria-hidden="true"></span></button>
               <div class="dropdown" id="dropdown-conocenos" role="menu" aria-label="Conócenos">
                 <a href="nosotros.html" class="dropdown__link" role="menuitem">Manifiesto</a>
                 <a href="nosotros.html#equipo" class="dropdown__link" role="menuitem">El Equipo</a>
                 <a href="panisse-marca.html" class="dropdown__link" role="menuitem">La Marca Panisse</a>
               </div>
             </li>
-
             <li class="nav-item has-dropdown">
-              <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="opticas">
-                Ópticas <span class="nav-caret" aria-hidden="true"></span>
-              </button>
+              <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="opticas">Ópticas <span class="nav-caret" aria-hidden="true"></span></button>
               <div class="dropdown" id="dropdown-opticas" role="menu" aria-label="Nuestras tiendas">
                 <a href="contacto.html" class="dropdown__link" role="menuitem">Panisse Óptica — Lugo</a>
               </div>
             </li>
-
-            <li class="nav-item">
-              <a href="blog.html" class="nav-link">Magazine</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="tarjeta-regalo.html" class="nav-link">Regala</a>
-            </li>
-
+            <li class="nav-item"><a href="blog.html" class="nav-link">Magazine</a></li>
+            <li class="nav-item"><a href="tarjeta-regalo.html" class="nav-link">Regala</a></li>
           </ul>
         </nav>
         <div class="header__actions">
           <a href="contacto.html" class="header__cta-link">Cita Previa</a>
-          <button id="lang-toggle-btn" class="lang-flag-btn"
-                  onclick="panisseLangToggle()"
-                  aria-label="Switch language / Cambiar idioma">&#x1F1EC;&#x1F1E7;</button>
-
+          <button id="lang-toggle-btn" class="lang-flag-btn" onclick="panisseLangToggle()" aria-label="Switch language / Cambiar idioma">&#x1F1EC;&#x1F1E7;</button>
           <div class="header__ecommerce-actions" hidden>
-            <button class="header__icon-btn" aria-label="Mi cuenta">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                   stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                <circle cx="12" cy="7" r="4"/>
-              </svg>
-            </button>
-            <button class="header__icon-btn header__cart-btn" aria-label="Carrito de la compra, 0 artículos">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                   stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
-                <line x1="3" y1="6" x2="21" y2="6"/>
-                <path d="M16 10a4 4 0 0 1-8 0"/>
-              </svg>
-              <span class="header__cart-count" aria-hidden="true">0</span>
-            </button>
+            <button class="header__icon-btn" aria-label="Mi cuenta"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></button>
+            <button class="header__icon-btn header__cart-btn" aria-label="Carrito de la compra, 0 artículos"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span class="header__cart-count" aria-hidden="true">0</span></button>
           </div>
-
-          <button class="header__hamburger" id="hamburger-btn"
-                  aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+          <button class="header__hamburger" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
         </div>
       </div>
-
     </div>
   </header>
 
@@ -423,62 +264,43 @@
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Menú principal">
     <div class="mobile-menu__header">
       <a href="index.html" class="mobile-menu__logo">Panisse <em>Óptica</em></a>
-      <button class="mobile-menu__close" id="mobile-close-btn" aria-label="Cerrar menú">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
-             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="18" y1="6" x2="6" y2="18"/>
-          <line x1="6" y1="6" x2="18" y2="18"/>
-        </svg>
-      </button>
+      <button class="mobile-menu__close" id="mobile-close-btn" aria-label="Cerrar menú"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
     </div>
-
     <nav class="mobile-menu__body" aria-label="Navegación móvil">
       <ul class="mobile-menu__list">
-
         <li class="mobile-item has-submenu">
-          <button class="mobile-link" data-submenu="mm-marcas">
-            Marcas <span class="mobile-arrow" aria-hidden="true">›</span>
-          </button>
+          <button class="mobile-link" data-submenu="mm-marcas">Marcas <span class="mobile-arrow" aria-hidden="true">›</span></button>
           <ul class="mobile-submenu" id="mm-marcas" aria-hidden="true">
             <li><a href="panisse-lugo.html" class="mobile-sublink">Panisse</a></li>
             <li><a href="antica-occhialeria-lugo.html" class="mobile-sublink">Antica Occhialeria</a></li>
             <li><a href="einstoffen-lugo.html" class="mobile-sublink">Einstoffen</a></li>
             <li><a href="emporio-armani-lugo.html" class="mobile-sublink">Emporio Armani</a></li>
             <li><a href="swarovski-lugo.html" class="mobile-sublink">Swarovski</a></li>
-            <li><a href="catalogo.html?marca=ray-ban" class="mobile-sublink">Ray-Ban</a></li>
+            <li><a href="ray-ban-lugo.html" class="mobile-sublink">Ray-Ban</a></li>
             <li><a href="catalogo.html?marca=polaroid" class="mobile-sublink">Polaroid</a></li>
             <li><a href="catalogo.html?marca=panisse-kids" class="mobile-sublink">Panisse Kids</a></li>
             <li><a href="catalogo.html?marca=mr-boho" class="mobile-sublink">Mr. Boho</a></li>
             <li><a href="catalogo.html" class="mobile-sublink mobile-sublink--all">Ver todas las marcas →</a></li>
           </ul>
         </li>
-
         <li class="mobile-item has-submenu">
-          <button class="mobile-link" data-submenu="mm-graduadas">
-            Graduadas <span class="mobile-arrow" aria-hidden="true">›</span>
-          </button>
+          <button class="mobile-link" data-submenu="mm-graduadas">Graduadas <span class="mobile-arrow" aria-hidden="true">›</span></button>
           <ul class="mobile-submenu" id="mm-graduadas" aria-hidden="true">
             <li><a href="catalogo.html?tipo=graduadas&genero=hombre" class="mobile-sublink">Hombre</a></li>
             <li><a href="catalogo.html?tipo=graduadas&genero=mujer" class="mobile-sublink">Mujer</a></li>
             <li><a href="catalogo.html?tipo=graduadas&genero=unisex" class="mobile-sublink">Unisex</a></li>
           </ul>
         </li>
-
         <li class="mobile-item has-submenu">
-          <button class="mobile-link" data-submenu="mm-sol">
-            De Sol <span class="mobile-arrow" aria-hidden="true">›</span>
-          </button>
+          <button class="mobile-link" data-submenu="mm-sol">De Sol <span class="mobile-arrow" aria-hidden="true">›</span></button>
           <ul class="mobile-submenu" id="mm-sol" aria-hidden="true">
             <li><a href="catalogo.html?tipo=sol&genero=hombre" class="mobile-sublink">Hombre</a></li>
             <li><a href="catalogo.html?tipo=sol&genero=mujer" class="mobile-sublink">Mujer</a></li>
             <li><a href="catalogo.html?tipo=sol&genero=unisex" class="mobile-sublink">Sol Unisex</a></li>
           </ul>
         </li>
-
         <li class="mobile-item has-submenu">
-          <button class="mobile-link" data-submenu="mm-servicios">
-            Servicios <span class="mobile-arrow" aria-hidden="true">›</span>
-          </button>
+          <button class="mobile-link" data-submenu="mm-servicios">Servicios <span class="mobile-arrow" aria-hidden="true">›</span></button>
           <ul class="mobile-submenu" id="mm-servicios" aria-hidden="true">
             <li><a href="estudio-visual-lugo.html" class="mobile-sublink">Estudio Visual</a></li>
             <li><a href="lentes-zeiss-lugo.html" class="mobile-sublink">ZEISS Vision Expert</a></li>
@@ -491,44 +313,28 @@
             <li><a href="gafas-boda-lugo.html" class="mobile-sublink">Gafas para tu Boda</a></li>
           </ul>
         </li>
-
         <li class="mobile-item has-submenu">
-          <button class="mobile-link" data-submenu="mm-conocenos">
-            Conócenos <span class="mobile-arrow" aria-hidden="true">›</span>
-          </button>
+          <button class="mobile-link" data-submenu="mm-conocenos">Conócenos <span class="mobile-arrow" aria-hidden="true">›</span></button>
           <ul class="mobile-submenu" id="mm-conocenos" aria-hidden="true">
             <li><a href="nosotros.html" class="mobile-sublink">Manifiesto</a></li>
             <li><a href="nosotros.html#equipo" class="mobile-sublink">El Equipo</a></li>
             <li><a href="panisse-marca.html" class="mobile-sublink">La Marca Panisse</a></li>
           </ul>
         </li>
-
         <li class="mobile-item has-submenu">
-          <button class="mobile-link" data-submenu="mm-opticas">
-            Ópticas <span class="mobile-arrow" aria-hidden="true">›</span>
-          </button>
+          <button class="mobile-link" data-submenu="mm-opticas">Ópticas <span class="mobile-arrow" aria-hidden="true">›</span></button>
           <ul class="mobile-submenu" id="mm-opticas" aria-hidden="true">
             <li><a href="contacto.html" class="mobile-sublink">Panisse Óptica — Lugo</a></li>
           </ul>
         </li>
-
         <li class="mobile-item"><a href="blog.html" class="mobile-link mobile-link--plain">Blog</a></li>
         <li class="mobile-item"><a href="tarjeta-regalo.html" class="mobile-link mobile-link--plain">Regala</a></li>
-
       </ul>
     </nav>
-
     <div class="mobile-menu__footer">
-      <a href="contacto.html" class="btn btn--secondary" style="width:100%;text-align:center;display:block;">
-        Pedir Cita Previa
-      </a>
+      <a href="contacto.html" class="btn btn--secondary" style="width:100%;text-align:center;display:block;">Pedir Cita Previa</a>
       <div class="mobile-menu__lang">
-        <button id="mobile-lang-btn" class="lang-flag-btn"
-                onclick="panisseLangToggle()"
-                aria-label="Switch language / Cambiar idioma"
-                style="font-size:15px;padding:8px 12px;gap:8px;display:flex;align-items:center;">
-          &#x1F1EC;&#x1F1E7; <span class="mobile-lang-label">English</span>
-        </button>
+        <button id="mobile-lang-btn" class="lang-flag-btn" onclick="panisseLangToggle()" aria-label="Switch language / Cambiar idioma" style="font-size:15px;padding:8px 12px;gap:8px;display:flex;align-items:center;">&#x1F1EC;&#x1F1E7; <span class="mobile-lang-label">English</span></button>
       </div>
       <div class="mobile-menu__social">
         <a href="https://www.instagram.com/panisse_optica/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
@@ -537,19 +343,18 @@
       </div>
     </div>
   </div>
-
   <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
 
   <!-- MAIN -->
   <main id="main-content">
 
     <!-- 1. HERO -->
-    <section class="brand-hero" aria-label="Panisse — colección propia de gafas en Lugo">
+    <section class="brand-hero" aria-label="Emporio Armani gafas en Panisse Óptica Lugo">
       <div class="brand-hero__overlay" aria-hidden="true"></div>
       <div class="brand-hero__content">
-        <span class="brand-hero__eyebrow">Diseño propio · Lugo · Mediterráneo</span>
-        <h1 class="brand-hero__title">Panisse</h1>
-        <p class="brand-hero__subtitle">Monturas de diseño exclusivo creadas para nuestra óptica. Cada nombre, un lugar. Cada modelo, una elección.</p>
+        <span class="brand-hero__eyebrow">Casa Armani · Milán · Lugo</span>
+        <h1 class="brand-hero__title">Emporio Armani</h1>
+        <p class="brand-hero__subtitle">El sello milanés para tu mirada. Diseño italiano contemporáneo que no necesita explicarse.</p>
         <div class="brand-hero__actions">
           <a href="#catalogo" class="btn btn--primary">Ver la colección</a>
           <a href="contacto.html" class="btn btn--ghost">Pedir cita</a>
@@ -560,77 +365,71 @@
     <!-- 2. TICKER -->
     <div class="announcement-bar" aria-hidden="true">
       <div class="announcement-bar__track">
-        <span class="announcement-bar__item">Diseño exclusivo Panisse</span>
+        <span class="announcement-bar__item">Diseño italiano</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Nombres de lugar mediterráneo</span>
+        <span class="announcement-bar__item">Casa Armani</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Solo en Panisse Óptica Lugo</span>
+        <span class="announcement-bar__item">Milán · Lugo</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Graduadas y de sol</span>
+        <span class="announcement-bar__item">Gafas de sol y graduadas</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Colección curada por Panisse</span>
+        <span class="announcement-bar__item">Colección actual</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Lujo sin estridencias</span>
+        <span class="announcement-bar__item">Solo en Panisse Óptica</span>
         <span class="announcement-bar__sep">·</span>
         <!-- duplicado para loop continuo -->
-        <span class="announcement-bar__item">Diseño exclusivo Panisse</span>
+        <span class="announcement-bar__item">Diseño italiano</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Nombres de lugar mediterráneo</span>
+        <span class="announcement-bar__item">Casa Armani</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Solo en Panisse Óptica Lugo</span>
+        <span class="announcement-bar__item">Milán · Lugo</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Graduadas y de sol</span>
+        <span class="announcement-bar__item">Gafas de sol y graduadas</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Colección curada por Panisse</span>
+        <span class="announcement-bar__item">Colección actual</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Lujo sin estridencias</span>
+        <span class="announcement-bar__item">Solo en Panisse Óptica</span>
         <span class="announcement-bar__sep">·</span>
       </div>
     </div>
 
     <!-- 3. EDITORIAL -->
-    <section class="brand-editorial" aria-label="La colección Panisse">
+    <section class="brand-editorial" aria-label="Historia de Emporio Armani">
       <div class="brand-editorial__content">
-        <span class="brand-editorial__eyebrow">La colección</span>
-        <h2 class="brand-editorial__title">Monturas con nombre de lugar</h2>
+        <span class="brand-editorial__eyebrow">La marca</span>
+        <h2 class="brand-editorial__title">El lenguaje del estilo milanés</h2>
         <div class="brand-editorial__body">
-          <p>La colección Panisse nació de una convicción sencilla: que una óptica con criterio debería tener su propia voz. Cada montura lleva el nombre de un lugar del mediterráneo — <em>Nîmes, Calanque, Riviera, Aubagne, Azur</em> — no como decoración, sino como declaración de origen. Un gusto formado en la Provenza y traído a Lugo.</p>
-          <p>No hay dos líneas separadas, solo una colección. Algunas monturas son más limpias, otras más trabajadas, pero todas comparten el mismo criterio de selección: que en Panisse elegiríamos llevarlas. Eso filtra más de lo que parece.</p>
-          <p>La encontrarás únicamente en nuestra tienda de la Rúa do Teatro. No hay distribución online, no hay rebajas. Solo la pieza correcta para la persona correcta.</p>
+          <p>Emporio Armani nació en 1981 como la respuesta contemporánea de Giorgio Armani a un mundo que pedía elegancia sin rigidez. Más joven que la línea principal, más urbana, con un vocabulario propio que mezcla la geometría italiana con la fluidez del día a día.</p>
+          <p>Las gafas Emporio Armani llevan esa misma filosofía. Líneas limpias, materiales de calidad, proporciones que funcionan en cualquier cara. Sin ostentación: la marca habla por el corte, no por el logo.</p>
+          <p>En Panisse Óptica encontrarás la colección actual de sol y graduadas. Ven a verlas sin cita o resérvanos un hueco si prefieres tiempo de sobra.</p>
         </div>
-        <span class="brand-editorial__badge">· Diseño exclusivo · Solo en Panisse Óptica, Lugo</span>
+        <span class="brand-editorial__badge">· Emporio Armani Eyewear · Distribuidor oficial en Lugo</span>
       </div>
       <div class="brand-editorial__img-col" aria-hidden="true">
-        <img src="assets/img/brands/panisse-boutique-editorial.webp"
-             alt="Detalle de montura Panisse — colección exclusiva Panisse Óptica Lugo"
+        <img src="assets/img/brands/emporio-armani-editorial.jpg"
+             alt="Detalle de montura Emporio Armani — diseño italiano contemporáneo en gafas Lugo"
              loading="lazy" />
       </div>
     </section>
 
     <!-- 4. CATÁLOGO EMBEBIDO -->
-    <section class="brand-catalog" id="catalogo" aria-label="Colección Panisse en Panisse Óptica">
+    <section class="brand-catalog" id="catalogo" aria-label="Colección Emporio Armani en Panisse Óptica">
       <div class="container">
         <header class="brand-catalog__header">
           <span class="brand-catalog__eyebrow">La colección completa</span>
-          <h2 class="brand-catalog__title">Panisse en Panisse Óptica</h2>
+          <h2 class="brand-catalog__title">Emporio Armani en Panisse Óptica</h2>
         </header>
-
         <div class="brand-catalog__filters" role="group" aria-label="Filtrar por tipo">
           <button class="brand-catalog__filter-btn is-active" data-filter="todos" aria-pressed="true">Todo</button>
           <button class="brand-catalog__filter-btn" data-filter="sol" aria-pressed="false">Sol</button>
           <button class="brand-catalog__filter-btn" data-filter="graduadas" aria-pressed="false">Graduadas</button>
         </div>
-
-        <div class="brand-catalog__grid" id="panisse-catalog-grid" role="list" aria-label="Productos Panisse">
-          <!-- Se carga vía JS -->
-        </div>
-        <p class="brand-catalog__empty" id="panisse-catalog-empty" aria-live="polite">
-          No hay modelos disponibles con este filtro. Prueba con otra categoría o
-          <a href="catalogo.html?marca=panisse">visita el catálogo completo</a>.
+        <div class="brand-catalog__grid" id="armani-catalog-grid" role="list" aria-label="Productos Emporio Armani"></div>
+        <p class="brand-catalog__empty" id="armani-catalog-empty" aria-live="polite">
+          No hay modelos disponibles con este filtro. <a href="catalogo.html?marca=emporio-armani">Visita el catálogo completo</a>.
         </p>
-
         <div class="brand-catalog__cta">
-          <a href="catalogo.html?marca=panisse">Ver catálogo completo →</a>
+          <a href="catalogo.html?marca=emporio-armani">Ver catálogo completo →</a>
         </div>
       </div>
     </section>
@@ -649,27 +448,15 @@
   <!-- FOOTER -->
   <footer class="footer" aria-label="Pie de página">
     <div class="footer__inner container">
-
       <div class="footer__col footer__col--brand">
-        <a href="index.html" class="footer__logo" aria-label="Panisse Óptica — inicio">
-          Panisse <em>Óptica</em>
-        </a>
-        <p class="footer__mission">
-          Óptica boutique en Lugo. Cuidamos tu salud visual con la mejor tecnología y te ofrecemos una selección artesanal de gafas de diseño de autor.
-        </p>
+        <a href="index.html" class="footer__logo" aria-label="Panisse Óptica — inicio">Panisse <em>Óptica</em></a>
+        <p class="footer__mission">Óptica boutique en Lugo. Cuidamos tu salud visual con la mejor tecnología y te ofrecemos una selección artesanal de gafas de diseño de autor.</p>
         <div class="footer__social">
-          <a href="https://www.instagram.com/panisse_optica/" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=61586908144350" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-          </a>
-          <a href="https://www.tiktok.com/@panisse_optica" class="footer__social-link" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
-          </a>
+          <a href="https://www.instagram.com/panisse_optica/" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg></a>
+          <a href="https://www.facebook.com/profile.php?id=61586908144350" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.tiktok.com/@panisse_optica" class="footer__social-link" aria-label="TikTok" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
         </div>
       </div>
-
       <nav class="footer__col footer__col--links" aria-label="Navegación del footer">
         <h3 class="footer__heading">Explorar</h3>
         <ul class="footer__list">
@@ -688,15 +475,11 @@
           <li><a href="eliminar-datos.html" class="footer__link">Eliminación de Datos</a></li>
         </ul>
       </nav>
-
       <div class="footer__col footer__col--stores">
         <h3 class="footer__heading">Nuestra Tienda</h3>
         <div class="footer__store">
           <p class="footer__store-name">Panisse Óptica</p>
-          <address class="footer__address">
-            Rúa do Teatro, Bajo 2<br>
-            27001 Lugo
-          </address>
+          <address class="footer__address">Rúa do Teatro, Bajo 2<br>27001 Lugo</address>
           <ul class="footer__store-details">
             <li><a href="tel:+34982301193">982 30 11 93</a></li>
             <li><a href="mailto:info@panisse.es">info@panisse.es</a></li>
@@ -704,7 +487,6 @@
           </ul>
         </div>
       </div>
-
       <div class="footer__col footer__col--newsletter">
         <h3 class="footer__heading">Novedades</h3>
         <p class="footer__newsletter-text">Nuevas colecciones, consejos ópticos y artículos de autor. Sin spam, solo lo que merece la pena.</p>
@@ -714,10 +496,9 @@
             <button type="submit" class="footer__submit" aria-label="Suscribirse">→</button>
           </div>
           <p class="footer__form-msg" id="newsletter-msg"></p>
-          <p class="footer__newsletter-legal">Al suscribirte aceptas nuestra <a href="privacidad.html">política de privacidad</a>. Puedes darte de baja cuando quieras.</p>
+          <p class="footer__newsletter-legal">Al suscribirte aceptas nuestra <a href="privacidad.html">política de privacidad</a>.</p>
         </form>
       </div>
-
     </div>
     <div class="footer__bottom">
       <div class="container footer__bottom-inner">
@@ -726,26 +507,19 @@
     </div>
   </footer>
 
-  <a href="https://wa.me/34614296965?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20c%C3%B3mo%20pedir%20cita"
-     class="whatsapp-float"
-     target="_blank"
-     rel="noopener noreferrer"
-     aria-label="Contactar por WhatsApp">
-    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
-    </svg>
+  <a href="https://wa.me/34614296965?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20c%C3%B3mo%20pedir%20cita" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
     <span class="whatsapp-float__tooltip">WhatsApp</span>
   </a>
 
-  <!-- Catálogo embebido Panisse -->
+  <!-- Catálogo embebido Emporio Armani -->
   <script>
   (function () {
     'use strict';
-
-    var BRAND_SLUG  = 'panisse';
-    var grid        = document.getElementById('panisse-catalog-grid');
-    var emptyMsg    = document.getElementById('panisse-catalog-empty');
-    var filterBtns  = document.querySelectorAll('.brand-catalog__filter-btn');
+    var BRAND_SLUG   = 'emporio-armani';
+    var grid         = document.getElementById('armani-catalog-grid');
+    var emptyMsg     = document.getElementById('armani-catalog-empty');
+    var filterBtns   = document.querySelectorAll('.brand-catalog__filter-btn');
     var activeFilter = 'todos';
     var allProducts  = [];
 
@@ -755,23 +529,10 @@
       var badge     = p.is_new ? '<div class="product-card__badge">Nuevo</div>' : '';
       var dataNew   = p.is_new ? ' data-new="true"' : '';
       var waMsg     = encodeURIComponent('Hola, me gustaría reservar las gafas ' + p.brand + ' ' + p.name + ' para probarlas en vuestra tienda. ¿Cuándo puedo pasarme?');
-
-      return '<article class="product-card"' +
-               ' data-type="' + p.type + '"' +
-               ' data-brand="' + p.brand_slug + '"' +
-               ' data-gender="' + (p.specs && p.specs.genero ? p.specs.genero : '') + '"' +
-               ' data-price="' + p.price + '"' +
-               ' data-name="' + p.brand + ' ' + p.name + '"' + dataNew +
-               ' role="listitem">' +
+      return '<article class="product-card" data-type="' + p.type + '" data-brand="' + p.brand_slug + '" data-gender="' + (p.specs && p.specs.genero ? p.specs.genero : '') + '" data-price="' + p.price + '" data-name="' + p.brand + ' ' + p.name + '"' + dataNew + ' role="listitem">' +
         '<a href="producto.html?id=' + p.id + '" class="product-card__link" aria-label="Ver ' + p.brand + ' ' + p.name + '">' +
           '<div class="product-card__image-wrap">' +
-            '<img src="' + imgSrc + '"' +
-                 ' alt="' + p.brand + ' ' + p.name + ' — ' + p.variant + '"' +
-                 ' class="product-card__image is-loaded"' +
-                 ' loading="lazy"' +
-                 ' decoding="async"' +
-                 ' onerror="this.src=\'' + p.placeholder + '\'; this.onerror=null;" />' +
-            badge +
+            '<img src="' + imgSrc + '" alt="' + p.brand + ' ' + p.name + ' — ' + p.variant + '" class="product-card__image is-loaded" loading="lazy" decoding="async" onerror="this.src=\'' + p.placeholder + '\'; this.onerror=null;" />' + badge +
           '</div>' +
           '<div class="product-card__info">' +
             '<span class="product-card__brand">' + p.brand + '</span>' +
@@ -780,102 +541,47 @@
             '<p class="product-card__price">' + p.price + ' €</p>' +
           '</div>' +
         '</a>' +
-        '<a href="https://wa.me/34614296965?text=' + waMsg + '"' +
-           ' class="product-card__reserve"' +
-           ' target="_blank"' +
-           ' rel="noopener noreferrer"' +
-           ' aria-label="Reservar ' + p.brand + ' ' + p.name + ' en tienda por WhatsApp">' +
-          'Reservar en tienda' +
-        '</a>' +
+        '<a href="https://wa.me/34614296965?text=' + waMsg + '" class="product-card__reserve" target="_blank" rel="noopener noreferrer" aria-label="Reservar ' + p.brand + ' ' + p.name + ' en tienda por WhatsApp">Reservar en tienda</a>' +
       '</article>';
     }
 
     function applyFilter() {
-      var visible = activeFilter === 'todos'
-        ? allProducts
-        : allProducts.filter(function (p) { return p.type === activeFilter; });
-
+      var visible = activeFilter === 'todos' ? allProducts : allProducts.filter(function (p) { return p.type === activeFilter; });
       grid.innerHTML = visible.map(renderCard).join('');
-
-      if (visible.length === 0) {
-        emptyMsg.classList.add('is-visible');
-      } else {
-        emptyMsg.classList.remove('is-visible');
-      }
+      emptyMsg.classList[visible.length === 0 ? 'add' : 'remove']('is-visible');
     }
 
     filterBtns.forEach(function (btn) {
       btn.addEventListener('click', function () {
-        filterBtns.forEach(function (b) {
-          b.classList.remove('is-active');
-          b.setAttribute('aria-pressed', 'false');
-        });
-        btn.classList.add('is-active');
-        btn.setAttribute('aria-pressed', 'true');
-        activeFilter = btn.dataset.filter;
-        applyFilter();
+        filterBtns.forEach(function (b) { b.classList.remove('is-active'); b.setAttribute('aria-pressed', 'false'); });
+        btn.classList.add('is-active'); btn.setAttribute('aria-pressed', 'true');
+        activeFilter = btn.dataset.filter; applyFilter();
       });
     });
 
     fetch('data/products.json?v=4')
-      .then(function (res) {
-        if (!res.ok) throw new Error('HTTP ' + res.status);
-        return res.json();
-      })
-      .then(function (products) {
-        allProducts = products.filter(function (p) { return p.brand_slug === BRAND_SLUG; });
-        applyFilter();
-      })
-      .catch(function (err) {
-        console.warn('[Panisse] No se pudo cargar el catálogo.', err);
-        emptyMsg.textContent = 'No se pudo cargar el catálogo. Visita nuestra tienda para ver la colección completa.';
-        emptyMsg.classList.add('is-visible');
-      });
+      .then(function (res) { if (!res.ok) throw new Error('HTTP ' + res.status); return res.json(); })
+      .then(function (products) { allProducts = products.filter(function (p) { return p.brand_slug === BRAND_SLUG; }); applyFilter(); })
+      .catch(function (err) { console.warn('[Emporio Armani] No se pudo cargar el catálogo.', err); emptyMsg.textContent = 'No se pudo cargar el catálogo. Visita nuestra tienda para ver la colección completa.'; emptyMsg.classList.add('is-visible'); });
   })();
   </script>
 
   <script src="assets/js/main.min.js" defer></script>
 
-  <!-- Google Translate -->
-  <style>
-    .goog-te-banner-frame,iframe.skiptranslate{display:none!important;}
-    body,body.translated-ltr,body.translated-rtl{top:0!important;margin-top:0!important;}
-    .goog-te-gadget,#goog-gt-tt{display:none!important;}
-  </style>
+  <style>.goog-te-banner-frame,iframe.skiptranslate{display:none!important;}body,body.translated-ltr,body.translated-rtl{top:0!important;margin-top:0!important;}.goog-te-gadget,#goog-gt-tt{display:none!important;}</style>
   <div id="google_translate_element" style="display:none" aria-hidden="true"></div>
   <script>
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement(
-        { pageLanguage: 'es', includedLanguages: 'en', autoDisplay: false },
-        'google_translate_element'
-      );
-    }
+    function googleTranslateElementInit() { new google.translate.TranslateElement({ pageLanguage: 'es', includedLanguages: 'en', autoDisplay: false }, 'google_translate_element'); }
     (function () {
-      function getLang() {
-        try { return localStorage.getItem('panisse_lang') || 'es'; } catch(e){ return 'es'; }
-      }
+      function getLang() { try { return localStorage.getItem('panisse_lang') || 'es'; } catch(e){ return 'es'; } }
       function panisseLangToggle() {
         var lang = getLang() === 'es' ? 'en' : 'es';
         try { localStorage.setItem('panisse_lang', lang); } catch(e){}
-        if (lang === 'en') {
-          var s = document.createElement('script');
-          s.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-          document.head.appendChild(s);
-        } else {
-          var c = document.cookie.match(/googtrans=([^;]+)/);
-          if (c) {
-            document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/';
-            document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.' + location.hostname;
-          }
-          location.reload();
-        }
+        if (lang === 'en') { var s = document.createElement('script'); s.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'; document.head.appendChild(s); }
+        else { var c = document.cookie.match(/googtrans=([^;]+)/); if (c) { document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/'; document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.' + location.hostname; } location.reload(); }
       }
       window.panisseLangToggle = panisseLangToggle;
-      if (getLang() === 'en') {
-        var s = document.createElement('script');
-        s.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-        document.head.appendChild(s);
-      }
+      if (getLang() === 'en') { var s = document.createElement('script'); s.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'; document.head.appendChild(s); }
     })();
   </script>
 
