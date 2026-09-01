@@ -15,8 +15,8 @@
   @keyframes ticker-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
   /* ── Brand Hero ── */
-  .brand-hero{position:relative;width:100%;height:100svh;min-height:560px;overflow:hidden;background-color:#1c1816;background-image:url('assets/img/brands/emporio-armani-hero.jpg');background-size:cover;background-position:center center}
-  .brand-hero__overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(14,11,8,.94) 0%,rgba(14,11,8,.5) 45%,rgba(14,11,8,.08) 100%);z-index:1}
+  .brand-hero{position:relative;width:100%;height:100svh;min-height:560px;overflow:hidden;background-color:#0a0a0a;background-image:url('assets/img/brands/emporio-armani-hero.jpg');background-size:cover;background-position:center 30%}
+  .brand-hero__overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,6,4,.92) 0%,rgba(8,6,4,.28) 42%,rgba(8,6,4,0) 72%);z-index:1}
   .brand-hero__content{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding:0 var(--container-pad) clamp(48px,8vh,100px);max-width:calc(var(--container-max) + var(--container-pad)*2);margin-inline:auto}
   .brand-hero__eyebrow{display:block;font-size:.5625rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:rgba(255,255,255,.75);margin-bottom:20px}
   .brand-hero__title{font-family:var(--font-display);font-style:italic;font-weight:600;color:#fff;line-height:.88;font-size:clamp(56px,9vw,120px);margin-bottom:24px;letter-spacing:-.01em}
@@ -32,8 +32,8 @@
   .brand-editorial__body p+p{margin-top:16px}
   .brand-editorial__body em{font-style:italic;color:var(--color-text)}
   .brand-editorial__badge{display:inline-block;margin-top:28px;font-size:.5rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--color-muted)}
-  .brand-editorial__img-col{overflow:hidden;background:#2a2218;position:relative;min-height:400px}
-  .brand-editorial__img-col img{width:100%;height:100%;object-fit:cover;display:block}
+  .brand-editorial__img-col{overflow:hidden;background:#0a0a0a;position:relative;min-height:400px}
+  .brand-editorial__img-col img{width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;filter:grayscale(8%)}
   @media(max-width:768px){.brand-editorial{grid-template-columns:1fr}.brand-editorial__img-col{min-height:260px;order:-1}}
 
   /* ── Catalog ── */
