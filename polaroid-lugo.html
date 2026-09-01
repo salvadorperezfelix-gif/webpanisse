@@ -8,18 +8,18 @@
 
   /* ── Ticker ── */
   .announcement-bar{background:#1a1a1a;color:#fff;height:40px;overflow:hidden;display:flex;align-items:center}
-  .announcement-bar__track{display:inline-flex;align-items:center;white-space:nowrap;animation:ticker-scroll 42s linear infinite;gap:0;font-size:.5625rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+  .announcement-bar__track{display:inline-flex;align-items:center;white-space:nowrap;animation:ticker-scroll 44s linear infinite;gap:0;font-size:.5625rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
   .announcement-bar:hover .announcement-bar__track{animation-play-state:paused}
   .announcement-bar__item{padding-inline:28px}
   .announcement-bar__sep{color:rgba(199,219,214,.7);font-size:.5rem}
   @keyframes ticker-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
   /* ── Brand Hero ── */
-  .brand-hero{position:relative;width:100%;height:100svh;min-height:560px;overflow:hidden;background-color:#08061a;background-image:url('assets/img/brands/swarovski-hero.jpg');background-size:cover;background-position:center center}
-  .brand-hero__overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(6,5,18,.96) 0%,rgba(6,5,18,.62) 42%,rgba(6,5,18,.32) 100%);z-index:1}
+  .brand-hero{position:relative;width:100%;height:100svh;min-height:560px;overflow:hidden;background-color:#1c1c1c;background-image:url('assets/img/brands/polaroid-hero.jpg');background-size:cover;background-position:center 55%}
+  .brand-hero__overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,6,4,.92) 0%,rgba(8,6,4,.28) 42%,rgba(8,6,4,0) 72%);z-index:1}
   .brand-hero__content{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding:0 var(--container-pad) clamp(48px,8vh,100px);max-width:calc(var(--container-max) + var(--container-pad)*2);margin-inline:auto}
   .brand-hero__eyebrow{display:block;font-size:.5625rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:rgba(255,255,255,.75);margin-bottom:20px}
-  .brand-hero__title{font-family:var(--font-display);font-style:italic;font-weight:600;color:#fff;line-height:.88;font-size:clamp(64px,10vw,136px);margin-bottom:24px;letter-spacing:-.01em}
+  .brand-hero__title{font-family:var(--font-display);font-style:italic;font-weight:600;color:#fff;line-height:.88;font-size:clamp(56px,9vw,120px);margin-bottom:24px;letter-spacing:-.01em}
   .brand-hero__subtitle{font-size:clamp(.9375rem,1.5vw,1.0625rem);font-weight:300;font-style:italic;color:rgba(255,255,255,.85);line-height:1.55;margin-bottom:40px;max-width:440px}
   .brand-hero__actions{display:flex;gap:14px;flex-wrap:wrap}
 
@@ -32,8 +32,8 @@
   .brand-editorial__body p+p{margin-top:16px}
   .brand-editorial__body em{font-style:italic;color:var(--color-text)}
   .brand-editorial__badge{display:inline-block;margin-top:28px;font-size:.5rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--color-muted)}
-  .brand-editorial__img-col{overflow:hidden;background:#2a3a28;position:relative;min-height:400px}
-  .brand-editorial__img-col img{width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block}
+  .brand-editorial__img-col{overflow:hidden;background:#0a0a0a;position:relative;min-height:400px}
+  .brand-editorial__img-col img{width:100%;height:100%;object-fit:contain;object-position:center center;display:block;background:#f5f5f3}
   @media(max-width:768px){.brand-editorial{grid-template-columns:1fr}.brand-editorial__img-col{min-height:260px;order:-1}}
 
   /* ── Catalog ── */
@@ -99,9 +99,9 @@
   </script>
 
   <!-- SEO -->
-  <title>Swarovski Gafas Lugo — Óptica Oficial | Panisse Óptica</title>
-  <meta name="description" content="Distribuidor oficial de gafas Swarovski en Lugo. Monturas con cristal austriaco desde 1895. Sol y graduadas. Solo en Panisse Óptica, Rúa do Teatro 2." />
-  <meta name="keywords" content="Swarovski gafas Lugo, gafas Swarovski Lugo, óptica Swarovski Lugo, monturas Swarovski Lugo, cristal austriaco gafas Lugo" />
+  <title>Polaroid Gafas Sol Lugo — Lentes Polarizadas | Panisse Óptica</title>
+  <meta name="description" content="Gafas de sol Polaroid en Lugo. Lentes polarizadas con protección UV400 desde 59 €. Solo en Panisse Óptica, Rúa do Teatro 2." />
+  <meta name="keywords" content="Polaroid gafas Lugo, gafas sol polarizadas Lugo, lentes polarizadas Lugo, gafas Polaroid Lugo" />
   <meta name="author" content="Panisse Óptica" />
   <meta name="robots" content="index, follow" />
   <meta name="geo.region" content="ES-LU" />
@@ -110,11 +110,11 @@
   <meta name="ICBM" content="43.0097, -7.5563" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Swarovski Gafas Lugo — Óptica Oficial | Panisse Óptica" />
-  <meta property="og:description" content="Distribuidor oficial de gafas Swarovski en Lugo. Cristal austriaco desde 1895. Sol y graduadas en Panisse Óptica." />
+  <meta property="og:title" content="Polaroid Gafas Sol Lugo — Lentes Polarizadas | Panisse Óptica" />
+  <meta property="og:description" content="Gafas de sol Polaroid en Lugo. Lentes polarizadas con protección UV400 en Panisse Óptica." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://panisse.es/swarovski-lugo.html" />
-  <meta property="og:image" content="https://panisse.es/assets/img/brands/swarovski-hero.jpg" />
+  <meta property="og:url" content="https://panisse.es/polaroid-lugo.html" />
+  <meta property="og:image" content="https://panisse.es/assets/img/brands/polaroid-hero.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="es_ES" />
@@ -122,12 +122,12 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Swarovski Gafas Lugo — Óptica Oficial | Panisse Óptica" />
-  <meta name="twitter:description" content="Distribuidor oficial de gafas Swarovski en Lugo. Cristal austriaco desde 1895." />
-  <meta name="twitter:image" content="https://panisse.es/assets/img/brands/swarovski-hero.jpg" />
+  <meta name="twitter:title" content="Polaroid Gafas Sol Lugo — Lentes Polarizadas | Panisse Óptica" />
+  <meta name="twitter:description" content="Gafas de sol Polaroid en Lugo. Lentes polarizadas, calidad óptica." />
+  <meta name="twitter:image" content="https://panisse.es/assets/img/brands/polaroid-hero.jpg" />
 
   <!-- Canonical -->
-  <link rel="canonical" href="https://panisse.es/swarovski-lugo.html" />
+  <link rel="canonical" href="https://panisse.es/polaroid-lugo.html" />
 
   <!-- JSON-LD -->
   <script type="application/ld+json">[
@@ -154,7 +154,7 @@
     "itemListElement": [
       {"@type":"ListItem","position":1,"name":"Inicio","item":"https://panisse.es/"},
       {"@type":"ListItem","position":2,"name":"Marcas","item":"https://panisse.es/catalogo.html"},
-      {"@type":"ListItem","position":3,"name":"Swarovski"}
+      {"@type":"ListItem","position":3,"name":"Polaroid"}
     ]
   }
 ]</script>
@@ -347,12 +347,12 @@
   <main id="main-content">
 
     <!-- 1. HERO -->
-    <section class="brand-hero" aria-label="Swarovski gafas en Panisse Óptica Lugo">
+    <section class="brand-hero" aria-label="Polaroid gafas de sol en Panisse Óptica Lugo">
       <div class="brand-hero__overlay" aria-hidden="true"></div>
       <div class="brand-hero__content">
-        <span class="brand-hero__eyebrow">Cristal Austriaco · Desde 1895 · Lugo</span>
-        <h1 class="brand-hero__title">Swarovski</h1>
-        <p class="brand-hero__subtitle">Donde el cristal austriaco se convierte en montura. Precisión, destellos y una identidad inconfundible en cada gafa.</p>
+        <span class="brand-hero__eyebrow">Cambridge · Desde 1937 · Lugo</span>
+        <h1 class="brand-hero__title">Polaroid</h1>
+        <p class="brand-hero__subtitle">La tecnología que nació para proteger la visión, convertida en gafa de sol. Lentes polarizadas al alcance de todos.</p>
         <div class="brand-hero__actions">
           <a href="#catalogo" class="btn btn--primary">Ver la colección</a>
           <a href="contacto.html" class="btn btn--ghost">Pedir cita</a>
@@ -363,67 +363,66 @@
     <!-- 2. TICKER -->
     <div class="announcement-bar" aria-hidden="true">
       <div class="announcement-bar__track">
-        <span class="announcement-bar__item">Cristal Swarovski Original</span>
+        <span class="announcement-bar__item">Lentes polarizadas</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Desde 1895</span>
+        <span class="announcement-bar__item">Cambridge · 1937</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Gafas de sol y graduadas</span>
+        <span class="announcement-bar__item">Protección UV400</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Solo en Panisse Óptica Lugo</span>
+        <span class="announcement-bar__item">Desde 59 €</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Diseño vienés</span>
+        <span class="announcement-bar__item">Solo gafas de sol</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Lujo cristalino</span>
+        <span class="announcement-bar__item">Solo en Panisse Óptica</span>
         <span class="announcement-bar__sep">·</span>
         <!-- duplicado para loop continuo -->
-        <span class="announcement-bar__item">Cristal Swarovski Original</span>
+        <span class="announcement-bar__item">Lentes polarizadas</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Desde 1895</span>
+        <span class="announcement-bar__item">Cambridge · 1937</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Gafas de sol y graduadas</span>
+        <span class="announcement-bar__item">Protección UV400</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Solo en Panisse Óptica Lugo</span>
+        <span class="announcement-bar__item">Desde 59 €</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Diseño vienés</span>
+        <span class="announcement-bar__item">Solo gafas de sol</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Lujo cristalino</span>
+        <span class="announcement-bar__item">Solo en Panisse Óptica</span>
         <span class="announcement-bar__sep">·</span>
       </div>
     </div>
 
     <!-- 3. EDITORIAL -->
-    <section class="brand-editorial" aria-label="Historia de Swarovski">
+    <section class="brand-editorial" aria-label="Historia de Polaroid">
       <div class="brand-editorial__content">
         <span class="brand-editorial__eyebrow">La marca</span>
-        <h2 class="brand-editorial__title">El brillo que nació en los Alpes</h2>
+        <h2 class="brand-editorial__title">Antes de la cámara, estaban las lentes</h2>
         <div class="brand-editorial__body">
-          <p>Daniel Swarovski fundó su empresa en 1895 en Wattens, Austria, con una sola obsesión: cortar el cristal con una precisión imposible para la época. Lo que empezó como un secreto industrial se convirtió en el lenguaje del glamour del siglo XX.</p>
-          <p>Las gafas Swarovski llevan ese mismo ADN. Cada montura combina ingeniería austríaca y diseño contemporáneo: formas limpias con detalles en cristal que atrapan la luz sin estridencia. No son gafas que griten, son gafas que brillan.</p>
-          <p>En Panisse Óptica las tienes disponibles para sol y para graduadas. Ven a verlas en la Rúa do Teatro.</p>
+          <p>Polaroid nació en 1937 cuando Edwin Land, investigador de Harvard, encontró la manera de polarizar la luz en una lámina plástica flexible. El primer uso fue óptico: reducir el deslumbramiento para conductores y pilotos. Las cámaras llegaron después.</p>
+          <p>Las gafas Polaroid heredan esa obsesión por la calidad de lente. Un filtro polarizado elimina el reflejo horizontal del agua, la carretera y el asfalto: lo que ves es más nítido, más contrastado, menos cansado.</p>
+          <p>En Panisse Óptica tenemos la colección actual de Polaroid. Todas de sol, todas polarizadas, todas con UV400. Ven a verlas cuando quieras.</p>
         </div>
-        <span class="brand-editorial__badge">· Swarovski Eyewear · Distribuidor oficial en Lugo</span>
+        <span class="brand-editorial__badge">· Polaroid Eyewear · Lentes polarizadas · Panisse Óptica, Lugo</span>
       </div>
       <div class="brand-editorial__img-col" aria-hidden="true">
-        <img src="assets/img/brands/swarovski-editorial.jpg?v=2"
-             alt="Detalle de montura Swarovski — cristal austriaco en gafas de lujo Lugo"
+        <img src="assets/img/brands/polaroid-editorial.jpg"
+             alt="Cámara Polaroid 636 — el origen de la tecnología de lentes polarizadas"
              loading="lazy" />
       </div>
     </section>
 
     <!-- 4. CATÁLOGO EMBEBIDO -->
-    <section class="brand-catalog" id="catalogo" aria-label="Colección Swarovski en Panisse Óptica">
+    <section class="brand-catalog" id="catalogo" aria-label="Colección Polaroid en Panisse Óptica">
       <div class="container">
         <header class="brand-catalog__header">
           <span class="brand-catalog__eyebrow">La colección completa</span>
-          <h2 class="brand-catalog__title">Swarovski en Panisse Óptica</h2>
+          <h2 class="brand-catalog__title">Polaroid en Panisse Óptica</h2>
         </header>
         <div class="brand-catalog__filters" role="group" aria-label="Filtrar por tipo">
           <button class="brand-catalog__filter-btn is-active" data-filter="todos" aria-pressed="true">Todo</button>
           <button class="brand-catalog__filter-btn" data-filter="sol" aria-pressed="false">Sol</button>
-          <button class="brand-catalog__filter-btn" data-filter="graduadas" aria-pressed="false">Graduadas</button>
         </div>
-        <div class="brand-catalog__grid" id="swarovski-catalog-grid" role="list" aria-label="Productos Swarovski"></div>
-        <p class="brand-catalog__empty" id="swarovski-catalog-empty" aria-live="polite">
+        <div class="brand-catalog__grid" id="polaroid-catalog-grid" role="list" aria-label="Productos Polaroid"></div>
+        <p class="brand-catalog__empty" id="polaroid-catalog-empty" aria-live="polite">
           No hay modelos disponibles con este filtro. <a href="catalogo.html">Visita el catálogo completo</a>.
         </p>
         <div class="brand-catalog__cta">
@@ -435,8 +434,8 @@
     <!-- 5. CTA FINAL -->
     <section class="brand-cta" aria-label="Pedir cita en Panisse Óptica">
       <div class="container">
-        <h2 class="brand-cta__title">¿Quieres verlas en persona?</h2>
-        <p class="brand-cta__desc">Sin prisas. Sin colas. Solo tú, las gafas y la persona adecuada para ayudarte a elegir.</p>
+        <h2 class="brand-cta__title">Ver es creer</h2>
+        <p class="brand-cta__desc">La diferencia de un filtro polarizado se nota en el acto. Ven a Panisse Óptica y compruébalo tú mismo.</p>
         <a href="contacto.html" class="btn btn--primary">Pedir cita previa</a>
       </div>
     </section>
@@ -510,13 +509,13 @@
     <span class="whatsapp-float__tooltip">WhatsApp</span>
   </a>
 
-  <!-- Catálogo embebido Swarovski -->
+  <!-- Catálogo embebido Emporio Armani -->
   <script>
   (function () {
     'use strict';
-    var BRAND_SLUG   = 'swarovski';
-    var grid         = document.getElementById('swarovski-catalog-grid');
-    var emptyMsg     = document.getElementById('swarovski-catalog-empty');
+    var BRAND_SLUG   = 'polaroid';
+    var grid         = document.getElementById('polaroid-catalog-grid');
+    var emptyMsg     = document.getElementById('polaroid-catalog-empty');
     var filterBtns   = document.querySelectorAll('.brand-catalog__filter-btn');
     var activeFilter = 'todos';
     var allProducts  = [];
@@ -560,7 +559,7 @@
     fetch('data/products.json?v=4')
       .then(function (res) { if (!res.ok) throw new Error('HTTP ' + res.status); return res.json(); })
       .then(function (products) { allProducts = products.filter(function (p) { return p.brand_slug === BRAND_SLUG; }); applyFilter(); })
-      .catch(function (err) { console.warn('[Swarovski] No se pudo cargar el catálogo.', err); emptyMsg.textContent = 'No se pudo cargar el catálogo. Visita nuestra tienda para ver la colección completa.'; emptyMsg.classList.add('is-visible'); });
+      .catch(function (err) { console.warn('[Polaroid] No se pudo cargar el catálogo.', err); emptyMsg.textContent = 'No se pudo cargar el catálogo. Visita nuestra tienda para ver la colección completa.'; emptyMsg.classList.add('is-visible'); });
   })();
   </script>
 
