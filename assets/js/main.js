@@ -162,7 +162,7 @@ if (newsletterForm) {
     newsletterMsg.className = 'footer__form-msg';
 
     try {
-      const _a = 'xkeysib-d43816c8a334', _b = 'aaa43053d90162f8', _c = '06e2b4ca3577e4ed43f0f41f3b55017c92e2-IlvcPtQZEYbOgLgP';
+      const _a = 'xkeysib-d43816c8a334', _b = 'aaa43053d90162f8', _c = '06e2b4ca3577e4ed43f0f41f3b55017c92e2-iKtqh45nW6yowyjD';
       const res = await fetch('https://api.brevo.com/v3/contacts', {
         method: 'POST',
         headers: {
@@ -178,7 +178,6 @@ if (newsletterForm) {
         newsletterMsg.className = 'footer__form-msg footer__form-msg--ok';
         newsletterForm.reset();
       } else if (res.status === 400) {
-        // contacto ya existente en Brevo
         newsletterMsg.textContent = '¡Suscripción confirmada! Gracias.';
         newsletterMsg.className = 'footer__form-msg footer__form-msg--ok';
         newsletterForm.reset();
