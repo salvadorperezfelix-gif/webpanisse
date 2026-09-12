@@ -2,6 +2,7 @@ User-agent: *
 Disallow: /ecommerce/
 Disallow: /assets/blog/
 Disallow: /data/
+Disallow: /node_modules/
 Allow: /
 
 Sitemap: https://panisse.es/sitemap.xml
