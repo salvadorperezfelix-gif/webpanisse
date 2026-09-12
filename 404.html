@@ -138,6 +138,31 @@
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
         })(window, document, "clarity", "script", "xx267v5tt4");
     </script>
+  <!-- Redirects de URLs antiguas de Shopify -->
+  <script>
+    (function() {
+      var p = window.location.pathname;
+      var map = {
+        '/collections/gafas-sol':            '/gafas-de-sol-lugo.html',
+        '/collections/gafas-sol-polarizadas': '/gafas-de-sol-lugo.html',
+        '/collections/all':                  '/catalogo.html',
+        '/products/':                        '/catalogo.html',
+        '/products/itria-ocre':              '/catalogo.html',
+        '/products/noia-noir':               '/catalogo.html',
+        '/pages/san-valentin':               '/',
+        '/password':                         '/',
+        '/b':                                '/',
+        '/es/':                              '/'
+      };
+      var dest = map[p];
+      if (!dest) {
+        for (var prefix in map) {
+          if (p.indexOf(prefix) === 0 && prefix !== '/') { dest = map[prefix]; break; }
+        }
+      }
+      if (dest) { window.location.replace(dest); }
+    })();
+  </script>
 </head>
 <body class="interior-page">
 
