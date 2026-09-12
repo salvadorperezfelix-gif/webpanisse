@@ -3742,6 +3742,17 @@ body, body.translated-ltr, body.translated-rtl { top: 0 !important; margin-top: 
   min-height: 600px;
   width: 100%;
 }
+.cita-phone-fallback {
+  margin-top: 14px;
+  font-size: 0.8125rem;
+  color: var(--color-muted);
+  text-align: center;
+}
+.cita-phone-fallback a {
+  color: var(--color-text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 
 
 /* Formulario de cita (legacy — kept for reference) */

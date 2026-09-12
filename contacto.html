@@ -541,15 +541,17 @@
         <div class="cita-cal-wrap">
           <div id="cal-inline"></div>
         </div>
+
+        <p class="cita-phone-fallback">¿Prefieres llamar? <a href="tel:+34982301193">982 30 11 93</a> &nbsp;·&nbsp; <a href="https://wa.me/34614296965" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
         <script>
           (function(C,A,L){let p=function(a,ar){a.q.push(ar);};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true;}if(ar[0]===L){const api=function(){p(api,arguments);};const ns=ar[1];api.q=[];if(typeof ns==="string"){cal.ns[ns]=api;p(api,ar);p(cal,["initNamespace",ns]);}else p(cal,ar);return;}p(cal,ar);};})(window,"https://citas.panisse.es/embed/embed.js","init");
           Cal("init", {origin:"https://citas.panisse.es"});
           Cal("inline", {
             elementOrSelector: "#cal-inline",
-            config: {"layout":"month_view"},
+            config: {"layout":"week_view"},
             calLink: "panisse/estudio-visual"
           });
-          Cal("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+          Cal("ui", {"hideEventTypeDetails":false,"layout":"week_view"});
 
           // Escuchar el éxito de reserva en Cal.com para disparar los píxeles de conversión
           Cal("on", {
