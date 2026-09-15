@@ -2845,5 +2845,29 @@
       "varilla": "142 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "einstoffen-baronne-greenwalnut",
+    "name": "Baronne",
+    "brand": "Einstoffen",
+    "brand_slug": "einstoffen",
+    "is_new": true,
+    "type": "graduadas",
+    "price": 195,
+    "variant": "Verde / Nogal",
+    "placeholder": "https://placehold.co/600x480/2a5a3a/c8a06c?text=Einstoffen",
+    "image": "assets/img/products/einstoffen/baronne-greenwalnut-f.jpg",
+    "gallery": [
+      "assets/img/products/einstoffen/baronne-greenwalnut-f.jpg",
+      "assets/img/products/einstoffen/baronne-greenwalnut-s.jpg"
+    ],
+    "description": "Un rango por debajo de condesa, dos por encima del resto. La «Baronne» conoce su lugar — y no lo cede a nadie. Grande, de formas redondeadas, presente sin ser intrusiva. Su fuerza reside en la naturalidad con la que ocupa el espacio. Presencia sin esfuerzo, compostura sin artificio. Se sienta, se queda, no pide permiso. La «Baronne» la llevan quienes entienden que la clase no se recibe: se reclama — con aplomo, con calma, con una mirada que no necesita demostrar nada. Acetato bicolor verde y nogal con varillas de metal dorado y detalle de madera. Pieza 6920.",
+    "specs": {
+      "material": "Acetato / Metal / Madera",
+      "calibre": "53 mm",
+      "puente": "20 mm",
+      "varilla": "145 mm",
+      "genero": "Mujer"
+    }
   }
 ]
