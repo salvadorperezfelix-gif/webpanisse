@@ -2869,5 +2869,29 @@
       "varilla": "145 mm",
       "genero": "Mujer"
     }
+  },
+  {
+    "id": "einstoffen-autor-peachburl",
+    "name": "Autor",
+    "brand": "Einstoffen",
+    "brand_slug": "einstoffen",
+    "is_new": true,
+    "type": "graduadas",
+    "price": 295,
+    "variant": "Peach Burl",
+    "placeholder": "https://placehold.co/600x480/5a3a20/c8a06c?text=Einstoffen",
+    "image": "assets/img/products/einstoffen/autor-peachburl-f.jpg",
+    "gallery": [
+      "assets/img/products/einstoffen/autor-peachburl-f.jpg",
+      "assets/img/products/einstoffen/autor-peachburl-s.jpg"
+    ],
+    "description": "Escribes una respuesta, la relees, la borras, la vuelves a escribir. Tres borradores después, dice más o menos lo mismo que el primero — pero ahora cada palabra está en su lugar. Otros envían lo primero que les viene a la cabeza. Tú, no. Una frase que tropieza te molesta más que una que llega tarde. La «Autor» lleva esa misma precisión en su estructura: nada es accidental, cada línea fue trabajada hasta que sostiene. Llevarla es entender que el primer borrador rara vez es el definitivo. Construcción en chapa de madera con más de 20 capas cruzadas. Bisagras alemanas OBE, varillas ajustables, hecha a mano. Pieza 7199.",
+    "specs": {
+      "material": "Chapa de Madera (20+ capas)",
+      "calibre": "51 mm",
+      "puente": "19 mm",
+      "varilla": "142 mm",
+      "genero": "Unisex"
+    }
   }
 ]
