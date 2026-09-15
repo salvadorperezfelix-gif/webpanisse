@@ -410,7 +410,13 @@ if (newsletterForm) {
       });
       requestAnimationFrame(() => newCards.forEach(c => c.classList.add('is-visible')));
     } else {
+      const PANISSE_BRANDS = ['Panisse', 'Panisse Boutique'];
       filtered.sort((a, b) => {
+        // Marcas propias siempre al final
+        const aPan = PANISSE_BRANDS.includes(a.dataset.brand) ? 1 : 0;
+        const bPan = PANISSE_BRANDS.includes(b.dataset.brand) ? 1 : 0;
+        if (aPan !== bPan) return aPan - bPan;
+        // Dentro de cada grupo: novedades primero
         const aNew = a.dataset.new === 'true', bNew = b.dataset.new === 'true';
         if (aNew !== bNew) return bNew - aNew;
         switch (state.sort) {
