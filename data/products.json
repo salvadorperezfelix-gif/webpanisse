@@ -2821,5 +2821,29 @@
       "varilla": "145 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "einstoffen-dichter-blackmarmor",
+    "name": "Dichter",
+    "brand": "Einstoffen",
+    "brand_slug": "einstoffen",
+    "is_new": true,
+    "type": "graduadas",
+    "price": 195,
+    "variant": "Negro Mármol / Oro",
+    "placeholder": "https://placehold.co/600x480/0a0a0a/c8a96c?text=Einstoffen",
+    "image": "assets/img/products/einstoffen/dichter-blackmarmor-f.jpg",
+    "gallery": [
+      "assets/img/products/einstoffen/dichter-blackmarmor-f.jpg",
+      "assets/img/products/einstoffen/dichter-blackmarmor-s.jpg"
+    ],
+    "description": "El «Dichter» — el Poeta — no es de los que recitan versos amables sobre la naturaleza sublime. Es un luchador callejero de la palabra: en bares con humo y en callejones oscuros, lanza sus versos sobre el amor, la pérdida y la exigencia de justicia con una voz grave y sin adornos. Siempre con una cerveza delante, coronada de espuma blanca. Da igual el escenario: toca corazones y derriba muros. ¿Y sus gafas? Son el espejo de su alma. Frente de acetato marmolado negro, varillas de metal texturizado dorado. Pieza 6410.",
+    "specs": {
+      "material": "Acetato / Metal",
+      "calibre": "49 mm",
+      "puente": "20 mm",
+      "varilla": "142 mm",
+      "genero": "Unisex"
+    }
   }
 ]
