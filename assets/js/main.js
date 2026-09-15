@@ -410,7 +410,7 @@ if (newsletterForm) {
       });
       requestAnimationFrame(() => newCards.forEach(c => c.classList.add('is-visible')));
     } else {
-      const PANISSE_BRANDS = ['Panisse', 'Panisse Boutique'];
+      const PANISSE_BRANDS = ['panisse', 'panisse-boutique'];
       filtered.sort((a, b) => {
         // Marcas propias siempre al final
         const aPan = PANISSE_BRANDS.includes(a.dataset.brand) ? 1 : 0;
