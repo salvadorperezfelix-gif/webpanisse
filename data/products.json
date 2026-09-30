@@ -2823,5 +2823,29 @@
       "varilla": "142 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "ic-berlin-miles-gris-azul",
+    "name": "Miles",
+    "brand": "ic! berlin",
+    "brand_slug": "ic-berlin",
+    "is_new": true,
+    "type": "graduadas",
+    "price": null,
+    "variant": "Gris / Azul Degradado",
+    "placeholder": "https://placehold.co/600x480/4a5568/a0aec0?text=ic!+berlin",
+    "image": "assets/img/products/ic-berlin/ic-berlin-miles-gris-azul-1.jpg",
+    "gallery": [
+      "assets/img/products/ic-berlin/ic-berlin-miles-gris-azul-1.jpg",
+      "assets/img/products/ic-berlin/ic-berlin-miles-gris-azul-2.jpg",
+      "assets/img/products/ic-berlin/ic-berlin-miles-gris-azul-3.jpg"
+    ],
+    "specs": {
+      "material": "Acetato y acero inoxidable",
+      "calibre": "55 mm",
+      "puente": "17 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
