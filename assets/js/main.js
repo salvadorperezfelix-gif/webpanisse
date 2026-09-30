@@ -358,7 +358,7 @@ if (newsletterForm) {
             <span class="product-card__brand">${p.brand}</span>
             <h2 class="product-card__name">${p.name}</h2>
             <span class="product-card__variant">${typeLabel} · ${p.variant}</span>
-            <p class="product-card__price">${p.price} €</p>
+            <p class="product-card__price">${p.price ? p.price + ' €' : 'Consultar precio'}</p>
           </div>
         </a>
         <a href="https://wa.me/34614296965?text=${waMsg}"
@@ -870,7 +870,7 @@ async function initProductPage() {
     if (subtitleEl) subtitleEl.textContent = `${p.type === 'sol' ? 'Gafas de sol' : 'Gafas graduadas'} · ${p.variant}`;
     
     const priceEl = document.getElementById('prod-price');
-    if (priceEl) priceEl.textContent = `${p.price} €`;
+    if (priceEl) priceEl.textContent = p.price ? `${p.price} €` : 'Consultar precio';
     
     const descEl = document.getElementById('prod-desc');
     if (descEl) { const pEl = document.createElement('p'); pEl.textContent = p.description; descEl.replaceChildren(pEl); }
