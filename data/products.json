@@ -2847,5 +2847,28 @@
       "varilla": "145 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "ic-berlin-amg16-grafito",
+    "name": "AMG 16",
+    "brand": "ic! berlin",
+    "brand_slug": "ic-berlin",
+    "is_new": true,
+    "type": "graduadas",
+    "price": null,
+    "variant": "Grafito",
+    "placeholder": "https://placehold.co/600x480/4a5568/a0aec0?text=ic!+berlin",
+    "image": "assets/img/products/ic-berlin/ic-berlin-amg16-grafito-1.jpg",
+    "gallery": [
+      "assets/img/products/ic-berlin/ic-berlin-amg16-grafito-1.jpg",
+      "assets/img/products/ic-berlin/ic-berlin-amg16-grafito-2.jpg"
+    ],
+    "specs": {
+      "material": "Acero inoxidable",
+      "calibre": "57 mm",
+      "puente": "15 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
