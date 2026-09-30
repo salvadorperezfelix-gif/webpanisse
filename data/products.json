@@ -2870,5 +2870,29 @@
       "varilla": "145 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "ic-berlin-hania-l-grafito",
+    "name": "Hania L.",
+    "brand": "ic! berlin",
+    "brand_slug": "ic-berlin",
+    "is_new": true,
+    "type": "graduadas",
+    "price": null,
+    "variant": "Grafito",
+    "placeholder": "https://placehold.co/600x480/4a5568/a0aec0?text=ic!+berlin",
+    "image": "assets/img/products/ic-berlin/ic-berlin-hania-l-grafito-f.jpg",
+    "gallery": [
+      "assets/img/products/ic-berlin/ic-berlin-hania-l-grafito-f.jpg",
+      "assets/img/products/ic-berlin/ic-berlin-hania-l-grafito-s.jpg",
+      "assets/img/products/ic-berlin/ic-berlin-hania-l-grafito-l.jpg"
+    ],
+    "specs": {
+      "material": "Acero inoxidable",
+      "calibre": "56 mm",
+      "puente": "15 mm",
+      "varilla": "150 mm",
+      "genero": "Unisex"
+    }
   }
 ]
