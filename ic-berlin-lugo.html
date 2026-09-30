@@ -15,7 +15,7 @@
   @keyframes ticker-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
   /* ── Brand Hero ── */
-  .brand-hero{position:relative;width:100%;height:100svh;min-height:560px;overflow:hidden;background-color:#0e0e0e;background-size:cover;background-position:center}
+  .brand-hero{position:relative;width:100%;height:100svh;min-height:560px;overflow:hidden;background-color:#0e0e0e;background-image:url('assets/img/brands/ic-berlin-hero.webp');background-size:cover;background-position:center 40%}
   .brand-hero__overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,.8) 0%,rgba(10,10,10,.4) 55%,rgba(10,10,10,.15) 100%);z-index:1}
   .brand-hero__content{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding:0 var(--container-pad) clamp(48px,8vh,100px);max-width:calc(var(--container-max) + var(--container-pad)*2);margin-inline:auto}
   .brand-hero__eyebrow{display:block;font-size:.5625rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:rgba(255,255,255,.75);margin-bottom:20px}
@@ -605,10 +605,9 @@
         <span class="brand-editorial__badge">· Distribuidor oficial ic! berlin · Panisse Óptica, Lugo · Uno de dos en Galicia</span>
       </div>
       <div class="brand-editorial__img-col" aria-hidden="true">
-        <img src="assets/img/brands/ic-berlin-editorial.jpg"
+        <img src="assets/img/brands/ic-berlin-editorial.webp"
              alt="Montura ic! berlin — ingeniería alemana sin tornillos"
-             loading="lazy"
-             onerror="this.style.display='none'" />
+             loading="lazy" />
       </div>
     </section>
 
