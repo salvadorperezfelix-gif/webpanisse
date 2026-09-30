@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -15,11 +15,11 @@
   @keyframes ticker-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
   /* ── Brand Hero ── */
-  .brand-hero{position:relative;width:100%;height:100svh;min-height:560px;overflow:hidden;background-color:#ffffff;background-image:url('assets/img/brands/panisse-hero.png');background-size:cover;background-position:center 55%}
-  .brand-hero__overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,.88) 0%,rgba(10,10,10,.45) 40%,rgba(10,10,10,0) 70%);z-index:1}
+  .brand-hero{position:relative;width:100%;height:100svh;min-height:560px;overflow:hidden;background-color:#0e0e0e;background-size:cover;background-position:center}
+  .brand-hero__overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,.8) 0%,rgba(10,10,10,.4) 55%,rgba(10,10,10,.15) 100%);z-index:1}
   .brand-hero__content{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding:0 var(--container-pad) clamp(48px,8vh,100px);max-width:calc(var(--container-max) + var(--container-pad)*2);margin-inline:auto}
   .brand-hero__eyebrow{display:block;font-size:.5625rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:rgba(255,255,255,.75);margin-bottom:20px}
-  .brand-hero__title{font-family:'Parisienne','Parisienne Fallback',cursive;font-style:normal;font-weight:400;color:#fff;line-height:1.1;font-size:clamp(52px,7vw,88px);margin-bottom:24px;letter-spacing:0}
+  .brand-hero__title{font-family:var(--font-display);font-style:italic;font-weight:600;color:#fff;line-height:.88;font-size:clamp(72px,11vw,148px);margin-bottom:24px;letter-spacing:-.01em}
   .brand-hero__subtitle{font-size:clamp(.9375rem,1.5vw,1.0625rem);font-weight:300;font-style:italic;color:rgba(255,255,255,.85);line-height:1.55;margin-bottom:40px;max-width:440px}
   .brand-hero__actions{display:flex;gap:14px;flex-wrap:wrap}
 
@@ -32,9 +32,18 @@
   .brand-editorial__body p+p{margin-top:16px}
   .brand-editorial__body em{font-style:italic;color:var(--color-text)}
   .brand-editorial__badge{display:inline-block;margin-top:28px;font-size:.5rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--color-muted)}
-  .brand-editorial__img-col{overflow:hidden;background:#e8e2da;position:relative;min-height:400px}
+  .brand-editorial__img-col{overflow:hidden;background:#0e0e0e;position:relative;min-height:400px}
   .brand-editorial__img-col img{width:100%;height:100%;object-fit:cover;display:block}
   @media(max-width:768px){.brand-editorial{grid-template-columns:1fr}.brand-editorial__img-col{min-height:260px;order:-1}}
+
+  /* ── Ingeniería feature ── */
+  .brand-feature{padding:72px 0;background:#fff;border-top:1px solid var(--color-border)}
+  .brand-feature__inner{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+  .brand-feature__item{text-align:center;padding:32px 24px}
+  .brand-feature__icon{font-size:2rem;margin-bottom:16px;display:block}
+  .brand-feature__title{font-family:var(--font-display);font-style:italic;font-size:1.5rem;font-weight:600;margin-bottom:10px;color:var(--color-text)}
+  .brand-feature__desc{font-size:14px;color:var(--color-muted);line-height:1.7}
+  @media(max-width:768px){.brand-feature__inner{grid-template-columns:1fr;gap:0}}
 
   /* ── Catalog ── */
   .brand-catalog{padding:72px 0 80px;background:#fff;border-top:1px solid var(--color-border)}
@@ -71,7 +80,7 @@
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
     if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];window.addEventListener('load',function(){t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s);},{once:!0});}(window, document,'script',
+    n.queue=[];window.addEventListener('load',function(){t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s);},{once:true});}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
 
     var savedConsent = localStorage.getItem('cookieConsent');
@@ -141,9 +150,9 @@
   </script>
 
   <!-- SEO -->
-  <title>Panisse — Colección Propia de Gafas | Panisse Óptica Lugo</title>
-  <meta name="description" content="La colección propia de Panisse Óptica. Monturas de diseño exclusivo, con nombres de lugar mediterráneo. Solo en nuestra tienda de Lugo, Rúa do Teatro 2." />
-  <meta name="keywords" content="Panisse gafas Lugo, monturas exclusivas Lugo, gafas diseño propio Lugo, óptica boutique Lugo, colección Panisse, gafas de autor Lugo" />
+  <title>ic! berlin en Lugo — Gafas de Ingeniería Alemana | Panisse Óptica</title>
+  <meta name="description" content="ic! berlin en Lugo. Distribuidores oficiales. Monturas sin tornillos ni bisagras, fabricadas en Berlín. Acero inoxidable y acetato de ingeniería alemana. Panisse Óptica, Rúa do Teatro 2." />
+  <meta name="keywords" content="ic berlin Lugo, ic! berlin Lugo, gafas sin tornillos Lugo, gafas diseño alemán Lugo, monturas Berlín Lugo, óptica boutique Lugo, Panisse Óptica, ic berlin distribuidor Galicia" />
   <meta name="author" content="Panisse Óptica" />
   <meta name="robots" content="index, follow" />
   <meta name="geo.region" content="ES-LU" />
@@ -152,11 +161,11 @@
   <meta name="ICBM" content="43.0097, -7.5563" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Panisse — Colección Propia de Gafas | Panisse Óptica Lugo" />
-  <meta property="og:description" content="La colección propia de Panisse Óptica. Monturas de diseño exclusivo, con nombres de lugar mediterráneo. Solo en nuestra tienda de Lugo." />
+  <meta property="og:title" content="ic! berlin en Lugo — Gafas de Ingeniería Alemana | Panisse Óptica" />
+  <meta property="og:description" content="ic! berlin en Lugo. Distribuidores oficiales. Monturas sin tornillos ni bisagras, fabricadas en Berlín." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://panisse.es/panisse-lugo.html" />
-  <meta property="og:image" content="https://panisse.es/assets/img/brands/panisse-hero.png" />
+  <meta property="og:url" content="https://panisse.es/ic-berlin-lugo.html" />
+  <meta property="og:image" content="https://panisse.es/assets/img/brands/ic-berlin-hero.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="es_ES" />
@@ -164,12 +173,12 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Panisse — Colección Propia de Gafas | Panisse Óptica Lugo" />
-  <meta name="twitter:description" content="La colección propia de Panisse Óptica. Monturas de diseño exclusivo, con nombres de lugar mediterráneo." />
-  <meta name="twitter:image" content="https://panisse.es/assets/img/brands/panisse-hero.png" />
+  <meta name="twitter:title" content="ic! berlin en Lugo — Gafas de Ingeniería Alemana | Panisse Óptica" />
+  <meta name="twitter:description" content="ic! berlin en Lugo. Distribuidores oficiales. Monturas sin tornillos ni bisagras, fabricadas en Berlín." />
+  <meta name="twitter:image" content="https://panisse.es/assets/img/brands/ic-berlin-hero.jpg" />
 
   <!-- Canonical -->
-  <link rel="canonical" href="https://panisse.es/panisse-lugo.html" />
+  <link rel="canonical" href="https://panisse.es/ic-berlin-lugo.html" />
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">[
@@ -179,12 +188,12 @@
     "@id": "https://panisse.es/#business",
     "name": "Panisse Óptica",
     "alternateName": "Panisse Optica Lugo",
-    "description": "Óptica boutique en el centro de Lugo. Colección propia de monturas de diseño exclusivo.",
+    "description": "Óptica boutique en el centro de Lugo. Distribuidor oficial de ic! berlin en Lugo y Galicia. Monturas de ingeniería alemana sin tornillos ni bisagras, fabricadas en Berlín.",
     "url": "https://panisse.es",
     "telephone": "+34982301193",
     "email": "info@panisse.es",
     "priceRange": "EUR",
-    "image": "https://panisse.es/assets/img/brands/panisse-hero.png",
+    "image": "https://panisse.es/assets/img/brands/ic-berlin-hero.jpg",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Rúa do Teatro, Bajo 2",
@@ -244,7 +253,7 @@
       {
         "@type": "ListItem",
         "position": 3,
-        "name": "Panisse"
+        "name": "ic! berlin"
       }
     ]
   }
@@ -270,11 +279,9 @@
   <header class="header" id="site-header">
     <div class="header__inner container">
 
-      <!-- Navegación principal (izquierda) -->
       <nav class="header__nav-main" aria-label="Categorías principales">
         <ul class="header__nav-list">
 
-          <!-- Marcas -->
           <li class="nav-item has-dropdown">
             <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="marcas">
               Marcas <span class="nav-caret" aria-hidden="true"></span>
@@ -282,14 +289,13 @@
             <div class="dropdown dropdown--wide" id="dropdown-marcas" role="menu" aria-label="Marcas">
               <div class="dropdown__grid">
                 <a href="panisse-lugo.html" class="dropdown__link" role="menuitem">Panisse</a>
-                <a href="antica-occhialeria-lugo.html" class="dropdown__link" role="menuitem">Antica Occhialeria</a>
-                <a href="einstoffen-lugo.html" class="dropdown__link" role="menuitem">Einstoffen</a>
-                <a href="ic-berlin-lugo.html" class="dropdown__link" role="menuitem">ic! berlin</a>
-                <a href="emporio-armani-lugo.html" class="dropdown__link" role="menuitem">Emporio Armani</a>
+                <a href="antica-occhialeria-lugo.html" class="dropdown__link" role="menuitem">Antica Occhialeria</a>                <a href="emporio-armani-lugo.html" class="dropdown__link" role="menuitem">Emporio Armani</a>
                 <a href="swarovski-lugo.html" class="dropdown__link" role="menuitem">Swarovski</a>
                 <a href="ray-ban-lugo.html" class="dropdown__link" role="menuitem">Ray-Ban</a>
                 <a href="polaroid-lugo.html" class="dropdown__link" role="menuitem">Polaroid</a>
                 <a href="mr-boho-lugo.html" class="dropdown__link" role="menuitem">Mr. Boho</a>
+                <a href="einstoffen-lugo.html" class="dropdown__link" role="menuitem">Einstoffen</a>
+                <a href="ic-berlin-lugo.html" class="dropdown__link" role="menuitem">ic! berlin</a>
               </div>
               <div class="dropdown__footer-bar">
                 <a href="catalogo.html" class="dropdown__all">Ver todas las marcas →</a>
@@ -297,7 +303,6 @@
             </div>
           </li>
 
-          <!-- Graduadas -->
           <li class="nav-item has-dropdown">
             <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="graduadas">
               Graduadas <span class="nav-caret" aria-hidden="true"></span>
@@ -309,7 +314,6 @@
             </div>
           </li>
 
-          <!-- De Sol -->
           <li class="nav-item has-dropdown">
             <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="sol">
               De Sol <span class="nav-caret" aria-hidden="true"></span>
@@ -321,7 +325,6 @@
             </div>
           </li>
 
-          <!-- Servicios -->
           <li class="nav-item has-dropdown">
             <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="servicios">
               Servicios <span class="nav-caret" aria-hidden="true"></span>
@@ -342,12 +345,10 @@
         </ul>
       </nav>
 
-      <!-- Logo (centrado) -->
       <a href="index.html" class="header__logo" aria-label="Panisse Óptica – inicio">
         Panisse <em>Óptica</em>
       </a>
 
-      <!-- Acciones (derecha) -->
       <div class="header__right">
         <nav class="header__nav-right" aria-label="Menú secundario">
           <ul class="header__nav-list">
@@ -441,14 +442,13 @@
           </button>
           <ul class="mobile-submenu" id="mm-marcas" aria-hidden="true">
             <li><a href="panisse-lugo.html" class="mobile-sublink">Panisse</a></li>
-            <li><a href="antica-occhialeria-lugo.html" class="mobile-sublink">Antica Occhialeria</a></li>
-            <li><a href="einstoffen-lugo.html" class="mobile-sublink">Einstoffen</a></li>
-            <li><a href="ic-berlin-lugo.html" class="mobile-sublink">ic! berlin</a></li>
-            <li><a href="emporio-armani-lugo.html" class="mobile-sublink">Emporio Armani</a></li>
+            <li><a href="antica-occhialeria-lugo.html" class="mobile-sublink">Antica Occhialeria</a></li>            <li><a href="emporio-armani-lugo.html" class="mobile-sublink">Emporio Armani</a></li>
             <li><a href="swarovski-lugo.html" class="mobile-sublink">Swarovski</a></li>
             <li><a href="ray-ban-lugo.html" class="mobile-sublink">Ray-Ban</a></li>
             <li><a href="polaroid-lugo.html" class="mobile-sublink">Polaroid</a></li>
             <li><a href="mr-boho-lugo.html" class="mobile-sublink">Mr. Boho</a></li>
+            <li><a href="einstoffen-lugo.html" class="mobile-sublink">Einstoffen</a></li>
+            <li><a href="ic-berlin-lugo.html" class="mobile-sublink">ic! berlin</a></li>
             <li><a href="catalogo.html" class="mobile-sublink mobile-sublink--all">Ver todas las marcas →</a></li>
           </ul>
         </li>
@@ -544,12 +544,12 @@
   <main id="main-content">
 
     <!-- 1. HERO -->
-    <section class="brand-hero" aria-label="Panisse — colección propia de gafas en Lugo">
+    <section class="brand-hero" aria-label="ic! berlin — gafas de ingeniería alemana en Lugo">
       <div class="brand-hero__overlay" aria-hidden="true"></div>
       <div class="brand-hero__content">
-        <span class="brand-hero__eyebrow">Diseño propio · Lugo · Mediterráneo</span>
-        <h1 class="brand-hero__title">Panisse</h1>
-        <p class="brand-hero__subtitle">Monturas de diseño exclusivo creadas para nuestra óptica. Cada nombre, un lugar. Cada modelo, una elección.</p>
+        <span class="brand-hero__eyebrow">Berlín · Sin tornillos · Sin bisagras · Hecho en Alemania</span>
+        <h1 class="brand-hero__title"><em>ic! berlin</em></h1>
+        <p class="brand-hero__subtitle">Ingeniería alemana llevada al límite. En Panisse Óptica, uno de los dos distribuidores oficiales en Galicia.</p>
         <div class="brand-hero__actions">
           <a href="#catalogo" class="btn btn--primary">Ver la colección</a>
           <a href="contacto.html" class="btn btn--ghost">Pedir cita</a>
@@ -560,59 +560,87 @@
     <!-- 2. TICKER -->
     <div class="announcement-bar" aria-hidden="true">
       <div class="announcement-bar__track">
-        <span class="announcement-bar__item">Diseño exclusivo Panisse</span>
+        <span class="announcement-bar__item">Sin tornillos</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Nombres de lugar mediterráneo</span>
+        <span class="announcement-bar__item">Sin bisagras</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Solo en Panisse Óptica Lugo</span>
+        <span class="announcement-bar__item">Berlín, Alemania</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Graduadas y de sol</span>
+        <span class="announcement-bar__item">Acero inoxidable</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Colección curada por Panisse</span>
+        <span class="announcement-bar__item">Patente propia</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Lujo sin estridencias</span>
+        <span class="announcement-bar__item">Diseño alemán</span>
+        <span class="announcement-bar__sep">·</span>
+        <span class="announcement-bar__item">Distribuidor oficial en Galicia</span>
         <span class="announcement-bar__sep">·</span>
         <!-- duplicado para loop continuo -->
-        <span class="announcement-bar__item">Diseño exclusivo Panisse</span>
+        <span class="announcement-bar__item">Sin tornillos</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Nombres de lugar mediterráneo</span>
+        <span class="announcement-bar__item">Sin bisagras</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Solo en Panisse Óptica Lugo</span>
+        <span class="announcement-bar__item">Berlín, Alemania</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Graduadas y de sol</span>
+        <span class="announcement-bar__item">Acero inoxidable</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Colección curada por Panisse</span>
+        <span class="announcement-bar__item">Patente propia</span>
         <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Lujo sin estridencias</span>
+        <span class="announcement-bar__item">Diseño alemán</span>
+        <span class="announcement-bar__sep">·</span>
+        <span class="announcement-bar__item">Distribuidor oficial en Galicia</span>
         <span class="announcement-bar__sep">·</span>
       </div>
     </div>
 
     <!-- 3. EDITORIAL -->
-    <section class="brand-editorial" aria-label="La colección Panisse">
+    <section class="brand-editorial" aria-label="La marca ic! berlin">
       <div class="brand-editorial__content">
-        <span class="brand-editorial__eyebrow">La colección</span>
-        <h2 class="brand-editorial__title">Monturas con nombre de lugar</h2>
+        <span class="brand-editorial__eyebrow">La marca</span>
+        <h2 class="brand-editorial__title">Cuando eliminar un tornillo cambia todo</h2>
         <div class="brand-editorial__body">
-          <p>La colección Panisse nació de una convicción sencilla: que una óptica con criterio debería tener su propia voz. Cada montura lleva el nombre de un lugar del mediterráneo — <em>Nîmes, Calanque, Riviera, Aubagne, Azur</em> — no como decoración, sino como declaración de origen. Un gusto formado en la Provenza y traído a Lugo.</p>
-          <p>No hay dos líneas separadas, solo una colección. Algunas monturas son más limpias, otras más trabajadas, pero todas comparten el mismo criterio de selección: que en Panisse elegiríamos llevarlas. Eso filtra más de lo que parece.</p>
-          <p>La encontrarás únicamente en nuestra tienda de la Rúa do Teatro. No hay distribución online, no hay rebajas. Solo la pieza correcta para la persona correcta.</p>
+          <p>En 1996, Ralph Anderl fundó ic! berlin con una obsesión: construir una montura que no necesitara ningún tornillo. No como gimmick de marketing — sino porque un tornillo es siempre el punto más débil de cualquier estructura.</p>
+          <p>La solución fue una patente propia: un sistema de articulación que dobla la varilla mediante la elasticidad del propio material. Acero inoxidable laminado en frío de 0,5 mm de grosor, doblado con precisión de micras. Sin bisagras. Sin tornillos. <em>Sin nada que pueda aflojarse.</em></p>
+          <p>El resultado es una montura que pesa entre 6 y 12 gramos y que puede doblarse completamente sin deformarse. Cada modelo tiene nombre propio — como las personas que los llevan. Fabricados íntegramente en Berlín.</p>
         </div>
-        <span class="brand-editorial__badge">· Diseño exclusivo · Solo en Panisse Óptica, Lugo</span>
+        <span class="brand-editorial__badge">· Distribuidor oficial ic! berlin · Panisse Óptica, Lugo · Uno de dos en Galicia</span>
       </div>
       <div class="brand-editorial__img-col" aria-hidden="true">
-        <img src="assets/img/brands/panisse-boutique-editorial.webp"
-             alt="Detalle de montura Panisse — colección exclusiva Panisse Óptica Lugo"
-             loading="lazy" />
+        <img src="assets/img/brands/ic-berlin-editorial.jpg"
+             alt="Montura ic! berlin — ingeniería alemana sin tornillos"
+             loading="lazy"
+             onerror="this.style.display='none'" />
       </div>
     </section>
 
-    <!-- 4. CATÁLOGO EMBEBIDO -->
-    <section class="brand-catalog" id="catalogo" aria-label="Colección Panisse en Panisse Óptica">
+    <!-- 4. FEATURES DE INGENIERÍA -->
+    <section class="brand-feature" aria-label="Tecnología ic! berlin">
+      <div class="container">
+        <div class="brand-feature__inner">
+          <div class="brand-feature__item">
+            <span class="brand-feature__icon" aria-hidden="true">⚙️</span>
+            <h3 class="brand-feature__title">Cero tornillos</h3>
+            <p class="brand-feature__desc">El sistema de articulación patentado de ic! berlin no usa tornillos ni bisagras convencionales. La varilla se dobla por la elasticidad del acero, eliminando el punto de fallo más habitual en cualquier montura.</p>
+          </div>
+          <div class="brand-feature__item">
+            <span class="brand-feature__icon" aria-hidden="true">🏙️</span>
+            <h3 class="brand-feature__title">Hecho en Berlín</h3>
+            <p class="brand-feature__desc">Cada montura ic! berlin se fabrica en el taller de la marca en Berlín. Acero inoxidable laminado en frío de 0,5 mm, cortado con láser y acabado a mano. Sin subcontratación exterior.</p>
+          </div>
+          <div class="brand-feature__item">
+            <span class="brand-feature__icon" aria-hidden="true">🪶</span>
+            <h3 class="brand-feature__title">Entre 6 y 12 gramos</h3>
+            <p class="brand-feature__desc">El peso de una montura ic! berlin es casi imperceptible. La ultrafine construcción en acero fino y acetato de alta calidad permite geometrías imposibles con otros materiales, sin sacrificar durabilidad.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CATÁLOGO EMBEBIDO -->
+    <section class="brand-catalog" id="catalogo" aria-label="Colección ic! berlin en Panisse Óptica">
       <div class="container">
         <header class="brand-catalog__header">
           <span class="brand-catalog__eyebrow">La colección completa</span>
-          <h2 class="brand-catalog__title">Panisse en Panisse Óptica</h2>
+          <h2 class="brand-catalog__title">ic! berlin en Panisse</h2>
         </header>
 
         <div class="brand-catalog__filters" role="group" aria-label="Filtrar por tipo">
@@ -621,12 +649,12 @@
           <button class="brand-catalog__filter-btn" data-filter="graduadas" aria-pressed="false">Graduadas</button>
         </div>
 
-        <div class="brand-catalog__grid" id="panisse-catalog-grid" role="list" aria-label="Productos Panisse">
+        <div class="brand-catalog__grid" id="icberlin-catalog-grid" role="list" aria-label="Productos ic! berlin">
           <!-- Se carga vía JS -->
         </div>
-        <p class="brand-catalog__empty" id="panisse-catalog-empty" aria-live="polite">
-          No hay modelos disponibles con este filtro. Prueba con otra categoría o
-          <a href="catalogo.html">visita el catálogo completo</a>.
+        <p class="brand-catalog__empty" id="icberlin-catalog-empty" aria-live="polite">
+          Pronto disponible. Visítanos en tienda para conocer la colección completa o
+          <a href="contacto.html">pide cita previa</a>.
         </p>
 
         <div class="brand-catalog__cta">
@@ -635,11 +663,11 @@
       </div>
     </section>
 
-    <!-- 5. CTA FINAL -->
+    <!-- 6. CTA FINAL -->
     <section class="brand-cta" aria-label="Pedir cita en Panisse Óptica">
       <div class="container">
-        <h2 class="brand-cta__title">¿Quieres verlas en persona?</h2>
-        <p class="brand-cta__desc">Sin prisas. Sin colas. Solo tú, las gafas y la persona adecuada para ayudarte a elegir.</p>
+        <h2 class="brand-cta__title">¿Quieres probarlas?</h2>
+        <p class="brand-cta__desc">Sostener una ic! berlin en la mano es la única forma de entender lo que la hace distinta. Ven sin prisas — te la explicamos mientras te la pruebas.</p>
         <a href="contacto.html" class="btn btn--primary">Pedir cita previa</a>
       </div>
     </section>
@@ -737,15 +765,15 @@
     <span class="whatsapp-float__tooltip">WhatsApp</span>
   </a>
 
-  <!-- Catálogo embebido Panisse -->
+  <!-- Catálogo embebido ic! berlin -->
   <script>
   (function () {
     'use strict';
 
-    var BRAND_SLUG  = 'panisse';
-    var grid        = document.getElementById('panisse-catalog-grid');
-    var emptyMsg    = document.getElementById('panisse-catalog-empty');
-    var filterBtns  = document.querySelectorAll('.brand-catalog__filter-btn');
+    var BRAND_SLUG   = 'ic-berlin';
+    var grid         = document.getElementById('icberlin-catalog-grid');
+    var emptyMsg     = document.getElementById('icberlin-catalog-empty');
+    var filterBtns   = document.querySelectorAll('.brand-catalog__filter-btn');
     var activeFilter = 'todos';
     var allProducts  = [];
 
@@ -754,13 +782,14 @@
       var typeLabel = p.type === 'sol' ? 'Sol' : 'Graduadas';
       var badge     = p.is_new ? '<div class="product-card__badge">Nuevo</div>' : '';
       var dataNew   = p.is_new ? ' data-new="true"' : '';
+      var priceHtml = (p.price && p.price > 0) ? p.price + ' €' : 'Consultar precio';
       var waMsg     = encodeURIComponent('Hola, me gustaría reservar las gafas ' + p.brand + ' ' + p.name + ' para probarlas en vuestra tienda. ¿Cuándo puedo pasarme?');
 
       return '<article class="product-card"' +
                ' data-type="' + p.type + '"' +
                ' data-brand="' + p.brand_slug + '"' +
                ' data-gender="' + (p.specs && p.specs.genero ? p.specs.genero : '') + '"' +
-               ' data-price="' + p.price + '"' +
+               ' data-price="' + (p.price || 0) + '"' +
                ' data-name="' + p.brand + ' ' + p.name + '"' + dataNew +
                ' role="listitem">' +
         '<a href="producto.html?id=' + p.id + '" class="product-card__link" aria-label="Ver ' + p.brand + ' ' + p.name + '">' +
@@ -770,14 +799,14 @@
                  ' class="product-card__image is-loaded"' +
                  ' loading="lazy"' +
                  ' decoding="async"' +
-                 ' onerror="this.src=\'' + p.placeholder + '\'; this.onerror=null;" />' +
+                 ' onerror="this.src=\'' + (p.placeholder || '') + '\'; this.onerror=null;" />' +
             badge +
           '</div>' +
           '<div class="product-card__info">' +
             '<span class="product-card__brand">' + p.brand + '</span>' +
             '<h2 class="product-card__name">' + p.name + '</h2>' +
             '<span class="product-card__variant">' + typeLabel + ' · ' + p.variant + '</span>' +
-            '<p class="product-card__price">' + p.price + ' €</p>' +
+            '<p class="product-card__price">' + priceHtml + '</p>' +
           '</div>' +
         '</a>' +
         '<a href="https://wa.me/34614296965?text=' + waMsg + '"' +
@@ -817,7 +846,7 @@
       });
     });
 
-    fetch('data/products.json?v=4')
+    fetch('data/products.json?v=9')
       .then(function (res) {
         if (!res.ok) throw new Error('HTTP ' + res.status);
         return res.json();
@@ -827,7 +856,7 @@
         applyFilter();
       })
       .catch(function (err) {
-        console.warn('[Panisse] No se pudo cargar el catálogo.', err);
+        console.warn('[Panisse] No se pudo cargar el catálogo de ic! berlin.', err);
         emptyMsg.textContent = 'No se pudo cargar el catálogo. Visita nuestra tienda para ver la colección completa.';
         emptyMsg.classList.add('is-visible');
       });
@@ -852,30 +881,49 @@
     }
     (function () {
       function getLang() {
-        try { return localStorage.getItem('panisse_lang') || 'es'; } catch(e){ return 'es'; }
+        var m = document.cookie.match(/googtrans=\/es\/(\w+)/);
+        return m ? m[1] : 'es';
       }
-      function panisseLangToggle() {
-        var lang = getLang() === 'es' ? 'en' : 'es';
-        try { localStorage.setItem('panisse_lang', lang); } catch(e){}
-        if (lang === 'en') {
-          var s = document.createElement('script');
-          s.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-          document.head.appendChild(s);
-        } else {
-          var c = document.cookie.match(/googtrans=([^;]+)/);
-          if (c) {
-            document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/';
-            document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.' + location.hostname;
-          }
-          location.reload();
-        }
-      }
-      window.panisseLangToggle = panisseLangToggle;
-      if (getLang() === 'en') {
+      var lang = getLang();
+      if (lang !== 'es') {
         var s = document.createElement('script');
-        s.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+        s.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
         document.head.appendChild(s);
       }
+      var btn = document.getElementById('lang-toggle-btn');
+      var mBtn = document.getElementById('mobile-lang-btn');
+      function updateFlags() {
+        var l = getLang();
+        var flag = l === 'en' ? '🇬🇧' : '🇪🇸';
+        if (btn) btn.innerHTML = flag;
+        if (mBtn) {
+          mBtn.querySelector('.mobile-lang-label').textContent = l === 'en' ? 'Español' : 'English';
+          mBtn.innerHTML = flag + ' <span class="mobile-lang-label">' + (l === 'en' ? 'Español' : 'English') + '</span>';
+        }
+      }
+      updateFlags();
+      window.panisseLangToggle = function () {
+        var l = getLang();
+        if (l === 'en') {
+          document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+          document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.' + location.hostname + ';';
+          location.reload();
+        } else {
+          var s = document.createElement('script');
+          s.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+          document.head.appendChild(s);
+          var check = setInterval(function () {
+            if (window.google && window.google.translate) {
+              clearInterval(check);
+              setTimeout(function () {
+                var sel = document.querySelector('.goog-te-combo');
+                if (sel) { sel.value = 'en'; sel.dispatchEvent(new Event('change')); }
+                updateFlags();
+              }, 600);
+            }
+          }, 100);
+        }
+      };
     })();
   </script>
 
