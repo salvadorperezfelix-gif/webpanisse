@@ -1,5 +1,6 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
@@ -10,7 +11,7 @@
   <link rel="preload" href="assets/fonts/cormorant-garamond-600-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/cormorant-garamond-600-italic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/lato-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="assets/fonts/parisienne-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/parisienne-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <!-- Meta Pixel Code -->
   <script>
     !function(f,b,e,v,n,t,s)
@@ -19,8 +20,7 @@
     if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
     n.queue=[];window.addEventListener('load',function(){t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s);},{once:!0});}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    
-    // Comprobar consentimiento antes de iniciar
+
     var savedConsent = localStorage.getItem('cookieConsent');
     var marketingGranted = false;
     if (savedConsent) {
@@ -29,13 +29,13 @@
         marketingGranted = !!consentObj.marketing;
       } catch (e) {}
     }
-    
+
     if (marketingGranted) {
       fbq('consent', 'grant');
     } else {
       fbq('consent', 'revoke');
     }
-    
+
     fbq('init', '1706566507036901');
     fbq('track', 'PageView');
   </script>
@@ -47,8 +47,7 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    
-    // Comprobar si ya existe consentimiento guardado
+
     var savedConsent = localStorage.getItem('cookieConsent');
     if (savedConsent) {
       try {
@@ -88,9 +87,9 @@
   </script>
 
   <!-- SEO -->
-  <title>Aviso Legal | Panisse Óptica — Lugo</title>
-  <meta name="description" content="Aviso legal de Panisse Óptica, óptica boutique en Lugo. Información del titular, condiciones de uso y propiedad intelectual." />
-  <meta name="keywords" content="óptica Lugo, gafas Lugo, gafas graduadas Lugo, gafas de sol Lugo, óptico Lugo, revisión vista Lugo, optometrista Lugo, gafas de diseño Lugo, óptica boutique Lugo, Panisse Óptica" />
+  <title>Asesoría de Montura Online · Videollamada con Óptico | Panisse Óptica</title>
+  <meta name="description" content="Asesoría personalizada de gafas por videollamada. Estudio previo, selección de monturas y prescripción optimizada para tu caso. 50 € — incluidos en la compra. Envío a toda España." />
+  <meta name="keywords" content="asesoría gafas online, consulta óptico videollamada, elegir gafas online, asesoría montura, óptico online España, Panisse Óptica" />
   <meta name="author" content="Panisse Óptica" />
   <meta name="robots" content="index, follow" />
   <meta name="geo.region" content="ES-LU" />
@@ -99,10 +98,10 @@
   <meta name="ICBM" content="43.0097, -7.5563" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Aviso Legal | Panisse Óptica — Lugo" />
-  <meta property="og:description" content="Aviso legal de Panisse Óptica, óptica boutique en Lugo. Información del titular, condiciones de uso y propiedad intelectual." />
+  <meta property="og:title" content="Asesoría de Montura Online · Panisse Óptica" />
+  <meta property="og:description" content="Asesoría personalizada de gafas por videollamada. Estudio previo, selección de monturas y prescripción optimizada. 50 € incluidos en la compra." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://panisse.es/aviso-legal.html" />
+  <meta property="og:url" content="https://panisse.es/asesoria-montura-online.html" />
   <meta property="og:image" content="https://panisse.es/assets/img/nosotros/tienda.webp" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -111,21 +110,18 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Aviso Legal | Panisse Óptica — Lugo" />
-  <meta name="twitter:description" content="Aviso legal de Panisse Óptica, óptica boutique en Lugo. Información del titular, condiciones de uso y propiedad intelectual." />
+  <meta name="twitter:title" content="Asesoría de Montura Online · Panisse Óptica" />
+  <meta name="twitter:description" content="Asesoría personalizada de gafas por videollamada. Estudio previo, selección de monturas y prescripción optimizada." />
   <meta name="twitter:image" content="https://panisse.es/assets/img/nosotros/tienda.webp" />
 
   <!-- Canonical -->
-  <link rel="canonical" href="https://panisse.es/aviso-legal.html" />
+  <link rel="canonical" href="https://panisse.es/asesoria-montura-online.html" />
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">[
   {
     "@context": "https://schema.org",
-    "@type": [
-      "LocalBusiness",
-      "Optician"
-    ],
+    "@type": ["LocalBusiness", "Optician"],
     "@id": "https://panisse.es/#business",
     "name": "Panisse Óptica",
     "alternateName": "Panisse Optica Lugo",
@@ -152,33 +148,19 @@
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
         "opens": "09:30",
         "closes": "13:30"
       },
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
         "opens": "16:30",
         "closes": "20:00"
       },
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Saturday"
-        ],
+        "dayOfWeek": ["Saturday"],
         "opens": "10:30",
         "closes": "13:30"
       }
@@ -187,6 +169,66 @@
       "https://www.instagram.com/panisse_optica/",
       "https://www.facebook.com/profile.php?id=61586908144350",
       "https://www.tiktok.com/@panisse_optica"
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Asesoría de montura online",
+    "provider": {"@id": "https://panisse.es/#business"},
+    "description": "Consulta personalizada de asesoría de imagen de gafas por videollamada. Incluye estudio previo, selección de monturas y prescripción optimizada de lentes.",
+    "offers": {
+      "@type": "Offer",
+      "price": "50",
+      "priceCurrency": "EUR",
+      "description": "Incluido en el precio de compra si se cierra un pedido"
+    },
+    "areaServed": {"@type": "Country", "name": "España"}
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Necesito saber mi graduación de antemano?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No es imprescindible, pero ayuda tenerla a mano. Si tienes una revisión reciente, compártela al reservar. Si no, podemos trabajar con tu graduación actual y recomendarte actualizarla en el momento adecuado."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto cuesta la asesoría?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La asesoría tiene un precio de 50 €. Si a raíz de la sesión decides comprar unas gafas en Panisse, esos 50 € quedan incluidos en el precio final — la asesoría no tiene coste adicional si cerramos un trato."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Enviáis las gafas a domicilio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Enviamos a toda España con transportista de confianza. Si estás en Lugo o alrededores, también puedes recoger en tienda. En ambos casos incluimos el ajuste y el seguimiento posterior."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué pasa si la graduación que tengo no está actualizada?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En la asesoría revisamos tu historial y tu situación visual. Si detectamos que la graduación necesita actualización, te lo indicamos y te damos opciones: puedes venir a Lugo para un estudio visual completo, o trabajar con la graduación actual si sigue siendo válida."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Por qué plataforma se hace la videollamada?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Utilizamos Google Meet o WhatsApp Video, según tu preferencia. Al reservar te confirmamos el enlace con antelación."
+        }
+      }
     ]
   },
   {
@@ -202,7 +244,8 @@
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Aviso Legal"
+        "name": "Asesoría de Montura Online",
+        "item": "https://panisse.es/asesoria-montura-online.html"
       }
     ]
   }
@@ -212,26 +255,25 @@
   <link rel="icon" href="favicon-16.png" type="image/png" sizes="16x16">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <!-- Microsoft Clarity -->
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "xx267v5tt4");
-    </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "xx267v5tt4");
+  </script>
 </head>
+
 <body class="interior-page">
 
   <!-- HEADER -->
   <header class="header" id="site-header">
     <div class="header__inner container">
 
-      <!-- ── Navegación principal (izquierda) ── -->
       <nav class="header__nav-main" aria-label="Categorías principales">
         <ul class="header__nav-list">
 
-          <!-- Marcas -->
           <li class="nav-item has-dropdown">
             <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="marcas">
               Marcas <span class="nav-caret" aria-hidden="true"></span>
@@ -253,7 +295,6 @@
             </div>
           </li>
 
-          <!-- Graduadas -->
           <li class="nav-item has-dropdown">
             <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="graduadas">
               Graduadas <span class="nav-caret" aria-hidden="true"></span>
@@ -262,11 +303,9 @@
               <a href="catalogo.html?tipo=graduadas&genero=hombre" class="dropdown__link" role="menuitem">Hombre</a>
               <a href="catalogo.html?tipo=graduadas&genero=mujer" class="dropdown__link" role="menuitem">Mujer</a>
               <a href="catalogo.html?tipo=graduadas&genero=unisex" class="dropdown__link" role="menuitem">Unisex</a>
-
             </div>
           </li>
 
-          <!-- De Sol -->
           <li class="nav-item has-dropdown">
             <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="sol">
               De Sol <span class="nav-caret" aria-hidden="true"></span>
@@ -275,11 +314,9 @@
               <a href="catalogo.html?tipo=sol&genero=hombre" class="dropdown__link" role="menuitem">Hombre</a>
               <a href="catalogo.html?tipo=sol&genero=mujer" class="dropdown__link" role="menuitem">Mujer</a>
               <a href="catalogo.html?tipo=sol&genero=unisex" class="dropdown__link" role="menuitem">Sol Unisex</a>
-
             </div>
           </li>
 
-          <!-- Servicios -->
           <li class="nav-item has-dropdown">
             <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="servicios">
               Servicios <span class="nav-caret" aria-hidden="true"></span>
@@ -300,12 +337,10 @@
         </ul>
       </nav>
 
-      <!-- ── Logo (centrado) ── -->
       <a href="index.html" class="header__logo" aria-label="Panisse Óptica – inicio">
         Panisse <em>Óptica</em>
       </a>
 
-      <!-- ── Acciones (derecha) ── -->
       <div class="header__right">
         <nav class="header__nav-right" aria-label="Menú secundario">
           <ul class="header__nav-list">
@@ -347,7 +382,6 @@
                 onclick="panisseLangToggle()"
                 aria-label="Switch language / Cambiar idioma">&#x1F1EC;&#x1F1E7;</button>
 
-        <!-- TIENDA ONLINE — quitar 'hidden' cuando se active la venta online -->
         <div class="header__ecommerce-actions" hidden>
           <button class="header__icon-btn" aria-label="Mi cuenta">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
@@ -367,7 +401,6 @@
           </button>
         </div>
 
-        <!-- Hamburger (solo móvil) -->
         <button class="header__hamburger" id="hamburger-btn"
                 aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
           <span></span>
@@ -375,11 +408,13 @@
           <span></span>
         </button>
 
-      </div><!-- /.header__actions -->
-      </div><!-- /.header__right -->
+      </div>
+      </div>
 
-    </div><!-- /.header__inner -->
+    </div>
   </header>
+
+  <!-- MENÚ MÓVIL -->
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Menú principal">
     <div class="mobile-menu__header">
       <a href="index.html" class="mobile-menu__logo">Panisse <em>Óptica</em></a>
@@ -405,8 +440,8 @@
             <li><a href="swarovski-lugo.html" class="mobile-sublink">Swarovski</a></li>
             <li><a href="ray-ban-lugo.html" class="mobile-sublink">Ray-Ban</a></li>
             <li><a href="polaroid-lugo.html" class="mobile-sublink">Polaroid</a></li>
-            <li><a href="catalogo.html?marca=mr-boho" class="mobile-sublink">Mr. Boho</a>
-            <li><a href="einstoffen-lugo.html" class="mobile-sublink">Einstoffen</a></li></li>
+            <li><a href="mr-boho-lugo.html" class="mobile-sublink">Mr. Boho</a></li>
+            <li><a href="einstoffen-lugo.html" class="mobile-sublink">Einstoffen</a></li>
             <li><a href="ic-berlin-lugo.html" class="mobile-sublink">ic! berlin</a></li>
             <li><a href="catalogo.html" class="mobile-sublink mobile-sublink--all">Ver todas las marcas →</a></li>
           </ul>
@@ -420,8 +455,7 @@
             <li><a href="catalogo.html?tipo=graduadas&genero=hombre" class="mobile-sublink">Hombre</a></li>
             <li><a href="catalogo.html?tipo=graduadas&genero=mujer" class="mobile-sublink">Mujer</a></li>
             <li><a href="catalogo.html?tipo=graduadas&genero=unisex" class="mobile-sublink">Unisex</a></li>
-            
-          </ul>
+                      </ul>
         </li>
 
         <li class="mobile-item has-submenu">
@@ -432,8 +466,7 @@
             <li><a href="catalogo.html?tipo=sol&genero=hombre" class="mobile-sublink">Hombre</a></li>
             <li><a href="catalogo.html?tipo=sol&genero=mujer" class="mobile-sublink">Mujer</a></li>
             <li><a href="catalogo.html?tipo=sol&genero=unisex" class="mobile-sublink">Sol Unisex</a></li>
-            
-          </ul>
+                      </ul>
         </li>
 
         <li class="mobile-item has-submenu">
@@ -497,68 +530,234 @@
         <a href="https://www.tiktok.com/@panisse_optica" target="_blank" rel="noopener noreferrer" aria-label="TikTok">TikTok</a>
       </div>
     </div>
-  </div><!-- /.mobile-menu -->
+  </div>
 
-  <!-- Overlay -->
   <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
 
   <!-- MAIN -->
   <main id="main-content">
-  <div class="page-hero">
-    <div class="container">
-      <h1 class="page-hero__title">Aviso Legal</h1>
-      <p class="page-hero__desc">Información legal — Última actualización: mayo de 2026</p>
+
+    <!-- 1. HERO -->
+    <div class="page-hero page-hero--dark">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Ruta de navegación">
+          <a href="index.html" class="breadcrumb__link">Inicio</a>
+          <span class="breadcrumb__sep" aria-hidden="true">›</span>
+          <span class="breadcrumb__current" aria-current="page">Asesoría de Montura Online</span>
+        </nav>
+        <h1 class="page-hero__title">Asesoría de montura<br><em>por videollamada</em></h1>
+        <p class="page-hero__desc">Un óptico con criterio, tus fotos y tu graduación. Las gafas que llevas puestas, desde donde estés.</p>
+      </div>
     </div>
-  </div>
-  <div class="container">
-    <div class="legal-doc">
 
-      <h2>1. Datos identificativos del titular</h2>
-      <p>En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico (LSSI-CE), se facilitan los siguientes datos identificativos:</p>
-      <ul>
-        <li><strong>Titular:</strong> Félix Salvador Pérez</li>
-        <li><strong>NIF:</strong> 34281467J</li>
-        <li><strong>Nombre comercial:</strong> Panisse Óptica</li>
-        <li><strong>Domicilio:</strong> Rúa do Teatro, Bajo 2, 27001 Lugo (Galicia)</li>
-        <li><strong>Teléfono:</strong> <a href="tel:+34982301193">982 30 11 93</a></li>
-        <li><strong>Correo electrónico:</strong> <a href="mailto:info@panisse.es">info@panisse.es</a></li>
-        <li><strong>Sitio web:</strong> <a href="https://panisse.es">www.panisse.es</a></li>
-        <li><strong>Actividad:</strong> Óptica y optometría — CNAE 4778</li>
-      </ul>
+    <!-- 2. INTRO -->
+    <section class="servicio-section">
+      <div class="servicio-section__inner container">
+        <div class="servicio-section__img-col">
+          <div class="servicio-section__img-wrap">
+            <img src="assets/img/nosotros/tienda.webp"
+                 alt="Interior de Panisse Óptica en Lugo — óptica boutique con selección de marcas exclusivas"
+                 width="810" height="1014"
+                 loading="eager"
+                 onerror="this.src='https://placehold.co/680x540/1a1a1a/c4b28a?text=Panisse+%C3%93ptica'" />
+          </div>
+        </div>
+        <div class="servicio-section__content">
+          <p>Elegir unas gafas bien es una de esas cosas que parece sencilla hasta que te pones delante del expositor y te das cuenta de que no sabes por dónde empezar. La montura tiene que funcionar con tu morfología de cara, con tu estilo, con el tipo de vida que llevas. Y si llevas graduación, tiene que ser compatible con el tipo de lente que necesitas — porque no todas las monturas admiten todos los espesores, y no todos los diseños de montura favorecen por igual a una lente progresiva, una monofocal o un prisma.</p>
+          <p>Eso es exactamente lo que resolvemos en la asesoría online: una consulta a fondo, por videollamada, en la que trabajamos tu caso desde el principio. Antes de la llamada hacemos un estudio previo con la información que nos facilites — fotos de cara, graduación actual si la tienes, referencias de estilo. Durante la videollamada te mostramos monturas de nuestro catálogo que encajan con tu caso, te explicamos por qué cada una funciona o no, y si tienes graduación adaptamos la recomendación al tipo de lente que mejor resuelve tu visión.</p>
+          <p>El servicio nació para llegar más allá de Lugo. Tenemos clientes que nos conocen por Instagram, por recomendación, o por el catálogo de marcas que encontraron en la web — y que viven en Madrid, en Barcelona, en Bilbao o fuera de España. Para ellos, la asesoría online es la forma de acceder al mismo nivel de consulta que ofrecemos en tienda, sin necesidad de desplazarse. Enviamos las gafas a cualquier punto de España — con seguimiento, con ajuste incluido en la llamada, y con la posibilidad de volver a vernos online si hace falta algo.</p>
+        </div>
+      </div>
+    </section>
 
-      <h2>2. Objeto y condiciones de uso</h2>
-      <p>El presente Aviso Legal regula el acceso y uso del sitio web <strong>www.panisse.es</strong> (en adelante, "el Sitio Web"), cuya titularidad corresponde a Félix Salvador Pérez.</p>
-      <p>El acceso y uso del Sitio Web atribuye la condición de usuario e implica la aceptación plena y sin reservas de todas las disposiciones del presente Aviso Legal. El usuario se compromete a hacer un uso adecuado de los contenidos y servicios que se ofrecen a través del Sitio Web, con sujeción a la legislación vigente, las buenas costumbres y al orden público.</p>
-      <p>Este Sitio Web tiene carácter informativo y no realiza venta de productos o servicios en línea. Su finalidad es presentar la oferta de Panisse Óptica y facilitar el contacto con el establecimiento físico.</p>
+    <!-- 3. QUÉ INCLUYE -->
+    <section class="servicio-section servicio-section--alt">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-header__label">El servicio completo</p>
+          <h2 class="section-header__title">Qué incluye<br><em>la asesoría</em></h2>
+        </header>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;margin:2rem 0">
+          <div class="servicio-extra-card">
+            <div class="servicio-extra-card__num">01</div>
+            <h3 class="servicio-extra-card__title">Estudio previo</h3>
+            <p>Antes de la videollamada analizamos tu morfología facial, tu estilo y tu historial visual. Cuanto más nos cuentes al reservar — fotos de frente y perfil, graduación, tipo de uso habitual — más afinada llega la selección a la sesión.</p>
+          </div>
+          <div class="servicio-extra-card">
+            <div class="servicio-extra-card__num">02</div>
+            <h3 class="servicio-extra-card__title">Asesoría de monturas</h3>
+            <p>Durante la videollamada te mostramos una selección de monturas preparada para tu caso. Te explicamos qué funciona y por qué: formas, materiales, colores, proporciones. Sin prisa, con criterio.</p>
+          </div>
+          <div class="servicio-extra-card">
+            <div class="servicio-extra-card__num">03</div>
+            <h3 class="servicio-extra-card__title">Prescripción optimizada</h3>
+            <p>Si tienes graduación, la integramos en la recomendación. Evaluamos qué tipo de lente se adapta mejor a tu caso — monofocal, progresiva, ocupacional — y qué monturas la favorecen técnicamente y estéticamente.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <h2>3. Propiedad intelectual e industrial</h2>
-      <p>Todos los contenidos del Sitio Web —textos, imágenes, logotipos, iconos, código fuente, diseño gráfico y cualquier otro elemento— son propiedad de Félix Salvador Pérez o de sus legítimos licenciantes, y están protegidos por la legislación española e internacional en materia de propiedad intelectual e industrial.</p>
-      <p>Queda expresamente prohibida la reproducción, distribución, comunicación pública o transformación total o parcial de los contenidos del Sitio Web sin la autorización expresa y por escrito del titular, salvo en los supuestos previstos en la Ley de Propiedad Intelectual.</p>
-      <p>Las marcas comerciales de terceros (Ray-Ban, Emporio Armani, Swarovski, etc.) son propiedad de sus respectivos titulares y aparecen en este Sitio Web únicamente con fines informativos, sin que ello implique relación de titularidad entre Panisse Óptica y dichas marcas.</p>
+    <!-- 4. CÓMO FUNCIONA -->
+    <section class="servicio-section">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-header__label">Paso a paso</p>
+          <h2 class="section-header__title">Cómo es<br><em>el proceso</em></h2>
+        </header>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem;margin:2rem 0">
+          <div class="servicio-extra-card">
+            <div class="servicio-extra-card__num">01</div>
+            <h3 class="servicio-extra-card__title">Reservas tu sesión</h3>
+            <p>Elige fecha y hora a través de nuestro sistema de citas online. Al reservar te pedimos una foto de frente, una de perfil y tu graduación actual si la tienes. Con eso empezamos el estudio previo.</p>
+          </div>
+          <div class="servicio-extra-card">
+            <div class="servicio-extra-card__num">02</div>
+            <h3 class="servicio-extra-card__title">Preparamos tu selección</h3>
+            <p>Con la información recibida, seleccionamos entre 6 y 10 monturas del catálogo que encajen con tu morfología, tu estilo y —si aplica— con el tipo de lente que necesitas. Llegamos a la llamada con trabajo hecho.</p>
+          </div>
+          <div class="servicio-extra-card">
+            <div class="servicio-extra-card__num">03</div>
+            <h3 class="servicio-extra-card__title">Videollamada contigo</h3>
+            <p>Te mostramos cada montura, explicamos por qué la hemos elegido, resolvemos dudas y comparamos opciones juntos. La sesión dura entre 30 y 45 minutos. Por Google Meet o WhatsApp Video, según prefieras.</p>
+          </div>
+          <div class="servicio-extra-card">
+            <div class="servicio-extra-card__num">04</div>
+            <h3 class="servicio-extra-card__title">Recibes tus gafas</h3>
+            <p>Si decides comprar, montamos las lentes con tu graduación y te las enviamos a casa. Si estás en Lugo o alrededores, también puedes recoger en tienda. El ajuste final lo hacemos en otra videollamada si es necesario.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <h2>4. Exclusión de garantías y responsabilidad</h2>
-      <p>El titular no garantiza la disponibilidad, continuidad ni infalibilidad del funcionamiento del Sitio Web y, en consecuencia, excluye, en la máxima medida permitida por la legislación vigente, cualquier responsabilidad por los daños y perjuicios que puedan derivarse de la falta de disponibilidad o de continuidad del mismo.</p>
-      <p>La información publicada en este Sitio Web tiene carácter orientativo. Las características, precios y disponibilidad de los productos pueden variar. Panisse Óptica recomienda confirmar cualquier información contactando directamente con el establecimiento.</p>
-      <p>El titular no se hace responsable de los daños o perjuicios que pudieran derivarse de la utilización de los contenidos y/o servicios del Sitio Web por parte de los usuarios o de terceros.</p>
+    <!-- 5. PRECIO -->
+    <section class="servicio-section servicio-section--alt">
+      <div class="container" style="max-width:780px;">
+        <header class="section-header">
+          <p class="section-header__label">Precio del servicio</p>
+          <h2 class="section-header__title">50 € — incluidos<br><em>en la compra</em></h2>
+        </header>
+        <div style="margin-top:2rem;display:grid;gap:1.5rem;">
+          <p>La asesoría tiene un precio de <strong>50 €</strong>. Si a raíz de la sesión decides comprar unas gafas en Panisse — montura con o sin lentes — esos 50 € quedan incluidos en el precio final. La asesoría no tiene coste adicional si cerramos un trato.</p>
+          <p>El precio cubre el estudio previo, la videollamada completa y el seguimiento posterior. No hay costes ocultos ni paquetes. Si al final no compras, la asesoría vale 50 € y te queda el criterio para elegir mejor en cualquier óptica.</p>
+          <p>El envío a domicilio en territorio nacional es gratuito a partir de 150 €. Por debajo de ese importe o para envíos internacionales, aplicamos tarifa de mensajería según destino.</p>
+        </div>
+      </div>
+    </section>
 
-      <h2>5. Hipervínculos</h2>
-      <p>El Sitio Web puede contener enlaces a páginas web de terceros. Panisse Óptica no controla ni se hace responsable de los contenidos, políticas de privacidad o prácticas de dichos sitios. La inclusión de un enlace no implica recomendación ni asociación con el sitio enlazado.</p>
+    <!-- 6. PARA QUIÉN -->
+    <section class="servicio-section">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-header__label">Para quién es</p>
+          <h2 class="section-header__title">Un servicio para<br><em>quien no está en Lugo</em></h2>
+        </header>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;margin:2rem 0">
+          <div class="servicio-extra-card">
+            <h3 class="servicio-extra-card__title" style="margin-bottom:12px;">Vives fuera de Galicia</h3>
+            <p>Conoces Panisse por las redes, por una recomendación o por el catálogo de marcas que no encuentras en tu ciudad. La asesoría online es la forma de acceder al mismo servicio sin viajar.</p>
+          </div>
+          <div class="servicio-extra-card">
+            <h3 class="servicio-extra-card__title" style="margin-bottom:12px;">Llevas graduación compleja</h3>
+            <p>Progresivos, astigmatismos altos, anisometropías, prismas. Casos en los que la montura y la lente tienen que trabajar juntos desde el principio y no se puede elegir uno sin pensar en el otro.</p>
+          </div>
+          <div class="servicio-extra-card">
+            <h3 class="servicio-extra-card__title" style="margin-bottom:12px;">Quieres una segunda opinión</h3>
+            <p>Llevas gafas que no terminan de adaptarse, o te han recomendado algo y no estás seguro. La asesoría no requiere comprar — puedes venir solo a contrastar criterio con un óptico independiente.</p>
+          </div>
+          <div class="servicio-extra-card">
+            <h3 class="servicio-extra-card__title" style="margin-bottom:12px;">No sabes por dónde empezar</h3>
+            <p>Nunca has comprado gafas con criterio, o llevas años con las mismas y no sabes qué ha cambiado en catálogo. La sesión funciona también como introducción a lo que hay disponible para tu caso.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <h2>6. Modificaciones</h2>
-      <p>Félix Salvador Pérez se reserva el derecho a modificar, en cualquier momento y sin previo aviso, el contenido de este Aviso Legal. Los cambios serán efectivos desde el momento de su publicación en el Sitio Web.</p>
+    <!-- 7. FAQ -->
+    <section class="servicio-section servicio-section--alt">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-header__label">Lo que nos preguntan</p>
+          <h2 class="section-header__title">Preguntas<br><em>frecuentes</em></h2>
+        </header>
+        <div style="max-width:760px;margin:2rem auto 0;display:flex;flex-direction:column;gap:0;">
 
-      <h2>7. Legislación aplicable y jurisdicción</h2>
-      <p>Las presentes condiciones se rigen por la legislación española. Para la resolución de cualquier controversia derivada del acceso o uso del Sitio Web, las partes se someten, con renuncia expresa a cualquier otro fuero, a los Juzgados y Tribunales de Lugo, salvo que la normativa aplicable establezca un fuero imperativo distinto.</p>
+          <details class="faq-item" style="border-top:1px solid var(--color-border);padding:20px 0;">
+            <summary class="faq-item__q" style="cursor:pointer;font-weight:700;font-size:0.9375rem;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">
+              ¿Necesito saber mi graduación de antemano?
+              <span aria-hidden="true" style="flex-shrink:0;font-size:1.25rem;font-weight:300;line-height:1;">+</span>
+            </summary>
+            <p style="margin-top:14px;color:var(--color-muted);line-height:1.7;">No es imprescindible. Podemos trabajar con la montura sin graduación, o con la graduación que tengas aunque no sea reciente. Si quieres que la recomendación de lente sea más precisa, lo ideal es tener una revisión de los últimos dos años. Si no la tienes, te orientamos igualmente y te indicamos si conviene actualizarla antes de montar las lentes.</p>
+          </details>
 
-    </div>
-  </div>
-</main>
+          <details class="faq-item" style="border-top:1px solid var(--color-border);padding:20px 0;">
+            <summary class="faq-item__q" style="cursor:pointer;font-weight:700;font-size:0.9375rem;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">
+              ¿Cuánto dura la videollamada?
+              <span aria-hidden="true" style="flex-shrink:0;font-size:1.25rem;font-weight:300;line-height:1;">+</span>
+            </summary>
+            <p style="margin-top:14px;color:var(--color-muted);line-height:1.7;">Entre 30 y 45 minutos. Depende del caso: si llevas una graduación sencilla y tienes el estilo claro, puede resolverse en menos tiempo. Si hay dudas, comparaciones o queremos explorar varias opciones con calma, nos tomamos el tiempo que haga falta. No cortamos la sesión a los 30 minutos si el trabajo no está terminado.</p>
+          </details>
 
-  <!-- FOOTER -->
+          <details class="faq-item" style="border-top:1px solid var(--color-border);padding:20px 0;">
+            <summary class="faq-item__q" style="cursor:pointer;font-weight:700;font-size:0.9375rem;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">
+              ¿Enviáis las gafas a domicilio?
+              <span aria-hidden="true" style="flex-shrink:0;font-size:1.25rem;font-weight:300;line-height:1;">+</span>
+            </summary>
+            <p style="margin-top:14px;color:var(--color-muted);line-height:1.7;">Sí, enviamos a toda España con mensajería de confianza y seguimiento en tiempo real. Si estás en Lugo o alrededores, también puedes recoger en tienda en Rúa do Teatro. Si las gafas llevan graduación, hacemos una verificación óptica antes del envío y te contactamos si detectamos algo que revisar.</p>
+          </details>
+
+          <details class="faq-item" style="border-top:1px solid var(--color-border);padding:20px 0;">
+            <summary class="faq-item__q" style="cursor:pointer;font-weight:700;font-size:0.9375rem;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">
+              ¿Los 50 € se descuentan siempre de la compra?
+              <span aria-hidden="true" style="flex-shrink:0;font-size:1.25rem;font-weight:300;line-height:1;">+</span>
+            </summary>
+            <p style="margin-top:14px;color:var(--color-muted);line-height:1.7;">Sí, siempre que la compra se haga en Panisse a raíz de la sesión — ya sea en el mismo momento o en las semanas siguientes. No tiene fecha de caducidad inmediata: si necesitas tiempo para decidir, los 50 € siguen siendo válidos. Si finalmente no compras nada, la asesoría vale 50 € y eso es lo que se cobra.</p>
+          </details>
+
+          <details class="faq-item" style="border-top:1px solid var(--color-border);padding:20px 0;">
+            <summary class="faq-item__q" style="cursor:pointer;font-weight:700;font-size:0.9375rem;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">
+              ¿Por qué plataforma se hace la llamada?
+              <span aria-hidden="true" style="flex-shrink:0;font-size:1.25rem;font-weight:300;line-height:1;">+</span>
+            </summary>
+            <p style="margin-top:14px;color:var(--color-muted);line-height:1.7;">Por Google Meet o por videollamada de WhatsApp, según lo que te resulte más cómodo. Al confirmar la reserva te enviamos el enlace o el número, y te aseguramos que la calidad de vídeo sea suficiente para que puedas ver bien los detalles de cada montura.</p>
+          </details>
+
+          <details class="faq-item" style="border-top:1px solid var(--color-border);padding:20px 0;border-bottom:1px solid var(--color-border);">
+            <summary class="faq-item__q" style="cursor:pointer;font-weight:700;font-size:0.9375rem;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">
+              ¿Puedo hacer la asesoría aunque no tenga graduación?
+              <span aria-hidden="true" style="flex-shrink:0;font-size:1.25rem;font-weight:300;line-height:1;">+</span>
+            </summary>
+            <p style="margin-top:14px;color:var(--color-muted);line-height:1.7;">Sí. La asesoría tiene sentido también para gafas de sol o gafas sin graduación. El trabajo de encontrar una montura que te favorezca — en forma, proporciones y estilo — es el mismo con o sin lente graduada.</p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CTA FINAL -->
+    <section style="background:var(--color-black);color:var(--color-white);padding:clamp(64px,10vw,120px) 0;">
+      <div class="container" style="text-align:center;max-width:640px;margin-inline:auto;">
+        <span style="display:block;font-size:0.5625rem;font-weight:700;letter-spacing:0.28em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:20px;">Panisse Óptica · Online</span>
+        <h2 style="font-family:var(--font-display);font-size:clamp(32px,5vw,52px);font-weight:400;font-style:italic;line-height:1.1;margin-bottom:24px;">Reserva tu asesoría<br>de montura online</h2>
+        <p style="font-size:1rem;line-height:1.7;color:rgba(255,255,255,0.75);margin-bottom:40px;">Elige fecha, comparte tus fotos y tu graduación. Nosotros llegamos a la videollamada con la selección preparada para tu caso.</p>
+        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+          <a href="contacto.html" class="btn btn--primary">
+            Reservar videollamada
+          </a>
+          <a href="https://wa.me/34614296965?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20asesor%C3%ADa%20de%20montura%20online%20por%20videollamada."
+             class="btn btn--ghost"
+             target="_blank"
+             rel="noopener noreferrer">
+            Escribir por WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
   <footer class="footer" aria-label="Pie de página">
     <div class="footer__inner container">
 
-      <!-- Col 1: Logo + Misión -->
       <div class="footer__col footer__col--brand">
         <a href="index.html" class="footer__logo" aria-label="Panisse Óptica — inicio">
           Panisse <em>Óptica</em>
@@ -579,7 +778,6 @@
         </div>
       </div>
 
-      <!-- Col 2: Enlaces rápidos -->
       <nav class="footer__col footer__col--links" aria-label="Navegación del footer">
         <h3 class="footer__heading">Explorar</h3>
         <ul class="footer__list">
@@ -590,6 +788,16 @@
           <li><a href="contacto.html" class="footer__link">Cita Previa</a></li>
           <li><a href="blog.html" class="footer__link">Magazine</a></li>
         </ul>
+        <h3 class="footer__heading" style="margin-top:28px;">Servicios</h3>
+        <ul class="footer__list">
+          <li><a href="revision-visual-lugo.html" class="footer__link">Revisión Visual</a></li>
+          <li><a href="gafas-graduadas-lugo.html" class="footer__link">Gafas Graduadas</a></li>
+          <li><a href="asesoria-montura-online.html" class="footer__link">Asesoría Online</a></li>
+          <li><a href="catalogo.html?marca=ray-ban" class="footer__link">Ray-Ban en Lugo</a></li>
+          <li><a href="lentes-de-contacto-lugo.html" class="footer__link">Lentes de Contacto</a></li>
+          <li><a href="optometria-infantil-lugo.html" class="footer__link">Optometría Infantil</a></li>
+          <li><a href="lentes-zeiss-lugo.html" class="footer__link">Centro ZEISS Vision Expert</a></li>
+        </ul>
         <h3 class="footer__heading" style="margin-top: 28px;">Información</h3>
         <ul class="footer__list">
           <li><a href="nosotros.html" class="footer__link">Sobre Nosotros</a></li>
@@ -599,7 +807,6 @@
         </ul>
       </nav>
 
-      <!-- Col 3: Nuestra Tienda -->
       <div class="footer__col footer__col--stores">
         <h3 class="footer__heading">Nuestra Tienda</h3>
         <div class="footer__store">
@@ -616,7 +823,6 @@
         </div>
       </div>
 
-      <!-- Col 4: Newsletter -->
       <div class="footer__col footer__col--newsletter">
         <h3 class="footer__heading">Novedades</h3>
         <p class="footer__newsletter-text">Nuevas colecciones, consejos ópticos y artículos de autor. Sin spam, solo lo que merece la pena.</p>
@@ -639,7 +845,7 @@
   </footer>
 
   <a
-    href="https://wa.me/34614296965?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20c%C3%B3mo%20pedir%20cita"
+    href="https://wa.me/34614296965?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20asesor%C3%ADa%20de%20montura%20online%20por%20videollamada."
     class="whatsapp-float"
     target="_blank"
     rel="noopener noreferrer"
@@ -652,7 +858,6 @@
   </a>
   <script src="assets/js/main.min.js?v=10" defer></script>
 
-  <!-- ── Google Translate ── -->
   <style>
     .goog-te-banner-frame,iframe.skiptranslate{display:none!important;}
     body,body.translated-ltr,body.translated-rtl{top:0!important;margin-top:0!important;}
@@ -680,7 +885,6 @@
         document.cookie = 'googtrans=' + val + '; path=/';
         window.location.reload();
       };
-      // Hide Google bar if injected after load
       var _gt_obs = new MutationObserver(function(){
         var f=document.querySelector('iframe.skiptranslate');
         if(f){f.style.display='none';document.body.style.top='0';}
