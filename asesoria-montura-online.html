@@ -768,9 +768,9 @@
         <h2 style="font-family:var(--font-display);font-size:clamp(32px,5vw,52px);font-weight:400;font-style:italic;line-height:1.1;margin-bottom:24px;">Reserva tu asesoría<br>de montura online</h2>
         <p style="font-size:1rem;line-height:1.7;color:rgba(255,255,255,0.75);margin-bottom:40px;">Elige fecha, comparte tus fotos y tu graduación. Nosotros llegamos a la videollamada con la selección preparada para tu caso.</p>
         <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-          <a href="contacto.html" class="btn btn--primary">
-            Reservar videollamada
-          </a>
+          <button id="btn-stripe" class="btn btn--primary" onclick="iniciarPago()">
+            Reservar asesoría — 50&nbsp;€
+          </button>
           <a href="https://wa.me/34614296965?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20asesor%C3%ADa%20de%20montura%20online%20por%20videollamada."
              class="btn btn--ghost"
              target="_blank"
@@ -935,5 +935,30 @@
     })();
   </script>
   <script>if(document.cookie.indexOf('googtrans=/es/en')!==-1){window.addEventListener('load',function(){var s=document.createElement('script');s.src='https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';document.head.appendChild(s);},{once:true});}</script>
+  <script>
+    async function iniciarPago() {
+      var btn = document.getElementById('btn-stripe');
+      btn.disabled = true;
+      btn.textContent = 'Preparando pago…';
+      try {
+        var res = await fetch('https://panisse-stripe.salvadorperezfelix.workers.dev/checkout', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' }
+        });
+        var data = await res.json();
+        if (data.url) {
+          window.location.href = data.url;
+        } else {
+          alert('Error al procesar el pago. Inténtalo de nuevo o escríbenos por WhatsApp.');
+          btn.disabled = false;
+          btn.textContent = 'Reservar asesoría — 50 €';
+        }
+      } catch (e) {
+        alert('Error de conexión. Inténtalo de nuevo o escríbenos por WhatsApp.');
+        btn.disabled = false;
+        btn.textContent = 'Reservar asesoría — 50 €';
+      }
+    }
+  </script>
 </body>
 </html>
