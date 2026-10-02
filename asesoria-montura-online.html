@@ -949,12 +949,12 @@
         if (data.url) {
           window.location.href = data.url;
         } else {
-          alert('Error al procesar el pago. Inténtalo de nuevo o escríbenos por WhatsApp.');
+          alert('Error Stripe: ' + (data.error || JSON.stringify(data)));
           btn.disabled = false;
           btn.textContent = 'Reservar asesoría — 50 €';
         }
       } catch (e) {
-        alert('Error de conexión. Inténtalo de nuevo o escríbenos por WhatsApp.');
+        alert('Error de conexión: ' + e.message);
         btn.disabled = false;
         btn.textContent = 'Reservar asesoría — 50 €';
       }
