@@ -2894,5 +2894,29 @@
       "varilla": "150 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "einstoffen-aerun-black",
+    "name": "Ærun",
+    "brand": "Einstoffen",
+    "brand_slug": "einstoffen",
+    "is_new": true,
+    "type": "sol",
+    "price": 375,
+    "variant": "Negro / Oro",
+    "placeholder": "https://placehold.co/600x480/0d0d0d/c8a96c?text=Einstoffen",
+    "image": "assets/img/products/einstoffen/aerun-black-f.jpg",
+    "gallery": [
+      "assets/img/products/einstoffen/aerun-black-f.jpg",
+      "assets/img/products/einstoffen/aerun-black-s.jpg"
+    ],
+    "description": "Un estado atmosférico en el que el cielo parece descender hacia la tierra. Los sonidos pierden nitidez, los colores sus contornos. Todo se atenúa — y sin embargo cobra más sentido. «Ærun» surge en ese momento de densidad. Cuando el aire se vuelve más pesado y el silencio empieza a extenderse. La forma sigue ese estado — tranquila, concentrada, casi meditativa. Nada empuja hacia adelante; nada busca atención. Fabricada en Japón, con una precisión dedicada a lo esencial. Cada línea es deliberada, cada detalle en equilibrio. «Ærun» no tiene urgencia. Descansa en sí misma — silenciosa, clara, verdadera. Quien se detiene, la verá. Acetato japonés de alta densidad. Bisagras alemanas OBE. Lentes CR39 con gradiente gris y recubrimiento UV400.",
+    "specs": {
+      "material": "Acetato japonés",
+      "calibre": "59 mm",
+      "puente": "17 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
