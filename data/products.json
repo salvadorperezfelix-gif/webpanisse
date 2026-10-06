@@ -3103,5 +3103,28 @@
       "varilla": "145 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "einstoffen-bonsai-meister-black",
+    "name": "Bonsai-Meister",
+    "brand": "Einstoffen",
+    "brand_slug": "einstoffen",
+    "type": "graduadas",
+    "price": 295,
+    "variant": "Negro",
+    "placeholder": "https://placehold.co/600x480/111111/ffffff?text=Einstoffen",
+    "image": "assets/img/products/einstoffen/bonsai-meister-black-f.jpg",
+    "gallery": [
+      "assets/img/products/einstoffen/bonsai-meister-black-f.jpg",
+      "assets/img/products/einstoffen/bonsai-meister-black-s.jpg"
+    ],
+    "description": "La tradición más antigua, basada en la atención al detalle hasta el nivel más minucioso. Eso es el Bonsai-Meister. Con un aro fino y un puente discreto, estas gafas evocan el dominio de la paciencia, no menos impresionante que un árbol en miniatura cultivado durante años. Tan zen como se puede llegar a ser. Titanio japonés al 100% con detalles micro-grabados. Varillas ajustables. Hecho a mano. Diseño suizo.",
+    "specs": {
+      "material": "Titanio japonés al 100%",
+      "calibre": "51 mm",
+      "puente": "22 mm",
+      "varilla": "142 mm",
+      "genero": "Unisex"
+    }
   }
 ]
