@@ -3080,5 +3080,28 @@
       "varilla": "145 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "einstoffen-requisiteur-black-gold",
+    "name": "Réquisiteur",
+    "brand": "Einstoffen",
+    "brand_slug": "einstoffen",
+    "type": "graduadas",
+    "price": 295,
+    "variant": "Negro / Oro",
+    "placeholder": "https://placehold.co/600x480/111111/c8a96c?text=Einstoffen",
+    "image": "assets/img/products/einstoffen/requisiteur-black-gold-f.jpg",
+    "gallery": [
+      "assets/img/products/einstoffen/requisiteur-black-gold-f.jpg",
+      "assets/img/products/einstoffen/requisiteur-black-gold-s.jpg"
+    ],
+    "description": "Ella no entra en el plano — pero sin ella todo se derrumba. La «Réquisiteur» sabe dónde está el arma antes de que empiece el duelo, y ya tiene el pañuelo listo cuando llegan las lágrimas. Con una silueta audaz y un brillo dorado, es una declaración, no un adorno — un toque de los 70, un guiño de pistolera y mucha presencia. ¿El doble puente? Una línea dorada entre lo absolutamente serio y estar tomándote el pelo. Quien lleva la «Réquisiteur» no está interpretando un papel — está preparando la escena. Titanio japonés al 100% con detalles micro-grabados. Varillas ajustables. Hecho a mano. Diseño suizo.",
+    "specs": {
+      "material": "Titanio japonés al 100%",
+      "calibre": "54 mm",
+      "puente": "19 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
