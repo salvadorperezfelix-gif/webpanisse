@@ -2918,5 +2918,29 @@
       "varilla": "145 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "einstoffen-aesoris-dark-brown",
+    "name": "Æsoris",
+    "brand": "Einstoffen",
+    "brand_slug": "einstoffen",
+    "is_new": true,
+    "type": "sol",
+    "price": 375,
+    "variant": "Dark Brown",
+    "placeholder": "https://placehold.co/600x480/3d1a0a/aaaaaa?text=Einstoffen",
+    "image": "assets/img/products/einstoffen/aesoris-dark-brown-f.jpg",
+    "gallery": [
+      "assets/img/products/einstoffen/aesoris-dark-brown-f.jpg",
+      "assets/img/products/einstoffen/aesoris-dark-brown-s.jpg"
+    ],
+    "description": "Cuando la luz ya no tiene dirección y el tiempo no avanza, sino que ondula. Los antiguos dicen que «Æsoris» fue el primer pensamiento de Ætherra — el momento en que la forma y la materia se encontraron. El pulso antes de que las cosas tuvieran nombre. Acetato japonés trabajado con precisión: cada arista intencional, cada detalle en equilibrio. La montura tiene volumen sin dominar, silueta fuerte y expresión contenida. Crown Panto fabricado en Japón en tiradas limitadas. «Æsoris» no es una declaración. Simplemente existe.",
+    "specs": {
+      "material": "Acetato japonés",
+      "calibre": "48 mm",
+      "puente": "24 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
