@@ -3057,5 +3057,28 @@
       "varilla": "145 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "einstoffen-master-brewer-havana",
+    "name": "Master Brewer",
+    "brand": "Einstoffen",
+    "brand_slug": "einstoffen",
+    "type": "graduadas",
+    "price": 295,
+    "variant": "Havana",
+    "placeholder": "https://placehold.co/600x480/4a2a0a/c8a96c?text=Einstoffen",
+    "image": "assets/img/products/einstoffen/master-brewer-havana-f.jpg",
+    "gallery": [
+      "assets/img/products/einstoffen/master-brewer-havana-f.jpg",
+      "assets/img/products/einstoffen/master-brewer-havana-s.jpg"
+    ],
+    "description": "Llevas meses siendo el responsable de que la cocina compartida huela a café de verdad, no el que sale de una cápsula. Granos tostados por ti mismo, agua a exactamente 94 grados, una báscula para dos medidas de molido. Los demás presionan un botón y lo llaman café, lo que te produce un dolor sordo y callado. Para ti, el café es un oficio con maneras exactamente correctas e incorrectas de prepararlo. Diez minutos para una sola taza no es tiempo perdido. Es la única parte del día que se hace bien. Acetato natural premium con arrazón en titanio japonés, trabajado y pulido a mano. Bisagras alemanas OBE, puntas ajustables. Diseño suizo.",
+    "specs": {
+      "material": "Acetato y titanio japonés",
+      "calibre": "54 mm",
+      "puente": "22 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
