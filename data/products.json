@@ -2965,5 +2965,28 @@
       "varilla": "140 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "einstoffen-nachtschwarmer-crystal",
+    "name": "Nachtschwärmer",
+    "brand": "Einstoffen",
+    "brand_slug": "einstoffen",
+    "type": "graduadas",
+    "price": 195,
+    "variant": "Crystal",
+    "placeholder": "https://placehold.co/600x480/4a5a6a/ffffff?text=Einstoffen",
+    "image": "assets/img/products/einstoffen/nachtschwarmer-crystal-f.jpg",
+    "gallery": [
+      "assets/img/products/einstoffen/nachtschwarmer-crystal-f.jpg",
+      "assets/img/products/einstoffen/nachtschwarmer-crystal-s.jpg"
+    ],
+    "description": "A las dos de la mañana escribes los mejores audios de tu vida. Filosóficos, sinceros, a veces casi poéticos. Al día siguiente los escuchas y te preguntas quién era esa persona. Los demás están agotados a medianoche. Para ti, es cuando los pensamientos empiezan a ordenarse solos, mientras el piso está en silencio. El despertador al día siguiente es el precio. Lo pagas igualmente, cada vez. Acetato natural premium, trabajado y pulido a mano. Bisagras alemanas OBE, puntas ajustables. Diseño suizo.",
+    "specs": {
+      "material": "Acetato natural premium",
+      "calibre": "54 mm",
+      "puente": "17 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
