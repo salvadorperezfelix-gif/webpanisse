@@ -3011,5 +3011,28 @@
       "varilla": "145 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "einstoffen-astronom-crystal-walnut",
+    "name": "Astronom",
+    "brand": "Einstoffen",
+    "brand_slug": "einstoffen",
+    "type": "graduadas",
+    "price": 195,
+    "variant": "Crystal & Walnut",
+    "placeholder": "https://placehold.co/600x480/d0d8e0/555555?text=Einstoffen",
+    "image": "assets/img/products/einstoffen/astronom-crystal-walnut-f.jpg",
+    "gallery": [
+      "assets/img/products/einstoffen/astronom-crystal-walnut-f.jpg",
+      "assets/img/products/einstoffen/astronom-crystal-walnut-s.jpg"
+    ],
+    "description": "Eres el único que realmente mira hacia arriba durante una lluvia de estrellas mientras todos los demás miran el móvil para hacer una foto que no sale. Sabes de memoria el próximo eclipse lunar, despertador a las 3am, nadie te lo ha pedido. «Astronom» lleva esa misma paciencia en su montura: tranquila, hecha para la mirada larga, no para la rápida. Las mejores cosas no se anuncian. Hay que saber mirar. Acetato natural premium con detalles en nogal, trabajado y pulido a mano. Bisagras alemanas OBE, puntas ajustables. Diseño suizo.",
+    "specs": {
+      "material": "Acetato y nogal",
+      "calibre": "52 mm",
+      "puente": "23 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
