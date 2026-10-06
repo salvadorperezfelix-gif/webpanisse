@@ -2988,5 +2988,28 @@
       "varilla": "145 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "einstoffen-chief-blender-black",
+    "name": "Chief Blender",
+    "brand": "Einstoffen",
+    "brand_slug": "einstoffen",
+    "type": "graduadas",
+    "price": 295,
+    "variant": "Negro / Oro",
+    "placeholder": "https://placehold.co/600x480/111111/c8a96c?text=Einstoffen",
+    "image": "assets/img/products/einstoffen/chief-blender-black-f.jpg",
+    "gallery": [
+      "assets/img/products/einstoffen/chief-blender-black-f.jpg",
+      "assets/img/products/einstoffen/chief-blender-black-s.jpg"
+    ],
+    "description": "La intuición sutil encuentra la voluntad firme. «Chief Blender» une lo que otros separan: estructura y creatividad, tradición y atrevimiento. Con líneas definidas y un frontal claro, representa el estilo con sustancia — preciso, equilibrado, lleno de carácter. No mezcla simplemente; compone. Cada decisión sigue tanto la intuición como la experiencia. Para personalidades que marcan el ritmo — serenas, decididas, inconfundibles. Titanio japonés al 100% con detalles micro-grabados. Varillas ajustables. Hecho a mano. Diseño suizo.",
+    "specs": {
+      "material": "Titanio japonés al 100%",
+      "calibre": "55 mm",
+      "puente": "20 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
