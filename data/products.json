@@ -3034,5 +3034,28 @@
       "varilla": "145 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "einstoffen-alchemist-blue",
+    "name": "Alchemist",
+    "brand": "Einstoffen",
+    "brand_slug": "einstoffen",
+    "type": "graduadas",
+    "price": 195,
+    "variant": "Blue",
+    "placeholder": "https://placehold.co/600x480/2a4a7a/ffffff?text=Einstoffen",
+    "image": "assets/img/products/einstoffen/alchemist-blue-f.jpg",
+    "gallery": [
+      "assets/img/products/einstoffen/alchemist-blue-f.jpg",
+      "assets/img/products/einstoffen/alchemist-blue-s.jpg"
+    ],
+    "description": "Los alquimistas de antaño eran famosos por su búsqueda de convertir el plomo en oro. ¿Y tú? ¿Puedes poner patas arriba las reglas de la realidad y crear algo nuevo, todo con una sonrisa? Si es así, el Alchemist es para ti. Estas gafas refractan la luz de tal manera que ves conexiones que otros ni siquiera perciben. Caminas por el mundo como si lo estuvieras poniendo boca abajo — y ese es exactamente el plan. La verdadera magia reside en la transformación. Acetato natural premium, trabajado y pulido a mano. Bisagras alemanas OBE, puntas ajustables. Diseño suizo.",
+    "specs": {
+      "material": "Acetato natural premium",
+      "calibre": "54 mm",
+      "puente": "19 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
