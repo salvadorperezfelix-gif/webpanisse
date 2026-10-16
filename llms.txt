@@ -97,7 +97,7 @@ Sí. Panisse Óptica realiza optometría infantil en Lugo: revisión visual adap
 ## Contacto y ubicación
 
 - **Dirección:** Rúa do Teatro, Bajo 2, 27001 Lugo, Galicia, España
-- **Coordenadas:** 43.0097, -7.5563
+- **Coordenadas:** 43.009700, -7.556290
 - **Teléfono:** +34 982 30 11 93
 - **WhatsApp:** +34 614 296 965
 - **Email:** info@panisse.es
