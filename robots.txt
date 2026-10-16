@@ -5,5 +5,28 @@ Disallow: /data/
 Disallow: /node_modules/
 Allow: /
 
+# AI search/citation bots — explicitly allowed for citability
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+# AI training bots — allowed (site has llms.txt, visibility is desired)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://panisse.es/sitemap.xml
 Sitemap: https://panisse.es/sitemap-images.xml
