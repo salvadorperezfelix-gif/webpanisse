@@ -1,6 +1,6 @@
 User-agent: *
 Disallow: /ecommerce/
-Disallow: /assets/blog/
+Disallow: /assets/blog/_draft/
 Disallow: /data/
 Disallow: /node_modules/
 Allow: /
