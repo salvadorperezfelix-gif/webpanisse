@@ -14,3 +14,7 @@ ss-*.png
 # Herramientas de desarrollo — no desplegar en producción
 tmp_uploads/
 scripts/
+
+# Prompts y borradores de contenido — no indexar
+assets/blog/*.md
+assets/blog/_draft/
