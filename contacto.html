@@ -522,21 +522,28 @@
           });
           Cal("ui", {"hideEventTypeDetails":false,"layout":"week_view"});
 
-          // Escuchar el éxito de reserva en Cal.com para disparar los píxeles de conversión
+          // Escuchar el éxito de reserva en Cal.com para disparar los píxeles de conversión.
+          // La reserva tiene su propio evento (cita_reservada) para no mezclarse con los clics de WhatsApp (generate_lead).
+          var citaMedida = false;
           Cal("on", {
             action: "bookingSuccessful",
             callback: function(e) {
+              if (citaMedida) return;
+              citaMedida = true;
               if (typeof window.fbq === "function") {
                 window.fbq("track", "Lead", {
                   content_name: "Reserva de Cita Previa (Cal.com)",
                   status: "success"
                 });
+                window.fbq("track", "Schedule", { content_name: "Revisión visual (Cal.com)" });
               }
               if (typeof window.gtag === "function") {
-                window.gtag("event", "generate_lead", {
-                  event_category: "Engagement",
+                window.gtag("event", "cita_reservada", {
+                  event_category: "Cita",
                   event_label: "Reserva de Cita Previa (Cal.com)"
                 });
+                // Conversión de Google Ads «Cita reservada (Cal.com)»
+                window.gtag("event", "conversion", { send_to: "AW-18003465740/2ymQCKqYvKQdEIys3IhD" });
               }
             }
           });
