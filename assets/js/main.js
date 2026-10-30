@@ -149,7 +149,20 @@ const BREVO_FORM_URL = '';
 const newsletterForm = document.getElementById('newsletter-form');
 const newsletterMsg  = document.getElementById('newsletter-msg');
 
-if (newsletterForm) {
+// Sin formulario de Brevo conectado: en su lugar, enlace a Instagram
+if (newsletterForm && !BREVO_FORM_URL) {
+  const txt = newsletterForm.parentElement.querySelector('.footer__newsletter-text');
+  if (txt) txt.textContent = 'Nuevas colecciones y consejos ópticos, cada semana en Instagram.';
+  const ig = document.createElement('a');
+  ig.href = 'https://www.instagram.com/panisse_optica/';
+  ig.target = '_blank';
+  ig.rel = 'noopener noreferrer';
+  ig.className = 'footer__link';
+  ig.textContent = 'Síguenos en @panisse_optica →';
+  newsletterForm.replaceWith(ig);
+}
+
+if (newsletterForm && BREVO_FORM_URL) {
   newsletterForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     const email = document.getElementById('newsletter-email').value.trim();
@@ -157,12 +170,6 @@ if (newsletterForm) {
 
     if (!re.test(email)) {
       newsletterMsg.textContent = 'Por favor, introduce un email válido.';
-      newsletterMsg.className = 'footer__form-msg footer__form-msg--err';
-      return;
-    }
-
-    if (!BREVO_FORM_URL) {
-      newsletterMsg.textContent = 'La suscripción no está disponible ahora mismo. Síguenos en Instagram: @panisse_optica';
       newsletterMsg.className = 'footer__form-msg footer__form-msg--err';
       return;
     }
