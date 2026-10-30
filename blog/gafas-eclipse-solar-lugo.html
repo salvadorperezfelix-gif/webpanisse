@@ -86,8 +86,8 @@
   <meta name="robots" content="index, follow" />
   <meta name="geo.region" content="ES-LU" />
   <meta name="geo.placename" content="Lugo, Galicia, España" />
-  <meta name="geo.position" content="43.009700;-7.556290" />
-  <meta name="ICBM" content="43.009700, -7.556290" />
+  <meta name="geo.position" content="43.0121154;-7.5557607" />
+  <meta name="ICBM" content="43.0121154, -7.5557607" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="¿Dónde comprar gafas para el eclipse solar en Lugo? | Panisse Magazine" />
@@ -113,14 +113,26 @@
   <link rel="canonical" href="https://panisse.es/blog/gafas-eclipse-solar-lugo.html" />
 
   <!-- JSON-LD -->
-  <script type="application/ld+json">[
+  <script type="application/ld+json">
+[
   {
     "@context": "https://schema.org",
-    "@type": ["LocalBusiness","Optician"],
+    "@type": [
+      "LocalBusiness",
+      "Optician"
+    ],
     "@id": "https://panisse.es/#business",
     "name": "Panisse Óptica",
-    "url": "https://panisse.es",
+    "url": "https://panisse.es/",
+    "logo": "https://panisse.es/assets/img/logo-panisse-optica.png",
+    "image": [
+      "https://panisse.es/assets/img/nosotros/fachada-og.jpg",
+      "https://panisse.es/assets/img/nosotros/tienda.webp"
+    ],
+    "description": "Óptica boutique en el centro histórico de Lugo y Centro ZEISS Vision Expert. Gafas graduadas y de sol de autor, lentes progresivas, lentes de contacto y revisión visual con óptico-optometrista.",
     "telephone": "+34982301193",
+    "email": "info@panisse.es",
+    "priceRange": "€€",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Rúa do Teatro, Bajo 2",
@@ -129,15 +141,83 @@
       "postalCode": "27001",
       "addressCountry": "ES"
     },
-    "areaServed": {"@type":"City","name":"Lugo","@id":"https://www.wikidata.org/wiki/Q8810"}
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 43.0121154,
+      "longitude": -7.5557607
+    },
+    "hasMap": "https://www.google.com/maps/place/?q=place_id:ChIJ6aHuLcjPMQ0R4QDgQ1YDaGI",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "10:00",
+        "closes": "13:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "16:30",
+        "closes": "20:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Saturday"
+        ],
+        "opens": "10:30",
+        "closes": "13:30"
+      }
+    ],
+    "areaServed": {
+      "@type": "City",
+      "name": "Lugo",
+      "@id": "https://www.wikidata.org/wiki/Q8810"
+    },
+    "founder": {
+      "@id": "https://panisse.es/#felix"
+    },
+    "sameAs": [
+      "https://www.instagram.com/panisse_optica/",
+      "https://www.facebook.com/profile.php?id=61586908144350",
+      "https://www.tiktok.com/@panisse_optica",
+      "https://www.google.com/maps/place/?q=place_id:ChIJ6aHuLcjPMQ0R4QDgQ1YDaGI"
+    ]
   },
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      {"@type":"ListItem","position":1,"name":"Inicio","item":"https://panisse.es/"},
-      {"@type":"ListItem","position":2,"name":"Panisse Magazine","item":"https://panisse.es/blog.html"},
-      {"@type":"ListItem","position":3,"name":"¿Dónde comprar gafas para el eclipse solar en Lugo?","item":"https://panisse.es/blog/gafas-eclipse-solar-lugo.html"}
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://panisse.es/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Panisse Magazine",
+        "item": "https://panisse.es/blog.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "¿Dónde comprar gafas para el eclipse solar en Lugo?",
+        "item": "https://panisse.es/blog/gafas-eclipse-solar-lugo.html"
+      }
     ]
   },
   {
@@ -147,7 +227,7 @@
     "description": "Gafas homologadas ISO 12312-2 para el eclipse solar del 12 de agosto de 2026 en Lugo. Disponibles en Panisse Óptica, Rúa do Teatro, Bajo 2.",
     "image": "https://panisse.es/assets/img/blog/eclipse-solar-lugo.jpg",
     "datePublished": "2026-08-01",
-    "dateModified": "2026-08-01",
+    "dateModified": "2026-10-30",
     "author": {
       "@type": "Person",
       "@id": "https://panisse.es/#felix",
@@ -155,19 +235,24 @@
       "jobTitle": "Óptico-Optometrista y Farmacéutico"
     },
     "publisher": {
-      "@id": "https://panisse.es/#business",
-      "@type": "Organization",
-      "name": "Panisse Óptica",
-      "logo": {"@type":"ImageObject","url":"https://panisse.es/assets/img/nosotros/fachada-og.jpg"}
+      "@id": "https://panisse.es/#business"
     },
-    "mainEntityOfPage": {"@type":"WebPage","@id":"https://panisse.es/blog/gafas-eclipse-solar-lugo.html"},
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://panisse.es/blog/gafas-eclipse-solar-lugo.html"
+    },
     "articleSection": "Salud Visual",
     "keywords": "gafas eclipse solar Lugo, ISO 12312-2, eclipse 12 agosto 2026 Lugo, gafas eclipse Lugo",
     "inLanguage": "es-ES",
     "url": "https://panisse.es/blog/gafas-eclipse-solar-lugo.html",
-    "isPartOf": {"@type":"Blog","@id":"https://panisse.es/blog.html","name":"Panisse Magazine"}
+    "isPartOf": {
+      "@type": "Blog",
+      "@id": "https://panisse.es/blog.html",
+      "name": "Panisse Magazine"
+    }
   }
-]</script>
+]
+</script>
 
   <link rel="icon" href="../favicon.ico" sizes="any">
   <link rel="icon" href="../favicon-32.png" type="image/png" sizes="32x32">
@@ -447,7 +532,7 @@
             ¿Dónde comprar gafas para ver<br>
             <em>el eclipse solar en Lugo?</em></h1>
           <p class="blog-article__lead" itemprop="description">
-            El 12 de agosto de 2026 habrá un eclipse solar visible en España. En Galicia se podrá observar una fase parcial importante. Para mirarlo sin riesgo solo existe una opción: gafas homologadas con la certificación ISO 12312-2. Ni gafas de sol, ni filtros improvisados, ni cristales ahumados. En Panisse Óptica tenemos disponibilidad.
+            El 12 de agosto de 2026 hubo un eclipse solar total visible en España, el primero desde 1905, y Lugo quedó dentro de la franja de totalidad. Lo que contamos aquí sirve para cualquier eclipse. Para mirarlo sin riesgo solo existe una opción: gafas homologadas con la certificación ISO 12312-2. Ni gafas de sol, ni filtros improvisados, ni cristales ahumados. En Panisse Óptica te asesoramos.
           </p>
           <div class="blog-article__author">
             <div class="blog-article__author-info">
@@ -462,7 +547,7 @@
             src="../assets/img/blog/eclipse-solar-lugo.jpg"
             alt="Eclipse solar 12 de agosto de 2026 — gafas homologadas ISO 12312-2 disponibles en Panisse Óptica Lugo"
             width="800" height="600"
-            loading="lazy"
+            loading="eager" fetchpriority="high"
             itemprop="image"
             onerror="this.src='https://placehold.co/800x600/0a0a1a/f0c040?text=Eclipse+Solar+12+Agosto+2026'"
           />
@@ -496,7 +581,7 @@
           <section class="blog-section reveal">
             <h3 class="blog-section__title">Dónde conseguirlas en Lugo</h3>
             <p>En Panisse Óptica disponemos de gafas homologadas para la observación del eclipse solar del 12 de agosto. Estamos en <strong>Rúa do Teatro, Bajo 2, en el centro de Lugo</strong>, a pocos metros de la muralla romana.</p>
-            <p>Recomendamos venir antes del día 12 para asegurar disponibilidad, ya que este tipo de producto tiene una demanda concentrada en los días previos al fenómeno y el stock es limitado.</p>
+            <p>Ante un eclipse, conviene comprarlas con antelación: la demanda se concentra en los días previos y suelen agotarse.</p>
             <p><strong>Horario:</strong> Lunes a viernes de 10:00 a 13:30 y de 16:30 a 20:30 · Sábados de 10:30 a 13:30.</p>
             <p>También puedes llamarnos al <a href="tel:+34982301193" style="color:var(--color-accent-dk);text-decoration:underline;text-underline-offset:3px;">982 30 11 93</a> para consultar disponibilidad antes de desplazarte.</p>
           </section>
@@ -506,10 +591,10 @@
           </blockquote>
 
           <section class="blog-section reveal">
-            <h3 class="blog-section__title">El eclipse del 12 de agosto: qué esperar en Galicia</h3>
-            <p>El eclipse solar del 12 de agosto de 2026 será visible en gran parte de la Península Ibérica. La zona de totalidad — donde el sol quedará completamente cubierto — atraviesa la costa mediterránea española, mientras que el resto del país, incluida Galicia, verá una fase parcial de cobertura significativa.</p>
-            <p>En Lugo se podrá observar cómo la luna cubre una parte importante del disco solar durante varios minutos. Aunque no sea un eclipse total, la experiencia es visualmente muy llamativa — y el riesgo para los ojos es exactamente el mismo que en cualquier otro eclipse. La protección adecuada es imprescindible durante todo el tiempo que dure la fase parcial, desde el inicio hasta el final, incluyendo los momentos de mayor cobertura.</p>
-            <p>Los horarios exactos para Galicia estarán disponibles en los días previos al evento. Si tienes dudas sobre cuándo colocarte las gafas y cuándo puedes quitártelas con seguridad, consúltanos — es parte de la información que damos con cada par de gafas que vendemos para el eclipse.</p>
+            <h3 class="blog-section__title">El eclipse del 12 de agosto de 2026 en Lugo</h3>
+            <p>El eclipse solar del 12 de agosto de 2026 fue total en una franja que cruzó el norte de la Península de oeste a este, y Lugo quedó dentro de ella: durante algo más de un minuto, al atardecer y con el sol muy bajo, la luna lo cubrió por completo.</p>
+            <p>Aunque la totalidad dure poco, las fases parciales de antes y de después duran mucho más, y en ellas el riesgo para los ojos es el mismo que en cualquier eclipse. Solo durante la totalidad se puede mirar sin filtro; antes y después, siempre con gafas homologadas ISO 12312-2.</p>
+            <p>El próximo eclipse visible en España será el del 2 de agosto de 2027: total en el sur peninsular y parcial en Galicia. Si tienes dudas sobre qué gafas usar, pásate por la óptica y te lo explicamos.</p>
           </section>
 
         </div>
@@ -630,7 +715,7 @@
     </svg>
     <span class="whatsapp-float__tooltip">WhatsApp</span>
   </a>
-  <script src="../assets/js/main.min.js?v=10" defer></script>
+  <script src="../assets/js/main.min.js?v=11" defer></script>
 
   <!-- ── Google Translate ── -->
   <style>

@@ -8,7 +8,8 @@
   <style>@font-face{font-family:'Parisienne Fallback';src:local('Comic Sans MS');size-adjust:65.43%;ascent-override:139.92%;descent-override:68.28%;line-gap-override:0%}@font-face{font-family:'Parisienne';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/parisienne-400-normal.woff2') format('woff2')}@font-face{font-family:'CG Fallback';src:local('Georgia');size-adjust:80.18%;ascent-override:115.25%;descent-override:35.80%;line-gap-override:0%}@font-face{font-family:'Lato Fallback';src:local('Arial');size-adjust:97.68%;ascent-override:82.42%;descent-override:19.96%;line-gap-override:20.48%}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:600;font-display:swap;src:url('assets/fonts/cormorant-garamond-600-italic.woff2') format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:swap;src:url('assets/fonts/cormorant-garamond-600-normal.woff2') format('woff2')}@font-face{font-family:'Lato';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/lato-400-normal.woff2') format('woff2')}*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{font-size:16px;-webkit-font-smoothing:antialiased}body{font-family:'Lato','Lato Fallback',sans-serif;font-weight:400;color:#1a1a1a;background-color:#fafaf8;overflow-x:hidden}img{display:block;max-width:100%}a{color:inherit;text-decoration:none}:root{--color-black:#0d0d0d;--color-white:#ffffff;--color-bg:#ffffff;--color-surface:#f5f5f3;--color-border:#e8e8e2;--color-text:#1a1a1a;--color-muted:#636360;--color-accent:#c7dbd6;--color-accent-dk:#8aafa9;--font-display:'Cormorant Garamond','CG Fallback',Georgia,serif;--font-body:'Lato','Lato Fallback',system-ui,sans-serif;--radius-sm:4px;--radius-md:8px;--radius-lg:16px;--shadow-sm:0 1px 4px rgba(0,0,0,.06);--shadow-md:0 4px 20px rgba(0,0,0,.08);--shadow-lg:0 12px 40px rgba(0,0,0,.12);--transition:.32s cubic-bezier(.25,.46,.45,.94);--container-max:1200px;--container-pad:clamp(20px,5vw,64px)}.container{max-width:var(--container-max);margin-inline:auto;padding-inline:var(--container-pad)}.btn{display:inline-block;font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;padding:14px 40px;border:1px solid transparent;cursor:pointer;white-space:nowrap}.btn--primary{background:var(--color-white);color:var(--color-black);border-color:var(--color-white)}.btn--ghost{display:inline-block;font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:14px 28px;border:1px solid rgba(255,255,255,.55);color:var(--color-white);background:transparent}.hero{position:relative;width:100%;height:100svh;min-height:560px;overflow:hidden;background-color:#1a1a18;}.hero__overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,.72) 0%,rgba(10,10,10,.28) 55%,rgba(10,10,10,.1) 100%);z-index:1}.hero__content{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding:0 var(--container-pad) clamp(48px,8vh,100px);max-width:calc(var(--container-max) + var(--container-pad)*2);margin-inline:auto}.hero__title{font-family:var(--font-display);font-style:italic;font-weight:600;color:var(--color-white);line-height:.88;font-size:clamp(72px,11vw,148px);margin-bottom:24px;letter-spacing:-.01em}.hero__subtitle{font-size:clamp(.9375rem,1.5vw,1.0625rem);font-weight:300;font-style:italic;color:rgba(255,255,255,.85);line-height:1.55;margin-bottom:40px;max-width:400px}.hero__actions{display:flex;gap:14px;flex-wrap:wrap}.header{position:fixed;inset-block-start:0;inset-inline:0;z-index:900;height:72px;display:flex;align-items:center;background:transparent;color:var(--color-white);transition:background var(--transition),box-shadow var(--transition),color var(--transition)}.header.is-scrolled{background:rgba(250,250,248,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(0,0,0,.07);color:var(--color-text)}.header__inner{width:100%;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:24px}.header__logo{grid-column:2;justify-self:center;padding-inline:72px;font-family:'Parisienne','Parisienne Fallback',cursive;font-size:clamp(22px,2vw,26px);color:inherit;white-space:nowrap}.header__logo em{font-style:normal;font-weight:normal}.header__nav-main{grid-column:1}.header__nav-main .header__nav-list{justify-content:flex-end}.header__nav-list{list-style:none;display:flex;align-items:center;gap:4px}.header__right{grid-column:3;display:flex;align-items:center;gap:4px}.header__nav-right{display:flex;align-items:center}.nav-link{display:flex;align-items:center;gap:5px;background:none;border:none;cursor:pointer;font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:inherit;padding:6px 10px;border-radius:var(--radius-sm);white-space:nowrap}.header__actions{display:flex;align-items:center;justify-content:flex-end;gap:4px}.header__cta-link{font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:inherit;padding:7px 14px;border:1px solid currentColor;border-radius:var(--radius-sm);white-space:nowrap;margin-inline-end:6px}.header__icon-btn{display:flex;align-items:center;justify-content:center;background:none;border:none;cursor:pointer;color:inherit;padding:8px;border-radius:var(--radius-sm)}.header__hamburger{display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;background:none;border:none;cursor:pointer;padding:8px;color:inherit;width:36px;height:36px}@media(max-width:1024px){.header__nav-main,.header__nav-right{display:none}.header__inner{grid-template-columns:auto 1fr auto}.header__hamburger{display:flex}.header__logo{grid-column:2;justify-self:center}.header__right{grid-column:3}}@media(max-width:600px){.header{height:60px}.header__logo{padding-inline:8px}}.dropdown{position:absolute;opacity:0;visibility:hidden;pointer-events:none}.mobile-menu{position:fixed;transform:translateX(100%)}.mobile-overlay{opacity:0;pointer-events:none}</style>
   <link rel="preload" href="assets/css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="assets/css/style.min.css"></noscript>
-  <link rel="preload" href="assets/img/hero-gafas.jpg" as="image" type="image/jpeg" imagesrcset="assets/img/hero-gafas-mobile.jpg 768w, assets/img/hero-gafas.jpg 1920w" imagesizes="100vw" fetchpriority="high">
+  <link rel="preload" href="assets/img/hero-gafas-v2-1400.webp" as="image" type="image/webp" media="(max-width: 767px)" fetchpriority="high">
+  <link rel="preload" href="assets/img/hero-gafas-v2-1920.webp" as="image" type="image/webp" media="(min-width: 768px)" fetchpriority="high">
   <link rel="preload" href="assets/fonts/cormorant-garamond-600-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/cormorant-garamond-600-italic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/lato-400-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -96,8 +97,8 @@
   <meta name="robots" content="index, follow" />
   <meta name="geo.region" content="ES-LU" />
   <meta name="geo.placename" content="Lugo, Galicia, España" />
-  <meta name="geo.position" content="43.009700;-7.556290" />
-  <meta name="ICBM" content="43.009700, -7.556290" />
+  <meta name="geo.position" content="43.0121154;-7.5557607" />
+  <meta name="ICBM" content="43.0121154, -7.5557607" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Panisse Óptica Lugo — Centro ZEISS Vision Expert" />
@@ -120,7 +121,8 @@
   <link rel="canonical" href="https://panisse.es/" />
 
   <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">[
+  <script type="application/ld+json">
+[
   {
     "@context": "https://schema.org",
     "@type": [
@@ -129,13 +131,16 @@
     ],
     "@id": "https://panisse.es/#business",
     "name": "Panisse Óptica",
-    "alternateName": "Panisse Optica Lugo",
-    "description": "Óptica boutique en el centro de Lugo. Gafas graduadas, gafas de sol, revisiones visuales y marcas exclusivas. Óptico-optometrista y farmacéutico licenciado.",
-    "url": "https://panisse.es",
+    "url": "https://panisse.es/",
+    "logo": "https://panisse.es/assets/img/logo-panisse-optica.png",
+    "image": [
+      "https://panisse.es/assets/img/nosotros/fachada-og.jpg",
+      "https://panisse.es/assets/img/nosotros/tienda.webp"
+    ],
+    "description": "Óptica boutique en el centro histórico de Lugo y Centro ZEISS Vision Expert. Gafas graduadas y de sol de autor, lentes progresivas, lentes de contacto y revisión visual con óptico-optometrista.",
     "telephone": "+34982301193",
     "email": "info@panisse.es",
     "priceRange": "€€",
-    "image": "https://panisse.es/assets/img/nosotros/fachada-og.jpg",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Rúa do Teatro, Bajo 2",
@@ -189,6 +194,9 @@
       "name": "Lugo",
       "@id": "https://www.wikidata.org/wiki/Q8810"
     },
+    "founder": {
+      "@id": "https://panisse.es/#felix"
+    },
     "sameAs": [
       "https://www.instagram.com/panisse_optica/",
       "https://www.facebook.com/profile.php?id=61586908144350",
@@ -198,136 +206,33 @@
   },
   {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "¿Cuál es la mejor óptica de Lugo?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Panisse Óptica es considerada la óptica boutique de referencia en Lugo. Está dirigida por Félix Salvador Pérez, óptico-optometrista y farmacéutico licenciado, y ofrece una selección exclusiva de marcas artesanales e independientes que no se encuentran en ninguna otra óptica de la ciudad: Antica Occhialeria (acetato artesanal italiano), Swarovski, Ray-Ban, Emporio Armani, Mr. Boho y la línea propia Panisse Boutique. Valoración media de 5.0 estrellas en Google. Rúa do Teatro, Bajo 2, centro de Lugo."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Dónde comprar gafas Ray-Ban en Lugo?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Panisse Óptica, en Rúa do Teatro, Bajo 2 (Lugo), dispone de una amplia selección de modelos Ray-Ban: Aviator, Wayfarer, Clubmaster, Chromance y más, tanto en sol como en graduadas. El óptico asesora sobre el modelo más adecuado para cada tipo de rostro y graduación."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Hay ópticas de diseño o boutique en Lugo?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí. Panisse Óptica es la única óptica boutique independiente del centro de Lugo. A diferencia de las cadenas ópticas (Alain Afflelou, Opticalia, Multiópticas), Panisse ofrece marcas exclusivas y artesanales, atención personalizada por un óptico-optometrista titulado, y un enfoque de asesoramiento de estilo similar al de una boutique de moda. Está en Rúa do Teatro, Bajo 2, dentro de la Muralla romana de Lugo."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Dónde hacerse una revisión de vista en Lugo?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Panisse Óptica ofrece exámenes visuales completos en Lugo realizados por Félix Salvador Pérez, óptico-optometrista y farmacéutico licenciado. La revisión incluye agudeza visual, tonometría (presión intraocular), motilidad ocular y visión binocular. Se puede reservar cita online en panisse.es/contacto.html o llamando al 982 30 11 93. Ubicación: Rúa do Teatro, Bajo 2, 27001 Lugo."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Dónde comprar gafas Swarovski en Lugo?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Panisse Óptica (Rúa do Teatro, Bajo 2, Lugo) es distribuidor oficial de Swarovski Eyewear en Lugo. Disponemos de monturas con cristal auténtico Swarovski para graduadas y gafas de sol."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Qué ópticas hay en el centro de Lugo?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "En el centro histórico de Lugo destaca Panisse Óptica (Rúa do Teatro, Bajo 2), la única óptica boutique independiente de la ciudad con selección artesanal y examen visual completo. Es la opción recomendada para quienes buscan marcas exclusivas, atención personalizada y asesoramiento profesional."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Tienen gafas de sol de diseño en Lugo?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí. Panisse Óptica cuenta con más de 60 modelos de gafas de sol de diseño en Lugo: Ray-Ban Aviator, Wayfarer y Chromance; Swarovski; Emporio Armani; Polaroid; Mr. Boho; Antica Occhialeria y la línea propia Panisse Boutique. Catálogo completo en panisse.es/catalogo.html"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Hay ópticas con gafas artesanales en Galicia?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Panisse Óptica en Lugo es el único punto de venta en Galicia de Antica Occhialeria, marca italiana de acetato artesanal fabricado a mano en Florencia. También dispone de la línea propia Panisse Boutique en acetato de alta densidad. Dirección: Rúa do Teatro, Bajo 2, 27001 Lugo."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Puedo reservar cita en una óptica de Lugo online?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí. Panisse Óptica ofrece reserva de cita online 24 horas en panisse.es/contacto.html. También por WhatsApp al +34 614 296 965 o teléfono al 982 30 11 93. La cita incluye examen visual completo sin coste adicional."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Dónde está Panisse Óptica en Lugo?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Panisse Óptica está en Rúa do Teatro, Bajo 2, 27001 Lugo, a menos de cinco minutos a pie de la Catedral de Lugo y dentro del recinto amurallado romano. Horario: L–V 10:00–13:30 y 16:30–20:30; sábados 10:30–13:30."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Hacen adaptación de lentes de contacto en Lugo?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí. Panisse Óptica realiza adaptaciones de lentes de contacto en Lugo, incluyendo lentes blandas, rígidas permeables al gas y lentes para corrección de miopía nocturna (ortoqueratología). El servicio lo realiza Félix Salvador Pérez, óptico-optometrista. Rúa do Teatro, Bajo 2, Lugo."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Cuánto cuestan las gafas graduadas en Panisse Óptica?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Las gafas graduadas en Panisse Óptica parten desde 99 € (línea Panisse Boutique) hasta 400 € en marcas premium como Swarovski. Ray-Ban graduadas desde 130 €, Emporio Armani desde 158 €. El precio incluye montura y lentes adaptadas por el óptico-optometrista."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Qué marcas de gafas exclusivas tienen en Lugo?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Panisse Óptica es el único distribuidor en Lugo de Antica Occhialeria (acetato artesanal italiano, exclusivo en Galicia). También dispone de Swarovski Eyewear, Emporio Armani, Ray-Ban, Mr. Boho, Polaroid y la línea propia Panisse Boutique. Más de 121 modelos en catálogo."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Qué diferencia a Panisse Óptica de otras ópticas de Lugo?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Panisse Óptica es la única óptica boutique independiente de Lugo: sin franquicia, sin catálogo de cadena. El titular, Félix Salvador Pérez, tiene doble titulación (óptico-optometrista y farmacéutico) y selecciona personalmente cada montura del catálogo. Ofrece marcas artesanales exclusivas en Galicia, examen visual completo, y asesoramiento personalizado sin prisa. Valoración 5.0 en Google."
-        }
-      }
-    ]
-  },
-  {
-    "@context": "https://schema.org",
     "@type": "Person",
     "@id": "https://panisse.es/#felix",
     "name": "Félix Salvador Pérez",
     "jobTitle": "Óptico-Optometrista y Farmacéutico",
-    "worksFor": { "@id": "https://panisse.es/#business" },
+    "worksFor": {
+      "@id": "https://panisse.es/#business"
+    },
     "hasCredential": [
-      { "@type": "EducationalOccupationalCredential", "name": "Licenciado en Óptica y Optometría" },
-      { "@type": "EducationalOccupationalCredential", "name": "Licenciado en Farmacia" }
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Licenciado en Óptica y Optometría"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Licenciado en Farmacia"
+      }
     ],
-    "knowsAbout": ["optometría", "lentes progresivas", "lentes de contacto", "óptica ZEISS", "optometría infantil"]
+    "knowsAbout": [
+      "optometría",
+      "lentes progresivas",
+      "lentes de contacto",
+      "óptica ZEISS",
+      "optometría infantil"
+    ]
   }
-]</script>
+]
+</script>
 
   <!-- ══════════════════════════════════════════════════════
        GOOGLE REVIEWS — Places API (New) via fetch
@@ -508,9 +413,12 @@
 
     /* ── Hero: gafas graduadas ── */
     .hero {
-      background-image: url('assets/img/hero-gafas-v2.jpg');
+      background-image: url('assets/img/hero-gafas-v2-1920.webp');
       background-color: #050505;
       background-position: center center;
+    }
+    @media (max-width: 767px) {
+      .hero { background-image: url('assets/img/hero-gafas-v2-1400.webp'); }
     }
     .hero__overlay {
       background: linear-gradient(
@@ -529,6 +437,15 @@
     }
     .hero__subtitle {
       color: rgba(255,255,255,0.88);
+    }
+    .hero__trust {
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      color: rgba(255,255,255,0.82);
+      margin: -16px 0 28px;
+    }
+    @media (max-width: 600px) {
+      .hero__trust { margin: 4px 0 24px; font-size: 0.6875rem; }
     }
 
     /* ── Sección intro H1 ── */
@@ -1103,6 +1020,7 @@
         <span class="hero__eyebrow">Óptica Boutique · Lugo</span>
         <h1 class="hero__title">Gafas que<br><em>te definen</em></h1>
         <p class="hero__subtitle">Selección curada de marcas independientes.<br>Ópticos certificados. Atención sin prisas.</p>
+        <p class="hero__trust"><span aria-hidden="true">★</span> 5,0 en Google · Centro ZEISS Vision Expert · Rúa do Teatro</p>
         <div class="hero__actions">
           <a href="#productos" class="btn btn--primary">Ver colección</a>
           <a href="contacto.html" class="btn btn--ghost">Pedir cita</a>
@@ -1169,10 +1087,10 @@
     <section class="home-brand" aria-label="ic! berlin en Lugo">
       <div class="home-brand__img" style="max-height:700px;background:#0e0e0e;">
         <img
-          src="assets/img/brands/ic-berlin-campaign-01.webp"
+          src="assets/img/brands/ic-berlin-campaign-01-1600.webp"
           alt="ic! berlin — gafas de diseño alemán sin tornillos"
-          loading="eager"
-          fetchpriority="high"
+          width="1600" height="689"
+          loading="lazy"
           class="is-loaded"
           style="object-position: center 20%;"
         />
@@ -1523,7 +1441,7 @@
     <span class="whatsapp-float__tooltip">WhatsApp</span>
   </a>
 
-  <script src="assets/js/main.min.js?v=10" defer></script>
+  <script src="assets/js/main.min.js?v=11" defer></script>
 
   <!-- Productos + utilidades -->
   <script>
