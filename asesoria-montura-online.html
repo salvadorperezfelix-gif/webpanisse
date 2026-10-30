@@ -93,8 +93,8 @@
   <meta name="robots" content="index, follow" />
   <meta name="geo.region" content="ES-LU" />
   <meta name="geo.placename" content="Lugo, Galicia, España" />
-  <meta name="geo.position" content="43.009700;-7.556290" />
-  <meta name="ICBM" content="43.009700, -7.556290" />
+  <meta name="geo.position" content="43.0121154;-7.5557607" />
+  <meta name="ICBM" content="43.0121154, -7.5557607" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Asesoría de Montura Online · Panisse Óptica" />
@@ -117,19 +117,26 @@
   <link rel="canonical" href="https://panisse.es/asesoria-montura-online.html" />
 
   <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">[
+  <script type="application/ld+json">
+[
   {
     "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "Optician"],
+    "@type": [
+      "LocalBusiness",
+      "Optician"
+    ],
     "@id": "https://panisse.es/#business",
     "name": "Panisse Óptica",
-    "alternateName": "Panisse Optica Lugo",
-    "description": "Óptica boutique en el centro de Lugo. Gafas graduadas, gafas de sol, revisiones visuales y marcas exclusivas. Óptico-optometrista y farmacéutico licenciado.",
-    "url": "https://panisse.es",
+    "url": "https://panisse.es/",
+    "logo": "https://panisse.es/assets/img/logo-panisse-optica.png",
+    "image": [
+      "https://panisse.es/assets/img/nosotros/fachada-og.jpg",
+      "https://panisse.es/assets/img/nosotros/tienda.webp"
+    ],
+    "description": "Óptica boutique en el centro histórico de Lugo y Centro ZEISS Vision Expert. Gafas graduadas y de sol de autor, lentes progresivas, lentes de contacto y revisión visual con óptico-optometrista.",
     "telephone": "+34982301193",
     "email": "info@panisse.es",
     "priceRange": "€€",
-    "image": "https://panisse.es/assets/img/nosotros/fachada-og.jpg",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Rúa do Teatro, Bajo 2",
@@ -140,30 +147,52 @@
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 43.009700,
-      "longitude": -7.556290
+      "latitude": 43.0121154,
+      "longitude": -7.5557607
     },
     "hasMap": "https://www.google.com/maps/place/?q=place_id:ChIJ6aHuLcjPMQ0R4QDgQ1YDaGI",
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
         "opens": "10:00",
         "closes": "13:30"
       },
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
         "opens": "16:30",
         "closes": "20:30"
       },
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Saturday"],
+        "dayOfWeek": [
+          "Saturday"
+        ],
         "opens": "10:30",
         "closes": "13:30"
       }
     ],
+    "areaServed": {
+      "@type": "City",
+      "name": "Lugo",
+      "@id": "https://www.wikidata.org/wiki/Q8810"
+    },
+    "founder": {
+      "@id": "https://panisse.es/#felix"
+    },
     "sameAs": [
       "https://www.instagram.com/panisse_optica/",
       "https://www.facebook.com/profile.php?id=61586908144350",
@@ -175,7 +204,9 @@
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "Asesoría de montura online",
-    "provider": {"@id": "https://panisse.es/#business"},
+    "provider": {
+      "@id": "https://panisse.es/#business"
+    },
     "description": "Consulta personalizada de asesoría de imagen de gafas por videollamada. Incluye estudio previo, selección de monturas y prescripción optimizada de lentes.",
     "offers": {
       "@type": "Offer",
@@ -183,7 +214,10 @@
       "priceCurrency": "EUR",
       "description": "Incluido en el precio de compra si se cierra un pedido"
     },
-    "areaServed": {"@type": "Country", "name": "España"}
+    "areaServed": {
+      "@type": "Country",
+      "name": "España"
+    }
   },
   {
     "@context": "https://schema.org",
@@ -249,7 +283,8 @@
       }
     ]
   }
-]</script>
+]
+</script>
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
   <link rel="icon" href="favicon-16.png" type="image/png" sizes="16x16">
@@ -608,7 +643,7 @@
           <div class="servicio-extra-card">
             <div class="servicio-extra-card__num">03</div>
             <h3 class="servicio-extra-card__title">Videollamada contigo</h3>
-            <p>Te mostramos cada montura, explicamos por qué la hemos elegido, resolvemos dudas y comparamos opciones juntos. La sesión dura entre 30 y 45 minutos. Por Google Meet o WhatsApp Video, según prefieras.</p>
+            <p>Te mostramos cada montura, explicamos por qué la hemos elegido, resolvemos dudas y comparamos opciones juntos. Por Google Meet o WhatsApp Video, según prefieras.</p>
           </div>
           <div class="servicio-extra-card">
             <div class="servicio-extra-card__num">04</div>
@@ -681,10 +716,10 @@
 
           <details class="faq-item" style="border-top:1px solid var(--color-border);padding:20px 0;">
             <summary class="faq-item__q" style="cursor:pointer;font-weight:700;font-size:0.9375rem;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;">
-              ¿Cuánto dura la videollamada?
+              ¿Cuánto tiempo dedicáis a la videollamada?
               <span aria-hidden="true" style="flex-shrink:0;font-size:1.25rem;font-weight:300;line-height:1;">+</span>
             </summary>
-            <p style="margin-top:14px;color:var(--color-muted);line-height:1.7;">Entre 30 y 45 minutos. Depende del caso: si llevas una graduación sencilla y tienes el estilo claro, puede resolverse en menos tiempo. Si hay dudas, comparaciones o queremos explorar varias opciones con calma, nos tomamos el tiempo que haga falta. No cortamos la sesión a los 30 minutos si el trabajo no está terminado.</p>
+            <p style="margin-top:14px;color:var(--color-muted);line-height:1.7;">Depende del caso: si llevas una graduación sencilla y tienes el estilo claro, puede resolverse en menos tiempo. Si hay dudas, comparaciones o queremos explorar varias opciones con calma, nos tomamos el tiempo que haga falta. No cortamos la sesión si el trabajo no está terminado.</p>
           </details>
 
           <details class="faq-item" style="border-top:1px solid var(--color-border);padding:20px 0;">
@@ -846,7 +881,7 @@
     </svg>
     <span class="whatsapp-float__tooltip">WhatsApp</span>
   </a>
-  <script src="assets/js/main.min.js?v=10" defer></script>
+  <script src="assets/js/main.min.js?v=11" defer></script>
 
   <style>
     .goog-te-banner-frame,iframe.skiptranslate{display:none!important;}

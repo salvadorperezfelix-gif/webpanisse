@@ -143,6 +143,9 @@ document.addEventListener('keydown', e => {
 });
 
 /* ── Newsletter: Brevo ───────────────────────────────────── */
+// Sin claves en el navegador: se envía al formulario alojado de Brevo
+// (Contactos → Formularios → Compartir → URL de "serve"). Vacío = desactivado.
+const BREVO_FORM_URL = '';
 const newsletterForm = document.getElementById('newsletter-form');
 const newsletterMsg  = document.getElementById('newsletter-msg');
 
@@ -158,32 +161,24 @@ if (newsletterForm) {
       return;
     }
 
+    if (!BREVO_FORM_URL) {
+      newsletterMsg.textContent = 'La suscripción no está disponible ahora mismo. Síguenos en Instagram: @panisse_optica';
+      newsletterMsg.className = 'footer__form-msg footer__form-msg--err';
+      return;
+    }
+
     newsletterMsg.textContent = 'Enviando...';
     newsletterMsg.className = 'footer__form-msg';
 
     try {
-      const _a = 'xkeysib-d43816c8a334', _b = 'aaa43053d90162f8', _c = '06e2b4ca3577e4ed43f0f41f3b55017c92e2-iKtqh45nW6yowyjD';
-      const res = await fetch('https://api.brevo.com/v3/contacts', {
-        method: 'POST',
-        headers: {
-          'accept': 'application/json',
-          'content-type': 'application/json',
-          'api-key': _a + _b + _c
-        },
-        body: JSON.stringify({ email, updateEnabled: true, listIds: [3] })
-      });
-
-      if (res.ok || res.status === 204) {
-        newsletterMsg.textContent = '¡Suscripción confirmada! Gracias.';
-        newsletterMsg.className = 'footer__form-msg footer__form-msg--ok';
-        newsletterForm.reset();
-      } else if (res.status === 400) {
-        newsletterMsg.textContent = '¡Suscripción confirmada! Gracias.';
-        newsletterMsg.className = 'footer__form-msg footer__form-msg--ok';
-        newsletterForm.reset();
-      } else {
-        throw new Error(res.status);
-      }
+      const body = new FormData();
+      body.append('EMAIL', email);
+      body.append('email_address_check', '');
+      body.append('locale', 'es');
+      await fetch(BREVO_FORM_URL, { method: 'POST', mode: 'no-cors', body });
+      newsletterMsg.textContent = '¡Gracias! Revisa tu correo para confirmar la suscripción.';
+      newsletterMsg.className = 'footer__form-msg footer__form-msg--ok';
+      newsletterForm.reset();
     } catch {
       newsletterMsg.textContent = 'Error al suscribirse. Inténtalo de nuevo.';
       newsletterMsg.className = 'footer__form-msg footer__form-msg--err';
@@ -745,13 +740,13 @@ async function initProductPage() {
     // Schema.org Product (SEO rich results)
     const productSchema = document.getElementById('product-schema');
     if (productSchema) {
-      const productUrl = `https://www.panisse.es/producto.html?id=${productId}`;
+      const productUrl = `https://panisse.es/producto.html?id=${productId}`;
       productSchema.textContent = JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Product",
         "name": `${p.brand} ${p.name}`,
         "description": p.description || '',
-        "image": p.gallery ? p.gallery.map(img => `https://www.panisse.es/${img}`) : [`https://www.panisse.es/${p.image}`],
+        "image": p.gallery ? p.gallery.map(img => `https://panisse.es/${img}`) : [`https://panisse.es/${p.image}`],
         "brand": { "@type": "Brand", "name": p.brand },
         "url": productUrl,
         "offers": {
@@ -795,26 +790,8 @@ async function initProductPage() {
             "merchantReturnDays": "14",
             "returnMethod": "https://schema.org/ReturnByMail",
             "returnFees": "https://schema.org/FreeReturn",
-            "customerReturnLink": "https://www.panisse.es/devoluciones.html"
+            "customerReturnLink": "https://panisse.es/devoluciones.html"
           }
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "24"
-        },
-        "review": {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Cliente de Panisse"
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Excelente calidad de montura y lentes, súper cómodas y un diseño espectacular. La atención en la óptica fue inmejorable."
         }
       });
     }
