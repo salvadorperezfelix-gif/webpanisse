@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>@font-face{font-family:'Parisienne Fallback';src:local('Comic Sans MS');size-adjust:65.43%;ascent-override:139.92%;descent-override:68.28%;line-gap-override:0%}@font-face{font-family:'Parisienne';font-style:normal;font-weight:400;font-display:swap;src:url('../assets/fonts/parisienne-400-normal.woff2') format('woff2')}@font-face{font-family:'CG Fallback';src:local('Georgia');size-adjust:80.18%;ascent-override:115.25%;descent-override:35.80%;line-gap-override:0%}@font-face{font-family:'Lato Fallback';src:local('Arial');size-adjust:97.68%;ascent-override:82.42%;descent-override:19.96%;line-gap-override:20.48%}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:600;font-display:swap;src:url('../assets/fonts/cormorant-garamond-600-italic.woff2') format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:swap;src:url('../assets/fonts/cormorant-garamond-600-normal.woff2') format('woff2')}@font-face{font-family:'Lato';font-style:normal;font-weight:400;font-display:swap;src:url('../assets/fonts/lato-400-normal.woff2') format('woff2')}*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{font-size:16px;-webkit-font-smoothing:antialiased}body{font-family:'Lato','Lato Fallback',sans-serif;font-weight:400;color:#1a1a1a;background-color:#fafaf8;overflow-x:hidden}img{display:block;max-width:100%}a{color:inherit;text-decoration:none}:root{--color-black:#0d0d0d;--color-white:#ffffff;--color-bg:#ffffff;--color-surface:#f5f5f3;--color-border:#e8e8e2;--color-text:#1a1a1a;--color-muted:#636360;--color-accent:#c7dbd6;--color-accent-dk:#8aafa9;--font-display:'Cormorant Garamond','CG Fallback',Georgia,serif;--font-body:'Lato','Lato Fallback',system-ui,sans-serif;--radius-sm:4px;--radius-md:8px;--radius-lg:16px;--shadow-sm:0 1px 4px rgba(0,0,0,.06);--shadow-md:0 4px 20px rgba(0,0,0,.08);--shadow-lg:0 12px 40px rgba(0,0,0,.12);--transition:.32s cubic-bezier(.25,.46,.45,.94);--container-max:1200px;--container-pad:clamp(20px,5vw,64px)}.container{max-width:var(--container-max);margin-inline:auto;padding-inline:var(--container-pad)}.btn{display:inline-block;font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;padding:14px 40px;border:1px solid transparent;cursor:pointer;white-space:nowrap}.btn--primary{background:var(--color-black);color:var(--color-white);border-color:var(--color-black)}.btn--outline{background:transparent;color:var(--color-black);border-color:currentColor}.header{position:fixed;inset-block-start:0;inset-inline:0;z-index:900;height:72px;display:flex;align-items:center;background:transparent;color:var(--color-white);transition:background var(--transition),box-shadow var(--transition),color var(--transition)}.header.is-scrolled{background:rgba(250,250,248,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(0,0,0,.07);color:var(--color-text)}.header__inner{width:100%;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:24px}.header__logo{grid-column:2;justify-self:center;padding-inline:72px;font-family:'Parisienne','Parisienne Fallback',cursive;font-size:clamp(22px,2vw,26px);color:inherit;white-space:nowrap}.header__logo em{font-style:normal;font-weight:normal}.header__nav-main{grid-column:1}.header__nav-main .header__nav-list{justify-content:flex-end}.header__nav-list{list-style:none;display:flex;align-items:center;gap:4px}.header__right{grid-column:3;display:flex;align-items:center;gap:4px}.header__nav-right{display:flex;align-items:center}.nav-link{display:flex;align-items:center;gap:5px;background:none;border:none;cursor:pointer;font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:inherit;padding:6px 10px;border-radius:var(--radius-sm);white-space:nowrap}.header__actions{display:flex;align-items:center;justify-content:flex-end;gap:4px}.header__cta-link{font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:inherit;padding:7px 14px;border:1px solid currentColor;border-radius:var(--radius-sm);white-space:nowrap;margin-inline-end:6px}.header__hamburger{display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;background:none;border:none;cursor:pointer;padding:8px;color:inherit;width:36px;height:36px}@media(max-width:1024px){.header__nav-main,.header__nav-right{display:none}.header__inner{grid-template-columns:auto 1fr auto}.header__hamburger{display:flex}.header__logo{grid-column:2;justify-self:center}.header__right{grid-column:3}}@media(max-width:600px){.header{height:60px}.header__logo{padding-inline:8px}}.dropdown{position:absolute;opacity:0;visibility:hidden;pointer-events:none}.mobile-menu{position:fixed;transform:translateX(100%)}.mobile-overlay{opacity:0;pointer-events:none}</style>
+  <link rel="preload" href="../assets/css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="../assets/css/style.min.css"></noscript>
+  <link rel="preload" href="../assets/fonts/cormorant-garamond-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/cormorant-garamond-600-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/lato-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/parisienne-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];window.addEventListener('load',function(){t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s);},{once:!0});}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    var savedConsent = localStorage.getItem('cookieConsent');
+    var marketingGranted = false;
+    if (savedConsent) {
+      try {
+        var consentObj = JSON.parse(savedConsent);
+        marketingGranted = !!consentObj.marketing;
+      } catch (e) {}
+    }
+
+    if (marketingGranted) {
+      fbq('consent', 'grant');
+    } else {
+      fbq('consent', 'revoke');
+    }
+
+    fbq('init', '1706566507036901');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" alt="" style="display:none"
+    src="https://www.facebook.com/tr?id=1706566507036901&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+  <!-- Google Consent Mode v2 Default State -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+
+    var savedConsent = localStorage.getItem('cookieConsent');
+    if (savedConsent) {
+      try {
+        var consentObj = JSON.parse(savedConsent);
+        gtag('consent', 'default', {
+          'ad_storage': consentObj.marketing ? 'granted' : 'denied',
+          'ad_user_data': consentObj.marketing ? 'granted' : 'denied',
+          'ad_personalization': consentObj.marketing ? 'granted' : 'denied',
+          'analytics_storage': consentObj.analytics ? 'granted' : 'denied'
+        });
+      } catch (e) {
+        gtag('consent', 'default', {
+          'ad_storage': 'denied',
+          'ad_user_data': 'denied',
+          'ad_personalization': 'denied',
+          'analytics_storage': 'denied'
+        });
+      }
+    } else {
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied'
+      });
+    }
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZPWT5ZT4X4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18003465740');
+    gtag('config', 'G-ZPWT5ZT4X4');
+  </script>
+
+  <!-- SEO -->
+  <title>DMAE: qué es, cómo vigilarla en casa y cómo volver a leer | Panisse Óptica</title>
+  <meta name="description" content="Guía sobre la degeneración macular asociada a la edad: tipos, señales de alarma, la rejilla de Amsler, qué trata el oftalmólogo y qué ayudas permiten seguir leyendo. Por Félix Salvador Pérez, óptico-optometrista." />
+  <meta name="author" content="Félix Salvador Pérez" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="DMAE: qué es, cómo vigilarla en casa y cómo volver a leer | Panisse Óptica" />
+  <meta property="og:description" content="Guía sobre la degeneración macular asociada a la edad: tipos, señales de alarma, la rejilla de Amsler, qué trata el oftalmólogo y qué ayudas permiten seguir leyendo." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://panisse.es/blog/dmae-degeneracion-macular-baja-vision.html" />
+  <meta property="og:image" content="https://panisse.es/assets/img/servicios/dmae-hero.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:site_name" content="Panisse Óptica" />
+  <meta property="article:author" content="Félix Salvador Pérez" />
+  <meta property="article:published_time" content="2026-11-02" />
+  <meta property="article:section" content="Salud Ocular" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://panisse.es/blog/dmae-degeneracion-macular-baja-vision.html" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://panisse.es/#felix",
+    "name": "Félix Salvador Pérez",
+    "jobTitle": "Óptico-optometrista y farmacéutico",
+    "url": "https://panisse.es/nosotros.html#felix",
+    "image": "https://panisse.es/assets/img/team/felix-salvador.webp",
+    "worksFor": {"@id": "https://panisse.es/#business"},
+    "hasCredential": [
+      {"@type": "EducationalOccupationalCredential", "credentialCategory": "Colegiación profesional", "name": "Óptico-optometrista colegiado", "identifier": "27374"},
+      {"@type": "EducationalOccupationalCredential", "credentialCategory": "Colegiación profesional", "name": "Farmacéutico colegiado", "identifier": "1422"},
+      {"@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "Licenciado en Óptica y Optometría"},
+      {"@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "Licenciado en Farmacia"}
+    ],
+    "knowsAbout": ["optometría","lentes progresivas","lentes de contacto","lentes ZEISS","optometría infantil","baja visión","degeneración macular"]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": "https://panisse.es/blog/dmae-degeneracion-macular-baja-vision.html",
+    "url": "https://panisse.es/blog/dmae-degeneracion-macular-baja-vision.html",
+    "headline": "DMAE: qué es, cómo vigilarla en casa y cómo volver a leer con baja visión",
+    "description": "Guía sobre la degeneración macular asociada a la edad: tipos, señales de alarma, la rejilla de Amsler, qué trata el oftalmólogo y qué ayudas permiten seguir leyendo.",
+    "image": "https://panisse.es/assets/img/servicios/dmae-hero.jpg",
+    "datePublished": "2026-11-02",
+    "dateModified": "2026-11-02",
+    "inLanguage": "es-ES",
+    "author": {"@id": "https://panisse.es/#felix"},
+    "publisher": {"@id": "https://panisse.es/#business"},
+    "isPartOf": {"@id": "https://panisse.es/#website"},
+    "mainEntityOfPage": {"@id": "https://panisse.es/blog/dmae-degeneracion-macular-baja-vision.html"},
+    "about": {"@type": "MedicalCondition", "name": "Degeneración macular asociada a la edad", "alternateName": "DMAE"},
+    "keywords": ["DMAE","degeneración macular","baja visión","rejilla de Amsler","salud ocular","mácula","retina"],
+    "articleSection": "Salud Ocular",
+    "citation": [
+      {"@type": "CreativeWork", "name": "Wong WL, et al. Global prevalence of age-related macular degeneration. Lancet Glob Health. 2014;2(2):e106-16.", "url": "https://doi.org/10.1016/S2214-109X(13)70145-1"},
+      {"@type": "CreativeWork", "name": "NICE. Age-related macular degeneration (NG82). 2018.", "url": "https://www.nice.org.uk/guidance/ng82"},
+      {"@type": "CreativeWork", "name": "AREDS. High-dose supplementation with vitamins C and E, beta carotene, and zinc for AMD: AREDS report no. 8. Arch Ophthalmol. 2001;119(10):1417-36.", "url": "https://doi.org/10.1001/archopht.119.10.1417"},
+      {"@type": "CreativeWork", "name": "AREDS2. Lutein + zeaxanthin and omega-3 fatty acids for AMD: AREDS2 randomized clinical trial. JAMA. 2013;309(19):2005-15.", "url": "https://doi.org/10.1001/jama.2013.4997"},
+      {"@type": "CreativeWork", "name": "Thornton J, et al. Smoking and age-related macular degeneration: a review of association. Eye. 2005;19(9):935-44.", "url": "https://doi.org/10.1038/sj.eye.6701978"},
+      {"@type": "CreativeWork", "name": "Stelmack JA, et al. Outcomes of the Veterans Affairs Low Vision Intervention Trial (LOVIT). Arch Ophthalmol. 2008;126(5):608-17.", "url": "https://doi.org/10.1001/archopht.126.5.608"},
+      {"@type": "CreativeWork", "name": "Stelmack JA, et al. Outcomes of the Veterans Affairs Low Vision Intervention Trial II (LOVIT II). JAMA Ophthalmol. 2017;135(2):96-104.", "url": "https://doi.org/10.1001/jamaophthalmol.2016.4742"},
+      {"@type": "CreativeWork", "name": "Virgili G, et al. Reading aids for adults with low vision. Cochrane Database Syst Rev. 2018;4:CD003303.", "url": "https://doi.org/10.1002/14651858.CD003303.pub4"},
+      {"@type": "CreativeWork", "name": "EMA. Syfovre (pegcetacoplan) — EPAR. 2024.", "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/syfovre"},
+      {"@type": "CreativeWork", "name": "ONCE. Requisitos de afiliación.", "url": "https://www.once.es/dejanos-ayudarte/afiliacion"}
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://panisse.es/"},
+      {"@type": "ListItem", "position": 2, "name": "Magazine", "item": "https://panisse.es/blog.html"},
+      {"@type": "ListItem", "position": 3, "name": "DMAE: qué es, cómo vigilarla en casa y cómo volver a leer", "item": "https://panisse.es/blog/dmae-degeneracion-macular-baja-vision.html"}
+    ]
+  }
+]
+  </script>
+
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" href="../favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="../favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "xx267v5tt4");
+  </script>
+</head>
+
+<body class="interior-page blog-page">
+
+  <!-- HEADER -->
+  <header class="header" id="site-header">
+    <div class="header__inner container">
+
+      <nav class="header__nav-main" aria-label="Categorías principales">
+        <ul class="header__nav-list">
+
+          <li class="nav-item has-dropdown">
+            <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="marcas">
+              Marcas <span class="nav-caret" aria-hidden="true"></span>
+            </button>
+            <div class="dropdown dropdown--wide" id="dropdown-marcas" role="menu" aria-label="Marcas">
+              <div class="dropdown__grid">
+                <a href="../panisse-lugo.html" class="dropdown__link" role="menuitem">Panisse</a>
+                <a href="../antica-occhialeria-lugo.html" class="dropdown__link" role="menuitem">Antica Occhialeria</a>
+                <a href="../marcas.html#emporio-armani" class="dropdown__link" role="menuitem">Emporio Armani</a>
+                <a href="../marcas.html#swarovski" class="dropdown__link" role="menuitem">Swarovski</a>
+                <a href="../marcas.html#ray-ban" class="dropdown__link" role="menuitem">Ray-Ban</a>
+                <a href="../marcas.html#polaroid" class="dropdown__link" role="menuitem">Polaroid</a>
+                <a href="../marcas.html#mr-boho" class="dropdown__link" role="menuitem">Mr. Boho</a>
+                <a href="../einstoffen-lugo.html" class="dropdown__link" role="menuitem">Einstoffen</a>
+                <a href="../ic-berlin-lugo.html" class="dropdown__link" role="menuitem">ic! berlin</a>
+              </div>
+              <div class="dropdown__footer-bar">
+                <a href="../catalogo.html" class="dropdown__all">Ver todas las marcas →</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="servicios">
+              Servicios <span class="nav-caret" aria-hidden="true"></span>
+            </button>
+            <div class="dropdown" id="dropdown-servicios" role="menu" aria-label="Servicios">
+              <a href="../asesoria-montura-online.html" class="dropdown__link" role="menuitem">Asesoría Online</a>
+              <a href="../revision-visual-lugo.html" class="dropdown__link" role="menuitem">Revisión Visual</a>
+              <a href="../lentes-zeiss-lugo.html" class="dropdown__link" role="menuitem">ZEISS Vision Expert</a>
+              <a href="../vista-cansada-lugo.html" class="dropdown__link" role="menuitem">Vista Cansada</a>
+              <a href="../baja-vision-lugo.html" class="dropdown__link" role="menuitem">Baja Visión</a>
+              <a href="../servicios.html#miopia" class="dropdown__link" role="menuitem">Miopía en Niños</a>
+              <a href="../servicios.html#contacto-lentes" class="dropdown__link" role="menuitem">Lentes de Contacto</a>
+              <a href="../servicios.html#fatiga" class="dropdown__link" role="menuitem">Fatiga Visual</a>
+              <a href="../servicios.html#glaucoma" class="dropdown__link" role="menuitem">Prevención Glaucoma</a>
+              <a href="../servicios.html#instrumentos" class="dropdown__link" role="menuitem">Instrumentos Ópticos</a>
+            </div>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="../index.html" class="header__logo" aria-label="Panisse Óptica – inicio">
+        Panisse <em>Óptica</em>
+      </a>
+
+      <div class="header__right">
+        <nav class="header__nav-right" aria-label="Menú secundario">
+          <ul class="header__nav-list">
+
+            <li class="nav-item has-dropdown">
+              <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="conocenos">
+                Conócenos <span class="nav-caret" aria-hidden="true"></span>
+              </button>
+              <div class="dropdown" id="dropdown-conocenos" role="menu" aria-label="Conócenos">
+                <a href="../nosotros.html" class="dropdown__link" role="menuitem">Manifiesto</a>
+                <a href="../nosotros.html#equipo" class="dropdown__link" role="menuitem">El Equipo</a>
+                <a href="../panisse-marca.html" class="dropdown__link" role="menuitem">La Marca Panisse</a>
+              </div>
+            </li>
+
+            <li class="nav-item has-dropdown">
+              <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="opticas">
+                Ópticas <span class="nav-caret" aria-hidden="true"></span>
+              </button>
+              <div class="dropdown" id="dropdown-opticas" role="menu" aria-label="Nuestras tiendas">
+                <a href="../contacto.html" class="dropdown__link" role="menuitem">Panisse Óptica — Lugo</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a href="../blog.html" class="nav-link">Magazine</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="../tarjeta-regalo.html" class="nav-link">Regala</a>
+            </li>
+
+          </ul>
+        </nav>
+        <div class="header__actions">
+
+        <a href="../contacto.html" class="header__cta-link">Cita Previa</a>
+        <button id="lang-toggle-btn" class="lang-flag-btn"
+                onclick="panisseLangToggle()"
+                aria-label="Switch language / Cambiar idioma">&#x1F1EC;&#x1F1E7;</button>
+
+        <button class="header__hamburger" id="hamburger-btn"
+                aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Menú principal">
+    <div class="mobile-menu__header">
+      <a href="../index.html" class="mobile-menu__logo">Panisse <em>Óptica</em></a>
+      <button class="mobile-menu__close" id="mobile-close-btn" aria-label="Cerrar menú">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="mobile-menu__body" aria-label="Navegación móvil">
+      <ul class="mobile-menu__list">
+        <li class="mobile-item has-submenu">
+          <button class="mobile-link" data-submenu="mm-marcas">
+            Marcas <span class="mobile-arrow" aria-hidden="true">›</span>
+          </button>
+          <ul class="mobile-submenu" id="mm-marcas" aria-hidden="true">
+            <li><a href="../panisse-lugo.html" class="mobile-sublink">Panisse</a></li>
+            <li><a href="../antica-occhialeria-lugo.html" class="mobile-sublink">Antica Occhialeria</a></li>
+            <li><a href="../marcas.html#emporio-armani" class="mobile-sublink">Emporio Armani</a></li>
+            <li><a href="../marcas.html#swarovski" class="mobile-sublink">Swarovski</a></li>
+            <li><a href="../marcas.html#ray-ban" class="mobile-sublink">Ray-Ban</a></li>
+            <li><a href="../marcas.html#polaroid" class="mobile-sublink">Polaroid</a></li>
+            <li><a href="../marcas.html#mr-boho" class="mobile-sublink">Mr. Boho</a></li>
+            <li><a href="../einstoffen-lugo.html" class="mobile-sublink">Einstoffen</a></li>
+            <li><a href="../ic-berlin-lugo.html" class="mobile-sublink">ic! berlin</a></li>
+            <li><a href="../catalogo.html" class="mobile-sublink mobile-sublink--all">Ver todas las marcas →</a></li>
+          </ul>
+        </li>
+        <li class="mobile-item">
+          <a href="../catalogo.html" class="mobile-link">Catálogo</a>
+        </li>
+        <li class="mobile-item has-submenu">
+          <button class="mobile-link" data-submenu="mm-servicios">
+            Servicios <span class="mobile-arrow" aria-hidden="true">›</span>
+          </button>
+          <ul class="mobile-submenu" id="mm-servicios" aria-hidden="true">
+            <li><a href="../asesoria-montura-online.html" class="mobile-sublink">Asesoría Online</a></li>
+            <li><a href="../revision-visual-lugo.html" class="mobile-sublink">Revisión Visual</a></li>
+            <li><a href="../lentes-zeiss-lugo.html" class="mobile-sublink">ZEISS Vision Expert</a></li>
+            <li><a href="../vista-cansada-lugo.html" class="mobile-sublink">Vista Cansada</a></li>
+            <li><a href="../baja-vision-lugo.html" class="mobile-sublink">Baja Visión</a></li>
+            <li><a href="../servicios.html#miopia" class="mobile-sublink">Miopía en Niños</a></li>
+            <li><a href="../servicios.html#contacto-lentes" class="mobile-sublink">Lentes de Contacto</a></li>
+            <li><a href="../servicios.html#fatiga" class="mobile-sublink">Fatiga Visual</a></li>
+            <li><a href="../servicios.html#glaucoma" class="mobile-sublink">Prevención Glaucoma</a></li>
+            <li><a href="../servicios.html#instrumentos" class="mobile-sublink">Instrumentos Ópticos</a></li>
+          </ul>
+        </li>
+        <li class="mobile-item has-submenu">
+          <button class="mobile-link" data-submenu="mm-conocenos">
+            Conócenos <span class="mobile-arrow" aria-hidden="true">›</span>
+          </button>
+          <ul class="mobile-submenu" id="mm-conocenos" aria-hidden="true">
+            <li><a href="../nosotros.html" class="mobile-sublink">Manifiesto</a></li>
+            <li><a href="../nosotros.html#equipo" class="mobile-sublink">El Equipo</a></li>
+            <li><a href="../panisse-marca.html" class="mobile-sublink">La Marca Panisse</a></li>
+          </ul>
+        </li>
+        <li class="mobile-item has-submenu">
+          <button class="mobile-link" data-submenu="mm-opticas">
+            Ópticas <span class="mobile-arrow" aria-hidden="true">›</span>
+          </button>
+          <ul class="mobile-submenu" id="mm-opticas" aria-hidden="true">
+            <li><a href="../contacto.html" class="mobile-sublink">Panisse Óptica — Lugo</a></li>
+          </ul>
+        </li>
+        <li class="mobile-item"><a href="../blog.html" class="mobile-link mobile-link--plain">Magazine</a></li>
+        <li class="mobile-item"><a href="../tarjeta-regalo.html" class="mobile-link mobile-link--plain">Regala</a></li>
+      </ul>
+    </nav>
+
+    <div class="mobile-menu__footer">
+      <a href="../contacto.html" class="btn btn--secondary" style="width:100%;text-align:center;display:block;">
+        Pedir Cita Previa
+      </a>
+      <div class="mobile-menu__lang">
+        <button id="mobile-lang-btn" class="lang-flag-btn"
+                onclick="panisseLangToggle()"
+                aria-label="Switch language / Cambiar idioma"
+                style="font-size:15px;padding:8px 12px;gap:8px;display:flex;align-items:center;">
+          &#x1F1EC;&#x1F1E7; <span class="mobile-lang-label">English</span>
+        </button>
+      </div>
+      <div class="mobile-menu__social">
+        <a href="https://www.instagram.com/panisse_optica/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61586908144350" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+        <a href="https://www.tiktok.com/@panisse_optica" target="_blank" rel="noopener noreferrer" aria-label="TikTok">TikTok</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+
+  <!-- Barra de vuelta al Magazine -->
+  <div style="background:var(--color-surface);border-bottom:1px solid var(--color-border);padding:.75rem 0;margin-top:72px;">
+    <div class="container" style="font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;">
+      <a href="../blog.html" style="color:var(--color-muted);">← Panisse Magazine</a>
+      <span style="color:var(--color-border);margin:0 .5rem;">/</span>
+      <span style="color:var(--color-muted);">Salud Ocular</span>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <main id="main-content">
+
+    <article class="blog-article" itemscope itemtype="https://schema.org/BlogPosting">
+
+      <!-- Cabecera del artículo -->
+      <header class="blog-article__header">
+        <div class="container blog-article__header-inner">
+          <nav class="breadcrumb" aria-label="Ruta de navegación" style="margin-bottom:1.5rem">
+            <a href="../index.html" class="breadcrumb__link">Inicio</a>
+            <span class="breadcrumb__sep" aria-hidden="true">›</span>
+            <a href="../blog.html" class="breadcrumb__link">Magazine</a>
+            <span class="breadcrumb__sep" aria-hidden="true">›</span>
+            <span class="breadcrumb__current" aria-current="page">DMAE y baja visión</span>
+          </nav>
+          <div class="blog-article__meta">
+            <span class="blog-article__category">Salud Ocular</span>
+            <time class="blog-article__date" datetime="2026-11-02">Noviembre 2026</time>
+          </div>
+          <h1 class="blog-article__title" itemprop="headline">DMAE: qué es, cómo vigilarla en casa<br>y cómo volver a leer</h1>
+          <p class="blog-article__intro">La degeneración macular asociada a la edad (DMAE) es una de las principales causas de pérdida de visión en personas mayores, y en una provincia tan envejecida como Lugo es un problema muy cercano. He escrito esta guía para quien acaba de recibir el diagnóstico y para su familia.</p>
+
+          <div class="blog-article__author-box">
+            <img src="../assets/img/team/felix-salvador.webp" alt="Félix Salvador Pérez" class="blog-article__author-img" width="56" height="56" loading="lazy">
+            <div class="blog-article__author-info">
+              <span class="blog-article__author-name">Félix Salvador Pérez</span>
+              <span class="blog-article__author-role">Óptico-optometrista colegiado nº 27374 · Farmacéutico colegiado nº 1422 · Panisse Óptica, Lugo</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Cuerpo del artículo -->
+      <div class="blog-article__body">
+        <div class="container blog-article__content">
+
+          <p style="padding:12px 16px;background:var(--color-surface);border-left:3px solid var(--color-accent-dk);font-size:.9375rem;line-height:1.7;margin-bottom:2rem;">Este artículo es informativo. No sustituye la consulta con tu oftalmólogo, que es quien diagnostica y trata la DMAE.</p>
+
+          <section class="blog-section reveal">
+            <h2 class="blog-section__title">Qué es la DMAE</h2>
+            <p>En el fondo del ojo está la retina, y en el centro de la retina, la <strong>mácula</strong>: una zona muy pequeña de la que depende la visión fina, la que usamos para leer, coser, ver caras o distinguir detalles. En la DMAE la mácula se va dañando con la edad. Por eso afecta sobre todo a la <strong>visión central</strong>, mientras que la visión periférica suele conservarse. Quien tiene DMAE avanzada ve mal lo que mira de frente, pero puede seguir moviéndose por casa.</p>
+            <p>Es muy frecuente. Un análisis de 39 estudios publicado en <em>The Lancet Global Health</em> estimó que en 2020 había en el mundo unos <strong>196 millones de personas con DMAE</strong>, y que serán unos <strong>288 millones en 2040</strong> por el envejecimiento de la población.<sup><a href="#ref-1">[1]</a></sup></p>
+          </section>
+
+          <section class="blog-section reveal">
+            <h2 class="blog-section__title">Los dos tipos: seca y húmeda</h2>
+            <ul style="margin:.75rem 0 1rem 1.5rem;line-height:1.9;font-size:.9375rem;">
+              <li style="margin-bottom:.75rem;"><strong>DMAE seca (atrófica).</strong> Es la más frecuente. Avanza despacio, a lo largo de años. En las fases iniciales aparecen unos depósitos en la retina, llamados drusas. En la fase avanzada, la llamada <em>atrofia geográfica</em>, se pierden zonas de la mácula.</li>
+              <li style="margin-bottom:.75rem;"><strong>DMAE húmeda (neovascular).</strong> Es menos frecuente, pero más rápida. Bajo la retina crecen vasos sanguíneos anómalos que dejan salir líquido o sangre, y la visión puede empeorar en semanas. <strong>Tiene tratamiento, y cuanto antes empiece, mejor.</strong></li>
+            </ul>
+            <p>Una DMAE seca puede convertirse en húmeda. Por eso es tan importante vigilar los cambios.</p>
+          </section>
+
+          <section class="blog-section reveal">
+            <h2 class="blog-section__title">Quién tiene más riesgo</h2>
+            <ul style="margin:.75rem 0 1rem 1.5rem;line-height:1.9;font-size:.9375rem;">
+              <li><strong>La edad</strong>, sobre todo a partir de los 60.</li>
+              <li><strong>El tabaco</strong>: es el factor de riesgo que más depende de nosotros. Fumar multiplica el riesgo de DMAE entre dos y cuatro veces, y dejarlo siempre ayuda, a cualquier edad.<sup><a href="#ref-5">[5]</a></sup></li>
+              <li><strong>Los antecedentes familiares</strong> y la genética.</li>
+              <li><strong>Tener DMAE en un ojo</strong>, porque aumenta la probabilidad de que aparezca en el otro.</li>
+            </ul>
+          </section>
+
+          <section class="blog-section reveal">
+            <h2 class="blog-section__title">Señales de alarma: al oftalmólogo sin esperar</h2>
+            <p>Ve al oftalmólogo <strong>ese mismo día o lo antes posible</strong> si notas:</p>
+            <ul style="margin:.75rem 0 1rem 1.5rem;line-height:1.9;font-size:.9375rem;">
+              <li><strong>líneas rectas que de repente ves torcidas u onduladas</strong>: el marco de una puerta, las baldosas, las líneas de un cuaderno;</li>
+              <li><strong>una mancha oscura o borrosa nueva en el centro</strong> de la visión;</li>
+              <li><strong>una pérdida de visión rápida</strong> en uno de los ojos.</li>
+            </ul>
+            <p>Pueden ser signos de DMAE húmeda. La guía NICE recomienda derivar estos casos de forma urgente, normalmente en un día laborable, y empezar el tratamiento en las dos semanas siguientes.<sup><a href="#ref-2">[2]</a></sup> El tiempo cuenta: el tratamiento busca frenar el daño, y la visión que ya se ha perdido es difícil de recuperar.</p>
+            <p>Un detalle importante: cuando un ojo empieza a fallar, el otro lo compensa y <strong>es fácil no darse cuenta</strong>. Por eso hay que mirar cada ojo por separado.</p>
+          </section>
+
+          <section class="blog-section reveal">
+            <h2 class="blog-section__title">Cómo vigilarla en casa: la rejilla de Amsler</h2>
+            <p>La rejilla de Amsler es una cuadrícula con un punto en el centro que sirve para detectar distorsiones en la visión central. Si tienes DMAE o tu oftalmólogo te lo ha indicado, úsala <strong>una vez por semana</strong>:</p>
+            <ol style="margin:.75rem 0 1rem 1.5rem;line-height:1.9;font-size:.9375rem;">
+              <li style="margin-bottom:.5rem;">Imprime la rejilla al 100 %, sin ajustarla a la página, y ponla a la altura de los ojos con buena luz.</li>
+              <li style="margin-bottom:.5rem;">Ponte <strong>tus gafas de cerca</strong> y colócate a unos <strong>30 centímetros</strong>.</li>
+              <li style="margin-bottom:.5rem;"><strong>Tápate un ojo</strong> y mira fijamente el punto central.</li>
+              <li style="margin-bottom:.5rem;">Sin dejar de mirar el punto, fíjate en si alguna línea se ve torcida, borrosa o con huecos, o si falta algún cuadro.</li>
+              <li>Repite con el otro ojo.</li>
+            </ol>
+            <p>Si notas algo <strong>nuevo</strong> o <strong>diferente a la semana anterior</strong>, pide cita con tu oftalmólogo sin esperar a la siguiente revisión. La rejilla no sustituye a las revisiones: es una alarma para no dejar pasar un cambio.</p>
+
+            <figure style="margin:1.5rem 0;text-align:center;">
+              <img src="../assets/img/blog/rejilla-amsler.svg"
+                   alt="Rejilla de Amsler: cuadrícula de 20 por 20 cuadros con un punto central"
+                   width="280" height="280"
+                   style="display:inline-block;border:1px solid var(--color-border);padding:8px;background:#fff;"
+                   loading="lazy">
+              <figcaption style="margin-top:.5rem;font-size:.8125rem;color:var(--color-muted);">
+                Rejilla de Amsler. Imprímela al 100 % para que mida 10 cm. <a href="../assets/img/blog/rejilla-amsler.svg" download style="color:var(--color-accent-dk);text-decoration:underline;">Descargar e imprimir la rejilla (al 100 %)</a>
+              </figcaption>
+            </figure>
+          </section>
+
+          <section class="blog-section reveal">
+            <h2 class="blog-section__title">Qué trata el oftalmólogo</h2>
+            <ul style="margin:.75rem 0 1rem 1.5rem;line-height:1.9;font-size:.9375rem;">
+              <li style="margin-bottom:.75rem;"><strong>DMAE húmeda.</strong> Se trata con <strong>inyecciones intravítreas de fármacos antiangiogénicos</strong> (anti-VEGF), que frenan el crecimiento de los vasos anómalos. Se ponen en la consulta de oftalmología, de forma periódica y según la respuesta de cada persona. Han cambiado el pronóstico de esta enfermedad.</li>
+              <li style="margin-bottom:.75rem;"><strong>DMAE seca en fase intermedia.</strong> En los estudios AREDS y AREDS2, un suplemento con dosis concretas de vitaminas C y E, zinc, cobre, luteína y zeaxantina <strong>redujo el riesgo de pasar a DMAE avanzada</strong> en personas con DMAE intermedia, o avanzada en un solo ojo.<sup><a href="#ref-3">[3]</a></sup><sup><a href="#ref-4">[4]</a></sup> No sirve para prevenirla en quien no la tiene ni la cura. La formulación con betacaroteno se desaconseja en fumadores y exfumadores. <strong>Tómalo solo si te lo indica tu oftalmólogo</strong>, que sabrá si tu fase lo justifica.</li>
+              <li><strong>Atrofia geográfica (seca avanzada).</strong> En Estados Unidos se aprobaron en 2023 dos tratamientos que frenan su avance, pero en Europa, por ahora, ninguno ha conseguido la aprobación.<sup><a href="#ref-9">[9]</a></sup> Tu oftalmólogo te dirá si hay ensayos clínicos u opciones en tu caso.</li>
+            </ul>
+            <p><strong>Además, para todos:</strong> no fumar, una dieta rica en verduras de hoja verde y pescado, y las revisiones que marque el especialista.</p>
+          </section>
+
+          <section class="blog-section reveal">
+            <h2 class="blog-section__title">Cuando la visión ya no vuelve: la baja visión</h2>
+            <p>Aunque la enfermedad esté controlada, puede quedar una pérdida de visión central que <strong>ya no se corrige con gafas</strong>. Es lo que llamamos <strong>baja visión</strong>. En este punto mucha gente oye "no hay nada más que hacer", y no es verdad: se puede <strong>aprovechar al máximo la visión que queda</strong>. Es lo que hace la rehabilitación visual.</p>
+            <p>Hay evidencia de que funciona. En el ensayo LOVIT, un programa de rehabilitación de baja visión mejoró la capacidad de lectura y de hacer tareas cotidianas frente a un grupo en lista de espera, que empeoró.<sup><a href="#ref-6">[6]</a></sup> En LOVIT II, añadir entrenamiento a las ayudas mejoró los resultados en personas con visión moderadamente baja.<sup><a href="#ref-7">[7]</a></sup> La revisión Cochrane de ayudas para la lectura concluye que <strong>no hay una ayuda que sea la mejor para todo el mundo</strong>: hay que elegirla de forma individual, probándola.<sup><a href="#ref-8">[8]</a></sup></p>
+            <h3 style="font-size:1.125rem;font-weight:700;margin:1.5rem 0 .75rem;">Las ayudas más útiles</h3>
+            <ul style="margin:.75rem 0 1rem 1.5rem;line-height:1.9;font-size:.9375rem;">
+              <li><strong>Luz bien colocada.</strong> Una lámpara de tarea cerca del texto, a un lado y sin reflejos. Es la ayuda más barata y, muchas veces, la que más cambia las cosas.</li>
+              <li><strong>Lupas.</strong> De mano, con luz, para lecturas cortas fuera de casa. De pie, para leer apoyado en la mesa sin cansar el brazo.</li>
+              <li><strong>Lupas electrónicas.</strong> Dan más aumento y más contraste, y permiten poner la letra blanca sobre fondo negro, que a muchas personas con DMAE les resulta más cómodo. Las de sobremesa sirven para textos largos.</li>
+              <li><strong>Gafas de cerca con mucho aumento.</strong> Dejan las manos libres, pero obligan a leer muy cerca del papel.</li>
+              <li><strong>Telescopios.</strong> Para ver la tele o un cartel de lejos.</li>
+              <li><strong>Filtros.</strong> Unas lentes que reducen el deslumbramiento y mejoran el contraste.</li>
+              <li><strong>El móvil y la tableta.</strong> La lupa de la cámara, el zoom, la letra grande y la lectura en voz alta son ayudas que muchas personas ya llevan en el bolsillo.</li>
+            </ul>
+            <h3 style="font-size:1.125rem;font-weight:700;margin:1.5rem 0 .75rem;">Aprender a mirar de lado</h3>
+            <p>Cuando la mácula está dañada, en el centro de la visión queda una mancha. El cerebro puede aprender a usar una zona sana de la retina, justo al lado, para leer y mirar: es la <strong>visión excéntrica</strong>. Se entrena con ejercicios y forma parte de la rehabilitación.</p>
+          </section>
+
+          <section class="blog-section reveal">
+            <h2 class="blog-section__title">Cómo es una valoración de baja visión</h2>
+            <p>En Panisse la hacemos así:</p>
+            <ol style="margin:.75rem 0 1rem 1.5rem;line-height:1.9;font-size:.9375rem;">
+              <li style="margin-bottom:.5rem;">Empezamos por <strong>tus objetivos</strong>: qué quieres volver a hacer.</li>
+              <li style="margin-bottom:.5rem;">Medimos tu visión con <strong>pruebas pensadas para visión baja</strong>, incluida una prueba de lectura con frases que nos dice qué tamaño de letra lees con soltura y a qué velocidad.</li>
+              <li style="margin-bottom:.5rem;"><strong>Calculamos el aumento</strong> que necesitas.</li>
+              <li style="margin-bottom:.5rem;"><strong>Probamos las ayudas con tu propio material</strong>: tu periódico, tu móvil, tus recetas.</li>
+              <li>Te enseñamos a usarlas y hacemos <strong>seguimiento</strong>: a la semana, al mes y después de forma periódica.</li>
+            </ol>
+            <p>Siempre trabajamos <strong>junto a tu oftalmólogo</strong>: si nos das permiso, le enviamos un informe. Más información en nuestra página de <a href="../baja-vision-lugo.html" style="color:var(--color-accent-dk);text-decoration:underline;">baja visión en Lugo</a>.</p>
+          </section>
+
+          <section class="blog-section reveal">
+            <h2 class="blog-section__title">Para la familia</h2>
+            <ul style="margin:.75rem 0 1rem 1.5rem;line-height:1.9;font-size:.9375rem;">
+              <li style="margin-bottom:.75rem;"><strong>Más luz y más contraste en casa:</strong> cinta de color en el borde de los escalones; platos de un color que contraste con la comida; interruptores y enchufes visibles; teléfonos y relojes con números grandes.</li>
+              <li style="margin-bottom:.75rem;"><strong>El síndrome de Charles Bonnet.</strong> Algunas personas con pérdida de visión ven figuras, caras o dibujos que saben que no están ahí. Son alucinaciones visuales por la pérdida de visión y <strong>no son una enfermedad mental</strong>. Según los estudios, las sufre entre el 15 % y la mitad de las personas con baja visión. Muchas no lo cuentan por miedo: pregúntalo con naturalidad y coméntalo con el oftalmólogo.</li>
+              <li><strong>La ONCE.</strong> Si la visión en los dos ojos es igual o inferior a 0,1 con la mejor corrección, o el campo visual es de 10 grados o menos, se puede solicitar la <a href="https://www.once.es/dejanos-ayudarte/afiliacion" rel="noopener noreferrer" target="_blank" style="color:var(--color-accent-dk);text-decoration:underline;">afiliación a la ONCE</a>.<sup><a href="#ref-10">[10]</a></sup> Ofrece rehabilitación, orientación y movilidad, y otros apoyos.</li>
+            </ul>
+          </section>
+
+          <section class="blog-section reveal">
+            <h2 class="blog-section__title">Preguntas frecuentes</h2>
+            <div style="border-top:1px solid var(--color-border);padding:.75rem 0;">
+              <p style="font-weight:700;margin-bottom:.4rem;">¿La DMAE deja ciego del todo?</p>
+              <p style="font-size:.9375rem;line-height:1.7;color:var(--color-muted);">Es muy raro que produzca ceguera total, porque afecta a la visión central y la periférica suele conservarse. Pero puede dificultar mucho la lectura y reconocer caras, y por eso hay que vigilarla y tratarla a tiempo.</p>
+            </div>
+            <div style="border-top:1px solid var(--color-border);padding:.75rem 0;">
+              <p style="font-weight:700;margin-bottom:.4rem;">¿Me van a servir unas gafas nuevas?</p>
+              <p style="font-size:.9375rem;line-height:1.7;color:var(--color-muted);">Si la mácula está dañada, unas gafas nuevas mejoran poco. Aun así, conviene comprobar la graduación: a veces se gana algo, y es la base para elegir el resto de ayudas.</p>
+            </div>
+            <div style="border-top:1px solid var(--color-border);padding:.75rem 0;">
+              <p style="font-weight:700;margin-bottom:.4rem;">¿Leer mucho o mirar el móvil empeora la DMAE?</p>
+              <p style="font-size:.9375rem;line-height:1.7;color:var(--color-muted);">No. Usar la vista no la gasta. Leer con buena luz y con la ayuda adecuada es recomendable.</p>
+            </div>
+            <div style="border-top:1px solid var(--color-border);padding:.75rem 0;">
+              <p style="font-weight:700;margin-bottom:.4rem;">¿Los suplementos de vitaminas previenen la DMAE?</p>
+              <p style="font-size:.9375rem;line-height:1.7;color:var(--color-muted);">Los estudios AREDS demostraron beneficio en fases concretas de la enfermedad, no como prevención general. Consúltalo con tu oftalmólogo antes de tomarlos.</p>
+            </div>
+            <div style="border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);padding:.75rem 0;">
+              <p style="font-weight:700;margin-bottom:.4rem;">¿Cada cuánto debo usar la rejilla de Amsler?</p>
+              <p style="font-size:.9375rem;line-height:1.7;color:var(--color-muted);">Una vez por semana, con cada ojo por separado, o con la frecuencia que te indique tu oftalmólogo.</p>
+            </div>
+          </section>
+
+          <!-- Tags -->
+          <div class="blog-article__tags" style="margin-top:2rem;">
+            <span class="blog-tag">DMAE</span>
+            <span class="blog-tag">Degeneración macular</span>
+            <span class="blog-tag">Baja visión</span>
+            <span class="blog-tag">Salud ocular</span>
+            <span class="blog-tag">Retina</span>
+          </div>
+
+          <!-- Referencias -->
+          <div class="blog-refs reveal" id="referencias">
+            <h3 class="blog-refs__title">Fuentes</h3>
+            <ol class="blog-refs__list">
+              <li id="ref-1">Wong WL, et al. Global prevalence of age-related macular degeneration and disease burden projection for 2020 and 2040: a systematic review and meta-analysis. <em>Lancet Glob Health</em>. 2014;2(2):e106-16. <a href="https://doi.org/10.1016/S2214-109X(13)70145-1" rel="noopener noreferrer" target="_blank" style="color:var(--color-accent-dk);">doi:10.1016/S2214-109X(13)70145-1</a></li>
+              <li id="ref-2">National Institute for Health and Care Excellence (NICE). Age-related macular degeneration (NG82). 2018. <a href="https://www.nice.org.uk/guidance/ng82" rel="noopener noreferrer" target="_blank" style="color:var(--color-accent-dk);">nice.org.uk/guidance/ng82</a></li>
+              <li id="ref-3">Age-Related Eye Disease Study Research Group. A randomized, placebo-controlled, clinical trial of high-dose supplementation with vitamins C and E, beta carotene, and zinc for AMD: AREDS report no. 8. <em>Arch Ophthalmol</em>. 2001;119(10):1417-36. <a href="https://doi.org/10.1001/archopht.119.10.1417" rel="noopener noreferrer" target="_blank" style="color:var(--color-accent-dk);">doi:10.1001/archopht.119.10.1417</a></li>
+              <li id="ref-4">Age-Related Eye Disease Study 2 Research Group. Lutein + zeaxanthin and omega-3 fatty acids for AMD: the AREDS2 randomized clinical trial. <em>JAMA</em>. 2013;309(19):2005-15. <a href="https://doi.org/10.1001/jama.2013.4997" rel="noopener noreferrer" target="_blank" style="color:var(--color-accent-dk);">doi:10.1001/jama.2013.4997</a></li>
+              <li id="ref-5">Thornton J, et al. Smoking and age-related macular degeneration: a review of association. <em>Eye</em>. 2005;19(9):935-44. <a href="https://doi.org/10.1038/sj.eye.6701978" rel="noopener noreferrer" target="_blank" style="color:var(--color-accent-dk);">doi:10.1038/sj.eye.6701978</a></li>
+              <li id="ref-6">Stelmack JA, et al. Outcomes of the Veterans Affairs Low Vision Intervention Trial (LOVIT). <em>Arch Ophthalmol</em>. 2008;126(5):608-17. <a href="https://doi.org/10.1001/archopht.126.5.608" rel="noopener noreferrer" target="_blank" style="color:var(--color-accent-dk);">doi:10.1001/archopht.126.5.608</a></li>
+              <li id="ref-7">Stelmack JA, et al. Outcomes of the Veterans Affairs Low Vision Intervention Trial II (LOVIT II). <em>JAMA Ophthalmol</em>. 2017;135(2):96-104. <a href="https://doi.org/10.1001/jamaophthalmol.2016.4742" rel="noopener noreferrer" target="_blank" style="color:var(--color-accent-dk);">doi:10.1001/jamaophthalmol.2016.4742</a></li>
+              <li id="ref-8">Virgili G, et al. Reading aids for adults with low vision. <em>Cochrane Database Syst Rev</em>. 2018;4:CD003303. <a href="https://doi.org/10.1002/14651858.CD003303.pub4" rel="noopener noreferrer" target="_blank" style="color:var(--color-accent-dk);">doi:10.1002/14651858.CD003303.pub4</a></li>
+              <li id="ref-9">Agencia Europea del Medicamento (EMA). Syfovre (pegcetacoplan) — EPAR. 2024. <a href="https://www.ema.europa.eu/en/medicines/human/EPAR/syfovre" rel="noopener noreferrer" target="_blank" style="color:var(--color-accent-dk);">ema.europa.eu</a></li>
+              <li id="ref-10">ONCE. Requisitos de afiliación. <a href="https://www.once.es/dejanos-ayudarte/afiliacion" rel="noopener noreferrer" target="_blank" style="color:var(--color-accent-dk);">once.es</a></li>
+            </ol>
+          </div>
+
+          <!-- Caja de autor -->
+          <div class="blog-author-box" style="margin-top:2.5rem;padding:1.5rem;background:var(--color-surface);border-radius:var(--radius-md);display:flex;gap:1rem;align-items:flex-start;">
+            <img src="../assets/img/team/felix-salvador.webp" alt="Félix Salvador Pérez" width="72" height="72" style="border-radius:50%;flex-shrink:0;object-fit:cover;" loading="lazy">
+            <div>
+              <p style="font-weight:700;margin-bottom:.25rem;">Félix Salvador Pérez</p>
+              <p style="font-size:.875rem;color:var(--color-muted);line-height:1.6;">Óptico-optometrista colegiado nº 27374 y farmacéutico colegiado nº 1422. Titular de <a href="../nosotros.html#felix" style="color:var(--color-accent-dk);text-decoration:underline;">Panisse Óptica</a>, Centro ZEISS Vision Expert en Lugo.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </article>
+
+    <!-- CTA blog -->
+    <section style="background:var(--color-surface);padding:3rem 0;border-top:1px solid var(--color-border);">
+      <div class="container" style="max-width:680px;text-align:center;">
+        <h2 style="font-family:var(--font-display);font-size:clamp(1.5rem,3vw,2rem);font-weight:600;margin-bottom:1rem;">¿Tienes dudas sobre<br><em>tu visión central?</em></h2>
+        <p style="color:var(--color-muted);margin-bottom:1.5rem;">Cuéntanos tu caso. Si en la revisión visual detectamos indicios de alteración macular, te derivamos al oftalmólogo.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;">
+          <a href="../contacto.html#cal-inline" class="btn btn--primary js-cal-reserva" data-cal-link="panisse/estudio-visual" data-cal-config='{"layout":"month_view"}'>Reservar revisión visual</a>
+          <a href="../baja-vision-lugo.html" class="btn btn--outline">Servicio de baja visión</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER (sin Servicios en Lugo — patrón blog) -->
+  <footer class="footer" aria-label="Pie de página">
+    <div class="footer__inner container">
+
+      <div class="footer__col footer__col--brand">
+        <a href="../index.html" class="footer__logo" aria-label="Panisse Óptica — inicio">
+          Panisse <em>Óptica</em>
+        </a>
+        <p class="footer__mission">Óptica boutique en Lugo. Cuidamos tu salud visual y te ofrecemos una selección de gafas de diseño de autor.</p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/panisse_optica/" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61586908144350" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@panisse_optica" class="footer__social-link" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer__col footer__col--links" aria-label="Navegación del footer">
+        <h3 class="footer__heading">Explorar</h3>
+        <ul class="footer__list">
+          <li><a href="../catalogo.html?tipo=graduadas" class="footer__link">Gafas Graduadas</a></li>
+          <li><a href="../catalogo.html?tipo=sol" class="footer__link">Gafas de Sol</a></li>
+          <li><a href="../catalogo.html" class="footer__link">Marcas</a></li>
+          <li><a href="../servicios.html" class="footer__link">Servicios</a></li>
+          <li><a href="../contacto.html" class="footer__link">Cita Previa</a></li>
+          <li><a href="../blog.html" class="footer__link">Magazine</a></li>
+        </ul>
+        <h3 class="footer__heading" style="margin-top:28px;">Magazine</h3>
+        <ul class="footer__list">
+          <li><a href="../blog/ojo-seco-lugo.html" class="footer__link">Ojo seco</a></li>
+          <li><a href="../blog/lentes-progresivas-zeiss-lugo.html" class="footer__link">Lentes progresivas ZEISS</a></li>
+          <li><a href="../blog/frecuencia-revision-visual-lugo.html" class="footer__link">¿Cada cuánto revisarse la vista?</a></li>
+          <li><a href="../blog/dmae-degeneracion-macular-baja-vision.html" class="footer__link">DMAE y baja visión</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col footer__col--stores">
+        <h3 class="footer__heading">Nuestra Tienda</h3>
+        <div class="footer__store">
+          <p class="footer__store-name">Panisse Óptica</p>
+          <address class="footer__address">
+            Rúa do Teatro, Bajo 2<br>
+            27001 Lugo
+          </address>
+          <ul class="footer__store-details">
+            <li><a href="tel:+34982301193">982 30 11 93</a></li>
+            <li><a href="mailto:info@panisse.es">info@panisse.es</a></li>
+            <li>L–V 10:00–13:30 / 16:30–20:30<br>Sáb 10:30–13:30</li>
+          </ul>
+          <h3 class="footer__heading" style="margin-top:24px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.1)">Información</h3>
+          <ul class="footer__store-details">
+            <li><a href="../nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="../aviso-legal.html">Aviso Legal</a></li>
+            <li><a href="../privacidad.html">Privacidad y Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__col footer__col--newsletter">
+        <h3 class="footer__heading">Novedades</h3>
+        <p class="footer__newsletter-text">Nuevas colecciones, consejos ópticos y artículos de autor. Sin spam.</p>
+        <form class="footer__form" id="newsletter-form" novalidate>
+          <div class="footer__form-group">
+            <input type="email" id="newsletter-email" class="footer__input" placeholder="tu@email.com" autocomplete="email" required aria-label="Tu correo electrónico" />
+            <button type="submit" class="footer__submit" aria-label="Suscribirse">→</button>
+          </div>
+          <p class="footer__form-msg" id="newsletter-msg"></p>
+          <p class="footer__newsletter-legal">Al suscribirte aceptas nuestra <a href="../privacidad.html">política de privacidad</a>.</p>
+        </form>
+      </div>
+
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__copy">© <span id="footer-year"></span> Panisse Óptica · Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/34614296965?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20c%C3%B3mo%20pedir%20cita"
+     class="whatsapp-float"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Contactar por WhatsApp"
+     onclick="if(typeof gtag==='function'){gtag('event','generate_lead',{event_category:'WhatsApp',event_label:'Contacto'})}">
+    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+    </svg>
+    <span class="whatsapp-float__tooltip">WhatsApp</span>
+  </a>
+
+  <script src="../assets/js/main.min.js?v=12" defer></script>
+
+  <script>
+    (function(C,A,L){let p=function(a,ar){a.q.push(ar);};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true;}if(ar[0]===L){const api=function(){p(api,arguments);};const ns=ar[1];api.q=[];if(typeof ns==="string"){cal.ns[ns]=api;p(api,ar);p(cal,["initNamespace",ns]);}else p(cal,ar);return;}p(cal,ar);};})(window,"https://citas.panisse.es/embed/embed.js","init");
+    Cal("init", {origin:"https://citas.panisse.es"});
+    document.querySelectorAll(".js-cal-reserva").forEach(function(a){
+      a.addEventListener("click", function(ev){ if (window.Cal && window.Cal.loaded) ev.preventDefault(); });
+    });
+    var citaMedida = false;
+    Cal("on", {
+      action: "bookingSuccessful",
+      callback: function(e) {
+        if (citaMedida) return;
+        citaMedida = true;
+        if (typeof window.fbq === "function") {
+          window.fbq("track", "Lead", { content_name: "Reserva de Cita Previa (Cal.com)", status: "success" });
+        }
+        if (typeof window.gtag === "function") {
+          window.gtag("event", "cita_reservada", { event_category: "Cita", event_label: "Reserva desde DMAE" });
+          window.gtag("event", "conversion", { send_to: "AW-18003465740/2ymQCKqYvKQdEIys3IhD" });
+        }
+      }
+    });
+  </script>
+
+  <style>
+    .goog-te-banner-frame,iframe.skiptranslate{display:none!important;}
+    body,body.translated-ltr,body.translated-rtl{top:0!important;margin-top:0!important;}
+    .goog-te-gadget,#goog-gt-tt{display:none!important;}
+  </style>
+  <div id="google_translate_element" style="display:none" aria-hidden="true"></div>
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        { pageLanguage: 'es', includedLanguages: 'en', autoDisplay: false },
+        'google_translate_element'
+      );
+    }
+    (function () {
+      function getLang() {
+        var m = document.cookie.match(/googtrans=\/es\/(\w+)/);
+        return m ? m[1] : 'es';
+      }
+      window.panisseLangToggle = function () {
+        var next = getLang() === 'en' ? 'es' : 'en';
+        var val  = '/es/' + next;
+        var host = window.location.hostname;
+        document.cookie = 'googtrans=' + val + '; path=/; domain='  + host;
+        document.cookie = 'googtrans=' + val + '; path=/; domain=.' + host;
+        document.cookie = 'googtrans=' + val + '; path=/';
+        window.location.reload();
+      };
+      var _gt_obs = new MutationObserver(function(){
+        var f=document.querySelector('iframe.skiptranslate');
+        if(f){f.style.display='none';document.body.style.top='0';}
+      });
+      _gt_obs.observe(document.documentElement,{childList:true,subtree:true});
+      document.addEventListener('DOMContentLoaded', function () {
+        var lang = getLang();
+        var isEn = lang === 'en';
+        var flagEs = '&#x1F1EA;&#x1F1F8;', flagEn = '&#x1F1EC;&#x1F1E7;';
+        var btn = document.getElementById('lang-toggle-btn');
+        if (btn) { btn.innerHTML = isEn ? flagEs : flagEn;
+                   btn.title = isEn ? 'Cambiar a español' : 'Switch to English'; }
+        var mBtn = document.getElementById('mobile-lang-btn');
+        if (mBtn) {
+          mBtn.innerHTML = isEn
+            ? flagEs + ' <span class="mobile-lang-label">Español</span>'
+            : flagEn + ' <span class="mobile-lang-label">English</span>';
+        }
+      });
+    })();
+  </script>
+  <script>if(document.cookie.indexOf('googtrans=/es/en')!==-1){window.addEventListener('load',function(){var s=document.createElement('script');s.src='https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';document.head.appendChild(s);},{once:true});}</script>
+
+</body>
+</html>
