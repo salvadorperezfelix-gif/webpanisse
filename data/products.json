@@ -2473,7 +2473,46 @@
       "puente": "22 mm",
       "varilla": "145 mm",
       "genero": "Unisex"
-    }
+    },
+    "variants": [
+      {
+        "id": "antica-occhialeria-miller-morado",
+        "color": "#6a3a7a",
+        "label": "Crystal Morado"
+      }
+    ]
+  },
+  {
+    "id": "antica-occhialeria-miller-morado",
+    "name": "Miller",
+    "brand": "Antica Occhialeria",
+    "brand_slug": "antica-occhialeria",
+    "is_new": true,
+    "type": "sol",
+    "price": 185,
+    "variant": "Crystal Morado",
+    "color_swatch": "#6a3a7a",
+    "placeholder": "https://placehold.co/600x480/6a3a7a/e0c0f0?text=Antica+Occhialeria",
+    "image": "assets/img/products/antica-occhialeria/antica-occhialeria-miller-morado/antica-occhialeria-miller-morado-1.jpg",
+    "gallery": [
+      "assets/img/products/antica-occhialeria/antica-occhialeria-miller-morado/antica-occhialeria-miller-morado-1.jpg",
+      "assets/img/products/antica-occhialeria/antica-occhialeria-miller-morado/antica-occhialeria-miller-morado-2.jpg"
+    ],
+    "description": "La Miller en crystal morado es la versión más intensa de la forma piloto de Antica Occhialeria. Acetato translúcido morado, doble puente, hecha a mano en Florencia. Exclusiva en Panisse Óptica Lugo.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "50 mm",
+      "puente": "22 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    },
+    "variants": [
+      {
+        "id": "antica-occhialeria-miller-miel",
+        "color": "#d4a830",
+        "label": "Crystal Miel"
+      }
+    ]
   },
   {
     "id": "antica-occhialeria-ravel",
