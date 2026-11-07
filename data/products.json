@@ -2610,6 +2610,31 @@
     }
   },
   {
+    "id": "antica-occhialeria-rhys",
+    "name": "Rhys",
+    "brand": "Antica Occhialeria",
+    "brand_slug": "antica-occhialeria",
+    "is_new": true,
+    "type": "sol",
+    "price": 185,
+    "variant": "Azul Mármol / Azul Claro",
+    "color_swatch": "#2a4a7a",
+    "placeholder": "https://placehold.co/600x480/2a4a7a/b0d0f0?text=Antica+Occhialeria",
+    "image": "assets/img/products/antica-occhialeria/antica-occhialeria-rhys/antica-occhialeria-rhys-1.jpg",
+    "gallery": [
+      "assets/img/products/antica-occhialeria/antica-occhialeria-rhys/antica-occhialeria-rhys-1.jpg",
+      "assets/img/products/antica-occhialeria/antica-occhialeria-rhys/antica-occhialeria-rhys-2.jpg"
+    ],
+    "description": "La Rhys es la montura octogonal de Antica Occhialeria. Acetato azul mármol — ese azul profundo con vetas que solo aparece en la selección más cuidada de las fábricas florentinas. Forma geométrica de ocho lados, puente recto, varillas con el mismo acetato. Hecha a mano en Florencia, disponible exclusivamente en Panisse Óptica, la única óptica de Lugo que distribuye Antica Occhialeria.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "47 mm",
+      "puente": "25 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
+  },
+  {
     "id": "einstoffen-jogger-silver",
     "name": "Jogger",
     "brand": "Einstoffen",
