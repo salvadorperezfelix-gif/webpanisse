@@ -448,7 +448,7 @@ if (newsletterForm && BREVO_FORM_URL) {
   async function loadProducts() {
     showSkeletons(8);
     try {
-      const res      = await fetch('data/products.json?v=10');
+      const res      = await fetch('data/products.json?v=11');
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const products = await res.json();
 
@@ -728,7 +728,7 @@ async function initProductPage() {
 
 
   try {
-    const res = await fetch('./data/products.json?v=10');
+    const res = await fetch('./data/products.json?v=11');
     if (!res.ok) throw new Error('Error HTTP ' + res.status);
     const products = await res.json();
     const p = products.find(item => item.id === productId);
