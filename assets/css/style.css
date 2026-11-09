@@ -5580,7 +5580,7 @@ img[loading="lazy"].is-loaded {
   position: fixed;
   bottom: 24px;
   left: 24px;
-  width: 420px;
+  width: 400px;
   max-width: calc(100vw - 48px);
   background: rgba(255, 255, 255, 0.97);
   backdrop-filter: blur(12px);
@@ -5588,10 +5588,10 @@ img[loading="lazy"].is-loaded {
   border: 1px solid var(--color-border);
   box-shadow: var(--shadow-lg);
   z-index: 10000;
-  padding: 24px;
+  padding: 18px 20px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity var(--transition), transform var(--transition);
@@ -5612,7 +5612,7 @@ img[loading="lazy"].is-loaded {
 
 .cookie-banner__title {
   font-family: var(--font-display);
-  font-size: 1.375rem;
+  font-size: 1.125rem;
   font-weight: 400;
   color: var(--color-black);
   letter-spacing: 0.02em;
@@ -5620,8 +5620,8 @@ img[loading="lazy"].is-loaded {
 
 .cookie-banner__desc {
   font-family: var(--font-body);
-  font-size: 0.8125rem;
-  line-height: 1.6;
+  font-size: 0.78rem;
+  line-height: 1.5;
   color: var(--color-muted);
 }
 
@@ -5637,7 +5637,7 @@ img[loading="lazy"].is-loaded {
 
 .cookie-banner__actions {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 8px;
 }
 
@@ -5645,9 +5645,9 @@ img[loading="lazy"].is-loaded {
   font-family: var(--font-body);
   font-size: 0.6875rem;
   font-weight: 700;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  padding: 12px 16px;
+  padding: 11px 8px;
   border: 1px solid transparent;
   cursor: pointer;
   text-align: center;
@@ -5677,7 +5677,7 @@ img[loading="lazy"].is-loaded {
 }
 
 .cookie-banner__btn--full {
-  grid-column: span 2;
+  grid-column: 1 / -1;
   margin-top: 4px;
 }
 
@@ -5796,9 +5796,15 @@ img[loading="lazy"].is-loaded {
     border-left: none;
     border-right: none;
     border-bottom: none;
-    border-radius: 16px 16px 0 0;
+    border-radius: 14px 14px 0 0;
     box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.08);
-    padding: 24px;
+    padding: 12px 16px calc(12px + env(safe-area-inset-bottom, 0px));
+    gap: 10px;
   }
+  /* Compacto en el móvil: sin título, para no tapar el contenido (p. ej. el calendario de citas) */
+  .cookie-banner__title { display: none; }
+  .cookie-banner__desc { font-size: 0.75rem; line-height: 1.45; }
+  .cookie-banner__btn { font-size: 0.625rem; letter-spacing: 0.06em; padding: 10px 4px; }
+  .cookie-banner__settings.is-open { max-height: 55vh; overflow-y: auto; }
 }
 

@@ -1143,7 +1143,7 @@ if (document.readyState === 'loading') {
         <div class="cookie-banner__header">
           <h3 class="cookie-banner__title">Respetamos su privacidad</h3>
           <p class="cookie-banner__desc">
-            Utilizamos cookies propias y de terceros para comprender cómo interactúa con nuestro espacio y hacer su experiencia más fluida, personalizada y segura. Puede aceptarlas todas, rechazarlas o configurar sus preferencias. Para más información, consulte nuestra <a href="privacidad.html" target="_blank">Política de Privacidad y Cookies</a>.
+            Usamos cookies propias y de terceros para medir las visitas y mejorar la web. Puede aceptarlas, rechazarlas o configurarlas. <a href="privacidad.html" target="_blank">Más información</a>.
           </p>
         </div>
         
@@ -1185,7 +1185,7 @@ if (document.readyState === 'loading') {
         <div class="cookie-banner__actions">
           <button id="cookie-btn-accept" class="cookie-banner__btn cookie-banner__btn--primary">Aceptar todas</button>
           <button id="cookie-btn-reject" class="cookie-banner__btn cookie-banner__btn--secondary">Rechazar todas</button>
-          <button id="cookie-btn-configure" class="cookie-banner__btn cookie-banner__btn--secondary cookie-banner__btn--full">Configurar preferencias</button>
+          <button id="cookie-btn-configure" class="cookie-banner__btn cookie-banner__btn--secondary">Configurar</button>
           <button id="cookie-btn-save" class="cookie-banner__btn cookie-banner__btn--primary cookie-banner__btn--full" style="display: none;">Guardar selección</button>
         </div>
       `;
