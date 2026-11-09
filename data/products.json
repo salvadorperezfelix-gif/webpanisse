@@ -3119,5 +3119,30 @@
       "varilla": "142 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "einstoffen-flusssieder-pearl",
+    "name": "Flusssieder",
+    "brand": "Einstoffen",
+    "brand_slug": "einstoffen",
+    "is_new": true,
+    "type": "graduadas",
+    "price": 195,
+    "variant": "Pearl",
+    "color_swatch": "#e8d4a0",
+    "placeholder": "https://placehold.co/600x480/e8d4a0/8a6a20?text=Einstoffen",
+    "image": "assets/img/products/einstoffen/flusssieder-pearl-f.jpg",
+    "gallery": [
+      "assets/img/products/einstoffen/flusssieder-pearl-f.jpg",
+      "assets/img/products/einstoffen/flusssieder-pearl-s.jpg"
+    ],
+    "description": "El Flusssieder es la montura cuadrada de Einstoffen en acetato Pearl — un crema mármol dorado con vetas blancas y detalles en oro. Lentes grandes, forma robusta y deliberada. Detalles en metal dorado visibles desde dentro. Hecho a mano. Diseño suizo.",
+    "specs": {
+      "material": "Acetato / Metal dorado",
+      "calibre": "52 mm",
+      "puente": "29 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
   }
 ]
