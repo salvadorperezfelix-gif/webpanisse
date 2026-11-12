@@ -1967,28 +1967,6 @@
     }
   },
   {
-    "id": "polaroid-pld4190-negro-verde",
-    "name": "PLD 4190",
-    "brand": "Polaroid",
-    "brand_slug": "polaroid",
-    "type": "sol",
-    "price": 59,
-    "variant": "Negro Mate / Verde Polarizado",
-    "image": "assets/img/products/polaroid/polaroid-pld4190-1.jpg",
-    "gallery": [
-      "assets/img/products/polaroid/polaroid-pld4190-1.jpg",
-      "assets/img/products/polaroid/polaroid-pld4190-2.jpg"
-    ],
-    "description": "La PLD 4190 es una wayfarer cuadrada de polipropileno reciclado en negro mate con cristal verde polarizado. Forma clásica actualizada con un acabado sin brillo que le da un carácter más contemporáneo y deportivo. Ligera, cómoda y con protección polarizada real para el día a día al aire libre.",
-    "specs": {
-      "material": "Polipropileno Reciclado",
-      "calibre": "56 mm",
-      "puente": "16 mm",
-      "varilla": "145 mm",
-      "genero": "Unisex"
-    }
-  },
-  {
     "id": "polaroid-pld4199-havana",
     "name": "PLD 4199",
     "brand": "Polaroid",
@@ -2008,28 +1986,6 @@
       "puente": "19 mm",
       "varilla": "140 mm",
       "genero": "Mujer"
-    }
-  },
-  {
-    "id": "polaroid-pld6249-gris-azul",
-    "name": "PLD 6249",
-    "brand": "Polaroid",
-    "brand_slug": "polaroid",
-    "type": "sol",
-    "price": 69,
-    "variant": "Gris Transparente / Azul Degradado Polarizado",
-    "image": "assets/img/products/polaroid/polaroid-pld6249-1.jpg",
-    "gallery": [
-      "assets/img/products/polaroid/polaroid-pld6249-1.jpg",
-      "assets/img/products/polaroid/polaroid-pld6249-2.jpg"
-    ],
-    "description": "La PLD 6249 en gris transparente es una panto de acetato con facetas geométricas que le dan un carácter único. Su montura semitransparente en azul pizarra y el cristal azul degradado polarizado crean un conjunto monocromático y sofisticado. Cómoda, ligera y con un perfil redondo que funciona en cualquier tipo de rostro.",
-    "specs": {
-      "material": "Polipropileno Reciclado",
-      "calibre": "50 mm",
-      "puente": "22 mm",
-      "varilla": "145 mm",
-      "genero": "Unisex"
     }
   },
   {

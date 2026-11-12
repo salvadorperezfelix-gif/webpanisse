@@ -72,10 +72,6 @@
       <image:loc>https://panisse.es/assets/img/products/antica-occhialeria/antica-occhialeria-brahms/antica-occhialeria-brahms-1.jpg</image:loc>
       <image:title>Antica Occhialeria Brahms â€” montura italiana en Panisse Ã“ptica Lugo</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://panisse.es/assets/img/products/polaroid/polaroid-pld4190-1.jpg</image:loc>
-      <image:title>Polaroid PLD4190 â€” gafa de sol polarizada en Panisse Ã“ptica Lugo</image:title>
-    </image:image>
   </url>
 
   <!-- PÃ¡gina de marcas -->
@@ -645,20 +641,12 @@
       <image:title>Polaroid Diss â€” gafa de sol polarizada</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://panisse.es/assets/img/products/polaroid/polaroid-pld4190-1.jpg</image:loc>
-      <image:title>Polaroid PLD4190</image:title>
-    </image:image>
-    <image:image>
       <image:loc>https://panisse.es/assets/img/products/polaroid/polaroid-leo-1.jpg</image:loc>
       <image:title>Polaroid Leo</image:title>
     </image:image>
     <image:image>
       <image:loc>https://panisse.es/assets/img/products/polaroid/polaroid-pld4199-1.jpg</image:loc>
       <image:title>Polaroid PLD4199</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://panisse.es/assets/img/products/polaroid/polaroid-pld6249-1.jpg</image:loc>
-      <image:title>Polaroid PLD6249</image:title>
     </image:image>
     <image:image>
       <image:loc>https://panisse.es/assets/img/products/polaroid/polaroid-pld6241-1.jpg</image:loc>
