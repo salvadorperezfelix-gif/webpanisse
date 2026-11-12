@@ -2607,6 +2607,29 @@
     }
   },
   {
+    "id": "ic-berlin-inko-mondrian-blue",
+    "name": "Inko",
+    "brand": "ic! berlin",
+    "brand_slug": "ic-berlin",
+    "is_new": true,
+    "type": "graduadas",
+    "price": null,
+    "variant": "Mondrian Blue",
+    "placeholder": "https://placehold.co/600x480/4a5568/a0aec0?text=ic!+berlin",
+    "image": "assets/img/products/ic-berlin/ic-berlin-inko-mondrian-blue-f.jpg",
+    "gallery": [
+      "assets/img/products/ic-berlin/ic-berlin-inko-mondrian-blue-f.jpg",
+      "assets/img/products/ic-berlin/ic-berlin-inko-mondrian-blue-s.jpg"
+    ],
+    "specs": {
+      "material": "Acero inoxidable",
+      "calibre": "52 mm",
+      "puente": "19 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
+  },
+  {
     "id": "ic-berlin-miles-gris-azul",
     "name": "Miles",
     "brand": "ic! berlin",

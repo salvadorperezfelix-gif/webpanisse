@@ -57,8 +57,12 @@
       <image:title>Emporio Armani EA4269 â€” gafa de sol en Panisse Ã“ptica Lugo</image:title>
     </image:image>
     <image:image>
+      <image:loc>https://panisse.es/assets/img/products/ic-berlin/ic-berlin-inko-mondrian-blue-f.jpg</image:loc>
+      <image:title>ic! berlin Inko â€” Mondrian Blue, montura sin tornillos en Panisse Ã”ptica Lugo</image:title>
+    </image:image>
+    <image:image>
       <image:loc>https://panisse.es/assets/img/products/ic-berlin/ic-berlin-miles-gris-azul-1.jpg</image:loc>
-      <image:title>ic! berlin Miles â€” montura sin tornillos en Panisse Ã“ptica Lugo</image:title>
+      <image:title>ic! berlin Miles â€” montura sin tornillos en Panisse Ã”ptica Lugo</image:title>
     </image:image>
     <image:image>
       <image:loc>https://panisse.es/assets/img/products/einstoffen/einstoffen-dauphine-black-1.jpg</image:loc>
@@ -518,6 +522,10 @@
   <url>
     <loc>https://panisse.es/ic-berlin-lugo.html</loc>
     <lastmod>2026-11-02</lastmod>
+    <image:image>
+      <image:loc>https://panisse.es/assets/img/products/ic-berlin/ic-berlin-inko-mondrian-blue-f.jpg</image:loc>
+      <image:title>ic! berlin Inko â€” Mondrian Blue</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://panisse.es/assets/img/products/ic-berlin/ic-berlin-miles-gris-azul-1.jpg</image:loc>
       <image:title>ic! berlin Miles â€” gris azul, montura sin tornillos</image:title>
