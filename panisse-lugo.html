@@ -313,6 +313,7 @@
               <div class="dropdown__grid">
                 <a href="panisse-lugo.html" class="dropdown__link" role="menuitem">Panisse</a>
                 <a href="antica-occhialeria-lugo.html" class="dropdown__link" role="menuitem">Antica Occhialeria</a>
+                <a href="glare-lugo.html" class="dropdown__link" role="menuitem">GLARE</a>
                 <a href="einstoffen-lugo.html" class="dropdown__link" role="menuitem">Einstoffen</a>
                 <a href="ic-berlin-lugo.html" class="dropdown__link" role="menuitem">ic! berlin</a>
                 <a href="marcas.html#emporio-armani" class="dropdown__link" role="menuitem">Emporio Armani</a>
@@ -450,7 +451,8 @@
           </button>
           <ul class="mobile-submenu" id="mm-marcas" aria-hidden="true">
             <li><a href="panisse-lugo.html" class="mobile-sublink">Panisse</a></li>
-            <li><a href="antica-occhialeria-lugo.html" class="mobile-sublink">Antica Occhialeria</a></li>
+            <li><a href="antica-occhialeria-lugo.html" class="mobile-sublink">Antica Occhialeria</a>
+                <a href="glare-lugo.html" class="dropdown__link" role="menuitem">GLARE</a></li>
             <li><a href="einstoffen-lugo.html" class="mobile-sublink">Einstoffen</a></li>
             <li><a href="ic-berlin-lugo.html" class="mobile-sublink">ic! berlin</a></li>
             <li><a href="marcas.html#emporio-armani" class="mobile-sublink">Emporio Armani</a></li>
@@ -807,7 +809,7 @@
       });
     });
 
-    fetch('data/products.json?v=11')
+    fetch('data/products.json?v=12')
       .then(function (res) {
         if (!res.ok) throw new Error('HTTP ' + res.status);
         return res.json();

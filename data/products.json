@@ -3003,5 +3003,27 @@
       "varilla": "145 mm",
       "genero": "Unisex"
     }
+  },
+  {
+    "id": "glare-marzio-teal",
+    "name": "Marzio",
+    "brand": "GLARE",
+    "brand_slug": "glare",
+    "is_new": true,
+    "type": "graduadas",
+    "price": null,
+    "variant": "Teal",
+    "placeholder": "https://placehold.co/600x480/3d8fa0/c0e4e8?text=GLARE",
+    "image": "assets/img/products/glare/glare-marzio-teal-1.jpg",
+    "gallery": [
+      "assets/img/products/glare/glare-marzio-teal-1.jpg",
+      "assets/img/products/glare/glare-marzio-teal-2.jpg",
+      "assets/img/products/glare/glare-marzio-teal-3.jpg"
+    ],
+    "description": "Montura hexagonal de acetato Mazzucchelli sin pulir en tono teal translúcido. Formas angulares y geometría original, característica de GLARE. Hecho a mano en Italia por Noema Vision.",
+    "specs": {
+      "material": "Acetato Mazzucchelli",
+      "genero": "Unisex"
+    }
   }
 ]

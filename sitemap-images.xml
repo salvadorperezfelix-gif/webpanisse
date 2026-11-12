@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
@@ -643,6 +643,23 @@
     <image:image>
       <image:loc>https://panisse.es/assets/img/products/polaroid/polaroid-pld6251-1.jpg</image:loc>
       <image:title>Polaroid PLD6251</image:title>
+    </image:image>
+  </url>
+  <!-- GLARE -->
+  <url>
+    <loc>https://panisse.es/glare-lugo.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <image:image>
+      <image:loc>https://panisse.es/assets/img/products/glare/glare-marzio-teal-1.jpg</image:loc>
+      <image:title>GLARE Marzio — Teal, acetato Mazzucchelli hecho a mano</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://panisse.es/assets/img/products/glare/glare-marzio-teal-2.jpg</image:loc>
+      <image:title>GLARE Marzio — Teal, montura hexagonal italiana</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://panisse.es/assets/img/products/glare/glare-marzio-teal-3.jpg</image:loc>
+      <image:title>GLARE Marzio — Teal, acetato sin pulir</image:title>
     </image:image>
   </url>
 
