@@ -2241,6 +2241,43 @@
     ]
   },
   {
+    "id": "antica-occhialeria-miller-havana",
+    "name": "Miller",
+    "brand": "Antica Occhialeria",
+    "brand_slug": "antica-occhialeria",
+    "is_new": true,
+    "type": "sol",
+    "price": 185,
+    "variant": "Havana / Verde",
+    "color_swatch": "#6b3a1f",
+    "placeholder": "https://placehold.co/600x480/6b3a1f/3a5a2a?text=Antica+Occhialeria",
+    "image": "assets/img/products/antica-occhialeria/antica-occhialeria-miller-havana/antica-occhialeria-miller-havana-1.jpg",
+    "gallery": [
+      "assets/img/products/antica-occhialeria/antica-occhialeria-miller-havana/antica-occhialeria-miller-havana-1.jpg",
+      "assets/img/products/antica-occhialeria/antica-occhialeria-miller-havana/antica-occhialeria-miller-havana-2.jpg"
+    ],
+    "description": "La Miller en havana es la versión más clásica de la forma piloto de Antica Occhialeria. Acetato carey con doble puente y lentes verdes, hecha a mano en Florencia. Exclusiva en Panisse Óptica Lugo.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "50 mm",
+      "puente": "22 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    },
+    "variants": [
+      {
+        "id": "antica-occhialeria-miller-miel",
+        "color": "#d4a830",
+        "label": "Crystal Miel"
+      },
+      {
+        "id": "antica-occhialeria-miller-morado",
+        "color": "#6a3a7a",
+        "label": "Crystal Morado"
+      }
+    ]
+  },
+  {
     "id": "antica-occhialeria-miller-miel",
     "name": "Miller",
     "brand": "Antica Occhialeria",
@@ -2264,6 +2301,11 @@
       "genero": "Unisex"
     },
     "variants": [
+      {
+        "id": "antica-occhialeria-miller-havana",
+        "color": "#6b3a1f",
+        "label": "Havana / Verde"
+      },
       {
         "id": "antica-occhialeria-miller-morado",
         "color": "#6a3a7a",
@@ -2296,6 +2338,11 @@
       "genero": "Unisex"
     },
     "variants": [
+      {
+        "id": "antica-occhialeria-miller-havana",
+        "color": "#6b3a1f",
+        "label": "Havana / Verde"
+      },
       {
         "id": "antica-occhialeria-miller-miel",
         "color": "#d4a830",
