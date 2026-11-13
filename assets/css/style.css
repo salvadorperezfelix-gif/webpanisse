@@ -4628,6 +4628,9 @@ img[loading="lazy"].is-loaded {
 }
 .blog-article__body p em  { font-style: italic; color: var(--color-text); }
 .blog-article__body p strong { color: var(--color-text); font-weight: 700; }
+.contacto-llegar { margin-top: 28px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1); }
+.contacto-llegar__text { font-size: 0.875rem; line-height: 1.6; color: rgba(255,255,255,0.55); }
+.contacto-llegar__text strong { color: rgba(255,255,255,0.85); font-weight: 700; }
 .blog-related__list { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: .6rem; }
 .blog-related__list a { color: var(--color-text); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--color-accent-dk); }
 .blog-related__list a:hover { text-decoration-color: currentColor; }
