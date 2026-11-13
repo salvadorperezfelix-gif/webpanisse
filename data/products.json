@@ -144,29 +144,6 @@
     }
   },
   {
-    "id": "panisse-calanque",
-    "name": "Calanque",
-    "brand": "Panisse",
-    "brand_slug": "panisse",
-    "type": "sol",
-    "price": 49,
-    "variant": "Carey / Marrón",
-    "placeholder": "https://placehold.co/600x480/7a4a1e/4a2c0a?text=Panisse",
-    "image": "assets/img/products/panisse/panisse-calanque-1.jpg",
-    "gallery": [
-      "assets/img/products/panisse/panisse-calanque-1.jpg",
-      "assets/img/products/panisse/panisse-calanque-2.jpg"
-    ],
-    "description": "Montura cuadrada oversize en acetato carey con un patrón de manchas oscuras y ámbar que cambia con la luz. Forma amplia y arquitectónica con barra superior recta y esquinas redondeadas. Lentes marrones sólidas Cat. 3 con protección UV400. Un clásico que gana con los años.",
-    "specs": {
-      "material": "Acetato",
-      "calibre": "55 mm",
-      "puente": "15 mm",
-      "varilla": "140 mm",
-      "genero": "Unisex"
-    }
-  },
-  {
     "id": "panisse-riviera",
     "name": "Riviera",
     "brand": "Panisse",
@@ -279,29 +256,6 @@
       "puente": "22 mm",
       "varilla": "150 mm",
       "genero": "Unisex"
-    }
-  },
-  {
-    "id": "panisse-boutique-azur",
-    "name": "Azur",
-    "brand": "Panisse",
-    "brand_slug": "panisse",
-    "type": "sol",
-    "price": 99,
-    "variant": "Azul Royal / Dorado",
-    "placeholder": "https://placehold.co/600x480/1a3a8f/d4af37?text=Panisse+Boutique",
-    "image": "assets/img/products/panisse-boutique/panisse-boutique-azur-1.jpg",
-    "gallery": [
-      "assets/img/products/panisse-boutique/panisse-boutique-azur-1.jpg",
-      "assets/img/products/panisse-boutique/panisse-boutique-azur-2.jpg"
-    ],
-    "description": "Montura oversize de acetato azul royal con puente y varillas de metal dorado. Una combinación que mezcla la fuerza del color con la elegancia del detalle metálico. Forma cuadrada de líneas ligeramente anguladas que enmarca la mirada con carácter. Lentes degradadas en azul-gris con protección UV400.",
-    "specs": {
-      "material": "Acetato + Metal",
-      "calibre": "54 mm",
-      "puente": "23 mm",
-      "varilla": "142 mm",
-      "genero": "Mujer"
     }
   },
   {
