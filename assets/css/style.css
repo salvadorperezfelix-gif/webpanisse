@@ -215,10 +215,10 @@ a {
   height: 100svh;
   min-height: 560px;
   overflow: hidden;
-  background-color: #1a1a18;
-  background-image: url('../img/hero-spring.webp');
+  background-color: #c42800;
+  background-image: url('../img/hero-icberlin-1920.webp');
   background-size: cover;
-  background-position: center;
+  background-position: center center;
 }
 
 .hero__overlay {
