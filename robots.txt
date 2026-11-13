@@ -1,32 +1,7 @@
+# Panisse Óptica — toda la web publicada es pública.
+# Se permiten buscadores, buscadores con IA y entrenamiento de modelos (visibilidad deseada; ver llms.txt).
 User-agent: *
-Disallow: /ecommerce/
-Disallow: /assets/blog/_draft/
-Allow: /data/products.json
-Disallow: /data/
-Disallow: /node_modules/
-Allow: /
-
-# AI search/citation bots — explicitly allowed for citability
-User-agent: OAI-SearchBot
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: Claude-SearchBot
-Allow: /
-
-# AI training bots — allowed (site has llms.txt, visibility is desired)
-User-agent: GPTBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: Google-Extended
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 Sitemap: https://panisse.es/sitemap.xml

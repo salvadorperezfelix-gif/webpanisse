@@ -7,6 +7,12 @@ Thumbs.db
 dist/
 build/
 
+# Salida de tools/build.mjs (la genera GitHub Actions en cada despliegue)
+_site/
+
+# Ajustes locales de Claude Code
+.claude/settings.local.json
+
 # Screenshots de desarrollo
 screenshot-*.png
 ss-*.png

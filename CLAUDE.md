@@ -34,3 +34,11 @@ Do NOT stop after one pass. Always do at least 2 comparison rounds. Only stop wh
 - If the user provides CSS classes or style tokens, use them verbatim
 - Keep code clean but don't over-abstract — inline Tailwind classes are fine
 - When comparing screenshots, be specific about what's wrong (e.g., "heading is 32px but reference shows ~24px", "gap between cards is 16px but should be 24px")
+
+## Build y despliegue (panisse.es)
+
+- GitHub Actions ejecuta `node tools/build.mjs` y publica solo `_site/`. Lo que no esté en su lista (HTML, `blog/`, `assets/`, `data/products.json`, robots, llms.txt, favicons) no se publica.
+- El build genera: una ficha estática por producto (`gafas-<id>.html`, plantilla `producto.html`), las tarjetas prerenderizadas de catálogo y páginas de marca, `sitemap.xml` y `sitemap-images.xml` (desde los bloques curados de `sitemap-images.xml` + products.json) y el `?v=<hash>` de CSS/JS/products.json.
+- No subir versiones `?v=` a mano ni editar un sitemap.xml (ya no existe en el repo). Una imagen reemplazada debe llevar nombre nuevo: Cloudflare cachea assets 1 año.
+- Enlaces a productos: `gafas-<id>.html`. `producto.html?id=` solo redirige.
+- Probar en local: `node tools/build.mjs` y servir `_site/` (p. ej. `python -m http.server --directory _site`). El build falla si hay referencias rotas.

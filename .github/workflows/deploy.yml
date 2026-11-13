@@ -22,9 +22,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # el build usa el historial para el lastmod del sitemap
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Build (solo archivos públicos + fichas + sitemaps)
+        run: node tools/build.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: '_site'
       - uses: actions/deploy-pages@v4
         id: deployment

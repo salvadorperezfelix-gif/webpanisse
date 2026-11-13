@@ -1486,7 +1486,7 @@
           var badge = p.is_new ? '<span class="lp-product__badge">Nuevo</span>' : '';
           return [
             '<article class="lp-product">',
-              '<a href="producto.html?id=' + p.id + '" class="lp-product__link" aria-label="Ver ' + p.name + ' de ' + p.brand + '">',
+              '<a href="gafas-' + p.id + '.html" class="lp-product__link" aria-label="Ver ' + p.name + ' de ' + p.brand + '">',
                 '<div class="lp-product__img-wrap">',
                   '<img src="' + p.image + '" alt="' + p.name + ' — ' + p.brand + '" loading="lazy" onerror="this.src=\'' + fallback + '\'">',
                   badge,

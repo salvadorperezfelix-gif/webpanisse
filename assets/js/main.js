@@ -89,6 +89,7 @@ const openMobileMenu = () => {
   hamburgerBtn?.classList.add('is-active');
   hamburgerBtn?.setAttribute('aria-expanded', 'true');
   mobileMenu?.setAttribute('aria-hidden', 'false');
+  if (mobileMenu) mobileMenu.inert = false;
   document.body.style.overflow = 'hidden';
 };
 
@@ -98,8 +99,10 @@ const closeMobileMenu = () => {
   hamburgerBtn?.classList.remove('is-active');
   hamburgerBtn?.setAttribute('aria-expanded', 'false');
   mobileMenu?.setAttribute('aria-hidden', 'true');
+  if (mobileMenu) mobileMenu.inert = true;
   document.body.style.overflow = '';
 };
+if (mobileMenu) mobileMenu.inert = true;
 
 hamburgerBtn?.addEventListener('click', () => {
   mobileMenu?.classList.contains('is-open') ? closeMobileMenu() : openMobileMenu();
@@ -345,7 +348,7 @@ if (newsletterForm && BREVO_FORM_URL) {
                data-gender="${p.specs?.genero || ''}"
                data-price="${p.price}"
                data-name="${p.brand} ${p.name}"${dataNew}>
-        <a href="producto.html?id=${p.id}" class="product-card__link" aria-label="Ver ${p.brand} ${p.name}">
+        <a href="gafas-${p.id}.html" class="product-card__link" aria-label="Ver ${p.brand} ${p.name}">
           <div class="product-card__image-wrap">
             <img src="${imgSrc}"
                  alt="${p.brand} ${p.name} — ${p.variant}"
@@ -358,7 +361,7 @@ if (newsletterForm && BREVO_FORM_URL) {
           </div>
           <div class="product-card__info">
             <span class="product-card__brand">${p.brand}</span>
-            <h2 class="product-card__name">${p.name}</h2>
+            <h3 class="product-card__name">${p.name}</h3>
             <span class="product-card__variant">${typeLabel} · ${p.variant}</span>
             <p class="product-card__price">${p.price ? p.price + ' €' : 'Consultar precio'}</p>
           </div>
@@ -721,10 +724,17 @@ if (newsletterForm && BREVO_FORM_URL) {
 ════════════════════════════════════════════════════════════ */
 async function initProductPage() {
   const params = new URLSearchParams(window.location.search);
-  const productId = params.get('id');
-  
+  const staticId = document.body.dataset.productId;
+  const productId = staticId || params.get('id');
+
   const titleEl = document.getElementById('prod-title');
   if (!productId || !titleEl) return;
+
+  // producto.html?id= es la URL antigua: en producción se redirige a la ficha estática
+  if (!staticId && /(^|\.)panisse\.es$/.test(location.hostname)) {
+    location.replace(`gafas-${encodeURIComponent(productId)}.html`);
+    return;
+  }
 
 
   try {
@@ -741,67 +751,8 @@ async function initProductPage() {
 
 
 
-    // Actualiza textos básicos
-    document.title = `${p.brand} ${p.name} | Panisse Óptica`;
-
-    // Schema.org Product (SEO rich results)
-    const productSchema = document.getElementById('product-schema');
-    if (productSchema) {
-      const productUrl = `https://panisse.es/producto.html?id=${productId}`;
-      productSchema.textContent = JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "Product",
-        "name": `${p.brand} ${p.name}`,
-        "description": p.description || '',
-        "image": p.gallery ? p.gallery.map(img => `https://panisse.es/${img}`) : [`https://panisse.es/${p.image}`],
-        "brand": { "@type": "Brand", "name": p.brand },
-        "url": productUrl,
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "EUR",
-          "price": p.price,
-          "availability": "https://schema.org/InStock",
-          "seller": { "@type": "Organization", "name": "Panisse Óptica" },
-          "url": productUrl,
-          "shippingDetails": {
-            "@type": "OfferShippingDetails",
-            "shippingRate": {
-              "@type": "MonetaryAmount",
-              "value": "0.00",
-              "currency": "EUR"
-            },
-            "shippingDestination": {
-              "@type": "DefinedRegion",
-              "addressCountry": "ES"
-            },
-            "deliveryTime": {
-              "@type": "ShippingDeliveryTime",
-              "handlingTime": {
-                "@type": "QuantitativeValue",
-                "minValue": "0",
-                "maxValue": "1",
-                "unitCode": "DAY"
-              },
-              "transitTime": {
-                "@type": "QuantitativeValue",
-                "minValue": "1",
-                "maxValue": "3",
-                "unitCode": "DAY"
-              }
-            }
-          },
-          "hasMerchantReturnPolicy": {
-            "@type": "MerchantReturnPolicy",
-            "applicableCountry": "ES",
-            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-            "merchantReturnDays": "14",
-            "returnMethod": "https://schema.org/ReturnByMail",
-            "returnFees": "https://schema.org/FreeReturn",
-            "customerReturnLink": "https://panisse.es/devoluciones.html"
-          }
-        }
-      });
-    }
+    // El título y el JSON-LD de las fichas estáticas los genera tools/build.mjs
+    if (!staticId) document.title = `${p.brand} ${p.name} | Panisse Óptica`;
 
     // Enviar eventos de visualización de producto (ViewContent y view_item)
     if (typeof window.fbq === 'function') {
@@ -876,7 +827,7 @@ async function initProductPage() {
       colorsEl.innerHTML = all.map(s =>
         s.active
           ? `<span class="product-color is-active" style="background:${s.color}" title="${s.label}" aria-label="${s.label} (seleccionado)"></span>`
-          : `<a href="producto.html?id=${s.id}" class="product-color" style="background:${s.color}" title="${s.label}" aria-label="Ver en ${s.label}"></a>`
+          : `<a href="gafas-${s.id}.html" class="product-color" style="background:${s.color}" title="${s.label}" aria-label="Ver en ${s.label}"></a>`
       ).join('');
     }
 
@@ -884,7 +835,7 @@ async function initProductPage() {
     const mainImg = document.getElementById('product-main-img');
     if (mainImg) {
       mainImg.src = p.image || p.placeholder;
-      mainImg.alt = `${p.brand} ${p.name}`;
+      mainImg.alt = `${p.brand} ${p.name} ${p.variant} — ${p.type === 'sol' ? 'gafas de sol' : 'gafas graduadas'}`;
       mainImg.style.opacity = '1';
       // Añadir fallback si la imagen real no carga
       const fallback = p.placeholder || `https://placehold.co/900x720/0d0d0d/c7dbd6?text=${encodeURIComponent(p.brand)}`;
@@ -1029,7 +980,7 @@ async function initProductPage() {
         const typeLabel = r.type === 'sol' ? 'Sol' : 'Graduadas';
         return `
           <article class="product-card">
-            <a href="producto.html?id=${r.id}" class="product-card__link">
+            <a href="gafas-${r.id}.html" class="product-card__link">
               <div class="product-card__image-wrap">
                 <img src="${imgSrc}" alt="${r.brand} ${r.name}" class="product-card__image is-loaded"
                      loading="eager"
@@ -1040,7 +991,7 @@ async function initProductPage() {
                 <span class="product-card__brand">${r.brand}</span>
                 <h3 class="product-card__name">${r.name}</h3>
                 <span class="product-card__variant">${typeLabel} · ${r.variant}</span>
-                <p class="product-card__price">${r.price} €</p>
+                <p class="product-card__price">${r.price ? r.price + ' €' : 'Consultar precio'}</p>
               </div>
             </a>
           </article>`;
