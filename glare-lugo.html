@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>@font-face{font-family:'Parisienne Fallback';src:local('Comic Sans MS');size-adjust:65.43%;ascent-override:139.92%;descent-override:68.28%;line-gap-override:0%}@font-face{font-family:'Parisienne';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/parisienne-400-normal.woff2') format('woff2')}@font-face{font-family:'CG Fallback';src:local('Georgia');size-adjust:80.18%;ascent-override:115.25%;descent-override:35.80%;line-gap-override:0%}@font-face{font-family:'Lato Fallback';src:local('Arial');size-adjust:97.68%;ascent-override:82.42%;descent-override:19.96%;line-gap-override:20.48%}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:600;font-display:swap;src:url('assets/fonts/cormorant-garamond-600-italic.woff2') format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:swap;src:url('assets/fonts/cormorant-garamond-600-normal.woff2') format('woff2')}@font-face{font-family:'Lato';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/lato-400-normal.woff2') format('woff2')}*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{font-size:16px;-webkit-font-smoothing:antialiased}body{font-family:'Lato','Lato Fallback',sans-serif;font-weight:400;color:#1a1a1a;background-color:#fafaf8;overflow-x:hidden}img{display:block;max-width:100%}a{color:inherit;text-decoration:none}:root{--color-black:#0d0d0d;--color-white:#ffffff;--color-bg:#ffffff;--color-surface:#f5f5f3;--color-border:#e8e8e2;--color-text:#1a1a1a;--color-muted:#636360;--color-accent:#c7dbd6;--color-accent-dk:#8aafa9;--font-display:'Cormorant Garamond','CG Fallback',Georgia,serif;--font-body:'Lato','Lato Fallback',system-ui,sans-serif;--radius-sm:4px;--radius-md:8px;--radius-lg:16px;--shadow-sm:0 1px 4px rgba(0,0,0,.06);--shadow-md:0 4px 20px rgba(0,0,0,.08);--shadow-lg:0 12px 40px rgba(0,0,0,.12);--transition:.32s cubic-bezier(.25,.46,.45,.94);--container-max:1200px;--container-pad:clamp(20px,5vw,64px)}.container{max-width:var(--container-max);margin-inline:auto;padding-inline:var(--container-pad)}.btn{display:inline-block;font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;padding:14px 40px;border:1px solid transparent;cursor:pointer;white-space:nowrap}.btn--primary{background:var(--color-white);color:var(--color-black);border-color:var(--color-white)}.btn--ghost{display:inline-block;font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:14px 28px;border:1px solid rgba(255,255,255,.55);color:var(--color-white);background:transparent}.header{position:fixed;inset-block-start:0;inset-inline:0;z-index:900;height:72px;display:flex;align-items:center;background:transparent;color:var(--color-white);transition:background var(--transition),box-shadow var(--transition),color var(--transition)}.header.is-scrolled{background:rgba(250,250,248,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(0,0,0,.07);color:var(--color-text)}.header__inner{width:100%;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:24px}.header__logo{grid-column:2;justify-self:center;padding-inline:72px;font-family:'Parisienne','Parisienne Fallback',cursive;font-size:clamp(22px,2vw,26px);color:inherit;white-space:nowrap}.header__logo em{font-style:normal;font-weight:normal}.header__nav-main{grid-column:1}.header__nav-main .header__nav-list{justify-content:flex-end}.header__nav-list{list-style:none;display:flex;align-items:center;gap:4px}.header__right{grid-column:3;display:flex;align-items:center;gap:4px}.header__nav-right{display:flex;align-items:center}.nav-link{display:flex;align-items:center;gap:5px;background:none;border:none;cursor:pointer;font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:inherit;padding:6px 10px;border-radius:var(--radius-sm);white-space:nowrap}.header__actions{display:flex;align-items:center;justify-content:flex-end;gap:4px}.header__cta-link{font-family:var(--font-body);font-size:.6875rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:inherit;padding:7px 14px;border:1px solid currentColor;border-radius:var(--radius-sm);white-space:nowrap;margin-inline-end:6px}.header__icon-btn{display:flex;align-items:center;justify-content:center;background:none;border:none;cursor:pointer;color:inherit;padding:8px;border-radius:var(--radius-sm)}.header__hamburger{display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;background:none;border:none;cursor:pointer;padding:8px;color:inherit;width:36px;height:36px}@media(max-width:1024px){.header__nav-main,.header__nav-right{display:none}.header__inner{grid-template-columns:auto 1fr auto}.header__hamburger{display:flex}.header__logo{grid-column:2;justify-self:center}.header__right{grid-column:3}}@media(max-width:600px){.header{height:60px}.header__logo{padding-inline:8px}}.dropdown{position:absolute;opacity:0;visibility:hidden;pointer-events:none}.mobile-menu{position:fixed;transform:translateX(100%)}.mobile-overlay{opacity:0;pointer-events:none}
 
-  /* ── Ticker ── */
+  /* â”€â”€ Ticker â”€â”€ */
   .announcement-bar{background:#1a1a1a;color:#fff;height:40px;overflow:hidden;display:flex;align-items:center}
   .announcement-bar__track{display:inline-flex;align-items:center;white-space:nowrap;animation:ticker-scroll 42s linear infinite;gap:0;font-size:.5625rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
   .announcement-bar:hover .announcement-bar__track{animation-play-state:paused}
@@ -14,7 +14,7 @@
   .announcement-bar__sep{color:rgba(199,219,214,.7);font-size:.5rem}
   @keyframes ticker-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
-  /* ── Brand Hero ── */
+  /* â”€â”€ Brand Hero â”€â”€ */
   .brand-hero{position:relative;width:100%;height:100svh;min-height:560px;overflow:hidden;background-color:#0e0e0e;background-image:url('assets/img/brands/glare-hero.jpg');background-size:cover;background-position:center 75%}
   .brand-hero__overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,.85) 0%,rgba(10,10,10,.45) 55%,rgba(10,10,10,.18) 100%);z-index:1}
   .brand-hero__content{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding:0 var(--container-pad) clamp(48px,8vh,100px);max-width:calc(var(--container-max) + var(--container-pad)*2);margin-inline:auto}
@@ -23,7 +23,7 @@
   .brand-hero__subtitle{font-size:clamp(.9375rem,1.5vw,1.0625rem);font-weight:300;font-style:italic;color:rgba(255,255,255,.85);line-height:1.55;margin-bottom:40px;max-width:440px}
   .brand-hero__actions{display:flex;gap:14px;flex-wrap:wrap}
 
-  /* ── Editorial 2 col ── */
+  /* â”€â”€ Editorial 2 col â”€â”€ */
   .brand-editorial{display:grid;grid-template-columns:1fr 1fr;min-height:480px;border-top:1px solid var(--color-border)}
   .brand-editorial__content{display:flex;flex-direction:column;justify-content:center;padding:clamp(40px,6vw,80px);background:var(--color-surface)}
   .brand-editorial__eyebrow{font-size:.5625rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--color-muted);margin-bottom:18px;display:block}
@@ -36,7 +36,7 @@
   .brand-editorial__img-col img{width:100%;height:100%;object-fit:cover;display:block}
   @media(max-width:768px){.brand-editorial{grid-template-columns:1fr}.brand-editorial__img-col{min-height:260px;order:-1}}
 
-  /* ── Feature 3 col ── */
+  /* â”€â”€ Feature 3 col â”€â”€ */
   .brand-feature{padding:72px 0;background:#fff;border-top:1px solid var(--color-border)}
   .brand-feature__inner{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
   .brand-feature__item{text-align:center;padding:32px 24px}
@@ -45,7 +45,7 @@
   .brand-feature__desc{font-size:14px;color:var(--color-muted);line-height:1.7}
   @media(max-width:768px){.brand-feature__inner{grid-template-columns:1fr;gap:0}}
 
-  /* ── Catalog ── */
+  /* â”€â”€ Catalog â”€â”€ */
   .brand-catalog{padding:72px 0 80px;background:#fff;border-top:1px solid var(--color-border)}
   .brand-catalog__header{text-align:center;margin-bottom:36px}
   .brand-catalog__eyebrow{display:block;font-size:.5625rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--color-muted);margin-bottom:12px}
@@ -62,7 +62,7 @@
   @media(max-width:1024px){.brand-catalog__grid{grid-template-columns:repeat(2,1fr)}}
   @media(max-width:480px){.brand-catalog__grid{grid-template-columns:1fr}}
 
-  /* ── Dark CTA ── */
+  /* â”€â”€ Dark CTA â”€â”€ */
   .brand-cta{background:#1a1a1a;color:#fff;padding:80px 0;text-align:center}
   .brand-cta__title{font-family:var(--font-display);font-style:italic;font-size:clamp(28px,4vw,48px);font-weight:600;margin-bottom:18px}
   .brand-cta__desc{font-size:15px;color:rgba(255,255,255,.72);line-height:1.7;max-width:480px;margin:0 auto 36px}
@@ -150,30 +150,30 @@
   </script>
 
   <!-- SEO -->
-  <title>GLARE Eyewear en Lugo — Gafas Italianas Hechas a Mano | Panisse Óptica</title>
-  <meta name="description" content="GLARE Eyewear en Panisse Óptica, Lugo. Gafas artesanales italianas con acetato Mazzucchelli, formas originales y colores únicos. Colecciones exclusivas para quien busca una identidad propia." />
-  <meta name="author" content="Panisse Óptica" />
+  <title>GLARE Eyewear en Lugo â€” Gafas Italianas Hechas a Mano | Panisse Ã“ptica</title>
+  <meta name="description" content="GLARE Eyewear en Panisse Ã“ptica, Lugo. Gafas artesanales italianas con acetato Mazzucchelli, formas originales y colores Ãºnicos. Colecciones exclusivas para quien busca una identidad propia." />
+  <meta name="author" content="Panisse Ã“ptica" />
   <meta name="robots" content="index, follow" />
   <meta name="geo.region" content="ES-LU" />
-  <meta name="geo.placename" content="Lugo, Galicia, España" />
+  <meta name="geo.placename" content="Lugo, Galicia, EspaÃ±a" />
   <meta name="geo.position" content="43.0121154;-7.5557607" />
   <meta name="ICBM" content="43.0121154, -7.5557607" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="GLARE Eyewear en Lugo — Gafas Italianas Hechas a Mano | Panisse Óptica" />
-  <meta property="og:description" content="GLARE Eyewear en Panisse Óptica, Lugo. Gafas artesanales italianas con acetato Mazzucchelli, formas originales y colores únicos." />
+  <meta property="og:title" content="GLARE Eyewear en Lugo â€” Gafas Italianas Hechas a Mano | Panisse Ã“ptica" />
+  <meta property="og:description" content="GLARE Eyewear en Panisse Ã“ptica, Lugo. Gafas artesanales italianas con acetato Mazzucchelli, formas originales y colores Ãºnicos." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://panisse.es/glare-lugo.html" />
   <meta property="og:image" content="https://panisse.es/assets/img/brands/glare-hero.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="es_ES" />
-  <meta property="og:site_name" content="Panisse Óptica" />
+  <meta property="og:site_name" content="Panisse Ã“ptica" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="GLARE Eyewear en Lugo — Gafas Italianas Hechas a Mano | Panisse Óptica" />
-  <meta name="twitter:description" content="GLARE Eyewear en Panisse Óptica, Lugo. Gafas artesanales italianas con acetato Mazzucchelli, formas originales y colores únicos." />
+  <meta name="twitter:title" content="GLARE Eyewear en Lugo â€” Gafas Italianas Hechas a Mano | Panisse Ã“ptica" />
+  <meta name="twitter:description" content="GLARE Eyewear en Panisse Ã“ptica, Lugo. Gafas artesanales italianas con acetato Mazzucchelli, formas originales y colores Ãºnicos." />
   <meta name="twitter:image" content="https://panisse.es/assets/img/brands/glare-hero.jpg" />
 
   <!-- Canonical -->
@@ -189,20 +189,20 @@
       "Optician"
     ],
     "@id": "https://panisse.es/#business",
-    "name": "Panisse Óptica",
+    "name": "Panisse Ã“ptica",
     "url": "https://panisse.es/",
     "logo": "https://panisse.es/assets/img/logo-panisse-optica.png",
     "image": [
       "https://panisse.es/assets/img/nosotros/fachada-og.jpg",
       "https://panisse.es/assets/img/nosotros/tienda.webp"
     ],
-    "description": "Óptica boutique en el centro histórico de Lugo y Centro ZEISS Vision Expert. Gafas graduadas y de sol de autor, lentes progresivas, lentes de contacto y revisión visual con óptico-optometrista.",
+    "description": "Ã“ptica boutique en el centro histÃ³rico de Lugo y Centro ZEISS Vision Expert. Gafas graduadas y de sol de autor, lentes progresivas, lentes de contacto y revisiÃ³n visual con Ã³ptico-optometrista.",
     "telephone": "+34982301193",
     "email": "info@panisse.es",
-    "priceRange": "€€",
+    "priceRange": "â‚¬â‚¬",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Rúa do Teatro, Bajo 2",
+      "streetAddress": "RÃºa do Teatro, Bajo 2",
       "addressLocality": "Lugo",
       "addressRegion": "Galicia",
       "postalCode": "27001",
@@ -309,7 +309,7 @@
   <header class="header" id="site-header">
     <div class="header__inner container">
 
-      <nav class="header__nav-main" aria-label="Categorías principales">
+      <nav class="header__nav-main" aria-label="CategorÃ­as principales">
         <ul class="header__nav-list">
 
           <li class="nav-item has-dropdown">
@@ -330,13 +330,13 @@
                 <a href="ic-berlin-lugo.html" class="dropdown__link" role="menuitem">ic! berlin</a>
               </div>
               <div class="dropdown__footer-bar">
-                <a href="catalogo.html" class="dropdown__all">Ver todas las marcas →</a>
+                <a href="catalogo.html" class="dropdown__all">Ver todas las marcas â†’</a>
               </div>
             </div>
           </li>
 
           <li class="nav-item">
-            <a href="catalogo.html" class="nav-link">Catálogo</a>
+            <a href="catalogo.html" class="nav-link">CatÃ¡logo</a>
           </li>
 
           <li class="nav-item has-dropdown">
@@ -344,35 +344,35 @@
               Servicios <span class="nav-caret" aria-hidden="true"></span>
             </button>
             <div class="dropdown" id="dropdown-servicios" role="menu" aria-label="Servicios">
-              <a href="asesoria-montura-online.html" class="dropdown__link" role="menuitem">Asesoría Online</a>
-              <a href="revision-visual-lugo.html" class="dropdown__link" role="menuitem">Revisión Visual</a>
+              <a href="asesoria-montura-online.html" class="dropdown__link" role="menuitem">AsesorÃ­a Online</a>
+              <a href="revision-visual-lugo.html" class="dropdown__link" role="menuitem">RevisiÃ³n Visual</a>
               <a href="lentes-zeiss-lugo.html" class="dropdown__link" role="menuitem">ZEISS Vision Expert</a>
               <a href="vista-cansada-lugo.html" class="dropdown__link" role="menuitem">Vista Cansada</a>
-              <a href="baja-vision-lugo.html" class="dropdown__link" role="menuitem">Baja Visión</a>
-              <a href="servicios.html#miopia" class="dropdown__link" role="menuitem">Miopía en Niños</a>
+              <a href="baja-vision-lugo.html" class="dropdown__link" role="menuitem">Baja VisiÃ³n</a>
+              <a href="servicios.html#miopia" class="dropdown__link" role="menuitem">MiopÃ­a en NiÃ±os</a>
               <a href="servicios.html#contacto-lentes" class="dropdown__link" role="menuitem">Lentes de Contacto</a>
               <a href="servicios.html#fatiga" class="dropdown__link" role="menuitem">Fatiga Visual</a>
-              <a href="servicios.html#glaucoma" class="dropdown__link" role="menuitem">Prevención Glaucoma</a>
-              <a href="servicios.html#instrumentos" class="dropdown__link" role="menuitem">Instrumentos Ópticos</a>
+              <a href="servicios.html#glaucoma" class="dropdown__link" role="menuitem">PrevenciÃ³n Glaucoma</a>
+              <a href="servicios.html#instrumentos" class="dropdown__link" role="menuitem">Instrumentos Ã“pticos</a>
             </div>
           </li>
 
         </ul>
       </nav>
 
-      <a href="/" class="header__logo" aria-label="Panisse Óptica – inicio">
-        Panisse <em>Óptica</em>
+      <a href="/" class="header__logo" aria-label="Panisse Ã“ptica â€“ inicio">
+        Panisse <em>Ã“ptica</em>
       </a>
 
       <div class="header__right">
-        <nav class="header__nav-right" aria-label="Menú secundario">
+        <nav class="header__nav-right" aria-label="MenÃº secundario">
           <ul class="header__nav-list">
 
             <li class="nav-item has-dropdown">
               <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="conocenos">
-                Conócenos <span class="nav-caret" aria-hidden="true"></span>
+                ConÃ³cenos <span class="nav-caret" aria-hidden="true"></span>
               </button>
-              <div class="dropdown" id="dropdown-conocenos" role="menu" aria-label="Conócenos">
+              <div class="dropdown" id="dropdown-conocenos" role="menu" aria-label="ConÃ³cenos">
                 <a href="nosotros.html" class="dropdown__link" role="menuitem">Manifiesto</a>
                 <a href="nosotros.html#equipo" class="dropdown__link" role="menuitem">El Equipo</a>
                 <a href="panisse-marca.html" class="dropdown__link" role="menuitem">La Marca Panisse</a>
@@ -381,10 +381,10 @@
 
             <li class="nav-item has-dropdown">
               <button class="nav-link" aria-haspopup="true" aria-expanded="false" data-dropdown="opticas">
-                Ópticas <span class="nav-caret" aria-hidden="true"></span>
+                Ã“pticas <span class="nav-caret" aria-hidden="true"></span>
               </button>
               <div class="dropdown" id="dropdown-opticas" role="menu" aria-label="Nuestras tiendas">
-                <a href="contacto.html" class="dropdown__link" role="menuitem">Panisse Óptica — Lugo</a>
+                <a href="contacto.html" class="dropdown__link" role="menuitem">Panisse Ã“ptica â€” Lugo</a>
               </div>
             </li>
 
@@ -412,7 +412,7 @@
                 <circle cx="12" cy="7" r="4"/>
               </svg>
             </button>
-            <button class="header__icon-btn header__cart-btn" aria-label="Carrito de la compra, 0 artículos">
+            <button class="header__icon-btn header__cart-btn" aria-label="Carrito de la compra, 0 artÃ­culos">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
                    stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
@@ -424,7 +424,7 @@
           </div>
 
           <button class="header__hamburger" id="hamburger-btn"
-                  aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+                  aria-label="Abrir menÃº" aria-expanded="false" aria-controls="mobile-menu">
             <span></span>
             <span></span>
             <span></span>
@@ -435,11 +435,11 @@
     </div>
   </header>
 
-  <!-- MENÚ MÓVIL -->
-  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Menú principal">
+  <!-- MENÃš MÃ“VIL -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="MenÃº principal">
     <div class="mobile-menu__header">
-      <a href="/" class="mobile-menu__logo">Panisse <em>Óptica</em></a>
-      <button class="mobile-menu__close" id="mobile-close-btn" aria-label="Cerrar menú">
+      <a href="/" class="mobile-menu__logo">Panisse <em>Ã“ptica</em></a>
+      <button class="mobile-menu__close" id="mobile-close-btn" aria-label="Cerrar menÃº">
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
           <line x1="18" y1="6" x2="6" y2="18"/>
@@ -448,12 +448,12 @@
       </button>
     </div>
 
-    <nav class="mobile-menu__body" aria-label="Navegación móvil">
+    <nav class="mobile-menu__body" aria-label="NavegaciÃ³n mÃ³vil">
       <ul class="mobile-menu__list">
 
         <li class="mobile-item has-submenu">
           <button class="mobile-link" data-submenu="mm-marcas">
-            Marcas <span class="mobile-arrow" aria-hidden="true">›</span>
+            Marcas <span class="mobile-arrow" aria-hidden="true">â€º</span>
           </button>
           <ul class="mobile-submenu" id="mm-marcas" aria-hidden="true">
             <li><a href="panisse-lugo.html" class="mobile-sublink">Panisse</a></li>
@@ -466,33 +466,33 @@
             <li><a href="marcas.html#mr-boho" class="mobile-sublink">Mr. Boho</a></li>
             <li><a href="einstoffen-lugo.html" class="mobile-sublink">Einstoffen</a></li>
             <li><a href="ic-berlin-lugo.html" class="mobile-sublink">ic! berlin</a></li>
-            <li><a href="catalogo.html" class="mobile-sublink mobile-sublink--all">Ver todas las marcas →</a></li>
+            <li><a href="catalogo.html" class="mobile-sublink mobile-sublink--all">Ver todas las marcas â†’</a></li>
           </ul>
         </li>
         <li class="mobile-item">
-          <a href="catalogo.html" class="mobile-link">Catálogo</a>
+          <a href="catalogo.html" class="mobile-link">CatÃ¡logo</a>
         </li>
         <li class="mobile-item has-submenu">
           <button class="mobile-link" data-submenu="mm-servicios">
-            Servicios <span class="mobile-arrow" aria-hidden="true">›</span>
+            Servicios <span class="mobile-arrow" aria-hidden="true">â€º</span>
           </button>
           <ul class="mobile-submenu" id="mm-servicios" aria-hidden="true">
-            <li><a href="revision-visual-lugo.html" class="mobile-sublink">Revisión Visual</a></li>
+            <li><a href="revision-visual-lugo.html" class="mobile-sublink">RevisiÃ³n Visual</a></li>
             <li><a href="lentes-zeiss-lugo.html" class="mobile-sublink">ZEISS Vision Expert</a></li>
             <li><a href="vista-cansada-lugo.html" class="mobile-sublink">Vista Cansada</a></li>
-            <li><a href="baja-vision-lugo.html" class="mobile-sublink">Baja Visión</a></li>
-            <li><a href="servicios.html#miopia" class="mobile-sublink">Miopía en Niños</a></li>
+            <li><a href="baja-vision-lugo.html" class="mobile-sublink">Baja VisiÃ³n</a></li>
+            <li><a href="servicios.html#miopia" class="mobile-sublink">MiopÃ­a en NiÃ±os</a></li>
             <li><a href="servicios.html#contacto-lentes" class="mobile-sublink">Lentes de Contacto</a></li>
             <li><a href="servicios.html#fatiga" class="mobile-sublink">Fatiga Visual</a></li>
-            <li><a href="servicios.html#glaucoma" class="mobile-sublink">Prevención Glaucoma</a></li>
-            <li><a href="servicios.html#instrumentos" class="mobile-sublink">Instrumentos Ópticos</a></li>
-            <li><a href="asesoria-montura-online.html" class="mobile-sublink">Asesoría Online</a></li>
+            <li><a href="servicios.html#glaucoma" class="mobile-sublink">PrevenciÃ³n Glaucoma</a></li>
+            <li><a href="servicios.html#instrumentos" class="mobile-sublink">Instrumentos Ã“pticos</a></li>
+            <li><a href="asesoria-montura-online.html" class="mobile-sublink">AsesorÃ­a Online</a></li>
           </ul>
         </li>
 
         <li class="mobile-item has-submenu">
           <button class="mobile-link" data-submenu="mm-conocenos">
-            Conócenos <span class="mobile-arrow" aria-hidden="true">›</span>
+            ConÃ³cenos <span class="mobile-arrow" aria-hidden="true">â€º</span>
           </button>
           <ul class="mobile-submenu" id="mm-conocenos" aria-hidden="true">
             <li><a href="nosotros.html" class="mobile-sublink">Manifiesto</a></li>
@@ -503,10 +503,10 @@
 
         <li class="mobile-item has-submenu">
           <button class="mobile-link" data-submenu="mm-opticas">
-            Ópticas <span class="mobile-arrow" aria-hidden="true">›</span>
+            Ã“pticas <span class="mobile-arrow" aria-hidden="true">â€º</span>
           </button>
           <ul class="mobile-submenu" id="mm-opticas" aria-hidden="true">
-            <li><a href="contacto.html" class="mobile-sublink">Panisse Óptica — Lugo</a></li>
+            <li><a href="contacto.html" class="mobile-sublink">Panisse Ã“ptica â€” Lugo</a></li>
           </ul>
         </li>
 
@@ -542,14 +542,14 @@
   <main id="main-content">
 
     <!-- 1. HERO -->
-    <section class="brand-hero" aria-label="GLARE Eyewear — gafas italianas hechas a mano">
+    <section class="brand-hero" aria-label="GLARE Eyewear â€” gafas italianas hechas a mano">
       <div class="brand-hero__overlay" aria-hidden="true"></div>
       <div class="brand-hero__content">
-        <span class="brand-hero__eyebrow">Hecho a mano · Italia · Acetato Mazzucchelli · Noema Vision</span>
+        <span class="brand-hero__eyebrow">Hecho a mano Â· Italia Â· Acetato Mazzucchelli Â· Noema Vision</span>
         <h1 class="brand-hero__title"><em>GLARE</em></h1>
-        <p class="brand-hero__subtitle">El color no es decoración. Es identidad. Desde Italia, para quienes buscan gafas con carácter propio.</p>
+        <p class="brand-hero__subtitle">El color no es decoraciÃ³n. Es identidad. Desde Italia, para quienes buscan gafas con carÃ¡cter propio.</p>
         <div class="brand-hero__actions">
-          <a href="#catalogo" class="btn btn--primary">Ver la colección</a>
+          <a href="#catalogo" class="btn btn--primary">Ver la colecciÃ³n</a>
           <a href="contacto.html" class="btn btn--ghost">Pedir cita</a>
         </div>
       </div>
@@ -559,34 +559,34 @@
     <div class="announcement-bar" aria-hidden="true">
       <div class="announcement-bar__track">
         <span class="announcement-bar__item">Hecho a mano</span>
-        <span class="announcement-bar__sep">·</span>
+        <span class="announcement-bar__sep">Â·</span>
         <span class="announcement-bar__item">Italia</span>
-        <span class="announcement-bar__sep">·</span>
+        <span class="announcement-bar__sep">Â·</span>
         <span class="announcement-bar__item">Acetato Mazzucchelli</span>
-        <span class="announcement-bar__sep">·</span>
+        <span class="announcement-bar__sep">Â·</span>
         <span class="announcement-bar__item">Formas originales</span>
-        <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Colores únicos</span>
-        <span class="announcement-bar__sep">·</span>
+        <span class="announcement-bar__sep">Â·</span>
+        <span class="announcement-bar__item">Colores Ãºnicos</span>
+        <span class="announcement-bar__sep">Â·</span>
         <span class="announcement-bar__item">Identidad propia</span>
-        <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Noema Vision · Génova</span>
-        <span class="announcement-bar__sep">·</span>
+        <span class="announcement-bar__sep">Â·</span>
+        <span class="announcement-bar__item">Noema Vision Â· GÃ©nova</span>
+        <span class="announcement-bar__sep">Â·</span>
         <!-- duplicado para loop continuo -->
         <span class="announcement-bar__item">Hecho a mano</span>
-        <span class="announcement-bar__sep">·</span>
+        <span class="announcement-bar__sep">Â·</span>
         <span class="announcement-bar__item">Italia</span>
-        <span class="announcement-bar__sep">·</span>
+        <span class="announcement-bar__sep">Â·</span>
         <span class="announcement-bar__item">Acetato Mazzucchelli</span>
-        <span class="announcement-bar__sep">·</span>
+        <span class="announcement-bar__sep">Â·</span>
         <span class="announcement-bar__item">Formas originales</span>
-        <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Colores únicos</span>
-        <span class="announcement-bar__sep">·</span>
+        <span class="announcement-bar__sep">Â·</span>
+        <span class="announcement-bar__item">Colores Ãºnicos</span>
+        <span class="announcement-bar__sep">Â·</span>
         <span class="announcement-bar__item">Identidad propia</span>
-        <span class="announcement-bar__sep">·</span>
-        <span class="announcement-bar__item">Noema Vision · Génova</span>
-        <span class="announcement-bar__sep">·</span>
+        <span class="announcement-bar__sep">Â·</span>
+        <span class="announcement-bar__item">Noema Vision Â· GÃ©nova</span>
+        <span class="announcement-bar__sep">Â·</span>
       </div>
     </div>
 
@@ -596,44 +596,44 @@
         <span class="brand-editorial__eyebrow">La marca</span>
         <h2 class="brand-editorial__title">Cuando la luz toma forma</h2>
         <div class="brand-editorial__body">
-          <p>GLARE nació en Génova con una premisa clara: el color no es un accesorio de la forma, sino su razón de ser. Cada montura parte de una selección rigurosa de acetatos premium — principalmente de Mazzucchelli, la maison italiana de referencia — y se trabaja a mano hasta encontrar la combinación exacta entre silueta y tono.</p>
-          <p>No se trata de seguir tendencias. GLARE trabaja con formas originales que desafían las geometrías convencionales: hexagonales, angulares, translúcidas. Cada color tiene nombre y cada montura tiene carácter. <em>Independencia visual hecha a mano.</em></p>
-          <p>Detrás de GLARE está Noema Vision S.r.l., una empresa italiana con vocación artesanal y visión internacional, arraigada en la investigación de materiales, luz y color.</p>
+          <p>GLARE naciÃ³ en GÃ©nova con una premisa clara: el color no es un accesorio de la forma, sino su razÃ³n de ser. Cada montura parte de una selecciÃ³n rigurosa de acetatos premium â€” principalmente de Mazzucchelli, la maison italiana de referencia â€” y se trabaja a mano hasta encontrar la combinaciÃ³n exacta entre silueta y tono.</p>
+          <p>No se trata de seguir tendencias. GLARE trabaja con formas originales que desafÃ­an las geometrÃ­as convencionales: hexagonales, angulares, translÃºcidas. Cada color tiene nombre y cada montura tiene carÃ¡cter. <em>Independencia visual hecha a mano.</em></p>
+          <p>DetrÃ¡s de GLARE estÃ¡ Noema Vision S.r.l., una empresa italiana con vocaciÃ³n artesanal y visiÃ³n internacional, arraigada en la investigaciÃ³n de materiales, luz y color.</p>
         </div>
-        <span class="brand-editorial__badge">· GLARE Eyewear · Hecho a mano en Italia · Panisse Óptica Lugo</span>
+        <span class="brand-editorial__badge">Â· GLARE Eyewear Â· Hecho a mano en Italia Â· Panisse Ã“ptica Lugo</span>
       </div>
       <div class="brand-editorial__img-col" aria-hidden="true">
         <img src="assets/img/brands/glare-editorial.jpg"
-             alt="GLARE Eyewear — gafas artesanales italianas con acetato Mazzucchelli"
+             alt="GLARE Eyewear â€” gafas artesanales italianas con acetato Mazzucchelli"
              loading="lazy" />
       </div>
     </section>
 
     <!-- 4. FEATURES -->
-    <section class="brand-feature" aria-label="Características GLARE Eyewear">
+    <section class="brand-feature" aria-label="CaracterÃ­sticas GLARE Eyewear">
       <div class="container">
         <div class="brand-feature__inner">
           <div class="brand-feature__item">
             <h3 class="brand-feature__title">Hecho a mano en Italia</h3>
-            <p class="brand-feature__desc">Cada montura GLARE se fabrica artesanalmente en Italia. El trabajo manual permite un nivel de detalle y acabado imposible de conseguir en producción industrial: bordes pulidos a mano, ensamblajes precisos, acetatos tratados uno a uno.</p>
+            <p class="brand-feature__desc">Cada montura GLARE se fabrica artesanalmente en Italia. El trabajo manual permite un nivel de detalle y acabado imposible de conseguir en producciÃ³n industrial: bordes pulidos a mano, ensamblajes precisos, acetatos tratados uno a uno.</p>
           </div>
           <div class="brand-feature__item">
             <h3 class="brand-feature__title">Acetato Mazzucchelli</h3>
-            <p class="brand-feature__desc">GLARE trabaja principalmente con acetatos de Mazzucchelli, la maison italiana fundada en 1849 y referencia mundial en materiales de acetato para óptica. Sus placas de acetato de celulosa están reconocidas por su profundidad de color, luminosidad y durabilidad.</p>
+            <p class="brand-feature__desc">GLARE trabaja principalmente con acetatos de Mazzucchelli, la maison italiana fundada en 1849 y referencia mundial en materiales de acetato para Ã³ptica. Sus placas de acetato de celulosa estÃ¡n reconocidas por su profundidad de color, luminosidad y durabilidad.</p>
           </div>
           <div class="brand-feature__item">
             <h3 class="brand-feature__title">El color como identidad</h3>
-            <p class="brand-feature__desc">GLARE reúne formas originales, acetatos seleccionados y colores únicos para quienes buscan gafas independientes con una identidad propia. No siguen tendencias: proponen una mirada propia sobre el color como elemento definitorio de quien las lleva.</p>
+            <p class="brand-feature__desc">GLARE reÃºne formas originales, acetatos seleccionados y colores Ãºnicos para quienes buscan gafas independientes con una identidad propia. No siguen tendencias: proponen una mirada propia sobre el color como elemento definitorio de quien las lleva.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 5. CATÁLOGO EMBEBIDO -->
-    <section class="brand-catalog" id="catalogo" aria-label="Colección GLARE en Panisse Óptica">
+    <!-- 5. CATÃLOGO EMBEBIDO -->
+    <section class="brand-catalog" id="catalogo" aria-label="ColecciÃ³n GLARE en Panisse Ã“ptica">
       <div class="container">
         <header class="brand-catalog__header">
-          <span class="brand-catalog__eyebrow">La colección completa</span>
+          <span class="brand-catalog__eyebrow">La colecciÃ³n completa</span>
           <h2 class="brand-catalog__title">GLARE en Panisse</h2>
         </header>
 
@@ -644,24 +644,24 @@
         </div>
 
         <div class="brand-catalog__grid" id="glare-catalog-grid" role="list" aria-label="Productos GLARE">
-          <!-- Se carga vía JS -->
+          <!-- Se carga vÃ­a JS -->
         </div>
         <p class="brand-catalog__empty" id="glare-catalog-empty" aria-live="polite">
-          Pronto disponible. Visítanos en tienda para conocer la colección completa o
+          Pronto disponible. VisÃ­tanos en tienda para conocer la colecciÃ³n completa o
           <a href="contacto.html">pide cita previa</a>.
         </p>
 
         <div class="brand-catalog__cta">
-          <a href="catalogo.html">Ver toda la colección →</a>
+          <a href="catalogo.html">Ver toda la colecciÃ³n â†’</a>
         </div>
       </div>
     </section>
 
     <!-- 6. CTA FINAL -->
-    <section class="brand-cta" aria-label="Pedir cita en Panisse Óptica">
+    <section class="brand-cta" aria-label="Pedir cita en Panisse Ã“ptica">
       <div class="container">
-        <h2 class="brand-cta__title">¿Quieres descubrir GLARE?</h2>
-        <p class="brand-cta__desc">El mejor modo de conocer GLARE es probártelas. Ven a Panisse Óptica en Lugo y déjate sorprender por sus colores y formas únicas.</p>
+        <h2 class="brand-cta__title">Â¿Quieres descubrir GLARE?</h2>
+        <p class="brand-cta__desc">El mejor modo de conocer GLARE es probÃ¡rtelas. Ven a Panisse Ã“ptica en Lugo y dÃ©jate sorprender por sus colores y formas Ãºnicas.</p>
         <a href="contacto.html" class="btn btn--primary">Pedir cita previa</a>
       </div>
     </section>
@@ -669,15 +669,15 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="footer" aria-label="Pie de página">
+  <footer class="footer" aria-label="Pie de pÃ¡gina">
     <div class="footer__inner container">
 
       <div class="footer__col footer__col--brand">
-        <a href="/" class="footer__logo" aria-label="Panisse Óptica — inicio">
-          Panisse <em>Óptica</em>
+        <a href="/" class="footer__logo" aria-label="Panisse Ã“ptica â€” inicio">
+          Panisse <em>Ã“ptica</em>
         </a>
         <p class="footer__mission">
-          Óptica boutique en Lugo. Cuidamos tu salud visual con la mejor tecnología y te ofrecemos una selección artesanal de gafas de diseño de autor.
+          Ã“ptica boutique en Lugo. Cuidamos tu salud visual con la mejor tecnologÃ­a y te ofrecemos una selecciÃ³n artesanal de gafas de diseÃ±o de autor.
         </p>
         <div class="footer__social">
           <a href="https://www.instagram.com/panisse_optica/" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
@@ -692,7 +692,7 @@
         </div>
       </div>
 
-      <nav class="footer__col footer__col--links" aria-label="Navegación del footer">
+      <nav class="footer__col footer__col--links" aria-label="NavegaciÃ³n del footer">
         <h3 class="footer__heading">Explorar</h3>
         <ul class="footer__list">
           <li><a href="catalogo.html?tipo=graduadas" class="footer__link">Gafas Graduadas</a></li>
@@ -707,43 +707,43 @@
       <div class="footer__col footer__col--stores">
         <h3 class="footer__heading">Nuestra Tienda</h3>
         <div class="footer__store">
-          <p class="footer__store-name">Panisse Óptica</p>
+          <p class="footer__store-name">Panisse Ã“ptica</p>
           <address class="footer__address">
-            Rúa do Teatro, Bajo 2<br>
+            RÃºa do Teatro, Bajo 2<br>
             27001 Lugo
           </address>
           <ul class="footer__store-details">
             <li><a href="tel:+34982301193">982 30 11 93</a></li>
             <li><a href="mailto:info@panisse.es">info@panisse.es</a></li>
-            <li>L–V 10:00–13:30 / 16:30–20:30<br>Sáb 10:30–13:30</li>
+            <li>Lâ€“V 10:00â€“13:30 / 16:30â€“20:30<br>SÃ¡b 10:30â€“13:30</li>
           </ul>
-          <h3 class="footer__heading" style="margin-top:24px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.1)">Información</h3>
+          <h3 class="footer__heading" style="margin-top:24px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.1)">InformaciÃ³n</h3>
           <ul class="footer__store-details">
             <li><a href="nosotros.html">Sobre Nosotros</a></li>
             <li><a href="aviso-legal.html">Aviso Legal</a></li>
             <li><a href="privacidad.html">Privacidad y Cookies</a></li>
-            <li><a href="eliminar-datos.html">Eliminación de Datos</a></li>
+            <li><a href="eliminar-datos.html">EliminaciÃ³n de Datos</a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer__col footer__col--newsletter">
         <h3 class="footer__heading">Novedades</h3>
-        <p class="footer__newsletter-text">Nuevas colecciones, consejos ópticos y artículos de autor. Sin spam, solo lo que merece la pena.</p>
+        <p class="footer__newsletter-text">Nuevas colecciones, consejos Ã³pticos y artÃ­culos de autor. Sin spam, solo lo que merece la pena.</p>
         <form class="footer__form" id="newsletter-form" novalidate>
           <div class="footer__form-group">
-            <input type="email" id="newsletter-email" class="footer__input" placeholder="tu@email.com" autocomplete="email" required aria-label="Tu correo electrónico" />
-            <button type="submit" class="footer__submit" aria-label="Suscribirse">→</button>
+            <input type="email" id="newsletter-email" class="footer__input" placeholder="tu@email.com" autocomplete="email" required aria-label="Tu correo electrÃ³nico" />
+            <button type="submit" class="footer__submit" aria-label="Suscribirse">â†’</button>
           </div>
           <p class="footer__form-msg" id="newsletter-msg"></p>
-          <p class="footer__newsletter-legal">Al suscribirte aceptas nuestra <a href="privacidad.html">política de privacidad</a>. Puedes darte de baja cuando quieras.</p>
+          <p class="footer__newsletter-legal">Al suscribirte aceptas nuestra <a href="privacidad.html">polÃ­tica de privacidad</a>. Puedes darte de baja cuando quieras.</p>
         </form>
       </div>
 
     </div>
     <div class="footer__bottom">
       <div class="container footer__bottom-inner">
-        <p class="footer__copy">© <span id="footer-year"></span> Panisse Óptica · Todos los derechos reservados</p>
+        <p class="footer__copy">Â© <span id="footer-year"></span> Panisse Ã“ptica Â· Todos los derechos reservados</p>
       </div>
     </div>
   </footer>
@@ -759,7 +759,7 @@
     <span class="whatsapp-float__tooltip">WhatsApp</span>
   </a>
 
-  <!-- Catálogo embebido GLARE -->
+  <!-- CatÃ¡logo embebido GLARE -->
   <script>
   (function () {
     'use strict';
@@ -776,8 +776,8 @@
       var typeLabel = p.type === 'sol' ? 'Sol' : 'Graduadas';
       var badge     = p.is_new ? '<div class="product-card__badge">Nuevo</div>' : '';
       var dataNew   = p.is_new ? ' data-new="true"' : '';
-      var priceHtml = (p.price && p.price > 0) ? p.price + ' €' : 'Consultar precio';
-      var waMsg     = encodeURIComponent('Hola, me gustaría reservar las gafas ' + p.brand + ' ' + p.name + ' para probarlas en vuestra tienda. ¿Cuándo puedo pasarme?');
+      var priceHtml = (p.price && p.price > 0) ? p.price + ' â‚¬' : 'Consultar precio';
+      var waMsg     = encodeURIComponent('Hola, me gustarÃ­a reservar las gafas ' + p.brand + ' ' + p.name + ' para probarlas en vuestra tienda. Â¿CuÃ¡ndo puedo pasarme?');
 
       return '<article class="product-card"' +
                ' data-type="' + p.type + '"' +
@@ -789,7 +789,7 @@
         '<a href="producto.html?id=' + p.id + '" class="product-card__link" aria-label="Ver ' + p.brand + ' ' + p.name + '">' +
           '<div class="product-card__image-wrap">' +
             '<img src="' + imgSrc + '"' +
-                 ' alt="' + p.brand + ' ' + p.name + ' — ' + p.variant + '"' +
+                 ' alt="' + p.brand + ' ' + p.name + ' â€” ' + p.variant + '"' +
                  ' class="product-card__image is-loaded"' +
                  ' loading="lazy"' +
                  ' decoding="async"' +
@@ -799,7 +799,7 @@
           '<div class="product-card__info">' +
             '<span class="product-card__brand">' + p.brand + '</span>' +
             '<h2 class="product-card__name">' + p.name + '</h2>' +
-            '<span class="product-card__variant">' + typeLabel + ' · ' + p.variant + '</span>' +
+            '<span class="product-card__variant">' + typeLabel + ' Â· ' + p.variant + '</span>' +
             '<p class="product-card__price">' + priceHtml + '</p>' +
           '</div>' +
         '</a>' +
@@ -840,7 +840,7 @@
       });
     });
 
-    fetch('data/products.json?v=12')
+    fetch('data/products.json?v=13')
       .then(function (res) {
         if (!res.ok) throw new Error('HTTP ' + res.status);
         return res.json();
@@ -850,8 +850,8 @@
         applyFilter();
       })
       .catch(function (err) {
-        console.warn('[Panisse] No se pudo cargar el catálogo de GLARE.', err);
-        emptyMsg.textContent = 'No se pudo cargar el catálogo. Visita nuestra tienda para ver la colección completa.';
+        console.warn('[Panisse] No se pudo cargar el catÃ¡logo de GLARE.', err);
+        emptyMsg.textContent = 'No se pudo cargar el catÃ¡logo. Visita nuestra tienda para ver la colecciÃ³n completa.';
         emptyMsg.classList.add('is-visible');
       });
   })();
@@ -888,11 +888,11 @@
       var mBtn = document.getElementById('mobile-lang-btn');
       function updateFlags() {
         var l = getLang();
-        var flag = l === 'en' ? '🇬🇧' : '🇪🇸';
+        var flag = l === 'en' ? 'ðŸ‡¬ðŸ‡§' : 'ðŸ‡ªðŸ‡¸';
         if (btn) btn.innerHTML = flag;
         if (mBtn) {
-          mBtn.querySelector('.mobile-lang-label').textContent = l === 'en' ? 'Español' : 'English';
-          mBtn.innerHTML = flag + ' <span class="mobile-lang-label">' + (l === 'en' ? 'Español' : 'English') + '</span>';
+          mBtn.querySelector('.mobile-lang-label').textContent = l === 'en' ? 'EspaÃ±ol' : 'English';
+          mBtn.innerHTML = flag + ' <span class="mobile-lang-label">' + (l === 'en' ? 'EspaÃ±ol' : 'English') + '</span>';
         }
       }
       updateFlags();
