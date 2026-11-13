@@ -1470,12 +1470,12 @@
   <script>
     (function() {
       var featured = [
-        {"id":"emporio-armani-ea4266u","name":"EA4266U","brand":"Emporio Armani","brand_slug":"emporio-armani","type":"sol","price":147,"variant":"Gris Mate / Marrón","placeholder":"https://placehold.co/600x480/1a1a1a/c8b090?text=Emporio+Armani","image":"assets/img/products/emporio-armani/emporio-armani-ea4266u-1.jpg"},
-        {"id":"einstoffen-marquis-cranberry","name":"Marquis","brand":"Einstoffen","brand_slug":"einstoffen","type":"graduadas","price":295,"variant":"Cranberry","placeholder":"https://placehold.co/600x480/8b1a2e/c8a96c?text=Einstoffen","image":"assets/img/products/einstoffen/marquis-cranberry-f.jpg","is_new":true},
-        {"id":"ray-ban-rb3025-aviator-chromance-oro","name":"RB3025 Aviator Chromance","brand":"Ray-Ban","brand_slug":"ray-ban","type":"sol","price":223,"variant":"Oro / Gris Azulado Espejo Polar Chromance","placeholder":"https://placehold.co/600x480/c8a84c/1a1a1a?text=Ray-Ban+Chromance","image":"assets/img/products/ray-ban/ray-ban-rb3025-chromance-1.jpg","is_new":true},
-        {"id":"einstoffen-baronne-greenwalnut","name":"Baronne","brand":"Einstoffen","brand_slug":"einstoffen","type":"graduadas","price":195,"variant":"Verde / Nogal","placeholder":"https://placehold.co/600x480/2a5a3a/c8a06c?text=Einstoffen","image":"assets/img/products/einstoffen/baronne-greenwalnut-f.jpg","is_new":true},
-        {"id":"antica-occhialeria-brahms","name":"Brahms","brand":"Antica Occhialeria","brand_slug":"antica-occhialeria","type":"sol","price":185,"variant":"Carey Gris","placeholder":"https://placehold.co/600x480/4a4540/5a7a4a?text=Antica+Occhialeria","image":"assets/img/products/antica-occhialeria/antica-occhialeria-brahms/antica-occhialeria-brahms-1.jpg"},
-        {"id":"swarovski-sk7043-verde-oro","name":"SK7043","brand":"Swarovski","brand_slug":"swarovski","type":"sol","price":190,"variant":"Oro / Verde Degradado","placeholder":"https://placehold.co/600x480/2a4a2a/d4af37?text=Swarovski","image":"assets/img/products/swarovski/swarovski-sk7043-verde-1.jpg","is_new":true}
+        {"id":"antica-occhialeria-rhys","name":"Rhys","brand":"Antica Occhialeria","price":185,"image":"assets/img/products/antica-occhialeria/antica-occhialeria-rhys/antica-occhialeria-rhys-1.jpg"},
+        {"id":"einstoffen-aesoris-dark-brown","name":"Æsoris","brand":"Einstoffen","price":375,"image":"assets/img/products/einstoffen/aesoris-dark-brown-f.jpg","is_new":true},
+        {"id":"antica-occhialeria-miller-morado","name":"Miller","brand":"Antica Occhialeria","price":185,"image":"assets/img/products/antica-occhialeria/antica-occhialeria-miller-morado/antica-occhialeria-miller-morado-1.jpg"},
+        {"id":"emporio-armani-ea2172d","name":"EA2172D","brand":"Emporio Armani","price":147,"image":"assets/img/products/emporio-armani/emporio-armani-ea2172d-1.jpg"},
+        {"id":"ic-berlin-inko-mondrian-blue","name":"Inko","brand":"ic! berlin","price":null,"image":"assets/img/products/ic-berlin/ic-berlin-inko-mondrian-blue-f.jpg","is_new":true},
+        {"id":"glare-marzio-teal","name":"Marzio","brand":"GLARE","price":null,"image":"assets/img/products/glare/glare-marzio-teal-1.jpg","is_new":true}
       ];
 
       var grid = document.getElementById('products-grid');
@@ -1493,7 +1493,7 @@
                 '<div class="lp-product__info">',
                   '<span class="lp-product__brand">' + p.brand + '</span>',
                   '<h3 class="lp-product__name">' + p.name + '</h3>',
-                  '<span class="lp-product__price">' + p.price + ' €</span>',
+                  '<span class="lp-product__price">' + (p.price ? p.price + ' €' : 'Consultar precio') + '</span>',
                 '</div>',
               '</a>',
             '</article>'
