@@ -8,9 +8,12 @@ Datos básicos:
 - Coordenadas: 43.0121154, -7.5557607
 - Teléfono: +34 982 30 11 93 · WhatsApp: +34 614 296 965 · Email: info@panisse.es
 - Horario: lunes a viernes 10:00-13:30 y 16:30-20:30; sábados 10:30-13:30; domingos cerrado
-- Distribuidor oficial de todas las marcas que vende. En exclusiva en Lugo: ic! berlin, Einstoffen, Antica Occhialeria y la marca propia Panisse.
+- Distribuidor oficial de todas las marcas que vende. En exclusiva en Lugo: ic! berlin, Einstoffen y GLARE. En exclusiva en Galicia: Antica Occhialeria. Marca propia: Panisse.
+- Las gafas no se envían: se reservan online o por WhatsApp y se prueban y recogen en la tienda, con ajuste del óptico.
+- Área de servicio: Lugo ciudad y provincia (Monforte de Lemos, Sarria, Vilalba, Viveiro, Chantada…), con cita previa.
 - Instagram: https://www.instagram.com/panisse_optica/
 - Ficha de Google: https://www.google.com/maps/place/?q=place_id:ChIJ6aHuLcjPMQ0R4QDgQ1YDaGI
+- Dejar una reseña en Google: https://search.google.com/local/writereview?placeid=ChIJ6aHuLcjPMQ0R4QDgQ1YDaGI
 
 ## Servicios
 
@@ -30,10 +33,12 @@ Datos básicos:
 
 - [Marcas](https://panisse.es/marcas.html): Ray-Ban, Swarovski, Emporio Armani, Polaroid, Mr. Boho y las exclusivas
 - [ic! berlin en Lugo](https://panisse.es/ic-berlin-lugo.html): gafas de Berlín sin tornillos, en exclusiva en Lugo
-- [Einstoffen en Lugo](https://panisse.es/einstoffen-lugo.html): diseño suizo, en exclusiva en Lugo
+- [Einstoffen en Lugo](https://panisse.es/einstoffen-lugo.html): diseño suizo, fabricadas en Alemania y Japón, en exclusiva en Lugo
+- [GLARE en Lugo](https://panisse.es/glare-lugo.html): gafas italianas hechas a mano en acetato Mazzucchelli, en exclusiva en Lugo
 - [Antica Occhialeria en Lugo](https://panisse.es/antica-occhialeria-lugo.html): acetato hecho a mano en Florencia, distribuidor exclusivo en Galicia
-- [Panisse, marca propia](https://panisse.es/panisse-marca.html)
-- [Catálogo](https://panisse.es/catalogo.html): monturas graduadas y de sol con precio
+- [Colección Panisse](https://panisse.es/panisse-lugo.html): monturas de la marca propia, solo en la tienda de Lugo
+- [Panisse, historia de la marca](https://panisse.es/panisse-marca.html)
+- [Catálogo](https://panisse.es/catalogo.html): unas 120 monturas graduadas y de sol con ficha propia (cada gafa en https://panisse.es/gafas-<id>.html); en tienda hay más de 400 modelos
 
 ## Sobre nosotros y contacto
 
@@ -51,6 +56,7 @@ Datos básicos:
 - [Guía de gafas de diseño](https://panisse.es/blog/guia-gafas-diseno-lugo.html)
 - [Gafas de autor frente a fabricación en serie](https://panisse.es/blog/gafas-autor-vs-fabricacion-serie.html)
 - [Cómo cuidar las gafas](https://panisse.es/blog/cuidar-gafas.html)
+- [Gafas para ver un eclipse solar](https://panisse.es/blog/gafas-eclipse-solar-lugo.html)
 
 ## Optional
 

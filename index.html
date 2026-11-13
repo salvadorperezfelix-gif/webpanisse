@@ -189,11 +189,17 @@
         "closes": "13:30"
       }
     ],
-    "areaServed": {
-      "@type": "City",
-      "name": "Lugo",
-      "@id": "https://www.wikidata.org/wiki/Q8810"
-    },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Lugo",
+        "@id": "https://www.wikidata.org/wiki/Q8810"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Provincia de Lugo"
+      }
+    ],
     "founder": {
       "@id": "https://panisse.es/#felix"
     },
@@ -202,6 +208,37 @@
       "https://www.facebook.com/profile.php?id=61586908144350",
       "https://www.tiktok.com/@panisse_optica",
       "https://www.google.com/maps/place/?q=place_id:ChIJ6aHuLcjPMQ0R4QDgQ1YDaGI"
+    ],
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "telephone": "+34982301193",
+        "email": "info@panisse.es",
+        "areaServed": "ES",
+        "availableLanguage": [
+          "es",
+          "gl",
+          "en"
+        ]
+      },
+      {
+        "@type": "ContactPoint",
+        "contactType": "reservations",
+        "telephone": "+34614296965",
+        "url": "https://wa.me/34614296965",
+        "areaServed": "ES",
+        "availableLanguage": [
+          "es",
+          "gl",
+          "en"
+        ]
+      }
+    ],
+    "knowsLanguage": [
+      "es",
+      "gl",
+      "en"
     ]
   },
   {
@@ -247,6 +284,17 @@
       "optometría infantil",
       "baja visión"
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://panisse.es/#website",
+    "name": "Panisse Óptica",
+    "url": "https://panisse.es/",
+    "inLanguage": "es",
+    "publisher": {
+      "@id": "https://panisse.es/#business"
+    }
   }
 ]
 </script>
@@ -264,15 +312,15 @@
 
     /* ── Reseñas estáticas (fallback si la API falla) ── */
     var STATIC_REVIEWS = [
-      { author: 'Lionel Oliveira',           initials: 'LO', rating: 5, date: 'Hace 3 meses',
+      { author: 'Lionel Oliveira',           initials: 'LO', rating: 5, date: '',
         text: 'Recomiendo mucho Panisse Óptica de Lugo. El personal fue muy amable y profesional. El servicio fue rápido y todo se hizo con mucha atención al cliente. Me sentí muy bien atendido y aconsejado durante todo el proceso. ¡Volveré sin duda!' },
-      { author: 'Amparo Grandío Rodríguez',  initials: 'AG', rating: 5, date: 'Hace 3 meses',
+      { author: 'Amparo Grandío Rodríguez',  initials: 'AG', rating: 5, date: '',
         text: 'Tiene gafas preciosas y de marca propia!! Yo me compré unas de sol chulísimas. Unos diseños increíbles! A parte está súper formado y muy actualizado tecnológicamente. 100% RECOMENDABLE!' },
-      { author: 'Julio Cesar Arroyave',      initials: 'JC', rating: 5, date: 'Hace 1 mes',
+      { author: 'Julio Cesar Arroyave',      initials: 'JC', rating: 5, date: '',
         text: 'Muy buena atención y productos de calidad. Me llevé unas gafas de sol y la verdad es son cómodas, ligeras y con una protección solar, te explican bien las opciones sin intentar venderte lo más caro. Sin duda volveré.' },
-      { author: 'Carmen Ouro Núñez',         initials: 'CO', rating: 5, date: 'Hace 3 meses',
+      { author: 'Carmen Ouro Núñez',         initials: 'CO', rating: 5, date: '',
         text: 'En graduación para gafas y lentillas en Panisse son profesionales, además el cariño y amabilidad del trato es excepcional. Tienen monturas para todos los bolsillos y en gafas de sol muchos modelos. Está céntrico y económicos... lo recomiendo.' },
-      { author: 'José Manuel Vázquez',       initials: 'JV', rating: 5, date: 'Hace 3 meses',
+      { author: 'José Manuel Vázquez',       initials: 'JV', rating: 5, date: '',
         text: 'Satisfacción total. Salí encantado. La recomendaré a familia y amigos. Os deseo una feliz trayectoria en vuestra óptica. Un abrazo y gracias.' }
     ];
 
@@ -292,7 +340,7 @@
             '</div>',
             '<div class="resena-card__meta">',
               '<strong class="resena-card__name">' + author + '</strong>',
-              '<time class="resena-card__date">' + dateStr + '</time>',
+              (dateStr ? '<time class="resena-card__date">' + dateStr + '</time>' : ''),
             '</div>',
           '</header>',
           '<div class="resena-card__stars" aria-label="' + rating + ' estrellas">' + stars + '</div>',
@@ -873,11 +921,12 @@
             <div class="dropdown" id="dropdown-servicios" role="menu" aria-label="Servicios">
               <a href="asesoria-montura-online.html" class="dropdown__link" role="menuitem">Asesoría Online</a>
               <a href="revision-visual-lugo.html" class="dropdown__link" role="menuitem">Revisión Visual</a>
+                <a href="lentes-progresivas-lugo.html" class="dropdown__link" role="menuitem">Lentes Progresivas</a>
               <a href="lentes-zeiss-lugo.html" class="dropdown__link" role="menuitem">ZEISS Vision Expert</a>
               <a href="vista-cansada-lugo.html" class="dropdown__link" role="menuitem">Vista Cansada</a>
               <a href="baja-vision-lugo.html" class="dropdown__link" role="menuitem">Baja Visión</a>
-              <a href="servicios.html#miopia" class="dropdown__link" role="menuitem">Miopía en Niños</a>
-              <a href="servicios.html#contacto-lentes" class="dropdown__link" role="menuitem">Lentes de Contacto</a>
+              <a href="optometria-infantil-lugo.html" class="dropdown__link" role="menuitem">Optometría Infantil</a>
+              <a href="lentes-de-contacto-lugo.html" class="dropdown__link" role="menuitem">Lentes de Contacto</a>
               <a href="servicios.html#fatiga" class="dropdown__link" role="menuitem">Fatiga Visual</a>
               <a href="servicios.html#glaucoma" class="dropdown__link" role="menuitem">Prevención Glaucoma</a>
               <a href="servicios.html#instrumentos" class="dropdown__link" role="menuitem">Instrumentos Ópticos</a>
@@ -982,11 +1031,12 @@
           <ul class="mobile-submenu" id="mm-servicios" aria-hidden="true">
             <li><a href="asesoria-montura-online.html" class="mobile-sublink">Asesoría Online</a></li>
             <li><a href="revision-visual-lugo.html" class="mobile-sublink">Revisión Visual</a></li>
+            <li><a href="lentes-progresivas-lugo.html" class="mobile-sublink">Lentes Progresivas</a></li>
             <li><a href="lentes-zeiss-lugo.html" class="mobile-sublink">ZEISS Vision Expert</a></li>
             <li><a href="vista-cansada-lugo.html" class="mobile-sublink">Vista Cansada</a></li>
             <li><a href="baja-vision-lugo.html" class="mobile-sublink">Baja Visión</a></li>
-            <li><a href="servicios.html#miopia" class="mobile-sublink">Miopía en Niños</a></li>
-            <li><a href="servicios.html#contacto-lentes" class="mobile-sublink">Lentes de Contacto</a></li>
+            <li><a href="optometria-infantil-lugo.html" class="mobile-sublink">Optometría Infantil</a></li>
+            <li><a href="lentes-de-contacto-lugo.html" class="mobile-sublink">Lentes de Contacto</a></li>
             <li><a href="servicios.html#fatiga" class="mobile-sublink">Fatiga Visual</a></li>
             <li><a href="servicios.html#glaucoma" class="mobile-sublink">Prevención Glaucoma</a></li>
             <li><a href="servicios.html#instrumentos" class="mobile-sublink">Instrumentos Ópticos</a></li>
@@ -1158,9 +1208,9 @@
         />
       </div>
       <div class="home-brand__content">
-        <span class="home-brand__label">Diseño Suizo · Artesanía Japonesa</span>
+        <span class="home-brand__label">Diseño Suizo · Hecho en Alemania y Japón</span>
         <h2 class="home-brand__title">Einstoffen</h2>
-        <p class="home-brand__desc">Monturas de autor nacidas en Suiza. Acetato japonés y titanio aeroespacial mecanizado con una precisión que se nota al tacto. Para quienes buscan una pieza que ningún otro tiene.</p>
+        <p class="home-brand__desc">Monturas de autor nacidas en Suiza y fabricadas en Alemania y Japón, en acetato y titanio mecanizados con una precisión que se nota al tacto. Para quienes buscan una pieza que ningún otro tiene.</p>
         <a href="einstoffen-lugo.html" class="btn btn--outline">Ver Einstoffen</a>
       </div>
     </section>
@@ -1194,7 +1244,7 @@
     <section class="home-collection-cta">
       <div class="container">
         <h2 class="home-collection-cta__title">Descubre más modelos</h2>
-        <p class="home-collection-cta__desc">Ray-Ban · Swarovski · Emporio Armani · Mr. Boho · Polaroid · Antica Occhialeria · Panisse Boutique</p>
+        <p class="home-collection-cta__desc">Ray-Ban · Swarovski · Emporio Armani · Mr. Boho · Polaroid · Antica Occhialeria · Colección Panisse</p>
         <a href="catalogo.html" class="btn btn--secondary">Ver catálogo completo</a>
       </div>
     </section>
@@ -1402,13 +1452,15 @@
         <h3 class="footer__heading" style="margin-top:28px;">Servicios en Lugo</h3>
         <ul class="footer__list">
           <li><a href="revision-visual-lugo.html" class="footer__link">Revisión Visual</a></li>
+          <li><a href="lentes-progresivas-lugo.html" class="footer__link">Lentes Progresivas</a></li>
+          <li><a href="gafas-graduadas-lugo.html" class="footer__link">Gafas Graduadas</a></li>
+          <li><a href="lentes-de-contacto-lugo.html" class="footer__link">Lentes de Contacto</a></li>
           <li><a href="vista-cansada-lugo.html" class="footer__link">Vista Cansada</a></li>
           <li><a href="baja-vision-lugo.html" class="footer__link">Baja Visión</a></li>
-          <li><a href="gafas-graduadas-lugo.html" class="footer__link">Gafas Graduadas</a></li>
-          <li><a href="catalogo.html?marca=ray-ban" class="footer__link">Ray-Ban en Lugo</a></li>
-          <li><a href="lentes-de-contacto-lugo.html" class="footer__link">Lentes de Contacto</a></li>
           <li><a href="optometria-infantil-lugo.html" class="footer__link">Optometría Infantil</a></li>
           <li><a href="lentes-zeiss-lugo.html" class="footer__link">Centro ZEISS Vision Expert</a></li>
+          <li><a href="gafas-boda-lugo.html" class="footer__link">Gafas para Boda</a></li>
+          <li><a href="catalogo.html?marca=ray-ban" class="footer__link">Ray-Ban en Lugo</a></li>
         </ul>
       </nav>
 
