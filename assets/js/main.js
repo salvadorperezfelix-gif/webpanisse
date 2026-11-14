@@ -1094,7 +1094,7 @@ if (document.readyState === 'loading') {
         <div class="cookie-banner__header">
           <h3 class="cookie-banner__title">Respetamos su privacidad</h3>
           <p class="cookie-banner__desc">
-            Usamos cookies propias y de terceros para medir las visitas y mejorar la web. Puede aceptarlas, rechazarlas o configurarlas. <a href="privacidad.html" target="_blank">Más información</a>.
+            Usamos cookies propias y de terceros para medir las visitas y mejorar la web. Puede aceptarlas, rechazarlas o configurarlas. <a href="/privacidad.html" target="_blank">Más información</a>.
           </p>
         </div>
         
