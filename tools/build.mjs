@@ -158,10 +158,13 @@ function buildProductPage(template, p, products) {
 
   h = must(h, /<script type="application\/ld\+json" id="product-schema"><\/script>/,
     product ? `<script type="application/ld+json" id="product-schema">${JSON.stringify(product)}</script>` : '', 'product-schema');
-  // Sustituye la miga genérica del bloque estático por la del producto
+  // Sustituye la miga genérica del bloque estático por la del producto.
+  // Se publica como objeto con @graph (no como lista suelta): el navegador interno de
+  // Instagram/Facebook lee r["@context"] del nivel superior y falla si es una lista.
   h = must(h, /(<script type="application\/ld\+json">)([\s\S]*?)(<\/script>)/, (_, o, json, c) => {
-    const data = [].concat(JSON.parse(json)).filter(x => x['@type'] !== 'BreadcrumbList');
-    return o + '\n' + JSON.stringify([...data, crumbs], null, 2) + '\n' + c;
+    const parsed = JSON.parse(json);
+    const data = (parsed['@graph'] || [].concat(parsed)).filter(x => x['@type'] !== 'BreadcrumbList');
+    return o + '\n' + JSON.stringify({ '@context': 'https://schema.org', '@graph': [...data, crumbs] }, null, 2) + '\n' + c;
   }, 'JSON-LD estático');
 
   h = must(h, /<body class="interior-page">/, `<body class="interior-page" data-product-id="${esc(p.id)}">`, '<body>');
