@@ -133,10 +133,22 @@ function productJsonLd(p) {
       '@type': 'Offer', priceCurrency: 'EUR', price: p.price,
       availability: 'https://schema.org/InStoreOnly', url,
       seller: { '@id': `${SITE}/#business` },
+      // Las gafas del catálogo no se envían (envios.html): la oferta apunta al servicio "no se envía" del negocio
+      shippingDetails: { '@type': 'OfferShippingDetails', hasShippingService: { '@id': SHIPPING_ID } },
     },
   } : null;
   return { product, crumbs };
 }
+
+// Política de envío de las gafas del catálogo, colgada del nodo #business de cada ficha con precio.
+// Sin shippingRate ni transitTime: Google pide omitirlos cuando doesNotShip es true.
+const SHIPPING_ID = `${SITE}/#recogida-tienda`;
+const SHIPPING_SERVICE = {
+  '@type': 'ShippingService', '@id': SHIPPING_ID,
+  name: 'Gafas del catálogo: reserva online y recogida en tienda',
+  description: 'Las gafas del catálogo no se envían. Se reservan online o por WhatsApp y se recogen en la tienda de Rúa do Teatro, Bajo 2, Lugo.',
+  shippingConditions: { '@type': 'ShippingConditions', doesNotShip: true },
+};
 
 function buildProductPage(template, p, products) {
   const url = `${SITE}/${productUrl(p.id)}`;
@@ -163,7 +175,11 @@ function buildProductPage(template, p, products) {
   // Instagram/Facebook lee r["@context"] del nivel superior y falla si es una lista.
   h = must(h, /(<script type="application\/ld\+json">)([\s\S]*?)(<\/script>)/, (_, o, json, c) => {
     const parsed = JSON.parse(json);
-    const data = (parsed['@graph'] || [].concat(parsed)).filter(x => x['@type'] !== 'BreadcrumbList');
+    let data = (parsed['@graph'] || [].concat(parsed)).filter(x => x['@type'] !== 'BreadcrumbList');
+    if (product) {
+      if (!data.some(x => x['@id'] === `${SITE}/#business`)) throw new Error('Plantilla: falta el nodo #business en el JSON-LD');
+      data = data.map(x => x['@id'] === `${SITE}/#business` ? { ...x, hasShippingService: SHIPPING_SERVICE } : x);
+    }
     return o + '\n' + JSON.stringify({ '@context': 'https://schema.org', '@graph': [...data, crumbs] }, null, 2) + '\n' + c;
   }, 'JSON-LD estático');
 
