@@ -1201,7 +1201,7 @@
     "brand": "Ray-Ban",
     "brand_slug": "ray-ban",
     "type": "graduadas",
-    "price": 143,
+    "price": 169,
     "variant": "Negro Brillante",
     "placeholder": "https://placehold.co/600x480/111111/ffffff?text=Ray-Ban",
     "image": "assets/img/products/ray-ban/ray-ban-wayfarer-rb4340v-2.jpg",
@@ -1232,7 +1232,7 @@
     "brand": "Ray-Ban",
     "brand_slug": "ray-ban",
     "type": "graduadas",
-    "price": 143,
+    "price": 169,
     "variant": "Havana",
     "color_swatch": "#7a4520",
     "variants": [
@@ -1288,7 +1288,7 @@
     "brand": "Ray-Ban",
     "brand_slug": "ray-ban",
     "type": "sol",
-    "price": 143,
+    "price": 169,
     "variant": "Havana / Verde G-15",
     "color_swatch": "#7a4520",
     "image": "assets/img/products/ray-ban/ray-ban-rb2140-havana-2.jpg",
@@ -1341,7 +1341,7 @@
     "brand": "Ray-Ban",
     "brand_slug": "ray-ban",
     "type": "graduadas",
-    "price": 143,
+    "price": 169,
     "variant": "Havana / Oro",
     "image": "assets/img/products/ray-ban/ray-ban-rx3447v-round-1.jpg",
     "gallery": [
@@ -1387,7 +1387,7 @@
     "brand": "Ray-Ban",
     "brand_slug": "ray-ban",
     "type": "sol",
-    "price": 160,
+    "price": 169,
     "variant": "Oro / Verde G-15",
     "image": "assets/img/products/ray-ban/ray-ban-rb3447-round-oro-1.jpg",
     "gallery": [
@@ -1409,7 +1409,7 @@
     "brand": "Ray-Ban",
     "brand_slug": "ray-ban",
     "type": "graduadas",
-    "price": 195,
+    "price": 215,
     "variant": "Verde Transparente / Fibra de Carbono",
     "image": "assets/img/products/ray-ban/ray-ban-rx8903-verde-1.jpg",
     "gallery": [
@@ -1432,7 +1432,7 @@
     "brand": "Ray-Ban",
     "brand_slug": "ray-ban",
     "type": "graduadas",
-    "price": 164,
+    "price": 190,
     "variant": "Negro Mate",
     "image": "assets/img/products/ray-ban/ray-ban-rx6355-negro-1.jpg",
     "gallery": [
@@ -1454,7 +1454,7 @@
     "brand": "Ray-Ban",
     "brand_slug": "ray-ban",
     "type": "graduadas",
-    "price": 143,
+    "price": 169,
     "variant": "Havana",
     "image": "assets/img/products/ray-ban/ray-ban-rx5395-havana-1.jpg",
     "gallery": [
@@ -1499,7 +1499,7 @@
     "brand": "Ray-Ban",
     "brand_slug": "ray-ban",
     "type": "graduadas",
-    "price": 117,
+    "price": 137,
     "variant": "Azul Mate",
     "image": "assets/img/products/ray-ban/ray-ban-rx7047-azul-1.jpg",
     "gallery": [
