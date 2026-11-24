@@ -1528,6 +1528,7 @@
       "assets/img/products/ray-ban/ray-ban-rb4925-6895-87-1.jpg",
       "assets/img/products/ray-ban/ray-ban-rb4925-6895-87-2.jpg"
     ],
+    "is_new": true,
     "description": "La Aviator Puffer reinterpreta el icono piloto de Ray-Ban con volúmenes generosos y redondeados: una montura gruesa en azul oscuro transparente que convierte la silueta clásica en algo contundente y actual. Las lentes Ultranegro, de tono muy oscuro, refuerzan su carácter gráfico. Una Aviator para quien quiere el icono, pero con presencia propia.",
     "specs": {
       "material": "Nailon",
@@ -1550,6 +1551,7 @@
       "assets/img/products/ray-ban/ray-ban-rb4469-6331-t3-1.jpg",
       "assets/img/products/ray-ban/ray-ban-rb4469-6331-t3-2.jpg"
     ],
+    "is_new": true,
     "description": "La RB4469 está fabricada en Liteforce, el material de Ray-Ban pensado para que la montura pese lo mínimo sin perder resistencia. Su frontal de inspiración browline combina el azul oscuro mate con el tono arena, y las lentes polarizadas en gris degradado reducen los reflejos y suavizan la luz intensa. Ligera, cómoda y discreta para el uso diario.",
     "specs": {
       "material": "Liteforce",
@@ -1573,6 +1575,7 @@
       "assets/img/products/ray-ban/ray-ban-rb4547-710-57-1.jpg",
       "assets/img/products/ray-ban/ray-ban-rb4547-710-57-2.jpg"
     ],
+    "is_new": true,
     "description": "La Boyfriend Two es una cuadrada de líneas limpias y proporciones amplias, en havana pulido. Sus lentes marrones polarizadas aportan contraste y eliminan reflejos, muy agradecidas para conducir o en días de mucha luz. Un modelo unisex, fácil de llevar y con el aire relajado que le da nombre.",
     "specs": {
       "material": "Nailon y propionato",
@@ -1596,6 +1599,7 @@
       "assets/img/products/ray-ban/ray-ban-rb2236-6899-71-1.jpg",
       "assets/img/products/ray-ban/ray-ban-rb2236-6899-71-2.jpg"
     ],
+    "is_new": true,
     "description": "La RB2236 recupera la forma alargada y estrecha de las gafas de los años 90 con una montura en burdeos pulido. Las lentes en gris claro degradado a gris oscuro equilibran el color intenso del frontal. Una pieza con personalidad para quien busca algo distinto a las formas clásicas.",
     "specs": {
       "material": "Propionato",
@@ -1618,6 +1622,7 @@
       "assets/img/products/ray-ban/ray-ban-rb2186-901-31-1.jpg",
       "assets/img/products/ray-ban/ray-ban-rb2186-901-31-2.jpg"
     ],
+    "is_new": true,
     "color_swatch": "#111111",
     "variants": [
       {
@@ -1648,6 +1653,7 @@
       "assets/img/products/ray-ban/ray-ban-rb3016-w0366-1.jpg",
       "assets/img/products/ray-ban/ray-ban-rb3016-w0366-2.jpg"
     ],
+    "is_new": true,
     "color_swatch": "#6b3a24",
     "variants": [
       {
@@ -1678,6 +1684,11 @@
       "assets/img/products/ray-ban/ray-ban-rb3792-001-mh-1.jpg",
       "assets/img/products/ray-ban/ray-ban-rb3792-001-mh-2.jpg"
     ],
+    "is_new": true,
+    "transitions": {
+      "claro": "assets/img/products/ray-ban/ray-ban-rb3792-001-mh-2.jpg",
+      "sol": "assets/img/products/ray-ban/ray-ban-rb3792-001-mh-sol.jpg"
+    },
     "description": "La RB3792 es una montura sin aros en metal dorado con lentes fotocromáticas Transitions® Color Touch™ en tono amatista. Las lentes parten de un color ya oscuro y se oscurecen todavía más con el sol, adaptándose a la luz de cada momento. Ligera, minimalista y con un color de lente que no pasa desapercibido.",
     "specs": {
       "material": "Metal",
@@ -1701,6 +1712,7 @@
       "assets/img/products/ray-ban/ray-ban-rb2180-6788-46-1.jpg",
       "assets/img/products/ray-ban/ray-ban-rb2180-6788-46-2.jpg"
     ],
+    "is_new": true,
     "description": "La RB2180 es una redonda de aire retro en color turtledove, un beige grisáceo muy suave. Las lentes en rosa degradado a gris aportan un toque cálido y luminoso. Pequeña y ligera, pensada para quien busca una redonda de proporciones contenidas.",
     "specs": {
       "material": "Propionato",
@@ -1723,6 +1735,7 @@
       "assets/img/products/ray-ban/ray-ban-rb4430-6924-1a-1.jpg",
       "assets/img/products/ray-ban/ray-ban-rb4430-6924-1a-2.jpg"
     ],
+    "is_new": true,
     "description": "La Zena es una montura de formas geométricas con un punto cat eye, aquí en gris transparente y en su versión Bio-based, con materiales de origen biológico. Las lentes en violeta oscuro le dan un acabado moderno y muy fotogénico. Para quien busca una forma con actitud y un color fuera de lo habitual.",
     "specs": {
       "material": "Nailon y propionato",
@@ -1745,6 +1758,7 @@
       "assets/img/products/ray-ban/ray-ban-rb3183-004-82-1.jpg",
       "assets/img/products/ray-ban/ray-ban-rb3183-004-82-2.jpg"
     ],
+    "is_new": true,
     "description": "La RB3183 es una gafa deportiva de metal con frontal semi al aire y varillas finas, en color gunmetal. Sus lentes polarizadas en gris espejo con degradado plateado eliminan los reflejos del asfalto, el agua o la nieve. Envolvente y ligera, pensada para un día a día activo.",
     "specs": {
       "material": "Metal",
@@ -1768,6 +1782,7 @@
       "assets/img/products/ray-ban/ray-ban-rb4171-6000-68-1.jpg",
       "assets/img/products/ray-ban/ray-ban-rb4171-6000-68-2.jpg"
     ],
+    "is_new": true,
     "description": "La Erika es una de las redondas más queridas de Ray-Ban: ligera, de líneas suaves y con varillas metálicas finas. Esta versión en arena oscuro mate se combina con lentes en violeta degradado a marrón, un tono cálido que favorece. Cómoda para llevar todo el día.",
     "specs": {
       "material": "Nailon y propionato",
@@ -1790,6 +1805,7 @@
       "assets/img/products/ray-ban/ray-ban-rb3768-001-73-1.jpg",
       "assets/img/products/ray-ban/ray-ban-rb3768-001-73-2.jpg"
     ],
+    "is_new": true,
     "color_swatch": "#c8a24a",
     "variants": [
       {
@@ -1820,6 +1836,7 @@
       "assets/img/products/ray-ban/ray-ban-rb2204-1430-3f-1.jpg",
       "assets/img/products/ray-ban/ray-ban-rb2204-1430-3f-2.jpg"
     ],
+    "is_new": true,
     "description": "La RB2204 es una redonda de acetato en havana carey azul, un estampado poco habitual que mezcla tonos marrones y azulados. Las lentes en azul degradado hacia transparente completan un conjunto fresco y luminoso. Una gafa de sol con carácter y fácil de combinar.",
     "specs": {
       "material": "Acetato",
@@ -1842,6 +1859,7 @@
       "assets/img/products/ray-ban/ray-ban-rb2186-1324-bg-1.jpg",
       "assets/img/products/ray-ban/ray-ban-rb2186-1324-bg-2.jpg"
     ],
+    "is_new": true,
     "color_swatch": "#9a5a3c",
     "variants": [
       {
@@ -1872,6 +1890,7 @@
       "assets/img/products/ray-ban/ray-ban-rb3768-002-81-1.jpg",
       "assets/img/products/ray-ban/ray-ban-rb3768-002-81-2.jpg"
     ],
+    "is_new": true,
     "color_swatch": "#1c1c1c",
     "variants": [
       {
@@ -1903,6 +1922,7 @@
       "assets/img/products/ray-ban/ray-ban-rb0840s-902-31-1.jpg",
       "assets/img/products/ray-ban/ray-ban-rb0840s-902-31-2.jpg"
     ],
+    "is_new": true,
     "description": "La Mega Wayfarer lleva la silueta de la Wayfarer original a proporciones más amplias y contornos más redondeados. En havana pulido con lentes verdes clásicas, es un guiño directo al icono con más presencia en el rostro. Fabricada en Italia.",
     "specs": {
       "material": "Propionato",

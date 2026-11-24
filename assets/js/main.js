@@ -876,8 +876,10 @@ async function initProductPage() {
       
 
       const fallbackSrc = p.placeholder || `https://placehold.co/600x480/0d0d0d/c7dbd6?text=${encodeURIComponent(p.brand)}`;
+      // Lentes Transitions: miniatura extra que muestra la vista 3/4 fundiéndose entre lente clara y oscurecida al sol
+      const tr = p.transitions && p.transitions.claro && p.transitions.sol ? p.transitions : null;
       thumbsContainer.innerHTML = galleryImages.map((img, idx) => `
-        <button class="product-gallery__thumb ${idx === 0 ? 'is-active' : ''}" 
+        <button class="product-gallery__thumb ${idx === 0 ? 'is-active' : ''}"
                 data-img="${img}"
                 data-fallback="${fallbackSrc}"
                 aria-label="Ver imagen ${idx + 1}">
@@ -885,7 +887,33 @@ async function initProductPage() {
                onload="this.classList.add('is-loaded')"
                onerror="this.src=this.closest('button').dataset.fallback; this.classList.add('is-loaded')" />
         </button>
-      `).join('');
+      `).join('') + (tr ? `
+        <button class="product-gallery__thumb"
+                data-img="${tr.claro}"
+                data-sol="${tr.sol}"
+                data-fallback="${fallbackSrc}"
+                aria-label="Ver cómo se oscurecen las lentes Transitions con el sol">
+          <img src="${tr.sol}" alt="${p.brand} ${p.name} con las lentes oscurecidas al sol" class="is-loaded" />
+          <span class="product-gallery__thumb-tag">Transitions</span>
+        </button>
+      ` : '');
+
+      // Capa con la lente oscurecida encima de la imagen principal (la animación va en CSS)
+      const setSol = src => {
+        const mainBox = mainImg && mainImg.parentElement;
+        if (!mainBox) return;
+        mainBox.querySelectorAll('.product-gallery__sol, .product-gallery__sol-label').forEach(el => el.remove());
+        if (!src) return;
+        const sol = document.createElement('img');
+        sol.className = 'product-gallery__sol';
+        sol.src = src;
+        sol.alt = '';
+        sol.setAttribute('aria-hidden', 'true');
+        const label = document.createElement('span');
+        label.className = 'product-gallery__sol-label';
+        label.textContent = 'Transitions® · así se oscurecen al sol';
+        mainImg.after(sol, label);
+      };
 
       const thumbs = thumbsContainer.querySelectorAll('.product-gallery__thumb');
       thumbs.forEach(btn => {
@@ -894,12 +922,14 @@ async function initProductPage() {
 
           thumbs.forEach(t => t.classList.remove('is-active'));
           btn.classList.add('is-active');
+          setSol(null);
           if (mainImg) {
             mainImg.style.transition = 'opacity 0.2s ease';
             mainImg.style.opacity = '0';
             setTimeout(() => {
               mainImg.src = newSrc;
               mainImg.style.opacity = '1';
+              if (btn.dataset.sol) setSol(btn.dataset.sol);
             }, 200);
           }
         });
