@@ -333,7 +333,7 @@
         ? '<img src="' + photoUrl + '" alt="" loading="lazy" style="' + photoStyle + '" onerror="this.remove()">'
         : '';
       return [
-        '<article class="resena-card" role="listitem">',
+        '<div class="resena-card" role="listitem">',
           '<header class="resena-card__header">',
             '<div class="resena-card__avatar" style="background:' + avatarBg + ';position:relative">',
               '<span>' + initials + '</span>' + photoTag,
@@ -345,7 +345,7 @@
           '</header>',
           '<div class="resena-card__stars" aria-label="' + rating + ' estrellas">' + stars + '</div>',
           '<p class="resena-card__text">\u201c' + text + '\u201d</p>',
-        '</article>'
+        '</div>'
       ].join('');
     }
 
@@ -530,7 +530,7 @@
     }
     .home-intro__desc {
       font-size: 15px;
-      color: #7a7a7a;
+      color: #707070;
       max-width: 640px;
       margin: 0 auto;
       line-height: 1.75;
@@ -562,7 +562,7 @@
       font-weight: 700;
       letter-spacing: 0.3em;
       text-transform: uppercase;
-      color: #7a7a7a;
+      color: #707070;
       display: block;
       margin-bottom: 10px;
     }
@@ -630,7 +630,7 @@
       font-weight: 700;
       letter-spacing: 0.22em;
       text-transform: uppercase;
-      color: #7a7a7a;
+      color: #707070;
       margin-bottom: 6px;
     }
     .lp-product__name {
@@ -642,7 +642,7 @@
     }
     .lp-product__price {
       font-size: 13px;
-      color: #7a7a7a;
+      color: #707070;
       font-weight: 300;
     }
     .lp-products__cta {
@@ -692,7 +692,7 @@
       font-weight: 700;
       letter-spacing: 0.28em;
       text-transform: uppercase;
-      color: #7a7a7a;
+      color: #707070;
       margin-bottom: 18px;
     }
     .home-brand__title {
@@ -705,7 +705,7 @@
     }
     .home-brand__desc {
       font-size: 15px;
-      color: #7a7a7a;
+      color: #707070;
       line-height: 1.75;
       margin-bottom: 36px;
       max-width: 380px;
@@ -728,7 +728,7 @@
     }
     .home-collection-cta__desc {
       font-size: 14px;
-      color: #7a7a7a;
+      color: #707070;
       margin-bottom: 36px;
       letter-spacing: 0.03em;
     }
@@ -747,7 +747,7 @@
       font-weight: 700;
       letter-spacing: 0.3em;
       text-transform: uppercase;
-      color: #7a7a7a;
+      color: #707070;
       display: block;
       margin-bottom: 12px;
     }
@@ -800,7 +800,7 @@
       font-weight: 700;
       letter-spacing: 0.22em;
       text-transform: uppercase;
-      color: #7a7a7a;
+      color: #707070;
       margin-bottom: 10px;
     }
     .blog-card__title {
@@ -813,7 +813,7 @@
     }
     .blog-card__excerpt {
       font-size: 14px;
-      color: #7a7a7a;
+      color: #707070;
       line-height: 1.65;
       flex: 1;
       margin-bottom: 20px;
@@ -831,8 +831,8 @@
       transition: color 0.28s, border-color 0.28s;
     }
     .blog-card__link:hover {
-      color: #7a7a7a;
-      border-color: #7a7a7a;
+      color: #707070;
+      border-color: #707070;
     }
     .home-blog__cta {
       text-align: center;

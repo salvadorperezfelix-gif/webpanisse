@@ -5190,6 +5190,33 @@ img[loading="lazy"].is-loaded {
   transform: scale(1.3);
 }
 
+/* Puntos del carrusel: zona táctil de 24px (accesibilidad) con el mismo punto visible de 8px */
+.resenas-carousel__dots { gap: 0; }
+.resenas-carousel__dot,
+.resenas-carousel__dot.is-active {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  transform: none;
+}
+.resenas-carousel__dot::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  margin: -4px 0 0 -4px;
+  border-radius: 50%;
+  background: var(--color-border);
+  transition: background var(--transition), transform var(--transition);
+}
+.resenas-carousel__dot.is-active::before {
+  background: var(--color-black);
+  transform: scale(1.3);
+}
+
 .resenas__cta-link {
   display: inline-flex;
   align-items: center;
