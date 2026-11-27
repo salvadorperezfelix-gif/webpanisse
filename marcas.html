@@ -75,13 +75,24 @@
   <link rel="preload" href="assets/fonts/lato-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/parisienne-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 
+  <!-- Carga diferida de Google, Meta y Clarity: al primer gesto del visitante o 4 s tras cargar.
+       Lo que ocurra antes (consentimiento, visitas, eventos) queda en cola y se envía al cargarse. -->
+  <script>
+    (function(w){var q=[],hecho=false,ev=['wheel','touchmove','touchstart','pointerdown','keydown','mousemove'];
+      w.panisseCargaDiferida=function(fn){hecho?fn():q.push(fn)};
+      function go(){if(hecho)return;hecho=true;ev.forEach(function(e){w.removeEventListener(e,go,{passive:true})});
+        for(var i=0;i<q.length;i++){try{q[i]()}catch(e){}}q=[]}
+      ev.forEach(function(e){w.addEventListener(e,go,{passive:true})});
+      w.addEventListener('load',function(){setTimeout(go,4000)});
+    })(window);
+  </script>
   <!-- Meta Pixel Code -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
     if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];window.addEventListener('load',function(){t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s);},{once:!0});}(window, document,'script',
+    n.queue=[];window.panisseCargaDiferida(function(){t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s);});}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
     var savedConsent = localStorage.getItem('cookieConsent');
     var marketingGranted = false;
@@ -99,7 +110,7 @@
     var savedConsent = localStorage.getItem('cookieConsent');
     if (savedConsent) { try { var consentObj = JSON.parse(savedConsent); gtag('consent', 'default', {'ad_storage': consentObj.marketing ? 'granted' : 'denied','ad_user_data': consentObj.marketing ? 'granted' : 'denied','ad_personalization': consentObj.marketing ? 'granted' : 'denied','analytics_storage': consentObj.analytics ? 'granted' : 'denied'}); } catch (e) { gtag('consent', 'default', {'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied'}); } } else { gtag('consent', 'default', {'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied'}); }
   </script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZPWT5ZT4X4"></script>
+  <script>window.panisseCargaDiferida(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-ZPWT5ZT4X4';document.head.appendChild(s);});</script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -287,7 +298,7 @@
 
   <!-- Microsoft Clarity -->
   <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "xx267v5tt4");
+    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};window.panisseCargaDiferida(function(){t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);});})(window, document, "clarity", "script", "xx267v5tt4");
   </script>
 </head>
 <body class="interior-page">
