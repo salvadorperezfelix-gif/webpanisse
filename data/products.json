@@ -1150,6 +1150,298 @@
     }
   },
   {
+    "id": "michael-kors-mk2218u-murren",
+    "name": "MK2218U Mürren",
+    "brand": "Michael Kors",
+    "brand_slug": "michael-kors",
+    "type": "sol",
+    "price": 179,
+    "variant": "Carey Oliva / Verde Oliva",
+    "image": "assets/img/products/michael-kors/michael-kors-mk2218u-39433h-1.jpg",
+    "gallery": [
+      "assets/img/products/michael-kors/michael-kors-mk2218u-39433h-1.jpg",
+      "assets/img/products/michael-kors/michael-kors-mk2218u-39433h-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La Mürren es una cuadrada oversize de líneas rectas y frontal plano, con un aire setentero muy marcado. El acetato carey en tonos oliva se combina con lentes verde oliva que dan una visión cálida y natural, y el logotipo MK dorado asoma en las varillas. Una gafa de sol con presencia para quien busca algo distinto a la aviador de siempre.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "58 mm",
+      "puente": "18 mm",
+      "varilla": "145 mm",
+      "genero": "Unisex"
+    }
+  },
+  {
+    "id": "michael-kors-mk3097-hidden-hills",
+    "name": "MK3097 Hidden Hills",
+    "brand": "Michael Kors",
+    "brand_slug": "michael-kors",
+    "type": "graduadas",
+    "price": 215,
+    "variant": "Oro Amarillo Mate",
+    "image": "assets/img/products/michael-kors/michael-kors-mk3097-1908-1.jpg",
+    "gallery": [
+      "assets/img/products/michael-kors/michael-kors-mk3097-1908-1.jpg",
+      "assets/img/products/michael-kors/michael-kors-mk3097-1908-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La Hidden Hills pertenece a MK Collection, la línea más cuidada de la marca. Es una rectangular de metal en oro amarillo mate, con un frontal fino de líneas rectas y terminales de varilla en carey. Sobria, ligera y con un punto de lujo discreto que funciona tanto en el trabajo como fuera de él.",
+    "specs": {
+      "material": "Metal",
+      "calibre": "55 mm",
+      "puente": "18 mm",
+      "varilla": "145 mm",
+      "genero": "Hombre"
+    }
+  },
+  {
+    "id": "michael-kors-mk4067u-santa-clara",
+    "name": "MK4067U Santa Clara",
+    "brand": "Michael Kors",
+    "brand_slug": "michael-kors",
+    "type": "graduadas",
+    "price": 139,
+    "variant": "Transparente",
+    "image": "assets/img/products/michael-kors/michael-kors-mk4067u-3015-1.jpg",
+    "gallery": [
+      "assets/img/products/michael-kors/michael-kors-mk4067u-3015-1.jpg",
+      "assets/img/products/michael-kors/michael-kors-mk4067u-3015-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La Santa Clara es una montura de forma suave, entre rectangular y mariposa, en material transparente. Las varillas en tono dorado claro aportan luz al conjunto sin restarle ligereza. Discreta y fácil de llevar, deja todo el protagonismo a la mirada.",
+    "specs": {
+      "material": "Plástico inyectado",
+      "calibre": "55 mm",
+      "puente": "16 mm",
+      "varilla": "140 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
+    "id": "michael-kors-mk4202u-half-moon-bay",
+    "name": "MK4202U Half Moon Bay",
+    "brand": "Michael Kors",
+    "brand_slug": "michael-kors",
+    "type": "graduadas",
+    "price": 158,
+    "variant": "Negro",
+    "image": "assets/img/products/michael-kors/michael-kors-mk4202u-3005-1.jpg",
+    "gallery": [
+      "assets/img/products/michael-kors/michael-kors-mk4202u-3005-1.jpg",
+      "assets/img/products/michael-kors/michael-kors-mk4202u-3005-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La Half Moon Bay es una redonda de acetato negro con un ligero toque felino en la parte superior. Las varillas en carey llevan el logotipo MK en dorado, un contraste que le da carácter sin perder elegancia. Una montura versátil para el día a día.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "55 mm",
+      "puente": "16 mm",
+      "varilla": "140 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
+    "id": "michael-kors-mk4203u-topanga-oliva",
+    "name": "MK4203U Topanga",
+    "brand": "Michael Kors",
+    "brand_slug": "michael-kors",
+    "type": "graduadas",
+    "price": 158,
+    "variant": "Carey Camuflaje Oliva",
+    "image": "assets/img/products/michael-kors/michael-kors-mk4203u-3902-1.jpg",
+    "gallery": [
+      "assets/img/products/michael-kors/michael-kors-mk4203u-3902-1.jpg",
+      "assets/img/products/michael-kors/michael-kors-mk4203u-3902-2.jpg"
+    ],
+    "is_new": true,
+    "color_swatch": "#4a4a30",
+    "variants": [
+      {
+        "id": "michael-kors-mk4203u-topanga-negro",
+        "color": "#111111",
+        "label": "Negro"
+      }
+    ],
+    "description": "La Topanga es una cuadrada de acetato con las esquinas superiores ligeramente elevadas, que suavizan la forma y abren la mirada. Esta versión en carey camuflaje oliva es original y fácil de combinar, y el logotipo MK dorado de las varillas pone el toque final.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "55 mm",
+      "puente": "16 mm",
+      "varilla": "140 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
+    "id": "michael-kors-mk2199-acadia",
+    "name": "MK2199 Acadia",
+    "brand": "Michael Kors",
+    "brand_slug": "michael-kors",
+    "type": "sol",
+    "price": 179,
+    "variant": "Carey Azul Intenso / Marrón Degradado",
+    "image": "assets/img/products/michael-kors/michael-kors-mk2199-395213-1.jpg",
+    "gallery": [
+      "assets/img/products/michael-kors/michael-kors-mk2199-395213-1.jpg",
+      "assets/img/products/michael-kors/michael-kors-mk2199-395213-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La Acadia es una rectangular oversize con las esquinas biseladas, en un carey azul intenso poco habitual. Las lentes marrones degradadas suavizan la luz sin perder nitidez, y el gran logotipo MK dorado de las varillas firma el diseño. Glamour para el día a día, muy en la línea de la marca.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "55 mm",
+      "puente": "17 mm",
+      "varilla": "135 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
+    "id": "michael-kors-mk4166u-greenville",
+    "name": "MK4166U Greenville",
+    "brand": "Michael Kors",
+    "brand_slug": "michael-kors",
+    "type": "graduadas",
+    "price": 149,
+    "variant": "Azul Marino Degradado",
+    "image": "assets/img/products/michael-kors/michael-kors-mk4166u-4037-1.jpg",
+    "gallery": [
+      "assets/img/products/michael-kors/michael-kors-mk4166u-4037-1.jpg",
+      "assets/img/products/michael-kors/michael-kors-mk4166u-4037-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La Greenville es una cuadrada con un leve aire cat eye y un acetato degradado que pasa del azul marino a tonos arena y aguamarina. El color se concentra arriba y se aclara hacia abajo, así que ilumina el rostro. Una montura con personalidad para quien quiere salir de los tonos clásicos.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "53 mm",
+      "puente": "18 mm",
+      "varilla": "140 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
+    "id": "michael-kors-mk2288u-agra",
+    "name": "MK2288U Agra",
+    "brand": "Michael Kors",
+    "brand_slug": "michael-kors",
+    "type": "sol",
+    "price": 131,
+    "variant": "Carey Marrón / Marrón Degradado",
+    "image": "assets/img/products/michael-kors/michael-kors-mk2288u-403913-1.jpg",
+    "gallery": [
+      "assets/img/products/michael-kors/michael-kors-mk2288u-403913-1.jpg",
+      "assets/img/products/michael-kors/michael-kors-mk2288u-403913-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La Agra recupera las gafas de sol rectangulares y estrechas de los años 90, en acetato carey marrón con remaches dorados en el frontal. Las lentes marrones degradadas completan un conjunto cálido y muy actual. Pequeña de altura y fácil de llevar.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "56 mm",
+      "puente": "16 mm",
+      "varilla": "140 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
+    "id": "michael-kors-mk4112-polanco",
+    "name": "MK4112 Polanco",
+    "brand": "Michael Kors",
+    "brand_slug": "michael-kors",
+    "type": "graduadas",
+    "price": 149,
+    "variant": "Negro",
+    "image": "assets/img/products/michael-kors/michael-kors-mk4112-3005-1.jpg",
+    "gallery": [
+      "assets/img/products/michael-kors/michael-kors-mk4112-3005-1.jpg",
+      "assets/img/products/michael-kors/michael-kors-mk4112-3005-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La Polanco es una cuadrada de acetato negro de frontal grueso y contundente. Los terminales de las varillas en carey claro rompen el negro y le dan un aire más fresco. Una montura con carácter para quien quiere que sus gafas se noten.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "54 mm",
+      "puente": "16 mm",
+      "varilla": "140 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
+    "id": "michael-kors-mk4201u-big-sur",
+    "name": "MK4201U Big Sur",
+    "brand": "Michael Kors",
+    "brand_slug": "michael-kors",
+    "type": "graduadas",
+    "price": 158,
+    "variant": "Carey Camuflaje Burdeos",
+    "image": "assets/img/products/michael-kors/michael-kors-mk4201u-3344-1.jpg",
+    "gallery": [
+      "assets/img/products/michael-kors/michael-kors-mk4201u-3344-1.jpg",
+      "assets/img/products/michael-kors/michael-kors-mk4201u-3344-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La Big Sur es una rectangular de acetato en carey camuflaje burdeos, un tono profundo con vetas que cambian con la luz. El logotipo MK dorado destaca sobre las varillas. Una forma clásica con un color que la hace especial.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "55 mm",
+      "puente": "16 mm",
+      "varilla": "140 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
+    "id": "michael-kors-mk2277u-grenada",
+    "name": "MK2277U Grenada",
+    "brand": "Michael Kors",
+    "brand_slug": "michael-kors",
+    "type": "sol",
+    "price": 152,
+    "variant": "Carey Vintage / Ámbar",
+    "image": "assets/img/products/michael-kors/michael-kors-mk2277u-393073-1.jpg",
+    "gallery": [
+      "assets/img/products/michael-kors/michael-kors-mk2277u-393073-1.jpg",
+      "assets/img/products/michael-kors/michael-kors-mk2277u-393073-2.jpg"
+    ],
+    "is_new": true,
+    "description": "La Grenada reinterpreta la silueta aviador en acetato, con doble puente y detalles metálicos dorados en el frontal. El carey vintage en tonos miel y las lentes ámbar le dan un aire cálido y retro. Una gafa de sol con mucha presencia y un acabado cuidado.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "56 mm",
+      "puente": "15 mm",
+      "varilla": "140 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
+    "id": "michael-kors-mk4203u-topanga-negro",
+    "name": "MK4203U Topanga",
+    "brand": "Michael Kors",
+    "brand_slug": "michael-kors",
+    "type": "graduadas",
+    "price": 158,
+    "variant": "Negro",
+    "image": "assets/img/products/michael-kors/michael-kors-mk4203u-3005-1.jpg",
+    "gallery": [
+      "assets/img/products/michael-kors/michael-kors-mk4203u-3005-1.jpg",
+      "assets/img/products/michael-kors/michael-kors-mk4203u-3005-2.jpg"
+    ],
+    "is_new": true,
+    "color_swatch": "#111111",
+    "variants": [
+      {
+        "id": "michael-kors-mk4203u-topanga-oliva",
+        "color": "#4a4a30",
+        "label": "Carey Camuflaje Oliva"
+      }
+    ],
+    "description": "La Topanga es una cuadrada de acetato con las esquinas superiores ligeramente elevadas, que suavizan la forma y abren la mirada. En negro y en calibre 50, más contenida, es una opción elegante para rostros pequeños. Las varillas en carey con el logotipo MK dorado ponen el contraste.",
+    "specs": {
+      "material": "Acetato",
+      "calibre": "50 mm",
+      "puente": "15 mm",
+      "varilla": "140 mm",
+      "genero": "Mujer"
+    }
+  },
+  {
     "id": "panisse-boutique-baron",
     "name": "Baron",
     "brand": "Panisse",
